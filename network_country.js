@@ -1,22 +1,3 @@
-/* ---------------------------------------------------------------------------
-   (c) Telefónica I+D, 2013
-   Author: Paulo Villegas
-
-   This script is free software: you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by
-   the Free Software Foundation, either version 3 of the License, or
-   (at your option) any later version.
-
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-
-   You should have received a copy of the GNU General Public License
-   along with this program.  If not, see <http://www.gnu.org/licenses/>.
-   -------------------------------------------------------------------------- */
-
-
 // For MSIE < 9, forget it
 function D3notok() {
   document.getElementById('sidepanel').style.visibility = 'hidden';
@@ -35,15 +16,8 @@ function D3notok() {
 // since they need D3.js stuff. So we put placeholders.
 
 
-// Highlight a movie in the graph. It is a closure within the d3.json() call.
-var selectMovie = undefined;
-
 // Change status of a panel from visible to hidden or viceversa
 var toggleDiv = undefined;
-
-// Clear all help boxes and select a movie in network and in movie details panel
-var clearAndSelect = undefined;
-
 
 // The call to set a zoom value -- currently unused
 // (zoom is set via standard mouse-based zooming)
@@ -85,7 +59,7 @@ function D3ok() {
     .size( [WIDTH, HEIGHT] )
     .linkStrength( function(d,idx) { return d.weight; } );
 
-  // Add to the page the SVG element that will contain the movie network
+  // Add to the page the SVG element that will contain the network
   var svg = d3.select("#movieNetwork").append("svg:svg")
     .attr('xmlns','http://www.w3.org/2000/svg')
     .attr("width", WIDTH)
