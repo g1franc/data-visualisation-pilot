@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    {
+      "index": 0,
+      "links": [
+        1,
+        2
+      ],
+      "label": "Austria",
+      "score": 7,
+      "id": 0
+    },
+    {
+      "index": 1,
+      "links": [
+        0,
+        3
+      ],
+      "label": "Belgium",
+      "score": 9,
+      "id": 1
+    },
+    {
+      "index": 2,
+      "links": [
+        0
+      ],
+      "label": "Bulgaria",
+      "score": 12,
+      "id": 2
+    },
+    {
+      "index": 3,
+      "links": [
+        1,
+        4
+      ],
+      "label": "Croatia",
+      "score": 2,
+      "id": 3
+    },
+    {
+      "index": 4,
+      "links": [
+        3
+      ],
+      "label": "Cyprus",
+      "score": 4,
+      "id": 4
+    }
+  ],
+    "links": [
+      {
+        "source": 0,
+        "target": 1,
+        "weight": 0.987
+      },
+      {
+        "source": 0,
+        "target": 2,
+        "weight": 0.7
+      },
+      {
+        "source": 1,
+        "target": 3,
+        "weight": 0.2
+      },
+      {
+        "source": 3,
+        "target": 4,
+        "weight": 0.1
+      }
+    ]
+}
