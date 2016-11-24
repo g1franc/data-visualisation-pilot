@@ -37,19 +37,40 @@
 </head>
 <body onload="takeAction();">
 
-  <div id="nocontent">
-    <h1>Sadly your browser is not compatible with this site</h1>
+    <div id="nocontent" style="padding: auto; width: 100%;">
+      <h1 style="font-family:arial; margin:auto; width:900px;">Sadly your browser is not compatible with this site</h1>
 
-    <div>You can use <a href="http://www.google.com/chrome/">Google
-    Chrome</a>, <a href="http://www.mozilla.org/firefox">Mozilla Firefox</a>
-    or <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Microsoft
-    Internet Explorer (v9 or above)</a> to access the visualisation
+      <div>
+        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify;">
+          You can use <a href="http://www.google.com/chrome/">Google
+          Chrome</a>, <a href="http://www.mozilla.org/firefox">Mozilla Firefox</a>
+          or <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Microsoft
+          Internet Explorer (v9 or above)</a> to access the visualisation
+        </p>
+      </div>
+
     </div>
 
-  </div>
+    <div style="padding: auto; width: 100%;">
+       <div style="width:900px; margin:auto;">
+          <h1 style="font-family:arial; margin:auto; width:900px;">
+            Network visualisation of Cordis data (FP6, FP7, H2020)
+          </h1>
+          <p style="font-family:arial; width:900px; margin:auto; padding-top:15px; text-align: justify;">This chart visualises Cordis data as published by the Publications office on the European Union Open Data Portal.
+          <br>
+            The datasets contain all projects funded by the European Union under the sixth, seventh and Horizon 2020 framework programme for research and technological development. These framework programmes ran from 2002 to 2006, 2007 to 2013, and 2014 to 2020 respectively.
+          <br><br></p>
 
-  <div id="movieNetwork"></div>
+    <select id="contractDropdown" onchange="contractSelected(this)" style="margin-bottom: 15px;">
+      <option value="FP6">FP6</option>
+      <option value="FP7">FP7</option>
+      <option value="H2020">H2020</option>
+    </select> 
 
-  <script src="network_country.js"></script>
+        <div id="chartID"></div>
+    </div>
+    </div>
+
+    <script src="network_country.js"></script>
 </body>
 </html>

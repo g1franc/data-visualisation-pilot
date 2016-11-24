@@ -23,6 +23,9 @@ var toggleDiv = undefined;
 // (zoom is set via standard mouse-based zooming)
 var zoomCall = undefined;
 
+//selected contract
+var e = document.getElementById("contractDropdown");
+var currentContract = e.options[e.selectedIndex].value;
 
 // -------------------------------------------------------------------
 
@@ -59,8 +62,13 @@ function D3ok() {
     .size( [WIDTH, HEIGHT] )
     .linkStrength( function(d,idx) { return d.weight; } );
 
+  var myNode = document.getElementById("chartID");
+  while (myNode.firstChild) {
+      myNode.removeChild(myNode.firstChild);
+  } 
+
   // Add to the page the SVG element that will contain the network
-  var svg = d3.select("#movieNetwork").append("svg:svg")
+  var svg = d3.select("#chartID").append("svg:svg")
     .attr('xmlns','http://www.w3.org/2000/svg')
     .attr("width", WIDTH)
     .attr("height", HEIGHT)
@@ -99,8 +107,10 @@ function D3ok() {
 
   // *************************************************************************
 
+  var datafile = currentContract+'.json'
+
   d3.json(
-    'data_countries.json',
+    datafile,
     function(data) {
       // Declare the variables pointing to the node & link arrays
       var nodeArray = data.nodes;
@@ -303,3 +313,8 @@ function D3ok() {
   }); // end of function(data)
 
 } // end of D3ok()
+
+function contractSelected(option) {
+  currentContract = option.value;
+  D3ok();
+}
