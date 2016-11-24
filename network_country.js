@@ -203,7 +203,7 @@ function D3ok() {
         	label = d3.select('#l'+id);
         	label.classed( 'on', on || currentZoom >= SHOW_THRESHOLD );
         	label.selectAll('text.nlabel').classed( 'sibling', on );
-        } );
+        });
 
     }
 
@@ -213,7 +213,6 @@ function D3ok() {
        - on node repositioning (as result of a force-directed iteration)
        - on translations (user is panning)
        - on zoom changes (user is zooming)
-       - on explicit node highlight (user clicks in a movie panel link)
        Set also the values keeping track of current offset & zoom values
     */
     function repositionGraph( off, z, mode ) {
@@ -222,44 +221,37 @@ function D3ok() {
       var doTr = (mode == 'move');
 
       // drag: translate to new offset
-      if( off !== undefined &&
-	  (off.x != currentOffset.x || off.y != currentOffset.y ) ) {
-	g = d3.select('g.grpParent')
-	if( doTr )
-	  g = g.transition().duration(500);
-	g.attr("transform", function(d) { return "translate("+
-					  off.x+","+off.y+")" } );
-	currentOffset.x = off.x;
-	currentOffset.y = off.y;
+      if( off !== undefined && (off.x != currentOffset.x || off.y != currentOffset.y ) ) {
+        g = d3.select('g.grpParent')
+        if( doTr )
+        g = g.transition().duration(500);
+        g.attr("transform", function(d) { return "translate("+ off.x+","+off.y+")" } );
+        currentOffset.x = off.x;
+        currentOffset.y = off.y;
       }
 
       // zoom: get new value of zoom
       if( z === undefined ) {
-	if( mode != 'tick' )
-	  return;	// no zoom, no tick, we don't need to go further
-	z = currentZoom;
+        if( mode != 'tick' )
+        return;	// no zoom, no tick, we don't need to go further
+        z = currentZoom;
       }
       else
-	currentZoom = z;
+        currentZoom = z;
 
       // move edges
       e = doTr ? graphLinks.transition().duration(500) : graphLinks;
-      e
-	.attr("x1", function(d) { return z*(d.source.x); })
+      e.attr("x1", function(d) { return z*(d.source.x); })
         .attr("y1", function(d) { return z*(d.source.y); })
         .attr("x2", function(d) { return z*(d.target.x); })
         .attr("y2", function(d) { return z*(d.target.y); });
 
       // move nodes
       n = doTr ? graphNodes.transition().duration(500) : graphNodes;
-      n
-	.attr("transform", function(d) { return "translate("
-					 +z*d.x+","+z*d.y+")" } );
+      n.attr("transform", function(d) { return "translate(" +z*d.x+","+z*d.y+")" } );
       // move labels
       l = doTr ? graphLabels.transition().duration(500) : graphLabels;
-      l
-	.attr("transform", function(d) { return "translate("
-					 +z*d.x+","+z*d.y+")" } );
+      l.attr("transform", function(d) { return "translate(" +z*d.x+","+z*d.y+")" } );
     }
 
 
@@ -267,8 +259,7 @@ function D3ok() {
     /* Perform drag
      */
     function dragmove(d) {
-      offset = { x : currentOffset.x + d3.event.dx,
-		 y : currentOffset.y + d3.event.dy };
+      offset = { x : currentOffset.x + d3.event.dx, y : currentOffset.y + d3.event.dy };
       repositionGraph( offset, undefined, 'drag' );
     }
 
@@ -281,13 +272,13 @@ function D3ok() {
     function doZoom( increment ) {
       newZoom = increment === undefined ? d3.event.scale : zoomScale(currentZoom+increment);
       if( currentZoom == newZoom )
-	       return;	// no zoom change
+      return;	// no zoom change
 
        // See if we cross the 'show' threshold in either direction
       if( currentZoom<SHOW_THRESHOLD && newZoom>=SHOW_THRESHOLD )
-	      svg.selectAll("g.label").classed('on',true);
+        svg.selectAll("g.label").classed('on',true);
       else if( currentZoom>=SHOW_THRESHOLD && newZoom<SHOW_THRESHOLD )
-	     svg.selectAll("g.label").classed('on',false);
+        svg.selectAll("g.label").classed('on',false);
 
       // See what is the current graph window size
       s = getViewportSize();
@@ -302,8 +293,6 @@ function D3ok() {
       repositionGraph( newOffset, newZoom, "zoom" );
     }
 
-    zoomCall = doZoom;	// unused, so far
-
     /* --------------------------------------------------------------------- */
 
     /* process events from the force-directed graph */
@@ -311,10 +300,6 @@ function D3ok() {
       repositionGraph(undefined,undefined,'tick');
     });
 
-    /* A small hack to start the graph with a movie pre-selected */
-    mid = getQStringParameterByName('id')
-    if( mid != null )
-      clearAndSelect( mid );
-  });
+  }); // end of function(data)
 
 } // end of D3ok()
