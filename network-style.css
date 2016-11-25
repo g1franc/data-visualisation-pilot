@@ -141,20 +141,33 @@ line.link {
 
 circle {
     cursor: pointer;
-    fill: #325bad;
+}
+
+circle.level1 {
+    fill: #08306b;
+}
+
+circle.level2 {
+    fill: #2171b5;
+}
+
+circle.level3 {
+    fill: #6baed6;
+}
+
+circle.level4 {
+    fill: #c6dbef;
 }
 
 circle.sibling {
-    fill: #ffdb4c;
+    fill: #325bad;
     stroke: #003399;
-
     stroke-width:1;
 }
 
 circle.main {
-    fill: #ffdb4c;
+    fill: #325bad;
     stroke: #003399;
-
     stroke-width:1;
 }
 

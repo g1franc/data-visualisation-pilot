@@ -139,9 +139,9 @@ function D3ok() {
     info +=
     '<img src="close.png" class="action" style="top: 0px;" title="close panel" onClick="toggleDiv(\'countryInfo\');"/>'
     info += '<br/></div><div style="clear: both;">'
-    if( n.score )
-      info += '<div class=f><span class=l>Score</span>: <span class=g>' 
-           + n.score + '</span></div>';
+    if( n.level )
+      info += '<div class=f><span class=l>Level:</span>: <span class=g>' 
+           + n.level + '</span></div>';
     if( n.links ) {
       info += '<div class=f><span class=l>Related to</span>: ';
       n.links.forEach( function(idx) {
@@ -209,6 +209,7 @@ function D3ok() {
         .data( nodeArray, function(d){ return d.id; } )
         .enter().append("svg:circle")
         .attr('id', function(d) { return "c" + d.index; } )
+        .attr('class', function(d) { return 'node level'+d.level;} )
         .attr('r', function(d) { return node_size(d.score || 3); } )
         .attr('pointer-events', 'all')
         .on("click", function(d) { showMoviePanel(d); } )
