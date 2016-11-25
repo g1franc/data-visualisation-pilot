@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Gapminder visualisation</title>
+    <title>Interactive bubble chart</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
@@ -23,20 +23,38 @@
 
 			var data = response.getDataTable();
 
+/*      var dateFormatter = new google.visualization.DateFormat({pattern: "dd/MM/YYYY" }); 
+      dateFormatter.format(data, 1);*/
+      var options = {
+        width: 900,
+        height: 450,
+        hAxis: {
+          minValue: 1000
+        }
+      };
+
       var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
 
-      chart.draw(data, {width: 900, height:450});
+      chart.draw(data, options);
     }
     </script>
   </head>
   <body>
     <div style="padding: auto; width: 100%;">
-      <h1 style="font-family:arial; margin:auto; width:900px;">Gapminder visualisation of Cordis data (FP6, FP7, H2020)</h1>
-        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial;">This chart visualises Cordis data as published by the Publications office on the European Union Open Data Portal.
-      <br>
-        The datasets contain all projects funded by the European Union under the sixth, seventh and Horizon 2020 framework programme for research and technological development. These framework programmes ran from 2002 to 2006, 2007 to 2013, and 2014 to 2020 respectively.
-      <br><br></p>
+      <h1 style="font-family:arial; margin:auto; width:900px;">Interactive bubble chart visualisation of Cordis data (FP6, FP7, H2020)</h1>
+        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial;">
+            Through this page, you can view an interactive visualisation of <a href="http://cordis.europa.eu/home_en.html">Cordis</a> data as published by the <a href="http://publications.europa.eu/en/home">Publications Office</a> of the <a href="http://data.europa.eu/euodp/en/data">European Union Open Data Portal</a>.
+          <br>
+            The datasets contain all projects funded by the European Union under the <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects">sixth</a>, <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects">seventh</a> and <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects">Horizon 2020</a> framework programme for research and technological development. These framework programmes ran from 2002 to 2006, 2007 to 2013, and 2014 to 2020 respectively.
+          <br><br>
+            Each bubble in the below visualisation represents a country. 
+          <br>
+            The size and color of the bubble is determined by the GDP of the country and the number of institutions in the country respectively. The position of the country in the chart is determined by the number of projects with the role coordinator versus the role participant within the country. The timeline below allows to display the evolution between the three framework contracts (FP6, FP7, H2020). All dimensions can be changed using their respective dropdowns.
+        </p>
       <div id="chart_div" style="width: 900px; height: 450px; margin:auto;"></div>
+      <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
+          This visualisation has been developed by <a href="http://www.pwc.be/">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home">Publications Office of the EU</a> using <a href="https://www.gapminder.org/">Gapminder</a>.
+      </p>
     </div>
   </body>
 </html>
