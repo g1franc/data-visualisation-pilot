@@ -2,7 +2,43 @@ body {
     background-color: #fff;
 }
 
+/* HREF links */
+a {
+    color: blue;
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: blue;
+}
+
+/* ....................................................................... */
+/* The top-right side panel and its title child */
+
+div#sidepanel {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+}
+
+/* ....................................................................... */
+/* On/off toggles for the help/info panels */
+
+div.panel_off {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+div.panel_on {
+    visibility: visible;
+    pointer-events: all;
+}
 
 /* ....................................................................... */
 
@@ -31,33 +67,92 @@ div#nocontent h1 {
     font-weight: bold;
 }
 
+/* ....................................................................... */
+/* Country details panel */
+
+div#countryInfo {
+    position: relative;
+    right: 4px;
+    cursor: text;
+    width: 300px;
+    z-index: 1000;
+    background: #e5eaf4;
+    border: solid 1px #aaa;
+    border-radius: 8px;    
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;    
+    padding: 4px;
+    text-align: right;
+}
+
+div#countryInfo div#cover {
+    text-align: left; 
+    height: 100px;
+}
+
+div#countryInfo div.t {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div#countryInfo img.cover {
+    margin-bottom: 6px;
+    position: absolute;
+    right: 3px;
+}
+
+div#countryInfo img.action {
+    cursor: pointer;
+    position: absolute;
+}
+
+div#countryInfo div.f {
+    border-top: 1px dotted #8E5981;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+div#countryInfo span.d {
+    font-weight: bold;
+}
+
+div#countryInfo span.c {
+    font-style: italic;
+}
+
+div#countryInfo span.l {
+    font-size: 11px;
+    color: #000;
+    font-variant: small-caps;
+}
+
 
 /* ....................................................................... */
 /* SVG elements */
 
-div#movieNetwork svg {
+div#chartID svg {
     background-color: white;
     cursor: move;
 }
 
 line.link {
-    stroke: #FFCC00;
+    stroke: #ffdb4c;
 }
 
 circle {
-    cursor: default;
-    fill: #003399;
+    cursor: pointer;
+    fill: #325bad;
 }
 
 circle.sibling {
-    fill: #FFCC00;
+    fill: #ffdb4c;
     stroke: #003399;
 
     stroke-width:1;
 }
 
 circle.main {
-    fill: #FFCC00;
+    fill: #ffdb4c;
     stroke: #003399;
 
     stroke-width:1;
@@ -97,4 +192,6 @@ text.nshadow {
 text.main {
     font: 12px sans-serif;
     font-weight: bold;
+}
+
 }

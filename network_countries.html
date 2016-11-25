@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Country Network</title>
     <link rel="stylesheet" href="network-style.css"/>
-    <link rel="shortcut icon" href="popcha.ico" type="image/x-icon">
+
     <script>
       // Sniff MSIE version
       // http://james.padolsey.com/javascript/detect-ie-in-js-using-conditional-comments/
@@ -21,19 +21,20 @@
 
       function takeAction() {
         if( ie && ie < 9 ) {
-	  D3notok();
+          D3notok();
         } else {
           // Load D3.js, and once loaded do our stuff
           var head = document.getElementsByTagName('head')[0];
           var script = document.createElement('script');
           script.type = 'text/javascript';
-	  script.src = "http://d3js.org/d3.v3.min.js";
+          script.src = "http://d3js.org/d3.v3.min.js";
           script.addEventListener('load', D3ok, false);
           script.onload = "D3ok();";
-	  head.appendChild(script);
+          head.appendChild(script);
        }
      }
     </script>
+
 </head>
 <body onload="takeAction();">
 
@@ -70,9 +71,13 @@
           <option value="FP6">FP6</option>
           <option value="FP7">FP7</option>
           <option value="H2020">H2020</option>
-        </select> 
+        </select>
 
         <div id="chartID"></div>
+        <div id="sidepanel">
+          <div id="countryInfo" class="panel_off"></div>
+        </div>
+
 
         <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
           This visualisation has been developed by <a href="http://www.pwc.be/">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home">Publications Office of the EU</a> using <a href="https://d3js.org/">dr.js</a>.

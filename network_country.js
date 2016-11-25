@@ -15,6 +15,8 @@ function D3notok() {
 // they are attached to static code in HTML. But we cannot define them yet
 // since they need D3.js stuff. So we put placeholders.
 
+// Highlight a movie in the graph. It is a closure within the d3.json() call.
+var selectMovie = undefined;
 
 // Change status of a panel from visible to hidden or viceversa
 var toggleDiv = undefined;
@@ -38,7 +40,7 @@ function D3ok() {
       SHOW_THRESHOLD = 2.5;
 
   // Variables keeping graph state
-  var activeMovie = undefined;
+  var activeCountry = undefined;
   var currentOffset = { x : 0, y : 0 };
   var currentZoom = 1.0;
 
@@ -76,6 +78,8 @@ function D3ok() {
     .attr("viewBox", "0 0 " + WIDTH + " " + HEIGHT )
     .attr("preserveAspectRatio", "xMidYMid meet");
 
+  CountryInfoDiv = d3.select("#countryInfo");
+
   /* ....................................................................... */
 
   // Get the current size & offset of the browser's viewport window
@@ -102,6 +106,51 @@ function D3ok() {
   function getQStringParameterByName(name) {
     var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
     return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+  }
+
+  /* Change status of a panel from visible to hidden or viceversa
+     id: identifier of the div to change
+     status: 'on' or 'off'. If not specified, the panel will toggle status
+  */
+  toggleDiv = function( id, status ) {
+    d = d3.select('div#'+id);
+    console.log( 'TOGGLE', id, d.attr('class'), '->', status );
+    if( status === undefined )
+      status = d.attr('class') == 'panel_on' ? 'off' : 'on';
+    d.attr( 'class', 'panel_' + status );
+    return false;
+  }
+
+  /* Select a country in the network and in the country details panel
+  */
+  clearAndSelect = function (id) {
+    selectMovie(id,true); // we use here the selectMovie() closure
+  }
+
+  /* Compose the content for the panel with country details.
+     Parameters: the node data, and the array containing all nodes
+  */
+  function getCountryInfo( n, nodeArray ) {
+    info = '<div id="cover">';
+    if( n.cover )
+      info += '<img class="cover" height="300" src="' + n.cover + '" title="' + n.label + '"/>';
+    else
+      info += '<div class=t style="float: right">' + n.label + '</div>';
+    info +=
+    '<img src="close.png" class="action" style="top: 0px;" title="close panel" onClick="toggleDiv(\'countryInfo\');"/>'
+    info += '<br/></div><div style="clear: both;">'
+    if( n.score )
+      info += '<div class=f><span class=l>Score</span>: <span class=g>' 
+           + n.score + '</span></div>';
+    if( n.links ) {
+      info += '<div class=f><span class=l>Related to</span>: ';
+      n.links.forEach( function(idx) {
+  info += '[<a href="javascript:void(0);" onclick="selectMovie('  
+       + idx + ',true);">' + nodeArray[idx].label + '</a>]'
+      });
+      info += '</div>';
+    }
+    return info;
   }
 
 
@@ -162,6 +211,7 @@ function D3ok() {
         .attr('id', function(d) { return "c" + d.index; } )
         .attr('r', function(d) { return node_size(d.score || 3); } )
         .attr('pointer-events', 'all')
+        .on("click", function(d) { showMoviePanel(d); } )
         .on("mouseover", function(d) { highlightGraphNode(d,true,this);  } )
         .on("mouseout",  function(d) { highlightGraphNode(d,false,this); } );
 
@@ -198,6 +248,14 @@ function D3ok() {
       */
       function highlightGraphNode( node, on )
       {
+        // If we are to activate a movie, and there's already one active,
+        // first switch that one off
+        if( on && activeCountry !== undefined ) {
+          console.log("..clear: ",activeCountry);
+          highlightGraphNode( nodeArray[activeCountry], false );
+          console.log("..cleared: ",activeCountry); 
+        }
+
         // locate the SVG nodes: circle & label group
         circle = d3.select( '#c' + node.index );
         label  = d3.select( '#l' + node.index );
@@ -215,6 +273,43 @@ function D3ok() {
         	label.selectAll('text.nlabel').classed( 'sibling', on );
         });
 
+        // set the value for the current active movie
+        activeCountry = on ? node.index : undefined;
+        console.log("SHOWNODE finished: "+node.index+" = "+on );
+      }
+
+    /* --------------------------------------------------------------------- */
+    /* Show the details panel for a movie AND highlight its node in 
+       the graph. Also called from outside the d3.json context.
+       Parameters:
+       - new_idx: index of the movie to show
+       - doMoveTo: boolean to indicate if the graph should be centered
+         on the movie
+    */
+    selectMovie = function( new_idx, doMoveTo ) {
+      
+      // do we want to center the graph on the node?
+      doMoveTo = doMoveTo || false;
+      if( doMoveTo ) {
+        s = getViewportSize();
+        width  = s.w<WIDTH ? s.w : WIDTH;
+        height = s.h<HEIGHT ? s.h : HEIGHT;
+        offset = { x : s.x + width/2  - nodeArray[new_idx].x*currentZoom,
+                y : s.y + height/2 - nodeArray[new_idx].y*currentZoom };
+        repositionGraph( offset, undefined, 'move' );
+      }
+      // Now highlight the graph node and show its movie panel
+      highlightGraphNode( nodeArray[new_idx], true );
+      showMoviePanel( nodeArray[new_idx] );
+    }
+
+
+    /* --------------------------------------------------------------------- */
+    /* Show the movie details panel for a given node
+     */
+    function showMoviePanel( node ) {
+      // Fill it and display the panel
+      CountryInfoDiv.html( getCountryInfo(node,nodeArray) ).attr("class","panel_on");
     }
 
 
@@ -223,6 +318,7 @@ function D3ok() {
        - on node repositioning (as result of a force-directed iteration)
        - on translations (user is panning)
        - on zoom changes (user is zooming)
+       - on explicit node highlight (user clicks in a movie panel link)
        Set also the values keeping track of current offset & zoom values
     */
     function repositionGraph( off, z, mode ) {
