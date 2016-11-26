@@ -1,3 +1,4 @@
+#Scripts/GenerateJSON.py Output/NbLink.csv Output/CountryInformation.csv
 import sys
 import json
 
