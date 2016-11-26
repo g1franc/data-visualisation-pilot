@@ -2,15 +2,22 @@ import sys
 import json
 
 class JNode:
-    def __init__(self, index, links, label):
-        self.index = index
-        self.links = links
-        self.label = label
-        self.score = 7 #same bubble size for all
-        self.id = index
-
-    def toJSON(self):
-        return json.dumps({'index':self.index,'links':self.links,'label':self.label,'score':self.score,'id':self.index},separators=(',', ':'),indent=4)
+	def __init__(self, index, links, line):
+		self.index = index
+		self.links = links
+		self.label = line[1]
+		self.NumberProjectParticipation = line[3]
+		self.NumberProjectCoordination = line[4]
+		self.OverallNumberProject = line[5]
+		self.NumberInstitution = line[6]
+		self.FullName = line[8]
+		self.GDP = line[11]
+		self.Population = line[12]
+		self.GDPPerCapita = line[13]
+		self.score = 7 #same bubble size for all
+		self.id = index
+	def toJSON(self):
+		return json.dumps({'index':self.index,'links':self.links,'label':self.label,'NumberProjectParticipation':self.NumberProjectParticipation,'NumberProjectCoordination':self.NumberProjectCoordination,'OverallNumberProject':self.OverallNumberProject,'NumberInstitution':self.NumberInstitution,'FullName':self.FullName,'GDP':self.GDP,'Population':self.Population,'GDPPerCapita':self.GDPPerCapita,'score':self.score,'id':self.index},separators=(',', ':'),indent=4)
 
 class JLink:
     def __init__(self, source, target, weight):
@@ -24,9 +31,16 @@ class JLink:
 
 sepChar = ';'
 
-countriesList = [];
-nodesList = [];
-linksList = [];
+countriesListFP6 = [];
+countriesListFP7 = [];
+countriesListH2020 = [];
+nodesListFP6 = [];
+nodesListFP7 = [];
+nodesListH2020 = [];
+
+linksListFP6 = [];
+linksListFP7 = [];
+linksListH2020 = [];
 
 FileLink = sys.argv[1]
 FileCountry = sys.argv[2]
@@ -35,39 +49,66 @@ FileCountry = sys.argv[2]
 linesLink = [line.rstrip('\n') for line in open(FileLink)]
 linesCountry = [line.rstrip('\n') for line in open(FileCountry)]
 
-print len(linesCountry)
+
 for i in range(1, len(linesCountry)):
 	lineList = linesCountry[i].split(sepChar)
-	countriesList.append(lineList[1])
-	nodesList.append(JNode(len(countriesList)-1,[],lineList[1]))
+	framework = lineList[2]
+	if framework == "FP6": 
+		countriesListFP6.append(lineList[1])
+		nodesListFP6.append(JNode(len(countriesListFP6)-1,[],lineList))
+	elif framework == "FP7":
+		countriesListFP7.append(lineList[1])
+		nodesListFP7.append(JNode(len(countriesListFP7)-1,[],lineList))
+	else:
+		countriesListH2020.append(lineList[1])
+		nodesListH2020.append(JNode(len(countriesListH2020)-1,[],lineList))
 
 
-#for i in range(1, len(linesLink)):
-#    lineList = linesLink[i].split(sepChar)
-#    if(lineList[2] != lineList[3]):
-#        #node
-#        currentCountryIndex = countriesList.index(lineList[2])
-#        cNode = nodesList[currentCountryIndex]
-#        cNode.links.append(countriesList.index(lineList[3]))
-#        #link
-#        linksList.append(JLink(cNode.index, countriesList.index(lineList[3]), float(lineList[5])))
+for i in range(1, len(linesLink)):
+	lineList = linesLink[i].split(sepChar)
+	if(lineList[1] != lineList[2]):
+		#node
+		framework = lineList[4]
+		if framework == "FP6": 
+			currentCountryIndex = countriesListFP6.index(lineList[1])
+			cNode = nodesListFP6[currentCountryIndex]
+			cNode.links.append(countriesListFP6.index(lineList[2]))
+			linksListFP6.append(JLink(cNode.index, countriesListFP6.index(lineList[2]), float(lineList[5])))
+		elif framework == "FP7": 
+			currentCountryIndex = countriesListFP7.index(lineList[1])
+			cNode = nodesListFP7[currentCountryIndex]
+			cNode.links.append(countriesListFP7.index(lineList[2]))
+			linksListFP7.append(JLink(cNode.index, countriesListFP7.index(lineList[2]), float(lineList[5])))
+		else:
+			currentCountryIndex = countriesListH2020.index(lineList[1])
+			cNode = nodesListH2020[currentCountryIndex]
+			cNode.links.append(countriesListH2020.index(lineList[2]))
+			linksListH2020.append(JLink(cNode.index, countriesListH2020.index(lineList[2]), float(lineList[5])))
 
 #write JSON output file
-outputName = "output"
-outputFile = open(outputName, 'w')
+def WriteJSON(nameOutputFile, nodelist, linksList):
+	outputName = nameOutputFile
+	outputFile = open(outputName, 'w')
+	outputFile.write('{\n')
+	outputFile.write('"nodes": [\n');
+	for i in range(len(nodelist)-1):
+		outputFile.write(nodelist[i].toJSON())
+		outputFile.write(',\n')
+	outputFile.write(nodelist[len(nodelist)-1].toJSON())
+	outputFile.write('\n')
+	outputFile.write('],\n')
+	outputFile.write('"links":[\n')
+	for i in range(len(linksList)-1):
+		outputFile.write(linksList[i].toJSON())
+		outputFile.write(',\n')
+	outputFile.write(linksList[len(linksList)-1].toJSON())
+	outputFile.write(']\n')
+	outputFile.write('}')
 
-outputFile.write('{\n')
-outputFile.write('"nodes": [\n');
-for i in range(len(nodesList)-1):
-    outputFile.write(nodesList[i].toJSON())
-    outputFile.write(',\n')
-#outputFile.write(nodesList[len(nodesList)-1].toJSON())
-#outputFile.write('\n')
-#outputFile.write('],\n')
-#outputFile.write('"links":[\n')
-#for i in range(len(linksList)-1):
-#    outputFile.write(linksList[i].toJSON())
-#    outputFile.write(',\n')
-#outputFile.write(linksList[len(linksList)-1].toJSON())
-#outputFile.write(']\n')
-#outputFile.write('}')
+
+
+WriteJSON("output/FP6.json",nodesListFP6, linksListFP6)
+WriteJSON("output/FP7.json",nodesListFP7, linksListFP7)
+WriteJSON("output/H2020.json",nodesListH2020, linksListH2020)
+
+
