@@ -84,9 +84,7 @@ func_BuildLink <- function() {
                                   "Group.2" = "Org2",
                                   "x" = "nbLinkTmp"))
   
-  tmp <-rep(frameworkContract,length(output$Group.1))
-  output["frameworkContract"]<- tmp
-  
+
   return(output)
 }
 
