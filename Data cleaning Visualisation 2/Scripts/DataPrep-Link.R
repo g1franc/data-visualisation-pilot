@@ -14,8 +14,7 @@ frameworkContract <- c("FP6", "FP7", "H2020")
 
 #set current directory
 setwd("C:/Users/vandeloc/Documents/Documents/08 Cordis/Data cleaning Visualisation 1")
-setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/1 - Cordis/2")
-
+setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/1 - Cordis/3/data-visualisation-pilot/Data cleaning Visualisation 2")
 
 ### Load datasets
 # FP6: https://data.europa.eu/euodp/data/dataset/cordisfp6projects
@@ -81,13 +80,12 @@ func_BuildLink <- function(frameworkContract, dataset) {
   
   dataset$ListCountries <- sapply(dataset$ListCountries, func_createPair)
 
-  ##################################################
   data <- list()
   for (i in 1:nrow(dataset)) {
     data[[i]] =func_createFrame(dataset[i,])
   }
   tmp <- do.call(rbind, data)
-  ############################################################
+
   output <-data.frame(tmp)
   output<-aggregate(output$X1,
                     by=list(output$X1, output$X2),
@@ -100,8 +98,13 @@ func_BuildLink <- function(frameworkContract, dataset) {
   
   tmp <-rep(frameworkContract,length(output$Group.1))
   output["frameworkContract"]<- tmp
-
-  output[output$country1=="BE", ]
+  
+  output$ValidCountry1 <- sapply(output$country1, function (x) any(x %in% Dataset_Countries$euCode))
+  output$ValidCountry2 <- sapply(output$country2, function (x) any(x %in% Dataset_Countries$euCode))
+  output <- output[output$ValidCountry1,]
+  output <- output[output$ValidCountry2,]
+  output <- subset(output, select=-c(ValidCountry1, ValidCountry2))
+  
   return(output)
 }
 
@@ -252,12 +255,11 @@ Dataset_link <- func_addWeight(Dataset_link)
 
 
 options(scipen = 10)
-write.table(Dataset_link, "output/NbLink.csv", sep = ";")
+write.table(Dataset_link, "output/NbLink.csv", sep = ";", quote = FALSE)
 options(scipen = 0)
 
-
-write.table(func_projPerCountry(), "output/CountryInformation.csv", sep = ";")
-
+Dataset_CountryInformation <- func_projPerCountry()
+write.table(Dataset_CountryInformation, "output/CountryInformation.csv", sep = ";", quote = FALSE)
 
 
 

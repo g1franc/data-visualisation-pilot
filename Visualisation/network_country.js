@@ -16,7 +16,7 @@ function D3notok() {
 // since they need D3.js stuff. So we put placeholders.
 
 // Highlight a movie in the graph. It is a closure within the d3.json() call.
-var selectMovie = undefined;
+var SelectCountry = undefined;
 
 // Change status of a panel from visible to hidden or viceversa
 var toggleDiv = undefined;
@@ -42,7 +42,7 @@ function D3ok() {
   // Variables keeping graph state
   var activeCountry = undefined;
   var currentOffset = { x : 0, y : 0 };
-  var currentZoom = 1.0;
+  var currentZoom = 1;
 
   // The D3.js scales
   var xScale = d3.scale.linear()
@@ -124,7 +124,7 @@ function D3ok() {
   /* Select a country in the network and in the country details panel
   */
   clearAndSelect = function (id) {
-    selectMovie(id,true); // we use here the selectMovie() closure
+    SelectCountry(id,true); // we use here the SelectCountry() closure
   }
 
   /* Compose the content for the panel with country details.
@@ -145,7 +145,7 @@ function D3ok() {
     if( n.links ) {
       info += '<div class=f><span class=l>Related to</span>: ';
       n.links.forEach( function(idx) {
-  info += '[<a href="javascript:void(0);" onclick="selectMovie('  
+  info += '[<a href="javascript:void(0);" onclick="SelectCountry('  
        + idx + ',true);">' + nodeArray[idx].label + '</a>]'
       });
       info += '</div>';
@@ -192,7 +192,6 @@ function D3ok() {
   	      .on("zoom", doZoom) );
 
       // ------- Create the elements of the layout (links and nodes) ------
-
       var networkGraph = svg.append('svg:g').attr('class','grpParent');
 
       // links: simple lines
@@ -287,7 +286,7 @@ function D3ok() {
        - doMoveTo: boolean to indicate if the graph should be centered
          on the movie
     */
-    selectMovie = function( new_idx, doMoveTo ) {
+    SelectCountry = function( new_idx, doMoveTo ) {
       
       // do we want to center the graph on the node?
       doMoveTo = doMoveTo || false;
@@ -339,9 +338,9 @@ function D3ok() {
 
       // zoom: get new value of zoom
       if( z === undefined ) {
+        z = currentZoom;
         if( mode != 'tick' )
         return;	// no zoom, no tick, we don't need to go further
-        z = currentZoom;
       }
       else
         currentZoom = z;

@@ -53,7 +53,7 @@ linesCountry = [line.rstrip('\n') for line in open(FileCountry)]
 for i in range(1, len(linesCountry)):
 	lineList = linesCountry[i].split(sepChar)
 	framework = lineList[2]
-	if framework == "FP6": 
+	if (framework=="FP6"):
 		countriesListFP6.append(lineList[1])
 		nodesListFP6.append(JNode(len(countriesListFP6)-1,[],lineList))
 	elif framework == "FP7":
@@ -107,8 +107,8 @@ def WriteJSON(nameOutputFile, nodelist, linksList):
 
 
 
-WriteJSON("output/FP6.json",nodesListFP6, linksListFP6)
-WriteJSON("output/FP7.json",nodesListFP7, linksListFP7)
-WriteJSON("output/H2020.json",nodesListH2020, linksListH2020)
+WriteJSON("outputJS/FP6.json",nodesListFP6, linksListFP6)
+WriteJSON("outputJS/FP7.json",nodesListFP7, linksListFP7)
+WriteJSON("outputJS/H2020.json",nodesListH2020, linksListH2020)
 
 
