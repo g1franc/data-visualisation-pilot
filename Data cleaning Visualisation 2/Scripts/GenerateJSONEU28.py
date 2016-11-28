@@ -1,6 +1,11 @@
-#Scripts/GenerateJSON.py Output/NbLink.csv Output/CountryInformation.csv
+#py Scripts/GenerateJSONEU28.py Output/NbLink.csv Output/CountryInformation.csv
 import sys
 import json
+
+maxNbrProjectsFP6 = 1
+maxNbrProjectsFP7 = 1
+maxNbrProjectsH2020 = 1
+maxBubblesize = 20
 
 class JNode:
 	def __init__(self, index, links, line):
@@ -15,8 +20,14 @@ class JNode:
 		self.GDP = line[11]
 		self.Population = line[12]
 		self.GDPPerCapita = line[13]
-		self.score = 7 #same bubble size for all
+		if(line[2] == "FP6"):
+			self.score = (((float(line[5]) - 1)*(maxBubblesize - 1)) / (maxNbrProjectsFP6 - 1)) + 1
+		elif(line[2] == "FP7"):
+			self.score = (((float(line[5]) - 1)*(maxBubblesize - 1)) / (maxNbrProjectsFP7 - 1)) + 1
+		else:
+			self.score = (((float(line[5]) - 1)*(maxBubblesize - 1)) / (maxNbrProjectsH2020 - 1)) + 1
 		self.id = index
+
 	def toJSON(self):
 		return json.dumps({'index':self.index,'links':self.links,'label':self.label,'NumberProjectParticipation':self.NumberProjectParticipation,'NumberProjectCoordination':self.NumberProjectCoordination,'OverallNumberProject':self.OverallNumberProject,'NumberInstitution':self.NumberInstitution,'FullName':self.FullName,'GDP':self.GDP,'Population':self.Population,'GDPPerCapita':self.GDPPerCapita,'score':self.score,'id':self.index},separators=(',', ':'),indent=4)
 
@@ -50,6 +61,17 @@ FileCountry = sys.argv[2]
 linesLink = [line.rstrip('\n') for line in open(FileLink)]
 linesCountry = [line.rstrip('\n') for line in open(FileCountry)]
 
+for i in range(1, len(linesCountry)):
+	lineList = linesCountry[i].split(sepChar)
+	if lineList[2] == "FP6":
+		if(float(lineList[5]) > maxNbrProjectsFP6):
+			maxNbrProjectsFP6 = float(lineList[5])
+	elif lineList[2] == "FP7":
+		if(float(lineList[5]) > maxNbrProjectsFP7):
+			maxNbrProjectsFP7 = float(lineList[5])
+	else:
+		if(float(lineList[5]) > maxNbrProjectsH2020):
+			maxNbrProjectsH2020 = float(lineList[5])
 
 for i in range(1, len(linesCountry)):
 	lineList = linesCountry[i].split(sepChar)
@@ -73,12 +95,12 @@ for i in range(1, len(linesLink)):
 		#node
 		framework = lineList[4]
 		try:
-			if framework == "FP6": 
+			if framework == "FP6":
 				currentCountryIndex = countriesListFP6.index(lineList[1])
 				cNode = nodesListFP6[currentCountryIndex]
 				cNode.links.append(countriesListFP6.index(lineList[2]))
 				linksListFP6.append(JLink(cNode.index, countriesListFP6.index(lineList[2]), float(lineList[5])))
-			elif framework == "FP7": 
+			elif framework == "FP7":
 				currentCountryIndex = countriesListFP7.index(lineList[1])
 				cNode = nodesListFP7[currentCountryIndex]
 				cNode.links.append(countriesListFP7.index(lineList[2]))
@@ -116,5 +138,3 @@ def WriteJSON(nameOutputFile, nodelist, linksList):
 WriteJSON("outputJS/FP6EU28.json",nodesListFP6, linksListFP6)
 WriteJSON("outputJS/FP7EU28.json",nodesListFP7, linksListFP7)
 WriteJSON("outputJS/H2020EU28.json",nodesListH2020, linksListH2020)
-
-

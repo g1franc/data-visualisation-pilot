@@ -5,7 +5,7 @@ import json
 maxNbrProjectsFP6 = 1
 maxNbrProjectsFP7 = 1
 maxNbrProjectsH2020 = 1
-maxBubblesize = 50
+maxBubblesize = 20
 
 class JNode:
 	def __init__(self, index, links, line):
