@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Country Network</title>
+    <link rel="stylesheet" href="network-style.css"/>
+
+    <script>
+      // Sniff MSIE version
+      // http://james.padolsey.com/javascript/detect-ie-in-js-using-conditional-comments/
+      var ie = ( function() {
+        var undef,
+        v = 3,
+        div = document.createElement('div'),
+        all = div.getElementsByTagName('i');
+        while (
+         div.innerHTML='<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',all[0]
+        );
+        return v > 4 ? v : undef;
+      }() );
+
+      function takeAction() {
+        if( ie && ie < 9 ) {
+          D3notok();
+        } else {
+          // Load D3.js, and once loaded do our stuff
+          var head = document.getElementsByTagName('head')[0];
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = "http://d3js.org/d3.v3.min.js";
+          script.addEventListener('load', D3ok, false);
+          script.onload = "D3ok();";
+          head.appendChild(script);
+       }
+     }
+    </script>
+
+</head>
+<body onload="takeAction();">
+
+    <div id="nocontent" style="padding: auto; width: 100%;">
+      <h1 style="font-family:arial; margin:auto; width:900px;">Sadly your browser is not compatible with this site</h1>
+
+      <div>
+        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify;">
+          You can use <a href="http://www.google.com/chrome/">Google
+          Chrome</a>, <a href="http://www.mozilla.org/firefox">Mozilla Firefox</a>
+          or <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Microsoft
+          Internet Explorer (v9 or above)</a> to access the visualisation
+        </p>
+      </div>
+
+    </div>
+
+    <div style="padding: auto; width: 100%;">
+      <div style="width:900px; margin:auto;">
+        <h1 style="font-family:arial; margin:auto; width:900px;">
+          Network visualisation of Cordis data (FP6, FP7, H2020)
+        </h1>
+        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial;">
+            Through this page, you can view an interactive visualisation of <a href="http://cordis.europa.eu/home_en.html">Cordis</a> data as published by the <a href="http://publications.europa.eu/en/home">Publications Office</a> of the <a href="http://data.europa.eu/euodp/en/data">European Union Open Data Portal</a>.
+          <br>
+            The datasets contain all projects funded by the European Union under the <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects">sixth</a>, <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects">seventh</a> and <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects">Horizon 2020</a> framework programme for research and technological development. These framework programmes ran from 2002 to 2006, 2007 to 2013, and 2014 to 2020 respectively.
+          <br>
+            The visualisation below shows the strength of collaboration between the different countries. The closer together the countries are, the more projects they have worked on together under the selected framework programme, and vice versa.
+          <br><br>
+            Select a framework programme:
+        </p>
+
+        <select id="contractDropdown" onchange="contractSelected(this)" style="margin-bottom: 15px;">
+          <option value="FP6">FP6</option>
+          <option value="FP7">FP7</option>
+          <option value="H2020">H2020</option>
+        </select>
+
+        <div id="chartID"></div>
+        <div id="sidepanel">
+          <div id="countryInfo" class="panel_off"></div>
+        </div>
+
+        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
+          The number of institutions for FP6 and FP7 is based on the data published on ... and may contain some errors.
+        </p>
+        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
+          This visualisation has been developed by <a href="http://www.pwc.be/">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home">Publications Office of the EU</a> using <a href="https://d3js.org/">d3.js</a>.
+        </p>
+      </div>
+    </div>
+
+    <script src="network_country.js"></script>
+</body>
+</html>
