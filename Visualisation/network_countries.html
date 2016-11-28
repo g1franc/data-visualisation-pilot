@@ -39,10 +39,10 @@
 <body onload="takeAction();">
 
     <div id="nocontent" style="padding: auto; width: 100%;">
-      <h1 style="font-family:arial; margin:auto; width:900px;">Sadly your browser is not compatible with this site</h1>
+      <h1 style="font-family:arial; margin:auto; width:1000px;">Sadly your browser is not compatible with this site</h1>
 
       <div>
-        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify;">
+        <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify;">
           You can use <a href="http://www.google.com/chrome/">Google
           Chrome</a>, <a href="http://www.mozilla.org/firefox">Mozilla Firefox</a>
           or <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Microsoft
@@ -53,35 +53,57 @@
     </div>
 
     <div style="padding: auto; width: 100%;">
-      <div style="width:900px; margin:auto;">
-        <h1 style="font-family:arial; margin:auto; width:900px;">
+      <div style="width:1000px; margin:auto;">
+        <h1 style="font-family:arial; margin:auto; width:1000px;">
           Network visualisation of Cordis data (FP6, FP7, H2020)
         </h1>
-        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial;">
+        <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial;">
             Through this page, you can view an interactive visualisation of <a href="http://cordis.europa.eu/home_en.html">Cordis</a> data as published by the <a href="http://publications.europa.eu/en/home">Publications Office</a> of the <a href="http://data.europa.eu/euodp/en/data">European Union Open Data Portal</a>.
           <br>
             The datasets contain all projects funded by the European Union under the <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects">sixth</a>, <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects">seventh</a> and <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects">Horizon 2020</a> framework programme for research and technological development. These framework programmes ran from 2002 to 2006, 2007 to 2013, and 2014 to 2020 respectively.
           <br>
             The visualisation below shows the strength of collaboration between the different countries. The closer together the countries are, the more projects they have worked on together under the selected framework programme, and vice versa.
           <br><br>
-            Select a framework programme:
         </p>
 
-        <select id="contractDropdown" onchange="contractSelected(this)" style="margin-bottom: 15px;">
-          <option value="FP6">FP6</option>
-          <option value="FP7">FP7</option>
-          <option value="H2020">H2020</option>
-        </select>
+        <div style="width:1000px; margin:auto; margin-bottom: 15px; height:25px;">
+          <div style="float:left;">
+            <div style="text-align: justify; font-family:arial;">
+              Select a framework programme:
+            </div>
+          </div>
+          <div style="float:left;">
+            <select id="contractDropdown" onchange="contractSelected(this)" style="margin-left:10px;">
+              <option value="FP6">FP6</option>
+              <option value="FP7">FP7</option>
+              <option value="H2020">H2020</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="width:1000px; margin:auto; margin-bottom: 15px; height:25px;">
+          <div style="float:left;">
+            <div style="text-align: justify; font-family:arial;">
+              Select a set of countries:
+            </div>
+          </div>
+          <div style="float:left;">
+            <select id="countryDropdown" onchange="countrySelected(this)" style="margin-left:10px;">
+              <option value="">All countries</option>
+              <option value="EU28">EU28</option>
+            </select>
+          </div>
+        </div>
 
         <div id="chartID"></div>
         <div id="sidepanel">
           <div id="countryInfo" class="panel_off"></div>
         </div>
 
-        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
+        <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
           The number of institutions for FP6 and FP7 is based on the data published on ... and may contain some errors.
         </p>
-        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
+        <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
           This visualisation has been developed by <a href="http://www.pwc.be/">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home">Publications Office of the EU</a> using <a href="https://d3js.org/">d3.js</a>.
         </p>
       </div>

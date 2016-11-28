@@ -78,21 +78,25 @@ div#countryInfo {
     z-index: 1000;
     background: #e5eaf4;
     border: solid 1px #aaa;
-    border-radius: 8px;    
+    border-radius: 8px;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 10px;    
+    font-size: 10px;
     padding: 4px;
     text-align: right;
 }
 
 div#countryInfo div#cover {
-    text-align: left; 
-    height: 100px;
+    text-align: left;
+    height: 50px;
 }
 
 div#countryInfo div.t {
     font-size: 14px;
     font-weight: bold;
+}
+
+div#contryDetails {
+  font-weight: normal;
 }
 
 div#countryInfo img.cover {

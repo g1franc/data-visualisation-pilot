@@ -29,20 +29,23 @@ var zoomCall = undefined;
 var e = document.getElementById("contractDropdown");
 var currentContract = e.options[e.selectedIndex].value;
 
+e = document.getElementById("countryDropdown");
+var currentCountrySelection = e.options[e.selectedIndex].value;
+
 // -------------------------------------------------------------------
 
 // Do the stuff -- to be called after D3.js has loaded
 function D3ok() {
 
   // Some constants
-  var WIDTH = 960,
-      HEIGHT = 600,
-      SHOW_THRESHOLD = 2.5;
+  var WIDTH = 1000,
+      HEIGHT = 700,
+      SHOW_THRESHOLD = 1;
 
   // Variables keeping graph state
   var activeCountry = undefined;
-  var currentOffset = { x : 0, y : 0 };
-  var currentZoom = 1;
+  var currentOffset = { x : 5000, y : 5000 };
+  var currentZoom = 0.5;
 
   // The D3.js scales
   var xScale = d3.scale.linear()
@@ -52,8 +55,8 @@ function D3ok() {
     .domain([0, HEIGHT])
     .range([0, HEIGHT]);
   var zoomScale = d3.scale.linear()
-    .domain([1,6])
-    .range([1,6])
+    .domain([1,10])
+    .range([1,10])
     .clamp(true);
 
 /* .......................................................................... */
@@ -67,7 +70,7 @@ function D3ok() {
   var myNode = document.getElementById("chartID");
   while (myNode.firstChild) {
       myNode.removeChild(myNode.firstChild);
-  } 
+  }
 
   // Add to the page the SVG element that will contain the network
   var svg = d3.select("#chartID").append("svg:svg")
@@ -133,19 +136,40 @@ function D3ok() {
   function getCountryInfo( n, nodeArray ) {
     info = '<div id="cover">';
     if( n.cover )
-      info += '<img class="cover" height="300" src="' + n.cover + '" title="' + n.label + '"/>';
+      info += '<img class="cover" height="300" src="' + n.cover + '" title="' + n.FullName + '"/>';
     else
-      info += '<div class=t style="float: right">' + n.label + '</div>';
+      info += '<div class=t style="float: right">' + n.FullName + '</div>';
     info +=
     '<img src="close.png" class="action" style="top: 0px;" title="close panel" onClick="toggleDiv(\'countryInfo\');"/>'
-    info += '<br/></div><div style="clear: both;">'
-    if( n.level )
-      info += '<div class=f><span class=l>Level:</span>: <span class=g>' 
-           + n.level + '</span></div>';
+    info += '<br/></div>';
+    info +='<div style="margin-bottom:15px; margin-left:8px; height:85px; text-align:left;">'
+    if(n.GDP != "NA") {
+      info += '<div>GDP: ' + n.GDP + '</div>';
+    }
+    if(n.NumberProjectParticipation != "NA") {
+      info += '<div>Number of project participations: ' + n.NumberProjectParticipation + '</div>';
+    }
+    if(n.OverallNumberProject != "NA") {
+      info += '<div>Overall number of projects: ' + n.NumberProjectParticipation + '</div>';
+    }
+    if(n.GDPPerCapita != "NA") {
+      info += '<div>GDP per capita: ' + n.GDPPerCapita + '</div>';
+    }
+    if(n.NumberInstitution != "NA") {
+      info += '<div>Number of institutions: ' + n.NumberInstitution + '</div>';
+    }
+    if(n.Population != "NA") {
+      info += '<div>Population: ' + n.Population + '</div>';
+    }
+    info +="</div>";
+    info +='<div style="clear: both;">';
+    /*if( n.level )
+      info += '<div class=f><span class=l>Level:</span>: <span class=g>'
+           + n.level + '</span></div>';*/
     if( n.links ) {
       info += '<div class=f><span class=l>Related to</span>: ';
       n.links.forEach( function(idx) {
-  info += '[<a href="javascript:void(0);" onclick="SelectCountry('  
+  info += '[<a href="javascript:void(0);" onclick="SelectCountry('
        + idx + ',true);">' + nodeArray[idx].label + '</a>]'
       });
       info += '</div>';
@@ -156,7 +180,7 @@ function D3ok() {
 
   // *************************************************************************
 
-  var datafile = currentContract+'.json'
+  var datafile = './data/'+currentContract+currentCountrySelection+'.json'
 
   d3.json(
     datafile,
@@ -175,8 +199,8 @@ function D3ok() {
 
       // A couple of scales for node radius & edge width
       var node_size = d3.scale.linear()
-        .domain([5,10])	// we know score is in this domain
-        .range([1,16])
+        .domain([0,50])	// we know score is in this domain
+        .range([1,50])
         .clamp(true);
       var edge_width = d3.scale.pow().exponent(8)
         .domain( [minLinkWeight,maxLinkWeight] )
@@ -188,7 +212,7 @@ function D3ok() {
       svg.call( d3.behavior.zoom()
   	      .x(xScale)
   	      .y(yScale)
-  	      .scaleExtent([1, 6])
+  	      .scaleExtent([1, 10])
   	      .on("zoom", doZoom) );
 
       // ------- Create the elements of the layout (links and nodes) ------
@@ -253,7 +277,7 @@ function D3ok() {
         if( on && activeCountry !== undefined ) {
           console.log("..clear: ",activeCountry);
           highlightGraphNode( nodeArray[activeCountry], false );
-          console.log("..cleared: ",activeCountry); 
+          console.log("..cleared: ",activeCountry);
         }
 
         // locate the SVG nodes: circle & label group
@@ -279,7 +303,7 @@ function D3ok() {
       }
 
     /* --------------------------------------------------------------------- */
-    /* Show the details panel for a movie AND highlight its node in 
+    /* Show the details panel for a movie AND highlight its node in
        the graph. Also called from outside the d3.json context.
        Parameters:
        - new_idx: index of the movie to show
@@ -287,7 +311,7 @@ function D3ok() {
          on the movie
     */
     SelectCountry = function( new_idx, doMoveTo ) {
-      
+
       // do we want to center the graph on the node?
       doMoveTo = doMoveTo || false;
       if( doMoveTo ) {
@@ -322,7 +346,6 @@ function D3ok() {
        Set also the values keeping track of current offset & zoom values
     */
     function repositionGraph( off, z, mode ) {
-
       // do we want to do a transition?
       var doTr = (mode == 'move');
 
@@ -365,8 +388,8 @@ function D3ok() {
     /* Perform drag
      */
     function dragmove(d) {
-      offset = { x : currentOffset.x + d3.event.dx, y : currentOffset.y + d3.event.dy };
-      repositionGraph( offset, undefined, 'drag' );
+      /*offset = { x : currentOffset.x + d3.event.dx, y : currentOffset.y + d3.event.dy };
+      repositionGraph( offset, undefined, 'drag' );*/
     }
 
 
@@ -376,7 +399,7 @@ function D3ok() {
      * together as zoom changes)
      */
     function doZoom( increment ) {
-      newZoom = increment === undefined ? d3.event.scale : zoomScale(currentZoom+increment);
+      /*newZoom = increment === undefined ? d3.event.scale : zoomScale(currentZoom+increment);
       if( currentZoom == newZoom )
       return;	// no zoom change
 
@@ -396,7 +419,7 @@ function D3ok() {
       newOffset = { x : currentOffset.x*zoomRatio + width/2*(1-zoomRatio), y : currentOffset.y*zoomRatio + height/2*(1-zoomRatio) };
 
       // Reposition the graph
-      repositionGraph( newOffset, newZoom, "zoom" );
+      repositionGraph( newOffset, newZoom, "zoom" );*/
     }
 
     /* --------------------------------------------------------------------- */
@@ -404,6 +427,7 @@ function D3ok() {
     /* process events from the force-directed graph */
     force.on("tick", function() {
       repositionGraph(undefined,undefined,'tick');
+      //repositionGraph(currentOffset,currentZoom,'tick');
     });
 
   }); // end of function(data)
@@ -412,5 +436,10 @@ function D3ok() {
 
 function contractSelected(option) {
   currentContract = option.value;
+  D3ok();
+}
+
+function countrySelected(option) {
+  currentCountrySelection = option.value;
   D3ok();
 }
