@@ -38,14 +38,14 @@ var currentCountrySelection = e.options[e.selectedIndex].value;
 function D3ok() {
 
   // Some constants
-  var WIDTH = 1000,
+  var WIDTH = 1120,
       HEIGHT = 700,
-      SHOW_THRESHOLD = 1;
+      SHOW_THRESHOLD = 2.5;
 
   // Variables keeping graph state
   var activeCountry = undefined;
-  var currentOffset = { x : 5000, y : 5000 };
   var currentZoom = 0.5;
+  var currentOffset = { x : 250, y : 150 };
 
   // The D3.js scales
   var xScale = d3.scale.linear()
@@ -55,8 +55,8 @@ function D3ok() {
     .domain([0, HEIGHT])
     .range([0, HEIGHT]);
   var zoomScale = d3.scale.linear()
-    .domain([1,10])
-    .range([1,10])
+    .domain([0.25,10])
+    .range([0.25,10])
     .clamp(true);
 
 /* .......................................................................... */
@@ -212,7 +212,7 @@ function D3ok() {
       svg.call( d3.behavior.zoom()
   	      .x(xScale)
   	      .y(yScale)
-  	      .scaleExtent([1, 10])
+  	      .scaleExtent([0.25, 10])
   	      .on("zoom", doZoom) );
 
       // ------- Create the elements of the layout (links and nodes) ------
@@ -349,6 +349,13 @@ function D3ok() {
       // do we want to do a transition?
       var doTr = (mode == 'move');
 
+      //initial draw, repositioning
+      if (mode == 'tick') {
+        g = d3.select('g.grpParent')
+        g = g.transition().duration(500);
+        g.attr("transform", function(d) { return "translate("+ off.x+","+off.y+")" } );
+      }
+
       // drag: translate to new offset
       if( off !== undefined && (off.x != currentOffset.x || off.y != currentOffset.y ) ) {
         g = d3.select('g.grpParent')
@@ -388,8 +395,8 @@ function D3ok() {
     /* Perform drag
      */
     function dragmove(d) {
-      /*offset = { x : currentOffset.x + d3.event.dx, y : currentOffset.y + d3.event.dy };
-      repositionGraph( offset, undefined, 'drag' );*/
+      offset = { x : currentOffset.x + d3.event.dx, y : currentOffset.y + d3.event.dy };
+      repositionGraph( offset, undefined, 'drag' );
     }
 
 
@@ -399,7 +406,7 @@ function D3ok() {
      * together as zoom changes)
      */
     function doZoom( increment ) {
-      /*newZoom = increment === undefined ? d3.event.scale : zoomScale(currentZoom+increment);
+      newZoom = increment === undefined ? d3.event.scale : zoomScale(currentZoom+increment);
       if( currentZoom == newZoom )
       return;	// no zoom change
 
@@ -416,18 +423,19 @@ function D3ok() {
 
       // Compute the new offset, so that the graph center does not move
       zoomRatio = newZoom/currentZoom;
-      newOffset = { x : currentOffset.x*zoomRatio + width/2*(1-zoomRatio), y : currentOffset.y*zoomRatio + height/2*(1-zoomRatio) };
+      newOffset = { x : currentOffset.x*zoomRatio + width/2*(1-zoomRatio), y : currentOffset.y*zoomRatio + height/2*(1-zoomRatio)};
 
       // Reposition the graph
-      repositionGraph( newOffset, newZoom, "zoom" );*/
+      repositionGraph( newOffset, newZoom, "zoom" );
     }
 
     /* --------------------------------------------------------------------- */
 
     /* process events from the force-directed graph */
     force.on("tick", function() {
-      repositionGraph(undefined,undefined,'tick');
-      //repositionGraph(currentOffset,currentZoom,'tick');
+      //repositionGraph(undefined,undefined,'tick');
+      //repositionGraph(currentOffset,undefined,'tick');
+        repositionGraph(currentOffset,undefined,'tick');
     });
 
   }); // end of function(data)
