@@ -1,15 +1,11 @@
 
-library(plyr)
-library(gtools)
-library(data.table)
-# ---------------------------------------------------------------------------------------------------------------------------------------------
-# I. GLOBAL VARIABLE #################################################################################################################
-# ---------------------------------------------------------------------------------------------------------------------------------------------
+#library(plyr)
+#library(gtools)
+#library(data.table)
 
-otherCountry <- "Others"
-frameworkContract <- c("FP6", "FP7", "H2020")
+
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-# II. LOAD DATASETS #################################################################################################################
+# I. LOAD DATASETS ############################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 #set current directory
@@ -37,7 +33,7 @@ Dataset_GDP  = read.csv("Input/naida_10_gdp_Data.csv", header=TRUE, sep=",", str
 
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-# III. FUNCTIONS LINK #################################################################################################################
+# II. FUNCTIONS LINK ##########################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -49,6 +45,7 @@ func_order <- function(vector){
   return (as.character(sort(unlist(vector))))
 }
 
+#take a vector (e.g. [A,B,C]) and return all the possible pair of value (e.g. [[A, B],[A, C],[B, C]]) 
 func_createPair <- function(vector){
   if (length(vector) > 1) {
     return (t(combn(unlist(vector), 2)))
@@ -59,6 +56,7 @@ func_createPair <- function(vector){
   }
 }
 
+#transform a list [a,b,c,d,e,f] in a frame with 2 columns [[a,b,c],[d,e,f]]
 func_createFrame <- function(vector){
   return(data.frame(matrix(unlist(vector), ncol = 2, byrow=FALSE)))
 }
@@ -66,39 +64,43 @@ func_createFrame <- function(vector){
 # build a dataset containing all the interactions between the different countries  
 func_BuildLink <- function(frameworkContract, dataset) {
   
+  #for each project, list the country that participated 
   dataset <-aggregate(dataset$country, 
                       by=list(dataset$projectReference),
                       FUN=paste)
   dataset <- plyr::rename(dataset,c("Group.1"="Project",
                                     "x" = "ListCountries"))
 
+  # create all the link between two country per project (projA [AA,AB,BC], projB [AA,AB,BC]...) 
   dataset$ListCountries <- sapply(dataset$ListCountries, func_order)
   dataset$size <- sapply(dataset$ListCountries, func_size)
   dataset<- dataset[dataset$size > 1,]  
   dataset <- subset(dataset, select=-c(size, Project))
 
   
+  # create all the link between two country
   dataset$ListCountries <- sapply(dataset$ListCountries, func_createPair)
-
   data <- list()
   for (i in 1:nrow(dataset)) {
     data[[i]] =func_createFrame(dataset[i,])
   }
   tmp <- do.call(rbind, data)
-
   output <-data.frame(tmp)
+  
+  #aggregate to have: country 1 | country 2 | nb link
   output<-aggregate(output$X1,
                     by=list(output$X1, output$X2),
                     FUN=length)
   output <-data.frame(output)
-  
   output <- plyr::rename(output,c("Group.1" = "country1",
                                   "Group.2" = "country2",
                                   "x" = "nbLinkTmp"))
   
+  #add a column for the framework contract 
   tmp <-rep(frameworkContract,length(output$Group.1))
   output["frameworkContract"]<- tmp
   
+  # keep only the EU country 
   output$ValidCountry1 <- sapply(output$country1, function (x) any(x %in% Dataset_Countries$euCode))
   output$ValidCountry2 <- sapply(output$country2, function (x) any(x %in% Dataset_Countries$euCode))
   output <- output[output$ValidCountry1,]
@@ -108,6 +110,7 @@ func_BuildLink <- function(frameworkContract, dataset) {
   return(output)
 }
 
+# add a weight tothe link => nblink/ max nb link
 func_addWeight <- function (dataset) {
   dataset <- Dataset_link
   maxFP6 <- max(dataset[dataset$frameworkContract == "FP6",]$nbLink)
@@ -124,10 +127,11 @@ func_addWeight <- function (dataset) {
 
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-# IV. FUNCTION ADDITIONAL INFORMATION #################################################################################################################
+# III. FUNCTION ADDITIONAL INFORMATION ########################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
+# compute the number of project per country where role is participant 
 func_nbProjectPerCountryParticipation <- function(dataset, frameworkContract)
 {
   dataset <- dataset[dataset$role == "participant", ]
@@ -136,12 +140,12 @@ func_nbProjectPerCountryParticipation <- function(dataset, frameworkContract)
                       FUN=length)
   dataset <- plyr::rename(dataset,c("Group.1"="Country",
                                     "x" = "Number of project participants"))
-  tmp <-rep(frameworkContract,length(dataset$Country))
+  tmp <- rep(frameworkContract,length(dataset$Country))
   dataset["frameworkContract"]<- tmp
-  
   return(dataset)  
 }
 
+# compute the number of project per country where role is coordinator 
 func_nbProjectPerCountryCoordination <- function(dataset, frameworkContract)
 {
   dataset <- dataset[dataset$role == "coordinator", ]
@@ -150,12 +154,12 @@ func_nbProjectPerCountryCoordination <- function(dataset, frameworkContract)
                       FUN=length)
   dataset <- plyr::rename(dataset,c("Group.1"="Country",
                                     "x" = "Number of project coordinators"))
-  
   tmp <-rep(frameworkContract,length(dataset$Country))
   dataset["frameworkContract"]<- tmp
   return(dataset)  
 }
 
+# compute the number of project per country where role is participant or coordinator 
 func_nbOverallProject <- function(dataset, frameworkContract)
 {
   dataset <-aggregate(dataset$country,
@@ -168,6 +172,7 @@ func_nbOverallProject <- function(dataset, frameworkContract)
   return(dataset)  
 }
 
+# compute the number of institution per country 
 func_nbInstitution <- function(dataset, frameworkContract)
 {
   dataset <-aggregate(dataset$name, 
@@ -184,26 +189,31 @@ func_nbInstitution <- function(dataset, frameworkContract)
   
 
 func_projPerCountry <- function() {
+  #number of project per country/framework contract with role partipant 
   dataset_FP6Participation <- func_nbProjectPerCountryParticipation(Dataset_FP6Organizations, "FP6")
   dataset_FP7Participation <- func_nbProjectPerCountryParticipation(Dataset_FP7Organizations, "FP7")
   dataset_H2020Participation <- func_nbProjectPerCountryParticipation(Dataset_H2020Organizations, "H2020")
   dataset_Participation <- rbind(rbind(dataset_FP6Participation, dataset_FP7Participation), dataset_H2020Participation)
-  
+
+  #number of project per country/framework contract with role coordinator
   dataset_FP6Coordination <- func_nbProjectPerCountryCoordination(Dataset_FP6Organizations, "FP6")
   dataset_FP7Coordination <- func_nbProjectPerCountryCoordination(Dataset_FP7Organizations, "FP7")
   dataset_H2020Coordination <- func_nbProjectPerCountryCoordination(Dataset_H2020Organizations, "H2020")
   dataset_Coordination <- rbind(rbind(dataset_FP6Coordination, dataset_FP7Coordination), dataset_H2020Coordination)
   
+  #number of project per country/framework contract with role partipant or coordinator 
   dataset_FP6OverallProject <- func_nbOverallProject(Dataset_FP6Organizations, "FP6")
   dataset_FP7OverallProject <- func_nbOverallProject(Dataset_FP7Organizations, "FP7")
   dataset_H2020OverallProject <- func_nbOverallProject(Dataset_H2020Organizations, "H2020")
   dataset_OverallProject <- rbind(rbind(dataset_FP6OverallProject, dataset_FP7OverallProject), dataset_H2020OverallProject)
   
+  #number of institution per country/framework contract
   dataset_FP6NbInstitution <- func_nbInstitution(Dataset_FP6Organizations, "FP6")
   dataset_FP7NbInstitution <- func_nbInstitution(Dataset_FP7Organizations, "FP7")
   dataset_H2020NbInstitution <- func_nbInstitution(Dataset_H2020Organizations, "H2020")
   dataset_NbInstitution <- rbind(rbind(dataset_FP6NbInstitution, dataset_FP7NbInstitution), dataset_H2020NbInstitution)
   
+  #merge the different datasets
   outputDataset<-merge(dataset_Participation, dataset_Coordination, by.x=c("Country", "frameworkContract"), by.y=c("Country", "frameworkContract"), all.x=TRUE)
   outputDataset<-merge(outputDataset, dataset_OverallProject, by.x=c("Country", "frameworkContract"), by.y=c("Country", "frameworkContract"), all.x=TRUE)
   outputDataset<-merge(outputDataset, dataset_NbInstitution, by.x=c("Country", "frameworkContract"), by.y=c("Country", "frameworkContract"), all.x=TRUE)
@@ -217,13 +227,16 @@ func_projPerCountry <- function() {
   outputDataset <- plyr::rename(outputDataset,c("Value.x"="GDP",
                                                 "Value.y" = "Population"))
   
+  #add GDP and population 
   outputDataset$GDP <- ifelse(outputDataset$GDP == ":", NA, outputDataset$GDP)
+  
+  #clean the format of the column
   outputDataset$GDP <-gsub(" ","",paste(outputDataset$GDP))
   outputDataset$Population <-gsub(" ","",paste(outputDataset$Population))
-  
   outputDataset$GDP <-as.numeric(outputDataset$GDP)
   outputDataset$Population <-as.numeric(outputDataset$Population)
-
+  
+  # compute GDP per capita 
   outputDataset$GDPPerCapita <- as.numeric(outputDataset$GDP) / as.numeric(outputDataset$Population) * 1000000
   
   return (outputDataset)
@@ -232,7 +245,7 @@ func_projPerCountry <- function() {
 
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-# V. Build Dataset #################################################################################################################
+# IV. Build Dataset link ######################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -257,6 +270,10 @@ Dataset_link <- func_addWeight(Dataset_link)
 options(scipen = 10)
 write.table(Dataset_link, "output/NbLink.csv", sep = ";", quote = FALSE)
 options(scipen = 0)
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+# V. Build Dataset additional information #####################################################################################################
+# ---------------------------------------------------------------------------------------------------------------------------------------------
 
 Dataset_CountryInformation <- func_projPerCountry()
 write.table(Dataset_CountryInformation, "output/CountryInformation.csv", sep = ";", quote = FALSE)
