@@ -180,7 +180,7 @@ function D3ok() {
 
   // *************************************************************************
 
-  var datafile = currentContract+currentCountrySelection+'.json'
+  var datafile = "DataCountryNetwork/" + currentContract+currentCountrySelection+'.json'
 
   d3.json(
     datafile,
