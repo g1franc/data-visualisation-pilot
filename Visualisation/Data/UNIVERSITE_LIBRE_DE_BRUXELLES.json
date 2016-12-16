@@ -1,0 +1,5161 @@
+{
+"nodes": [
+{
+    "label":"NWL NORDDEUTSCHE WASSWEREG LOGISTIK GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":306,
+    "index":306
+},
+{
+    "label":"NATIONAL UNIVERSITY OF IRELAND, GALWAY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":18,
+    "index":18
+},
+{
+    "label":"FONDATION EUROPEENNE DE LA SCIENCE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":45,
+    "index":45
+},
+{
+    "label":"INTERNATIONAL CENTRE FOR GENETIC ENGINEERING AND BIOTECHNOLOGY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":314,
+    "index":314
+},
+{
+    "label":"NOKIA OYJ",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":331,
+    "index":331
+},
+{
+    "label":"CENTRE DE RECERCA EN EPIDEMIOLOGIA AMBIENTAL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":47,
+    "index":47
+},
+{
+    "label":"THE UNIVERSITY OF LIVERPOOL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":150,
+    "index":150
+},
+{
+    "label":"ABB AB",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":167,
+    "index":167
+},
+{
+    "label":"UNIVERSITE DE LAUSANNE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":34,
+    "index":34
+},
+{
+    "label":"MUSEUM NATIONAL D'HISTOIRE NATURELLE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":172,
+    "index":172
+},
+{
+    "label":"UNIVERSITA DEGLI STUDI DI TRENTO",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":165,
+    "index":165
+},
+{
+    "label":"TECHNISCHE UNIVERSITAET WIEN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":38,
+    "index":38
+},
+{
+    "label":"UNIVERSITAET KASSEL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":182,
+    "index":182
+},
+{
+    "label":"UNIVERSIDADE DE SANTIAGO DE COMPOSTELA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":66,
+    "index":66
+},
+{
+    "label":"ERASMUS UNIVERSITAIR MEDISCH CENTRUM ROTTERDAM",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":78,
+    "index":78
+},
+{
+    "label":"MARSEILLE GYPTIS INTERNATIONAL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":196,
+    "index":196
+},
+{
+    "label":"UNIVERSITY OF SURREY",
+    "score":1.0,
+    "links":[],
+    "id":353,
+    "index":353
+},
+{
+    "label":"WAYZ BV",
+    "score":1.0,
+    "links":[],
+    "id":368,
+    "index":368
+},
+{
+    "label":"CLMS (UK) LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":156,
+    "index":156
+},
+{
+    "label":"M-SOLV LTD",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":215,
+    "index":215
+},
+{
+    "label":"Teknologian tutkimuskeskus VTT Oy",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":11,
+    "index":11
+},
+{
+    "label":"INSTITUTUL NATIONAL DE CERCETARE -DEZVOLTARE PENTRU FIZICA SI INGINERIE NUCLEARA HORIA HULUBEI (IFIN-HH)",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":57,
+    "index":57
+},
+{
+    "label":"INSTYTUT TECHNOLOGII MATERIALOW ELEKTRONICZNYCH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":242,
+    "index":242
+},
+{
+    "label":"CARDIFF UNIVERSITY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":32,
+    "index":32
+},
+{
+    "label":"STELLENBOSCH UNIVERSITY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":202,
+    "index":202
+},
+{
+    "label":"INTERNACIONAL DE COMPOSITES SA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":325,
+    "index":325
+},
+{
+    "label":"Minist\u00e9rio da Defesa Nacional",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":123,
+    "index":123
+},
+{
+    "label":"COMMISSARIAT A L ENERGIE ATOMIQUE ET AUX ENERGIES ALTERNATIVES",
+    "score":3.0,
+    "links":[
+        0
+    ],
+    "id":3,
+    "index":3
+},
+{
+    "label":"EXMILE SOLUTIONS LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":303,
+    "index":303
+},
+{
+    "label":"UPPSALA UNIVERSITET",
+    "score":2.0,
+    "links":[],
+    "id":358,
+    "index":358
+},
+{
+    "label":"NATIONAL CENTER FOR SCIENTIFIC RESEARCH DEMOKRITOS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":9,
+    "index":9
+},
+{
+    "label":"LONDON SCHOOL OF HYGIENE AND TROPICAL MEDICINE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":82,
+    "index":82
+},
+{
+    "label":"CENTRE HOSPITALIER UNIVERSITAIRE DE TOULOUSE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":117,
+    "index":117
+},
+{
+    "label":"ASSOCIATION POUR LA RECHERCHE ET LE DEVELOPPEMENT DES METHODES ET PROCESSUS INDUSTRIELS - ARMINES",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":13,
+    "index":13
+},
+{
+    "label":"AALTO-KORKEAKOULUSAATIO",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":94,
+    "index":94
+},
+{
+    "label":"ITALCEMENTI FABBRICHE RIUNITE CEMENTO SPA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":326,
+    "index":326
+},
+{
+    "label":"OXFORD INSTRUMENTS NANOTECHNOLOGY TOOLS LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":333,
+    "index":333
+},
+{
+    "label":"JOHANNES GUTENBERG-UNIVERSITAT MAINZ",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":179,
+    "index":179
+},
+{
+    "label":"UMEA UNIVERSITET",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":240,
+    "index":240
+},
+{
+    "label":"ARISTOTELIO PANEPISTIMIO THESSALONIKIS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":12,
+    "index":12
+},
+{
+    "label":"MAGYAR TUDOMANYOS AKADEMIA SZEGEDIBIOLOGIAI KUTATOKOZPONT",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":213,
+    "index":213
+},
+{
+    "label":"ACADEMISCH ZIEKENHUIS LEIDEN - LEIDS UNIVERSITAIR MEDISCH CENTRUM",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":93,
+    "index":93
+},
+{
+    "label":"SUMY BELGIUM",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":310,
+    "index":310
+},
+{
+    "label":"Centre for Process Innovation Limited",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":226,
+    "index":226
+},
+{
+    "label":"UNIVERSITEIT MAASTRICHT",
+    "score":1.0,
+    "links":[],
+    "id":343,
+    "index":343
+},
+{
+    "label":"UNIVERSITAT BASEL",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":102,
+    "index":102
+},
+{
+    "label":"KOZEP-EUROPAI EGYETEM",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":195,
+    "index":195
+},
+{
+    "label":"UNIVERSITAET BERN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":33,
+    "index":33
+},
+{
+    "label":"UNIVERSITAET ZUERICH",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":89,
+    "index":89
+},
+{
+    "label":"SEURECO SOCIETE EUROPEENNE D'ECONOMIE SARL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":252,
+    "index":252
+},
+{
+    "label":"HOSPICES CANTONAUX CHUV",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":80,
+    "index":80
+},
+{
+    "label":"UNIVERSITAET BREMEN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":19,
+    "index":19
+},
+{
+    "label":"UNIVERSITY OF BATH",
+    "score":1.0,
+    "links":[],
+    "id":363,
+    "index":363
+},
+{
+    "label":"IMPERIAL COLLEGE OF SCIENCE TECHNOLOGY AND MEDICINE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":29,
+    "index":29
+},
+{
+    "label":"INSTYTUT CHEMII BIOORGANICZNEJ POLSKIEJ AKADEMII NAUK",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":49,
+    "index":49
+},
+{
+    "label":"UNIVERSITATEA TEHNICA CLUJ-NAPOCA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":267,
+    "index":267
+},
+{
+    "label":"Magyar Tudomanyos Akademia Atommagkutato Intezete",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":278,
+    "index":278
+},
+{
+    "label":"THE QUEEN'S UNIVERSITY OF BELFAST",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":104,
+    "index":104
+},
+{
+    "label":"CONFEDERATION EUROPEENNE DES SYNDICATS ADF",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":261,
+    "index":261
+},
+{
+    "label":"DSM Ahead BV",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":319,
+    "index":319
+},
+{
+    "label":"CONTROS SYSTEMS & SOLUTIONS GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":44,
+    "index":44
+},
+{
+    "label":"N VISION SYSTEMS AND TECHNOLOGIES SL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":328,
+    "index":328
+},
+{
+    "label":"ISTITUTO DI STUDI PER L'INTEGRAZIONE DEI SISTEMI SCRL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":183,
+    "index":183
+},
+{
+    "label":"CHALMERS TEKNISKA HOEGSKOLA AB",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":63,
+    "index":63
+},
+{
+    "label":"ADRIA KOMBI NACIONALNA DRUZBA ZA KOMBINIRAMI PROMET DOO LJUBLJANA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":296,
+    "index":296
+},
+{
+    "label":"SOFIISKI UNIVERSITET SVETI KLIMENT OHRIDSKI",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":126,
+    "index":126
+},
+{
+    "label":"GESELLSCHAFT FUR ANGEWANDTE MIKRO UND OPTOELEKTRONIK MIT BESCHRANKTERHAFTUNG AMO GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":224,
+    "index":224
+},
+{
+    "label":"VRIJE UNIVERSITEIT BRUSSEL",
+    "score":1.0,
+    "links":[],
+    "id":361,
+    "index":361
+},
+{
+    "label":"INSTITUTO DE TECNOLOGIAS EMERGENTES DE LA RIOJA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":324,
+    "index":324
+},
+{
+    "label":"SIRION BIOTECH GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":284,
+    "index":284
+},
+{
+    "label":"ALCATEL-LUCENT ITALIA S.P.A.",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":292,
+    "index":292
+},
+{
+    "label":"UNIVERSITEIT GENT",
+    "score":1.0,
+    "links":[],
+    "id":342,
+    "index":342
+},
+{
+    "label":"ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE",
+    "score":3.0,
+    "links":[
+        0
+    ],
+    "id":5,
+    "index":5
+},
+{
+    "label":"UNIVERSITA DEGLI STUDI DI PADOVA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":91,
+    "index":91
+},
+{
+    "label":"SCUOLA INTERNAZIONALE SUPERIORE DI STUDI AVANZATI DI TRIESTE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":290,
+    "index":290
+},
+{
+    "label":"UNIVERSITA DEGLI STUDI DI TRIESTE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":285,
+    "index":285
+},
+{
+    "label":"LUNDS UNIVERSITET",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":71,
+    "index":71
+},
+{
+    "label":"UNIVERSITE CATHOLIQUE DE LOUVAIN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":103,
+    "index":103
+},
+{
+    "label":"SELEX ES SPA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":153,
+    "index":153
+},
+{
+    "label":"ISTITUTO NAZIONALE MALATTIE INFETTIVE L.SPALLANZANI - IRCCS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":234,
+    "index":234
+},
+{
+    "label":"REGION HOVEDSTADEN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":79,
+    "index":79
+},
+{
+    "label":"FUNDACIO INSTITUT CATALA DE NANOCIENCIA I NANOTECNOLOGIA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":249,
+    "index":249
+},
+{
+    "label":"INSTITUT PASTEUR DE LILLE FONDATION",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":231,
+    "index":231
+},
+{
+    "label":"JUSTUS-LIEBIG-UNIVERSITAET GIESSEN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":219,
+    "index":219
+},
+{
+    "label":"BASF SE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":142,
+    "index":142
+},
+{
+    "label":"STICHTING TUBERCULOSIS VACCINE INITIATIVE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":237,
+    "index":237
+},
+{
+    "label":"EDUCATIONAL FOUNDATION YONSEI UNIVERSITY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":230,
+    "index":230
+},
+{
+    "label":"LATVIJAS UNIVERSITATE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":22,
+    "index":22
+},
+{
+    "label":"LANDSPITALI UNIVERSITY HOSPITAL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":48,
+    "index":48
+},
+{
+    "label":"UNIVERSITY COLLEGE DUBLIN, NATIONAL UNIVERSITY OF IRELAND, DUBLIN",
+    "score":3.0,
+    "links":[],
+    "id":349,
+    "index":349
+},
+{
+    "label":"MAX PLANCK GESELLSCHAFT ZUR FOERDERUNG DER WISSENSCHAFTEN E.V.",
+    "score":4.0,
+    "links":[
+        0
+    ],
+    "id":8,
+    "index":8
+},
+{
+    "label":"THE CYPRUS INSTITUTE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":199,
+    "index":199
+},
+{
+    "label":"UNIVERSITA DEGLI STUDI DI ROMA TORVERGATA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":207,
+    "index":207
+},
+{
+    "label":"UNIVERSITE D'ARTOIS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":288,
+    "index":288
+},
+{
+    "label":"VARTA MICRO INNOVATION GMBH",
+    "score":1.0,
+    "links":[],
+    "id":367,
+    "index":367
+},
+{
+    "label":"UNIVERSITAET BIELEFELD",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":99,
+    "index":99
+},
+{
+    "label":"THE UNIVERSITY OF SHEFFIELD",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":62,
+    "index":62
+},
+{
+    "label":"STICHTING KATHOLIEKE UNIVERSITEIT",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":36,
+    "index":36
+},
+{
+    "label":"STICHTING DELTARES",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":187,
+    "index":187
+},
+{
+    "label":"UNIVERSITY OF BRISTOL",
+    "score":2.0,
+    "links":[],
+    "id":344,
+    "index":344
+},
+{
+    "label":"THE PROVOST, FELLOWS, FOUNDATION SCHOLARS & THE OTHER MEMBERS OF BOARD OF THE COLLEGE OF THE HOLY & UNDIVIDED TRINITY OF QUEEN ELIZABETH NEAR DUBLIN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":81,
+    "index":81
+},
+{
+    "label":"BARCELONA SUPERCOMPUTING CENTER - CENTRO NACIONAL DE SUPERCOMPUTACION",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":198,
+    "index":198
+},
+{
+    "label":"UNIVERSITAET ULM",
+    "score":3.0,
+    "links":[
+        0
+    ],
+    "id":37,
+    "index":37
+},
+{
+    "label":"UNIVERSITE DE GENEVE",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":200,
+    "index":200
+},
+{
+    "label":"GENXPRO GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":203,
+    "index":203
+},
+{
+    "label":"FUNDACION TECNALIA RESEARCH & INNOVATION",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":160,
+    "index":160
+},
+{
+    "label":"DUBLIN INSTITUTE OF TECHNOLOGY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":247,
+    "index":247
+},
+{
+    "label":"DYESOL ITALIA SRL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":320,
+    "index":320
+},
+{
+    "label":"AZIENDA OSPEDALIERA UNIVERSITARIA POLICLINICO  PAOLO GIACCONE DI PALERMO",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":228,
+    "index":228
+},
+{
+    "label":"RUPRECHT-KARLS-UNIVERSITAET HEIDELBERG",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":180,
+    "index":180
+},
+{
+    "label":"ATHERM",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":317,
+    "index":317
+},
+{
+    "label":"HORIBA JOBIN YVON S.A.S.",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":86,
+    "index":86
+},
+{
+    "label":"UNIVERSITAET AUGSBURG",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":211,
+    "index":211
+},
+{
+    "label":"ERASMUS UNIVERSITEIT ROTTERDAM",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":105,
+    "index":105
+},
+{
+    "label":"FUNDACION PARA LA INVESTIGACION, DESARROLLO Y APLICACION DE MATERIALES COMPUESTOS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":255,
+    "index":255
+},
+{
+    "label":"TECHNION - ISRAEL INSTITUTE OF TECHNOLOGY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":51,
+    "index":51
+},
+{
+    "label":"UNIVERSITAET GRAZ",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":189,
+    "index":189
+},
+{
+    "label":"KOBENHAVNS UNIVERSITET",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":65,
+    "index":65
+},
+{
+    "label":"REPSOL SA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":291,
+    "index":291
+},
+{
+    "label":"AIRBUS OPERATIONS SL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":312,
+    "index":312
+},
+{
+    "label":"AERAS GLOBAL TB VACCINE FOUNDATION",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":227,
+    "index":227
+},
+{
+    "label":"WIENER INSTITUT FUR INTERNTIONALE WIRTSCHAFTSVERGLEICHE",
+    "score":1.0,
+    "links":[],
+    "id":366,
+    "index":366
+},
+{
+    "label":"NATURAL HISTORY MUSEUM",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":173,
+    "index":173
+},
+{
+    "label":"NPL MANAGEMENT LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":169,
+    "index":169
+},
+{
+    "label":"UNIVERZITETNI KLINICNI CENTER LJUBLJANA",
+    "score":1.0,
+    "links":[],
+    "id":357,
+    "index":357
+},
+{
+    "label":"VLTN GCV",
+    "score":1.0,
+    "links":[],
+    "id":362,
+    "index":362
+},
+{
+    "label":"UNIVERSIDADE DO MINHO",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":68,
+    "index":68
+},
+{
+    "label":"SVEUCILISTE U ZAGREBU FAKULTET ELEKTROTEHNIKE I RACUNARSTVA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":192,
+    "index":192
+},
+{
+    "label":"PANEPISTIMIO IOANNINON",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":101,
+    "index":101
+},
+{
+    "label":"NORSK MARINTEKNISK FORSKNINGSINSTITUTT AS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":184,
+    "index":184
+},
+{
+    "label":"UNIVERSITY OF PATRAS",
+    "score":1.0,
+    "links":[],
+    "id":347,
+    "index":347
+},
+{
+    "label":"GUGER TECHNOLOGIES OG",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":323,
+    "index":323
+},
+{
+    "label":"IBM IRELAND LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":286,
+    "index":286
+},
+{
+    "label":"STICHTING BIOMEDICAL PRIMATE RESEARCH CENTER",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":236,
+    "index":236
+},
+{
+    "label":"AIXTRON LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":293,
+    "index":293
+},
+{
+    "label":"COMITE EUROPEEN DE COORDINATION DE L'HABITAT SOCIAL AISBL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":258,
+    "index":258
+},
+{
+    "label":"POLITECNICO DI TORINO",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":50,
+    "index":50
+},
+{
+    "label":"LINKOPINGS UNIVERSITET",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":95,
+    "index":95
+},
+{
+    "label":"ALMA MATER STUDIORUM - UNIVERSITA DI BOLOGNA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":43,
+    "index":43
+},
+{
+    "label":"UNIVERSITA DEGLI STUDI DI SALERNO",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":248,
+    "index":248
+},
+{
+    "label":"CONSORZIO NAZIONALE INTERUNIVERSITARIO PER LE TELECOMUNICAZIONI",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":148,
+    "index":148
+},
+{
+    "label":"DHL EXEL SUPPLY CHAIN SPAIN SL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":162,
+    "index":162
+},
+{
+    "label":"ELLINIKES APOTHIKES SARANTITIS AE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":302,
+    "index":302
+},
+{
+    "label":"UNIVERSITE DE STRASBOURG",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":210,
+    "index":210
+},
+{
+    "label":"CENTRO DE INVESTIGACIONES ENERGETICAS, MEDIOAMBIENTALES Y TECNOLOGICAS-CIEMAT",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":2,
+    "index":2
+},
+{
+    "label":"BUSINESS-E SPA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":155,
+    "index":155
+},
+{
+    "label":"ITA-SUOMEN YLIOPISTO",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":212,
+    "index":212
+},
+{
+    "label":"FUNDACION IMDEA NANOCIENCIA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":257,
+    "index":257
+},
+{
+    "label":"BRUNEL UNIVERSITY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":164,
+    "index":164
+},
+{
+    "label":"BELARUSIAN STATE UNIVERSITY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":260,
+    "index":260
+},
+{
+    "label":"LIBRE SOCIETA A RESPONSABILITA LIMITATA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":327,
+    "index":327
+},
+{
+    "label":"DFDS AS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":299,
+    "index":299
+},
+{
+    "label":"GRINP SRL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":246,
+    "index":246
+},
+{
+    "label":"GSI HELMHOLTZZENTRUM FUER SCHWERIONENFORSCHUNG GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":277,
+    "index":277
+},
+{
+    "label":"CORILA - CONSORZIO PER IL COORDINAMENTO DELLE RICERCHE INERENTI AL SISTEMA LAGUNARE DI VENEZIA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":191,
+    "index":191
+},
+{
+    "label":"TECHNISCHE UNIVERSITAET CHEMNITZ",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":225,
+    "index":225
+},
+{
+    "label":"AGENZIA NAZIONALE PER LE NUOVE TECNOLOGIE, L'ENERGIA E LO SVILUPPO ECONOMICO SOSTENIBILE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":1,
+    "index":1
+},
+{
+    "label":"Mapotempo",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":305,
+    "index":305
+},
+{
+    "label":"TECHNISCHE UNIVERSITEIT EINDHOVEN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":181,
+    "index":181
+},
+{
+    "label":"FONDAZIONE BRUNO KESSLER",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":194,
+    "index":194
+},
+{
+    "label":"KWAZULU NATAL RESEARCH INSTITUTE FOR TB-HIV (K-RITH) NPC",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":235,
+    "index":235
+},
+{
+    "label":"PHARMA BELGIUM SA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":307,
+    "index":307
+},
+{
+    "label":"FUNDACIO CENTRE DE REGULACIO GENOMICA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":83,
+    "index":83
+},
+{
+    "label":"UNIVERSITA DI PISA",
+    "score":4.0,
+    "links":[
+        0
+    ],
+    "id":128,
+    "index":128
+},
+{
+    "label":"JYVASKYLAN YLIOPISTO",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":171,
+    "index":171
+},
+{
+    "label":"FOUNDATION FOR RESEARCH AND TECHNOLOGY HELLAS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":53,
+    "index":53
+},
+{
+    "label":"FLEXENABLE LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":201,
+    "index":201
+},
+{
+    "label":"DEBRECENI EGYETEM",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":118,
+    "index":118
+},
+{
+    "label":"UNIVERSITA DELLA CALABRIA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":279,
+    "index":279
+},
+{
+    "label":"ALCATEL-LUCENT DEUTSCHLAND AG",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":220,
+    "index":220
+},
+{
+    "label":"LANCASTER UNIVERSITY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":72,
+    "index":72
+},
+{
+    "label":"ACONDICIONAMIENTO TARRASENSE ASSOCIACION",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":135,
+    "index":135
+},
+{
+    "label":"EIDGENOESSISCHE TECHNISCHE HOCHSCHULE ZUERICH",
+    "score":3.0,
+    "links":[
+        0
+    ],
+    "id":73,
+    "index":73
+},
+{
+    "label":"SENCKENBERG GESELLSCHAFT FUR NATURFORSCHUNG",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":175,
+    "index":175
+},
+{
+    "label":"EBG (Entwicklungs- und Betriebsgesellschaft) MedAustron GmbH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":274,
+    "index":274
+},
+{
+    "label":"NANESA SRL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":329,
+    "index":329
+},
+{
+    "label":"THALES SA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":241,
+    "index":241
+},
+{
+    "label":"CENTRO RICERCHE FIAT SCPA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":163,
+    "index":163
+},
+{
+    "label":"NATURHISTORISCHES MUSEUM",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":174,
+    "index":174
+},
+{
+    "label":"CHRISTIAN-ALBRECHTS-UNIVERSITAET  ZU KIEL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":69,
+    "index":69
+},
+{
+    "label":"UNIVERSITEIT TWENTE",
+    "score":1.0,
+    "links":[],
+    "id":352,
+    "index":352
+},
+{
+    "label":"RHEINISCH-WESTFAELISCHE TECHNISCHE HOCHSCHULE AACHEN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":88,
+    "index":88
+},
+{
+    "label":"BMT GROUP LTD",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":154,
+    "index":154
+},
+{
+    "label":"KNOWLEDGE TRANSFER NETWORK LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":107,
+    "index":107
+},
+{
+    "label":"UNIVERSITY OF YORK",
+    "score":2.0,
+    "links":[],
+    "id":359,
+    "index":359
+},
+{
+    "label":"UNIVERSITAET ZU KOELN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":108,
+    "index":108
+},
+{
+    "label":"EIDGENOESSISCHE MATERIALPRUEFUNGS- UND FORSCHUNGSANSTALT",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":193,
+    "index":193
+},
+{
+    "label":"UNIVERSITY COLLEGE LONDON",
+    "score":1.0,
+    "links":[],
+    "id":350,
+    "index":350
+},
+{
+    "label":"UNIVERSIDAD DE SEVILLA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":54,
+    "index":54
+},
+{
+    "label":"ELGEKA AE EMPORIO-DIANOMES-ANTIPROSOPIES-BIOMICHANIA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":301,
+    "index":301
+},
+{
+    "label":"THE UNIVERSITY OF EXETER",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":46,
+    "index":46
+},
+{
+    "label":"UNIWERSYTET JAGIELLONSKI",
+    "score":1.0,
+    "links":[],
+    "id":348,
+    "index":348
+},
+{
+    "label":"TARTU ULIKOOL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":10,
+    "index":10
+},
+{
+    "label":"THE HENRYK NIEWODNICZANSKI INSTITUTE OF NUCLEAR PHYSICS, POLISH ACADEMY OF SCIENCES",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":58,
+    "index":58
+},
+{
+    "label":"UNIVERSITA DEGLI STUDI DI MILANO",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":31,
+    "index":31
+},
+{
+    "label":"NASJONALT INSTITUTT FOR ENAERINGS-OG SJOMATFORSKNING",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":124,
+    "index":124
+},
+{
+    "label":"ALBERT-LUDWIGS-UNIVERSITAET FREIBURG",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":64,
+    "index":64
+},
+{
+    "label":"ISTITUTO EUROPEO DI ONCOLOGIA SRL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":132,
+    "index":132
+},
+{
+    "label":"TECHNISCHE UNIVERSITAET DRESDEN",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":90,
+    "index":90
+},
+{
+    "label":"A.P. Moller - M\u00e6rsk A-S",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":295,
+    "index":295
+},
+{
+    "label":"FRAUNHOFER-GESELLSCHAFT ZUR FOERDERUNG DER ANGEWANDTEN FORSCHUNG E.V",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":24,
+    "index":24
+},
+{
+    "label":"SCUOLA SUPERIORE DI STUDI UNIVERSITARI E DI PERFEZIONAMENTO SANT'ANNA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":186,
+    "index":186
+},
+{
+    "label":"RESEARCH AND DEVELOPMENT OF NANOMATERIALS AND NANOTECHNOLOGY NANO TECHLAB LTD",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":337,
+    "index":337
+},
+{
+    "label":"RIJKSUNIVERSITEIT GRONINGEN",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":143,
+    "index":143
+},
+{
+    "label":"ELUPEG LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":149,
+    "index":149
+},
+{
+    "label":"ASTON UNIVERSITY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":27,
+    "index":27
+},
+{
+    "label":"IFOM FONDAZIONE ISTITUTO FIRC DI ONCOLOGIA MOLECOLARE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":256,
+    "index":256
+},
+{
+    "label":"TECHNISCHE UNIVERSITAT DARMSTADT",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":144,
+    "index":144
+},
+{
+    "label":"PANEPISTIMIO KRITIS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":67,
+    "index":67
+},
+{
+    "label":"PROGNOMICS LTD",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":336,
+    "index":336
+},
+{
+    "label":"INTOMICS AS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":283,
+    "index":283
+},
+{
+    "label":"UNIVERSITA DEGLI STUDI DI MODENA E REGGIO EMILIA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":59,
+    "index":59
+},
+{
+    "label":"UNIVERSITAT WIEN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":166,
+    "index":166
+},
+{
+    "label":"ERICSSON AB",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":204,
+    "index":204
+},
+{
+    "label":"INSTITUT DE INVESTIGACIO EN CIENCIES DE LA SALUT GERMANS TRIAS I PUJOL",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":120,
+    "index":120
+},
+{
+    "label":"UNIVERSITEIT VAN AMSTERDAM",
+    "score":1.0,
+    "links":[],
+    "id":355,
+    "index":355
+},
+{
+    "label":"PIXIUM VISION",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":334,
+    "index":334
+},
+{
+    "label":"Graphenea S.A.",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":281,
+    "index":281
+},
+{
+    "label":"TRIMODAL LOGISTIK GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":311,
+    "index":311
+},
+{
+    "label":"UMIT- PRIVATE UNIVERSITAT FUER GESUNDHEITSWISSENSCHAFTEN, MEDIZINISCHEINFORMATIK UND TECHNIK GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":127,
+    "index":127
+},
+{
+    "label":"TERVEYDEN JA HYVINVOINNIN LAITOS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":76,
+    "index":76
+},
+{
+    "label":"FUNDACION ZARAGOZA LOGISTICS CENTER",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":151,
+    "index":151
+},
+{
+    "label":"THE CHANCELLOR, MASTERS AND SCHOLARS OF THE UNIVERSITY OF OXFORD",
+    "score":4.0,
+    "links":[
+        0
+    ],
+    "id":41,
+    "index":41
+},
+{
+    "label":"IMPERIAL COLLEGE OF SCIENCE, TECHNOLOGY AND MEDICINE",
+    "score":3.0,
+    "links":[
+        0
+    ],
+    "id":70,
+    "index":70
+},
+{
+    "label":"LABORATOIRE NATIONAL DE METROLOGIE ET D'ESSAIS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":289,
+    "index":289
+},
+{
+    "label":"DELTA TECH SPA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":254,
+    "index":254
+},
+{
+    "label":"ENDOKRINOLOGICKY USTAV",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":119,
+    "index":119
+},
+{
+    "label":"FUNDACIO INSTITUT DE CIENCIES FOTONIQUES",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":137,
+    "index":137
+},
+{
+    "label":"USTAV FYZIKALNI CHEMIE J. HEYROVSKEHO AV CR, v. v. i.",
+    "score":1.0,
+    "links":[],
+    "id":364,
+    "index":364
+},
+{
+    "label":"INSTITUT SCIENTIFIQUE DE SANTE PUBLIQUE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":232,
+    "index":232
+},
+{
+    "label":"SONAE CENTER SERVICOS II S.A.",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":309,
+    "index":309
+},
+{
+    "label":"INTERUNIVERSITAIR MICRO-ELECTRONICACENTRUM IMEC VZW",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":178,
+    "index":178
+},
+{
+    "label":"TECHNOLOGICAL EDUCATIONAL INSTITUTE OF CRETE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":245,
+    "index":245
+},
+{
+    "label":"OU ENDOKRINOLOOGIAKESKUS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":125,
+    "index":125
+},
+{
+    "label":"MATER MISERICORDIAE UNIVERSITY HOSPITAL LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":315,
+    "index":315
+},
+{
+    "label":"UNIVERSITETET I OSLO",
+    "score":1.0,
+    "links":[],
+    "id":354,
+    "index":354
+},
+{
+    "label":"OBELIS SA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":139,
+    "index":139
+},
+{
+    "label":"KONINKLIJKE NEDERLANDSE AKADEMIE VAN WETENSCHAPPEN - KNAW",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":111,
+    "index":111
+},
+{
+    "label":"QUEEN MARY UNIVERSITY OF LONDON",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":61,
+    "index":61
+},
+{
+    "label":"UNIVERSIDAD DE CASTILLA - LA MANCHA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":87,
+    "index":87
+},
+{
+    "label":"GVS S.P.A.",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":218,
+    "index":218
+},
+{
+    "label":"UNIWERSYTET WARSZAWSKI",
+    "score":3.0,
+    "links":[],
+    "id":351,
+    "index":351
+},
+{
+    "label":"CENTRO DE INVESTIGACION BIOMEDICA EN RED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":239,
+    "index":239
+},
+{
+    "label":"KARLSRUHER INSTITUT FUER TECHNOLOGIE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":7,
+    "index":7
+},
+{
+    "label":"INFINEON TECHNOLOGIES AG",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":272,
+    "index":272
+},
+{
+    "label":"TECHNISCHE UNIVERSITAET HAMBURG-HARBURG",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":161,
+    "index":161
+},
+{
+    "label":"STMICROELECTRONICS SRL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":197,
+    "index":197
+},
+{
+    "label":"eBOS Technologies Ltd",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":157,
+    "index":157
+},
+{
+    "label":"Optocap Ltd",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":140,
+    "index":140
+},
+{
+    "label":"STICHTING VU",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":85,
+    "index":85
+},
+{
+    "label":"LIFE AND BRAIN GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":270,
+    "index":270
+},
+{
+    "label":"AVANZARE INNOVACION TECNOLOGICA SL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":217,
+    "index":217
+},
+{
+    "label":"ZANARDO SERVIZI LOGISTICI SPA",
+    "score":1.0,
+    "links":[],
+    "id":369,
+    "index":369
+},
+{
+    "label":"TECHNISCHE UNIVERSITEIT DELFT",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":159,
+    "index":159
+},
+{
+    "label":"DEUTSCHES ZENTRUM FUER LUFT - UND RAUMFAHRT EV",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":16,
+    "index":16
+},
+{
+    "label":"CONEX SA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":298,
+    "index":298
+},
+{
+    "label":"UNIVERSITY OF SOUTHAMPTON",
+    "score":1.0,
+    "links":[],
+    "id":345,
+    "index":345
+},
+{
+    "label":"THE OPEN UNIVERSITY",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":26,
+    "index":26
+},
+{
+    "label":"FRIEDRICH-SCHILLER-UNIVERSITAT JENA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":110,
+    "index":110
+},
+{
+    "label":"THE CHANCELLOR, MASTERS AND SCHOLARS OF THE UNIVERSITY OF CAMBRIDGE",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":84,
+    "index":84
+},
+{
+    "label":"UNIVERSITE PIERRE ET MARIE CURIE - PARIS 6",
+    "score":1.0,
+    "links":[],
+    "id":340,
+    "index":340
+},
+{
+    "label":"UNIVERSITAET PADERBORN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":190,
+    "index":190
+},
+{
+    "label":"FUNDACAO DA FACULDADE DE CIENCIAS DA LISBOA UNIVERSISADE DE LISBOA FP",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":208,
+    "index":208
+},
+{
+    "label":"NOVALIA LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":243,
+    "index":243
+},
+{
+    "label":"ECRIN EUROPEAN CLINICAL RESEARCH INFRASTRUCTURE NETWORK",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":35,
+    "index":35
+},
+{
+    "label":"FRIEDRICH-ALEXANDER-UNIVERSITAT ERLANGEN NURNBERG",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":134,
+    "index":134
+},
+{
+    "label":"THE UNIVERSITY OF MANCHESTER",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":106,
+    "index":106
+},
+{
+    "label":"ACADEMISCH ZIEKENHUIS GRONINGEN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":100,
+    "index":100
+},
+{
+    "label":"GRUPO ANTOLIN-INGENIERIA SA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":168,
+    "index":168
+},
+{
+    "label":"MAGYAR TUDOMANYOS AKADEMIA ENERGIATUDOMANYI KUTATOKOZPONT",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":271,
+    "index":271
+},
+{
+    "label":"WINZSOFT (ISRAEL) LTD",
+    "score":1.0,
+    "links":[],
+    "id":360,
+    "index":360
+},
+{
+    "label":"UNIVERSITY OF LEICESTER",
+    "score":1.0,
+    "links":[],
+    "id":341,
+    "index":341
+},
+{
+    "label":"Ss. CYRIL AND METHODIUS UNIVERSITY IN SKOPJE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":266,
+    "index":266
+},
+{
+    "label":"CNM TECHNOLOGIES GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":109,
+    "index":109
+},
+{
+    "label":"UNIVERSITE DE MONTPELLIER",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":287,
+    "index":287
+},
+{
+    "label":"STATENS SERUM INSTITUT",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":114,
+    "index":114
+},
+{
+    "label":"UNIVERSITAT POLITECNICA DE VALENCIA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":92,
+    "index":92
+},
+{
+    "label":"POLYMEM S.A.",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":335,
+    "index":335
+},
+{
+    "label":"FONDAZIONE ISTITUTO ITALIANO DI TECNOLOGIA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":55,
+    "index":55
+},
+{
+    "label":"KLINICKI BOLNICKI CENTAR SESTRE MILOSRDNICE USTANOVA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":122,
+    "index":122
+},
+{
+    "label":"Institute of Mechanics, Bulgarian Academy of Sciences",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":222,
+    "index":222
+},
+{
+    "label":"THALES ALENIA SPACE UK LTD",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":176,
+    "index":176
+},
+{
+    "label":"INTERNATIONAL TUBERCULOSIS RESEARCH CENTER",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":233,
+    "index":233
+},
+{
+    "label":"CYBERTRONICA UG (HAFTUNGSBESCHRANKT) GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":188,
+    "index":188
+},
+{
+    "label":"BRETON SPA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":318,
+    "index":318
+},
+{
+    "label":"THE UNIVERSITY OF EDINBURGH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":28,
+    "index":28
+},
+{
+    "label":"THE HEBREW UNIVERSITY OF JERUSALEM",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":52,
+    "index":52
+},
+{
+    "label":"POLITECNICO DI MILANO",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":96,
+    "index":96
+},
+{
+    "label":"KATHOLIEKE UNIVERSITEIT LEUVEN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":75,
+    "index":75
+},
+{
+    "label":"LUDWIG-MAXIMILIANS-UNIVERSITAET MUENCHEN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":40,
+    "index":40
+},
+{
+    "label":"COPENHAGEN BUSINESS SCHOOL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":253,
+    "index":253
+},
+{
+    "label":"KAROLINSKA INSTITUTET",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":30,
+    "index":30
+},
+{
+    "label":"ISTITUTO NAZIONALE DI FISICA NUCLEARE",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":60,
+    "index":60
+},
+{
+    "label":"KING'S COLLEGE LONDON",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":17,
+    "index":17
+},
+{
+    "label":"FINANCE WATCH AISBL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":185,
+    "index":185
+},
+{
+    "label":"ENERGIA-DA SRL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":263,
+    "index":263
+},
+{
+    "label":"AMALYST LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":316,
+    "index":316
+},
+{
+    "label":"STIFTELSEN CHALMERS INDUSTRITEKNIK",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":338,
+    "index":338
+},
+{
+    "label":"INSTITUT FUER MOLEKULARE BIOTECHNOLOGIE GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":269,
+    "index":269
+},
+{
+    "label":"UNIVERSITY OF STRATHCLYDE",
+    "score":1.0,
+    "links":[],
+    "id":346,
+    "index":346
+},
+{
+    "label":"FUNDACIO INSTITUT DE BIOENGINYERIA DE CATALUNYA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":136,
+    "index":136
+},
+{
+    "label":"CENTRO DE INVESTIGACION COOPERATIVADE ENERGIAS ALTERNATIVAS FUNDACION",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":205,
+    "index":205
+},
+{
+    "label":"AGENCIA ESTATAL CONSEJO SUPERIOR DE INVESTIGACIONES CIENTIFICAS",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":20,
+    "index":20
+},
+{
+    "label":"UNIVERSITY OF CAPE TOWN",
+    "score":1.0,
+    "links":[],
+    "id":356,
+    "index":356
+},
+{
+    "label":"EUROPEAN ORGANIZATION FOR NUCLEAR RESEARCH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":56,
+    "index":56
+},
+{
+    "label":"CONSIGLIO NAZIONALE DELLE RICERCHE",
+    "score":4.0,
+    "links":[
+        0
+    ],
+    "id":21,
+    "index":21
+},
+{
+    "label":"FORSCHUNGSZENTRUM JUELICH GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":6,
+    "index":6
+},
+{
+    "label":"I.S.P.C. GENT",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":304,
+    "index":304
+},
+{
+    "label":"BIOLUTION GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":115,
+    "index":115
+},
+{
+    "label":"ASSOCIATION HOSPITALIERE DE BRUXELLES-CENTRE HOSPITALIER UNIVERSITAIRE SAINT PIERRE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":313,
+    "index":313
+},
+{
+    "label":"Clecat - European Association for Forwarding, Transport, Logistics and Customs Service",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":297,
+    "index":297
+},
+{
+    "label":"INSTITUTE OF COMMUNICATION AND COMPUTER SYSTEMS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":147,
+    "index":147
+},
+{
+    "label":"SZENT ISTVAN UNIVERSITY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":141,
+    "index":141
+},
+{
+    "label":"THE UNIVERSITY OF BIRMINGHAM",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":42,
+    "index":42
+},
+{
+    "label":"SECURITY PROJECTS UK LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":308,
+    "index":308
+},
+{
+    "label":"IODINE GLOBAL NETWORK",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":121,
+    "index":121
+},
+{
+    "label":"AVANTI COMMUNICATIONS LTD",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":177,
+    "index":177
+},
+{
+    "label":"THE UNIVERSITY OF SYDNEY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":238,
+    "index":238
+},
+{
+    "label":"NOKIA R&D (UK) LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":332,
+    "index":332
+},
+{
+    "label":"BANGOR UNIVERSITY",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":130,
+    "index":130
+},
+{
+    "label":"MEDICAL RESEARCH COUNCIL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":214,
+    "index":214
+},
+{
+    "label":"THE SECRETARY OF STATE FOR ENVIRONMENT, FOOD AND RURAL AFFAIRS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":23,
+    "index":23
+},
+{
+    "label":"BUNDESINSTITUT FUR IMPFSTOFFE UND BIOMEDIZINISCHE ARZNEIMITTEL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":229,
+    "index":229
+},
+{
+    "label":"ECOLE CENTRALE DES ARTS ET MANUFACTURES",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":223,
+    "index":223
+},
+{
+    "label":"GLAXOSMITHKLINE RESEARCH AND DEVELOPMENT LTD",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":170,
+    "index":170
+},
+{
+    "label":"G24 POWER LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":322,
+    "index":322
+},
+{
+    "label":"UNIVERSITAET REGENSBURG",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":282,
+    "index":282
+},
+{
+    "label":"GRAND ACCELERATEUR NATIONAL D'IONS LOURDS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":275,
+    "index":275
+},
+{
+    "label":"UNIVERSITAET HAMBURG",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":131,
+    "index":131
+},
+{
+    "label":"ISTITUTO NAZIONALE DI ASTROFISICA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":25,
+    "index":25
+},
+{
+    "label":"ENERGY CONSULTING NETWORK APS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":264,
+    "index":264
+},
+{
+    "label":"UNIVERSITATSMEDIZIN GREIFSWALD KORPERSCHAFT DES OFFENTLICHEN RECHTS",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":129,
+    "index":129
+},
+{
+    "label":"JOHANN WOLFGANG GOETHE UNIVERSITAET FRANKFURT AM MAIN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":216,
+    "index":216
+},
+{
+    "label":"Sabanci University",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":244,
+    "index":244
+},
+{
+    "label":"UNIVERSIDAD DE ZARAGOZA",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":145,
+    "index":145
+},
+{
+    "label":"Masarykova univerzita",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":77,
+    "index":77
+},
+{
+    "label":"UNIVERSITY OF CYPRUS",
+    "score":1.0,
+    "links":[],
+    "id":339,
+    "index":339
+},
+{
+    "label":"ISTITUTO SUPERIORE DI SANITA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":74,
+    "index":74
+},
+{
+    "label":"UNIVERSITAT AUTONOMA DE BARCELONA",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":146,
+    "index":146
+},
+{
+    "label":"SZKOLA GLOWNA HANDLOWA W WARSZAWIE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":250,
+    "index":250
+},
+{
+    "label":"ZENTRUM FUER EUROPAEISCHE WIRTSCHAFTSFORSCHUNG GmbH",
+    "score":1.0,
+    "links":[],
+    "id":365,
+    "index":365
+},
+{
+    "label":"Asociacion - Centro de Investigacion Cooperativa en Nanociencias - CIC NANOGUNE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":280,
+    "index":280
+},
+{
+    "label":"ASOCIACION CENTRO DE INVESTIGACION COOPERATIVA EN BIOMATERIALES- CIC biomaGUNE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":209,
+    "index":209
+},
+{
+    "label":"GROUPEMENT INTERET PUBLIC ARRONAX",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":276,
+    "index":276
+},
+{
+    "label":"UNIVERSITY OF SUNDERLAND",
+    "score":1.0,
+    "links":[],
+    "id":370,
+    "index":370
+},
+{
+    "label":"RADIO-TELEVISION BELGE DE LA COMMUNAUTE FRANCAISE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":265,
+    "index":265
+},
+{
+    "label":"CONSORCI INSTITUT D'INVESTIGACIONS BIOMEDIQUES AUGUST PI I SUNYER",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":39,
+    "index":39
+},
+{
+    "label":"TECHNISCHE UNIVERSITAET MUENCHEN",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":97,
+    "index":97
+},
+{
+    "label":"UNIVERSITE DE NAMUR ASBL",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":273,
+    "index":273
+},
+{
+    "label":"ELECTRONIC GERMAN LINK GMBH",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":300,
+    "index":300
+},
+{
+    "label":"UNIVERSITE LIBRE DE BRUXELLES",
+    "score":1.0,
+    "links":[
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370
+    ],
+    "id":0,
+    "index":0
+},
+{
+    "label":"FUJIFILM DIOSYNTH BIOTECHNOLOGIES UK LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":221,
+    "index":221
+},
+{
+    "label":"EPCOS AG",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":321,
+    "index":321
+},
+{
+    "label":"CENTRE FOR REGIONAL POLICY RESEARCH AND COOPERATION STUDIORUM ZDRUZENJE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":116,
+    "index":116
+},
+{
+    "label":"INLECOM SYSTEMS LTD",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":158,
+    "index":158
+},
+{
+    "label":"CENTRE EUROPEEN DE RECHERCHE ET DE FORMATION AVANCEE EN CALCUL SCIENTIFIQUE",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":14,
+    "index":14
+},
+{
+    "label":"HAVENBEDRIJF ROTTERDAM NV",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":152,
+    "index":152
+},
+{
+    "label":"UNIVERSITE DES SCIENCES ET TECHNOLOGIES DE LILLE - LILLE I",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":259,
+    "index":259
+},
+{
+    "label":"NANOSC AB",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":330,
+    "index":330
+},
+{
+    "label":"CENTRE NATIONAL DE LA RECHERCHE SCIENTIFIQUE",
+    "score":6.0,
+    "links":[
+        0
+    ],
+    "id":15,
+    "index":15
+},
+{
+    "label":"Department of Health",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":113,
+    "index":113
+},
+{
+    "label":"TAX JUSTICE NETWORK LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":262,
+    "index":262
+},
+{
+    "label":"INSTITUT FUER SEEVERKEHRSWIRTSCHAFT UND LOGISTIK",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":294,
+    "index":294
+},
+{
+    "label":"NOVELIC DOO BEOGRAD-NOVI BEOGRAD",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":138,
+    "index":138
+},
+{
+    "label":"DANMARKS TEKNISKE UNIVERSITET",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":4,
+    "index":4
+},
+{
+    "label":"GERMAN STEMCELL NETWORK (GSCN) - DEUTSCHES STAMMZELLNETZWERK EV",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":268,
+    "index":268
+},
+{
+    "label":"EKONOMSKI INSTITUT ZAGREB",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":251,
+    "index":251
+},
+{
+    "label":"UNIVERSITA DEGLI STUDI DI ROMA LA SAPIENZA",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":112,
+    "index":112
+},
+{
+    "label":"THE UNIVERSITY OF NOTTINGHAM",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":98,
+    "index":98
+},
+{
+    "label":"INSTITUT PASTEUR",
+    "score":2.0,
+    "links":[
+        0
+    ],
+    "id":206,
+    "index":206
+},
+{
+    "label":"A2F ASSOCIATES LIMITED",
+    "score":1.0,
+    "links":[
+        0
+    ],
+    "id":133,
+    "index":133
+}
+],
+"links":[
+{
+    "target":339,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":340,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":341,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":342,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":343,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":344,
+    "weight":2.0,
+    "source":0
+},
+{
+    "target":345,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":346,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":347,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":348,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":349,
+    "weight":3.0,
+    "source":0
+},
+{
+    "target":350,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":351,
+    "weight":3.0,
+    "source":0
+},
+{
+    "target":352,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":353,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":354,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":355,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":356,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":357,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":358,
+    "weight":2.0,
+    "source":0
+},
+{
+    "target":359,
+    "weight":2.0,
+    "source":0
+},
+{
+    "target":360,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":361,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":362,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":363,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":364,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":365,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":366,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":367,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":368,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":369,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":370,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":1
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":2
+},
+{
+    "target":0,
+    "weight":3.0,
+    "source":3
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":4
+},
+{
+    "target":0,
+    "weight":3.0,
+    "source":5
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":6
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":7
+},
+{
+    "target":0,
+    "weight":4.0,
+    "source":8
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":9
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":10
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":11
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":12
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":0,
+    "weight":6.0,
+    "source":15
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":16
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":18
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":19
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":20
+},
+{
+    "target":0,
+    "weight":4.0,
+    "source":21
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":22
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":23
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":24
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":25
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":26
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":27
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":28
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":29
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":30
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":31
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":32
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":33
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":34
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":35
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":36
+},
+{
+    "target":0,
+    "weight":3.0,
+    "source":37
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":38
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":39
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":40
+},
+{
+    "target":0,
+    "weight":4.0,
+    "source":41
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":42
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":43
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":44
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":45
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":46
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":47
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":48
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":49
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":50
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":51
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":52
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":53
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":54
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":55
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":56
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":57
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":58
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":59
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":60
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":61
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":62
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":63
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":64
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":65
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":66
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":67
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":68
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":69
+},
+{
+    "target":0,
+    "weight":3.0,
+    "source":70
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":71
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":72
+},
+{
+    "target":0,
+    "weight":3.0,
+    "source":73
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":74
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":75
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":76
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":77
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":78
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":79
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":80
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":81
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":82
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":83
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":84
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":85
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":86
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":87
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":88
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":89
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":90
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":91
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":92
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":93
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":94
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":95
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":96
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":97
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":98
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":99
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":100
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":101
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":102
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":103
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":104
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":105
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":106
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":107
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":108
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":109
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":110
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":111
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":112
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":113
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":114
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":115
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":116
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":117
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":118
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":119
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":120
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":121
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":122
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":123
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":124
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":125
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":126
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":127
+},
+{
+    "target":0,
+    "weight":4.0,
+    "source":128
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":129
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":130
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":131
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":132
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":133
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":134
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":135
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":136
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":137
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":138
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":139
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":140
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":141
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":142
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":143
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":144
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":145
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":146
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":147
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":148
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":149
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":150
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":151
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":152
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":153
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":154
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":155
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":156
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":157
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":158
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":159
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":160
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":161
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":162
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":163
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":164
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":165
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":166
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":167
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":168
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":169
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":170
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":171
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":172
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":173
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":174
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":175
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":176
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":177
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":178
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":179
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":180
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":181
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":182
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":183
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":184
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":185
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":186
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":187
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":188
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":189
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":190
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":191
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":192
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":193
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":194
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":195
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":196
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":197
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":198
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":199
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":200
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":201
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":202
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":203
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":204
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":205
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":206
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":207
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":208
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":209
+},
+{
+    "target":0,
+    "weight":2.0,
+    "source":210
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":211
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":212
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":213
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":214
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":215
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":216
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":217
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":218
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":219
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":220
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":221
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":222
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":223
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":224
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":225
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":226
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":227
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":228
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":229
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":230
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":231
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":232
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":233
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":234
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":235
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":236
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":237
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":238
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":239
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":240
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":241
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":242
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":243
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":244
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":245
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":246
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":247
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":248
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":249
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":250
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":251
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":252
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":253
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":254
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":255
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":256
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":257
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":258
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":259
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":260
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":261
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":262
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":263
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":264
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":265
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":266
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":267
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":268
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":269
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":270
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":271
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":272
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":273
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":274
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":275
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":276
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":277
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":278
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":279
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":280
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":281
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":282
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":283
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":284
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":285
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":286
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":287
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":288
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":289
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":290
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":291
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":292
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":293
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":294
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":295
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":296
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":297
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":298
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":299
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":300
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":301
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":302
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":303
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":304
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":305
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":306
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":307
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":308
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":309
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":310
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":311
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":312
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":313
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":314
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":315
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":316
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":317
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":318
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":319
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":320
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":321
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":322
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":323
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":324
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":325
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":326
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":327
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":328
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":329
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":330
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":331
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":332
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":333
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":334
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":335
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":336
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":337
+},
+{
+    "target":0,
+    "weight":1.0,
+    "source":338
+}]
+}

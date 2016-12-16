@@ -1,0 +1,124 @@
+{
+"nodes": [
+{
+    "id":7,
+    "label":"TLS TECHNIK GMBH & CO. SPEZIALPULVER KG",
+    "score":1.0,
+    "links":[
+        8
+    ],
+    "index":7
+},
+{
+    "id":0,
+    "label":"UNIVERSITAT POLITECNICA DE VALENCIA",
+    "score":1.0,
+    "links":[
+        8
+    ],
+    "index":0
+},
+{
+    "id":5,
+    "label":"APR SRL",
+    "score":1.0,
+    "links":[
+        8
+    ],
+    "index":5
+},
+{
+    "id":3,
+    "label":"INSTITUTO TECNOLOGICO METALMECANICO, MUEBLE, MADERA, EMBALAJE Y AFINES-AIDIMME",
+    "score":1.0,
+    "links":[
+        8
+    ],
+    "index":3
+},
+{
+    "id":6,
+    "label":"LAURENTIA TECHNOLOGIES SLL",
+    "score":1.0,
+    "links":[
+        8
+    ],
+    "index":6
+},
+{
+    "id":1,
+    "label":"ASOCIACION CENTRO TECNOLOGICO CEIT-IK4",
+    "score":1.0,
+    "links":[
+        8
+    ],
+    "index":1
+},
+{
+    "id":8,
+    "label":"ZOZ GMBH",
+    "score":1.0,
+    "links":[],
+    "index":8
+},
+{
+    "id":2,
+    "label":"TWI LIMITED",
+    "score":1.0,
+    "links":[
+        8
+    ],
+    "index":2
+},
+{
+    "id":4,
+    "label":"VLAAMSE INSTELLING VOOR TECHNOLOGISCH ONDERZOEK N.V.",
+    "score":1.0,
+    "links":[
+        8
+    ],
+    "index":4
+}
+],
+"links":[
+{
+    "target":8,
+    "source":0,
+    "weight":1.0
+},
+{
+    "target":8,
+    "source":1,
+    "weight":1.0
+},
+{
+    "target":8,
+    "source":2,
+    "weight":1.0
+},
+{
+    "target":8,
+    "source":3,
+    "weight":1.0
+},
+{
+    "target":8,
+    "source":4,
+    "weight":1.0
+},
+{
+    "target":8,
+    "source":5,
+    "weight":1.0
+},
+{
+    "target":8,
+    "source":6,
+    "weight":1.0
+},
+{
+    "target":8,
+    "source":7,
+    "weight":1.0
+}]
+}

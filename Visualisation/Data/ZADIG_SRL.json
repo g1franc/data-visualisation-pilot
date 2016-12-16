@@ -1,0 +1,236 @@
+{
+"nodes": [
+{
+    "index":4,
+    "label":"UNIVERSITY COLLEGE LONDON",
+    "id":4,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":13,
+    "label":"TYOETERVEYSLAITOS",
+    "id":13,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":5,
+    "label":"ANTI CANCER COUNCIL OF VICTORIA",
+    "id":5,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":7,
+    "label":"HOSPICES CANTONAUX CHUV",
+    "id":7,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":11,
+    "label":"THE PROVOST, FELLOWS, FOUNDATION SCHOLARS & THE OTHER MEMBERS OF BOARD OF THE COLLEGE OF THE HOLY & UNDIVIDED TRINITY OF QUEEN ELIZABETH NEAR DUBLIN",
+    "id":11,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":2,
+    "label":"IMPERIAL COLLEGE OF SCIENCE, TECHNOLOGY AND MEDICINE",
+    "id":2,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":3,
+    "label":"ERASMUS UNIVERSITAIR MEDISCH CENTRUM ROTTERDAM",
+    "id":3,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":0,
+    "label":"KING'S COLLEGE LONDON",
+    "id":0,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":10,
+    "label":"LONDON SCHOOL OF ECONOMICS AND POLITICAL SCIENCE",
+    "id":10,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":14,
+    "label":"UNIVERSITA DEGLI STUDI DI TORINO",
+    "id":14,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":8,
+    "label":"HUMAN GENETICS FOUNDATION",
+    "id":8,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":15,
+    "label":"UNIVERSITE PAUL SABATIER TOULOUSE III",
+    "id":15,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":6,
+    "label":"HELSINGIN YLIOPISTO",
+    "id":6,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":1,
+    "label":"INSTITUT NATIONAL DE LA SANTE ET DE LA RECHERCHE MEDICALE (INSERM)",
+    "id":1,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":12,
+    "label":"TRUSTEES OF COLUMBIA UNIVERSITY IN THE CITY OF NEW YORK",
+    "id":12,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":9,
+    "label":"INSTITUTO DE SAUDE PUBLICA DA UNIVERSIDADE DO PORTO",
+    "id":9,
+    "score":1.0,
+    "links":[
+        16
+    ]
+},
+{
+    "index":16,
+    "label":"ZADIG SRL",
+    "id":16,
+    "score":1.0,
+    "links":[]
+}
+],
+"links":[
+{
+    "target":16,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":1
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":2
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":3
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":4
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":5
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":6
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":7
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":8
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":9
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":10
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":11
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":12
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":16,
+    "weight":1.0,
+    "source":15
+}]
+}

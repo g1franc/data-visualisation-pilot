@@ -26,11 +26,8 @@ var toggleDiv = undefined;
 var zoomCall = undefined;
 
 //selected contract
-var e = document.getElementById("contractDropdown");
-var currentContract = e.options[e.selectedIndex].value;
-
-e = document.getElementById("countryDropdown");
-var currentCountrySelection = e.options[e.selectedIndex].value;
+var e = document.getElementById("orgDropdown");
+var currentOrg = e.options[e.selectedIndex].value;
 
 // -------------------------------------------------------------------
 
@@ -176,7 +173,7 @@ function D3ok() {
 
   // *************************************************************************
 
-  var datafile = "MALTA-ENTERPRISE.json";// + currentContract+currentCountrySelection+'.json'
+  var datafile = "./Data/"+currentOrg+".json";
 
   d3.json(
     datafile,
@@ -438,12 +435,7 @@ function D3ok() {
 
 } // end of D3ok()
 
-function contractSelected(option) {
-  currentContract = option.value;
-  D3ok();
-}
-
-function countrySelected(option) {
-  currentCountrySelection = option.value;
+function orgSelected(option) {
+  currentOrg = option.value;
   D3ok();
 }
