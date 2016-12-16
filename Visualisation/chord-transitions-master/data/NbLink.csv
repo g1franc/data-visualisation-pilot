@@ -1,0 +1,1219 @@
+id;country1;country2;nbLinkTmp;frameworkContract
+1;Estonia;Estonia;71;FP6
+2;Austria;Estonia;162;FP6
+3;Belgium;Estonia;221;FP6
+4;Cyprus;Estonia;46;FP6
+5;Czech Republic;Estonia;109;FP6
+6;Denmark;Estonia;226;FP6
+7;Bulgaria;Estonia;82;FP6
+8;Croatia;Estonia;26;FP6
+9;Austria;Belgium;1309;FP6
+10;Belgium;Belgium;1970;FP6
+11;Estonia;France;396;FP6
+12;Austria;France;3131;FP6
+13;Belgium;France;6748;FP6
+14;France;France;11291;FP6
+15;Finland;France;2560;FP6
+16;Cyprus;France;338;FP6
+17;Czech Republic;France;1923;FP6
+18;Denmark;France;2846;FP6
+19;Bulgaria;France;565;FP6
+20;Croatia;France;195;FP6
+21;Estonia;Germany;614;FP6
+22;Austria;Germany;5724;FP6
+23;Belgium;Germany;7668;FP6
+24;France;Germany;21422;FP6
+25;Germany;Germany;17188;FP6
+26;Finland;Germany;3878;FP6
+27;Cyprus;Germany;397;FP6
+28;Czech Republic;Germany;2866;FP6
+29;Denmark;Germany;4133;FP6
+30;Bulgaria;Germany;828;FP6
+31;Croatia;Germany;252;FP6
+32;Estonia;Italy;414;FP6
+33;Austria;Italy;2715;FP6
+34;Belgium;Italy;5066;FP6
+35;France;Italy;13430;FP6
+36;Germany;Italy;17144;FP6
+37;Italy;Italy;8148;FP6
+38;Greece;Italy;4463;FP6
+39;Ireland;Italy;1269;FP6
+40;Finland;Italy;2163;FP6
+41;Hungary;Italy;1742;FP6
+42;Cyprus;Italy;423;FP6
+43;Czech Republic;Italy;1672;FP6
+44;Denmark;Italy;2326;FP6
+45;Bulgaria;Italy;666;FP6
+46;Croatia;Italy;213;FP6
+47;Estonia;United Kingdom;623;FP6
+48;Austria;United Kingdom;3318;FP6
+49;Belgium;United Kingdom;6090;FP6
+50;France;United Kingdom;16345;FP6
+51;Germany;United Kingdom;20910;FP6
+52;Italy;United Kingdom;12873;FP6
+53;United Kingdom;United Kingdom;10378;FP6
+54;Greece;United Kingdom;4422;FP6
+55;Ireland;United Kingdom;2047;FP6
+56;Spain;United Kingdom;9703;FP6
+57;Finland;United Kingdom;2988;FP6
+58;Poland;United Kingdom;3495;FP6
+59;Hungary;United Kingdom;2001;FP6
+60;Portugal;United Kingdom;2363;FP6
+61;Sweden;United Kingdom;5774;FP6
+62;Netherlands;United Kingdom;8802;FP6
+63;Cyprus;United Kingdom;379;FP6
+64;Czech Republic;United Kingdom;2196;FP6
+65;Romania;United Kingdom;935;FP6
+66;Denmark;United Kingdom;4149;FP6
+67;Lithuania;United Kingdom;561;FP6
+68;Slovenia;United Kingdom;879;FP6
+69;Bulgaria;United Kingdom;783;FP6
+70;Croatia;United Kingdom;205;FP6
+71;Slovakia;United Kingdom;671;FP6
+72;Latvia;United Kingdom;339;FP6
+73;Malta;United Kingdom;143;FP6
+74;Luxembourg;United Kingdom;168;FP6
+75;Estonia;Greece;165;FP6
+76;Austria;Greece;1024;FP6
+77;Belgium;Greece;1719;FP6
+78;France;Greece;4663;FP6
+79;Germany;Greece;5636;FP6
+80;Greece;Greece;1618;FP6
+81;Finland;Greece;862;FP6
+82;Cyprus;Greece;321;FP6
+83;Czech Republic;Greece;522;FP6
+84;Denmark;Greece;908;FP6
+85;Bulgaria;Greece;376;FP6
+86;Croatia;Greece;149;FP6
+87;Estonia;Ireland;83;FP6
+88;Austria;Ireland;373;FP6
+89;Belgium;Ireland;678;FP6
+90;France;Ireland;1483;FP6
+91;Germany;Ireland;1864;FP6
+92;Greece;Ireland;522;FP6
+93;Ireland;Ireland;271;FP6
+94;Finland;Ireland;338;FP6
+95;Hungary;Ireland;234;FP6
+96;Cyprus;Ireland;49;FP6
+97;Czech Republic;Ireland;186;FP6
+98;Denmark;Ireland;451;FP6
+99;Bulgaria;Ireland;96;FP6
+100;Croatia;Ireland;30;FP6
+101;Estonia;Spain;331;FP6
+102;Austria;Spain;1952;FP6
+103;Belgium;Spain;3694;FP6
+104;France;Spain;9736;FP6
+105;Germany;Spain;12096;FP6
+106;Italy;Spain;8753;FP6
+107;Greece;Spain;3113;FP6
+108;Ireland;Spain;1083;FP6
+109;Spain;Spain;4840;FP6
+110;Finland;Spain;1681;FP6
+111;Poland;Spain;2250;FP6
+112;Hungary;Spain;1378;FP6
+113;Portugal;Spain;1851;FP6
+114;Netherlands;Spain;4618;FP6
+115;Cyprus;Spain;283;FP6
+116;Czech Republic;Spain;1275;FP6
+117;Romania;Spain;753;FP6
+118;Denmark;Spain;1982;FP6
+119;Lithuania;Spain;283;FP6
+120;Slovenia;Spain;723;FP6
+121;Bulgaria;Spain;450;FP6
+122;Croatia;Spain;145;FP6
+123;Slovakia;Spain;439;FP6
+124;Latvia;Spain;183;FP6
+125;Malta;Spain;190;FP6
+126;Luxembourg;Spain;66;FP6
+127;Estonia;Finland;206;FP6
+128;Austria;Finland;679;FP6
+129;Belgium;Finland;1084;FP6
+130;Finland;Finland;731;FP6
+131;Cyprus;Finland;82;FP6
+132;Czech Republic;Finland;420;FP6
+133;Denmark;Finland;829;FP6
+134;Bulgaria;Finland;175;FP6
+135;Croatia;Finland;46;FP6
+136;Estonia;Poland;214;FP6
+137;Austria;Poland;894;FP6
+138;Belgium;Poland;1317;FP6
+139;France;Poland;3061;FP6
+140;Germany;Poland;4515;FP6
+141;Italy;Poland;2895;FP6
+142;Greece;Poland;924;FP6
+143;Ireland;Poland;378;FP6
+144;Finland;Poland;654;FP6
+145;Poland;Poland;914;FP6
+146;Hungary;Poland;636;FP6
+147;Netherlands;Poland;1794;FP6
+148;Cyprus;Poland;121;FP6
+149;Czech Republic;Poland;570;FP6
+150;Denmark;Poland;809;FP6
+151;Lithuania;Poland;224;FP6
+152;Bulgaria;Poland;312;FP6
+153;Croatia;Poland;95;FP6
+154;Latvia;Poland;184;FP6
+155;Malta;Poland;69;FP6
+156;Luxembourg;Poland;60;FP6
+157;Estonia;Hungary;152;FP6
+158;Austria;Hungary;676;FP6
+159;Belgium;Hungary;868;FP6
+160;France;Hungary;1882;FP6
+161;Germany;Hungary;2478;FP6
+162;Greece;Hungary;568;FP6
+163;Finland;Hungary;437;FP6
+164;Hungary;Hungary;499;FP6
+165;Cyprus;Hungary;95;FP6
+166;Czech Republic;Hungary;403;FP6
+167;Denmark;Hungary;492;FP6
+168;Bulgaria;Hungary;265;FP6
+169;Croatia;Hungary;73;FP6
+170;Estonia;Portugal;86;FP6
+171;Austria;Portugal;457;FP6
+172;Belgium;Portugal;966;FP6
+173;France;Portugal;2397;FP6
+174;Germany;Portugal;2721;FP6
+175;Italy;Portugal;2180;FP6
+176;Greece;Portugal;883;FP6
+177;Ireland;Portugal;314;FP6
+178;Finland;Portugal;393;FP6
+179;Poland;Portugal;623;FP6
+180;Hungary;Portugal;344;FP6
+181;Portugal;Portugal;535;FP6
+182;Netherlands;Portugal;1080;FP6
+183;Cyprus;Portugal;107;FP6
+184;Czech Republic;Portugal;277;FP6
+185;Denmark;Portugal;484;FP6
+186;Lithuania;Portugal;69;FP6
+187;Bulgaria;Portugal;156;FP6
+188;Croatia;Portugal;52;FP6
+189;Latvia;Portugal;77;FP6
+190;Malta;Portugal;56;FP6
+191;Luxembourg;Portugal;28;FP6
+192;Estonia;Sweden;317;FP6
+193;Austria;Sweden;1224;FP6
+194;Belgium;Sweden;2148;FP6
+195;France;Sweden;5229;FP6
+196;Germany;Sweden;7647;FP6
+197;Italy;Sweden;4097;FP6
+198;Greece;Sweden;1338;FP6
+199;Ireland;Sweden;544;FP6
+200;Spain;Sweden;3080;FP6
+201;Finland;Sweden;1472;FP6
+202;Poland;Sweden;1147;FP6
+203;Hungary;Sweden;664;FP6
+204;Portugal;Sweden;755;FP6
+205;Sweden;Sweden;1807;FP6
+206;Netherlands;Sweden;2840;FP6
+207;Cyprus;Sweden;94;FP6
+208;Czech Republic;Sweden;722;FP6
+209;Romania;Sweden;305;FP6
+210;Denmark;Sweden;1519;FP6
+211;Lithuania;Sweden;197;FP6
+212;Slovenia;Sweden;308;FP6
+213;Bulgaria;Sweden;215;FP6
+214;Croatia;Sweden;78;FP6
+215;Slovakia;Sweden;251;FP6
+216;Latvia;Sweden;166;FP6
+217;Malta;Sweden;49;FP6
+218;Luxembourg;Sweden;54;FP6
+219;Estonia;Netherlands;260;FP6
+220;Austria;Netherlands;1795;FP6
+221;Belgium;Netherlands;3429;FP6
+222;France;Netherlands;7115;FP6
+223;Germany;Netherlands;10395;FP6
+224;Italy;Netherlands;5736;FP6
+225;Greece;Netherlands;1969;FP6
+226;Ireland;Netherlands;927;FP6
+227;Finland;Netherlands;1438;FP6
+228;Hungary;Netherlands;1171;FP6
+229;Netherlands;Netherlands;3216;FP6
+230;Cyprus;Netherlands;172;FP6
+231;Czech Republic;Netherlands;1089;FP6
+232;Denmark;Netherlands;2327;FP6
+233;Lithuania;Netherlands;242;FP6
+234;Bulgaria;Netherlands;439;FP6
+235;Croatia;Netherlands;121;FP6
+236;Latvia;Netherlands;192;FP6
+237;Malta;Netherlands;68;FP6
+238;Luxembourg;Netherlands;94;FP6
+239;Austria;Cyprus;97;FP6
+240;Belgium;Cyprus;160;FP6
+241;Cyprus;Cyprus;50;FP6
+242;Bulgaria;Cyprus;64;FP6
+243;Croatia;Cyprus;29;FP6
+244;Austria;Czech Republic;604;FP6
+245;Belgium;Czech Republic;825;FP6
+246;Cyprus;Czech Republic;81;FP6
+247;Czech Republic;Czech Republic;341;FP6
+248;Bulgaria;Czech Republic;162;FP6
+249;Croatia;Czech Republic;42;FP6
+250;Austria;Austria;1094;FP6
+251;Estonia;Romania;88;FP6
+252;Austria;Romania;302;FP6
+253;Belgium;Romania;374;FP6
+254;France;Romania;1061;FP6
+255;Germany;Romania;1269;FP6
+256;Italy;Romania;1070;FP6
+257;Greece;Romania;624;FP6
+258;Ireland;Romania;105;FP6
+259;Finland;Romania;194;FP6
+260;Poland;Romania;368;FP6
+261;Hungary;Romania;283;FP6
+262;Portugal;Romania;192;FP6
+263;Netherlands;Romania;446;FP6
+264;Cyprus;Romania;81;FP6
+265;Czech Republic;Romania;204;FP6
+266;Romania;Romania;250;FP6
+267;Denmark;Romania;205;FP6
+268;Lithuania;Romania;96;FP6
+269;Bulgaria;Romania;224;FP6
+270;Croatia;Romania;65;FP6
+271;Latvia;Romania;71;FP6
+272;Malta;Romania;44;FP6
+273;Luxembourg;Romania;17;FP6
+274;Austria;Denmark;731;FP6
+275;Belgium;Denmark;1270;FP6
+276;Cyprus;Denmark;92;FP6
+277;Czech Republic;Denmark;484;FP6
+278;Denmark;Denmark;1076;FP6
+279;Bulgaria;Denmark;205;FP6
+280;Croatia;Denmark;62;FP6
+281;Estonia;Lithuania;111;FP6
+282;Austria;Lithuania;142;FP6
+283;Belgium;Lithuania;177;FP6
+284;France;Lithuania;356;FP6
+285;Germany;Lithuania;516;FP6
+286;Italy;Lithuania;419;FP6
+287;Greece;Lithuania;148;FP6
+288;Ireland;Lithuania;70;FP6
+289;Finland;Lithuania;119;FP6
+290;Hungary;Lithuania;153;FP6
+291;Cyprus;Lithuania;48;FP6
+292;Czech Republic;Lithuania;133;FP6
+293;Denmark;Lithuania;157;FP6
+294;Lithuania;Lithuania;121;FP6
+295;Bulgaria;Lithuania;96;FP6
+296;Croatia;Lithuania;15;FP6
+297;Latvia;Lithuania;103;FP6
+298;Estonia;Slovenia;83;FP6
+299;Austria;Slovenia;409;FP6
+300;Belgium;Slovenia;441;FP6
+301;France;Slovenia;957;FP6
+302;Germany;Slovenia;1295;FP6
+303;Italy;Slovenia;839;FP6
+304;Greece;Slovenia;297;FP6
+305;Ireland;Slovenia;111;FP6
+306;Finland;Slovenia;191;FP6
+307;Poland;Slovenia;406;FP6
+308;Hungary;Slovenia;264;FP6
+309;Portugal;Slovenia;167;FP6
+310;Netherlands;Slovenia;508;FP6
+311;Cyprus;Slovenia;60;FP6
+312;Czech Republic;Slovenia;199;FP6
+313;Romania;Slovenia;143;FP6
+314;Denmark;Slovenia;259;FP6
+315;Lithuania;Slovenia;116;FP6
+316;Slovenia;Slovenia;199;FP6
+317;Bulgaria;Slovenia;139;FP6
+318;Croatia;Slovenia;73;FP6
+319;Slovakia;Slovenia;126;FP6
+320;Latvia;Slovenia;79;FP6
+321;Malta;Slovenia;36;FP6
+322;Luxembourg;Slovenia;34;FP6
+323;Austria;Croatia;92;FP6
+324;Belgium;Croatia;107;FP6
+325;Bulgaria;Croatia;51;FP6
+326;Croatia;Croatia;27;FP6
+327;Austria;Bulgaria;242;FP6
+328;Belgium;Bulgaria;334;FP6
+329;Bulgaria;Bulgaria;142;FP6
+330;Estonia;Slovakia;79;FP6
+331;Austria;Slovakia;283;FP6
+332;Belgium;Slovakia;302;FP6
+333;France;Slovakia;597;FP6
+334;Germany;Slovakia;882;FP6
+335;Italy;Slovakia;601;FP6
+336;Greece;Slovakia;196;FP6
+337;Ireland;Slovakia;88;FP6
+338;Finland;Slovakia;177;FP6
+339;Poland;Slovakia;306;FP6
+340;Hungary;Slovakia;268;FP6
+341;Portugal;Slovakia;119;FP6
+342;Netherlands;Slovakia;346;FP6
+343;Cyprus;Slovakia;52;FP6
+344;Czech Republic;Slovakia;219;FP6
+345;Romania;Slovakia;140;FP6
+346;Denmark;Slovakia;174;FP6
+347;Lithuania;Slovakia;91;FP6
+348;Bulgaria;Slovakia;132;FP6
+349;Croatia;Slovakia;31;FP6
+350;Slovakia;Slovakia;116;FP6
+351;Latvia;Slovakia;65;FP6
+352;Malta;Slovakia;40;FP6
+353;Luxembourg;Slovakia;21;FP6
+354;Estonia;Latvia;86;FP6
+355;Austria;Latvia;118;FP6
+356;Belgium;Latvia;142;FP6
+357;France;Latvia;296;FP6
+358;Germany;Latvia;426;FP6
+359;Italy;Latvia;247;FP6
+360;Greece;Latvia;104;FP6
+361;Ireland;Latvia;42;FP6
+362;Finland;Latvia;113;FP6
+363;Hungary;Latvia;121;FP6
+364;Cyprus;Latvia;42;FP6
+365;Czech Republic;Latvia;88;FP6
+366;Denmark;Latvia;107;FP6
+367;Bulgaria;Latvia;57;FP6
+368;Croatia;Latvia;22;FP6
+369;Latvia;Latvia;30;FP6
+370;Estonia;Malta;42;FP6
+371;Austria;Malta;62;FP6
+372;Belgium;Malta;57;FP6
+373;France;Malta;138;FP6
+374;Germany;Malta;168;FP6
+375;Italy;Malta;186;FP6
+376;Greece;Malta;94;FP6
+377;Ireland;Malta;30;FP6
+378;Finland;Malta;26;FP6
+379;Hungary;Malta;79;FP6
+380;Cyprus;Malta;42;FP6
+381;Czech Republic;Malta;38;FP6
+382;Denmark;Malta;47;FP6
+383;Lithuania;Malta;34;FP6
+384;Bulgaria;Malta;42;FP6
+385;Croatia;Malta;9;FP6
+386;Latvia;Malta;29;FP6
+387;Malta;Malta;17;FP6
+388;Luxembourg;Malta;3;FP6
+389;Estonia;Luxembourg;12;FP6
+390;Austria;Luxembourg;79;FP6
+391;Belgium;Luxembourg;124;FP6
+392;France;Luxembourg;180;FP6
+393;Germany;Luxembourg;260;FP6
+394;Italy;Luxembourg;123;FP6
+395;Greece;Luxembourg;64;FP6
+396;Ireland;Luxembourg;29;FP6
+397;Finland;Luxembourg;37;FP6
+398;Hungary;Luxembourg;23;FP6
+399;Cyprus;Luxembourg;15;FP6
+400;Czech Republic;Luxembourg;29;FP6
+401;Denmark;Luxembourg;22;FP6
+402;Lithuania;Luxembourg;13;FP6
+403;Bulgaria;Luxembourg;14;FP6
+404;Croatia;Luxembourg;6;FP6
+405;Latvia;Luxembourg;13;FP6
+406;Luxembourg;Luxembourg;49;FP6
+407;Germany;Germany;20918;FP7
+408;Austria;Germany;7193;FP7
+409;France;Germany;23807;FP7
+410;Finland;Germany;5229;FP7
+411;Czech Republic;Germany;2873;FP7
+412;Denmark;Germany;4692;FP7
+413;Belgium;Germany;9836;FP7
+414;Cyprus;Germany;570;FP7
+415;Bulgaria;Germany;890;FP7
+416;Estonia;Germany;699;FP7
+417;Croatia;Germany;602;FP7
+418;Germany;Portugal;3333;FP7
+419;Portugal;Portugal;1139;FP7
+420;Austria;Portugal;699;FP7
+421;France;Portugal;2734;FP7
+422;Greece;Portugal;1096;FP7
+423;Italy;Portugal;2873;FP7
+424;Finland;Portugal;654;FP7
+425;Netherlands;Portugal;1539;FP7
+426;Ireland;Portugal;518;FP7
+427;Czech Republic;Portugal;328;FP7
+428;Denmark;Portugal;613;FP7
+429;Belgium;Portugal;1351;FP7
+430;Cyprus;Portugal;143;FP7
+431;Bulgaria;Portugal;205;FP7
+432;Estonia;Portugal;157;FP7
+433;Poland;Portugal;508;FP7
+434;Hungary;Portugal;351;FP7
+435;Latvia;Portugal;107;FP7
+436;Malta;Portugal;81;FP7
+437;Lithuania;Portugal;88;FP7
+438;Luxembourg;Portugal;81;FP7
+439;Croatia;Portugal;164;FP7
+440;Germany;Spain;17361;FP7
+441;Portugal;Spain;3458;FP7
+442;Spain;Spain;10190;FP7
+443;Austria;Spain;3377;FP7
+444;France;Spain;13336;FP7
+445;Greece;Spain;4355;FP7
+446;Italy;Spain;13980;FP7
+447;Finland;Spain;3474;FP7
+448;Netherlands;Spain;7304;FP7
+449;Ireland;Spain;1962;FP7
+450;Czech Republic;Spain;1663;FP7
+451;Denmark;Spain;2710;FP7
+452;Slovenia;Spain;1096;FP7
+453;Belgium;Spain;6053;FP7
+454;Cyprus;Spain;535;FP7
+455;Bulgaria;Spain;755;FP7
+456;Estonia;Spain;471;FP7
+457;Poland;Spain;2350;FP7
+458;Romania;Spain;1402;FP7
+459;Hungary;Spain;1597;FP7
+460;Latvia;Spain;383;FP7
+461;Slovakia;Spain;473;FP7
+462;Malta;Spain;288;FP7
+463;Lithuania;Spain;370;FP7
+464;Luxembourg;Spain;244;FP7
+465;Croatia;Spain;444;FP7
+466;Austria;Austria;1772;FP7
+467;Austria;France;3877;FP7
+468;France;France;13215;FP7
+469;Finland;France;3363;FP7
+470;Czech Republic;France;1879;FP7
+471;Denmark;France;2727;FP7
+472;Belgium;France;7618;FP7
+473;Cyprus;France;475;FP7
+474;Bulgaria;France;705;FP7
+475;Estonia;France;464;FP7
+476;Croatia;France;362;FP7
+477;Germany;Greece;5551;FP7
+478;Austria;Greece;1043;FP7
+479;France;Greece;4396;FP7
+480;Greece;Greece;2125;FP7
+481;Finland;Greece;1034;FP7
+482;Czech Republic;Greece;521;FP7
+483;Denmark;Greece;744;FP7
+484;Belgium;Greece;1769;FP7
+485;Cyprus;Greece;530;FP7
+486;Bulgaria;Greece;496;FP7
+487;Estonia;Greece;211;FP7
+488;Croatia;Greece;273;FP7
+489;Germany;Italy;20582;FP7
+490;Austria;Italy;3807;FP7
+491;France;Italy;15784;FP7
+492;Greece;Italy;4990;FP7
+493;Italy;Italy;12073;FP7
+494;Finland;Italy;3035;FP7
+495;Ireland;Italy;1736;FP7
+496;Czech Republic;Italy;1746;FP7
+497;Denmark;Italy;2603;FP7
+498;Belgium;Italy;6686;FP7
+499;Cyprus;Italy;525;FP7
+500;Bulgaria;Italy;871;FP7
+501;Estonia;Italy;499;FP7
+502;Hungary;Italy;1701;FP7
+503;Croatia;Italy;422;FP7
+504;Germany;Sweden;8967;FP7
+505;Portugal;Sweden;937;FP7
+506;Spain;Sweden;4660;FP7
+507;Austria;Sweden;1713;FP7
+508;France;Sweden;6211;FP7
+509;Greece;Sweden;1496;FP7
+510;Italy;Sweden;5189;FP7
+511;Sweden;Sweden;2704;FP7
+512;Finland;Sweden;1861;FP7
+513;Netherlands;Sweden;3777;FP7
+514;Ireland;Sweden;754;FP7
+515;Czech Republic;Sweden;710;FP7
+516;Denmark;Sweden;1555;FP7
+517;Slovenia;Sweden;438;FP7
+518;Belgium;Sweden;2641;FP7
+519;Cyprus;Sweden;191;FP7
+520;Bulgaria;Sweden;257;FP7
+521;Estonia;Sweden;326;FP7
+522;Poland;Sweden;1048;FP7
+523;Romania;Sweden;547;FP7
+524;Hungary;Sweden;704;FP7
+525;Latvia;Sweden;226;FP7
+526;Slovakia;Sweden;209;FP7
+527;Malta;Sweden;83;FP7
+528;Lithuania;Sweden;195;FP7
+529;Luxembourg;Sweden;105;FP7
+530;Croatia;Sweden;183;FP7
+531;Germany;United Kingdom;25086;FP7
+532;Portugal;United Kingdom;2949;FP7
+533;Spain;United Kingdom;14394;FP7
+534;Austria;United Kingdom;4188;FP7
+535;France;United Kingdom;17746;FP7
+536;Greece;United Kingdom;4921;FP7
+537;Italy;United Kingdom;15992;FP7
+538;Sweden;United Kingdom;6927;FP7
+539;United Kingdom;United Kingdom;14580;FP7
+540;Finland;United Kingdom;3762;FP7
+541;Netherlands;United Kingdom;12050;FP7
+542;Ireland;United Kingdom;2778;FP7
+543;Czech Republic;United Kingdom;1961;FP7
+544;Denmark;United Kingdom;4058;FP7
+545;Slovenia;United Kingdom;1118;FP7
+546;Belgium;United Kingdom;8065;FP7
+547;Cyprus;United Kingdom;635;FP7
+548;Bulgaria;United Kingdom;989;FP7
+549;Estonia;United Kingdom;666;FP7
+550;Poland;United Kingdom;3105;FP7
+551;Romania;United Kingdom;1415;FP7
+552;Hungary;United Kingdom;1913;FP7
+553;Latvia;United Kingdom;356;FP7
+554;Slovakia;United Kingdom;611;FP7
+555;Malta;United Kingdom;243;FP7
+556;Lithuania;United Kingdom;528;FP7
+557;Luxembourg;United Kingdom;261;FP7
+558;Croatia;United Kingdom;499;FP7
+559;Austria;Finland;1176;FP7
+560;Finland;Finland;1685;FP7
+561;Czech Republic;Finland;504;FP7
+562;Denmark;Finland;933;FP7
+563;Belgium;Finland;1546;FP7
+564;Cyprus;Finland;115;FP7
+565;Bulgaria;Finland;171;FP7
+566;Estonia;Finland;273;FP7
+567;Croatia;Finland;121;FP7
+568;Germany;Netherlands;14389;FP7
+569;Austria;Netherlands;2616;FP7
+570;France;Netherlands;9199;FP7
+571;Greece;Netherlands;2214;FP7
+572;Italy;Netherlands;8150;FP7
+573;Finland;Netherlands;2338;FP7
+574;Netherlands;Netherlands;5680;FP7
+575;Ireland;Netherlands;1291;FP7
+576;Czech Republic;Netherlands;1159;FP7
+577;Denmark;Netherlands;2366;FP7
+578;Belgium;Netherlands;5349;FP7
+579;Cyprus;Netherlands;282;FP7
+580;Bulgaria;Netherlands;471;FP7
+581;Estonia;Netherlands;360;FP7
+582;Hungary;Netherlands;1093;FP7
+583;Latvia;Netherlands;229;FP7
+584;Malta;Netherlands;107;FP7
+585;Lithuania;Netherlands;255;FP7
+586;Luxembourg;Netherlands;191;FP7
+587;Croatia;Netherlands;258;FP7
+588;Germany;Ireland;2512;FP7
+589;Austria;Ireland;508;FP7
+590;France;Ireland;1837;FP7
+591;Greece;Ireland;651;FP7
+592;Finland;Ireland;504;FP7
+593;Ireland;Ireland;747;FP7
+594;Czech Republic;Ireland;265;FP7
+595;Denmark;Ireland;609;FP7
+596;Belgium;Ireland;905;FP7
+597;Cyprus;Ireland;116;FP7
+598;Bulgaria;Ireland;129;FP7
+599;Estonia;Ireland;101;FP7
+600;Hungary;Ireland;256;FP7
+601;Croatia;Ireland;67;FP7
+602;Austria;Czech Republic;624;FP7
+603;Czech Republic;Czech Republic;432;FP7
+604;Belgium;Czech Republic;921;FP7
+605;Cyprus;Czech Republic;77;FP7
+606;Bulgaria;Czech Republic;164;FP7
+607;Croatia;Czech Republic;78;FP7
+608;Austria;Denmark;894;FP7
+609;Czech Republic;Denmark;381;FP7
+610;Denmark;Denmark;1275;FP7
+611;Belgium;Denmark;1590;FP7
+612;Cyprus;Denmark;93;FP7
+613;Bulgaria;Denmark;160;FP7
+614;Croatia;Denmark;85;FP7
+615;Germany;Slovenia;1523;FP7
+616;Portugal;Slovenia;311;FP7
+617;Austria;Slovenia;447;FP7
+618;France;Slovenia;928;FP7
+619;Greece;Slovenia;406;FP7
+620;Italy;Slovenia;1135;FP7
+621;Finland;Slovenia;303;FP7
+622;Netherlands;Slovenia;729;FP7
+623;Ireland;Slovenia;213;FP7
+624;Czech Republic;Slovenia;201;FP7
+625;Denmark;Slovenia;246;FP7
+626;Slovenia;Slovenia;299;FP7
+627;Belgium;Slovenia;636;FP7
+628;Cyprus;Slovenia;81;FP7
+629;Bulgaria;Slovenia;154;FP7
+630;Estonia;Slovenia;95;FP7
+631;Poland;Slovenia;301;FP7
+632;Romania;Slovenia;218;FP7
+633;Hungary;Slovenia;225;FP7
+634;Latvia;Slovenia;73;FP7
+635;Slovakia;Slovenia;100;FP7
+636;Malta;Slovenia;33;FP7
+637;Lithuania;Slovenia;81;FP7
+638;Luxembourg;Slovenia;42;FP7
+639;Croatia;Slovenia;204;FP7
+640;Austria;Belgium;1959;FP7
+641;Belgium;Belgium;3233;FP7
+642;Austria;Cyprus;130;FP7
+643;Belgium;Cyprus;240;FP7
+644;Cyprus;Cyprus;126;FP7
+645;Bulgaria;Cyprus;87;FP7
+646;Croatia;Cyprus;65;FP7
+647;Austria;Bulgaria;273;FP7
+648;Belgium;Bulgaria;380;FP7
+649;Bulgaria;Bulgaria;358;FP7
+650;Germany;Poland;3727;FP7
+651;Austria;Poland;794;FP7
+652;France;Poland;2622;FP7
+653;Greece;Poland;942;FP7
+654;Italy;Poland;2703;FP7
+655;Finland;Poland;775;FP7
+656;Netherlands;Poland;1687;FP7
+657;Ireland;Poland;423;FP7
+658;Czech Republic;Poland;514;FP7
+659;Denmark;Poland;492;FP7
+660;Belgium;Poland;1288;FP7
+661;Cyprus;Poland;130;FP7
+662;Bulgaria;Poland;265;FP7
+663;Estonia;Poland;164;FP7
+664;Poland;Poland;896;FP7
+665;Hungary;Poland;466;FP7
+666;Latvia;Poland;116;FP7
+667;Malta;Poland;70;FP7
+668;Lithuania;Poland;149;FP7
+669;Luxembourg;Poland;66;FP7
+670;Croatia;Poland;149;FP7
+671;Germany;Romania;1812;FP7
+672;Portugal;Romania;442;FP7
+673;Austria;Romania;430;FP7
+674;France;Romania;1485;FP7
+675;Greece;Romania;754;FP7
+676;Italy;Romania;1622;FP7
+677;Finland;Romania;365;FP7
+678;Netherlands;Romania;752;FP7
+679;Ireland;Romania;208;FP7
+680;Czech Republic;Romania;280;FP7
+681;Denmark;Romania;264;FP7
+682;Belgium;Romania;694;FP7
+683;Cyprus;Romania;129;FP7
+684;Bulgaria;Romania;360;FP7
+685;Estonia;Romania;140;FP7
+686;Poland;Romania;421;FP7
+687;Romania;Romania;378;FP7
+688;Hungary;Romania;425;FP7
+689;Latvia;Romania;106;FP7
+690;Malta;Romania;65;FP7
+691;Lithuania;Romania;121;FP7
+692;Luxembourg;Romania;44;FP7
+693;Croatia;Romania;161;FP7
+694;Germany;Hungary;2419;FP7
+695;Austria;Hungary;583;FP7
+696;France;Hungary;1703;FP7
+697;Greece;Hungary;631;FP7
+698;Finland;Hungary;466;FP7
+699;Czech Republic;Hungary;345;FP7
+700;Denmark;Hungary;370;FP7
+701;Belgium;Hungary;902;FP7
+702;Cyprus;Hungary;99;FP7
+703;Bulgaria;Hungary;220;FP7
+704;Estonia;Hungary;130;FP7
+705;Hungary;Hungary;1251;FP7
+706;Croatia;Hungary;127;FP7
+707;Austria;Estonia;215;FP7
+708;Czech Republic;Estonia;91;FP7
+709;Denmark;Estonia;176;FP7
+710;Belgium;Estonia;265;FP7
+711;Cyprus;Estonia;61;FP7
+712;Bulgaria;Estonia;83;FP7
+713;Estonia;Estonia;127;FP7
+714;Croatia;Estonia;59;FP7
+715;Germany;Latvia;370;FP7
+716;Austria;Latvia;152;FP7
+717;France;Latvia;351;FP7
+718;Greece;Latvia;122;FP7
+719;Italy;Latvia;351;FP7
+720;Finland;Latvia;150;FP7
+721;Ireland;Latvia;73;FP7
+722;Czech Republic;Latvia;83;FP7
+723;Denmark;Latvia;104;FP7
+724;Belgium;Latvia;205;FP7
+725;Cyprus;Latvia;46;FP7
+726;Bulgaria;Latvia;59;FP7
+727;Estonia;Latvia;96;FP7
+728;Hungary;Latvia;104;FP7
+729;Latvia;Latvia;352;FP7
+730;Croatia;Latvia;43;FP7
+731;Germany;Slovakia;792;FP7
+732;Portugal;Slovakia;111;FP7
+733;Austria;Slovakia;244;FP7
+734;France;Slovakia;495;FP7
+735;Greece;Slovakia;237;FP7
+736;Italy;Slovakia;532;FP7
+737;Finland;Slovakia;161;FP7
+738;Netherlands;Slovakia;353;FP7
+739;Ireland;Slovakia;117;FP7
+740;Czech Republic;Slovakia;183;FP7
+741;Denmark;Slovakia;126;FP7
+742;Belgium;Slovakia;297;FP7
+743;Cyprus;Slovakia;41;FP7
+744;Bulgaria;Slovakia;88;FP7
+745;Estonia;Slovakia;61;FP7
+746;Poland;Slovakia;203;FP7
+747;Romania;Slovakia;155;FP7
+748;Hungary;Slovakia;227;FP7
+749;Latvia;Slovakia;44;FP7
+750;Slovakia;Slovakia;150;FP7
+751;Malta;Slovakia;33;FP7
+752;Lithuania;Slovakia;50;FP7
+753;Luxembourg;Slovakia;33;FP7
+754;Croatia;Slovakia;45;FP7
+755;Germany;Malta;241;FP7
+756;Austria;Malta;57;FP7
+757;France;Malta;207;FP7
+758;Greece;Malta;151;FP7
+759;Italy;Malta;265;FP7
+760;Finland;Malta;47;FP7
+761;Ireland;Malta;61;FP7
+762;Czech Republic;Malta;48;FP7
+763;Denmark;Malta;53;FP7
+764;Belgium;Malta;88;FP7
+765;Cyprus;Malta;57;FP7
+766;Bulgaria;Malta;82;FP7
+767;Estonia;Malta;54;FP7
+768;Hungary;Malta;60;FP7
+769;Latvia;Malta;50;FP7
+770;Malta;Malta;53;FP7
+771;Lithuania;Malta;24;FP7
+772;Luxembourg;Malta;17;FP7
+773;Croatia;Malta;31;FP7
+774;Germany;Lithuania;530;FP7
+775;Austria;Lithuania;134;FP7
+776;France;Lithuania;405;FP7
+777;Greece;Lithuania;165;FP7
+778;Italy;Lithuania;434;FP7
+779;Finland;Lithuania;148;FP7
+780;Ireland;Lithuania;79;FP7
+781;Czech Republic;Lithuania;91;FP7
+782;Denmark;Lithuania;231;FP7
+783;Belgium;Lithuania;288;FP7
+784;Cyprus;Lithuania;44;FP7
+785;Bulgaria;Lithuania;86;FP7
+786;Estonia;Lithuania;89;FP7
+787;Hungary;Lithuania;114;FP7
+788;Latvia;Lithuania;66;FP7
+789;Lithuania;Lithuania;255;FP7
+790;Croatia;Lithuania;32;FP7
+791;Germany;Luxembourg;363;FP7
+792;Austria;Luxembourg;91;FP7
+793;France;Luxembourg;264;FP7
+794;Greece;Luxembourg;113;FP7
+795;Italy;Luxembourg;251;FP7
+796;Finland;Luxembourg;71;FP7
+797;Ireland;Luxembourg;61;FP7
+798;Czech Republic;Luxembourg;41;FP7
+799;Denmark;Luxembourg;50;FP7
+800;Belgium;Luxembourg;214;FP7
+801;Cyprus;Luxembourg;26;FP7
+802;Bulgaria;Luxembourg;34;FP7
+803;Estonia;Luxembourg;37;FP7
+804;Hungary;Luxembourg;50;FP7
+805;Latvia;Luxembourg;26;FP7
+806;Lithuania;Luxembourg;27;FP7
+807;Luxembourg;Luxembourg;36;FP7
+808;Croatia;Luxembourg;21;FP7
+809;Austria;Croatia;175;FP7
+810;Belgium;Croatia;254;FP7
+811;Bulgaria;Croatia;98;FP7
+812;Croatia;Croatia;184;FP7
+813;Austria;Belgium;606;H2020
+814;Belgium;Belgium;875;H2020
+815;Austria;Bulgaria;91;H2020
+816;Belgium;Bulgaria;132;H2020
+817;Bulgaria;Bulgaria;200;H2020
+818;Austria;Croatia;81;H2020
+819;Belgium;Croatia;90;H2020
+820;Bulgaria;Croatia;39;H2020
+821;Croatia;Croatia;63;H2020
+822;Austria;Cyprus;52;H2020
+823;Belgium;Cyprus;85;H2020
+824;Bulgaria;Cyprus;30;H2020
+825;Croatia;Cyprus;29;H2020
+826;Cyprus;Cyprus;53;H2020
+827;Austria;Czech Republic;200;H2020
+828;Belgium;Czech Republic;241;H2020
+829;Bulgaria;Czech Republic;64;H2020
+830;Croatia;Czech Republic;35;H2020
+831;Cyprus;Czech Republic;22;H2020
+832;Czech Republic;Czech Republic;101;H2020
+833;Austria;Denmark;253;H2020
+834;Belgium;Denmark;428;H2020
+835;Bulgaria;Denmark;55;H2020
+836;Croatia;Denmark;44;H2020
+837;Cyprus;Denmark;36;H2020
+838;Czech Republic;Denmark;102;H2020
+839;Denmark;Denmark;410;H2020
+840;Austria;Estonia;58;H2020
+841;Belgium;Estonia;117;H2020
+842;Bulgaria;Estonia;46;H2020
+843;Croatia;Estonia;26;H2020
+844;Cyprus;Estonia;23;H2020
+845;Czech Republic;Estonia;41;H2020
+846;Denmark;Estonia;146;H2020
+847;Estonia;Estonia;80;H2020
+848;Austria;Finland;312;H2020
+849;Belgium;Finland;467;H2020
+850;Bulgaria;Finland;73;H2020
+851;Croatia;Finland;34;H2020
+852;Cyprus;Finland;33;H2020
+853;Czech Republic;Finland;129;H2020
+854;Denmark;Finland;263;H2020
+855;Estonia;Finland;69;H2020
+856;Finland;Finland;419;H2020
+857;Austria;France;998;H2020
+858;Belgium;France;1859;H2020
+859;Bulgaria;France;175;H2020
+860;Croatia;France;126;H2020
+861;Cyprus;France;131;H2020
+862;Czech Republic;France;457;H2020
+863;Denmark;France;666;H2020
+864;Estonia;France;150;H2020
+865;Finland;France;860;H2020
+866;France;France;2765;H2020
+867;Austria;Germany;2489;H2020
+868;Belgium;Germany;2523;H2020
+869;Bulgaria;Germany;282;H2020
+870;Croatia;Germany;174;H2020
+871;Cyprus;Germany;185;H2020
+872;Czech Republic;Germany;694;H2020
+873;Denmark;Germany;1128;H2020
+874;Estonia;Germany;221;H2020
+875;Finland;Germany;1329;H2020
+876;France;Germany;5426;H2020
+877;Germany;Germany;5188;H2020
+878;Austria;Greece;314;H2020
+879;Belgium;Greece;525;H2020
+880;Bulgaria;Greece;94;H2020
+881;Croatia;Greece;76;H2020
+882;Cyprus;Greece;156;H2020
+883;Czech Republic;Greece;140;H2020
+884;Denmark;Greece;233;H2020
+885;Estonia;Greece;68;H2020
+886;Finland;Greece;219;H2020
+887;France;Greece;969;H2020
+888;Germany;Greece;1529;H2020
+889;Greece;Greece;624;H2020
+890;Austria;Hungary;121;H2020
+891;Belgium;Hungary;213;H2020
+892;Bulgaria;Hungary;49;H2020
+893;Croatia;Hungary;34;H2020
+894;Cyprus;Hungary;23;H2020
+895;Czech Republic;Hungary;69;H2020
+896;Denmark;Hungary;85;H2020
+897;Estonia;Hungary;31;H2020
+898;Finland;Hungary;102;H2020
+899;France;Hungary;292;H2020
+900;Germany;Hungary;493;H2020
+901;Greece;Hungary;125;H2020
+902;Hungary;Hungary;119;H2020
+903;Austria;Ireland;155;H2020
+904;Belgium;Ireland;331;H2020
+905;Bulgaria;Ireland;38;H2020
+906;Croatia;Ireland;43;H2020
+907;Cyprus;Ireland;38;H2020
+908;Czech Republic;Ireland;63;H2020
+909;Denmark;Ireland;162;H2020
+910;Estonia;Ireland;34;H2020
+911;Finland;Ireland;158;H2020
+912;France;Ireland;584;H2020
+913;Germany;Ireland;825;H2020
+914;Greece;Ireland;198;H2020
+915;Hungary;Ireland;80;H2020
+916;Ireland;Ireland;236;H2020
+917;Austria;Italy;1110;H2020
+918;Belgium;Italy;1727;H2020
+919;Bulgaria;Italy;228;H2020
+920;Croatia;Italy;174;H2020
+921;Cyprus;Italy;196;H2020
+922;Czech Republic;Italy;468;H2020
+923;Denmark;Italy;683;H2020
+924;Estonia;Italy;210;H2020
+925;Finland;Italy;877;H2020
+926;France;Italy;3418;H2020
+927;Germany;Italy;5180;H2020
+928;Greece;Italy;1458;H2020
+929;Hungary;Italy;335;H2020
+930;Ireland;Italy;559;H2020
+931;Italy;Italy;3341;H2020
+932;Austria;Latvia;52;H2020
+933;Belgium;Latvia;84;H2020
+934;Bulgaria;Latvia;25;H2020
+935;Croatia;Latvia;21;H2020
+936;Cyprus;Latvia;21;H2020
+937;Czech Republic;Latvia;42;H2020
+938;Denmark;Latvia;65;H2020
+939;Estonia;Latvia;38;H2020
+940;Finland;Latvia;44;H2020
+941;France;Latvia;80;H2020
+942;Germany;Latvia;145;H2020
+943;Greece;Latvia;53;H2020
+944;Hungary;Latvia;31;H2020
+945;Ireland;Latvia;32;H2020
+946;Italy;Latvia;108;H2020
+947;Latvia;Latvia;23;H2020
+948;Austria;Lithuania;64;H2020
+949;Belgium;Lithuania;94;H2020
+950;Bulgaria;Lithuania;24;H2020
+951;Croatia;Lithuania;23;H2020
+952;Cyprus;Lithuania;19;H2020
+953;Czech Republic;Lithuania;36;H2020
+954;Denmark;Lithuania;31;H2020
+955;Estonia;Lithuania;26;H2020
+956;Finland;Lithuania;46;H2020
+957;France;Lithuania;116;H2020
+958;Germany;Lithuania;181;H2020
+959;Greece;Lithuania;55;H2020
+960;Hungary;Lithuania;31;H2020
+961;Ireland;Lithuania;29;H2020
+962;Italy;Lithuania;122;H2020
+963;Latvia;Lithuania;27;H2020
+964;Lithuania;Lithuania;50;H2020
+965;Austria;Netherlands;844;H2020
+966;Belgium;Netherlands;1589;H2020
+967;Bulgaria;Netherlands;117;H2020
+968;Croatia;Netherlands;98;H2020
+969;Cyprus;Netherlands;97;H2020
+970;Czech Republic;Netherlands;335;H2020
+971;Denmark;Netherlands;658;H2020
+972;Estonia;Netherlands;171;H2020
+973;Finland;Netherlands;658;H2020
+974;France;Netherlands;2281;H2020
+975;Germany;Netherlands;3989;H2020
+976;Greece;Netherlands;615;H2020
+977;Hungary;Netherlands;250;H2020
+978;Ireland;Netherlands;411;H2020
+979;Italy;Netherlands;2195;H2020
+980;Latvia;Netherlands;100;H2020
+981;Lithuania;Netherlands;88;H2020
+982;Netherlands;Netherlands;1598;H2020
+983;Malta;Netherlands;46;H2020
+984;Luxembourg;Netherlands;69;H2020
+985;Austria;Poland;200;H2020
+986;Belgium;Poland;368;H2020
+987;Bulgaria;Poland;69;H2020
+988;Croatia;Poland;57;H2020
+989;Cyprus;Poland;52;H2020
+990;Czech Republic;Poland;105;H2020
+991;Denmark;Poland;154;H2020
+992;Estonia;Poland;47;H2020
+993;Finland;Poland;167;H2020
+994;France;Poland;555;H2020
+995;Germany;Poland;882;H2020
+996;Greece;Poland;202;H2020
+997;Hungary;Poland;110;H2020
+998;Ireland;Poland;113;H2020
+999;Italy;Poland;638;H2020
+1000;Latvia;Poland;48;H2020
+1001;Lithuania;Poland;46;H2020
+1002;Netherlands;Poland;388;H2020
+1003;Poland;Poland;375;H2020
+1004;Malta;Poland;12;H2020
+1005;Luxembourg;Poland;27;H2020
+1006;Austria;Portugal;355;H2020
+1007;Belgium;Portugal;445;H2020
+1008;Bulgaria;Portugal;72;H2020
+1009;Croatia;Portugal;69;H2020
+1010;Cyprus;Portugal;82;H2020
+1011;Czech Republic;Portugal;120;H2020
+1012;Denmark;Portugal;225;H2020
+1013;Estonia;Portugal;62;H2020
+1014;Finland;Portugal;243;H2020
+1015;France;Portugal;836;H2020
+1016;Germany;Portugal;1056;H2020
+1017;Greece;Portugal;350;H2020
+1018;Hungary;Portugal;104;H2020
+1019;Ireland;Portugal;179;H2020
+1020;Italy;Portugal;1006;H2020
+1021;Latvia;Portugal;49;H2020
+1022;Lithuania;Portugal;48;H2020
+1023;Netherlands;Portugal;504;H2020
+1024;Poland;Portugal;200;H2020
+1025;Portugal;Portugal;456;H2020
+1026;Malta;Portugal;33;H2020
+1027;Luxembourg;Portugal;41;H2020
+1028;Austria;Romania;170;H2020
+1029;Belgium;Romania;297;H2020
+1030;Bulgaria;Romania;82;H2020
+1031;Croatia;Romania;46;H2020
+1032;Cyprus;Romania;48;H2020
+1033;Czech Republic;Romania;72;H2020
+1034;Denmark;Romania;72;H2020
+1035;Estonia;Romania;46;H2020
+1036;Finland;Romania;83;H2020
+1037;France;Romania;306;H2020
+1038;Germany;Romania;429;H2020
+1039;Greece;Romania;141;H2020
+1040;Hungary;Romania;68;H2020
+1041;Ireland;Romania;95;H2020
+1042;Italy;Romania;520;H2020
+1043;Latvia;Romania;43;H2020
+1044;Lithuania;Romania;56;H2020
+1045;Netherlands;Romania;262;H2020
+1046;Poland;Romania;107;H2020
+1047;Portugal;Romania;161;H2020
+1048;Romania;Romania;274;H2020
+1049;Malta;Romania;22;H2020
+1050;Luxembourg;Romania;19;H2020
+1051;Austria;Slovakia;136;H2020
+1052;Belgium;Slovakia;112;H2020
+1053;Bulgaria;Slovakia;26;H2020
+1054;Croatia;Slovakia;28;H2020
+1055;Cyprus;Slovakia;24;H2020
+1056;Czech Republic;Slovakia;73;H2020
+1057;Denmark;Slovakia;35;H2020
+1058;Estonia;Slovakia;24;H2020
+1059;Finland;Slovakia;49;H2020
+1060;France;Slovakia;137;H2020
+1061;Germany;Slovakia;236;H2020
+1062;Greece;Slovakia;60;H2020
+1063;Hungary;Slovakia;39;H2020
+1064;Ireland;Slovakia;45;H2020
+1065;Italy;Slovakia;143;H2020
+1066;Latvia;Slovakia;26;H2020
+1067;Lithuania;Slovakia;26;H2020
+1068;Netherlands;Slovakia;119;H2020
+1069;Poland;Slovakia;54;H2020
+1070;Portugal;Slovakia;64;H2020
+1071;Romania;Slovakia;52;H2020
+1072;Slovakia;Slovakia;57;H2020
+1073;Malta;Slovakia;7;H2020
+1074;Luxembourg;Slovakia;15;H2020
+1075;Austria;Slovenia;169;H2020
+1076;Belgium;Slovenia;215;H2020
+1077;Bulgaria;Slovenia;32;H2020
+1078;Croatia;Slovenia;47;H2020
+1079;Cyprus;Slovenia;37;H2020
+1080;Czech Republic;Slovenia;53;H2020
+1081;Denmark;Slovenia;85;H2020
+1082;Estonia;Slovenia;35;H2020
+1083;Finland;Slovenia;103;H2020
+1084;France;Slovenia;257;H2020
+1085;Germany;Slovenia;389;H2020
+1086;Greece;Slovenia;141;H2020
+1087;Hungary;Slovenia;56;H2020
+1088;Ireland;Slovenia;56;H2020
+1089;Italy;Slovenia;361;H2020
+1090;Latvia;Slovenia;34;H2020
+1091;Lithuania;Slovenia;27;H2020
+1092;Netherlands;Slovenia;206;H2020
+1093;Poland;Slovenia;69;H2020
+1094;Portugal;Slovenia;116;H2020
+1095;Romania;Slovenia;71;H2020
+1096;Slovakia;Slovenia;36;H2020
+1097;Slovenia;Slovenia;148;H2020
+1098;Malta;Slovenia;9;H2020
+1099;Luxembourg;Slovenia;15;H2020
+1100;Austria;Spain;1217;H2020
+1101;Belgium;Spain;1892;H2020
+1102;Bulgaria;Spain;270;H2020
+1103;Croatia;Spain;169;H2020
+1104;Cyprus;Spain;195;H2020
+1105;Czech Republic;Spain;460;H2020
+1106;Denmark;Spain;830;H2020
+1107;Estonia;Spain;270;H2020
+1108;Finland;Spain;1072;H2020
+1109;France;Spain;3843;H2020
+1110;Germany;Spain;5363;H2020
+1111;Greece;Spain;1396;H2020
+1112;Hungary;Spain;364;H2020
+1113;Ireland;Spain;665;H2020
+1114;Italy;Spain;4669;H2020
+1115;Latvia;Spain;98;H2020
+1116;Lithuania;Spain;110;H2020
+1117;Netherlands;Spain;2256;H2020
+1118;Poland;Spain;620;H2020
+1119;Portugal;Spain;1175;H2020
+1120;Romania;Spain;389;H2020
+1121;Slovakia;Spain;161;H2020
+1122;Slovenia;Spain;392;H2020
+1123;Spain;Spain;3796;H2020
+1124;Malta;Spain;75;H2020
+1125;Luxembourg;Spain;125;H2020
+1126;Austria;Sweden;362;H2020
+1127;Belgium;Sweden;544;H2020
+1128;Bulgaria;Sweden;78;H2020
+1129;Croatia;Sweden;32;H2020
+1130;Cyprus;Sweden;43;H2020
+1131;Czech Republic;Sweden;161;H2020
+1132;Denmark;Sweden;366;H2020
+1133;Estonia;Sweden;67;H2020
+1134;Finland;Sweden;434;H2020
+1135;France;Sweden;1149;H2020
+1136;Germany;Sweden;1862;H2020
+1137;Greece;Sweden;349;H2020
+1138;Hungary;Sweden;116;H2020
+1139;Ireland;Sweden;151;H2020
+1140;Italy;Sweden;1243;H2020
+1141;Latvia;Sweden;50;H2020
+1142;Lithuania;Sweden;48;H2020
+1143;Netherlands;Sweden;749;H2020
+1144;Poland;Sweden;209;H2020
+1145;Portugal;Sweden;250;H2020
+1146;Romania;Sweden;122;H2020
+1147;Slovakia;Sweden;48;H2020
+1148;Slovenia;Sweden;90;H2020
+1149;Spain;Sweden;1347;H2020
+1150;Sweden;Sweden;536;H2020
+1151;Malta;Sweden;26;H2020
+1152;Luxembourg;Sweden;29;H2020
+1153;Austria;United Kingdom;1086;H2020
+1154;Belgium;United Kingdom;1980;H2020
+1155;Bulgaria;United Kingdom;248;H2020
+1156;Croatia;United Kingdom;165;H2020
+1157;Cyprus;United Kingdom;207;H2020
+1158;Czech Republic;United Kingdom;439;H2020
+1159;Denmark;United Kingdom;954;H2020
+1160;Estonia;United Kingdom;179;H2020
+1161;Finland;United Kingdom;889;H2020
+1162;France;United Kingdom;4070;H2020
+1163;Germany;United Kingdom;5927;H2020
+1164;Greece;United Kingdom;1431;H2020
+1165;Hungary;United Kingdom;352;H2020
+1166;Ireland;United Kingdom;818;H2020
+1167;Italy;United Kingdom;4384;H2020
+1168;Latvia;United Kingdom;113;H2020
+1169;Lithuania;United Kingdom;137;H2020
+1170;Netherlands;United Kingdom;2833;H2020
+1171;Poland;United Kingdom;694;H2020
+1172;Portugal;United Kingdom;1102;H2020
+1173;Romania;United Kingdom;364;H2020
+1174;Slovakia;United Kingdom;134;H2020
+1175;Slovenia;United Kingdom;312;H2020
+1176;Spain;United Kingdom;4614;H2020
+1177;Sweden;United Kingdom;1317;H2020
+1178;United Kingdom;United Kingdom;3476;H2020
+1179;Malta;United Kingdom;72;H2020
+1180;Luxembourg;United Kingdom;139;H2020
+1181;Austria;Malta;20;H2020
+1182;Belgium;Malta;27;H2020
+1183;Bulgaria;Malta;17;H2020
+1184;Croatia;Malta;7;H2020
+1185;Cyprus;Malta;23;H2020
+1186;Czech Republic;Malta;10;H2020
+1187;Denmark;Malta;31;H2020
+1188;Estonia;Malta;12;H2020
+1189;Finland;Malta;15;H2020
+1190;France;Malta;49;H2020
+1191;Germany;Malta;62;H2020
+1192;Greece;Malta;34;H2020
+1193;Hungary;Malta;11;H2020
+1194;Ireland;Malta;14;H2020
+1195;Italy;Malta;75;H2020
+1196;Latvia;Malta;11;H2020
+1197;Lithuania;Malta;8;H2020
+1198;Malta;Malta;25;H2020
+1199;Luxembourg;Malta;7;H2020
+1200;Austria;Austria;703;H2020
+1201;Austria;Luxembourg;41;H2020
+1202;Belgium;Luxembourg;96;H2020
+1203;Bulgaria;Luxembourg;10;H2020
+1204;Croatia;Luxembourg;15;H2020
+1205;Cyprus;Luxembourg;14;H2020
+1206;Czech Republic;Luxembourg;19;H2020
+1207;Denmark;Luxembourg;23;H2020
+1208;Estonia;Luxembourg;18;H2020
+1209;Finland;Luxembourg;26;H2020
+1210;France;Luxembourg;129;H2020
+1211;Germany;Luxembourg;158;H2020
+1212;Greece;Luxembourg;71;H2020
+1213;Hungary;Luxembourg;20;H2020
+1214;Ireland;Luxembourg;15;H2020
+1215;Italy;Luxembourg;128;H2020
+1216;Latvia;Luxembourg;12;H2020
+1217;Lithuania;Luxembourg;18;H2020
+1218;Luxembourg;Luxembourg;23;H2020

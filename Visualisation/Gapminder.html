@@ -8,7 +8,7 @@
       google.charts.setOnLoadCallback(drawCharts);
       function drawCharts() {
 
-      var dataURL = 'https://docs.google.com/spreadsheets/d/1Ex4EEEDeT8lfRWSi5nCwYnZBNskl9bMO-nmDX3mMszk/gviz/tq?gid=0&headers=1&tq=select%20E%2C%20C%2C%20F%2C%20G%2C%20L%2C%20M%2C%20N%2CP%2C%20H';
+      var dataURL = 'https://docs.google.com/spreadsheets/d/1Ex4EEEDeT8lfRWSi5nCwYnZBNskl9bMO-nmDX3mMszk/gviz/tq?gid=0&headers=1&tq=select%20B%2CC%2CE%2CF%2CG%2CH%2CI%2CJ%2CK%2CL%2CM%2CN%2CO%2CP%2CQ';
 
 	    var query = new google.visualization.Query(dataURL);
 	    query.send(handleQueryResponse);
@@ -41,22 +41,20 @@
   </head>
   <body>
     <div style="padding: auto; width: 100%;">
-      <h1 style="font-family:arial; margin:auto; width:900px;">Interactive bubble chart visualisation of Cordis data (FP6, FP7, H2020)</h1>
+      <h1 style="font-family:arial; margin:auto; width:900px;">Interactive visualisation of Cordis data from FP6, FP7 and H2020</h1>
         <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial;">
-            Through this page, you can view an interactive visualisation of <a href="http://cordis.europa.eu/home_en.html">Cordis</a> data as published by the <a href="http://publications.europa.eu/en/home">Publications Office</a> of the <a href="http://data.europa.eu/euodp/en/data">European Union Open Data Portal</a>.
+            Through this page, you can view an interactive visualisation of <a href="http://cordis.europa.eu/home_en.html">Cordis</a> data as published by the <a href="http://publications.europa.eu/en/home">Publications Office of the European Union</a> <a href="http://data.europa.eu/euodp/en/data">Open Data Portal</a>.
           <br>
-            The datasets contain all projects funded by the European Union under the <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects">sixth</a>, <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects">seventh</a> and <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects">Horizon 2020</a> framework programme for research and technological development. These framework programmes ran from 2002 to 2006, 2007 to 2013, and 2014 to 2020 respectively.
+            The datasets contain all projects funded by the European Union under the <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects">sixth</a>, <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects">seventh</a> and <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects">Horizon 2020</a> framework programmes for research and technological development. These framework programmes ran from 2002 to 2006, 2007 to 2013, and 2014 to 2020 respectively.
           <br><br>
             Each bubble in the below visualisation represents a country.
           <br>
             The size and color of the bubble is determined by the GDP of the country and the number of institutions in the country respectively. The position of the country in the chart is determined by the number of projects with the role coordinator versus the role participant within the country. The timeline below allows to display the evolution between the three framework contracts (FP6, FP7, H2020). All dimensions can be changed using their respective dropdowns.
         </p>
       <div id="chart_div" style="width: 900px; height: 450px; margin:auto;"></div>
+
       <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
-        The number of institutions for FP6 and FP7 is based on the data published on ... and may contain some errors.
-      </p>
-      <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
-          This visualisation has been developed by <a href="http://www.pwc.be/">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home">Publications Office of the EU</a> using <a href="https://www.gapminder.org/">Gapminder</a>.
+          This visualisation has been developed by <a href="http://www.pwc.be/">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home">Publications Office of the EU</a> using <a href="https://developers.google.com/chart/interactive/docs/gallery/bubblechart">the Google-visualization library</a>.
       </p>
     </div>
   </body>

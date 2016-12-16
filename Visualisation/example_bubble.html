@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['motionchart']});
+      google.charts.setOnLoadCallback(drawCharts);
+
+      function drawCharts() {
+        var dataURL = 'https://docs.google.com/spreadsheets/d/1EQUuX6qBbf-fE174DRvuEK4gxWAppNKE7hI1x8a3DX8/';
+        var options = 'gviz/tq?gid=0&headers=1&';
+        var select = 'tq=select%20B%2CC%2CE%2CF%2CG%2CH%2CI%2CJ%2CK%2CL';
+        var url = dataURL + options + query;
+
+	       var query = new google.visualization.Query(url);
+	       query.send(handleQueryResponse);
+      }
+
+	    function handleQueryResponse(response) {
+        var data = response.getDataTable();
+        var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+      <div id="chart_div" style="width: 900px; height: 450px; margin:auto;"></div>
+  </body>
+</html>

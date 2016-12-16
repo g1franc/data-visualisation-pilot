@@ -9,7 +9,7 @@ class JNode:
 		self.index = index
 		self.links = links
 		self.label = line[1]
-		self.score = line[2] 
+		self.score = line[2]
 		self.id = index
 	def toJSON(self):
 		return json.dumps({'index':self.index,'links':self.links,'label':self.label,'score':self.score,'id':self.index},separators=(',', ':'),indent=4)
@@ -31,9 +31,9 @@ orgDictionary = {};
 FileLink = sys.argv[1]
 FileOrg = sys.argv[2]
 
-
-linesLink = [line.rstrip('\n') for line in open(FileLink)]
-linesOrg = [line.rstrip('\n') for line in open(FileOrg)]
+open(FileLink)
+linesLink = [line.rstrip('\n') for line in open(FileLink, encoding="utf-8")]
+linesOrg = [line.rstrip('\n') for line in open(FileOrg, encoding="utf-8")]
 
 
 for i in range(1, len(linesOrg)):
@@ -62,7 +62,7 @@ def WriteJSON(nameOutputFile, nodelist, linksList):
 		outputFile.write(']\n')
 		outputFile.write('}')
 	except:
-		print nameOutputFile
+		print(nameOutputFile)
 
 
 name = "";
@@ -73,31 +73,30 @@ for i in range(1, len(linesLink)):
 	curName = lineList[4]
 	if(name != curName and len(NodeDic) != 0):
 		NodeList = [];
-		for key, value in NodeDic.iteritems():
+		for key, value in NodeDic.items():
 			NodeList.append(value)
 		WriteJSON("outputJS/" + name + ".json", NodeList, linksList)
 		NodeDic = {};
 		linksList = [];
 	name = curName
-	
+
 	org1Name = lineList[1]
 	org2Name = lineList[2]
 	if (not org1Name in NodeDic)  :
 		NodeDic[org1Name] = orgDictionary[org1Name]
 	if (not org2Name in NodeDic):
 		NodeDic[org2Name] = orgDictionary[org2Name]
-	
+
 	org1Index = NodeDic[org1Name].id
 	org2Index = NodeDic[org2Name].id
-	
+
 	NodeDic[org1Name].links.append(org2Index)
 	linksList.append(JLink(org1Index, org2Index, float(lineList[3])))
 
 
 NodeList = [];
-for key, value in NodeDic.iteritems():
+for key, value in NodeDic.items():
 	NodeList.append(value)
 WriteJSON("outputJS/" + name + ".json", NodeList, linksList)
 NodeDic = {};
 linksList = [];
-
