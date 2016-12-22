@@ -5,7 +5,7 @@
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 #set current directory
-setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/1 - Cordis/3/data-visualisation-pilot/Data cleaning Visualisation 1-V2")
+setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/1 - Cordis/data-visualisation-pilot/Data cleaning Visualisation 1-V2")
 
 ### Load datasets
 # FP6: https://data.europa.eu/euodp/data/dataset/cordisfp6projects
@@ -172,7 +172,17 @@ output$totalBudgetManagedAsCoordinatorsPerCapita <- output$totalBudgetManagedAsC
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # XI. save file ###############################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-output$Year <- paste(output$Year,"/01/01", sep='')
+output <- plyr::rename(output,c("Country" = "CountryShort",
+                                "name"="Country", 
+                                "numberOfProjectCoordinators" = "Number of coordinated projects per country",
+                                "totalBudgetManagedAsCoordinators" = "Budget of coordinated projects per country",
+                                "TotalOfProject" = "Total number of projects",
+                                "numberOfProjectParticipants" = "Number of projects as participant",
+                                "GDPPerCapita" = "GDP per capita",
+                                "totalBudgetManagedAsCoordinatorsPerCapita" = "Budget of coordinated projects per country per capita"))
+
+output <- output[output$Year != 2017, ]
+output <- output[output$Year != 2018, ]
 
 options(scipen = 4)
 write.table(output, "output/CountryInformation.csv", sep = "\t", quote = FALSE)
