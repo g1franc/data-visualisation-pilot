@@ -1,3 +1,5 @@
+# the goal of this V2 is to create the complete network at distancex 1 for a precise organisation 
+
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # I. LOAD DATASETS #################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -28,6 +30,7 @@ func_order <- function(vector){
   return (as.character(sort(unlist(vector))))
 }
 
+
 func_createPair <- function(vector){
   if (length(vector) > 1) {
     return (t(combn(unlist(vector), 2)))
@@ -42,43 +45,79 @@ func_createFrame <- function(vector){
   return(data.frame(matrix(unlist(vector), ncol = 2, byrow=FALSE)))
 }
 
+func_BuildLinkForOneOrg <- function(dataset, orgName){
+  #dataset <- Dataset_H2020Organizations
+  #dataset <- head(dataset, n=5001)
+  #orgName <- "JOECKEL BERNHARD"
+  #orgName <- "UNIVERSITY OF PLYMOUTH"
+  #orgName <- "GUIDANCE NAVIGATION HOLDINGS LTD"
+  #orgName <- "CENTRE NATIONAL DE LA RECHERCHE SCIENTIFIQUE CNRS"
+
+  listProject <- dataset[dataset$name == orgName, ]$projectReference
+  listProject <- unique(listProject)
+  
+  listOrg  <- dataset[dataset$projectReference %in% listProject,]$name
+  listOrg <- unique(listOrg)
+  
+  datasetTmp <- dataset[dataset$name %in% listOrg,]
+  datasetTmp <- subset(datasetTmp, select=c(projectReference, name))
+  datasetTmp <-aggregate(datasetTmp$name, 
+                      by=list(datasetTmp$projectReference),
+                      FUN=paste, simplify = FALSE)
+  datasetTmp <- plyr::rename(datasetTmp,c("Group.1"="Project",
+                                    "x" = "Organisations"))
+
+  datasetTmp$Organisations <- sapply(datasetTmp$Organisations, func_order, simplify = FALSE)
+  datasetTmp$size <- sapply(datasetTmp$Organisations, func_size)
+  datasetTmp<- datasetTmp[datasetTmp$size > 1,]  
+  datasetTmp <- subset(datasetTmp, select=-c(size))
+  
+  if (nrow(datasetTmp) == 0){
+    output <- data.frame(Org1 = character(),
+                         Org2 = character(),
+                         nbLink = integer(), 
+                         org = character())  
+    
+  }
+
+  if (nrow(datasetTmp) != 0){
+    datasetTmp$Organisations <- sapply(datasetTmp$Organisations, func_createPair, simplify = FALSE)
+    data <- list()
+    for (i in 1:nrow(datasetTmp)) {
+      data[[i]] =func_createFrame(datasetTmp[i,]$Organisations)
+    }
+    
+    tmp <- do.call(rbind, data)
+    output <-data.frame(tmp)
+    output<-aggregate(output$X1,
+                      by=list(output$X1, output$X2),
+                      FUN=length)
+    output <-data.frame(output)
+    output <- plyr::rename(output,c("Group.1" = "Org1",
+                                    "Group.2" = "Org2",
+                                    "x" = "nbLink"))
+    output$Org <- orgName
+  }
+  
+  return (output) 
+}
+
 # build a dataset containing all the interactions between the different countries  
 func_BuildLink <- function(dataset) {
   #dataset <- Dataset_H2020Organizations
-  #dataset <- head(dataset, n=5000)
+  #dataset <- head(dataset, n=20000)
   
-  
-  dataset <-aggregate(dataset$name, 
-                      by=list(dataset$projectReference),
-                      FUN=paste)
-  dataset <- plyr::rename(dataset,c("Group.1"="Project",
-                                    "x" = "ListOrg"))
-  
-  dataset$ListOrg <- sapply(dataset$ListOrg, func_order)
-  dataset$size <- sapply(dataset$ListOrg, func_size)
-  dataset<- dataset[dataset$size > 1,]  
-  dataset <- subset(dataset, select=-c(size, Project))
-  
-  
-  dataset$ListOrg <- sapply(dataset$ListOrg, func_createPair)
-  
+  listOrg <- unique(dataset$name)
   data <- list()
-  for (i in 1:nrow(dataset)) {
-    data[[i]] =func_createFrame(dataset[i,])
+
+  for (i in 1:length(listOrg)) {
+    data[[i]] =func_BuildLinkForOneOrg(dataset, listOrg[i])
+    print(i)
   }
+
   tmp <- do.call(rbind, data)
   
   output <-data.frame(tmp)
-  output<-aggregate(output$X1,
-                    by=list(output$X1, output$X2),
-                    FUN=length)
-  output <-data.frame(output)
-  
-  output <- plyr::rename(output,c("Group.1" = "Org1",
-                                  "Group.2" = "Org2",
-                                  "x" = "nbLinkTmp"))
-  
-  
   return(output)
 }
 

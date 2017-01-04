@@ -74,7 +74,10 @@ func_BuildLink <- function(frameworkContract, dataset) {
                       FUN=paste)
   dataset <- plyr::rename(dataset,c("Group.1"="Project",
                                     "x" = "ListCountries"))
-
+  
+  dataset$ListCountries <- sapply(dataset$ListCountries, unique)
+  
+  
   # create all the link between two country per project (projA [AA,AB,BC], projB [AA,AB,BC]...) 
   dataset$ListCountries <- sapply(dataset$ListCountries, func_order)
   dataset$size <- sapply(dataset$ListCountries, func_size)
