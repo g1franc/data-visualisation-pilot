@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Country Network</title>
-    <link rel="stylesheet" href="network-style.css"/>
+    <title>Organisations Network</title>
+    <link rel="stylesheet" href="network-org-style.css"/>
 
     <script>
       // Sniff MSIE version
@@ -55,14 +55,14 @@
     <div style="padding: auto; width: 100%;">
       <div style="width:1000px; margin:auto;">
         <h1 style="font-family:arial; margin:auto; width:1000px;">
-          Network visualisation of Cordis data (FP6, FP7, H2020)
+          Network visualisation of Cordis data (H2020)
         </h1>
         <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial;">
             Through this page, you can view an interactive visualisation of <a href="http://cordis.europa.eu/home_en.html">Cordis</a> data as published by the <a href="http://publications.europa.eu/en/home">Publications Office</a> of the <a href="http://data.europa.eu/euodp/en/data">European Union Open Data Portal</a>.
           <br>
-            The datasets contain all projects funded by the European Union under the <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects">sixth</a>, <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects">seventh</a> and <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects">Horizon 2020</a> framework programme for research and technological development. These framework programmes ran from 2002 to 2006, 2007 to 2013, and 2014 to 2020 respectively.
+            The datasets contain all projects funded by the European Union under the <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects">Horizon 2020</a> framework programme for research and technological development. This framework programme was funded and approved by the European Commission from 2014 to 2020.
           <br>
-            The visualisation below shows the strength of collaboration between the different countries. The closer together the countries are, the more projects they have worked on together under the selected framework programme, and vice versa.
+            The visualisation below shows the strength of collaboration between one central organisations (in orange) and its partners (in yellow). The thickness of the links represents the strength of the collaboration, i.e. the thicker the link, the more projets the two organisations collaborated on. The size of the bubble represents, for each organisations, the number of projects in which this organisation was involved at the European level.
           <br><br>
         </p>
 
@@ -77,7 +77,7 @@
               <option value="UNIVERSITE_LIBRE_DE_BRUXELLES">ULB</option>
               <option value="INNOVAYT_A-S">INNOVAYT A-S</option>
               <option value="ANERDY_AG">ANERDY AG</option>
-              <option value="CENTRE_NATIONAL_DE_LA_RECHERCHE_SCIENTIFIQUE">CENTRE NATIONAL DE LA RECHERCHE SCIENTIFIQUE</option>
+              <!--<option value="CENTRE_NATIONAL_DE_LA_RECHERCHE_SCIENTIFIQUE">CENTRE NATIONAL DE LA RECHERCHE SCIENTIFIQUE</option>-->
               <option value="ICARE_FINLAND_OY">ICARE FINLAND OY</option>
               <option value="PIXIUM_VISION">PIXIUM VISION</option>
               <option value="ZADIG_SRL">ZADIG SRL</option>
@@ -86,7 +86,7 @@
           </div>
         </div>
 
-        <div id="chartID"></div>
+        <div id="chartID" style="border:2px solid grey;"></div>
         <div id="sidepanel">
           <div id="countryInfo" class="panel_off"></div>
         </div>

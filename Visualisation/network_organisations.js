@@ -35,9 +35,10 @@ var currentOrg = e.options[e.selectedIndex].value;
 function D3ok() {
 
   // Some constants
-  var WIDTH = 1120,
+  var WIDTH = 988,
       HEIGHT = 700,
       SHOW_THRESHOLD = 2.5;
+      ANIMATION_TIME = 100;
 
   // Variables keeping graph state
   var activeCountry = undefined;
@@ -62,7 +63,8 @@ function D3ok() {
   var force = d3.layout.force()
     .charge(-320)
     .size( [WIDTH, HEIGHT] )
-    .linkStrength( function(d,idx) { return d.weight; } );
+    .linkStrength( function(d,idx) { return /*d.weight*/ 1; } );
+    //.friction(0.5);
 
   var myNode = document.getElementById("chartID");
   while (myNode.firstChild) {
@@ -197,7 +199,7 @@ function D3ok() {
         .clamp(true);
       var edge_width = d3.scale.pow().exponent(8)
         .domain( [minLinkWeight,maxLinkWeight] )
-        .range([1,3])
+        .range([1,39])
         .clamp(true);
 
       /* Add drag & zoom behaviours */
@@ -345,7 +347,7 @@ function D3ok() {
       //initial draw, repositioning
       if (mode == 'tick') {
         g = d3.select('g.grpParent')
-        g = g.transition().duration(500);
+        g = g.transition().duration(ANIMATION_TIME);
         g.attr("transform", function(d) { return "translate("+ off.x+","+off.y+")" } );
       }
 
@@ -353,7 +355,7 @@ function D3ok() {
       if( off !== undefined && (off.x != currentOffset.x || off.y != currentOffset.y ) ) {
         g = d3.select('g.grpParent')
         if( doTr )
-        g = g.transition().duration(500);
+        g = g.transition().duration(ANIMATION_TIME);
         g.attr("transform", function(d) { return "translate("+ off.x+","+off.y+")" } );
         currentOffset.x = off.x;
         currentOffset.y = off.y;
@@ -369,17 +371,17 @@ function D3ok() {
         currentZoom = z;
 
       // move edges
-      e = doTr ? graphLinks.transition().duration(500) : graphLinks;
+      e = doTr ? graphLinks.transition().duration(ANIMATION_TIME) : graphLinks;
       e.attr("x1", function(d) { return z*(d.source.x); })
         .attr("y1", function(d) { return z*(d.source.y); })
         .attr("x2", function(d) { return z*(d.target.x); })
         .attr("y2", function(d) { return z*(d.target.y); });
 
       // move nodes
-      n = doTr ? graphNodes.transition().duration(500) : graphNodes;
+      n = doTr ? graphNodes.transition().duration(ANIMATION_TIME) : graphNodes;
       n.attr("transform", function(d) { return "translate(" +z*d.x+","+z*d.y+")" } );
       // move labels
-      l = doTr ? graphLabels.transition().duration(500) : graphLabels;
+      l = doTr ? graphLabels.transition().duration(ANIMATION_TIME) : graphLabels;
       l.attr("transform", function(d) { return "translate(" +z*d.x+","+z*d.y+")" } );
     }
 
@@ -430,6 +432,8 @@ function D3ok() {
       //repositionGraph(currentOffset,undefined,'tick');
         repositionGraph(currentOffset,undefined,'tick');
     });
+
+    //repositionGraph(currentOffset,undefined,'move');
 
   }); // end of function(data)
 

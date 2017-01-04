@@ -3,6 +3,11 @@
 
 import sys
 import json
+import operator
+
+projMin = 1;
+projMax = 1;
+maxBubblesize = 20;
 
 class JNode:
     def __init__(self, index, links, line, label):
@@ -11,8 +16,20 @@ class JNode:
         self.label = label
         self.score = float(line[3])
         self.id = index
+        if self.label == line[4]:
+            self.level = 1
+        else:
+            self.level = 2
+
     def toJSON(self):
-        return json.dumps({'index':self.index,'links':self.links,'label':self.label,'score':self.score,'id':self.index},separators=(',', ':'),indent=4)
+        return json.dumps({'index':self.index,'links':self.links,'label':self.label,'score':self.score,'id':self.index, 'level':self.level},separators=(',', ':'),indent=4)
+
+    def setScore(self, projectNbr):
+        self.score = (((float(projectNbr) - projMin)*(maxBubblesize - 1)) / (projMax - projMin)) + 1
+        #NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
+
+    def getID(self):
+        return self.id;
 
 class JLink:
     def __init__(self, source, target, weight):
@@ -24,8 +41,9 @@ class JLink:
 
 
 #write JSON output file
-def WriteJSON(nameOutputFile, nodelist, linksList):
+def WriteJSON(nameOutputFile, orig_nodelist, linksList):
     try:
+        nodelist = sorted(orig_nodelist, key=operator.attrgetter("id"))
         outputName = nameOutputFile
         outputFile = open(outputName, 'w')
         outputFile.write('{\n')
@@ -43,7 +61,8 @@ def WriteJSON(nameOutputFile, nodelist, linksList):
         outputFile.write(linksList[len(linksList)-1].toJSON())
         outputFile.write(']\n')
         outputFile.write('}')
-    except:
+    except Exception as e:
+        print(e)
         print(nameOutputFile)
 
 
@@ -57,6 +76,7 @@ FileLink = sys.argv[1]
 FileOrg = sys.argv[2]
 
 linesLink = [line.rstrip('\n') for line in open(FileLink, encoding="utf-8")]
+orgsLink = [line.rstrip('\n') for line in open(FileOrg, encoding="utf-8")]
 
 count = 0
 for i in range(1, len(linesLink)):
@@ -75,7 +95,25 @@ for i in range(1, len(linesLink)):
         orgDictionary[lineList[2]] = JNode(count,[],lineList,lineList[2])
         count += 1
 
+projMax = float(orgsLink[1].split(sepChar)[2])
+projMin = float(orgsLink[1].split(sepChar)[2])
 
+orgInfoDict = {}
+
+for i in range(1, len(orgsLink)):
+    orgList = orgsLink[i].split(sepChar)
+    try:
+        value = orgDictionary[orgList[1]];
+        orgInfoDict[orgList[1]] = orgList;
+        if(float(orgList[2]) > projMax):
+            projMax = float(orgList[2])
+        elif(float(orgList[2]) < projMin):
+            projMin = float(orgList[2])
+    except KeyError:
+        pass
+
+for key, value in orgInfoDict.items():
+    orgDictionary[key].setScore(value[2])
 
 name = "";
 NodeDic = {};
@@ -103,7 +141,11 @@ for i in range(1, len(linesLink)):
     org2Index = NodeDic[org2Name].id
 
     NodeDic[org1Name].links.append(org2Index)
-    linksList.append(JLink(org1Index, org2Index, float(lineList[3])))
+    NodeDic[org2Name].links.append(org1Index)
+    #compute weight according to formula :
+    #NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
+    linkWeight = (((float(lineList[3])-1)*(10-1))/(39-10)+1)
+    linksList.append(JLink(org1Index, org2Index, linkWeight))
 
 
 NodeList = [];
