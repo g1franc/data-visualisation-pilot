@@ -18,17 +18,17 @@ setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visua
 # H2020: https://data.europa.eu/euodp/data/dataset/cordisH2020projects
 # Population: http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_pjan&lang=en
 # GDP: http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=naida_10_gdp&lang=en
-Dataset_FP6Organizations = read.csv("Input/cordis-fp6organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_FP6Organizations = read.csv("../Input/cordis-fp6organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
-Dataset_FP7Organizations = read.csv("Input/cordis-fp7organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_FP7Organizations = read.csv("../Input/cordis-fp7organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
-Dataset_H2020Organizations = read.csv("Input/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_H2020Organizations = read.csv("../Input/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
-Dataset_Countries = read.csv("Input/Countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_Countries = read.csv("../Input/Countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 listCountries <- sort(Dataset_Countries$euCode)
 
-Dataset_population  = read.csv("Input/demo_pjan_Data.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
-Dataset_GDP  = read.csv("Input/naida_10_gdp_Data.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
+Dataset_population  = read.csv("../Input/demo_pjan_Data.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
+Dataset_GDP  = read.csv("../Input/naida_10_gdp_Data.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
 
 
 
