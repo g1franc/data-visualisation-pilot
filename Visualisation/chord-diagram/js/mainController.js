@@ -73,7 +73,6 @@ function ($scope) {
   };
 
   $scope.updateHighlight = function () {
-    console.log("hell");
     $scope.lightChords();
   } 
 

@@ -72,26 +72,13 @@ function ($window, matrixFactory) {
     function highlightChords(d) {
       d3.event.preventDefault();
       d3.event.stopPropagation();
-      if(clickedCountries.indexOf(d._id) >= 0) { //country is unclicked
-        clickedCountries.splice(clickedCountries.indexOf(d._id),1);
-        if(clickedCountries.length == 0) {
-          resetChords();
-        }
-        else {
-          container.selectAll("path.chord").style("opacity", function (p) {
-            return (clickedCountries.indexOf(p.target._id)>-1 || clickedCountries.indexOf(p.source._id)>-1) ? 0.9: 0.1;
-          });
-        }
-      }
-      else { //country is clicked
-        clickedCountries.push(d._id);
-        dimChords(d);
-      }
+      
+      $scope.filters[d._id].hide ? $scope.filters[d._id].hide = false : $scope.filters[d._id].hide = true;
+      $scope.$apply();
     }
 
     $scope.lightChords = function () {
       container.selectAll("path.chord").style("opacity", function (p) {
-          console.log($scope.filters)
             return ($scope.filters[p.target._id].hide && $scope.filters[p.source._id].hide) ? 0.9: 0.1;
           });
     }
