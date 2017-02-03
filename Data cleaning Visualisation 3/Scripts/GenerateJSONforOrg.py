@@ -1,5 +1,8 @@
-#Scripts/GenerateJSONfororg.py Output/NbLinkOrgLevel1.csv Output/OrgInformation.csv
-
+#Scripts/GenerateJSONfororg.py Output/FakeOrg.csv
+'''Org;Org1;Org2;Country1;Country2;activityType1;activityType2;nbProj1;nbProj2;nbLink
+A;A;B;UK;FR;ACT1;ACT1;2;2;1
+A;A;C;UK;DE;ACT1;ACT1;2;1;1
+A;A;D;UK;UK;ACT1;ACT2;2;3;2'''
 
 import sys
 import json
@@ -10,19 +13,18 @@ projMax = 1;
 maxBubblesize = 20;
 
 class JNode:
-    def __init__(self, index, links, line, label):
+    def __init__(self, index, links, line, label, country, activity):
         self.index = index
         self.links = links
         self.label = label
-        self.score = float(line[3])
+        self.score = float(line[9])
         self.id = index
-        if self.label == line[4]:
-            self.level = 1
-        else:
-            self.level = 2
+        self.level = 1
+        self.country = country
+        self.activity = activity
 
     def toJSON(self):
-        return json.dumps({'index':self.index,'links':self.links,'label':self.label,'score':self.score,'id':self.index, 'level':self.level},separators=(',', ':'),indent=4)
+        return json.dumps({'index':self.index,'links':self.links,'label':self.label,'score':self.score,'id':self.index, 'level':self.level, 'country':self.country, 'activity': self.activity},separators=(',', ':'),indent=4)
 
     def setScore(self, projectNbr):
         self.score = (((float(projectNbr) - projMin)*(maxBubblesize - 1)) / (projMax - projMin)) + 1
@@ -36,6 +38,7 @@ class JLink:
         self.source = source
         self.target = target
         self.weight = weight
+
     def toJSON(self):
         return json.dumps({'source':self.source,'target':self.target,'weight':self.weight},separators=(',', ':'),indent=4)
 
@@ -45,6 +48,7 @@ def WriteJSON(nameOutputFile, orig_nodelist, linksList):
     try:
         nodelist = sorted(orig_nodelist, key=operator.attrgetter("id"))
         outputName = nameOutputFile
+        # TODO: create dynamic file name
         outputFile = open(outputName, 'w')
         outputFile.write('{\n')
         outputFile.write('"nodes": [\n');
@@ -66,25 +70,22 @@ def WriteJSON(nameOutputFile, orig_nodelist, linksList):
         print(nameOutputFile)
 
 
-
+#define some parameters
 sepChar = ';'
-
 orgDictionary = {};
 
-
+#read file
 FileLink = sys.argv[1]
-FileOrg = sys.argv[2]
-
 linesLink = [line.rstrip('\n') for line in open(FileLink, encoding="utf-8")]
-orgsLink = [line.rstrip('\n') for line in open(FileOrg, encoding="utf-8")]
 
+#Create a dictionary of all organizations with their "id, empty links (filled in later), line, label, country, activity"
 count = 0
 for i in range(1, len(linesLink)):
     lineList = linesLink[i].split(sepChar)
     try:
         value = orgDictionary[lineList[1]];
     except KeyError:
-        orgDictionary[lineList[1]] = JNode(count,[],lineList,lineList[1])
+        orgDictionary[lineList[1]] = JNode(count,[],lineList,lineList[1],lineList[3],lineList[5])
         count += 1
 
 for i in range(1, len(linesLink)):
@@ -92,35 +93,64 @@ for i in range(1, len(linesLink)):
     try:
         value = orgDictionary[lineList[2]];
     except KeyError:
-        orgDictionary[lineList[2]] = JNode(count,[],lineList,lineList[2])
+        orgDictionary[lineList[2]] = JNode(count,[],lineList,lineList[2],lineList[4],lineList[6])
         count += 1
 
-projMax = float(orgsLink[1].split(sepChar)[2])
-projMin = float(orgsLink[1].split(sepChar)[2])
 
-orgInfoDict = {}
+#
+lineNumber = 1
+while (lineNumber < len(linesLink)-1):
+    curName = linesLink[lineNumber].split(sepChar)[0]
+    nameOnLineToProcess = curName
 
-for i in range(1, len(orgsLink)):
-    orgList = orgsLink[i].split(sepChar)
-    try:
-        value = orgDictionary[orgList[1]];
-        orgInfoDict[orgList[1]] = orgList;
-        if(float(orgList[2]) > projMax):
-            projMax = float(orgList[2])
-        elif(float(orgList[2]) < projMin):
-            projMin = float(orgList[2])
-    except KeyError:
-        pass
+    while (curName == nameOnLineToProcess):
+        NodeDic = {};
+        linksList = [];
 
-for key, value in orgInfoDict.items():
-    orgDictionary[key].setScore(value[2])
+        lineList = linesLink[lineNumber].split(sepChar)
+    
+        org1Name = lineList[1]
+        print(org1Name)
+        org2Name = lineList[2]
+        if (not org1Name in NodeDic):
+            NodeDic[org1Name] = orgDictionary[org1Name]
+            print("change")
+        if (not org2Name in NodeDic):
+            NodeDic[org2Name] = orgDictionary[org2Name]
 
-name = "";
+        org1Index = NodeDic[org1Name].id
+        org2Index = NodeDic[org2Name].id
+
+        NodeDic[org1Name].links.append(org2Index)
+        NodeDic[org2Name].links.append(org1Index)
+        #compute weight according to formula :
+        #NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
+        linkWeight = (((float(lineList[9])-1)*(10-1))/(39-10)+1)
+        linksList.append(JLink(org1Index, org2Index, linkWeight))
+
+        lineNumber += 1
+        try:
+            nameOnLineToProcess = linesLink[lineNumber].split(sepChar)[0]
+        except IndexError:
+            print(lineNumber)
+            nameOnLineToProcess = " "
+    #write the file and empty lists and dictionaries
+    NodeList = [];
+    print(len(NodeDic))
+    for key, value in NodeDic.items():
+        NodeList.append(value)
+    WriteJSON("outputJS/" + curName.replace(' ','_') + ".json", NodeList, linksList)
+    NodeDic = {};
+    linksList = [];
+
+
+
+'''name = "";
 NodeDic = {};
 linksList = [];
 for i in range(1, len(linesLink)):
     lineList = linesLink[i].split(sepChar)
-    curName = lineList[4]
+    curName = lineList[1]
     if(name != curName and len(NodeDic) != 0):
         NodeList = [];
         for key, value in NodeDic.items():
@@ -130,8 +160,8 @@ for i in range(1, len(linesLink)):
         linksList = [];
     name = curName
 
-    org1Name = lineList[1]
-    org2Name = lineList[2]
+    org1Name = lineList[2]
+    org2Name = lineList[3]
     if (not org1Name in NodeDic)  :
         NodeDic[org1Name] = orgDictionary[org1Name]
     if (not org2Name in NodeDic):
@@ -144,13 +174,14 @@ for i in range(1, len(linesLink)):
     NodeDic[org2Name].links.append(org1Index)
     #compute weight according to formula :
     #NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
-    linkWeight = (((float(lineList[3])-1)*(10-1))/(39-10)+1)
+    linkWeight = (((float(lineList[10])-1)*(10-1))/(39-10)+1)
     linksList.append(JLink(org1Index, org2Index, linkWeight))
 
 
+#write the file and empty lists and dictionaries
 NodeList = [];
 for key, value in NodeDic.items():
     NodeList.append(value)
-WriteJSON("outputJS/" + name + ".json", NodeList, linksList)
+WriteJSON("outputJS/" + name.replace(' ','_') + ".json", NodeList, linksList)
 NodeDic = {};
-linksList = [];
+linksList = [];'''
