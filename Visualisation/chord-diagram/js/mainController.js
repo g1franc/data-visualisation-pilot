@@ -72,6 +72,11 @@ function ($scope) {
     }
   };
 
+  $scope.updateHighlight = function () {
+    console.log("hell");
+    $scope.lightChords();
+  } 
+
   // IMPORT THE CSV DATA
   d3.csv('../data/links.csv', function (err, data) {
     var groupsIDs = [];
@@ -105,7 +110,7 @@ function ($scope) {
   });
 
   $scope.$watch('selected_frameworkContract', $scope.update);
-  $scope.$watch('filters', $scope.update, true);
+  $scope.$watch('filters', $scope.updateHighlight, true);
 
   $scope.resetFilters = function() {
     var bool = true;
