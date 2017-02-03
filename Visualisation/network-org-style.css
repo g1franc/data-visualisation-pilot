@@ -160,11 +160,19 @@ circle.level2 {
 }
 
 circle.level3 {
-    fill: #6baed6;
+    fill: #cc0015;
 }
 
 circle.level4 {
-    fill: #c6dbef;
+    fill: #1affe7;
+}
+
+circle.level5 {
+    fill: #6B238E;
+}
+
+circle.level6 {
+    fill: #458B00;
 }
 
 circle.sibling {

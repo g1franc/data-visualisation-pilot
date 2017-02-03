@@ -137,38 +137,6 @@ function D3ok() {
     info += '<div class=t style="float: right">' + n.label + '</div>';
     info += '<img src="close.png" class="action" style="top: 0px;" title="close panel" onClick="toggleDiv(\'countryInfo\');"/>'
     info += '<br/></div>';
-    /*info +='<div style="margin-bottom:15px; margin-left:8px; height:85px; text-align:left;">'
-    if(n.GDP != "NA") {
-      info += '<div>GDP: ' + n.GDP + '</div>';
-    }
-    if(n.NumberProjectParticipation != "NA") {
-      info += '<div>Number of project participations: ' + n.NumberProjectParticipation + '</div>';
-    }
-    if(n.OverallNumberProject != "NA") {
-      info += '<div>Overall number of projects: ' + n.NumberProjectParticipation + '</div>';
-    }
-    if(n.GDPPerCapita != "NA") {
-      info += '<div>GDP per capita: ' + n.GDPPerCapita + '</div>';
-    }
-    if(n.NumberInstitution != "NA") {
-      info += '<div>Number of institutions: ' + n.NumberInstitution + '</div>';
-    }
-    if(n.Population != "NA") {
-      info += '<div>Population: ' + n.Population + '</div>';
-    }
-    info +="</div>";
-    info +='<div style="clear: both;">';
-    /*if( n.level )
-      info += '<div class=f><span class=l>Level:</span>: <span class=g>'
-           + n.level + '</span></div>';*/
-    if( n.links ) {
-      info += '<div class=f><span class=l>Related to</span>: ';
-      n.links.forEach( function(idx) {
-  info += '[<a href="javascript:void(0);" onclick="SelectCountry('
-       + idx + ',true);">' + nodeArray[idx].label + '</a>]'
-      });
-      info += '</div>';
-    }
     return info;
   }
 
@@ -204,11 +172,6 @@ function D3ok() {
 
       /* Add drag & zoom behaviours */
       svg.call( d3.behavior.drag().on("drag",dragmove) );
-      svg.call( d3.behavior.zoom()
-  	      .x(xScale)
-  	      .y(yScale)
-  	      .scaleExtent([0.25, 10])
-  	      .on("zoom", doZoom) );
 
       // ------- Create the elements of the layout (links and nodes) ------
       var networkGraph = svg.append('svg:g').attr('class','grpParent');
@@ -227,7 +190,7 @@ function D3ok() {
         .data( nodeArray, function(d){ return d.id; } )
         .enter().append("svg:circle")
         .attr('id', function(d) { return "c" + d.index; } )
-        .attr('class', function(d) { return 'node level'+d.level;} )
+        .attr('class', function(d) { console.log(d.level);return 'level'+d.level;} )
         .attr('r', function(d) { return node_size(parseFloat(d.score) || 3); } )
         .attr('pointer-events', 'all')
         .on("click", function(d) { showMoviePanel(d); } )
@@ -258,6 +221,11 @@ function D3ok() {
         .attr('class','nlabel')
         .text( function(d) { return d.label; } );
 
+        /*var n =1000;
+        force.start();
+        for (var i = n * n; i > 0; --i) force.tick();
+        force.stop();*/
+
 
       /* --------------------------------------------------------------------- */
       /* Select/unselect a node in the network graph.
@@ -285,49 +253,23 @@ function D3ok() {
         label.selectAll('text').classed( 'main', on );
 
         // activate all siblings
-        Object(node.links).forEach( function(id) {
+        /*Object(node.links).forEach( function(id) {
         	d3.select("#c"+id).classed( 'sibling', on );
         	label = d3.select('#l'+id);
         	label.classed( 'on', on || currentZoom >= SHOW_THRESHOLD );
         	label.selectAll('text.nlabel').classed( 'sibling', on );
-        });
+        });*/
 
         // set the value for the current active movie
         activeCountry = on ? node.index : undefined;
         console.log("SHOWNODE finished: "+node.index+" = "+on );
       }
 
-    /* --------------------------------------------------------------------- */
-    /* Show the details panel for a movie AND highlight its node in
-       the graph. Also called from outside the d3.json context.
-       Parameters:
-       - new_idx: index of the movie to show
-       - doMoveTo: boolean to indicate if the graph should be centered
-         on the movie
-    */
-    SelectCountry = function( new_idx, doMoveTo ) {
-
-      // do we want to center the graph on the node?
-      doMoveTo = doMoveTo || false;
-      if( doMoveTo ) {
-        s = getViewportSize();
-        width  = s.w<WIDTH ? s.w : WIDTH;
-        height = s.h<HEIGHT ? s.h : HEIGHT;
-        offset = { x : s.x + width/2  - nodeArray[new_idx].x*currentZoom,
-                y : s.y + height/2 - nodeArray[new_idx].y*currentZoom };
-        repositionGraph( offset, undefined, 'move' );
-      }
-      // Now highlight the graph node and show its movie panel
-      highlightGraphNode( nodeArray[new_idx], true );
-      showMoviePanel( nodeArray[new_idx] );
-    }
-
 
     /* --------------------------------------------------------------------- */
     /* Show the movie details panel for a given node
      */
     function showMoviePanel( node ) {
-      // Fill it and display the panel
       CountryInfoDiv.html( getCountryInfo(node,nodeArray) ).attr("class","panel_on");
     }
 
@@ -429,13 +371,20 @@ function D3ok() {
     /* process events from the force-directed graph */
     force.on("tick", function() {
       //repositionGraph(undefined,undefined,'tick');
-      //repositionGraph(currentOffset,undefined,'tick');
-        repositionGraph(currentOffset,undefined,'tick');
+      repositionGraph(currentOffset,undefined,'tick');
     });
 
     //repositionGraph(currentOffset,undefined,'move');
 
-  }); // end of function(data)
+    document.getElementById("zoomPlus").addEventListener("click", function(){
+      doZoom(0.1);
+    });
+
+    document.getElementById("zoomMinus").addEventListener("click", function(){
+      doZoom(-0.1);
+    });
+
+  }); // end of function(data
 
 } // end of D3ok()
 

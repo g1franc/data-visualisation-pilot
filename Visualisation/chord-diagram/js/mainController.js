@@ -43,6 +43,20 @@ function ($scope) {
   $scope.update = function () {
     var data = $scope.master[$scope.selected_frameworkContract];
 
+    var allChecked = true;
+    for (var key in $scope.filters) {
+      if(!$scope.filters[key].hide) {
+        allChecked = false;
+        break;
+      }
+    }
+    if(allChecked){
+      $("#resetButton").text("Unselect all");
+    }
+    else {
+      $("#resetButton").text("Select all");
+    }
+
     if (data && $scope.hasFilters) {
       $scope.drawChords(data.filter(function (d) {
         var fl = $scope.filters;
@@ -94,8 +108,16 @@ function ($scope) {
   $scope.$watch('filters', $scope.update, true);
 
   $scope.resetFilters = function() {
+    var bool = true;
+    if($("#resetButton").text() == "Unselect all") {
+      $("#resetButton").text("Select all");
+      bool=false;
+    }
+    else {
+      $("#resetButton").text("Unselect all");
+    }
     for (var key in $scope.filters) {
-      $scope.filters[key].hide = true;
+      $scope.filters[key].hide = bool;
     }
   };
 

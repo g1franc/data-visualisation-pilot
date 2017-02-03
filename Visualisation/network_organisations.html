@@ -52,8 +52,8 @@
 
     </div>
 
-    <div style="padding: auto; width: 100%;">
-      <div style="width:1000px; margin:auto;">
+    <div style="padding: auto; width: 100%; position:relative;">
+      <div style="width:1000px; margin:auto; position:relative;">
         <h1 style="font-family:arial; margin:auto; width:1000px;">
           Network visualisation of Cordis data (H2020)
         </h1>
@@ -87,6 +87,10 @@
         </div>
 
         <div id="chartID" style="border:2px solid grey;"></div>
+        <div id="zoomDiv" style="width:40px; position:absolute; top:915px; left:955px;">
+          <button id="zoomPlus" style="width:40px; height:30px;">+</button>
+          <button id="zoomMinus" style="width:40px; height:30px;">-</button>
+        </div>
         <div id="sidepanel">
           <div id="countryInfo" class="panel_off"></div>
         </div>

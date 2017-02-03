@@ -4,6 +4,8 @@ function ($window, matrixFactory) {
 
   var link = function ($scope, $el, $attr) {
 
+    var clickedCountries = [];
+
     var size = [1000, 1000]; // SVG SIZE WIDTH, HEIGHT
     var marg = [40, 40, 45, 10]; // TOP, RIGHT, BOTTOM, LEFT
     var dims = []; // USABLE DIMENSIONS
@@ -94,9 +96,10 @@ function ($window, matrixFactory) {
 
       gEnter.append("text")
         .attr("dy", ".35em")
-        .on("click", groupClick)
+        /*.on("click", groupClick)
         .on("mouseover", dimChords)
-        .on("mouseout", resetChords)
+        .on("mouseout", resetChords)*/
+        .on("click", highlightChords)
         .text(function (d) {
           return d._id;
         });
@@ -160,7 +163,34 @@ function ($window, matrixFactory) {
         d3.event.preventDefault();
         d3.event.stopPropagation();
         d3.select("#tooltip").style("opacity", 0);
-        resetChords();
+        if(clickedCountries.length == 0) {
+          resetChords();
+        }
+        else {
+          container.selectAll("path.chord").style("opacity", function (p) {
+            return (clickedCountries.indexOf(p.target._id)>-1 || clickedCountries.indexOf(p.source._id)>-1) ? 0.9: 0.1;
+          });
+        }
+      }
+
+      function highlightChords(d) {
+        d3.event.preventDefault();
+        d3.event.stopPropagation();
+        if(clickedCountries.indexOf(d._id) >= 0) { //country is unclicked
+          clickedCountries.splice(clickedCountries.indexOf(d._id),1);
+          if(clickedCountries.length == 0) {
+            resetChords();
+          }
+          else {
+            container.selectAll("path.chord").style("opacity", function (p) {
+              return (clickedCountries.indexOf(p.target._id)>-1 || clickedCountries.indexOf(p.source._id)>-1) ? 0.9: 0.1;
+            });
+          }
+        }
+        else { //country is clicked
+          clickedCountries.push(d._id);
+          dimChords(d);
+        }
       }
 
       function resetChords() {
@@ -176,7 +206,7 @@ function ($window, matrixFactory) {
           if (d.source) { // COMPARE CHORD IDS
             return (p._id === d._id) ? 0.9: 0.1;
           } else { // COMPARE GROUP IDS
-            return (p.source._id === d._id || p.target._id === d._id) ? 0.9: 0.1;
+            return (p.source._id === d._id || p.target._id === d._id || clickedCountries.indexOf(p.source._id)>-1 || clickedCountries.indexOf(p.target._id)>-1) ? 0.9: 0.1;
           }
         });
       }
