@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Organisations Network</title>
+    <link rel="stylesheet" href="network-org-style.css"/>
+    <link rel="stylesheet" href="filtering_panel.css"/>
+    <script src="assets/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+    <script src="../filterjs/filter.js" type="text/javascript"></script>
+    <script src="orgs_filter.js" type="text/javascript"></script>
+    <script src="network_organisations.js"></script>
+
+    <script>
+      // Sniff MSIE version
+      // http://james.padolsey.com/javascript/detect-ie-in-js-using-conditional-comments/
+      var ie = ( function() {
+        var undef,
+        v = 3,
+        div = document.createElement('div'),
+        all = div.getElementsByTagName('i');
+        while (
+         div.innerHTML='<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',all[0]
+        );
+        return v > 4 ? v : undef;
+      }() );
+
+      function takeAction() {
+        if( ie && ie < 9 ) {
+          D3notok();
+        } else {
+          // Load D3.js, and once loaded do our stuff
+          var head = document.getElementsByTagName('head')[0];
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = "http://d3js.org/d3.v3.min.js";
+          script.addEventListener('load', D3ok, false);
+          script.onload = "D3ok();";
+          head.appendChild(script);
+       }
+     }
+    </script>
+
+</head>
+<body onload="takeAction();">
+
+    <div id="nocontent" style="padding: auto; width: 100%;">
+      <h1 style="font-family:arial; margin:auto; width:1000px;">Sadly your browser is not compatible with this site</h1>
+
+      <div>
+        <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify;">
+          You can use <a href="http://www.google.com/chrome/">Google
+          Chrome</a>, <a href="http://www.mozilla.org/firefox">Mozilla Firefox</a>
+          or <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Microsoft
+          Internet Explorer (v9 or above)</a> to access the visualisation
+        </p>
+      </div>
+
+    </div>
+
+    <div style="padding: auto; width: 100%; position:relative;">
+      <div style="width:1000px; margin:auto; position:relative;">
+        <h1 style="font-family:arial; margin:auto; width:1000px;">
+          Network visualisation of Cordis data (H2020)
+        </h1>
+        <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial;">
+            Through this page, you can view an interactive visualisation of <a href="http://cordis.europa.eu/home_en.html">Cordis</a> data as published by the <a href="http://publications.europa.eu/en/home">Publications Office</a> of the <a href="http://data.europa.eu/euodp/en/data">European Union Open Data Portal</a>.
+          <br>
+            The datasets contain all projects funded by the European Union under the <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects">Horizon 2020</a> framework programme for research and technological development. This framework programme was funded and approved by the European Commission from 2014 to 2020.
+          <br>
+            The visualisation below shows the strength of collaboration between one central organisations (in orange) and its partners (in yellow). The thickness of the links represents the strength of the collaboration, i.e. the thicker the link, the more projets the two organisations collaborated on. The size of the bubble represents, for each organisations, the number of projects in which this organisation was involved at the European level.
+          <br><br>
+        </p>
+
+        <div style="width:1000px; margin:auto; margin-bottom: 15px; height:25px;">
+          <div style="float:left;">
+            <div style="text-align: justify; font-family:arial;">
+              Select a framework programme:
+            </div>
+          </div>
+          <div style="float:left;">
+            <select id="orgDropdown" onchange="orgSelected(this)" style="margin-left:10px;">
+              <option value="UNIVERSITE_LIBRE_DE_BRUXELLES">ULB</option>
+              <option value="INNOVAYT_A-S">INNOVAYT A-S</option>
+              <option value="ANERDY_AG">ANERDY AG</option>
+              <!--<option value="CENTRE_NATIONAL_DE_LA_RECHERCHE_SCIENTIFIQUE">CENTRE NATIONAL DE LA RECHERCHE SCIENTIFIQUE</option>-->
+              <option value="ICARE_FINLAND_OY">ICARE FINLAND OY</option>
+              <option value="PIXIUM_VISION">PIXIUM VISION</option>
+              <option value="ZADIG_SRL">ZADIG SRL</option>
+              <option value="ZOZ_GMBH">ZOZ GMBH</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="float:left; clear:none;">
+          <div style="width:20%; float:left;">
+            <div>
+              <input type="text" class="form-control searchBar"  onfocus="displayList()" onblur="hideList()" id="searchbox" placeholder="Search &hellip;" fjs-search>
+              <span class="glyphicon glyphicon-search search-icon"></span>
+            </div>
+            <div class="FakeDropdownList" id="filterOrgsList">
+              <div class="" id="orgs" fjs-items="template=#org-template"></div>
+            </div>
+            <fieldset id="country_criteria">
+              <legend>Countries</legend>
+              <div id="countries">
+                <div class="checkbox" fjs-criteria="field=country,ele=#countries input:checkbox">
+                  <label>
+                    <input type="checkbox" value="Austria">
+                    <span>Austria</span>
+                  </label>
+                </div>
+                <div class="checkbox" fjs-criteria="field=country,ele=#countries input:checkbox">
+                  <label>
+                    <input type="checkbox" value="Belgium">
+                    <span>Belgium</span>
+                  </label>
+                </div>
+                <div class="checkbox" fjs-criteria="field=country,ele=#countries input:checkbox">
+                  <label>
+                    <input type="checkbox" value="France">
+                    <span>France</span>
+                  </label>
+                </div>
+                <div class="checkbox" fjs-criteria="field=country,ele=#countries input:checkbox">
+                  <label>
+                    <input type="checkbox" value="United Kingdom">
+                    <span>United Kingdom</span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset id="activity_criteria">
+              <legend>Activities</legend>
+              <div id="activities">
+                <div class="checkbox" fjs-criteria="field=activity,ele=#activities input:checkbox">
+                  <label>
+                    <input type="checkbox" value="University">
+                    <span>University</span>
+                  </label>
+                </div>
+                <div class="checkbox" fjs-criteria="field=activity,ele=#activities input:checkbox">
+                  <label>
+                    <input type="checkbox" value="Consulting">
+                    <span>Consulting</span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div id="chartID" style="border:2px solid grey; width:75%; float:right;"></div>
+        </div>
+
+        <div id="zoomDiv" style="width:40px; position:absolute; top:885px; left:955px;">
+          <button id="zoomPlus" style="width:40px; height:30px;">+</button>
+          <button id="zoomMinus" style="width:40px; height:30px;">-</button>
+        </div>
+        <div id="sidepanel">
+          <div id="countryInfo" class="panel_off"></div>
+        </div>
+
+        <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
+          The number of institutions is based on the data published on
+              <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects">EU research projects under FP6</a>,
+              <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects">EU research projects under FP7</a> and
+              <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects">EU research projects under H2020</a>
+          and may contain some errors.
+        </p>
+        <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
+          This visualisation has been developed by <a href="http://www.pwc.be/">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home">Publications Office of the EU</a> using <a href="https://d3js.org/">d3.js</a>.
+        </p>
+      </div>
+    </div>
+
+    <script id="org-template" type="text/html">
+      <div class="">
+        <div class="orgLine" onclick="filterOrgSelected(this)">
+          <p class="org-entry"><%= name %></p>
+        </div>
+      </div>
+    </script>
+
+</body>
+</html>

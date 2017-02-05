@@ -35,7 +35,7 @@ var currentOrg = e.options[e.selectedIndex].value;
 function D3ok() {
 
   // Some constants
-  var WIDTH = 988,
+  var WIDTH = 750,
       HEIGHT = 700,
       SHOW_THRESHOLD = 2.5;
       ANIMATION_TIME = 100;

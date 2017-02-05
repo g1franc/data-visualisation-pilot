@@ -1,0 +1,22 @@
+.orgLine {
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.orgLine:hover {
+  background-color: #80b3ff;
+}
+
+.searchBar {
+  width:93%;
+}
+
+.FakeDropdownList {
+  height:250px;
+  border:1px solid black;
+  overflow-y: scroll;
+  display:none;
+  background-color: white;
+  position:absolute;
+  width:20%;
+}
