@@ -140,7 +140,7 @@ div#chartID svg {
 }
 
 line.link {
-    stroke: #80b3ff;
+    stroke: #808080;
 }
 
 circle {
@@ -149,23 +149,23 @@ circle {
     stroke-width:1;
 }
 
-circle.bubbleEducationEstablishments {
+circle.bubbleHES {
     fill: #b88f3e;
 }
 
-circle.bubbleResearchOrganisations {
+circle.bubbleREC {
     fill: #6885d0;
 }
 
-circle.bubblePrivatefor-profit {
+circle.bubblePRC {
     fill: #64a85c;
 }
 
-circle.bubblePublicbodies {
+circle.bubblePUB {
     fill: #b75fb3;
 }
 
-circle.bubbleOther {
+circle.bubbleOTH {
     fill: #cb5658;
 }
 
