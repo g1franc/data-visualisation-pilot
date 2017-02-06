@@ -193,7 +193,8 @@ function D3ok() {
         .data( nodeArray, function(d){ return d.id; } )
         .enter().append("svg:circle")
         .attr('id', function(d) { return "c" + d.index; } )
-        .attr('class', function(d) { console.log(d.level);return 'level'+d.level;} )
+        .attr('class', function(d) { 
+          return 'bubble'+ d.activity.replace(' ', '');} )
         .attr('r', function(d) { return node_size(parseFloat(d.score) || 3); } )
         .attr('pointer-events', 'all')
         .on("click", function(d) { showMoviePanel(d); } )

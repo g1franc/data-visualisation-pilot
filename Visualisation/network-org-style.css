@@ -145,34 +145,28 @@ line.link {
 
 circle {
     cursor: pointer;
-}
-
-circle.level1 {
-    fill: #ff6600;
-    stroke: #003300;
+    stroke: #5a5a5a;
     stroke-width:1;
 }
 
-circle.level2 {
-    fill: #ffffb3;
-    stroke: #cccc00;
-    stroke-width:1;
+circle.bubbleEducationEstablishments {
+    fill: #b88f3e;
 }
 
-circle.level3 {
-    fill: #cc0015;
+circle.bubbleResearchOrganisations {
+    fill: #6885d0;
 }
 
-circle.level4 {
-    fill: #1affe7;
+circle.bubblePrivatefor-profit {
+    fill: #64a85c;
 }
 
-circle.level5 {
-    fill: #6B238E;
+circle.bubblePublicbodies {
+    fill: #b75fb3;
 }
 
-circle.level6 {
-    fill: #458B00;
+circle.bubbleOther {
+    fill: #cb5658;
 }
 
 circle.sibling {
