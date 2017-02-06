@@ -2,6 +2,7 @@
 "nodes": [
 {
     "index":2,
+    "score":1.0,
     "links":[
         0,
         1,
@@ -16,15 +17,15 @@
         1,
         3
     ],
-    "label":"C",
-    "score":1.0,
-    "id":2,
     "level":1,
     "country":"DE",
-    "activity":"ACT1"
+    "activity":"ACT1",
+    "id":2,
+    "label":"C"
 },
 {
     "index":3,
+    "score":2.0,
     "links":[
         0,
         1,
@@ -39,12 +40,11 @@
         1,
         2
     ],
-    "label":"D",
-    "score":2.0,
-    "id":3,
     "level":1,
     "country":"UK",
-    "activity":"ACT2"
+    "activity":"ACT2",
+    "id":3,
+    "label":"D"
 }
 ],
 "links":[
