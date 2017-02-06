@@ -26,8 +26,11 @@ var toggleDiv = undefined;
 var zoomCall = undefined;
 
 //selected contract
-var e = document.getElementById("orgDropdown");
-var currentOrg = e.options[e.selectedIndex].value;
+/*var e = document.getElementById("orgDropdown");
+var currentOrg = e.options[e.selectedIndex].value;*/
+//var currentOrg = $('#orgDropdown').val();
+
+var currentOrg="UNIVERSITE_LIBRE_DE_BRUXELLES";
 
 // -------------------------------------------------------------------
 
@@ -134,8 +137,10 @@ function D3ok() {
   */
   function getCountryInfo( n, nodeArray ) {
     info = '<div id="cover">';
-    info += '<div class=t style="float: right">' + n.label + '</div>';
-    info += '<img src="close.png" class="action" style="top: 0px;" title="close panel" onClick="toggleDiv(\'countryInfo\');"/>'
+    info += '<div class=t>';
+    info += '<img src="close.png" class="action" style="top: 0px; left: 0px;" title="close panel" onClick="toggleDiv(\'countryInfo\');"/>'
+    info += '<p style="padding-left: 26px;">' + n.label + '</br>' + "[" + n.country + "]" + '</p>';
+    info += '</div>';
     info += '<br/></div>';
     return info;
   }
@@ -190,7 +195,7 @@ function D3ok() {
         .data( nodeArray, function(d){ return d.id; } )
         .enter().append("svg:circle")
         .attr('id', function(d) { return "c" + d.index; } )
-        .attr('class', function(d) { console.log(d.level);return 'level'+d.level;} )
+        .attr('class', function(d) { console.log(d.activity); return 'bubble'+ d.activity;} )
         .attr('r', function(d) { return node_size(parseFloat(d.score) || 3); } )
         .attr('pointer-events', 'all')
         .on("click", function(d) { showMoviePanel(d); } )

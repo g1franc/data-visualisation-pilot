@@ -1,270 +1,91 @@
 {
 "nodes": [
 {
-    "level":2,
     "index":0,
-    "score":6.778350515463917,
-    "id":0,
-    "label":"KING'S COLLEGE LONDON",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":1,
-    "score":9.128865979381443,
-    "id":1,
-    "label":"INSTITUT NATIONAL DE LA SANTE ET DE LA RECHERCHE MEDICALE (INSERM)",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":2,
-    "score":11.77319587628866,
-    "id":2,
-    "label":"IMPERIAL COLLEGE OF SCIENCE, TECHNOLOGY AND MEDICINE",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":3,
-    "score":4.525773195876289,
-    "id":3,
-    "label":"ERASMUS UNIVERSITAIR MEDISCH CENTRUM ROTTERDAM",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":4,
-    "score":20.0,
-    "id":4,
-    "label":"UNIVERSITY COLLEGE LONDON",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":5,
     "score":1.0,
-    "id":5,
-    "label":"ANTI CANCER COUNCIL OF VICTORIA",
     "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":6,
-    "score":7.268041237113402,
-    "id":6,
-    "label":"HELSINGIN YLIOPISTO",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":7,
-    "score":1.4896907216494846,
-    "id":7,
-    "label":"HOSPICES CANTONAUX CHUV",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":8,
-    "score":1.0,
-    "id":8,
-    "label":"HUMAN GENETICS FOUNDATION",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":9,
-    "score":1.0,
-    "id":9,
-    "label":"INSTITUTO DE SAUDE PUBLICA DA UNIVERSIDADE DO PORTO",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":10,
-    "score":4.036082474226804,
-    "id":10,
-    "label":"LONDON SCHOOL OF ECONOMICS AND POLITICAL SCIENCE",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":11,
-    "score":6.484536082474227,
-    "id":11,
-    "label":"THE PROVOST, FELLOWS, FOUNDATION SCHOLARS & THE OTHER MEMBERS OF BOARD OF THE COLLEGE OF THE HOLY & UNDIVIDED TRINITY OF QUEEN ELIZABETH NEAR DUBLIN",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":12,
-    "score":1.097938144329897,
-    "id":12,
-    "label":"TRUSTEES OF COLUMBIA UNIVERSITY IN THE CITY OF NEW YORK",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":13,
-    "score":1.1958762886597938,
-    "id":13,
-    "label":"TYOETERVEYSLAITOS",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":14,
-    "score":4.1340206185567006,
-    "id":14,
-    "label":"UNIVERSITA DEGLI STUDI DI TORINO",
-    "links":[
-        16
-    ]
-},
-{
-    "level":2,
-    "index":15,
-    "score":2.0773195876288657,
-    "id":15,
-    "label":"UNIVERSITE PAUL SABATIER TOULOUSE III",
-    "links":[
-        16
-    ]
-},
-{
+        1,
+        2,
+        3
+    ],
     "level":1,
-    "index":16,
+    "country":"UK",
+    "activity":"HES",
+    "id":0,
+    "label":"A"
+},
+{
+    "index":1,
     "score":1.0,
-    "id":16,
-    "label":"ZADIG SRL",
+    "links":[
+        0,
+        2,
+        3
+    ],
+    "level":1,
+    "country":"FR",
+    "activity":"REC",
+    "id":1,
+    "label":"B"
+},
+{
+    "index":2,
+    "score":1.0,
     "links":[
         0,
         1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15
-    ]
+        3
+    ],
+    "level":1,
+    "country":"DE",
+    "activity":"PRC",
+    "id":2,
+    "label":"C"
+},
+{
+    "index":3,
+    "score":2.0,
+    "links":[
+        0,
+        1,
+        2
+    ],
+    "level":1,
+    "country":"UK",
+    "activity":"PUB",
+    "id":3,
+    "label":"D"
 }
 ],
 "links":[
 {
-    "weight":1.0,
     "source":0,
-    "target":16
+    "target":1,
+    "weight":1.0
 },
 {
-    "weight":1.0,
+    "source":0,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":0,
+    "target":3,
+    "weight":1.3103448275862069
+},
+{
     "source":1,
-    "target":16
+    "target":2,
+    "weight":1.0
 },
 {
-    "weight":1.0,
+    "source":1,
+    "target":3,
+    "weight":1.3103448275862069
+},
+{
     "source":2,
-    "target":16
-},
-{
-    "weight":1.0,
-    "source":3,
-    "target":16
-},
-{
-    "weight":1.0,
-    "source":4,
-    "target":16
-},
-{
-    "weight":1.0,
-    "source":5,
-    "target":16
-},
-{
-    "weight":1.0,
-    "source":6,
-    "target":16
-},
-{
-    "weight":1.0,
-    "source":7,
-    "target":16
-},
-{
-    "weight":1.0,
-    "source":8,
-    "target":16
-},
-{
-    "weight":1.0,
-    "source":9,
-    "target":16
-},
-{
-    "weight":1.0,
-    "source":10,
-    "target":16
-},
-{
-    "weight":1.0,
-    "source":11,
-    "target":16
-},
-{
-    "weight":1.0,
-    "source":12,
-    "target":16
-},
-{
-    "weight":1.0,
-    "source":13,
-    "target":16
-},
-{
-    "weight":1.0,
-    "source":14,
-    "target":16
-},
-{
-    "weight":1.0,
-    "source":15,
-    "target":16
+    "target":3,
+    "weight":1.0
 }]
 }

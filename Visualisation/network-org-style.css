@@ -91,7 +91,7 @@ div#countryInfo div#cover {
 }
 
 div#countryInfo div.t {
-    font-size: 14px;
+    font-size: 9px;
     font-weight: bold;
 }
 
@@ -140,39 +140,33 @@ div#chartID svg {
 }
 
 line.link {
-    stroke: #80b3ff;
+    stroke: #808080;
 }
 
 circle {
     cursor: pointer;
-}
-
-circle.level1 {
-    fill: #ff6600;
-    stroke: #003300;
+    stroke: #5a5a5a;
     stroke-width:1;
 }
 
-circle.level2 {
-    fill: #ffffb3;
-    stroke: #cccc00;
-    stroke-width:1;
+circle.bubbleHES {
+    fill: #b88f3e;
 }
 
-circle.level3 {
-    fill: #cc0015;
+circle.bubbleREC {
+    fill: #6885d0;
 }
 
-circle.level4 {
-    fill: #1affe7;
+circle.bubblePRC {
+    fill: #64a85c;
 }
 
-circle.level5 {
-    fill: #6B238E;
+circle.bubblePUB {
+    fill: #b75fb3;
 }
 
-circle.level6 {
-    fill: #458B00;
+circle.bubbleOTH {
+    fill: #cb5658;
 }
 
 circle.sibling {

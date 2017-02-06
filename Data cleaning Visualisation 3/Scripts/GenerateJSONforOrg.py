@@ -1,9 +1,4 @@
 #Scripts/GenerateJSONfororg.py Output/FakeOrg.csv
-'''Org;Org1;Org2;Country1;Country2;activityType1;activityType2;nbProj1;nbProj2;nbLink
-A;A;B;UK;FR;ACT1;ACT1;2;2;1
-A;A;C;UK;DE;ACT1;ACT1;2;1;1
-A;A;D;UK;UK;ACT1;ACT2;2;3;2'''
-
 import sys
 import json
 import operator
@@ -109,8 +104,6 @@ while (lineNumber < len(linesLink)-1):
 	nameOnLineToProcess = curName
 
 	while (curName == nameOnLineToProcess):
-#		NodeDic = {};
-#		linksList = [];
 
 		lineList = linesLink[lineNumber].split(sepChar)
 	
@@ -118,10 +111,8 @@ while (lineNumber < len(linesLink)-1):
 		org2Name = lineList[2]
 		if (not org1Name in NodeDic):
 			NodeDic[org1Name] = orgDictionary[org1Name]
-			print(org1Name)
 		if (not org2Name in NodeDic):
 			NodeDic[org2Name] = orgDictionary[org2Name]
-			print(org2Name)
 
 		org1Index = NodeDic[org1Name].id
 		org2Index = NodeDic[org2Name].id
@@ -140,52 +131,8 @@ while (lineNumber < len(linesLink)-1):
 			nameOnLineToProcess = " "
 	#write the file and empty lists and dictionaries
 	NodeList = [];
-	print(len(NodeDic))
 	for key, value in NodeDic.items():
 		NodeList.append(value)
 	WriteJSON("outputJS/" + curName.replace(' ','_') + ".json", NodeList, linksList)
 	NodeDic = {};
 	linksList = [];
-
-
-
-'''name = "";
-NodeDic = {};
-linksList = [];
-for i in range(1, len(linesLink)):
-	lineList = linesLink[i].split(sepChar)
-	curName = lineList[1]
-	if(name != curName and len(NodeDic) != 0):
-		NodeList = [];
-		for key, value in NodeDic.items():
-			NodeList.append(value)
-		WriteJSON("outputJS/" + name.replace(' ','_') + ".json", NodeList, linksList)
-		NodeDic = {};
-		linksList = [];
-	name = curName
-
-	org1Name = lineList[2]
-	org2Name = lineList[3]
-	if (not org1Name in NodeDic)  :
-		NodeDic[org1Name] = orgDictionary[org1Name]
-	if (not org2Name in NodeDic):
-		NodeDic[org2Name] = orgDictionary[org2Name]
-
-	org1Index = NodeDic[org1Name].id
-	org2Index = NodeDic[org2Name].id
-
-	NodeDic[org1Name].links.append(org2Index)
-	NodeDic[org2Name].links.append(org1Index)
-	#compute weight according to formula :
-	#NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
-	linkWeight = (((float(lineList[10])-1)*(10-1))/(39-10)+1)
-	linksList.append(JLink(org1Index, org2Index, linkWeight))
-
-
-#write the file and empty lists and dictionaries
-NodeList = [];
-for key, value in NodeDic.items():
-	NodeList.append(value)
-WriteJSON("outputJS/" + name.replace(' ','_') + ".json", NodeList, linksList)
-NodeDic = {};
-linksList = [];'''
