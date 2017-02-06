@@ -26,8 +26,11 @@ var toggleDiv = undefined;
 var zoomCall = undefined;
 
 //selected contract
-var e = document.getElementById("orgDropdown");
-var currentOrg = e.options[e.selectedIndex].value;
+/*var e = document.getElementById("orgDropdown");
+var currentOrg = e.options[e.selectedIndex].value;*/
+//var currentOrg = $('#orgDropdown').val();
+
+var currentOrg="UNIVERSITE_LIBRE_DE_BRUXELLES";
 
 // -------------------------------------------------------------------
 
