@@ -8,7 +8,7 @@ setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visua
 ### Load datasets
 # H2020: https://data.europa.eu/euodp/data/dataset/cordisH2020projects
 
-Dataset_H2020Organizations = read.csv("../Input/cordis-h2020organizations_test.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_H2020Organizations = read.csv("../Input/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
 
 
@@ -117,7 +117,6 @@ func_BuildLink <- function(dataset) {
 
 func_AddAdditionalInformation <- function(DatasetLink, DatasetOrg) {
 #  DatasetLink <- Dataset_link
-#  DatasetLink <- head(DatasetLink, n=100000)
 #  DatasetOrg <- Dataset_H2020Organizations
   
   DatasetOrg <- subset(DatasetOrg, select=c(name, country, activityType))
@@ -149,7 +148,7 @@ func_AddAdditionalInformation <- function(DatasetLink, DatasetOrg) {
                                             "activityType.y" = "activityType2"))
   
   nrow(DatasetLink)
-  DatasetLink <- DatasetLink[c("Org", "Org1", "Org2", "Country1", "Country2", "activityType1", "activityType1", "nbLink")]
+  DatasetLink <- DatasetLink[c("Org", "Org1", "Org2", "Country1", "Country2", "activityType1", "activityType2", "NbProject1", "NbProject2", "nbLink")]
   nrow(DatasetLink)
   DatasetLink <- DatasetLink[order(DatasetLink$Org,DatasetLink$Org1,DatasetLink$Org2),]
   nrow(DatasetLink)
@@ -176,11 +175,11 @@ Sys.time()
 
 
 options(scipen = 10)
-write.table(Dataset_link2, "output/NbLinkOrgLevel1.csv", sep = ";", quote = FALSE)
+write.table(Dataset_link2, "output/NbLinkOrgLevel1.csv", sep = ";", quote = FALSE,row.names = FALSE)
 options(scipen = 0)
 
-Dataset_ListOrg <- func_ListOrg()
-write.table(Dataset_ListOrg, "output/OrgInformation.csv", sep = ";", quote = FALSE)
+#Dataset_ListOrg <- func_ListOrg()
+#write.table(Dataset_ListOrg, "output/OrgInformation.csv", sep = ";", quote = FALSE)
 
 
 
