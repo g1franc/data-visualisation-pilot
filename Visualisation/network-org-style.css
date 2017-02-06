@@ -149,116 +149,24 @@ circle {
     stroke-width:1;
 }
 
-circle.bubbleAT {
-    fill: #34495E;
+circle.bubbleEducationEstablishments {
+    fill: #b88f3e;
 }
 
-circle.bubbleBE {
-    fill: #A2C83F;
+circle.bubbleResearchOrganisations {
+    fill: #6885d0;
 }
 
-circle.bubbleBG {
-    fill: #CE7057;
+circle.bubblePrivatefor-profit {
+    fill: #64a85c;
 }
 
-circle.bubbleHR {
-    fill: #F0C514;
+circle.bubblePublicbodies {
+    fill: #b75fb3;
 }
 
-circle.bubbleCY {
-    fill: #67B9CE;
-}
-
-circle.bubbleCZ {
-    fill: #CCB394;
-}
-
-circle.bubbleDK {
-    fill: #B39147;
-}
-
-circle.bubbleEE {
-    fill: #275680;
-}
-
-circle.bubbleFI {
-    fill: #CE8552;
-}
-
-circle.bubbleFR {
-    fill: #F59D1F;
-}
-
-circle.bubbleDE {
-    fill: #C23A2C;
-}
-
-circle.bubbleEL {
-    fill: #1AB99B;
-}
-
-circle.bubbleIE {
-    fill: #93A5A5;
-}
-
-circle.bubbleIT {
-    fill: #315239;
-}
-
-circle.bubbleLV {
-    fill: #4ABA70;
-}
-
-circle.bubbleLT {
-    fill: #CC66A5;
-}
-
-circle.bubbleLU {
-    fill: #802F35;
-}
-
-circle.bubbleMT {
-    fill: #805B53;
-}
-
-circle.bubbleNL {
-    fill: #4B8056;
-}
-
-circle.bubblePL {
-    fill: #8798CC;
-}
-
-circle.bubblePT {
-    fill: #2A2A2A;
-}
-
-circle.bubbleRO {
-    fill: #3597D4;
-}
-
-circle.bubbleSK {
-    fill: #2481BC;
-}
-
-circle.bubbleSI {
-    fill: #81CCB8;
-}
-
-circle.bubbleSK {
-    fill: #2481BC;
-}
-
-circle.bubbleES {
-    fill: #86B6CD;
-}
-
-circle.bubbleSE {
-    fill: #E84C3D;
-}
-
-circle.bubbleUK {
-    fill: #7F6E5E;
+circle.bubbleOther {
+    fill: #cb5658;
 }
 
 circle.sibling {
