@@ -10,6 +10,8 @@
     <script src="./filterjs/filter.js" type="text/javascript"></script>
     <script src="orgs_filter.js" type="text/javascript"></script>
     <script src="network_organisations.js"></script>
+    <script src="./Data/organisations.js"></script>
+
 
     <script>
       // Sniff MSIE version
@@ -103,7 +105,7 @@
             </div>
             <fieldset id="country_criteria">
               <legend>Countries</legend>
-              <div id="countries">
+              <div id="countries" style="height:250px; overflow-y: scroll;">
                 <div class="checkbox" fjs-criteria="field=country,ele=#countries input:checkbox">
                 	<label>
                 		<input type="checkbox" value="Algeria">
@@ -887,18 +889,36 @@
               </div>
             </fieldset>
             <fieldset id="activity_criteria">
-              <legend>Activities</legend>
+              <legend>Activity types</legend>
               <div id="activities">
                 <div class="checkbox" fjs-criteria="field=activity,ele=#activities input:checkbox">
                   <label>
-                    <input type="checkbox" value="University">
-                    <span>University</span>
+                    <input type="checkbox" value="Education Establishments">
+                    <span>Education Establishments</span>
                   </label>
                 </div>
                 <div class="checkbox" fjs-criteria="field=activity,ele=#activities input:checkbox">
                   <label>
-                    <input type="checkbox" value="Consulting">
-                    <span>Consulting</span>
+                    <input type="checkbox" value="Research Organisations">
+                    <span>Research Organisations</span>
+                  </label>
+                </div>
+                <div class="checkbox" fjs-criteria="field=activity,ele=#activities input:checkbox">
+                  <label>
+                    <input type="checkbox" value="Private for-profit">
+                    <span>Private for-profit</span>
+                  </label>
+                </div>
+                <div class="checkbox" fjs-criteria="field=activity,ele=#activities input:checkbox">
+                  <label>
+                    <input type="checkbox" value="Public bodies">
+                    <span>Public bodies</span>
+                  </label>
+                </div>
+                <div class="checkbox" fjs-criteria="field=activity,ele=#activities input:checkbox">
+                  <label>
+                    <input type="checkbox" value="Other">
+                    <span>Other</span>
                   </label>
                 </div>
               </div>
