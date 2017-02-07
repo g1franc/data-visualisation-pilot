@@ -74,10 +74,10 @@ function ($scope) {
 
   $scope.updateHighlight = function () {
     $scope.lightChords();
-  } 
+  }
 
   // IMPORT THE CSV DATA
-  d3.csv('../data/links.csv', function (err, data) {
+  d3.csv('../data/NbLink.csv', function (err, data) {
     var groupsIDs = [];
 
     data.forEach(function (d) {
