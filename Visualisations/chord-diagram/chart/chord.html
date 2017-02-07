@@ -23,12 +23,15 @@
     <div class="row">
       <div class="large-12 columns">
       <p style="margin:auto; padding-top:15px; text-align: justify; font-family:arial;">
-          Through this page, you can view an interactive visualisation of <a href="http://cordis.europa.eu/home_en.html">Cordis</a> data as published by the <a href="http://publications.europa.eu/en/home">Publications Office</a> of the <a href="http://data.europa.eu/euodp/en/data">European Union Open Data Portal</a>.
-        <br>
-          The datasets contain all projects funded by the European Union under the <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects">sixth</a>, <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects">seventh</a> and <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects">Horizon 2020</a> framework programme for research and technological development. These framework programmes were funded and approved by the Europan Commission from 2002 to 2006 (FP6), 2007 to 2013 (FP7), and 2014 to 2020 (H2020).
-        <br>
-          The visualisation below shows the strength of collaboration between the different countries. The bigger the lines between two countries, the more projects they have worked on together under the selected framework programme, and vice versa.
-        <br><br>
+        Through this page, you can explore <a href="http://cordis.europa.eu/home_en.html">CORDIS</a> data. CORDIS stands for Community Research and Development
+        Information Service and is the European Commission's
+        primary public repository and portal to disseminate information on all EU-funded research projects and their results in the broadest sense.
+      <br><br>
+      This visualisation allows to explore the collaboration between EU-28 countries on projects funded under the FP6 (2002-2006), FP7 (2007-2013),
+      and H2020 (2014-2020) framework programmes. The countries are arranged radially around a circle and the links between the countries represent
+      the number of project that include at least one organisation of these two countries.
+      The size of the arc depends on the number of project in which the country participated and the size of the link depends on the number of projects between the two linked countries.
+      <br><br>
       </p>
     </div>
   </div>
@@ -96,7 +99,17 @@
           <li>Design by <a target="_blank" href="http://www.delimited.io/blog">delimited.io</a></li>
           <li>Data from <a target="_blank" href="http://www.correlatesofwar.org">Correlates of War</a></li>
         </ul>-->
-        <p>Inspired from <a target="_blank" href="https://github.com/sghall/chord-transitions">chord-transitions</a></p>
+      <p style="padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
+        This visualisation has been developed by  <a href="http://www.pwc.be/">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home">Publications Office of the EU</a>
+        using <a href="https://developers.google.com/chart/interactive/docs/gallery/bubblechart">the Google-visualization library</a>
+        and is based on datasets provided on the <a href="http://data.europa.eu/euodp/en/data">European Union Data Portal</a> by CORDIS
+        (<a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects">FP6 framework programme</a>,
+        <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects">FP7 framework programme</a>,
+        <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects">H2020 framework programme</a>)
+        and is inspired from <a target="_blank" href="https://github.com/sghall/chord-transitions">chord-transitions</a>
+        <br><br>
+        The source code of this visualisation can be found on the following <a href="https://github.com/SEMICeu/data-visualisation-pilot">Github repository</a>.
+      </p>
       </div>
     </footer>
 
