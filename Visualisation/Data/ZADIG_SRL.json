@@ -10,7 +10,7 @@
     ],
     "level":1,
     "country":"UK",
-    "activity":"ACT1",
+    "activity":"HES",
     "id":0,
     "label":"A"
 },
@@ -24,7 +24,7 @@
     ],
     "level":1,
     "country":"FR",
-    "activity":"ACT1",
+    "activity":"REC",
     "id":1,
     "label":"B"
 },
@@ -38,7 +38,7 @@
     ],
     "level":1,
     "country":"DE",
-    "activity":"ACT1",
+    "activity":"PRC",
     "id":2,
     "label":"C"
 },
@@ -52,7 +52,7 @@
     ],
     "level":1,
     "country":"UK",
-    "activity":"ACT2",
+    "activity":"PUB",
     "id":3,
     "label":"D"
 }
