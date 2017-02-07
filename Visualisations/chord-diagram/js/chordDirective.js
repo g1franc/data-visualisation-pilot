@@ -72,7 +72,7 @@ function ($window, matrixFactory) {
     function highlightChords(d) {
       d3.event.preventDefault();
       d3.event.stopPropagation();
-      
+
       $scope.filters[d._id].hide ? $scope.filters[d._id].hide = false : $scope.filters[d._id].hide = true;
       $scope.$apply();
     }
@@ -195,14 +195,7 @@ function ($window, matrixFactory) {
         d3.event.preventDefault();
         d3.event.stopPropagation();
         d3.select("#tooltip").style("opacity", 0);
-        if(clickedCountries.length == 0) {
-          resetChords();
-        }
-        else {
-          container.selectAll("path.chord").style("opacity", function (p) {
-            return (clickedCountries.indexOf(p.target._id)>-1 || clickedCountries.indexOf(p.source._id)>-1) ? 0.9: 0.1;
-          });
-        }
+        $scope.updateHighlight();
       }
 
     }; // END DRAWCHORDS FUNCTION
