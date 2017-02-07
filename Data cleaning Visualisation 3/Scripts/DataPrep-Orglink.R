@@ -4,9 +4,11 @@
 
 #set current directory
 setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/1 - Cordis/data-visualisation-pilot/Data cleaning Visualisation 3")
-
+#
 ### Load datasets
 # H2020: https://data.europa.eu/euodp/data/dataset/cordisH2020projects
+
+#Dataset_H2020Organizations = read.csv("../Input/Testorganizations_small.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
 Dataset_H2020Organizations = read.csv("../Input/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
@@ -44,7 +46,7 @@ func_createFrame <- function(vector){
 
 func_BuildLinkForOneOrg <- function(dataset, orgName){
   #dataset <- Dataset_H2020Organizations
-  #orgName <- "E"
+  #orgName <- "TATA"
   
   listProject <- dataset[dataset$name == orgName, ]$projectReference
   listProject <- unique(listProject)
@@ -66,11 +68,11 @@ func_BuildLinkForOneOrg <- function(dataset, orgName){
   datasetTmp <- subset(datasetTmp, select=-c(size))
   
   if (nrow(datasetTmp) == 0){
-    output <- data.frame(Org1 = character(),
-                         Org2 = character(),
-                         nbLink = integer(), 
-                         org = character()) 
-    
+    output <- data.frame("", "",0, orgName)
+    output <- plyr::rename(output,c("X.." = "Org1",
+                                    "X...1" = "Org2",
+                                    "X0" = "nbLink",
+                                    "orgName"= "Org"))
   }
   else 
   {
