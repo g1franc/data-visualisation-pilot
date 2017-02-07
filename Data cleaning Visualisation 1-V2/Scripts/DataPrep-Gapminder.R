@@ -76,7 +76,6 @@ output <- plyr::rename(output,c("Group.1"="Country",
                                 "Group.2" = "Year",
                                 "x" = "numberOfProjectCoordinators"))
 
-
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # IV. compute total budget managed by coordinator per country/year ############################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -94,6 +93,7 @@ tmp <- plyr::rename(tmp,c("Group.1"="Country",
 output <- merge(output, tmp, by.x=c("Country", "Year"), by.y=c("Country", "Year"), all.x=TRUE)
 remove(tmp)
 
+remove(Dataset_Projects)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # V. compute the number of project participation (i.e. coordinator or participant role) per country/year ######################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -129,7 +129,7 @@ tmp <- plyr::rename(tmp,c("Group.1"="Country",
 #save the result in output dataset
 output <- merge(output, tmp, by.x=c("Country", "Year"), by.y=c("Country", "Year"), all.x=TRUE)
 remove(tmp)
-
+remove(func_TotalNbOfProject)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # VI. compute the number of project participation (as participant) per country/year ###########################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -162,19 +162,19 @@ Dataset_PopByEducAttain <- subset(Dataset_PopByEducAttain, select=-c(SEX, AGE, U
 
 Dataset_PopByEducAttainED02 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED0-2", ]
 Dataset_PopByEducAttainED02 <- subset(Dataset_PopByEducAttainED02, select=-c(ISCED11))
-Dataset_PopByEducAttainED02 <- plyr::rename(Dataset_PopByEducAttainED02,c("Value" = "% of the population that study up to secondary education"))
+Dataset_PopByEducAttainED02 <- plyr::rename(Dataset_PopByEducAttainED02,c("Value" = "% pop. that study up to secondary education"))
                                 
 Dataset_PopByEducAttainED38 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED3-8", ]
 Dataset_PopByEducAttainED38 <- subset(Dataset_PopByEducAttainED38, select=-c(ISCED11))
-Dataset_PopByEducAttainED38 <- plyr::rename(Dataset_PopByEducAttainED38,c("Value" = "% of the population that have a secondary or tertiary education"))
+Dataset_PopByEducAttainED38 <- plyr::rename(Dataset_PopByEducAttainED38,c("Value" = "% pop. with a secondary or tertiary education"))
 
 Dataset_PopByEducAttainED34 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED3_4", ]
 Dataset_PopByEducAttainED34 <- subset(Dataset_PopByEducAttainED34, select=-c(ISCED11))
-Dataset_PopByEducAttainED34 <- plyr::rename(Dataset_PopByEducAttainED34,c("Value" = "% of the population that have a secondary education"))
+Dataset_PopByEducAttainED34 <- plyr::rename(Dataset_PopByEducAttainED34,c("Value" = "% pop. with have a secondary education"))
 
 Dataset_PopByEducAttainED58 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED5-8", ]
 Dataset_PopByEducAttainED58 <- subset(Dataset_PopByEducAttainED58, select=-c(ISCED11))
-Dataset_PopByEducAttainED58 <- plyr::rename(Dataset_PopByEducAttainED58,c("Value" = "% of the population that have a tertiary education"))
+Dataset_PopByEducAttainED58 <- plyr::rename(Dataset_PopByEducAttainED58,c("Value" = "% pop. with a tertiary education"))
 
 
 output <- merge(output, Dataset_PopByEducAttainED02, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
@@ -182,7 +182,10 @@ output <- merge(output, Dataset_PopByEducAttainED38, by.x=c("Country", "Year"), 
 output <- merge(output, Dataset_PopByEducAttainED34, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
 output <- merge(output, Dataset_PopByEducAttainED58, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
 
-
+remove(Dataset_PopByEducAttainED02)
+remove(Dataset_PopByEducAttainED38)
+remove(Dataset_PopByEducAttainED34)
+remove(Dataset_PopByEducAttainED58)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # X. Total intramural R&D expenditure #########################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -225,6 +228,11 @@ output <- merge(output, Dataset_RDExpendGov, by.x=c("name", "Year"), by.y=c("GEO
 output <- merge(output, Dataset_RDExpendEduc, by.x=c("name", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
 output <- merge(output, Dataset_RDExpendNonProf, by.x=c("name", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
 
+remove(Dataset_RDExpendAllSect)
+remove(Dataset_RDExpendBusiness)
+remove(Dataset_RDExpendGov)
+remove(Dataset_RDExpendEduc)
+remove(Dataset_RDExpendNonProf)
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # XI. compute GDP per capita per country/year #################################################################################################
@@ -246,23 +254,40 @@ output$GDPPerCapita <- output$GDP / output$Population
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 output$totalBudgetManagedAsCoordinatorsPerCapita <- output$totalBudgetManagedAsCoordinators / output$Population
 
+
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-# XIII. save file #############################################################################################################################
+# XIII. compute cumulative information per country ############################################################################################
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+output$numberOfProjectCoordinatorsCumulative <- ave(output$numberOfProjectCoordinators, output$Country, FUN = cumsum)
+output$totalBudgetManagedAsCoordinatorsCumulative <- ave(output$totalBudgetManagedAsCoordinators, output$Country, FUN = cumsum)
+output$TotalOfProjectCumulative <- ave(output$TotalOfProject, output$Country, FUN = cumsum)
+output$numberOfProjectParticipantsCumulative <- ave(output$numberOfProjectParticipants, output$Country, FUN = cumsum)
+output$totalBudgetManagedAsCoordinatorsPerCapitaCumulative <- ave(output$totalBudgetManagedAsCoordinatorsPerCapita, output$Country, FUN = cumsum)
+
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+# XIV. save file ##############################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 output <- plyr::rename(output,c("Country" = "CountryShort",
                                 "name"="Country", 
-                                "numberOfProjectCoordinators" = "Number of coordinated projects per country",
-                                "totalBudgetManagedAsCoordinators" = "Budget of coordinated projects per country",
-                                "TotalOfProject" = "Total number of projects",
-                                "numberOfProjectParticipants" = "Number of projects as participant",
-                                "GDPPerCapita" = "GDP per capita",
-                                "totalBudgetManagedAsCoordinatorsPerCapita" = "Budget of coordinated projects per country per capita"))
+                                "numberOfProjectCoordinators" = "Nr. of coordinated projects",
+                                "totalBudgetManagedAsCoordinators" = "Budget of coordinated projects",
+                                "TotalOfProject" = "Total nr. of projects",
+                                "numberOfProjectParticipants" = "Nr. of projects as participant",
+                                "GDPPerCapita" = "GDP / capita",
+                                "totalBudgetManagedAsCoordinatorsPerCapita" = "Budget of coordinated projects / capita",
+                                "numberOfProjectCoordinatorsCumulative" = "Nr. of coordinated projects - Cumulative",
+                                "totalBudgetManagedAsCoordinatorsCumulative" = "Budget of coordinated projects - Cumulative",
+                                "TotalOfProjectCumulative" = "Total nr. of projects - Cumulative",
+                                "numberOfProjectParticipantsCumulative" = "Nr. of projects as participant - Cumulative",
+                                "totalBudgetManagedAsCoordinatorsPerCapitaCumulative" = "Budget of coordinated projects / capita - Cumulative"
+                                ))
 
 output <- output[output$Year != 2017, ]
 output <- output[output$Year != 2018, ]
 output$GDP <- format(output$GDP, scientific = FALSE)
+
 options(scipen = 999)
 write.table(output, "output/CountryInformation.csv", sep = "\t", quote = FALSE)
 options(scipen = 0)
 
- 
