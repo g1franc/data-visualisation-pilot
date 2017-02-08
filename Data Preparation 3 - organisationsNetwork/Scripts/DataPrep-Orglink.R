@@ -46,7 +46,7 @@ func_createFrame <- function(vector){
 
 func_BuildLinkForOneOrg <- function(dataset, orgName){
   #dataset <- Dataset_H2020Organizations
-  #orgName <- "TATA"
+  #orgName <- "GUIDANCE NAVIGATION HOLDINGS LTD"
   
   listProject <- dataset[dataset$name == orgName, ]$projectReference
   listProject <- unique(listProject)
@@ -68,11 +68,11 @@ func_BuildLinkForOneOrg <- function(dataset, orgName){
   datasetTmp <- subset(datasetTmp, select=-c(size))
   
   if (nrow(datasetTmp) == 0){
-    output <- data.frame("", "",0, orgName)
-    output <- plyr::rename(output,c("X.." = "Org1",
-                                    "X...1" = "Org2",
+    output <- data.frame(orgName, "",0, orgName)
+    output <- plyr::rename(output,c("orgName" = "Org1",
+                                    "X.." = "Org2",
                                     "X0" = "nbLink",
-                                    "orgName"= "Org"))
+                                    "orgName.1"= "Org"))
   }
   else 
   {
@@ -170,6 +170,7 @@ nrow(Dataset_link)
 Sys.time()
 
 # Dataset_link = read.csv("Output/NbLinkOrgLevel1.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+# Dataset_link = read.csv("Output/tmp.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
 Dataset_link2 <- func_AddAdditionalInformation(Dataset_link, Dataset_H2020Organizations)
 nrow(Dataset_link2)
