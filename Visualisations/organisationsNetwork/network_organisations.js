@@ -30,7 +30,7 @@ var zoomCall = undefined;
 var currentOrg = e.options[e.selectedIndex].value;*/
 //var currentOrg = $('#orgDropdown').val();
 
-var currentOrg="UNIVERSITE_LIBRE_DE_BRUXELLES";
+var currentOrg="ADANA_METROPOLITAN_MUNICIPALITY";
 
 // -------------------------------------------------------------------
 
