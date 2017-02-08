@@ -1,0 +1,2720 @@
+{
+"nodes": [
+{
+    "index":0,
+    "score":4.539127127507845,
+    "links":[
+        7,
+        1,
+        5,
+        11,
+        15,
+        27,
+        8,
+        9,
+        14,
+        10,
+        21,
+        13,
+        22,
+        24,
+        20,
+        3,
+        4,
+        23,
+        6,
+        16,
+        25,
+        2,
+        12,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"1960",
+    "GDP":"339896",
+    "NumberProjectCoordination":"285",
+    "FullName":"Austria",
+    "GDPPerCapita":"39632.1893655055",
+    "label":"AT",
+    "NumberProjectParticipation":"1675",
+    "NumberInstitution":"984",
+    "Population":"8576261",
+    "id":0
+},
+{
+    "index":1,
+    "score":6.549871636398213,
+    "links":[
+        7,
+        5,
+        11,
+        15,
+        27,
+        8,
+        9,
+        14,
+        10,
+        21,
+        13,
+        22,
+        24,
+        20,
+        3,
+        4,
+        23,
+        6,
+        16,
+        25,
+        2,
+        12,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"3073",
+    "GDP":"409407",
+    "NumberProjectCoordination":"470",
+    "FullName":"Belgium",
+    "GDPPerCapita":"36524.891725264",
+    "label":"BE",
+    "NumberProjectParticipation":"2603",
+    "NumberInstitution":"1235",
+    "Population":"11208986",
+    "id":1
+},
+{
+    "index":2,
+    "score":1.8346486640677,
+    "links":[
+        7,
+        5,
+        11,
+        15,
+        27,
+        8,
+        9,
+        14,
+        10,
+        21,
+        13,
+        22,
+        24,
+        20,
+        3,
+        4,
+        23,
+        6,
+        16,
+        25,
+        12,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"463",
+    "GDP":"44162.3",
+    "NumberProjectCoordination":"39",
+    "FullName":"Bulgaria",
+    "GDPPerCapita":"6131.7808813365",
+    "label":"BG",
+    "NumberProjectParticipation":"424",
+    "NumberInstitution":"289",
+    "Population":"7202198",
+    "id":2
+},
+{
+    "index":3,
+    "score":1.4191309308738234,
+    "links":[
+        7,
+        5,
+        11,
+        15,
+        27,
+        8,
+        9,
+        14,
+        10,
+        21,
+        13,
+        22,
+        24,
+        20,
+        4,
+        23,
+        6,
+        16,
+        25,
+        12,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"233",
+    "GDP":"17420.6",
+    "NumberProjectCoordination":"25",
+    "FullName":"Cyprus",
+    "GDPPerCapita":"20567.2201443198",
+    "label":"CY",
+    "NumberProjectParticipation":"208",
+    "NumberInstitution":"107",
+    "Population":"847008",
+    "id":3
+},
+{
+    "index":4,
+    "score":2.9420937529713798,
+    "links":[
+        7,
+        5,
+        11,
+        15,
+        27,
+        8,
+        9,
+        14,
+        10,
+        21,
+        13,
+        22,
+        24,
+        20,
+        23,
+        6,
+        16,
+        25,
+        12,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"1076",
+    "GDP":"166964.1",
+    "NumberProjectCoordination":"38",
+    "FullName":"Czech Republic",
+    "GDPPerCapita":"15843.5892022176",
+    "label":"CZ",
+    "NumberProjectParticipation":"1038",
+    "NumberInstitution":"637",
+    "Population":"10538275",
+    "id":4
+},
+{
+    "index":5,
+    "score":20.0,
+    "links":[
+        7,
+        11,
+        15,
+        27,
+        8,
+        9,
+        14,
+        10,
+        21,
+        13,
+        22,
+        24,
+        20,
+        23,
+        6,
+        16,
+        25,
+        12,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"10518",
+    "GDP":"3032820",
+    "NumberProjectCoordination":"1439",
+    "FullName":"Germany",
+    "GDPPerCapita":"37351.1329537003",
+    "label":"DE",
+    "NumberProjectParticipation":"9079",
+    "NumberInstitution":"4692",
+    "Population":"81197537",
+    "id":5
+},
+{
+    "index":6,
+    "score":4.110963202434155,
+    "links":[
+        7,
+        11,
+        15,
+        27,
+        8,
+        9,
+        14,
+        10,
+        21,
+        13,
+        22,
+        24,
+        20,
+        23,
+        16,
+        25,
+        12,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"1723",
+    "GDP":"266178.7",
+    "NumberProjectCoordination":"211",
+    "FullName":"Denmark",
+    "GDPPerCapita":"47030.4070081267",
+    "label":"DK",
+    "NumberProjectParticipation":"1512",
+    "NumberInstitution":"694",
+    "Population":"5659715",
+    "id":6
+},
+{
+    "index":7,
+    "score":1.6973471522297232,
+    "links":[
+        11,
+        15,
+        27,
+        8,
+        9,
+        14,
+        10,
+        21,
+        13,
+        22,
+        24,
+        20,
+        23,
+        16,
+        25,
+        12,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"387",
+    "GDP":"20251.7",
+    "NumberProjectCoordination":"23",
+    "FullName":"Estonia",
+    "GDPPerCapita":"15420.8080434274",
+    "label":"EE",
+    "NumberProjectParticipation":"364",
+    "NumberInstitution":"211",
+    "Population":"1313271",
+    "id":7
+},
+{
+    "index":8,
+    "score":5.211181895977941,
+    "links":[
+        11,
+        15,
+        27,
+        9,
+        14,
+        10,
+        21,
+        13,
+        22,
+        24,
+        20,
+        23,
+        16,
+        25,
+        12,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"2332",
+    "GDP":"176022.7",
+    "NumberProjectCoordination":"347",
+    "FullName":"Greece",
+    "GDPPerCapita":"16211.3103883232",
+    "label":"EL",
+    "NumberProjectParticipation":"1985",
+    "NumberInstitution":"810",
+    "Population":"10858018",
+    "id":8
+},
+{
+    "index":9,
+    "score":10.154036322145098,
+    "links":[
+        11,
+        15,
+        27,
+        14,
+        10,
+        21,
+        13,
+        22,
+        24,
+        20,
+        23,
+        16,
+        25,
+        12,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"5068",
+    "GDP":"1075639",
+    "NumberProjectCoordination":"718",
+    "FullName":"Spain",
+    "GDPPerCapita":"23157.1382853639",
+    "label":"ES",
+    "NumberProjectParticipation":"4350",
+    "NumberInstitution":"2275",
+    "Population":"46449565",
+    "id":9
+},
+{
+    "index":10,
+    "score":3.5996957307216886,
+    "links":[
+        11,
+        15,
+        27,
+        14,
+        21,
+        13,
+        22,
+        24,
+        20,
+        23,
+        16,
+        25,
+        12,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"1440",
+    "GDP":"209149",
+    "NumberProjectCoordination":"155",
+    "FullName":"Finland",
+    "GDPPerCapita":"38223.3993383839",
+    "label":"FI",
+    "NumberProjectParticipation":"1285",
+    "NumberInstitution":"528",
+    "Population":"5471753",
+    "id":10
+},
+{
+    "index":11,
+    "score":15.248645050870019,
+    "links":[
+        15,
+        27,
+        14,
+        21,
+        13,
+        22,
+        24,
+        20,
+        23,
+        16,
+        25,
+        12,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"7888",
+    "GDP":"2181064",
+    "NumberProjectCoordination":"1299",
+    "FullName":"France",
+    "GDPPerCapita":"32839.8511297744",
+    "label":"FR",
+    "NumberProjectParticipation":"6589",
+    "NumberInstitution":"3193",
+    "Population":"66415161",
+    "id":11
+},
+{
+    "index":12,
+    "score":1.2727964248359798,
+    "links":[
+        15,
+        27,
+        14,
+        21,
+        13,
+        22,
+        24,
+        20,
+        23,
+        16,
+        25,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"152",
+    "GDP":"43897",
+    "NumberProjectCoordination":"9",
+    "FullName":"Croatia",
+    "GDPPerCapita":"10389.0454583752",
+    "label":"HR",
+    "NumberProjectParticipation":"143",
+    "NumberInstitution":"108",
+    "Population":"4225316",
+    "id":12
+},
+{
+    "index":13,
+    "score":3.149852619568318,
+    "links":[
+        15,
+        27,
+        14,
+        21,
+        22,
+        24,
+        20,
+        23,
+        16,
+        25,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"1191",
+    "GDP":"108747.9",
+    "NumberProjectCoordination":"111",
+    "FullName":"Hungary",
+    "GDPPerCapita":"11034.1552001401",
+    "label":"HU",
+    "NumberProjectParticipation":"1080",
+    "NumberInstitution":"659",
+    "Population":"9855571",
+    "id":13
+},
+{
+    "index":14,
+    "score":2.6349719501759057,
+    "links":[
+        15,
+        27,
+        21,
+        22,
+        24,
+        20,
+        23,
+        16,
+        25,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"906",
+    "GDP":"255815.2",
+    "NumberProjectCoordination":"171",
+    "FullName":"Ireland",
+    "GDPPerCapita":"55264.207922792",
+    "label":"IE",
+    "NumberProjectParticipation":"735",
+    "NumberInstitution":"400",
+    "Population":"4628949",
+    "id":14
+},
+{
+    "index":15,
+    "score":12.956071122943806,
+    "links":[
+        27,
+        21,
+        22,
+        24,
+        20,
+        23,
+        16,
+        25,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"6619",
+    "GDP":"1636371.7",
+    "NumberProjectCoordination":"914",
+    "FullName":"Italy",
+    "GDPPerCapita":"26915.9507761843",
+    "label":"IT",
+    "NumberProjectParticipation":"5705",
+    "NumberInstitution":"2969",
+    "Population":"60795612",
+    "id":15
+},
+{
+    "index":16,
+    "score":1.6196634021108682,
+    "links":[
+        27,
+        21,
+        22,
+        24,
+        20,
+        23,
+        25,
+        26,
+        18,
+        19,
+        17
+    ],
+    "OverallNumberProject":"344",
+    "GDP":"37123.6",
+    "NumberProjectCoordination":"21",
+    "FullName":"Lithuania",
+    "GDPPerCapita":"12708.0693207251",
+    "label":"LT",
+    "NumberProjectParticipation":"323",
+    "NumberInstitution":"198",
+    "Population":"2921262",
+    "id":16
+},
+{
+    "index":17,
+    "score":1.1987258723970715,
+    "links":[
+        27,
+        21,
+        22,
+        24,
+        20,
+        23,
+        25,
+        26,
+        18,
+        19
+    ],
+    "OverallNumberProject":"111",
+    "GDP":"52112.5",
+    "NumberProjectCoordination":"14",
+    "FullName":"Luxembourg",
+    "GDPPerCapita":"92569.0726484036",
+    "label":"LU",
+    "NumberProjectParticipation":"97",
+    "NumberInstitution":"73",
+    "Population":"562958",
+    "id":17
+},
+{
+    "index":18,
+    "score":1.393838547114196,
+    "links":[
+        27,
+        21,
+        22,
+        24,
+        20,
+        23,
+        25,
+        26,
+        19
+    ],
+    "OverallNumberProject":"219",
+    "GDP":"24377.7",
+    "NumberProjectCoordination":"10",
+    "FullName":"Latvia",
+    "GDPPerCapita":"12274.1801000556",
+    "label":"LV",
+    "NumberProjectParticipation":"209",
+    "NumberInstitution":"125",
+    "Population":"1986096",
+    "id":18
+},
+{
+    "index":19,
+    "score":1.234857849196539,
+    "links":[
+        27,
+        21,
+        22,
+        24,
+        20,
+        23,
+        25,
+        26
+    ],
+    "OverallNumberProject":"131",
+    "GDP":"8788.4",
+    "NumberProjectCoordination":"7",
+    "FullName":"Malta",
+    "GDPPerCapita":"20469.3672206902",
+    "label":"MT",
+    "NumberProjectParticipation":"124",
+    "NumberInstitution":"63",
+    "Population":"429344",
+    "id":19
+},
+{
+    "index":20,
+    "score":8.392602453171056,
+    "links":[
+        27,
+        21,
+        22,
+        24,
+        23,
+        25,
+        26
+    ],
+    "OverallNumberProject":"4093",
+    "GDP":"676531",
+    "NumberProjectCoordination":"662",
+    "FullName":"Netherlands",
+    "GDPPerCapita":"40029.7004992567",
+    "label":"NL",
+    "NumberProjectParticipation":"3431",
+    "NumberInstitution":"1643",
+    "Population":"16900726",
+    "id":20
+},
+{
+    "index":21,
+    "score":4.432537795949415,
+    "links":[
+        27,
+        22,
+        24,
+        23,
+        25,
+        26
+    ],
+    "OverallNumberProject":"1901",
+    "GDP":"427737.4",
+    "NumberProjectCoordination":"197",
+    "FullName":"Poland",
+    "GDPPerCapita":"11254.5846516254",
+    "label":"PL",
+    "NumberProjectParticipation":"1704",
+    "NumberInstitution":"1044",
+    "Population":"38005614",
+    "id":21
+},
+{
+    "index":22,
+    "score":3.111914043928877,
+    "links":[
+        27,
+        24,
+        23,
+        25,
+        26
+    ],
+    "OverallNumberProject":"1170",
+    "GDP":"179539.9",
+    "NumberProjectCoordination":"107",
+    "FullName":"Portugal",
+    "GDPPerCapita":"17305.3475037933",
+    "label":"PT",
+    "NumberProjectParticipation":"1063",
+    "NumberInstitution":"652",
+    "Population":"10374822",
+    "id":22
+},
+{
+    "index":23,
+    "score":2.098412094703813,
+    "links":[
+        27,
+        24,
+        25,
+        26
+    ],
+    "OverallNumberProject":"609",
+    "GDP":"160352.8",
+    "NumberProjectCoordination":"44",
+    "FullName":"Romania",
+    "GDPPerCapita":"8069.83285446115",
+    "label":"RO",
+    "NumberProjectParticipation":"565",
+    "NumberInstitution":"435",
+    "Population":"19870647",
+    "id":23
+},
+{
+    "index":24,
+    "score":5.8091661120091285,
+    "links":[
+        27,
+        25,
+        26
+    ],
+    "OverallNumberProject":"2663",
+    "GDP":"446945.7",
+    "NumberProjectCoordination":"329",
+    "FullName":"Sweden",
+    "GDPPerCapita":"45853.0237177162",
+    "label":"SE",
+    "NumberProjectParticipation":"2334",
+    "NumberInstitution":"950",
+    "Population":"9747355",
+    "id":24
+},
+{
+    "index":25,
+    "score":2.114671484263573,
+    "links":[
+        27,
+        26
+    ],
+    "OverallNumberProject":"618",
+    "GDP":"38570",
+    "NumberProjectCoordination":"31",
+    "FullName":"Slovenia",
+    "GDPPerCapita":"18697.2156321714",
+    "label":"SI",
+    "NumberProjectParticipation":"587",
+    "NumberInstitution":"331",
+    "Population":"2062874",
+    "id":25
+},
+{
+    "index":26,
+    "score":1.7949034895882856,
+    "links":[
+        27
+    ],
+    "OverallNumberProject":"441",
+    "GDP":"78070.8",
+    "NumberProjectCoordination":"31",
+    "FullName":"Slovakia",
+    "GDPPerCapita":"14400.6224281078",
+    "label":"SK",
+    "NumberProjectParticipation":"410",
+    "NumberInstitution":"276",
+    "Population":"5421349",
+    "id":26
+},
+{
+    "index":27,
+    "score":16.94504136160502,
+    "links":[],
+    "OverallNumberProject":"8827",
+    "GDP":"2575719.2",
+    "NumberProjectCoordination":"1707",
+    "FullName":"United Kingdom",
+    "GDPPerCapita":"39702.6997927481",
+    "label":"UK",
+    "NumberProjectParticipation":"7120",
+    "NumberInstitution":"2707",
+    "Population":"64875165",
+    "id":27
+}
+],
+"links":[
+{
+    "weight":0.0075623191111941,
+    "target":7,
+    "source":0
+},
+{
+    "weight":0.0103164970590981,
+    "target":7,
+    "source":1
+},
+{
+    "weight":0.028662123051069,
+    "target":7,
+    "source":5
+},
+{
+    "weight":0.00214732517972178,
+    "target":7,
+    "source":3
+},
+{
+    "weight":0.00508822705629726,
+    "target":7,
+    "source":4
+},
+{
+    "weight":0.0105499019699374,
+    "target":7,
+    "source":6
+},
+{
+    "weight":0.00382784053776491,
+    "target":7,
+    "source":2
+},
+{
+    "weight":0.061105405657735,
+    "target":1,
+    "source":0
+},
+{
+    "weight":0.267201941928858,
+    "target":5,
+    "source":0
+},
+{
+    "weight":0.357949771263187,
+    "target":5,
+    "source":1
+},
+{
+    "weight":0.0185323499206423,
+    "target":5,
+    "source":3
+},
+{
+    "weight":0.133787694893101,
+    "target":5,
+    "source":4
+},
+{
+    "weight":0.0386518532349921,
+    "target":5,
+    "source":2
+},
+{
+    "weight":0.0184856689384745,
+    "target":11,
+    "source":7
+},
+{
+    "weight":0.146158155167585,
+    "target":11,
+    "source":0
+},
+{
+    "weight":0.315003267668752,
+    "target":11,
+    "source":1
+},
+{
+    "weight":1.0,
+    "target":11,
+    "source":5
+},
+{
+    "weight":0.217673419848754,
+    "target":11,
+    "source":8
+},
+{
+    "weight":0.454486042386332,
+    "target":11,
+    "source":9
+},
+{
+    "weight":0.119503314349734,
+    "target":11,
+    "source":10
+},
+{
+    "weight":0.0157781719727383,
+    "target":11,
+    "source":3
+},
+{
+    "weight":0.089767528708804,
+    "target":11,
+    "source":4
+},
+{
+    "weight":0.132854075249743,
+    "target":11,
+    "source":6
+},
+{
+    "weight":0.0263747549248436,
+    "target":11,
+    "source":2
+},
+{
+    "weight":0.019325926617496,
+    "target":15,
+    "source":7
+},
+{
+    "weight":0.126738866585753,
+    "target":15,
+    "source":0
+},
+{
+    "weight":0.236485855662403,
+    "target":15,
+    "source":1
+},
+{
+    "weight":0.800298758285874,
+    "target":15,
+    "source":5
+},
+{
+    "weight":0.626925590514424,
+    "target":15,
+    "source":11
+},
+{
+    "weight":0.208337223415181,
+    "target":15,
+    "source":8
+},
+{
+    "weight":0.408598636915321,
+    "target":15,
+    "source":9
+},
+{
+    "weight":0.0592381663710204,
+    "target":15,
+    "source":14
+},
+{
+    "weight":0.100970964429092,
+    "target":15,
+    "source":10
+},
+{
+    "weight":0.0813182709364205,
+    "target":15,
+    "source":13
+},
+{
+    "weight":0.0197460554570068,
+    "target":15,
+    "source":3
+},
+{
+    "weight":0.07805060218467,
+    "target":15,
+    "source":4
+},
+{
+    "weight":0.108579964522454,
+    "target":15,
+    "source":6
+},
+{
+    "weight":0.031089534123798,
+    "target":15,
+    "source":2
+},
+{
+    "weight":0.00994304920175521,
+    "target":15,
+    "source":12
+},
+{
+    "weight":0.0290822518905798,
+    "target":27,
+    "source":7
+},
+{
+    "weight":0.154887498832975,
+    "target":27,
+    "source":0
+},
+{
+    "weight":0.284287181402297,
+    "target":27,
+    "source":1
+},
+{
+    "weight":0.976099337130053,
+    "target":27,
+    "source":5
+},
+{
+    "weight":0.76300065353375,
+    "target":27,
+    "source":11
+},
+{
+    "weight":0.600924283446924,
+    "target":27,
+    "source":15
+},
+{
+    "weight":0.206423303146298,
+    "target":27,
+    "source":8
+},
+{
+    "weight":0.452945569974792,
+    "target":27,
+    "source":9
+},
+{
+    "weight":0.0955559704976193,
+    "target":27,
+    "source":14
+},
+{
+    "weight":0.13948277471758,
+    "target":27,
+    "source":10
+},
+{
+    "weight":0.0934086453178975,
+    "target":27,
+    "source":13
+},
+{
+    "weight":0.163150032676688,
+    "target":27,
+    "source":21
+},
+{
+    "weight":0.110307160862665,
+    "target":27,
+    "source":22
+},
+{
+    "weight":0.269535991037251,
+    "target":27,
+    "source":24
+},
+{
+    "weight":0.410886005041546,
+    "target":27,
+    "source":20
+},
+{
+    "weight":0.0176920922416208,
+    "target":27,
+    "source":3
+},
+{
+    "weight":0.102511436840631,
+    "target":27,
+    "source":4
+},
+{
+    "weight":0.0436467183269536,
+    "target":27,
+    "source":23
+},
+{
+    "weight":0.193679395014471,
+    "target":27,
+    "source":6
+},
+{
+    "weight":0.0261880309961722,
+    "target":27,
+    "source":16
+},
+{
+    "weight":0.0410325833255532,
+    "target":27,
+    "source":25
+},
+{
+    "weight":0.0365512090374382,
+    "target":27,
+    "source":2
+},
+{
+    "weight":0.00956960134441229,
+    "target":27,
+    "source":12
+},
+{
+    "weight":0.0313229390346373,
+    "target":27,
+    "source":26
+},
+{
+    "weight":0.0158248529549062,
+    "target":27,
+    "source":18
+},
+{
+    "weight":0.00667538045000467,
+    "target":27,
+    "source":19
+},
+{
+    "weight":0.00784240500420129,
+    "target":27,
+    "source":17
+},
+{
+    "weight":0.00770236205769769,
+    "target":8,
+    "source":7
+},
+{
+    "weight":0.0478013257398936,
+    "target":8,
+    "source":0
+},
+{
+    "weight":0.0802446083465596,
+    "target":8,
+    "source":1
+},
+{
+    "weight":0.263094015498086,
+    "target":8,
+    "source":5
+},
+{
+    "weight":0.0149845952758846,
+    "target":8,
+    "source":3
+},
+{
+    "weight":0.0243674726916254,
+    "target":8,
+    "source":4
+},
+{
+    "weight":0.0423863318084212,
+    "target":8,
+    "source":6
+},
+{
+    "weight":0.0175520492951172,
+    "target":8,
+    "source":2
+},
+{
+    "weight":0.0154514050975633,
+    "target":9,
+    "source":7
+},
+{
+    "weight":0.0911212771916721,
+    "target":9,
+    "source":0
+},
+{
+    "weight":0.172439548128093,
+    "target":9,
+    "source":1
+},
+{
+    "weight":0.564653160302493,
+    "target":9,
+    "source":5
+},
+{
+    "weight":0.145317897488563,
+    "target":9,
+    "source":8
+},
+{
+    "weight":0.0132107179535057,
+    "target":9,
+    "source":3
+},
+{
+    "weight":0.0595182522640276,
+    "target":9,
+    "source":4
+},
+{
+    "weight":0.0925217066567081,
+    "target":9,
+    "source":6
+},
+{
+    "weight":0.0210064419755392,
+    "target":9,
+    "source":2
+},
+{
+    "weight":0.00387452151993278,
+    "target":14,
+    "source":7
+},
+{
+    "weight":0.0174120063486136,
+    "target":14,
+    "source":0
+},
+{
+    "weight":0.0316497059098123,
+    "target":14,
+    "source":1
+},
+{
+    "weight":0.0870133507609,
+    "target":14,
+    "source":5
+},
+{
+    "weight":0.0692278965549435,
+    "target":14,
+    "source":11
+},
+{
+    "weight":0.0243674726916254,
+    "target":14,
+    "source":8
+},
+{
+    "weight":0.0505555036877976,
+    "target":14,
+    "source":9
+},
+{
+    "weight":0.0157781719727383,
+    "target":14,
+    "source":10
+},
+{
+    "weight":0.0109233498272804,
+    "target":14,
+    "source":13
+},
+{
+    "weight":0.00228736812622538,
+    "target":14,
+    "source":3
+},
+{
+    "weight":0.00868266268322286,
+    "target":14,
+    "source":4
+},
+{
+    "weight":0.021053122957707,
+    "target":14,
+    "source":6
+},
+{
+    "weight":0.00448137428811502,
+    "target":14,
+    "source":2
+},
+{
+    "weight":0.00140042946503594,
+    "target":14,
+    "source":12
+},
+{
+    "weight":0.00961628232658015,
+    "target":10,
+    "source":7
+},
+{
+    "weight":0.0316963868919802,
+    "target":10,
+    "source":0
+},
+{
+    "weight":0.0506021846699655,
+    "target":10,
+    "source":1
+},
+{
+    "weight":0.18102884884698,
+    "target":10,
+    "source":5
+},
+{
+    "weight":0.0402390066286995,
+    "target":10,
+    "source":8
+},
+{
+    "weight":0.0784707310241807,
+    "target":10,
+    "source":9
+},
+{
+    "weight":0.00382784053776491,
+    "target":10,
+    "source":3
+},
+{
+    "weight":0.0196060125105032,
+    "target":10,
+    "source":4
+},
+{
+    "weight":0.0386985342171599,
+    "target":10,
+    "source":6
+},
+{
+    "weight":0.00816917187937634,
+    "target":10,
+    "source":2
+},
+{
+    "weight":0.00998973018392307,
+    "target":21,
+    "source":7
+},
+{
+    "weight":0.0417327980580711,
+    "target":21,
+    "source":0
+},
+{
+    "weight":0.061478853515078,
+    "target":21,
+    "source":1
+},
+{
+    "weight":0.21076463448791,
+    "target":21,
+    "source":5
+},
+{
+    "weight":0.142890486415834,
+    "target":21,
+    "source":11
+},
+{
+    "weight":0.135141443375969,
+    "target":21,
+    "source":15
+},
+{
+    "weight":0.0431332275231071,
+    "target":21,
+    "source":8
+},
+{
+    "weight":0.105032209877696,
+    "target":21,
+    "source":9
+},
+{
+    "weight":0.0176454112594529,
+    "target":21,
+    "source":14
+},
+{
+    "weight":0.0305293623377836,
+    "target":21,
+    "source":10
+},
+{
+    "weight":0.029689104658762,
+    "target":21,
+    "source":13
+},
+{
+    "weight":0.0837456820091495,
+    "target":21,
+    "source":20
+},
+{
+    "weight":0.00564839884231164,
+    "target":21,
+    "source":3
+},
+{
+    "weight":0.0266081598356829,
+    "target":21,
+    "source":4
+},
+{
+    "weight":0.0377649145738026,
+    "target":21,
+    "source":6
+},
+{
+    "weight":0.0104565400056017,
+    "target":21,
+    "source":16
+},
+{
+    "weight":0.0145644664363738,
+    "target":21,
+    "source":2
+},
+{
+    "weight":0.00443469330594716,
+    "target":21,
+    "source":12
+},
+{
+    "weight":0.00858930071888712,
+    "target":21,
+    "source":18
+},
+{
+    "weight":0.00322098776958267,
+    "target":21,
+    "source":19
+},
+{
+    "weight":0.00280085893007189,
+    "target":21,
+    "source":17
+},
+{
+    "weight":0.00709550928951545,
+    "target":13,
+    "source":7
+},
+{
+    "weight":0.0315563439454766,
+    "target":13,
+    "source":0
+},
+{
+    "weight":0.0405190925217067,
+    "target":13,
+    "source":1
+},
+{
+    "weight":0.115675473811969,
+    "target":13,
+    "source":5
+},
+{
+    "weight":0.0878536084399216,
+    "target":13,
+    "source":11
+},
+{
+    "weight":0.0265147978713472,
+    "target":13,
+    "source":8
+},
+{
+    "weight":0.0643263934273177,
+    "target":13,
+    "source":9
+},
+{
+    "weight":0.0203995892073569,
+    "target":13,
+    "source":10
+},
+{
+    "weight":0.00443469330594716,
+    "target":13,
+    "source":3
+},
+{
+    "weight":0.0188124358136495,
+    "target":13,
+    "source":4
+},
+{
+    "weight":0.0229670432265895,
+    "target":13,
+    "source":6
+},
+{
+    "weight":0.0123704602744842,
+    "target":13,
+    "source":2
+},
+{
+    "weight":0.00340771169825413,
+    "target":13,
+    "source":12
+},
+{
+    "weight":0.00401456446643637,
+    "target":22,
+    "source":7
+},
+{
+    "weight":0.0213332088507142,
+    "target":22,
+    "source":0
+},
+{
+    "weight":0.0450938287741574,
+    "target":22,
+    "source":1
+},
+{
+    "weight":0.12701895247876,
+    "target":22,
+    "source":5
+},
+{
+    "weight":0.111894314256372,
+    "target":22,
+    "source":11
+},
+{
+    "weight":0.101764541125945,
+    "target":22,
+    "source":15
+},
+{
+    "weight":0.0412193072542246,
+    "target":22,
+    "source":8
+},
+{
+    "weight":0.0864064979927178,
+    "target":22,
+    "source":9
+},
+{
+    "weight":0.0146578284007096,
+    "target":22,
+    "source":14
+},
+{
+    "weight":0.0183456259919709,
+    "target":22,
+    "source":10
+},
+{
+    "weight":0.0160582578657455,
+    "target":22,
+    "source":13
+},
+{
+    "weight":0.0290822518905798,
+    "target":22,
+    "source":21
+},
+{
+    "weight":0.050415460741294,
+    "target":22,
+    "source":20
+},
+{
+    "weight":0.00499486509196153,
+    "target":22,
+    "source":3
+},
+{
+    "weight":0.0129306320604986,
+    "target":22,
+    "source":4
+},
+{
+    "weight":0.0225935953692466,
+    "target":22,
+    "source":6
+},
+{
+    "weight":0.00322098776958267,
+    "target":22,
+    "source":16
+},
+{
+    "weight":0.00728223321818691,
+    "target":22,
+    "source":2
+},
+{
+    "weight":0.00242741107272897,
+    "target":22,
+    "source":12
+},
+{
+    "weight":0.00359443562692559,
+    "target":22,
+    "source":18
+},
+{
+    "weight":0.00261413500140043,
+    "target":22,
+    "source":19
+},
+{
+    "weight":0.00130706750070021,
+    "target":22,
+    "source":17
+},
+{
+    "weight":0.0147978713472131,
+    "target":24,
+    "source":7
+},
+{
+    "weight":0.0571375221734665,
+    "target":24,
+    "source":0
+},
+{
+    "weight":0.100270749696574,
+    "target":24,
+    "source":1
+},
+{
+    "weight":0.356969470637662,
+    "target":24,
+    "source":5
+},
+{
+    "weight":0.244094855755765,
+    "target":24,
+    "source":11
+},
+{
+    "weight":0.191251983941742,
+    "target":24,
+    "source":15
+},
+{
+    "weight":0.0624591541406031,
+    "target":24,
+    "source":8
+},
+{
+    "weight":0.143777425077024,
+    "target":24,
+    "source":9
+},
+{
+    "weight":0.0253944542993185,
+    "target":24,
+    "source":14
+},
+{
+    "weight":0.068714405751097,
+    "target":24,
+    "source":10
+},
+{
+    "weight":0.0309961721594622,
+    "target":24,
+    "source":13
+},
+{
+    "weight":0.0535430865465409,
+    "target":24,
+    "source":21
+},
+{
+    "weight":0.0352441415367379,
+    "target":24,
+    "source":22
+},
+{
+    "weight":0.132573989356736,
+    "target":24,
+    "source":20
+},
+{
+    "weight":0.00438801232377929,
+    "target":24,
+    "source":3
+},
+{
+    "weight":0.0337036691251984,
+    "target":24,
+    "source":4
+},
+{
+    "weight":0.0142376995611988,
+    "target":24,
+    "source":23
+},
+{
+    "weight":0.0709084119129866,
+    "target":24,
+    "source":6
+},
+{
+    "weight":0.00919615348706937,
+    "target":24,
+    "source":16
+},
+{
+    "weight":0.0100364111660909,
+    "target":24,
+    "source":2
+},
+{
+    "weight":0.00364111660909346,
+    "target":24,
+    "source":12
+},
+{
+    "weight":0.00774904303986556,
+    "target":24,
+    "source":18
+},
+{
+    "weight":0.00228736812622538,
+    "target":24,
+    "source":19
+},
+{
+    "weight":0.0025207730370647,
+    "target":24,
+    "source":17
+},
+{
+    "weight":0.0121370553636449,
+    "target":20,
+    "source":7
+},
+{
+    "weight":0.0837923629913173,
+    "target":20,
+    "source":0
+},
+{
+    "weight":0.160069087853608,
+    "target":20,
+    "source":1
+},
+{
+    "weight":0.485248809634955,
+    "target":20,
+    "source":5
+},
+{
+    "weight":0.332135188124358,
+    "target":20,
+    "source":11
+},
+{
+    "weight":0.267762113714873,
+    "target":20,
+    "source":15
+},
+{
+    "weight":0.0919148538885258,
+    "target":20,
+    "source":8
+},
+{
+    "weight":0.2155727756512,
+    "target":20,
+    "source":9
+},
+{
+    "weight":0.0432732704696107,
+    "target":20,
+    "source":14
+},
+{
+    "weight":0.0671272523573896,
+    "target":20,
+    "source":10
+},
+{
+    "weight":0.0546634301185697,
+    "target":20,
+    "source":13
+},
+{
+    "weight":0.00802912893287275,
+    "target":20,
+    "source":3
+},
+{
+    "weight":0.0508355895808048,
+    "target":20,
+    "source":4
+},
+{
+    "weight":0.108626645504621,
+    "target":20,
+    "source":6
+},
+{
+    "weight":0.0112967976846233,
+    "target":20,
+    "source":16
+},
+{
+    "weight":0.0204929511716927,
+    "target":20,
+    "source":2
+},
+{
+    "weight":0.00564839884231164,
+    "target":20,
+    "source":12
+},
+{
+    "weight":0.00896274857623004,
+    "target":20,
+    "source":18
+},
+{
+    "weight":0.00317430678741481,
+    "target":20,
+    "source":19
+},
+{
+    "weight":0.00438801232377929,
+    "target":20,
+    "source":17
+},
+{
+    "weight":0.00452805527028289,
+    "target":3,
+    "source":0
+},
+{
+    "weight":0.00746895714685837,
+    "target":3,
+    "source":1
+},
+{
+    "weight":0.00298758285874335,
+    "target":3,
+    "source":2
+},
+{
+    "weight":0.0281953132293903,
+    "target":4,
+    "source":0
+},
+{
+    "weight":0.0385118102884885,
+    "target":4,
+    "source":1
+},
+{
+    "weight":0.00378115955559705,
+    "target":4,
+    "source":3
+},
+{
+    "weight":0.0075623191111941,
+    "target":4,
+    "source":2
+},
+{
+    "weight":0.0041079264307721,
+    "target":23,
+    "source":7
+},
+{
+    "weight":0.0140976566146952,
+    "target":23,
+    "source":0
+},
+{
+    "weight":0.0174586873307814,
+    "target":23,
+    "source":1
+},
+{
+    "weight":0.0592381663710204,
+    "target":23,
+    "source":5
+},
+{
+    "weight":0.0495285220801046,
+    "target":23,
+    "source":11
+},
+{
+    "weight":0.0499486509196153,
+    "target":23,
+    "source":15
+},
+{
+    "weight":0.0291289328727476,
+    "target":23,
+    "source":8
+},
+{
+    "weight":0.0351507795724022,
+    "target":23,
+    "source":9
+},
+{
+    "weight":0.00490150312762581,
+    "target":23,
+    "source":14
+},
+{
+    "weight":0.00905611054056577,
+    "target":23,
+    "source":10
+},
+{
+    "weight":0.0132107179535057,
+    "target":23,
+    "source":13
+},
+{
+    "weight":0.0171786014377742,
+    "target":23,
+    "source":21
+},
+{
+    "weight":0.00896274857623004,
+    "target":23,
+    "source":22
+},
+{
+    "weight":0.0208197180468677,
+    "target":23,
+    "source":20
+},
+{
+    "weight":0.00378115955559705,
+    "target":23,
+    "source":3
+},
+{
+    "weight":0.00952292036224442,
+    "target":23,
+    "source":4
+},
+{
+    "weight":0.00956960134441229,
+    "target":23,
+    "source":6
+},
+{
+    "weight":0.00448137428811502,
+    "target":23,
+    "source":16
+},
+{
+    "weight":0.0104565400056017,
+    "target":23,
+    "source":2
+},
+{
+    "weight":0.00303426384091121,
+    "target":23,
+    "source":12
+},
+{
+    "weight":0.0033143497339184,
+    "target":23,
+    "source":18
+},
+{
+    "weight":0.00205396321538605,
+    "target":23,
+    "source":19
+},
+{
+    "weight":0.000793576696853702,
+    "target":23,
+    "source":17
+},
+{
+    "weight":0.0341237979647092,
+    "target":6,
+    "source":0
+},
+{
+    "weight":0.0592848473531883,
+    "target":6,
+    "source":1
+},
+{
+    "weight":0.192932499299785,
+    "target":6,
+    "source":5
+},
+{
+    "weight":0.00429465035944356,
+    "target":6,
+    "source":3
+},
+{
+    "weight":0.0225935953692466,
+    "target":6,
+    "source":4
+},
+{
+    "weight":0.00956960134441229,
+    "target":6,
+    "source":2
+},
+{
+    "weight":0.00518158902063299,
+    "target":16,
+    "source":7
+},
+{
+    "weight":0.0066286994678368,
+    "target":16,
+    "source":0
+},
+{
+    "weight":0.00826253384371207,
+    "target":16,
+    "source":1
+},
+{
+    "weight":0.0240873867986182,
+    "target":16,
+    "source":5
+},
+{
+    "weight":0.0166184296517599,
+    "target":16,
+    "source":11
+},
+{
+    "weight":0.0195593315283354,
+    "target":16,
+    "source":15
+},
+{
+    "weight":0.00690878536084399,
+    "target":16,
+    "source":8
+},
+{
+    "weight":0.0132107179535057,
+    "target":16,
+    "source":9
+},
+{
+    "weight":0.00326766875175054,
+    "target":16,
+    "source":14
+},
+{
+    "weight":0.00555503687797591,
+    "target":16,
+    "source":10
+},
+{
+    "weight":0.00714219027168332,
+    "target":16,
+    "source":13
+},
+{
+    "weight":0.00224068714405751,
+    "target":16,
+    "source":3
+},
+{
+    "weight":0.00620857062832602,
+    "target":16,
+    "source":4
+},
+{
+    "weight":0.00732891420035478,
+    "target":16,
+    "source":6
+},
+{
+    "weight":0.00448137428811502,
+    "target":16,
+    "source":2
+},
+{
+    "weight":0.000700214732517972,
+    "target":16,
+    "source":12
+},
+{
+    "weight":0.00387452151993278,
+    "target":25,
+    "source":7
+},
+{
+    "weight":0.0190925217066567,
+    "target":25,
+    "source":0
+},
+{
+    "weight":0.0205863131360284,
+    "target":25,
+    "source":1
+},
+{
+    "weight":0.0604518719073849,
+    "target":25,
+    "source":5
+},
+{
+    "weight":0.0446736999346466,
+    "target":25,
+    "source":11
+},
+{
+    "weight":0.0391653440388386,
+    "target":25,
+    "source":15
+},
+{
+    "weight":0.0138642517038558,
+    "target":25,
+    "source":8
+},
+{
+    "weight":0.0337503501073663,
+    "target":25,
+    "source":9
+},
+{
+    "weight":0.00518158902063299,
+    "target":25,
+    "source":14
+},
+{
+    "weight":0.00891606759406218,
+    "target":25,
+    "source":10
+},
+{
+    "weight":0.0123237792923163,
+    "target":25,
+    "source":13
+},
+{
+    "weight":0.0189524787601531,
+    "target":25,
+    "source":21
+},
+{
+    "weight":0.00779572402203342,
+    "target":25,
+    "source":22
+},
+{
+    "weight":0.0143777425077024,
+    "target":25,
+    "source":24
+},
+{
+    "weight":0.0237139389412753,
+    "target":25,
+    "source":20
+},
+{
+    "weight":0.00280085893007189,
+    "target":25,
+    "source":3
+},
+{
+    "weight":0.0092895154514051,
+    "target":25,
+    "source":4
+},
+{
+    "weight":0.00667538045000467,
+    "target":25,
+    "source":23
+},
+{
+    "weight":0.012090374381477,
+    "target":25,
+    "source":6
+},
+{
+    "weight":0.00541499393147232,
+    "target":25,
+    "source":16
+},
+{
+    "weight":0.00648865652133321,
+    "target":25,
+    "source":2
+},
+{
+    "weight":0.00340771169825413,
+    "target":25,
+    "source":12
+},
+{
+    "weight":0.00368779759126132,
+    "target":25,
+    "source":18
+},
+{
+    "weight":0.00168051535804313,
+    "target":25,
+    "source":19
+},
+{
+    "weight":0.0015871533937074,
+    "target":25,
+    "source":17
+},
+{
+    "weight":0.0112967976846233,
+    "target":2,
+    "source":0
+},
+{
+    "weight":0.0155914480440668,
+    "target":2,
+    "source":1
+},
+{
+    "weight":0.00121370553636449,
+    "target":12,
+    "source":7
+},
+{
+    "weight":0.00429465035944356,
+    "target":12,
+    "source":0
+},
+{
+    "weight":0.00499486509196153,
+    "target":12,
+    "source":1
+},
+{
+    "weight":0.0117636075063019,
+    "target":12,
+    "source":5
+},
+{
+    "weight":0.00910279152273364,
+    "target":12,
+    "source":11
+},
+{
+    "weight":0.00695546634301186,
+    "target":12,
+    "source":8
+},
+{
+    "weight":0.0067687424143404,
+    "target":12,
+    "source":9
+},
+{
+    "weight":0.00214732517972178,
+    "target":12,
+    "source":10
+},
+{
+    "weight":0.00135374848286808,
+    "target":12,
+    "source":3
+},
+{
+    "weight":0.00196060125105032,
+    "target":12,
+    "source":4
+},
+{
+    "weight":0.00289422089440762,
+    "target":12,
+    "source":6
+},
+{
+    "weight":0.00238073009056111,
+    "target":12,
+    "source":2
+},
+{
+    "weight":0.00368779759126132,
+    "target":26,
+    "source":7
+},
+{
+    "weight":0.0132107179535057,
+    "target":26,
+    "source":0
+},
+{
+    "weight":0.0140976566146952,
+    "target":26,
+    "source":1
+},
+{
+    "weight":0.0411726262720568,
+    "target":26,
+    "source":5
+},
+{
+    "weight":0.0278685463542153,
+    "target":26,
+    "source":11
+},
+{
+    "weight":0.0280552702828868,
+    "target":26,
+    "source":15
+},
+{
+    "weight":0.0091494725049015,
+    "target":26,
+    "source":8
+},
+{
+    "weight":0.0204929511716927,
+    "target":26,
+    "source":9
+},
+{
+    "weight":0.0041079264307721,
+    "target":26,
+    "source":14
+},
+{
+    "weight":0.00826253384371207,
+    "target":26,
+    "source":10
+},
+{
+    "weight":0.0125105032209878,
+    "target":26,
+    "source":13
+},
+{
+    "weight":0.0142843805433666,
+    "target":26,
+    "source":21
+},
+{
+    "weight":0.00555503687797591,
+    "target":26,
+    "source":22
+},
+{
+    "weight":0.0117169265241341,
+    "target":26,
+    "source":24
+},
+{
+    "weight":0.0161516198300812,
+    "target":26,
+    "source":20
+},
+{
+    "weight":0.00242741107272897,
+    "target":26,
+    "source":3
+},
+{
+    "weight":0.0102231350947624,
+    "target":26,
+    "source":4
+},
+{
+    "weight":0.00653533750350107,
+    "target":26,
+    "source":23
+},
+{
+    "weight":0.00812249089720848,
+    "target":26,
+    "source":6
+},
+{
+    "weight":0.0042479693772757,
+    "target":26,
+    "source":16
+},
+{
+    "weight":0.00588180375315097,
+    "target":26,
+    "source":25
+},
+{
+    "weight":0.00616188964615816,
+    "target":26,
+    "source":2
+},
+{
+    "weight":0.00144711044720381,
+    "target":26,
+    "source":12
+},
+{
+    "weight":0.00303426384091121,
+    "target":26,
+    "source":18
+},
+{
+    "weight":0.00186723928671459,
+    "target":26,
+    "source":19
+},
+{
+    "weight":0.000980300625525161,
+    "target":26,
+    "source":17
+},
+{
+    "weight":0.00401456446643637,
+    "target":18,
+    "source":7
+},
+{
+    "weight":0.00550835589580805,
+    "target":18,
+    "source":0
+},
+{
+    "weight":0.0066286994678368,
+    "target":18,
+    "source":1
+},
+{
+    "weight":0.0198860984035104,
+    "target":18,
+    "source":5
+},
+{
+    "weight":0.013817570721688,
+    "target":18,
+    "source":11
+},
+{
+    "weight":0.0115302025954626,
+    "target":18,
+    "source":15
+},
+{
+    "weight":0.00485482214545794,
+    "target":18,
+    "source":8
+},
+{
+    "weight":0.00854261973671926,
+    "target":18,
+    "source":9
+},
+{
+    "weight":0.00196060125105032,
+    "target":18,
+    "source":14
+},
+{
+    "weight":0.00527495098496872,
+    "target":18,
+    "source":10
+},
+{
+    "weight":0.00564839884231164,
+    "target":18,
+    "source":13
+},
+{
+    "weight":0.00196060125105032,
+    "target":18,
+    "source":3
+},
+{
+    "weight":0.0041079264307721,
+    "target":18,
+    "source":4
+},
+{
+    "weight":0.00499486509196153,
+    "target":18,
+    "source":6
+},
+{
+    "weight":0.00480814116329008,
+    "target":18,
+    "source":16
+},
+{
+    "weight":0.00266081598356829,
+    "target":18,
+    "source":2
+},
+{
+    "weight":0.00102698160769303,
+    "target":18,
+    "source":12
+},
+{
+    "weight":0.000606852768182243,
+    "target":18,
+    "source":17
+},
+{
+    "weight":0.00196060125105032,
+    "target":19,
+    "source":7
+},
+{
+    "weight":0.00289422089440762,
+    "target":19,
+    "source":0
+},
+{
+    "weight":0.00266081598356829,
+    "target":19,
+    "source":1
+},
+{
+    "weight":0.00784240500420129,
+    "target":19,
+    "source":5
+},
+{
+    "weight":0.00644197553916534,
+    "target":19,
+    "source":11
+},
+{
+    "weight":0.00868266268322286,
+    "target":19,
+    "source":15
+},
+{
+    "weight":0.00438801232377929,
+    "target":19,
+    "source":8
+},
+{
+    "weight":0.00886938661189431,
+    "target":19,
+    "source":9
+},
+{
+    "weight":0.00140042946503594,
+    "target":19,
+    "source":14
+},
+{
+    "weight":0.00121370553636449,
+    "target":19,
+    "source":10
+},
+{
+    "weight":0.00368779759126132,
+    "target":19,
+    "source":13
+},
+{
+    "weight":0.00196060125105032,
+    "target":19,
+    "source":3
+},
+{
+    "weight":0.00177387732237886,
+    "target":19,
+    "source":4
+},
+{
+    "weight":0.00219400616188965,
+    "target":19,
+    "source":6
+},
+{
+    "weight":0.0015871533937074,
+    "target":19,
+    "source":16
+},
+{
+    "weight":0.00196060125105032,
+    "target":19,
+    "source":2
+},
+{
+    "weight":0.000420128839510783,
+    "target":19,
+    "source":12
+},
+{
+    "weight":0.00135374848286808,
+    "target":19,
+    "source":18
+},
+{
+    "weight":0.000140042946503594,
+    "target":19,
+    "source":17
+},
+{
+    "weight":0.000560171786014378,
+    "target":17,
+    "source":7
+},
+{
+    "weight":0.00368779759126132,
+    "target":17,
+    "source":0
+},
+{
+    "weight":0.00578844178881524,
+    "target":17,
+    "source":1
+},
+{
+    "weight":0.0121370553636449,
+    "target":17,
+    "source":5
+},
+{
+    "weight":0.00840257679021567,
+    "target":17,
+    "source":11
+},
+{
+    "weight":0.00574176080664737,
+    "target":17,
+    "source":15
+},
+{
+    "weight":0.00298758285874335,
+    "target":17,
+    "source":8
+},
+{
+    "weight":0.00308094482307908,
+    "target":17,
+    "source":9
+},
+{
+    "weight":0.00135374848286808,
+    "target":17,
+    "source":14
+},
+{
+    "weight":0.001727196340211,
+    "target":17,
+    "source":10
+},
+{
+    "weight":0.00107366258986089,
+    "target":17,
+    "source":13
+},
+{
+    "weight":0.000700214732517972,
+    "target":17,
+    "source":3
+},
+{
+    "weight":0.00135374848286808,
+    "target":17,
+    "source":4
+},
+{
+    "weight":0.00102698160769303,
+    "target":17,
+    "source":6
+},
+{
+    "weight":0.000606852768182243,
+    "target":17,
+    "source":16
+},
+{
+    "weight":0.000653533750350107,
+    "target":17,
+    "source":2
+},
+{
+    "weight":0.000280085893007189,
+    "target":17,
+    "source":12
+}]
+}
