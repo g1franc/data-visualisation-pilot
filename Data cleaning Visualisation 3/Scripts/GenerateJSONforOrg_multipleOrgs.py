@@ -94,18 +94,20 @@ def extractForOneOrg(index, linesArray):
 		try:
 			value = orgDict[lineList[2]];
 		except KeyError:
-			orgDict[lineList[2]] = count;
-			orgList.append(JNode(count,[],lineList,lineList[2],lineList[4],lineList[6]))
-			count += 1
+			if lineList[2] != '':
+				orgDict[lineList[2]] = count;
+				orgList.append(JNode(count,[],lineList,lineList[2],lineList[4],lineList[6]))
+				count += 1
 		#add links to JNode objects
-		org1Index = orgList[orgDict[lineList[1]]].id
-		org2Index = orgList[orgDict[lineList[2]]].id
-		orgList[orgDict[lineList[1]]].links.append(org2Index);
-		orgList[orgDict[lineList[2]]].links.append(org1Index);
-		#create JLink Object
-		#NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
-		linkWeight = (((float(lineList[9])-1)*(5-1))/(linksMax-1)+1)
-		linksList.append(JLink(org1Index, org2Index, linkWeight))
+		if lineList[2] != '':
+			org1Index = orgList[orgDict[lineList[1]]].id
+			org2Index = orgList[orgDict[lineList[2]]].id
+			orgList[orgDict[lineList[1]]].links.append(org2Index);
+			orgList[orgDict[lineList[2]]].links.append(org1Index);
+			#create JLink Object
+			#NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
+			linkWeight = (((float(lineList[9])-1)*(5-1))/(linksMax-1)+1)
+			linksList.append(JLink(org1Index, org2Index, linkWeight))
 		copyIndex +=1
 	currentOrg = currentOrg.replace(' ','_')
 	currentOrg = currentOrg.replace('*','')
