@@ -72,7 +72,7 @@ orgDictionary = {};
 #read file
 FileLink = sys.argv[1]
 #linesLink = [line.rstrip('\n') for line in open(FileLink, encoding="utf-8")]
-linesLink = [line.rstrip('\n') for line in open(FileLink)]
+linesLink = [line.rstrip('\n') for line in open(FileLink,  encoding="utf-8")]
 
 
 #Create a dictionary of all organizations with their "id, empty links (filled in later), line, label, country, activity"
@@ -106,7 +106,7 @@ while (lineNumber < len(linesLink)-1):
 	while (curName == nameOnLineToProcess):
 
 		lineList = linesLink[lineNumber].split(sepChar)
-	
+
 		org1Name = lineList[1]
 		org2Name = lineList[2]
 		if (not org1Name in NodeDic):

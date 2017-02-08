@@ -1,0 +1,142 @@
+{
+"nodes": [
+{
+    "index":0,
+    "label":"UNIVERSITAT POLITECNICA DE VALENCIA",
+    "level":2,
+    "links":[
+        8
+    ],
+    "id":0,
+    "score":20.0
+},
+{
+    "index":1,
+    "label":"ASOCIACION CENTRO TECNOLOGICO CEIT-IK4",
+    "level":2,
+    "links":[
+        8
+    ],
+    "id":1,
+    "score":3.923076923076923
+},
+{
+    "index":2,
+    "label":"TWI LIMITED",
+    "level":2,
+    "links":[
+        8
+    ],
+    "id":2,
+    "score":9.76923076923077
+},
+{
+    "index":3,
+    "label":"INSTITUTO TECNOLOGICO METALMECANICO, MUEBLE, MADERA, EMBALAJE Y AFINES-AIDIMME",
+    "level":2,
+    "links":[
+        8
+    ],
+    "id":3,
+    "score":1.9743589743589745
+},
+{
+    "index":4,
+    "label":"VLAAMSE INSTELLING VOOR TECHNOLOGISCH ONDERZOEK N.V.",
+    "level":2,
+    "links":[
+        8
+    ],
+    "id":4,
+    "score":16.102564102564102
+},
+{
+    "index":5,
+    "label":"APR SRL",
+    "level":2,
+    "links":[
+        8
+    ],
+    "id":5,
+    "score":1.0
+},
+{
+    "index":6,
+    "label":"LAURENTIA TECHNOLOGIES SLL",
+    "level":2,
+    "links":[
+        8
+    ],
+    "id":6,
+    "score":1.0
+},
+{
+    "index":7,
+    "label":"TLS TECHNIK GMBH & CO. SPEZIALPULVER KG",
+    "level":2,
+    "links":[
+        8
+    ],
+    "id":7,
+    "score":1.0
+},
+{
+    "index":8,
+    "label":"ZOZ GMBH",
+    "level":1,
+    "links":[
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+    ],
+    "id":8,
+    "score":1.0
+}
+],
+"links":[
+{
+    "source":0,
+    "target":8,
+    "weight":1.0
+},
+{
+    "source":1,
+    "target":8,
+    "weight":1.0
+},
+{
+    "source":2,
+    "target":8,
+    "weight":1.0
+},
+{
+    "source":3,
+    "target":8,
+    "weight":1.0
+},
+{
+    "source":4,
+    "target":8,
+    "weight":1.0
+},
+{
+    "source":5,
+    "target":8,
+    "weight":1.0
+},
+{
+    "source":6,
+    "target":8,
+    "weight":1.0
+},
+{
+    "source":7,
+    "target":8,
+    "weight":1.0
+}]
+}

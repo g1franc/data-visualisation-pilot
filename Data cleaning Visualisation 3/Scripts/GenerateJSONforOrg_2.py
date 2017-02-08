@@ -29,7 +29,7 @@ def WriteJSON(nameOutputFile, org_list):
 
 #read file
 FileOrg = sys.argv[1]
-lines = [line.rstrip('\n') for line in open(FileOrg)]
+lines = [line.rstrip('\n') for line in open(FileOrg, encoding="utf-8")]
 
 #define some parameters
 sepChar = ";"
@@ -43,7 +43,7 @@ for i in range(1, len(lines)):
         value = orgDictionary[lineList[0]];
     except KeyError:
         orgDictionary[lineList[0]] = JOrgList(lineList[0],lineList[4],lineList[3])
-        count += 1      
+        count += 1
 
 #write file
 OrgList = [];

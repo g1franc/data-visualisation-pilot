@@ -755,381 +755,381 @@ country1;country2;nbLinkTmp;frameworkContract
 754;Austria;Croatia;88;FP7
 755;Belgium;Croatia;100;FP7
 756;Bulgaria;Croatia;60;FP7
-757;Austria;Belgium;244;H2020
-758;Austria;Bulgaria;56;H2020
-759;Belgium;Bulgaria;72;H2020
-760;Austria;Croatia;49;H2020
-761;Belgium;Croatia;58;H2020
-762;Bulgaria;Croatia;29;H2020
-763;Austria;Cyprus;36;H2020
-764;Belgium;Cyprus;49;H2020
-765;Bulgaria;Cyprus;22;H2020
-766;Croatia;Cyprus;20;H2020
-767;Austria;Czech Republic;105;H2020
-768;Belgium;Czech Republic;128;H2020
-769;Bulgaria;Czech Republic;44;H2020
-770;Croatia;Czech Republic;29;H2020
-771;Cyprus;Czech Republic;19;H2020
-772;Austria;Denmark;120;H2020
-773;Belgium;Denmark;171;H2020
-774;Bulgaria;Denmark;29;H2020
-775;Croatia;Denmark;32;H2020
-776;Cyprus;Denmark;26;H2020
-777;Czech Republic;Denmark;65;H2020
-778;Austria;Estonia;43;H2020
-779;Belgium;Estonia;61;H2020
-780;Bulgaria;Estonia;26;H2020
-781;Croatia;Estonia;25;H2020
-782;Cyprus;Estonia;21;H2020
-783;Czech Republic;Estonia;31;H2020
-784;Denmark;Estonia;39;H2020
-785;Austria;Finland;113;H2020
-786;Belgium;Finland;167;H2020
-787;Bulgaria;Finland;37;H2020
-788;Croatia;Finland;30;H2020
-789;Cyprus;Finland;23;H2020
-790;Czech Republic;Finland;58;H2020
-791;Denmark;Finland;98;H2020
-792;Estonia;Finland;43;H2020
-793;Austria;France;317;H2020
-794;Belgium;France;509;H2020
-795;Bulgaria;France;67;H2020
-796;Croatia;France;62;H2020
-797;Cyprus;France;62;H2020
-798;Czech Republic;France;159;H2020
-799;Denmark;France;223;H2020
-800;Estonia;France;56;H2020
-801;Finland;France;213;H2020
-802;Austria;Germany;480;H2020
-803;Belgium;Germany;628;H2020
-804;Bulgaria;Germany;92;H2020
-805;Croatia;Germany;81;H2020
-806;Cyprus;Germany;73;H2020
-807;Czech Republic;Germany;210;H2020
-808;Denmark;Germany;313;H2020
-809;Estonia;Germany;84;H2020
-810;Finland;Germany;284;H2020
-811;France;Germany;964;H2020
-812;Austria;Greece;151;H2020
-813;Belgium;Greece;233;H2020
-814;Bulgaria;Greece;53;H2020
-815;Croatia;Greece;48;H2020
-816;Cyprus;Greece;72;H2020
-817;Czech Republic;Greece;80;H2020
-818;Denmark;Greece;103;H2020
-819;Estonia;Greece;47;H2020
-820;Finland;Greece;104;H2020
-821;France;Greece;326;H2020
-822;Germany;Greece;431;H2020
-823;Austria;Hungary;81;H2020
-824;Belgium;Hungary;111;H2020
-825;Bulgaria;Hungary;35;H2020
-826;Croatia;Hungary;27;H2020
-827;Cyprus;Hungary;21;H2020
-828;Czech Republic;Hungary;55;H2020
-829;Denmark;Hungary;58;H2020
-830;Estonia;Hungary;26;H2020
-831;Finland;Hungary;46;H2020
-832;France;Hungary;117;H2020
-833;Germany;Hungary;157;H2020
-834;Greece;Hungary;77;H2020
-835;Austria;Ireland;73;H2020
-836;Belgium;Ireland;141;H2020
-837;Bulgaria;Ireland;24;H2020
-838;Croatia;Ireland;28;H2020
-839;Cyprus;Ireland;30;H2020
-840;Czech Republic;Ireland;43;H2020
-841;Denmark;Ireland;85;H2020
-842;Estonia;Ireland;23;H2020
-843;Finland;Ireland;71;H2020
-844;France;Ireland;171;H2020
-845;Germany;Ireland;233;H2020
-846;Greece;Ireland;106;H2020
-847;Hungary;Ireland;43;H2020
-848;Austria;Italy;318;H2020
-849;Belgium;Italy;509;H2020
-850;Bulgaria;Italy;82;H2020
-851;Croatia;Italy;72;H2020
-852;Cyprus;Italy;82;H2020
-853;Czech Republic;Italy;176;H2020
-854;Denmark;Italy;222;H2020
-855;Estonia;Italy;72;H2020
-856;Finland;Italy;232;H2020
-857;France;Italy;747;H2020
-858;Germany;Italy;949;H2020
-859;Greece;Italy;399;H2020
-860;Hungary;Italy;141;H2020
-861;Ireland;Italy;184;H2020
-862;Austria;Latvia;40;H2020
-863;Belgium;Latvia;51;H2020
-864;Bulgaria;Latvia;21;H2020
-865;Croatia;Latvia;20;H2020
-866;Cyprus;Latvia;17;H2020
-867;Czech Republic;Latvia;32;H2020
-868;Denmark;Latvia;33;H2020
-869;Estonia;Latvia;27;H2020
-870;Finland;Latvia;31;H2020
-871;France;Latvia;47;H2020
-872;Germany;Latvia;65;H2020
-873;Greece;Latvia;38;H2020
-874;Hungary;Latvia;25;H2020
-875;Ireland;Latvia;23;H2020
-876;Italy;Latvia;57;H2020
-877;Austria;Lithuania;41;H2020
-878;Belgium;Lithuania;45;H2020
-879;Bulgaria;Lithuania;20;H2020
-880;Croatia;Lithuania;18;H2020
-881;Cyprus;Lithuania;15;H2020
-882;Czech Republic;Lithuania;27;H2020
-883;Denmark;Lithuania;25;H2020
-884;Estonia;Lithuania;20;H2020
-885;Finland;Lithuania;32;H2020
-886;France;Lithuania;48;H2020
-887;Germany;Lithuania;67;H2020
-888;Greece;Lithuania;35;H2020
-889;Hungary;Lithuania;24;H2020
-890;Ireland;Lithuania;20;H2020
-891;Italy;Lithuania;47;H2020
-892;Latvia;Lithuania;23;H2020
-893;Austria;Netherlands;265;H2020
-894;Belgium;Netherlands;441;H2020
-895;Bulgaria;Netherlands;56;H2020
-896;Croatia;Netherlands;59;H2020
-897;Cyprus;Netherlands;52;H2020
-898;Czech Republic;Netherlands;129;H2020
-899;Denmark;Netherlands;216;H2020
-900;Estonia;Netherlands;65;H2020
-901;Finland;Netherlands;190;H2020
-902;France;Netherlands;540;H2020
-903;Germany;Netherlands;766;H2020
-904;Greece;Netherlands;227;H2020
-905;Hungary;Netherlands;107;H2020
-906;Ireland;Netherlands;149;H2020
-907;Italy;Netherlands;560;H2020
-908;Latvia;Netherlands;50;H2020
-909;Lithuania;Netherlands;48;H2020
-910;Malta;Netherlands;22;H2020
-911;Luxembourg;Netherlands;32;H2020
-912;Austria;Poland;123;H2020
-913;Belgium;Poland;169;H2020
-914;Bulgaria;Poland;52;H2020
-915;Croatia;Poland;42;H2020
-916;Cyprus;Poland;39;H2020
-917;Czech Republic;Poland;76;H2020
-918;Denmark;Poland;85;H2020
-919;Estonia;Poland;41;H2020
-920;Finland;Poland;79;H2020
-921;France;Poland;216;H2020
-922;Germany;Poland;275;H2020
-923;Greece;Poland;119;H2020
-924;Hungary;Poland;67;H2020
-925;Ireland;Poland;66;H2020
-926;Italy;Poland;237;H2020
-927;Latvia;Poland;41;H2020
-928;Lithuania;Poland;33;H2020
-929;Netherlands;Poland;174;H2020
-930;Malta;Poland;10;H2020
-931;Luxembourg;Poland;21;H2020
-932;Austria;Portugal;141;H2020
-933;Belgium;Portugal;207;H2020
-934;Bulgaria;Portugal;47;H2020
-935;Croatia;Portugal;53;H2020
-936;Cyprus;Portugal;42;H2020
-937;Czech Republic;Portugal;77;H2020
-938;Denmark;Portugal;104;H2020
-939;Estonia;Portugal;46;H2020
-940;Finland;Portugal;111;H2020
-941;France;Portugal;275;H2020
-942;Germany;Portugal;318;H2020
-943;Greece;Portugal;162;H2020
-944;Hungary;Portugal;66;H2020
-945;Ireland;Portugal;95;H2020
-946;Italy;Portugal;279;H2020
-947;Latvia;Portugal;39;H2020
-948;Lithuania;Portugal;34;H2020
-949;Netherlands;Portugal;192;H2020
-950;Poland;Portugal;113;H2020
-951;Malta;Portugal;13;H2020
-952;Luxembourg;Portugal;29;H2020
-953;Austria;Romania;85;H2020
-954;Belgium;Romania;115;H2020
-955;Bulgaria;Romania;44;H2020
-956;Croatia;Romania;32;H2020
-957;Cyprus;Romania;35;H2020
-958;Czech Republic;Romania;53;H2020
-959;Denmark;Romania;50;H2020
-960;Estonia;Romania;32;H2020
-961;Finland;Romania;53;H2020
-962;France;Romania;122;H2020
-963;Germany;Romania;153;H2020
-964;Greece;Romania;82;H2020
-965;Hungary;Romania;52;H2020
-966;Ireland;Romania;59;H2020
-967;Italy;Romania;146;H2020
-968;Latvia;Romania;37;H2020
-969;Lithuania;Romania;29;H2020
-970;Netherlands;Romania;110;H2020
-971;Poland;Romania;78;H2020
-972;Portugal;Romania;84;H2020
-973;Malta;Romania;14;H2020
-974;Luxembourg;Romania;16;H2020
-975;Austria;Slovakia;59;H2020
-976;Belgium;Slovakia;66;H2020
-977;Bulgaria;Slovakia;24;H2020
-978;Croatia;Slovakia;25;H2020
-979;Cyprus;Slovakia;19;H2020
-980;Czech Republic;Slovakia;45;H2020
-981;Denmark;Slovakia;26;H2020
-982;Estonia;Slovakia;23;H2020
-983;Finland;Slovakia;33;H2020
-984;France;Slovakia;68;H2020
-985;Germany;Slovakia;73;H2020
-986;Greece;Slovakia;40;H2020
-987;Hungary;Slovakia;29;H2020
-988;Ireland;Slovakia;27;H2020
-989;Italy;Slovakia;77;H2020
-990;Latvia;Slovakia;25;H2020
-991;Lithuania;Slovakia;22;H2020
-992;Netherlands;Slovakia;59;H2020
-993;Poland;Slovakia;44;H2020
-994;Portugal;Slovakia;45;H2020
-995;Romania;Slovakia;38;H2020
-996;Malta;Slovakia;7;H2020
-997;Luxembourg;Slovakia;14;H2020
-998;Austria;Slovenia;86;H2020
-999;Belgium;Slovenia;96;H2020
-1000;Bulgaria;Slovenia;25;H2020
-1001;Croatia;Slovenia;29;H2020
-1002;Cyprus;Slovenia;24;H2020
-1003;Czech Republic;Slovenia;38;H2020
-1004;Denmark;Slovenia;52;H2020
-1005;Estonia;Slovenia;26;H2020
-1006;Finland;Slovenia;49;H2020
-1007;France;Slovenia;117;H2020
-1008;Germany;Slovenia;140;H2020
-1009;Greece;Slovenia;63;H2020
-1010;Hungary;Slovenia;35;H2020
-1011;Ireland;Slovenia;36;H2020
-1012;Italy;Slovenia;129;H2020
-1013;Latvia;Slovenia;27;H2020
-1014;Lithuania;Slovenia;20;H2020
-1015;Netherlands;Slovenia;90;H2020
-1016;Poland;Slovenia;52;H2020
-1017;Portugal;Slovenia;56;H2020
-1018;Romania;Slovenia;42;H2020
-1019;Slovakia;Slovenia;28;H2020
-1020;Malta;Slovenia;9;H2020
-1021;Luxembourg;Slovenia;12;H2020
-1022;Austria;Spain;343;H2020
-1023;Belgium;Spain;528;H2020
-1024;Bulgaria;Spain;86;H2020
-1025;Croatia;Spain;74;H2020
-1026;Cyprus;Spain;81;H2020
-1027;Czech Republic;Spain;163;H2020
-1028;Denmark;Spain;232;H2020
-1029;Estonia;Spain;66;H2020
-1030;Finland;Spain;250;H2020
-1031;France;Spain;754;H2020
-1032;Germany;Spain;960;H2020
-1033;Greece;Spain;384;H2020
-1034;Hungary;Spain;142;H2020
-1035;Ireland;Spain;195;H2020
-1036;Italy;Spain;817;H2020
-1037;Latvia;Spain;52;H2020
-1038;Lithuania;Spain;47;H2020
-1039;Netherlands;Spain;544;H2020
-1040;Poland;Spain;217;H2020
-1041;Portugal;Spain;294;H2020
-1042;Romania;Spain;146;H2020
-1043;Slovakia;Spain;66;H2020
-1044;Slovenia;Spain;126;H2020
-1045;Malta;Spain;27;H2020
-1046;Luxembourg;Spain;58;H2020
-1047;Austria;Sweden;165;H2020
-1048;Belgium;Sweden;232;H2020
-1049;Bulgaria;Sweden;39;H2020
-1050;Croatia;Sweden;29;H2020
-1051;Cyprus;Sweden;32;H2020
-1052;Czech Republic;Sweden;88;H2020
-1053;Denmark;Sweden;142;H2020
-1054;Estonia;Sweden;41;H2020
-1055;Finland;Sweden;145;H2020
-1056;France;Sweden;328;H2020
-1057;Germany;Sweden;445;H2020
-1058;Greece;Sweden;145;H2020
-1059;Hungary;Sweden;70;H2020
-1060;Ireland;Sweden;84;H2020
-1061;Italy;Sweden;309;H2020
-1062;Latvia;Sweden;38;H2020
-1063;Lithuania;Sweden;33;H2020
-1064;Netherlands;Sweden;264;H2020
-1065;Poland;Sweden;105;H2020
-1066;Portugal;Sweden;119;H2020
-1067;Romania;Sweden;68;H2020
-1068;Slovakia;Sweden;34;H2020
-1069;Slovenia;Sweden;58;H2020
-1070;Spain;Sweden;332;H2020
-1071;Malta;Sweden;13;H2020
-1072;Luxembourg;Sweden;23;H2020
-1073;Austria;United Kingdom;360;H2020
-1074;Belgium;United Kingdom;576;H2020
-1075;Bulgaria;United Kingdom;88;H2020
-1076;Croatia;United Kingdom;63;H2020
-1077;Cyprus;United Kingdom;80;H2020
-1078;Czech Republic;United Kingdom;181;H2020
-1079;Denmark;United Kingdom;298;H2020
-1080;Estonia;United Kingdom;80;H2020
-1081;Finland;United Kingdom;271;H2020
-1082;France;United Kingdom;874;H2020
-1083;Germany;United Kingdom;1169;H2020
-1084;Greece;United Kingdom;421;H2020
-1085;Hungary;United Kingdom;155;H2020
-1086;Ireland;United Kingdom;233;H2020
-1087;Italy;United Kingdom;902;H2020
-1088;Latvia;United Kingdom;58;H2020
-1089;Lithuania;United Kingdom;59;H2020
-1090;Netherlands;United Kingdom;702;H2020
-1091;Poland;United Kingdom;246;H2020
-1092;Portugal;United Kingdom;316;H2020
-1093;Romania;United Kingdom;136;H2020
-1094;Slovakia;United Kingdom;71;H2020
-1095;Slovenia;United Kingdom;129;H2020
-1096;Spain;United Kingdom;886;H2020
-1097;Sweden;United Kingdom;401;H2020
-1098;Malta;United Kingdom;30;H2020
-1099;Luxembourg;United Kingdom;64;H2020
-1100;Austria;Malta;16;H2020
-1101;Belgium;Malta;18;H2020
-1102;Bulgaria;Malta;14;H2020
-1103;Croatia;Malta;7;H2020
-1104;Cyprus;Malta;11;H2020
-1105;Czech Republic;Malta;10;H2020
-1106;Denmark;Malta;16;H2020
-1107;Estonia;Malta;11;H2020
-1108;Finland;Malta;11;H2020
-1109;France;Malta;25;H2020
-1110;Germany;Malta;23;H2020
-1111;Greece;Malta;19;H2020
-1112;Hungary;Malta;9;H2020
-1113;Ireland;Malta;12;H2020
-1114;Italy;Malta;27;H2020
-1115;Latvia;Malta;11;H2020
-1116;Lithuania;Malta;8;H2020
-1117;Luxembourg;Malta;6;H2020
-1118;Austria;Luxembourg;32;H2020
-1119;Belgium;Luxembourg;45;H2020
-1120;Bulgaria;Luxembourg;10;H2020
-1121;Croatia;Luxembourg;14;H2020
-1122;Cyprus;Luxembourg;14;H2020
-1123;Czech Republic;Luxembourg;17;H2020
-1124;Denmark;Luxembourg;18;H2020
-1125;Estonia;Luxembourg;15;H2020
-1126;Finland;Luxembourg;18;H2020
-1127;France;Luxembourg;55;H2020
-1128;Germany;Luxembourg;72;H2020
-1129;Greece;Luxembourg;34;H2020
-1130;Hungary;Luxembourg;17;H2020
-1131;Ireland;Luxembourg;13;H2020
-1132;Italy;Luxembourg;51;H2020
-1133;Latvia;Luxembourg;11;H2020
-1134;Lithuania;Luxembourg;15;H2020
+757;Austria;Belgium;334;H2020
+758;Austria;Bulgaria;65;H2020
+759;Belgium;Bulgaria;88;H2020
+760;Austria;Croatia;77;H2020
+761;Belgium;Croatia;91;H2020
+762;Bulgaria;Croatia;36;H2020
+763;Austria;Cyprus;48;H2020
+764;Belgium;Cyprus;61;H2020
+765;Bulgaria;Cyprus;28;H2020
+766;Croatia;Cyprus;27;H2020
+767;Austria;Czech Republic;152;H2020
+768;Belgium;Czech Republic;189;H2020
+769;Bulgaria;Czech Republic;50;H2020
+770;Croatia;Czech Republic;48;H2020
+771;Cyprus;Czech Republic;26;H2020
+772;Austria;Denmark;184;H2020
+773;Belgium;Denmark;258;H2020
+774;Bulgaria;Denmark;38;H2020
+775;Croatia;Denmark;63;H2020
+776;Cyprus;Denmark;35;H2020
+777;Czech Republic;Denmark;100;H2020
+778;Austria;Estonia;51;H2020
+779;Belgium;Estonia;77;H2020
+780;Bulgaria;Estonia;30;H2020
+781;Croatia;Estonia;29;H2020
+782;Cyprus;Estonia;27;H2020
+783;Czech Republic;Estonia;35;H2020
+784;Denmark;Estonia;48;H2020
+785;Austria;Finland;150;H2020
+786;Belgium;Finland;240;H2020
+787;Bulgaria;Finland;46;H2020
+788;Croatia;Finland;36;H2020
+789;Cyprus;Finland;31;H2020
+790;Czech Republic;Finland;80;H2020
+791;Denmark;Finland;147;H2020
+792;Estonia;Finland;55;H2020
+793;Austria;France;437;H2020
+794;Belgium;France;727;H2020
+795;Bulgaria;France;85;H2020
+796;Croatia;France;96;H2020
+797;Cyprus;France;85;H2020
+798;Czech Republic;France;229;H2020
+799;Denmark;France;334;H2020
+800;Estonia;France;74;H2020
+801;Finland;France;311;H2020
+802;Austria;Germany;641;H2020
+803;Belgium;Germany;886;H2020
+804;Bulgaria;Germany;119;H2020
+805;Croatia;Germany;116;H2020
+806;Cyprus;Germany;100;H2020
+807;Czech Republic;Germany;287;H2020
+808;Denmark;Germany;456;H2020
+809;Estonia;Germany;102;H2020
+810;Finland;Germany;389;H2020
+811;France;Germany;1333;H2020
+812;Austria;Greece;201;H2020
+813;Belgium;Greece;303;H2020
+814;Bulgaria;Greece;69;H2020
+815;Croatia;Greece;62;H2020
+816;Cyprus;Greece;103;H2020
+817;Czech Republic;Greece;107;H2020
+818;Denmark;Greece;144;H2020
+819;Estonia;Greece;57;H2020
+820;Finland;Greece;150;H2020
+821;France;Greece;449;H2020
+822;Germany;Greece;587;H2020
+823;Austria;Hungary;115;H2020
+824;Belgium;Hungary;150;H2020
+825;Bulgaria;Hungary;44;H2020
+826;Croatia;Hungary;44;H2020
+827;Cyprus;Hungary;28;H2020
+828;Czech Republic;Hungary;80;H2020
+829;Denmark;Hungary;84;H2020
+830;Estonia;Hungary;30;H2020
+831;Finland;Hungary;59;H2020
+832;France;Hungary;169;H2020
+833;Germany;Hungary;209;H2020
+834;Greece;Hungary;100;H2020
+835;Austria;Ireland;122;H2020
+836;Belgium;Ireland;212;H2020
+837;Bulgaria;Ireland;32;H2020
+838;Croatia;Ireland;56;H2020
+839;Cyprus;Ireland;40;H2020
+840;Czech Republic;Ireland;75;H2020
+841;Denmark;Ireland;135;H2020
+842;Estonia;Ireland;34;H2020
+843;Finland;Ireland;103;H2020
+844;France;Ireland;254;H2020
+845;Germany;Ireland;333;H2020
+846;Greece;Ireland;143;H2020
+847;Hungary;Ireland;70;H2020
+848;Austria;Italy;443;H2020
+849;Belgium;Italy;729;H2020
+850;Bulgaria;Italy;104;H2020
+851;Croatia;Italy;110;H2020
+852;Cyprus;Italy;110;H2020
+853;Czech Republic;Italy;245;H2020
+854;Denmark;Italy;336;H2020
+855;Estonia;Italy;91;H2020
+856;Finland;Italy;318;H2020
+857;France;Italy;1070;H2020
+858;Germany;Italy;1329;H2020
+859;Greece;Italy;555;H2020
+860;Hungary;Italy;191;H2020
+861;Ireland;Italy;276;H2020
+862;Austria;Latvia;52;H2020
+863;Belgium;Latvia;66;H2020
+864;Bulgaria;Latvia;28;H2020
+865;Croatia;Latvia;27;H2020
+866;Cyprus;Latvia;25;H2020
+867;Czech Republic;Latvia;38;H2020
+868;Denmark;Latvia;43;H2020
+869;Estonia;Latvia;34;H2020
+870;Finland;Latvia;40;H2020
+871;France;Latvia;63;H2020
+872;Germany;Latvia;83;H2020
+873;Greece;Latvia;47;H2020
+874;Hungary;Latvia;31;H2020
+875;Ireland;Latvia;35;H2020
+876;Italy;Latvia;74;H2020
+877;Austria;Lithuania;67;H2020
+878;Belgium;Lithuania;74;H2020
+879;Bulgaria;Lithuania;24;H2020
+880;Croatia;Lithuania;36;H2020
+881;Cyprus;Lithuania;20;H2020
+882;Czech Republic;Lithuania;52;H2020
+883;Denmark;Lithuania;46;H2020
+884;Estonia;Lithuania;26;H2020
+885;Finland;Lithuania;38;H2020
+886;France;Lithuania;79;H2020
+887;Germany;Lithuania;101;H2020
+888;Greece;Lithuania;45;H2020
+889;Hungary;Lithuania;44;H2020
+890;Ireland;Lithuania;45;H2020
+891;Italy;Lithuania;79;H2020
+892;Latvia;Lithuania;30;H2020
+893;Austria;Netherlands;362;H2020
+894;Belgium;Netherlands;634;H2020
+895;Bulgaria;Netherlands;70;H2020
+896;Croatia;Netherlands;86;H2020
+897;Cyprus;Netherlands;65;H2020
+898;Czech Republic;Netherlands;192;H2020
+899;Denmark;Netherlands;326;H2020
+900;Estonia;Netherlands;82;H2020
+901;Finland;Netherlands;274;H2020
+902;France;Netherlands;771;H2020
+903;Germany;Netherlands;1075;H2020
+904;Greece;Netherlands;322;H2020
+905;Hungary;Netherlands;151;H2020
+906;Ireland;Netherlands;225;H2020
+907;Italy;Netherlands;785;H2020
+908;Latvia;Netherlands;69;H2020
+909;Lithuania;Netherlands;77;H2020
+910;Malta;Netherlands;34;H2020
+911;Luxembourg;Netherlands;51;H2020
+912;Austria;Poland;174;H2020
+913;Belgium;Poland;236;H2020
+914;Bulgaria;Poland;68;H2020
+915;Croatia;Poland;68;H2020
+916;Cyprus;Poland;51;H2020
+917;Czech Republic;Poland;118;H2020
+918;Denmark;Poland;139;H2020
+919;Estonia;Poland;50;H2020
+920;Finland;Poland;111;H2020
+921;France;Poland;320;H2020
+922;Germany;Poland;384;H2020
+923;Greece;Poland;169;H2020
+924;Hungary;Poland;98;H2020
+925;Ireland;Poland;110;H2020
+926;Italy;Poland;337;H2020
+927;Latvia;Poland;57;H2020
+928;Lithuania;Poland;60;H2020
+929;Netherlands;Poland;252;H2020
+930;Malta;Poland;17;H2020
+931;Luxembourg;Poland;29;H2020
+932;Austria;Portugal;174;H2020
+933;Belgium;Portugal;267;H2020
+934;Bulgaria;Portugal;58;H2020
+935;Croatia;Portugal;64;H2020
+936;Cyprus;Portugal;62;H2020
+937;Czech Republic;Portugal;100;H2020
+938;Denmark;Portugal;148;H2020
+939;Estonia;Portugal;57;H2020
+940;Finland;Portugal;143;H2020
+941;France;Portugal;370;H2020
+942;Germany;Portugal;419;H2020
+943;Greece;Portugal;221;H2020
+944;Hungary;Portugal;84;H2020
+945;Ireland;Portugal;129;H2020
+946;Italy;Portugal;371;H2020
+947;Latvia;Portugal;52;H2020
+948;Lithuania;Portugal;45;H2020
+949;Netherlands;Portugal;263;H2020
+950;Poland;Portugal;155;H2020
+951;Malta;Portugal;22;H2020
+952;Luxembourg;Portugal;37;H2020
+953;Austria;Romania;100;H2020
+954;Belgium;Romania;142;H2020
+955;Bulgaria;Romania;51;H2020
+956;Croatia;Romania;36;H2020
+957;Cyprus;Romania;44;H2020
+958;Czech Republic;Romania;62;H2020
+959;Denmark;Romania;66;H2020
+960;Estonia;Romania;41;H2020
+961;Finland;Romania;68;H2020
+962;France;Romania;160;H2020
+963;Germany;Romania;203;H2020
+964;Greece;Romania;111;H2020
+965;Hungary;Romania;62;H2020
+966;Ireland;Romania;76;H2020
+967;Italy;Romania;192;H2020
+968;Latvia;Romania;50;H2020
+969;Lithuania;Romania;38;H2020
+970;Netherlands;Romania;143;H2020
+971;Poland;Romania;99;H2020
+972;Portugal;Romania;109;H2020
+973;Malta;Romania;22;H2020
+974;Luxembourg;Romania;22;H2020
+975;Austria;Slovakia;90;H2020
+976;Belgium;Slovakia;100;H2020
+977;Bulgaria;Slovakia;31;H2020
+978;Croatia;Slovakia;44;H2020
+979;Cyprus;Slovakia;25;H2020
+980;Czech Republic;Slovakia;79;H2020
+981;Denmark;Slovakia;53;H2020
+982;Estonia;Slovakia;28;H2020
+983;Finland;Slovakia;44;H2020
+984;France;Slovakia;110;H2020
+985;Germany;Slovakia;114;H2020
+986;Greece;Slovakia;61;H2020
+987;Hungary;Slovakia;51;H2020
+988;Ireland;Slovakia;54;H2020
+989;Italy;Slovakia;123;H2020
+990;Latvia;Slovakia;33;H2020
+991;Lithuania;Slovakia;47;H2020
+992;Netherlands;Slovakia;91;H2020
+993;Poland;Slovakia;75;H2020
+994;Portugal;Slovakia;62;H2020
+995;Romania;Slovakia;45;H2020
+996;Malta;Slovakia;11;H2020
+997;Luxembourg;Slovakia;18;H2020
+998;Austria;Slovenia;110;H2020
+999;Belgium;Slovenia;124;H2020
+1000;Bulgaria;Slovenia;34;H2020
+1001;Croatia;Slovenia;36;H2020
+1002;Cyprus;Slovenia;38;H2020
+1003;Czech Republic;Slovenia;48;H2020
+1004;Denmark;Slovenia;75;H2020
+1005;Estonia;Slovenia;32;H2020
+1006;Finland;Slovenia;69;H2020
+1007;France;Slovenia;158;H2020
+1008;Germany;Slovenia;184;H2020
+1009;Greece;Slovenia;83;H2020
+1010;Hungary;Slovenia;48;H2020
+1011;Ireland;Slovenia;58;H2020
+1012;Italy;Slovenia;172;H2020
+1013;Latvia;Slovenia;40;H2020
+1014;Lithuania;Slovenia;27;H2020
+1015;Netherlands;Slovenia;127;H2020
+1016;Poland;Slovenia;76;H2020
+1017;Portugal;Slovenia;82;H2020
+1018;Romania;Slovenia;61;H2020
+1019;Slovakia;Slovenia;37;H2020
+1020;Malta;Slovenia;17;H2020
+1021;Luxembourg;Slovenia;18;H2020
+1022;Austria;Spain;461;H2020
+1023;Belgium;Spain;725;H2020
+1024;Bulgaria;Spain;106;H2020
+1025;Croatia;Spain;111;H2020
+1026;Cyprus;Spain;105;H2020
+1027;Czech Republic;Spain;239;H2020
+1028;Denmark;Spain;348;H2020
+1029;Estonia;Spain;84;H2020
+1030;Finland;Spain;333;H2020
+1031;France;Spain;1063;H2020
+1032;Germany;Spain;1313;H2020
+1033;Greece;Spain;516;H2020
+1034;Hungary;Spain;194;H2020
+1035;Ireland;Spain;294;H2020
+1036;Italy;Spain;1142;H2020
+1037;Latvia;Spain;69;H2020
+1038;Lithuania;Spain;78;H2020
+1039;Netherlands;Spain;753;H2020
+1040;Poland;Spain;311;H2020
+1041;Portugal;Spain;402;H2020
+1042;Romania;Spain;192;H2020
+1043;Slovakia;Spain;113;H2020
+1044;Slovenia;Spain;168;H2020
+1045;Malta;Spain;37;H2020
+1046;Luxembourg;Spain;76;H2020
+1047;Austria;Sweden;242;H2020
+1048;Belgium;Sweden;340;H2020
+1049;Bulgaria;Sweden;48;H2020
+1050;Croatia;Sweden;56;H2020
+1051;Cyprus;Sweden;45;H2020
+1052;Czech Republic;Sweden;132;H2020
+1053;Denmark;Sweden;220;H2020
+1054;Estonia;Sweden;52;H2020
+1055;Finland;Sweden;194;H2020
+1056;France;Sweden;480;H2020
+1057;Germany;Sweden;639;H2020
+1058;Greece;Sweden;203;H2020
+1059;Hungary;Sweden;100;H2020
+1060;Ireland;Sweden;146;H2020
+1061;Italy;Sweden;458;H2020
+1062;Latvia;Sweden;51;H2020
+1063;Lithuania;Sweden;55;H2020
+1064;Netherlands;Sweden;408;H2020
+1065;Poland;Sweden;157;H2020
+1066;Portugal;Sweden;162;H2020
+1067;Romania;Sweden;90;H2020
+1068;Slovakia;Sweden;63;H2020
+1069;Slovenia;Sweden;84;H2020
+1070;Spain;Sweden;491;H2020
+1071;Malta;Sweden;17;H2020
+1072;Luxembourg;Sweden;31;H2020
+1073;Austria;United Kingdom;491;H2020
+1074;Belgium;United Kingdom;810;H2020
+1075;Bulgaria;United Kingdom;108;H2020
+1076;Croatia;United Kingdom;97;H2020
+1077;Cyprus;United Kingdom;108;H2020
+1078;Czech Republic;United Kingdom;251;H2020
+1079;Denmark;United Kingdom;431;H2020
+1080;Estonia;United Kingdom;97;H2020
+1081;Finland;United Kingdom;370;H2020
+1082;France;United Kingdom;1222;H2020
+1083;Germany;United Kingdom;1592;H2020
+1084;Greece;United Kingdom;569;H2020
+1085;Hungary;United Kingdom;204;H2020
+1086;Ireland;United Kingdom;336;H2020
+1087;Italy;United Kingdom;1254;H2020
+1088;Latvia;United Kingdom;74;H2020
+1089;Lithuania;United Kingdom;89;H2020
+1090;Netherlands;United Kingdom;990;H2020
+1091;Poland;United Kingdom;346;H2020
+1092;Portugal;United Kingdom;418;H2020
+1093;Romania;United Kingdom;172;H2020
+1094;Slovakia;United Kingdom;110;H2020
+1095;Slovenia;United Kingdom;173;H2020
+1096;Spain;United Kingdom;1215;H2020
+1097;Sweden;United Kingdom;590;H2020
+1098;Malta;United Kingdom;41;H2020
+1099;Luxembourg;United Kingdom;89;H2020
+1100;Austria;Malta;22;H2020
+1101;Belgium;Malta;27;H2020
+1102;Bulgaria;Malta;18;H2020
+1103;Croatia;Malta;13;H2020
+1104;Cyprus;Malta;18;H2020
+1105;Czech Republic;Malta;14;H2020
+1106;Denmark;Malta;23;H2020
+1107;Estonia;Malta;15;H2020
+1108;Finland;Malta;17;H2020
+1109;France;Malta;37;H2020
+1110;Germany;Malta;33;H2020
+1111;Greece;Malta;27;H2020
+1112;Hungary;Malta;13;H2020
+1113;Ireland;Malta;19;H2020
+1114;Italy;Malta;40;H2020
+1115;Latvia;Malta;17;H2020
+1116;Lithuania;Malta;12;H2020
+1117;Luxembourg;Malta;10;H2020
+1118;Austria;Luxembourg;42;H2020
+1119;Belgium;Luxembourg;60;H2020
+1120;Bulgaria;Luxembourg;13;H2020
+1121;Croatia;Luxembourg;20;H2020
+1122;Cyprus;Luxembourg;19;H2020
+1123;Czech Republic;Luxembourg;24;H2020
+1124;Denmark;Luxembourg;25;H2020
+1125;Estonia;Luxembourg;18;H2020
+1126;Finland;Luxembourg;25;H2020
+1127;France;Luxembourg;79;H2020
+1128;Germany;Luxembourg;99;H2020
+1129;Greece;Luxembourg;50;H2020
+1130;Hungary;Luxembourg;24;H2020
+1131;Ireland;Luxembourg;20;H2020
+1132;Italy;Luxembourg;68;H2020
+1133;Latvia;Luxembourg;15;H2020
+1134;Lithuania;Luxembourg;19;H2020
