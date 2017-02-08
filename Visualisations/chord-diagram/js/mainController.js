@@ -57,17 +57,7 @@ function ($scope) {
       $("#resetButton").text("Select all");
     }
 
-    if (data && $scope.hasFilters) {
-      $scope.drawChords(data.filter(function (d) {
-        var fl = $scope.filters;
-        var v1 = d.country1, v2 = d.country2;
-
-        if ((fl[v1] && !fl[v1].hide) || (fl[v2] && !fl[v2].hide)) {
-          return false;
-        }
-        return true;
-      }));
-    } else if (data) {
+    if (data) {
       $scope.drawChords(data);
     }
   };
