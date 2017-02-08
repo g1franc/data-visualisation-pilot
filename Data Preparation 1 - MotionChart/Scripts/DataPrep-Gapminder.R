@@ -5,7 +5,7 @@
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 #set current directory
-setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/1 - Cordis/data-visualisation-pilot/Data cleaning Visualisation 1-V2")
+setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/1 - Cordis/data-visualisation-pilot/Data Preparation 1 - MotionChart")
 
 ### Load datasets
 # FP6: https://data.europa.eu/euodp/data/dataset/cordisfp6projects

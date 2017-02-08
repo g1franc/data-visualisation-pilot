@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 #set current directory
-setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/1 - Cordis/data-visualisation-pilot/Data cleaning Visualisation 3")
+setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/1 - Cordis/data-visualisation-pilot/Data Preparation 3 - organisationsNetwork")
 #
 ### Load datasets
 # H2020: https://data.europa.eu/euodp/data/dataset/cordisH2020projects
