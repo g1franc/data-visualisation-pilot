@@ -69,7 +69,6 @@ def WriteJSON(nameOutputFile, orig_nodelist, linksList):
 		print(nameOutputFile)
 		errorLog.write("-------------------------------------");
 		errorLog.write("Error while writing the folowing file: "+nameOutputFile)
-		errorLog.write(e);
 		errorLog.write("-------------------------------------");
 
 #define some parameters
@@ -82,6 +81,7 @@ def extractForOneOrg(index, linesArray):
 	linksList = [];
 	count = 0;
 	copyIndex = index;
+	noLinks = False;
 	while(copyIndex < len(linesArray) and currentOrg == linesArray[copyIndex].split(sepChar)[0]):
 		lineList = linesArray[copyIndex].split(sepChar);
 		#update orgsList if orgs not in
@@ -94,20 +94,19 @@ def extractForOneOrg(index, linesArray):
 		try:
 			value = orgDict[lineList[2]];
 		except KeyError:
-			if lineList[2] != '':
-				orgDict[lineList[2]] = count;
-				orgList.append(JNode(count,[],lineList,lineList[2],lineList[4],lineList[6]))
-				count += 1
+			orgDict[lineList[2]] = count;
+			orgList.append(JNode(count,[],lineList,lineList[2],lineList[4],lineList[6]))
+			count += 1
 		#add links to JNode objects
-		if lineList[2] != '':
-			org1Index = orgList[orgDict[lineList[1]]].id
-			org2Index = orgList[orgDict[lineList[2]]].id
-			orgList[orgDict[lineList[1]]].links.append(org2Index);
-			orgList[orgDict[lineList[2]]].links.append(org1Index);
-			#create JLink Object
-			#NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
-			linkWeight = (((float(lineList[9])-1)*(5-1))/(linksMax-1)+1)
-			linksList.append(JLink(org1Index, org2Index, linkWeight))
+		noLinks = True;
+		org1Index = orgList[orgDict[lineList[1]]].id
+		org2Index = orgList[orgDict[lineList[2]]].id
+		orgList[orgDict[lineList[1]]].links.append(org2Index);
+		orgList[orgDict[lineList[2]]].links.append(org1Index);
+		#create JLink Object
+		#NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
+		linkWeight = (((float(lineList[9])-1)*(5-1))/(linksMax-1)+1)
+		linksList.append(JLink(org1Index, org2Index, linkWeight))
 		copyIndex +=1
 	currentOrg = currentOrg.replace(' ','_')
 	currentOrg = currentOrg.replace('*','')

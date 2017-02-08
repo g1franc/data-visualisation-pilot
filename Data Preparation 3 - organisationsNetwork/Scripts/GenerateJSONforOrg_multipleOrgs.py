@@ -69,7 +69,6 @@ def WriteJSON(nameOutputFile, orig_nodelist, linksList):
 		print(nameOutputFile)
 		errorLog.write("-------------------------------------");
 		errorLog.write("Error while writing the folowing file: "+nameOutputFile)
-		errorLog.write(e);
 		errorLog.write("-------------------------------------");
 
 #define some parameters
@@ -82,6 +81,7 @@ def extractForOneOrg(index, linesArray):
 	linksList = [];
 	count = 0;
 	copyIndex = index;
+	noLinks = False;
 	while(copyIndex < len(linesArray) and currentOrg == linesArray[copyIndex].split(sepChar)[0]):
 		lineList = linesArray[copyIndex].split(sepChar);
 		#update orgsList if orgs not in
@@ -100,6 +100,7 @@ def extractForOneOrg(index, linesArray):
 				count += 1
 		#add links to JNode objects
 		if lineList[2] != '':
+			noLinks = True;
 			org1Index = orgList[orgDict[lineList[1]]].id
 			org2Index = orgList[orgDict[lineList[2]]].id
 			orgList[orgDict[lineList[1]]].links.append(org2Index);
@@ -116,7 +117,8 @@ def extractForOneOrg(index, linesArray):
 	currentOrg = currentOrg.replace('\"','')
 	currentOrg = currentOrg.replace(',','')
 	currentOrg = currentOrg.replace('&','')
-	WriteJSON("outputJS/" + currentOrg + ".json", orgList, linksList)
+	if not noLinks:
+		WriteJSON("outputJS/" + currentOrg + ".json", orgList, linksList)
 	return copyIndex;
 
 

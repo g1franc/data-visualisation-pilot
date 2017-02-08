@@ -38,6 +38,14 @@
 </head>
 <body onload="takeAction();">
 
+    <button onclick="goBack()">Back</button>
+
+    <script>
+    function goBack() {
+        window.history.back();
+    }
+    </script>
+
     <div id="nocontent" style="padding: auto; width: 100%;">
       <h1 style="font-family:arial; margin:auto; width:1000px;">Sadly your browser is not compatible with this site</h1>
 
@@ -55,12 +63,12 @@
     <div style="padding: auto; width: 100%;">
       <div style="width:1000px; margin:auto;">
         <h1 style="font-family:arial; margin:auto; width:1000px;">
-          Network visualisation of Cordis data (FP6, FP7, H2020)
+          Network visualisation of CORDIS data (FP6, FP7, H2020)
         </h1>
         <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial;">
-            Through this page, you can view an interactive visualisation of <a href="http://cordis.europa.eu/home_en.html">Cordis</a> data as published by the <a href="http://publications.europa.eu/en/home">Publications Office</a> of the <a href="http://data.europa.eu/euodp/en/data">European Union Open Data Portal</a>.
+            Through this page, you can view an interactive visualisation of <a href="http://cordis.europa.eu/home_en.html" target="_blank">CORDIS</a> data as published by the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office</a> of the <a href="http://data.europa.eu/euodp/en/data" target="_blank">European Union Open Data Portal</a>.
           <br>
-            The datasets contain all projects funded by the European Union under the <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects">sixth</a>, <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects">seventh</a> and <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects">Horizon 2020</a> framework programme for research and technological development. These framework programmes were funded and approved by the Europan Commission from 2002 to 2006 (FP6), 2007 to 2013 (FP7), and 2014 to 2020 (H2020).          <br>
+            The datasets contain all projects funded by the European Union under the <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects" target="_blank">sixth</a>, <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects" target="_blank">seventh</a> and <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects" target="_blank">Horizon 2020</a> framework programme for research and technological development. These framework programmes were funded and approved by the Europan Commission from 2002 to 2006 (FP6), 2007 to 2013 (FP7), and 2014 to 2020 (H2020).          <br>
             The visualisation below shows the strength of collaboration between the different countries. The closer together the countries are, the more projects they have worked on together under the selected framework programme, and vice versa.
           <br><br>
         </p>
@@ -101,13 +109,13 @@
 
         <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
           The number of institutions is based on the data published on
-              <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects">EU research projects under FP6</a>,
-              <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects">EU research projects under FP7</a> and
-              <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects">EU research projects under H2020</a>
+              <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects" target="_blank">EU research projects under FP6</a>,
+              <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects" target="_blank">EU research projects under FP7</a> and
+              <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects" target="_blank">EU research projects under H2020</a>
           and may contain some errors.
         </p>
         <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
-          This visualisation has been developed by <a href="http://www.pwc.be/">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home">Publications Office of the EU</a> using <a href="https://d3js.org/">d3.js</a>.
+          This visualisation has been developed by <a href="http://www.pwc.be/" target="_blank">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office of the EU</a> using <a href="https://d3js.org/" target="_blank">d3.js</a>.
         </p>
       </div>
     </div>
