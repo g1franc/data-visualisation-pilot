@@ -10,7 +10,16 @@ $(document).ready(function(){
 });
 
 function filterOrgSelected(element) {
-  alert(element.getElementsByTagName('p')[0].innerHTML);
+  //alert(element.getElementsByTagName('p')[0].innerHTML);
+  currentOrg = element.getElementsByTagName('p')[0].innerHTML;
+  currentOrg = currentOrg.replace(/ /g,'_');
+  currentOrg = currentOrg.replace(/\*/g,'')
+	currentOrg = currentOrg.replace(/\//g,'')
+	currentOrg = currentOrg.replace(/\'/g,'')
+	currentOrg = currentOrg.replace(/\"/g,'')
+	currentOrg = currentOrg.replace(/,/g,'')
+	currentOrg = currentOrg.replace(/&/g,'')
+  D3ok();
 }
 
 function displayList() {
