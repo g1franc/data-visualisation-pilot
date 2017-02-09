@@ -55,13 +55,15 @@ def WriteJSON(nameOutputFile, orig_nodelist, linksList):
 			outputFile.write(nodelist[i].toJSON())
 			outputFile.write(',\n')
 		outputFile.write(nodelist[len(nodelist)-1].toJSON())
+		#TODO handle the case for no links
 		outputFile.write('\n')
 		outputFile.write('],\n')
 		outputFile.write('"links":[\n')
-		for i in range(len(linksList)-1):
-			outputFile.write(linksList[i].toJSON())
-			outputFile.write(',\n')
-		outputFile.write(linksList[len(linksList)-1].toJSON())
+		if len(linksList) > 0:
+			for i in range(len(linksList)-1):
+				outputFile.write(linksList[i].toJSON())
+				outputFile.write(',\n')
+				outputFile.write(linksList[len(linksList)-1].toJSON())
 		outputFile.write(']\n')
 		outputFile.write('}')
 	except Exception as e:
@@ -81,7 +83,6 @@ def extractForOneOrg(index, linesArray):
 	linksList = [];
 	count = 0;
 	copyIndex = index;
-	noLinks = False;
 	while(copyIndex < len(linesArray) and currentOrg == linesArray[copyIndex].split(sepChar)[0]):
 		lineList = linesArray[copyIndex].split(sepChar);
 		#update orgsList if orgs not in
@@ -100,7 +101,6 @@ def extractForOneOrg(index, linesArray):
 				count += 1
 		#add links to JNode objects
 		if lineList[2] != '':
-			noLinks = True;
 			org1Index = orgList[orgDict[lineList[1]]].id
 			org2Index = orgList[orgDict[lineList[2]]].id
 			orgList[orgDict[lineList[1]]].links.append(org2Index);
@@ -117,8 +117,7 @@ def extractForOneOrg(index, linesArray):
 	currentOrg = currentOrg.replace('\"','')
 	currentOrg = currentOrg.replace(',','')
 	currentOrg = currentOrg.replace('&','')
-	if not noLinks:
-		WriteJSON("outputJS/" + currentOrg + ".json", orgList, linksList)
+	WriteJSON("outputJS/" + currentOrg + ".json", orgList, linksList)
 	return copyIndex;
 
 
