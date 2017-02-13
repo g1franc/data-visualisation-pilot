@@ -69,9 +69,9 @@ def WriteJSON(nameOutputFile, orig_nodelist, linksList):
 	except Exception as e:
 		print(e)
 		print(nameOutputFile)
-		errorLog.write("-------------------------------------");
-		errorLog.write("Error while writing the folowing file: "+nameOutputFile)
-		errorLog.write("-------------------------------------");
+		errorLog.write("-------------------------------------\n");
+		errorLog.write("Error while writing the folowing file: "+nameOutputFile+'\n')
+		errorLog.write("-------------------------------------\n");
 
 #define some parameters
 sepChar = ';'
