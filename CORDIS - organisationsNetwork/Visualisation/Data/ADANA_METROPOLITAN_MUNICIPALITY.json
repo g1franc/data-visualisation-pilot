@@ -1,0 +1,1878 @@
+{
+"nodes": [
+{
+    "label":"TECHNISCHE UNIVERSITAET DRESDEN",
+    "activity":"HES",
+    "id":0,
+    "index":0,
+    "score":6.0,
+    "country":"DE",
+    "level":1,
+    "links":[
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        12
+    ]
+},
+{
+    "label":"UNIVERSITY COLLEGE LONDON",
+    "activity":"HES",
+    "id":1,
+    "index":1,
+    "score":6.0,
+    "country":"UK",
+    "level":1,
+    "links":[
+        0,
+        4,
+        5,
+        6,
+        2,
+        7,
+        11,
+        3,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        12
+    ]
+},
+{
+    "label":"UNIVERSITAET FUER BODENKULTUR WIEN",
+    "activity":"HES",
+    "id":2,
+    "index":2,
+    "score":1.0,
+    "country":"AT",
+    "level":1,
+    "links":[
+        0,
+        5,
+        6,
+        1,
+        4,
+        7,
+        11,
+        3,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        12
+    ]
+},
+{
+    "label":"TRANSPORT FOR LONDON*TFL",
+    "activity":"PUB",
+    "id":3,
+    "index":3,
+    "score":1.0,
+    "country":"UK",
+    "level":1,
+    "links":[
+        0,
+        5,
+        6,
+        7,
+        11,
+        1,
+        2,
+        4,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        12
+    ]
+},
+{
+    "label":"VECTOS (SOUTH) LIMITED",
+    "activity":"PRC",
+    "id":4,
+    "index":4,
+    "score":1.0,
+    "country":"UK",
+    "level":1,
+    "links":[
+        0,
+        1,
+        5,
+        6,
+        2,
+        7,
+        11,
+        3,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        12
+    ]
+},
+{
+    "label":"FONDATION NATIONALE DES SCIENCES POLITIQUES",
+    "activity":"HES",
+    "id":5,
+    "index":5,
+    "score":2.0,
+    "country":"FR",
+    "level":1,
+    "links":[
+        1,
+        0,
+        2,
+        6,
+        7,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        17,
+        14,
+        15,
+        16
+    ]
+},
+{
+    "label":"KOBENHAVNS KOMMUNE",
+    "activity":"PUB",
+    "id":6,
+    "index":6,
+    "score":1.0,
+    "country":"DK",
+    "level":1,
+    "links":[
+        5,
+        1,
+        0,
+        2,
+        7,
+        3,
+        4,
+        11,
+        12,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10
+    ]
+},
+{
+    "label":"MUNICIPIUL BUCURESTI",
+    "activity":"PUB",
+    "id":7,
+    "index":7,
+    "score":1.0,
+    "country":"RO",
+    "level":1,
+    "links":[
+        5,
+        6,
+        1,
+        0,
+        2,
+        3,
+        4,
+        11,
+        12,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10
+    ]
+},
+{
+    "label":"GREATER AMMAN MUNICIPALITY",
+    "activity":"PUB",
+    "id":8,
+    "index":8,
+    "score":1.0,
+    "country":"JO",
+    "level":1,
+    "links":[
+        5,
+        13,
+        17,
+        14,
+        15,
+        16,
+        1,
+        0,
+        2,
+        6,
+        7,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12
+    ]
+},
+{
+    "label":"INRIX UK LIMITED",
+    "activity":"PRC",
+    "id":9,
+    "index":9,
+    "score":1.0,
+    "country":"UK",
+    "level":1,
+    "links":[
+        5,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        1,
+        0,
+        2,
+        6,
+        7,
+        3,
+        4,
+        10,
+        11,
+        12
+    ]
+},
+{
+    "label":"INSTITUT D'AMENAGEMENT ET D'URBANISME DE LA REGION D'ILE DE FRANCE",
+    "activity":"REC",
+    "id":10,
+    "index":10,
+    "score":1.0,
+    "country":"FR",
+    "level":1,
+    "links":[
+        5,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        1,
+        0,
+        2,
+        6,
+        7,
+        3,
+        4,
+        11,
+        12
+    ]
+},
+{
+    "label":"SENATSVERWALTUNG FUR STADTENTWICKLUNG",
+    "activity":"PUB",
+    "id":11,
+    "index":11,
+    "score":1.0,
+    "country":"DE",
+    "level":1,
+    "links":[
+        5,
+        6,
+        7,
+        1,
+        0,
+        2,
+        3,
+        4,
+        12,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10
+    ]
+},
+{
+    "label":"TALLINNA LINN",
+    "activity":"PUB",
+    "id":12,
+    "index":12,
+    "score":1.0,
+    "country":"EE",
+    "level":1,
+    "links":[
+        5,
+        6,
+        7,
+        11,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        1,
+        0,
+        2,
+        3,
+        4
+    ]
+},
+{
+    "label":"CITY OF SKOPJE",
+    "activity":"PUB",
+    "id":13,
+    "index":13,
+    "score":1.0,
+    "country":"MK",
+    "level":1,
+    "links":[
+        1,
+        0,
+        5,
+        2,
+        6,
+        7,
+        3,
+        4,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        11,
+        12,
+        17
+    ]
+},
+{
+    "label":"COWI A/S",
+    "activity":"PRC",
+    "id":14,
+    "index":14,
+    "score":1.0,
+    "country":"DK",
+    "level":1,
+    "links":[
+        13,
+        17,
+        1,
+        0,
+        5,
+        2,
+        6,
+        7,
+        3,
+        4,
+        15,
+        16,
+        8,
+        9,
+        10,
+        11,
+        12
+    ]
+},
+{
+    "label":"EUROCITIES ASBL",
+    "activity":"OTH",
+    "id":15,
+    "index":15,
+    "score":1.0,
+    "country":"BE",
+    "level":1,
+    "links":[
+        13,
+        17,
+        14,
+        1,
+        0,
+        5,
+        2,
+        6,
+        7,
+        3,
+        4,
+        16,
+        8,
+        9,
+        10,
+        11,
+        12
+    ]
+},
+{
+    "label":"EUROPEAN INTEGRATED PROJECT",
+    "activity":"PRC",
+    "id":16,
+    "index":16,
+    "score":1.0,
+    "country":"RO",
+    "level":1,
+    "links":[
+        13,
+        17,
+        14,
+        15,
+        1,
+        0,
+        5,
+        2,
+        6,
+        7,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11,
+        12
+    ]
+},
+{
+    "label":"ADANA METROPOLITAN MUNICIPALITY",
+    "activity":"PUB",
+    "id":17,
+    "index":17,
+    "score":1.0,
+    "country":"TR",
+    "level":1,
+    "links":[
+        1,
+        0,
+        5,
+        2,
+        6,
+        7,
+        3,
+        13,
+        4,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        11,
+        12
+    ]
+}
+],
+"links":[
+{
+    "target":1,
+    "weight":1.4081632653061225,
+    "source":0
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":0
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":1
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0816326530612246,
+    "source":5
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":0,
+    "weight":1.0,
+    "source":5
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":5
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":6,
+    "weight":1.0,
+    "source":5
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":7,
+    "weight":1.0,
+    "source":5
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0,
+    "source":5
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":5
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":8,
+    "weight":1.0,
+    "source":5
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":9,
+    "weight":1.0,
+    "source":5
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":10,
+    "weight":1.0,
+    "source":5
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":11,
+    "weight":1.0,
+    "source":5
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":12,
+    "weight":1.0,
+    "source":5
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":6
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":0,
+    "weight":1.0,
+    "source":6
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0816326530612246,
+    "source":6
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":7,
+    "weight":1.0,
+    "source":6
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0,
+    "source":6
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":6
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":11,
+    "weight":1.0,
+    "source":6
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":12,
+    "weight":1.0,
+    "source":6
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":2
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":2
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":7
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":0,
+    "weight":1.0,
+    "source":7
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":7
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0,
+    "source":7
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":7
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":11,
+    "weight":1.0,
+    "source":7
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":12,
+    "weight":1.0,
+    "source":7
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":11
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":0,
+    "weight":1.0,
+    "source":11
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":11
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0,
+    "source":11
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":11
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":12,
+    "weight":1.0,
+    "source":11
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":3
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":3
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":3
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":0,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":5,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":6,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":7,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0816326530612246,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":14,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":15,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":16,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":8,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":9,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":10,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":11,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":12,
+    "weight":1.0,
+    "source":13
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":0,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":5,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":6,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":7,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":13,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":14,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":15,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":16,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":8,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":9,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":10,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":11,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":12,
+    "weight":1.0,
+    "source":17
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":0,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":5,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":6,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":7,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":15,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":16,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":8,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":9,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":10,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":11,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":12,
+    "weight":1.0,
+    "source":14
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":0,
+    "weight":1.0,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":5,
+    "weight":1.0,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":6,
+    "weight":1.0,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":7,
+    "weight":1.0,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0816326530612246,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":16,
+    "weight":1.0,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":8,
+    "weight":1.0,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":9,
+    "weight":1.0,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":10,
+    "weight":1.0,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":11,
+    "weight":1.0,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":12,
+    "weight":1.0,
+    "source":15
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":16
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":0,
+    "weight":1.0,
+    "source":16
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":5,
+    "weight":1.0,
+    "source":16
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":16
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":6,
+    "weight":1.0,
+    "source":16
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":7,
+    "weight":1.0,
+    "source":16
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0,
+    "source":16
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.2448979591836735,
+    "source":16
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":8,
+    "weight":1.0,
+    "source":16
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":9,
+    "weight":1.0,
+    "source":16
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":10,
+    "weight":1.0,
+    "source":16
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":11,
+    "weight":1.0,
+    "source":16
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":12,
+    "weight":1.0,
+    "source":16
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":8
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":0,
+    "weight":1.0,
+    "source":8
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":8
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":6,
+    "weight":1.0,
+    "source":8
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":7,
+    "weight":1.0,
+    "source":8
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0,
+    "source":8
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":8
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":9,
+    "weight":1.0,
+    "source":8
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":10,
+    "weight":1.0,
+    "source":8
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":11,
+    "weight":1.0,
+    "source":8
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":12,
+    "weight":1.0,
+    "source":8
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":9
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":0,
+    "weight":1.0,
+    "source":9
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":9
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":6,
+    "weight":1.0,
+    "source":9
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":7,
+    "weight":1.0,
+    "source":9
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0,
+    "source":9
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":9
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":10,
+    "weight":1.0,
+    "source":9
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":11,
+    "weight":1.0,
+    "source":9
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":12,
+    "weight":1.0,
+    "source":9
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":10
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":0,
+    "weight":1.0,
+    "source":10
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":10
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":6,
+    "weight":1.0,
+    "source":10
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":7,
+    "weight":1.0,
+    "source":10
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0,
+    "source":10
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":4,
+    "weight":1.0,
+    "source":10
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":11,
+    "weight":1.0,
+    "source":10
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":12,
+    "weight":1.0,
+    "source":10
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":1,
+    "weight":1.0,
+    "source":12
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":0,
+    "weight":1.0,
+    "source":12
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":2,
+    "weight":1.0,
+    "source":12
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}{
+    "target":3,
+    "weight":1.0,
+    "source":12
+},
+{
+    "target":4,
+    "weight":1.0,
+    "source":12
+}]
+}

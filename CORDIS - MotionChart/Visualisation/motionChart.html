@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>Interactive bubble chart</title>
+    <link rel="stylesheet" href="../main.css"/>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['motionchart']});
+      google.charts.setOnLoadCallback(drawCharts);
+      function drawCharts() {
+
+      var dataURL = 'https://docs.google.com/spreadsheets/d/1Ex4EEEDeT8lfRWSi5nCwYnZBNskl9bMO-nmDX3mMszk/gviz/tq?gid=0&headers=1&tq=select%20B%2CC%2CE%2CF%2CG%2CH%2CI%2CJ%2CK%2CL%2CM%2CN%2CO%2CP%2CQ%2CR%2CS%2CT%2CU%2CV%2CW%2CX%2CY%2CZ';
+
+	    var query = new google.visualization.Query(dataURL);
+	    query.send(handleQueryResponse);
+
+    }
+
+	  function handleQueryResponse(response) {
+			if (response.isError()) {
+				alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+				return;
+			}
+
+			var data = response.getDataTable();
+
+/*      var dateFormatter = new google.visualization.DateFormat({pattern: "dd/MM/YYYY" });
+      dateFormatter.format(data, 1);*/
+      var options = {
+        state: '{"uniColorForNonSelected":false,"yZoomedDataMin":78036,"orderedByX":false,"dimensions":{"iconDimensions":["dim0"]},"yLambda":1,"showTrails":true,"nonSelectedAlpha":0.4,"xZoomedDataMin":1,"colorOption":"4","yAxisOption":"3","playDuration":40000,"time":"2003","duration":{"timeUnit":"Y","multiplier":1},"sizeOption":"5","yZoomedDataMax":3226669226.55,"xLambda":1,"xAxisOption":"2","orderedByY":false,"iconKeySettings":[],"xZoomedDataMax":1013,"xZoomedIn":false,"iconType":"BUBBLE","yZoomedIn":false}',
+        width: 900,
+        height: 450,
+        hAxis: {
+          minValue: 1000
+        }
+      };
+
+      var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+    </script>
+  </head>
+  <body>
+    <div style="padding: auto; width: 100%;">
+
+    <button onclick="goBack()">Back</button>
+
+    <script>
+    function goBack() {
+        location.href='http://52.50.205.146:8890/data-visualisation-pilot/';
+    }
+    </script>
+
+      <h1 style="font-family:arial; margin:auto; width:900px;">The existing relations between different dimensions for EU-28 countries and the participation of these countries in EU-funded projects based on CORDIS data</h1>
+      <h1 style="text-align: center;">(FP6, FP7, H2020)</h1>
+        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial;">
+            Through this page, you can explore <a href="http://cordis.europa.eu/home_en.html" target="_blank">CORDIS</a> data. CORDIS stands for Community Research and Development
+            Information Service and is the European Commission's
+            primary public repository and portal to disseminate information on all EU-funded research projects and their results in the broadest sense.
+          <br><br>
+            This visualisation allows to explore the existing relations between different dimensions
+            (e.g. population, GDP, R&D budget, education level) for every one of the EU-28 countries and the participation of these countries in EU-funded project.
+            It is inspired by Trendalyzer, an information visualisation software for animation of statistics that was initially developed by
+            Hans Rosling's <a href="https://www.gapminder.org/" target="_blank">Gapminder Foundation</a> which is now owned by Google Inc.
+          <br><br>
+            The visualisation allows, by default, to analyse the data through an interactive bubble chart.
+            The bubble chart shows five variables: two numeric variables on the X and Y axes, bubble size and colour,
+            and a time variable that may be manipulated with a slider. The software uses brushing and linking techniques to display
+            the numeric value of a highlighted country. The data can also be explored using a bar chart and a line char
+          <br><br>
+            By default, the size and color of the bubble is determined by the GDP of the country and the number of institutions in the country respectively and
+            the position of the country in the chart is determined by the number of projects with the role coordinator versus the role participant within the country.
+            The timeline below allows to display the evolution between the three framework contracts (FP6, FP7, H2020). All dimensions can be changed using their respective dropdowns.
+          <br><br>
+        </p>
+      <div id="chart_div" style="width: 900px; height: 450px; margin:auto;"></div>
+
+      <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
+        This visualisation has been developed by  <a href="http://www.pwc.be/" target="_blank">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office of the EU</a>
+        using <a href="https://developers.google.com/chart/interactive/docs/gallery/bubblechart" target="_blank">the Google-visualization library</a>
+        and is based on datasets provided on the <a href="http://data.europa.eu/euodp/en/data" target="_blank">European Union Data Portal</a> by CORDIS
+        (<a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects" target="_blank">FP6 framework programme</a>,
+        <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects" target="_blank">FP7 framework programme</a>,
+        <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects" target="_blank">H2020 framework programme</a>)
+        and Eurostat
+        (<a href="http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_pjan&lang=en" target="_blank">Population of EU Member State</a>,
+        <a href="http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=naida_10_gdp&lang=en" target="_blank">GDP of EU Member State</a>,
+        <a href="http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=edat_lfse_03&lang=en" target="_blank">educational level of EU Member State</a> and
+        <a href="http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=rd_e_gerdtot&lang=en" target="_blank">R&D expenditure of EU Member State</a>).
+        <br><br>
+        The source code of this visualisation can be found on the following <a href="https://github.com/SEMICeu/data-visualisation-pilot" target="_blank">Github repository</a>.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+body {
+    background-color: #fff;
+}
+
+/* HREF links */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: blue;
+}
+
+/* ....................................................................... */
+/* The top-right side panel and its title child */
+
+div#sidepanel {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 200px;
+}
+
+/* ....................................................................... */
+/* On/off toggles for the help/info panels */
+
+div.panel_off {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+div.panel_on {
+    visibility: visible;
+    pointer-events: all;
+}
+
+/* ....................................................................... */
+
+div#nocontent {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    top: 200px;
+    left: 200px;
+    background: #C3B091;
+    border: solid 2px #a00;
+    border-radius: 8px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: center;
+    padding: 12px;
+}
+
+div#nocontent h1 {
+    margin: 1em;
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ....................................................................... */
+/* Country details panel */
+
+div#countryInfo {
+    position: relative;
+    right: 4px;
+    cursor: text;
+    width: 300px;
+    z-index: 1000;
+    background: #e5eaf4;
+    border: solid 1px #aaa;
+    border-radius: 8px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding: 4px;
+    text-align: right;
+}
+
+div#countryInfo div#cover {
+    text-align: left;
+    height: 50px;
+}
+
+div#countryInfo div.t {
+    font-size: 9px;
+    font-weight: bold;
+}
+
+div#contryDetails {
+  font-weight: normal;
+}
+
+div#countryInfo img.cover {
+    margin-bottom: 6px;
+    position: absolute;
+    right: 3px;
+}
+
+div#countryInfo img.action {
+    cursor: pointer;
+    position: absolute;
+}
+
+div#countryInfo div.f {
+    border-top: 1px dotted #8E5981;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+div#countryInfo span.d {
+    font-weight: bold;
+}
+
+div#countryInfo span.c {
+    font-style: italic;
+}
+
+div#countryInfo span.l {
+    font-size: 11px;
+    color: #000;
+    font-variant: small-caps;
+}
+
+
+/* ....................................................................... */
+/* SVG elements */
+
+div#chartID svg {
+    background-color: white;
+    cursor: move;
+}
+
+line.link {
+    stroke: #808080;
+}
+
+circle {
+    cursor: pointer;
+    stroke: #5a5a5a;
+    stroke-width:1;
+}
+
+circle.bubbleHES {
+    fill: #b88f3e;
+}
+
+circle.bubbleREC {
+    fill: #6885d0;
+}
+
+circle.bubblePRC {
+    fill: #64a85c;
+}
+
+circle.bubblePUB {
+    fill: #b75fb3;
+}
+
+circle.bubbleOTH {
+    fill: #cb5658;
+}
+
+circle.sibling {
+    fill: #325bad;
+    stroke: #003399;
+    stroke-width:1;
+}
+
+circle.main {
+    fill: #325bad;
+    stroke: #003399;
+    stroke-width:1;
+}
+
+/* ....................................................................... */
+/* Graph labels */
+
+g.gLabel {
+    font: 10px sans-serif;
+    font-weight: normal;
+    visibility: hidden;
+}
+
+g.on {
+  visibility: visible;
+}
+
+g.zoomed {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    text-align: center;
+    color: #000;
+    border: none;
+    z-index: 0;
+}
+
+text {
+    font: 10px sans-serif;
+    font-weight: normal;
+    stroke-opacity: 1.0;
+}
+
+
+text.nshadow {
+    stroke: #fff;
+    stroke-width: 3px;
+}
+
+text.main {
+    font: 12px sans-serif;
+    font-weight: bold;
+}
+
+}
