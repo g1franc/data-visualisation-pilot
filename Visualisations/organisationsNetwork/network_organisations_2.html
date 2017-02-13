@@ -5,6 +5,7 @@
     <title>Organisations Network</title>
     <link rel="stylesheet" href="network-org-style.css"/>
     <link rel="stylesheet" href="filtering_panel.css"/>
+    <link rel="stylesheet" href="../main.css"/>
     <script src="assets/js/jquery-1.11.3.min.js" type="text/javascript"></script>
     <script src="assets/js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
     <script src="./filterjs/filter.js" type="text/javascript"></script>
@@ -46,14 +47,6 @@
 </head>
 <body onload="takeAction();">
 
-    <button onclick="goBack()">Back</button>
-
-    <script>
-    function goBack() {
-        location.href='http://52.50.205.146:8890/data-visualisation-pilot/';
-    }
-    </script>
-
     <div id="nocontent" style="padding: auto; width: 100%;">
       <h1 style="font-family:arial; margin:auto; width:1000px;">Sadly your browser is not compatible with this site</h1>
 
@@ -70,6 +63,20 @@
 
     <div style="padding: auto; width: 100%; position:relative;">
       <div style="width:1000px; margin:auto; position:relative;">
+        <div class="menu-header">
+          <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/'">
+            Home page
+          </div>
+          <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/motionChart/motionChart.html'">
+            Motion chart
+          </div>
+          <div class="menu-button selected" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/organisationsNetwork/network_organisations_2.html'">
+            Network chart
+          </div>
+          <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/chord-diagram/chart/chord.html'">
+            Chord diagram
+          </div>
+        </div>
         <h1 style="font-family:arial; margin:auto; width:1000px;">
           The collaboration between organisations on EU funded research projects based on CORDIS data (H2020)
         </h1>
@@ -962,10 +969,8 @@
     </div>
 
     <script id="org-template" type="text/html">
-      <div class="">
-        <div class="orgLine" onclick="filterOrgSelected(this)">
-          <p class="org-entry"><%= name %></p>
-        </div>
+      <div class="orgLine" onclick="filterOrgSelected(this)">
+        <p class="org-entry"><%= name %></p>
       </div>
     </script>
 
