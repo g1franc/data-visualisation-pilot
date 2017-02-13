@@ -10,7 +10,7 @@ setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visua
 
 #Dataset_H2020Organizations = read.csv("../Input/Testorganizations_small.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
-Dataset_H2020Organizations = read.csv("../CORDIS - Datasets/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_H2020Organizations = read.csv("../Datasets/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
 
 

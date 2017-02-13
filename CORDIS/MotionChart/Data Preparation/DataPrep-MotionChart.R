@@ -16,26 +16,26 @@ setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visua
 # Population by educational attainment level (%) - main indicators (edat_lfse_03): http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=edat_lfse_03&lang=en - edat_lfse_03_1_Data.csv 
 # Total intramural R&D expenditure (GERD) by sectors of performance: http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=rd_e_gerdtot&lang=en : rd_e_gerdtot_1_Data.csv
 
-Dataset_FP6Organizations = read.csv("../CORDIS - Datasets/cordis-fp6organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
-Dataset_FP7Organizations = read.csv("../CORDIS - Datasets/cordis-fp7organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
-Dataset_H2020Organizations = read.csv("../CORDIS - Datasets/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_FP6Organizations = read.csv("../Datasets/cordis-fp6organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_FP7Organizations = read.csv("../Datasets/cordis-fp7organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_H2020Organizations = read.csv("../Datasets/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
-Dataset_FP6Projects = read.csv("../CORDIS - Datasets/cordis-fp6Projects.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
-Dataset_FP7Projects = read.csv("../CORDIS - Datasets/cordis-fp7Projects.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
-Dataset_H2020Projects = read.csv("../CORDIS - Datasets/cordis-h2020Projects.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_FP6Projects = read.csv("../Datasets/cordis-fp6Projects.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_FP7Projects = read.csv("../Datasets/cordis-fp7Projects.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_H2020Projects = read.csv("../Datasets/cordis-h2020Projects.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 #combine the 3 datasets
 Dataset_Projects <- rbind(rbind(Dataset_FP6Projects, Dataset_FP7Projects), Dataset_H2020Projects)
 
 
-Dataset_population  = read.csv("../CORDIS - Datasets/demo_pjan_1_Data.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
-Dataset_GDP  = read.csv("../CORDIS - Datasets/naida_10_gdp_1_Data.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
+Dataset_population  = read.csv("../Datasets/demo_pjan_1_Data.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
+Dataset_GDP  = read.csv("../Datasets/naida_10_gdp_1_Data.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
 
-Dataset_PopByEducAttain = read.csv("../CORDIS - Datasets/edat_lfse_03_1_Data.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
-Dataset_RDExpend = read.csv("../CORDIS - Datasets/rd_e_gerdtot_1_Data.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
+Dataset_PopByEducAttain = read.csv("../Datasets/edat_lfse_03_1_Data.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
+Dataset_RDExpend = read.csv("../Datasets/rd_e_gerdtot_1_Data.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
 
 
 
-Dataset_Countries = read.csv("../CORDIS - Datasets/Countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_Countries = read.csv("../Datasets/Countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 #select only EU-28 countries 
 Dataset_Countries <- Dataset_Countries[Dataset_Countries$EU28 == TRUE,]
 
