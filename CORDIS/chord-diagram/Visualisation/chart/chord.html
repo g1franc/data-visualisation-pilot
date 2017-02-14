@@ -6,32 +6,38 @@
     <title>delimited | Chord Transitions</title>
     <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
     <link rel="stylesheet" type="text/css" href="../css/app.css">
-    <link rel="stylesheet" href="../main.css"/>
+    <link rel="stylesheet" href="../../main.css"/>
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/angular/angular.min.js"></script>
   </head>
   <body ng-app="app" ng-cloak ng-controller="mainCntrl">
 
-    <button onclick="goBack()">Back</button>
-
-    <script>
-    function goBack() {
-        location.href='http://52.50.205.146:8890/data-visualisation-pilot/';
-    }
-    </script>
-
     <div class="row">
       <div class="large-12 columns">
-        <h1 style="text-align: center;">Collaboration between EU-28 countries on EU-funded projects</h1>
-        <h1 style="text-align: center;">CORDIS data (FP6, FP7, H2020)</h1>
+        <div class="menu-header">
+          <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/'">
+            Home page
+          </div>
+          <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/motionChart/motionChart.html'">
+            Motion chart
+          </div>
+          <div class="menu-button selected" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/organisationsNetwork/network_organisations_2.html'">
+            Network chart
+          </div>
+          <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/chord-diagram/chart/chord.html'">
+            Chord diagram
+          </div>
+        </div>
+        <h1 style="text-align: center;">The collaboration between EU-28 countries on EU funded research projects based on CORDIS data</h1>
+        <h1 style="text-align: center;">(FP6, FP7, H2020)</h1>
         <hr/>
       </div>
     </div>
 
     <div class="row">
       <div class="large-12 columns">
-      <p style="margin:auto; padding-top:15px; text-align: justify; font-family:Lucida Sans Unicode; font-size:11px;">
+      <p style="margin:auto; padding-top:15px; text-align: justify; font-family:arial;">
         Through this page, you can explore <a href="http://cordis.europa.eu/home_en.html" target="_blank">CORDIS</a> data. CORDIS stands for Community Research and Development
         Information Service and is the European Commission's
         primary public repository and portal to disseminate information on all EU-funded research projects and their results in the broadest sense.
@@ -108,7 +114,7 @@
           <li>Design by <a target="_blank" href="http://www.delimited.io/blog">delimited.io</a></li>
           <li>Data from <a target="_blank" href="http://www.correlatesofwar.org">Correlates of War</a></li>
         </ul>-->
-      <p style="padding-top:15px; text-align: justify; font-family:Lucida Sans Unicode; font-size:11px">
+      <p style="padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
         This visualisation has been developed by  <a href="http://www.pwc.be/" target="_blank">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office of the EU</a>
         using <a href="https://developers.google.com/chart/interactive/docs/gallery/bubblechart" target="_blank">the Google-visualization library</a>
         and is based on datasets provided on the <a href="http://data.europa.eu/euodp/en/data" target="_blank">European Union Data Portal</a> by CORDIS

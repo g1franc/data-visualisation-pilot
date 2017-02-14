@@ -48,7 +48,7 @@
 <body onload="takeAction();">
 
     <div id="nocontent" style="padding: auto; width: 100%;">
-      <h1 style="font-family:Lucida Sans Unicode; font-size:11px; margin:auto; width:1000px;">Sadly your browser is not compatible with this site</h1>
+      <h1 style="font-family:arial; margin:auto; width:1000px;">Sadly your browser is not compatible with this site</h1>
 
       <div>
         <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify;">
@@ -77,9 +77,10 @@
             Chord diagram
           </div>
         </div>
-        <h1 style="font-family:Lucida Sans Unicode; margin:auto; width:1000px;">Research collaborations between organisations based on EU-funded projects</h1>
-        <h1 style="text-align: center;font-family:Lucida Sans Unicode;">CORDIS data (H2020)</h1>
-        <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:Lucida Sans Unicode; font-size:11px;">
+        <h1 style="font-family:arial; margin:auto; width:1000px;">
+          The collaboration between organisations on EU funded research projects based on CORDIS data (H2020)
+        </h1>
+        <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial;">
             Through this page, you can view an interactive visualisation of <a href="http://cordis.europa.eu/home_en.html" target="_blank">CORDIS</a> data as published by the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office</a> of the <a href="http://data.europa.eu/euodp/en/data" target="_blank">European Union Open Data Portal</a>.
           <br>
             The datasets contain all projects funded by the European Union under the <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects" target="_blank">Horizon 2020</a> framework programme for research and technological development. This framework programme was funded and approved by the European Commission from 2014 to 2020.
@@ -90,7 +91,7 @@
 
         <div style="width:1000px; margin:auto; margin-bottom: 15px; height:25px;">
           <div style="float:left;">
-            <div style="text-align: justify; font-family:Lucida Sans Unicode; font-size:11px;">
+            <div style="text-align: justify; font-family:arial;">
               Select a framework programme:
             </div>
           </div>
@@ -154,7 +155,7 @@
             </fieldset>
             <fieldset id="country_criteria" class="filter_cb_panel">
               <legend>Countries</legend>
-              <div id="countries" style="height:444px; overflow-y: scroll;">
+              <div id="countries" style="height:485px; overflow-y: scroll;">
                 <div class="checkbox" fjs-criteria="field=country,ele=#countries input:checkbox">
                 	<label>
                 		<input type="checkbox" value="Algeria">
@@ -939,28 +940,28 @@
             </fieldset>
           </div>
           <div id="chartID" style="border:2px solid grey; width:75%; float:right;"></div>
+          <div id="zoomDiv" style="width:40px; position:absolute; bottom:105px; right:5px;">
+            <button id="zoomPlus" style="width:40px; height:30px;">+</button>
+            <button id="zoomMinus" style="width:40px; height:30px;">-</button>
+          </div>
         </div>
 
-        <div id="zoomDiv" style="width:40px; position:absolute; top:885px; left:955px;">
-          <button id="zoomPlus" style="width:40px; height:30px;">+</button>
-          <button id="zoomMinus" style="width:40px; height:30px;">-</button>
-        </div>
         <div id="sidepanel">
           <div id="countryInfo" class="panel_off"></div>
         </div>
 
         <div>
-          <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:Lucida Sans Unicode; font-size:11px;">
+          <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
             The number of institutions is based on the data published on
                 <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects" target="_blank">EU research projects under FP6</a>,
                 <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects" target="_blank">EU research projects under FP7</a> and
                 <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects" target="_blank">EU research projects under H2020</a>
             and may contain some errors.
           </p>
-          <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:Lucida Sans Unicode; font-size:11px;">
+          <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
             This visualisation has been developed by <a href="http://www.pwc.be/" target="_blank">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office of the EU</a> using <a href="https://d3js.org/" target="_blank">d3.js</a>.
           </p>
-          <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:Lucida Sans Unicode; font-size:11px">
+          <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
             The source code of this visualisation can be found on the following <a href="http://www.pwc.be/" target="_blank">Github</a>.
           </p>
         </div>

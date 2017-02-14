@@ -254,7 +254,7 @@ function D3ok() {
 
         // activate/deactivate the node itself
         circle.classed( 'main', on );
-        label.classed( 'on', on || currentZoom >= SHOW_THRESHOLD );
+        label.classed( 'on', on /*|| currentZoom >= SHOW_THRESHOLD*/ );
         label.selectAll('text').classed( 'main', on );
 
         // activate all siblings
@@ -353,10 +353,10 @@ function D3ok() {
       return;	// no zoom change
 
        // See if we cross the 'show' threshold in either direction
-      if( currentZoom<SHOW_THRESHOLD && newZoom>=SHOW_THRESHOLD )
+      /*if( currentZoom<SHOW_THRESHOLD && newZoom>=SHOW_THRESHOLD )
         svg.selectAll("g.label").classed('on',true);
       else if( currentZoom>=SHOW_THRESHOLD && newZoom<SHOW_THRESHOLD )
-        svg.selectAll("g.label").classed('on',false);
+        svg.selectAll("g.label").classed('on',false);*/
 
       // See what is the current graph window size
       s = getViewportSize();
