@@ -7,6 +7,12 @@ $(document).ready(function(){
 
   FJS.addCriteria({field: 'country', ele: '#country_criteria input:checkbox'});
 
+  $(document).bind('click', function(e) {
+      var $clicked = $(e.target);
+      if (! ( $clicked.hasClass("form-control searchBar") || $clicked.hasClass("FakeDropdownList") ) )
+          $("#filterOrgsList").hide();
+    });
+
 });
 
 function filterOrgSelected(element) {
