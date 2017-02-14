@@ -43,6 +43,8 @@ function D3ok() {
       SHOW_THRESHOLD = 2.5;
       ANIMATION_TIME = 100;
 
+  rootNodePos = {x: WIDTH/2, y: HEIGHT/2};
+
   // Variables keeping graph state
   var activeCountry = undefined;
   var currentZoom = 0.5;
@@ -154,7 +156,6 @@ function D3ok() {
     datafile,
     function(data) {
       // Declare the variables pointing to the node & link arrays
-      console.log(datafile);
       var nodeArray = data.nodes;
       var linkArray = data.links;
 
@@ -196,7 +197,7 @@ function D3ok() {
         .data( nodeArray, function(d){ return d.id; } )
         .enter().append("svg:circle")
         .attr('id', function(d) { return "c" + d.index; } )
-        .attr('class', function(d) { console.log(d.activity); return 'bubble'+ d.activity;} )
+        .attr('class', function(d) { return 'bubble'+ d.activity;} )
         .attr('r', function(d) { return node_size(parseFloat(d.score) || 3); } )
         .attr('pointer-events', 'all')
         .on("click", function(d) { showMoviePanel(d); } )
@@ -257,14 +258,6 @@ function D3ok() {
         circle.classed( 'main', on );
         label.classed( 'on', on /*|| currentZoom >= SHOW_THRESHOLD*/ );
         label.selectAll('text').classed( 'main', on );
-
-        // activate all siblings
-        /*Object(node.links).forEach( function(id) {
-        	d3.select("#c"+id).classed( 'sibling', on );
-        	label = d3.select('#l'+id);
-        	label.classed( 'on', on || currentZoom >= SHOW_THRESHOLD );
-        	label.selectAll('text.nlabel').classed( 'sibling', on );
-        });*/
 
         // set the value for the current active country
         activeCountry = on ? node.index : undefined;
@@ -328,6 +321,7 @@ function D3ok() {
       // move nodes
       n = doTr ? graphNodes.transition().duration(ANIMATION_TIME) : graphNodes;
       n.attr("transform", function(d) { return "translate(" +z*d.x+","+z*d.y+")" } );
+      console.log('here');
       // move labels
       l = doTr ? graphLabels.transition().duration(ANIMATION_TIME) : graphLabels;
       l.attr("transform", function(d) { return "translate(" +z*d.x+","+z*d.y+")" } );
@@ -353,21 +347,28 @@ function D3ok() {
       if( currentZoom == newZoom )
       return;	// no zoom change
 
-       // See if we cross the 'show' threshold in either direction
-      /*if( currentZoom<SHOW_THRESHOLD && newZoom>=SHOW_THRESHOLD )
-        svg.selectAll("g.label").classed('on',true);
-      else if( currentZoom>=SHOW_THRESHOLD && newZoom<SHOW_THRESHOLD )
-        svg.selectAll("g.label").classed('on',false);*/
-
       // See what is the current graph window size
       s = getViewportSize();
       width  = s.w<WIDTH  ? s.w : WIDTH;
       height = s.h<HEIGHT ? s.h : HEIGHT;
 
-      // Compute the new offset, so that the graph center does not move
-      zoomRatio = newZoom/currentZoom;
-      newOffset = { x : currentOffset.x*zoomRatio + width/2*(1-zoomRatio), y : currentOffset.y*zoomRatio + height/2*(1-zoomRatio)};
+      width = WIDTH;
+      height = HEIGHT;
 
+      // Compute the new offset, so that the graph center does not move
+      /*zoomRatio = newZoom/currentZoom;
+      newOffset = { x : currentOffset.x*zoomRatio + width/2*(1-zoomRatio), y : currentOffset.y*zoomRatio + height/2*(1-zoomRatio)};
+      console.log(newOffset);*/
+
+      newOffset = {x: currentOffset.x-(40-(newZoom-1)*6.8), y:currentOffset.y-(40-(newZoom-1)*6.8)};
+      /*zoomDiff = newZoom - currentZoom;
+      if(zoomDiff > 0) { //zoom plus
+        newOffset = {x: currentOffset.x-40, y: currentOffset.y-40};
+      }
+      else {
+        newOffset = {x: currentOffset.x+40, y: currentOffset.y+40};
+      }
+      console.log(currentOffset);*/
       // Reposition the graph
       repositionGraph( newOffset, newZoom, "zoom" );
     }
@@ -379,7 +380,7 @@ function D3ok() {
       repositionGraph(currentOffset,undefined,'tick');
     });
 
-    graphNodes.call(function(d){doZoom(100/nodeArray.length)});
+    //graphNodes.call(function(d){doZoom(100/nodeArray.length)});
 
     document.getElementById("zoomPlus").addEventListener("click", function(){
       doZoom(0.1);
@@ -392,8 +393,3 @@ function D3ok() {
   }); // end of function(data)
 
 } // end of D3ok()
-
-function orgSelected(option) {
-  currentOrg = option.value;
-  D3ok();
-}
