@@ -140,33 +140,33 @@ div#chartID svg {
 }
 
 line.link {
-    stroke: #808080;
+    stroke: #999;
 }
 
 circle {
     cursor: pointer;
-    stroke: #5a5a5a;
+    stroke: #fff;
     stroke-width:1;
 }
 
 circle.bubbleHES {
-    fill: #b88f3e;
+    fill: #2ca02c;
 }
 
 circle.bubbleREC {
-    fill: #6885d0;
+    fill: #9467bd;
 }
 
 circle.bubblePRC {
-    fill: #64a85c;
+    fill: #ff7f0e;
 }
 
 circle.bubblePUB {
-    fill: #b75fb3;
+    fill: #1f77b4;
 }
 
 circle.bubbleOTH {
-    fill: #cb5658;
+    fill: #ffbb78;
 }
 
 circle.sibling {
