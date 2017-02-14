@@ -46,7 +46,7 @@ function D3ok() {
   // Variables keeping graph state
   var activeCountry = undefined;
   var currentZoom = 0.5;
-  var currentOffset = { x : 250, y : 150 };
+  var currentOffset = { x : 200, y : 150 };
 
   // The D3.js scales
   var xScale = d3.scale.linear()
@@ -265,7 +265,7 @@ function D3ok() {
         	label.selectAll('text.nlabel').classed( 'sibling', on );
         });*/
 
-        // set the value for the current active movie
+        // set the value for the current active country
         activeCountry = on ? node.index : undefined;
         console.log("SHOWNODE finished: "+node.index+" = "+on );
       }
@@ -375,11 +375,10 @@ function D3ok() {
 
     /* process events from the force-directed graph */
     force.on("tick", function() {
-      //repositionGraph(undefined,undefined,'tick');
       repositionGraph(currentOffset,undefined,'tick');
     });
 
-    //repositionGraph(currentOffset,undefined,'move');
+    graphNodes.call(function(d){doZoom(100/nodeArray.length)});
 
     document.getElementById("zoomPlus").addEventListener("click", function(){
       doZoom(0.1);
@@ -389,7 +388,7 @@ function D3ok() {
       doZoom(-0.1);
     });
 
-  }); // end of function(data
+  }); // end of function(data)
 
 } // end of D3ok()
 
