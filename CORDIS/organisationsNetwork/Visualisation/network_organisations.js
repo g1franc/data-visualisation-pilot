@@ -168,12 +168,12 @@ function D3ok() {
 
       // A couple of scales for node radius & edge width
       var node_size = d3.scale.linear()
-        .domain([0,50])	// we know score is in this domain
-        .range([1,50])
+        .domain([0,25])	// we know score is in this domain
+        .range([1,25])
         .clamp(true);
       var edge_width = d3.scale.pow().exponent(8)
         .domain( [minLinkWeight,maxLinkWeight] )
-        .range([1,39])
+        .range([1,10])
         .clamp(true);
 
       /* Add drag & zoom behaviours */

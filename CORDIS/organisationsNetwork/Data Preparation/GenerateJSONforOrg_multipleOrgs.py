@@ -5,6 +5,7 @@ import operator
 
 projMin = 1;
 projMax = 496;
+minBubbleSize = 4;
 maxBubblesize = 20;
 
 linksMax = 50;
@@ -24,7 +25,7 @@ class JNode:
 		return json.dumps({'index':self.index,'links':self.links,'label':self.label,'score':self.score,'id':self.index, 'level':self.level, 'country':self.country, 'activity': self.activity},separators=(',', ':'),indent=4)
 
 	def setScore(self, projectNbr):
-		self.score = (((float(projectNbr) - projMin)*(maxBubblesize - 1)) / (projMax - projMin)) + 1
+		self.score = (((float(projectNbr) - projMin)*(maxBubblesize - minBubbleSize)) / (projMax - projMin)) + minBubbleSize
 		#NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
 
 	def getID(self):
