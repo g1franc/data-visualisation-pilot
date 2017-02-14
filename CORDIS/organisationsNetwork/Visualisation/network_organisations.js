@@ -154,6 +154,7 @@ function D3ok() {
     datafile,
     function(data) {
       // Declare the variables pointing to the node & link arrays
+      console.log(datafile);
       var nodeArray = data.nodes;
       var linkArray = data.links;
 

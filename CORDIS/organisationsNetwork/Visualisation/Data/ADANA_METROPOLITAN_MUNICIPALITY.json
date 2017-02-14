@@ -1,41 +1,39 @@
 {
 "nodes": [
 {
-    "label":"TECHNISCHE UNIVERSITAET DRESDEN",
+    "score":6.0,
     "activity":"HES",
+    "level":1,
     "id":0,
-    "index":0,
-    "score":6.0,
+    "label":"TECHNISCHE UNIVERSITAET DRESDEN",
+    "links":[
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        12
+    ],
     "country":"DE",
-    "level":1,
-    "links":[
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        11,
-        13,
-        17,
-        14,
-        15,
-        16,
-        8,
-        9,
-        10,
-        12
-    ]
+    "index":0
 },
 {
-    "label":"UNIVERSITY COLLEGE LONDON",
-    "activity":"HES",
-    "id":1,
-    "index":1,
     "score":6.0,
-    "country":"UK",
+    "activity":"HES",
     "level":1,
+    "id":1,
+    "label":"UNIVERSITY COLLEGE LONDON",
     "links":[
         0,
         4,
@@ -54,44 +52,44 @@
         9,
         10,
         12
-    ]
+    ],
+    "country":"UK",
+    "index":1
 },
 {
-    "label":"UNIVERSITAET FUER BODENKULTUR WIEN",
+    "score":1.0,
     "activity":"HES",
+    "level":1,
     "id":2,
-    "index":2,
-    "score":1.0,
+    "label":"UNIVERSITAET FUER BODENKULTUR WIEN",
+    "links":[
+        0,
+        5,
+        6,
+        1,
+        4,
+        7,
+        11,
+        3,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        12
+    ],
     "country":"AT",
-    "level":1,
-    "links":[
-        0,
-        5,
-        6,
-        1,
-        4,
-        7,
-        11,
-        3,
-        13,
-        17,
-        14,
-        15,
-        16,
-        8,
-        9,
-        10,
-        12
-    ]
+    "index":2
 },
 {
-    "label":"TRANSPORT FOR LONDON*TFL",
+    "score":1.0,
     "activity":"PUB",
-    "id":3,
-    "index":3,
-    "score":1.0,
-    "country":"UK",
     "level":1,
+    "id":3,
+    "label":"TRANSPORT FOR LONDON*TFL",
     "links":[
         0,
         5,
@@ -110,16 +108,16 @@
         9,
         10,
         12
-    ]
+    ],
+    "country":"UK",
+    "index":3
 },
 {
-    "label":"VECTOS (SOUTH) LIMITED",
-    "activity":"PRC",
-    "id":4,
-    "index":4,
     "score":1.0,
-    "country":"UK",
+    "activity":"PRC",
     "level":1,
+    "id":4,
+    "label":"VECTOS (SOUTH) LIMITED",
     "links":[
         0,
         1,
@@ -138,16 +136,16 @@
         9,
         10,
         12
-    ]
+    ],
+    "country":"UK",
+    "index":4
 },
 {
-    "label":"FONDATION NATIONALE DES SCIENCES POLITIQUES",
-    "activity":"HES",
-    "id":5,
-    "index":5,
     "score":2.0,
-    "country":"FR",
+    "activity":"HES",
     "level":1,
+    "id":5,
+    "label":"FONDATION NATIONALE DES SCIENCES POLITIQUES",
     "links":[
         1,
         0,
@@ -166,128 +164,128 @@
         14,
         15,
         16
-    ]
-},
-{
-    "label":"KOBENHAVNS KOMMUNE",
-    "activity":"PUB",
-    "id":6,
-    "index":6,
-    "score":1.0,
-    "country":"DK",
-    "level":1,
-    "links":[
-        5,
-        1,
-        0,
-        2,
-        7,
-        3,
-        4,
-        11,
-        12,
-        13,
-        17,
-        14,
-        15,
-        16,
-        8,
-        9,
-        10
-    ]
-},
-{
-    "label":"MUNICIPIUL BUCURESTI",
-    "activity":"PUB",
-    "id":7,
-    "index":7,
-    "score":1.0,
-    "country":"RO",
-    "level":1,
-    "links":[
-        5,
-        6,
-        1,
-        0,
-        2,
-        3,
-        4,
-        11,
-        12,
-        13,
-        17,
-        14,
-        15,
-        16,
-        8,
-        9,
-        10
-    ]
-},
-{
-    "label":"GREATER AMMAN MUNICIPALITY",
-    "activity":"PUB",
-    "id":8,
-    "index":8,
-    "score":1.0,
-    "country":"JO",
-    "level":1,
-    "links":[
-        5,
-        13,
-        17,
-        14,
-        15,
-        16,
-        1,
-        0,
-        2,
-        6,
-        7,
-        3,
-        4,
-        9,
-        10,
-        11,
-        12
-    ]
-},
-{
-    "label":"INRIX UK LIMITED",
-    "activity":"PRC",
-    "id":9,
-    "index":9,
-    "score":1.0,
-    "country":"UK",
-    "level":1,
-    "links":[
-        5,
-        13,
-        17,
-        14,
-        15,
-        16,
-        8,
-        1,
-        0,
-        2,
-        6,
-        7,
-        3,
-        4,
-        10,
-        11,
-        12
-    ]
-},
-{
-    "label":"INSTITUT D'AMENAGEMENT ET D'URBANISME DE LA REGION D'ILE DE FRANCE",
-    "activity":"REC",
-    "id":10,
-    "index":10,
-    "score":1.0,
+    ],
     "country":"FR",
+    "index":5
+},
+{
+    "score":1.0,
+    "activity":"PUB",
     "level":1,
+    "id":6,
+    "label":"KOBENHAVNS KOMMUNE",
+    "links":[
+        5,
+        1,
+        0,
+        2,
+        7,
+        3,
+        4,
+        11,
+        12,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10
+    ],
+    "country":"DK",
+    "index":6
+},
+{
+    "score":1.0,
+    "activity":"PUB",
+    "level":1,
+    "id":7,
+    "label":"MUNICIPIUL BUCURESTI",
+    "links":[
+        5,
+        6,
+        1,
+        0,
+        2,
+        3,
+        4,
+        11,
+        12,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10
+    ],
+    "country":"RO",
+    "index":7
+},
+{
+    "score":1.0,
+    "activity":"PUB",
+    "level":1,
+    "id":8,
+    "label":"GREATER AMMAN MUNICIPALITY",
+    "links":[
+        5,
+        13,
+        17,
+        14,
+        15,
+        16,
+        1,
+        0,
+        2,
+        6,
+        7,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12
+    ],
+    "country":"JO",
+    "index":8
+},
+{
+    "score":1.0,
+    "activity":"PRC",
+    "level":1,
+    "id":9,
+    "label":"INRIX UK LIMITED",
+    "links":[
+        5,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        1,
+        0,
+        2,
+        6,
+        7,
+        3,
+        4,
+        10,
+        11,
+        12
+    ],
+    "country":"UK",
+    "index":9
+},
+{
+    "score":1.0,
+    "activity":"REC",
+    "level":1,
+    "id":10,
+    "label":"INSTITUT D'AMENAGEMENT ET D'URBANISME DE LA REGION D'ILE DE FRANCE",
     "links":[
         5,
         13,
@@ -306,16 +304,16 @@
         4,
         11,
         12
-    ]
+    ],
+    "country":"FR",
+    "index":10
 },
 {
-    "label":"SENATSVERWALTUNG FUR STADTENTWICKLUNG",
-    "activity":"PUB",
-    "id":11,
-    "index":11,
     "score":1.0,
-    "country":"DE",
+    "activity":"PUB",
     "level":1,
+    "id":11,
+    "label":"SENATSVERWALTUNG FUR STADTENTWICKLUNG",
     "links":[
         5,
         6,
@@ -334,16 +332,16 @@
         8,
         9,
         10
-    ]
+    ],
+    "country":"DE",
+    "index":11
 },
 {
-    "label":"TALLINNA LINN",
-    "activity":"PUB",
-    "id":12,
-    "index":12,
     "score":1.0,
-    "country":"EE",
+    "activity":"PUB",
     "level":1,
+    "id":12,
+    "label":"TALLINNA LINN",
     "links":[
         5,
         6,
@@ -362,16 +360,16 @@
         2,
         3,
         4
-    ]
+    ],
+    "country":"EE",
+    "index":12
 },
 {
-    "label":"CITY OF SKOPJE",
-    "activity":"PUB",
-    "id":13,
-    "index":13,
     "score":1.0,
-    "country":"MK",
+    "activity":"PUB",
     "level":1,
+    "id":13,
+    "label":"CITY OF SKOPJE",
     "links":[
         1,
         0,
@@ -390,72 +388,72 @@
         11,
         12,
         17
-    ]
+    ],
+    "country":"MK",
+    "index":13
 },
 {
-    "label":"COWI A/S",
+    "score":1.0,
     "activity":"PRC",
+    "level":1,
     "id":14,
-    "index":14,
-    "score":1.0,
+    "label":"COWI A/S",
+    "links":[
+        13,
+        17,
+        1,
+        0,
+        5,
+        2,
+        6,
+        7,
+        3,
+        4,
+        15,
+        16,
+        8,
+        9,
+        10,
+        11,
+        12
+    ],
     "country":"DK",
-    "level":1,
-    "links":[
-        13,
-        17,
-        1,
-        0,
-        5,
-        2,
-        6,
-        7,
-        3,
-        4,
-        15,
-        16,
-        8,
-        9,
-        10,
-        11,
-        12
-    ]
+    "index":14
 },
 {
-    "label":"EUROCITIES ASBL",
+    "score":1.0,
     "activity":"OTH",
+    "level":1,
     "id":15,
-    "index":15,
-    "score":1.0,
+    "label":"EUROCITIES ASBL",
+    "links":[
+        13,
+        17,
+        14,
+        1,
+        0,
+        5,
+        2,
+        6,
+        7,
+        3,
+        4,
+        16,
+        8,
+        9,
+        10,
+        11,
+        12
+    ],
     "country":"BE",
-    "level":1,
-    "links":[
-        13,
-        17,
-        14,
-        1,
-        0,
-        5,
-        2,
-        6,
-        7,
-        3,
-        4,
-        16,
-        8,
-        9,
-        10,
-        11,
-        12
-    ]
+    "index":15
 },
 {
-    "label":"EUROPEAN INTEGRATED PROJECT",
+    "score":1.0,
     "activity":"PRC",
-    "id":16,
-    "index":16,
-    "score":1.0,
-    "country":"RO",
     "level":1,
+    "id":16,
+    "label":"EUROPEAN INTEGRATED PROJECT",
     "links":[
         13,
         17,
@@ -474,16 +472,16 @@
         10,
         11,
         12
-    ]
+    ],
+    "country":"RO",
+    "index":16
 },
 {
-    "label":"ADANA METROPOLITAN MUNICIPALITY",
-    "activity":"PUB",
-    "id":17,
-    "index":17,
     "score":1.0,
-    "country":"TR",
+    "activity":"PUB",
     "level":1,
+    "id":17,
+    "label":"ADANA METROPOLITAN MUNICIPALITY",
     "links":[
         1,
         0,
@@ -502,1377 +500,775 @@
         10,
         11,
         12
-    ]
+    ],
+    "country":"TR",
+    "index":17
 }
 ],
 "links":[
 {
+    "source":0,
     "target":1,
-    "weight":1.4081632653061225,
-    "source":0
+    "weight":1.4081632653061225
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":0,
     "target":2,
-    "weight":1.0,
-    "source":0
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":0,
     "target":3,
-    "weight":1.0,
-    "source":0
+    "weight":1.0
 },
 {
+    "source":0,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":0
+    "weight":1.0
 },
 {
+    "source":1,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":1
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":5,
     "target":1,
-    "weight":1.0816326530612246,
-    "source":5
+    "weight":1.0816326530612246
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":5,
     "target":0,
-    "weight":1.0,
-    "source":5
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":5,
     "target":2,
-    "weight":1.0,
-    "source":5
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":5,
     "target":6,
-    "weight":1.0,
-    "source":5
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":5,
     "target":7,
-    "weight":1.0,
-    "source":5
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":5,
     "target":3,
-    "weight":1.0,
-    "source":5
+    "weight":1.0
 },
 {
+    "source":5,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":5
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":5,
     "target":8,
-    "weight":1.0,
-    "source":5
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":5,
     "target":9,
-    "weight":1.0,
-    "source":5
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":5,
     "target":10,
-    "weight":1.0,
-    "source":5
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":5,
     "target":11,
-    "weight":1.0,
-    "source":5
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":5,
     "target":12,
-    "weight":1.0,
-    "source":5
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":6,
     "target":1,
-    "weight":1.0,
-    "source":6
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":6,
     "target":0,
-    "weight":1.0,
-    "source":6
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":6,
     "target":2,
-    "weight":1.0816326530612246,
-    "source":6
+    "weight":1.0816326530612246
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":6,
     "target":7,
-    "weight":1.0,
-    "source":6
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":6,
     "target":3,
-    "weight":1.0,
-    "source":6
+    "weight":1.0
 },
 {
+    "source":6,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":6
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":6,
     "target":11,
-    "weight":1.0,
-    "source":6
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":6,
     "target":12,
-    "weight":1.0,
-    "source":6
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":2,
     "target":1,
-    "weight":1.0,
-    "source":2
+    "weight":1.0
 },
 {
+    "source":2,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":2
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":7,
     "target":1,
-    "weight":1.0,
-    "source":7
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":7,
     "target":0,
-    "weight":1.0,
-    "source":7
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":7,
     "target":2,
-    "weight":1.0,
-    "source":7
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":7,
     "target":3,
-    "weight":1.0,
-    "source":7
+    "weight":1.0
 },
 {
+    "source":7,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":7
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":7,
     "target":11,
-    "weight":1.0,
-    "source":7
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":7,
     "target":12,
-    "weight":1.0,
-    "source":7
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":11,
     "target":1,
-    "weight":1.0,
-    "source":11
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":11,
     "target":0,
-    "weight":1.0,
-    "source":11
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":11,
     "target":2,
-    "weight":1.0,
-    "source":11
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":11,
     "target":3,
-    "weight":1.0,
-    "source":11
+    "weight":1.0
 },
 {
+    "source":11,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":11
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":11,
     "target":12,
-    "weight":1.0,
-    "source":11
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":3,
     "target":1,
-    "weight":1.0,
-    "source":3
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":3,
     "target":2,
-    "weight":1.0,
-    "source":3
+    "weight":1.0
 },
 {
+    "source":3,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":3
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":1,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":0,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":5,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":2,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":6,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":7,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":3,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
+    "source":13,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0816326530612246,
-    "source":13
+    "weight":1.0816326530612246
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":14,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":15,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":16,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":8,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":9,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":10,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":11,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":13,
     "target":12,
-    "weight":1.0,
-    "source":13
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":1,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":0,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":5,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":2,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":6,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":7,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":3,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":13,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
+    "source":17,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":14,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":15,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":16,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":8,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":9,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":10,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":11,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":17,
     "target":12,
-    "weight":1.0,
-    "source":17
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":1,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":0,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":5,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":2,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":6,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":7,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":3,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
+    "source":14,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":15,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":16,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":8,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":9,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":10,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":11,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":14,
     "target":12,
-    "weight":1.0,
-    "source":14
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":15,
     "target":1,
-    "weight":1.0,
-    "source":15
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":15,
     "target":0,
-    "weight":1.0,
-    "source":15
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":15,
     "target":5,
-    "weight":1.0,
-    "source":15
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":15,
     "target":2,
-    "weight":1.0,
-    "source":15
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":15,
     "target":6,
-    "weight":1.0,
-    "source":15
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":15,
     "target":7,
-    "weight":1.0,
-    "source":15
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":15,
     "target":3,
-    "weight":1.0816326530612246,
-    "source":15
+    "weight":1.0816326530612246
 },
 {
+    "source":15,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":15
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":15,
     "target":16,
-    "weight":1.0,
-    "source":15
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":15,
     "target":8,
-    "weight":1.0,
-    "source":15
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":15,
     "target":9,
-    "weight":1.0,
-    "source":15
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":15,
     "target":10,
-    "weight":1.0,
-    "source":15
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":15,
     "target":11,
-    "weight":1.0,
-    "source":15
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":15,
     "target":12,
-    "weight":1.0,
-    "source":15
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":16,
     "target":1,
-    "weight":1.0,
-    "source":16
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":16,
     "target":0,
-    "weight":1.0,
-    "source":16
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":16,
     "target":5,
-    "weight":1.0,
-    "source":16
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":16,
     "target":2,
-    "weight":1.0,
-    "source":16
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":16,
     "target":6,
-    "weight":1.0,
-    "source":16
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":16,
     "target":7,
-    "weight":1.0,
-    "source":16
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":16,
     "target":3,
-    "weight":1.0,
-    "source":16
+    "weight":1.0
 },
 {
+    "source":16,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.2448979591836735,
-    "source":16
+    "weight":1.2448979591836735
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":16,
     "target":8,
-    "weight":1.0,
-    "source":16
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":16,
     "target":9,
-    "weight":1.0,
-    "source":16
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":16,
     "target":10,
-    "weight":1.0,
-    "source":16
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":16,
     "target":11,
-    "weight":1.0,
-    "source":16
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":16,
     "target":12,
-    "weight":1.0,
-    "source":16
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":8,
     "target":1,
-    "weight":1.0,
-    "source":8
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":8,
     "target":0,
-    "weight":1.0,
-    "source":8
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":8,
     "target":2,
-    "weight":1.0,
-    "source":8
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":8,
     "target":6,
-    "weight":1.0,
-    "source":8
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":8,
     "target":7,
-    "weight":1.0,
-    "source":8
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":8,
     "target":3,
-    "weight":1.0,
-    "source":8
+    "weight":1.0
 },
 {
+    "source":8,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":8
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":8,
     "target":9,
-    "weight":1.0,
-    "source":8
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":8,
     "target":10,
-    "weight":1.0,
-    "source":8
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":8,
     "target":11,
-    "weight":1.0,
-    "source":8
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":8,
     "target":12,
-    "weight":1.0,
-    "source":8
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":9,
     "target":1,
-    "weight":1.0,
-    "source":9
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":9,
     "target":0,
-    "weight":1.0,
-    "source":9
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":9,
     "target":2,
-    "weight":1.0,
-    "source":9
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":9,
     "target":6,
-    "weight":1.0,
-    "source":9
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":9,
     "target":7,
-    "weight":1.0,
-    "source":9
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":9,
     "target":3,
-    "weight":1.0,
-    "source":9
+    "weight":1.0
 },
 {
+    "source":9,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":9
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":9,
     "target":10,
-    "weight":1.0,
-    "source":9
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":9,
     "target":11,
-    "weight":1.0,
-    "source":9
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":9,
     "target":12,
-    "weight":1.0,
-    "source":9
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":10,
     "target":1,
-    "weight":1.0,
-    "source":10
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":10,
     "target":0,
-    "weight":1.0,
-    "source":10
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":10,
     "target":2,
-    "weight":1.0,
-    "source":10
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":10,
     "target":6,
-    "weight":1.0,
-    "source":10
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":10,
     "target":7,
-    "weight":1.0,
-    "source":10
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":10,
     "target":3,
-    "weight":1.0,
-    "source":10
+    "weight":1.0
 },
 {
+    "source":10,
     "target":4,
-    "weight":1.0,
-    "source":12
-}{
-    "target":4,
-    "weight":1.0,
-    "source":10
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":10,
     "target":11,
-    "weight":1.0,
-    "source":10
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":10,
     "target":12,
-    "weight":1.0,
-    "source":10
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":12,
     "target":1,
-    "weight":1.0,
-    "source":12
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":12,
     "target":0,
-    "weight":1.0,
-    "source":12
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":12,
     "target":2,
-    "weight":1.0,
-    "source":12
+    "weight":1.0
 },
 {
-    "target":4,
-    "weight":1.0,
-    "source":12
-}{
+    "source":12,
     "target":3,
-    "weight":1.0,
-    "source":12
+    "weight":1.0
 },
 {
+    "source":12,
     "target":4,
-    "weight":1.0,
-    "source":12
+    "weight":1.0
 }]
 }

@@ -63,7 +63,7 @@ def WriteJSON(nameOutputFile, orig_nodelist, linksList):
 			for i in range(len(linksList)-1):
 				outputFile.write(linksList[i].toJSON())
 				outputFile.write(',\n')
-				outputFile.write(linksList[len(linksList)-1].toJSON())
+			outputFile.write(linksList[len(linksList)-1].toJSON())
 		outputFile.write(']\n')
 		outputFile.write('}')
 	except Exception as e:
