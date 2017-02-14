@@ -169,7 +169,7 @@ circle.bubbleOTH {
     fill: #ffbb78;
 }
 
-circle.sibling {
+/*circle.sibling {
     fill: #325bad;
     stroke: #003399;
     stroke-width:1;
@@ -179,7 +179,7 @@ circle.main {
     fill: #325bad;
     stroke: #003399;
     stroke-width:1;
-}
+}*/
 
 /* ....................................................................... */
 /* Graph labels */
