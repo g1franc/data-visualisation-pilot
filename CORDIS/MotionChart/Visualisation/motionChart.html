@@ -28,8 +28,8 @@
       dateFormatter.format(data, 1);*/
       var options = {
         state: '{"uniColorForNonSelected":false,"yZoomedDataMin":78036,"orderedByX":false,"dimensions":{"iconDimensions":["dim0"]},"yLambda":1,"showTrails":true,"nonSelectedAlpha":0.4,"xZoomedDataMin":1,"colorOption":"4","yAxisOption":"3","playDuration":40000,"time":"2003","duration":{"timeUnit":"Y","multiplier":1},"sizeOption":"5","yZoomedDataMax":3226669226.55,"xLambda":1,"xAxisOption":"2","orderedByY":false,"iconKeySettings":[],"xZoomedDataMax":1013,"xZoomedIn":false,"iconType":"BUBBLE","yZoomedIn":false}',
-        width: 900,
-        height: 450,
+        width: 1000,
+        height: 500,
         hAxis: {
           minValue: 1000
         }
@@ -42,16 +42,16 @@
     </script>
   </head>
   <body>
-    <div style="padding: auto; width: 100%;">
+    <div style="padding: auto; width:1000px; margin:auto; position:relative;">
 
       <div class="menu-header">
         <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/'">
           Home page
         </div>
-        <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/motionChart/motionChart.html'">
+        <div class="menu-button selected" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/motionChart/motionChart.html'">
           Motion chart
         </div>
-        <div class="menu-button selected" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/organisationsNetwork/network_organisations_2.html'">
+        <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/organisationsNetwork/network_organisations_2.html'">
           Network chart
         </div>
         <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/chord-diagram/chart/chord.html'">
@@ -59,9 +59,9 @@
         </div>
       </div>
 
-      <h1 style="font-family:Lucida Sans Unicode; margin:auto; width:900px;">Relations between EU-funded projects and research in EU-28</h1>
+      <h1 style="font-family:Lucida Sans Unicode; margin:auto;">Relations between EU-funded projects and research in EU-28</h1>
       <h1 style="text-align: center;font-family:Lucida Sans Unicode;">CORDIS data (FP6, FP7, H2020)</h1>
-        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial;">
+        <p style="padding-top:15px; text-align: justify; font-family:arial;">
             Through this page, you can explore <a href="http://cordis.europa.eu/home_en.html" target="_blank">CORDIS</a> data. CORDIS stands for Community Research and Development
             Information Service and is the European Commission's
             primary public repository and portal to disseminate information on all EU-funded research projects and their results in the broadest sense.
@@ -81,9 +81,9 @@
             The timeline below allows to display the evolution between the three framework contracts (FP6, FP7, H2020). All dimensions can be changed using their respective dropdowns.
           <br><br>
         </p>
-      <div id="chart_div" style="width: 900px; height: 450px; margin:auto;"></div>
+      <div id="chart_div"></div>
 
-      <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
+      <p style="padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
         This visualisation has been developed by  <a href="http://www.pwc.be/" target="_blank">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office of the EU</a>
         using <a href="https://developers.google.com/chart/interactive/docs/gallery/bubblechart" target="_blank">the Google-visualization library</a>
         and is based on datasets provided on the <a href="http://data.europa.eu/euodp/en/data" target="_blank">European Union Data Portal</a> by CORDIS

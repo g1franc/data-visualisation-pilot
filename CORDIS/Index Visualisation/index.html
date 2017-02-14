@@ -2,12 +2,28 @@
 <html>
   	<head>
 		<title>Data Visualisation - Publication Office of the European Union</title>
-    <link rel="stylesheet" href="../main.css"/>
+    <link rel="stylesheet" href="main.css"/>
 	</head>
 	<body>
-	    <div style="padding: auto; width: 100%;">
-	    	<h1 style="font-family:arial; margin:auto; width:900px;">Data Visualisation by the Publication Office of the European Union</h1>
-	        <p style="width:900px; margin:auto; padding-top:15px; text-align: justify; font-family:Lucida Sans Unicode; font-size:11px;">
+	    <div style="padding: auto; width:1000px; margin:auto; position:relative;">
+
+	    	<div class="menu-header">
+	    		<div class="menu-button selected" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/'">
+	        		Home page
+	    		</div>
+	    		<div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/motionChart/motionChart.html'">
+					Motion chart
+				</div>
+				<div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/organisationsNetwork/network_organisations_2.html'">
+	        		Network chart
+	        	</div>
+	        	<div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/chord-diagram/chart/chord.html'">
+	        		Chord diagram
+	        	</div>
+	      	</div>
+
+	    	<h1 style="font-family:Lucida Sans Unicode; margin:auto;">Data Visualisation by the Publication Office of the European Union</h1>
+	        <p style="padding-top:15px; text-align: justify; font-family:Lucida Sans Unicode; font-size:11px;">
 	        	Through this page, you can view interactive visualisations of <a href="http://cordis.europa.eu/home_en.html" target="_blank">CORDIS</a> data as published by the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office</a> of the <a href="http://data.europa.eu/euodp/en/data" target="_blank">European Union Open Data Portal</a>.
 		    	<br>
 		        The datasets contain all projects funded by the European Union under the <a href="https://data.europa.eu/euodp/data/dataset/cordisfp6projects" target="_blank">sixth</a>, <a href="https://data.europa.eu/euodp/data/dataset/cordisfp7projects" target="_blank">seventh</a> and <a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects" target="_blank">Horizon 2020</a> framework programme for research and technological development. These framework programmes ran from 2002 to 2006, 2007 to 2013, and 2014 to 2020 respectively.
@@ -17,9 +33,9 @@
 		        <a href="motionChart/motionChart.html"><img src="gapminder.PNG" style="width:440px; margin:auto; border:1px solid #5a5a5a; padding-top:43px; padding-bottom:43px"></a>
 				<a href="organisationsNetwork/network_organisations_2.html"><img src="network_organisations.PNG" style="width:440px; margin:auto; border:1px solid #5a5a5a"></a>
 	    	</p>
-        <p style="width:900px; margin:auto; text-align: center; font-family:Lucida Sans Unicode; font-size:11px;">
-          		<a href="chord-diagram/chart/chord.html"><img src="chord.PNG" style="width:440px; margin:auto; border:1px solid #5a5a5a"></a>
-        </p>
+	        <p style="margin:auto; text-align: center; font-family:Lucida Sans Unicode; font-size:11px;">
+	          		<a href="chord-diagram/chart/chord.html"><img src="chord.PNG" style="width:440px; margin:auto; border:1px solid #5a5a5a"></a>
+	        </p>
 	    </div>
   	</body>
 </html>
