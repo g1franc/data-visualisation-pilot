@@ -15,17 +15,17 @@ class JNode:
 		self.index = index
 		self.links = links
 		self.label = label
-		self.score = float(line[9])
+		self.size = float(line[9])
 		self.id = index
 		self.level = 1
 		self.country = country
 		self.activity = activity
 
 	def toJSON(self):
-		return json.dumps({'index':self.index,'links':self.links,'label':self.label,'score':self.score,'id':self.index, 'level':self.level, 'country':self.country, 'activity': self.activity},separators=(',', ':'),indent=4)
+		return json.dumps({'index':self.index,'links':self.links,'label':self.label,'size':self.size,'id':self.index, 'level':self.level, 'country':self.country, 'activity': self.activity},separators=(',', ':'),indent=4)
 
-	def setScore(self, projectNbr):
-		self.score = (((float(projectNbr) - projMin)*(maxBubblesize - minBubbleSize)) / (projMax - projMin)) + minBubbleSize
+	def setSize(self, projectNbr):
+		self.size = (((float(projectNbr) - projMin)*(maxBubblesize - minBubbleSize)) / (projMax - projMin)) + minBubbleSize
 		#NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
 
 	def getID(self):

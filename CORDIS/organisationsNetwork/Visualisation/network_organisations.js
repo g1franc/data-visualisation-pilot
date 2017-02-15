@@ -1,13 +1,13 @@
 // For MSIE < 9, forget it
 function D3notok() {
-  document.getElementById('sidepanel').style.visibility = 'hidden';
-  var nocontent = document.getElementById('nocontent');
-  nocontent.style.visibility = 'visible';
-  nocontent.style.pointerEvents = 'all';
-  var t = document.getElementsByTagName('body');
-  var body = document.getElementsByTagName('body')[0];
-  body.style.backgroundImage = "url('movie-network-screenshot-d.png')";
-  body.style.backgroundRepeat = "no-repeat";
+	  document.getElementById('sidepanel').style.visibility = 'hidden';
+	  var nocontent = document.getElementById('nocontent');
+	  nocontent.style.visibility = 'visible';
+	  nocontent.style.pointerEvents = 'all';
+	  var t = document.getElementsByTagName('body');
+	  var body = document.getElementsByTagName('body')[0];
+	  body.style.backgroundImage = "url('movie-network-screenshot-d.png')";
+	  body.style.backgroundRepeat = "no-repeat";
 }
 
 // -------------------------------------------------------------------
@@ -36,360 +36,302 @@ var currentOrg="ADANA_METROPOLITAN_MUNICIPALITY";
 
 // Do the stuff -- to be called after D3.js has loaded
 function D3ok() {
+	var w = $("#chartID").width();
+	var h = $("#chartID").height();
 
-  // Some constants
-  var WIDTH = 750,
-      HEIGHT = 700,
-      SHOW_THRESHOLD = 2.5;
-      ANIMATION_TIME = 100;
+	var keyc = true, keys = true, keyt = true, keyr = true, keyx = true, keyd = true, keyl = true, keym = true, keyh = true, key1 = true, key2 = true, key3 = true, key0 = true
 
-  rootNodePos = {x: WIDTH/2, y: HEIGHT/2};
+	var focus_node = null, highlight_node = null;
 
-  // Variables keeping graph state
-  var activeCountry = undefined;
-  var currentZoom = 0.5;
-  var currentOffset = { x : 200, y : 150 };
+	var text_center = false;
+	var outline = false;
 
-  // The D3.js scales
-  var xScale = d3.scale.linear()
-    .domain([0, WIDTH])
-    .range([0, WIDTH]);
-  var yScale = d3.scale.linear()
-    .domain([0, HEIGHT])
-    .range([0, HEIGHT]);
-  var zoomScale = d3.scale.linear()
-    .domain([0.25,10])
-    .range([0.25,10])
-    .clamp(true);
+	var min_score = 0;
+	var max_score = 1;
 
-/* .......................................................................... */
+	var color = d3.scale.linear()
+		.domain([min_score, (min_score+max_score)/2, max_score])
+		.range(["lime", "yellow", "red"]);
 
-  // The D3.js force-directed layout
-  var force = d3.layout.force()
-    .charge(-320)
-    .size( [WIDTH, HEIGHT] )
-    .linkStrength( function(d,idx) { return /*d.weight*/ 1; } );
-    //.friction(0.5);
+	var highlight_color = "blue";
+	var highlight_trans = 0.1;
 
-  var myNode = document.getElementById("chartID");
-  while (myNode.firstChild) {
-      myNode.removeChild(myNode.firstChild);
-  }
+	var size = d3.scale.pow().exponent(1)
+		.domain([10,500])
+		.range([10,500]);
 
-  // Add to the page the SVG element that will contain the network
-  var svg = d3.select("#chartID").append("svg:svg")
-    .attr('xmlns','http://www.w3.org/2000/svg')
-    .attr("width", WIDTH)
-    .attr("height", HEIGHT)
-    .attr("id","graph")
-    .attr("viewBox", "0 0 " + WIDTH + " " + HEIGHT )
-    .attr("preserveAspectRatio", "xMidYMid meet");
+	var force = d3.layout.force()
+		.linkDistance(300)
+		.charge(-600)
+		.size([w,h]);
 
-  CountryInfoDiv = d3.select("#countryInfo");
+	var default_node_color = "#ccc";
+	var default_link_color = "#888";
+	var nominal_base_node_size = 8;
+	var nominal_text_size = 10;
+	var max_text_size = 24;
+	var nominal_stroke = 1.5;
+	var max_stroke = 1.5;
+	var max_base_node_size = 36;
+	var min_zoom = 0.1;
+	var max_zoom = 7;
+	var svg = d3.select("#chartID").append("svg");
+	var zoom = d3.behavior.zoom().scaleExtent([min_zoom,max_zoom])
+	var g = svg.append("g");
 
-  /* ....................................................................... */
+	svg.style("cursor","move");
 
-  // Get the current size & offset of the browser's viewport window
-  function getViewportSize( w ) {
-    var w = w || window;
-    if( w.innerWidth != null )
-      return { w: w.innerWidth,
-	       h: w.innerHeight,
-	       x : w.pageXOffset,
-	       y : w.pageYOffset };
-    var d = w.document;
-    if( document.compatMode == "CSS1Compat" )
-      return { w: d.documentElement.clientWidth,
-	       h: d.documentElement.clientHeight,
-	       x: d.documentElement.scrollLeft,
-	       y: d.documentElement.scrollTop };
-    else
-      return { w: d.body.clientWidth,
-	       h: d.body.clientHeight,
-	       x: d.body.scrollLeft,
-	       y: d.body.scrollTop};
-  }
+	d3.json("CORDIS.json", function(error, graph) 
+	{
+		var linkedByIndex = {};
+			graph.links.forEach(function(d){
+				linkedByIndex[d.source + "," + d.target] = true;
+			});
 
-  function getQStringParameterByName(name) {
-    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-  }
+		function isConnected(a, b) {
+			return linkedByIndex[a.index + "," + b.index] || linkedByIndex[b.index + "," + a.index] || a.index == b.index;
+		}
 
-  /* Change status of a panel from visible to hidden or viceversa
-     id: identifier of the div to change
-     status: 'on' or 'off'. If not specified, the panel will toggle status
-  */
-  toggleDiv = function( id, status ) {
-    d = d3.select('div#'+id);
-    console.log( 'TOGGLE', id, d.attr('class'), '->', status );
-    if( status === undefined )
-      status = d.attr('class') == 'panel_on' ? 'off' : 'on';
-    d.attr( 'class', 'panel_' + status );
-    return false;
-  }
+		force
+			.nodes(graph.nodes)
+			.links(graph.links)
+			.start();
 
-  /* Select a country in the network and in the country details panel
-  */
-  clearAndSelect = function (id) {
-    SelectCountry(id,true); // we use here the SelectCountry() closure
-  }
+		var link = g.selectAll(".link")
+			.data(graph.links)
+			.enter().append("line")
+			.attr("class", "link")
+			.style("stroke-width",function(d) { return d.weight*.75;})
+			.style("stroke", default_link_color)
 
-  /* Compose the content for the panel with country details.
-     Parameters: the node data, and the array containing all nodes
-  */
-  function getCountryInfo( n, nodeArray ) {
-    info = '<div id="cover">';
-    info += '<div class=t>';
-    info += '<img src="close.png" class="action" style="top: 0px; left: 0px;" title="close panel" onClick="toggleDiv(\'countryInfo\');"/>'
-    info += '<p style="padding-left: 26px;">' + n.label + '</br>' + "[" + n.country + "]" + '</p>';
-    info += '</div>';
-    info += '<br/></div>';
-    return info;
-  }
+		var node = g.selectAll(".node")
+			.data(graph.nodes)
+			.enter().append("g")
+			.attr("class", "node")
+			.call(force.drag)
 
 
-  // *************************************************************************
-
-  var datafile = "./Data/"+currentOrg+".json";
-
-  d3.json(
-    datafile,
-    function(data) {
-      // Declare the variables pointing to the node & link arrays
-      var nodeArray = data.nodes;
-      var linkArray = data.links;
-
-      minLinkWeight =
-        Math.min.apply( null, linkArray.map( function(n) {return n.weight;} ) );
-      maxLinkWeight =
-        Math.max.apply( null, linkArray.map( function(n) {return n.weight;} ) );
-
-      // Add the node & link arrays to the layout, and start it
-      force.nodes(nodeArray).links(linkArray).start();
-
-      // A couple of scales for node radius & edge width
-      var node_size = d3.scale.linear()
-        .domain([0,25])	// we know score is in this domain
-        .range([1,25])
-        .clamp(true);
-      var edge_width = d3.scale.pow().exponent(8)
-        .domain( [minLinkWeight,maxLinkWeight] )
-        .range([1,10])
-        .clamp(true);
-
-      /* Add drag & zoom behaviours */
-      svg.call( d3.behavior.drag().on("drag",dragmove) );
-
-      // ------- Create the elements of the layout (links and nodes) ------
-      var networkGraph = svg.append('svg:g').attr('class','grpParent');
-
-      // links: simple lines
-      var graphLinks = networkGraph.append('svg:g').attr('class','grp gLinks')
-        .selectAll("line")
-        .data(linkArray, function(d) {return d.source.id+'-'+d.target.id;} )
-        .enter().append("line")
-        .style('stroke-width', function(d) { return edge_width(d.weight);} )
-        .attr("class", "link");
-
-      // nodes: an SVG circle
-      var graphNodes = networkGraph.append('svg:g').attr('class','grp gNodes')
-        .selectAll("circle")
-        .data( nodeArray, function(d){ return d.id; } )
-        .enter().append("svg:circle")
-        .attr('id', function(d) { return "c" + d.index; } )
-        .attr('class', function(d) { return 'bubble'+ d.activity;} )
-        .attr('r', function(d) { return node_size(parseFloat(d.score) || 3); } )
-        .attr('pointer-events', 'all')
-        .on("click", function(d) { showMoviePanel(d); } )
-        .on("mouseover", function(d) { highlightGraphNode(d,true,this);  } )
-        .on("mouseout",  function(d) { highlightGraphNode(d,false,this); } );
-
-      // labels: a group with two SVG text: a title and a shadow (as background)
-      var graphLabels = networkGraph.append('svg:g').attr('class','grp gLabel')
-        .selectAll("g.label")
-        .data( nodeArray, function(d){return d.label} )
-        .enter().append("svg:g")
-        .attr('id', function(d) { return "l" + d.index; } )
-        .attr('class','label');
-
-      shadows = graphLabels.append('svg:text')
-        .attr('x','-2em')
-        .attr('y','-.3em')
-        .attr('pointer-events', 'none') // they go to the circle beneath
-        .attr('id', function(d) { return "lb" + d.index; } )
-        .attr('class','nshadow')
-        .text( function(d) { return d.label; } );
-
-      labels = graphLabels.append('svg:text')
-        .attr('x','-2em')
-        .attr('y','-.3em')
-        .attr('pointer-events', 'none') // they go to the circle beneath
-        .attr('id', function(d) { return "lf" + d.index; } )
-        .attr('class','nlabel')
-        .text( function(d) { return d.label; } );
-
-        /*var n =1000;
-        force.start();
-        for (var i = n * n; i > 0; --i) force.tick();
-        force.stop();*/
+		node.on("dblclick.zoom", function(d){ 
+			d3.event.stopPropagation();
+			var dcx = ($("#chartID").width()/2-d.x*zoom.scale());
+			var dcy = ($("#chartID").height()/2-d.y*zoom.scale());
+			zoom.translate([dcx,dcy]);
+			g.attr("transform", "translate("+ dcx + "," + dcy  + ")scale(" + zoom.scale() + ")");
+		});
 
 
-      /* --------------------------------------------------------------------- */
-      /* Select/unselect a node in the network graph.
-         Parameters are:
-         - node: data for the node to be changed,
-         - on: true/false to show/hide the node
-      */
-      function highlightGraphNode( node, on )
-      {
-        // If we are to activate a movie, and there's already one active,
-        // first switch that one off
-        if( on && activeCountry !== undefined ) {
-          console.log("..clear: ",activeCountry);
-          highlightGraphNode( nodeArray[activeCountry], false );
-          console.log("..cleared: ",activeCountry);
-        }
+		var tocolor = "fill";
+		var towhite = "stroke";
 
-        // locate the SVG nodes: circle & label group
-        circle = d3.select( '#c' + node.index );
-        label  = d3.select( '#l' + node.index );
-
-        // activate/deactivate the node itself
-        circle.classed( 'main', on );
-        label.classed( 'on', on /*|| currentZoom >= SHOW_THRESHOLD*/ );
-        label.selectAll('text').classed( 'main', on );
-
-        // set the value for the current active country
-        activeCountry = on ? node.index : undefined;
-        console.log("SHOWNODE finished: "+node.index+" = "+on );
-      }
+		if (outline){
+			tocolor = "stroke"
+			towhite = "fill"
+		}
 
 
-    /* --------------------------------------------------------------------- */
-    /* Show the movie details panel for a given node
-     */
-    function showMoviePanel( node ) {
-      CountryInfoDiv.html( getCountryInfo(node,nodeArray) ).attr("class","panel_on");
-    }
+		var circle = node.append("path")
+			.attr("d", d3.svg.symbol()
+				.size(function(d) { return d.size*150; })
+				.type(function(d) { return "circle"; })
+			)
+			.style(tocolor, function(d) { 
+				switch (d.activity) {
+					case "PUB": return "#1f77b4";
+					case "PRC": return "#ff7f0e";
+					case "OTH": return "#ffbb78";
+					case "HES": return "#2ca02c";
+					case "REC": return "#9467bd";
+				}
+			})
+			.style("stroke-width", nominal_stroke)
+			.style(towhite, "white");
 
 
-    /* --------------------------------------------------------------------- */
-    /* Move all graph elements to its new positions. Triggered:
-       - on node repositioning (as result of a force-directed iteration)
-       - on translations (user is panning)
-       - on zoom changes (user is zooming)
-       - on explicit node highlight (user clicks in a movie panel link)
-       Set also the values keeping track of current offset & zoom values
-    */
-    function repositionGraph( off, z, mode ) {
-      // do we want to do a transition?
-      var doTr = (mode == 'move');
-
-      //initial draw, repositioning
-      if (mode == 'tick') {
-        g = d3.select('g.grpParent')
-        g = g.transition().duration(ANIMATION_TIME);
-        g.attr("transform", function(d) { return "translate("+ off.x+","+off.y+")" } );
-      }
-
-      // drag: translate to new offset
-      if( off !== undefined && (off.x != currentOffset.x || off.y != currentOffset.y ) ) {
-        g = d3.select('g.grpParent')
-        if( doTr )
-        g = g.transition().duration(ANIMATION_TIME);
-        g.attr("transform", function(d) { return "translate("+ off.x+","+off.y+")" } );
-        currentOffset.x = off.x;
-        currentOffset.y = off.y;
-      }
-
-      // zoom: get new value of zoom
-      if( z === undefined ) {
-        z = currentZoom;
-        if( mode != 'tick' )
-        return;	// no zoom, no tick, we don't need to go further
-      }
-      else
-        currentZoom = z;
-
-      // move edges
-      e = doTr ? graphLinks.transition().duration(ANIMATION_TIME) : graphLinks;
-      e.attr("x1", function(d) { return z*(d.source.x); })
-        .attr("y1", function(d) { return z*(d.source.y); })
-        .attr("x2", function(d) { return z*(d.target.x); })
-        .attr("y2", function(d) { return z*(d.target.y); });
-
-      // move nodes
-      n = doTr ? graphNodes.transition().duration(ANIMATION_TIME) : graphNodes;
-      n.attr("transform", function(d) { return "translate(" +z*d.x+","+z*d.y+")" } );
-      console.log('here');
-      // move labels
-      l = doTr ? graphLabels.transition().duration(ANIMATION_TIME) : graphLabels;
-      l.attr("transform", function(d) { return "translate(" +z*d.x+","+z*d.y+")" } );
-    }
+		var text = g.selectAll(".text")
+			.data(graph.nodes)
+			.enter().append("text")
+			.attr("dy", ".35em")
+			.style("font-size", nominal_text_size + "px")
+			.style("opacity", 0);
 
 
-    /* --------------------------------------------------------------------- */
-    /* Perform drag
-     */
-    function dragmove(d) {
-      offset = { x : currentOffset.x + d3.event.dx, y : currentOffset.y + d3.event.dy };
-      repositionGraph( offset, undefined, 'drag' );
-    }
+		if (text_center)
+			text.text(function(d) { return (d.label + " - " + d.country).toLowerCase(); })
+				.style("text-anchor", "middle");
+		else 
+			text.attr("dx", function(d) {return (size(d.size)||nominal_base_node_size);})
+				.text(function(d) { return '\u2002'+(d.label + " - " + d.country).toLowerCase(); });
 
 
-    /* --------------------------------------------------------------------- */
-    /* Perform zoom. We do "semantic zoom", not geometric zoom
-     * (i.e. nodes do not change size, but get spread out or stretched
-     * together as zoom changes)
-     */
-    function doZoom( increment ) {
-      newZoom = increment === undefined ? d3.event.scale : zoomScale(currentZoom+increment);
-      if( currentZoom == newZoom )
-      return;	// no zoom change
+		node.on("mouseover", function(d) {
+				set_highlight(d);
+			})
+			.on("mousedown", function(d) { 
+				d3.event.stopPropagation();
+				focus_node = d;
+				set_focus(d)
+				if (highlight_node === null) 
+					set_highlight(d)
+			})
+			.on("mouseout", function(d) {
+				exit_highlight();
+			});
 
-      // See what is the current graph window size
-      s = getViewportSize();
-      width  = s.w<WIDTH  ? s.w : WIDTH;
-      height = s.h<HEIGHT ? s.h : HEIGHT;
 
-      width = WIDTH;
-      height = HEIGHT;
+		d3.select(window).on("mouseup",  function() {
+			if (focus_node!==null){
+				focus_node = null;
+				if (highlight_trans<1){
+					circle.style("opacity", 1);
+					text.style("opacity", 1);
+					link.style("opacity", 1);
+				}
+			}
+			if (highlight_node === null) 
+				exit_highlight();
+		});
 
-      // Compute the new offset, so that the graph center does not move
-      /*zoomRatio = newZoom/currentZoom;
-      newOffset = { x : currentOffset.x*zoomRatio + width/2*(1-zoomRatio), y : currentOffset.y*zoomRatio + height/2*(1-zoomRatio)};
-      console.log(newOffset);*/
 
-      newOffset = {x: currentOffset.x-(40-(newZoom-1)*6.8), y:currentOffset.y-(40-(newZoom-1)*6.8)};
-      /*zoomDiff = newZoom - currentZoom;
-      if(zoomDiff > 0) { //zoom plus
-        newOffset = {x: currentOffset.x-40, y: currentOffset.y-40};
-      }
-      else {
-        newOffset = {x: currentOffset.x+40, y: currentOffset.y+40};
-      }
-      console.log(currentOffset);*/
-      // Reposition the graph
-      repositionGraph( newOffset, newZoom, "zoom" );
-    }
+		function exit_highlight(){
+			highlight_node = null;
+			if (focus_node===null){
+				svg.style("cursor","move");
+				if (highlight_color!="white"){
+					circle.style(towhite, "white");
+					text.style("font-weight", "normal")
+						.style("opacity", 0);
+					link.style("stroke", function(o) {return (isNumber(o.score) && o.score>=0)?color(o.score):default_link_color});
+				}
+			}
+		}
 
-    /* --------------------------------------------------------------------- */
 
-    /* process events from the force-directed graph */
-    force.on("tick", function() {
-      repositionGraph(currentOffset,undefined,'tick');
-    });
+		function set_focus(d){
+			if (highlight_trans<1){
+				circle.style("opacity", function(o) {
+						return isConnected(d, o) ? 1 : highlight_trans;
+					});/*
+					text.style("opacity", function(o) {
+						return isConnected(d, o) ? 1 : highlight_trans;
+					});*/
+					link.style("opacity", function(o) {
+						return o.source.index == d.index || o.target.index == d.index ? 1 : highlight_trans;
+					});
+			}
+		}
 
-    //graphNodes.call(function(d){doZoom(100/nodeArray.length)});
 
-    document.getElementById("zoomPlus").addEventListener("click", function(){
-      doZoom(0.1);
-    });
+		function set_highlight(d){
+			$("#infoTitle").text(d.label);
+			$("#infoText").text(d.country);
+			$("#infoBubble").show();
+			svg.style("cursor","pointer");
+			if (focus_node!==null) 
+				d = focus_node;
+			highlight_node = d;
+			if (highlight_color!="white") {
+				circle.style(towhite, function(o) {
+					return isConnected(d, o) ? highlight_color : "white";
+				});
+				link.style("stroke", function(o) {
+					return o.source.index == d.index || o.target.index == d.index ? highlight_color : ((isNumber(o.score) && o.score>=0)?color(o.score):default_link_color);
+				});
+			}
+		}
 
-    document.getElementById("zoomMinus").addEventListener("click", function(){
-      doZoom(-0.1);
-    });
 
-  }); // end of function(data)
+		zoom.on("zoom", function(){
+			console.log("zoom" + w + " " + h);
+			var stroke = nominal_stroke;
+			if (nominal_stroke*zoom.scale()>max_stroke) 
+				stroke = max_stroke/zoom.scale();
+			circle.style("stroke-width",stroke);
+			var base_radius = nominal_base_node_size;
+			if (nominal_base_node_size*zoom.scale()>max_base_node_size) 
+				base_radius = max_base_node_size/zoom.scale();
+			circle.attr("d", d3.svg.symbol()
+				.size(function(d) { return d.size*150; })
+				.type(function(d) { return "circle"; }))
+			if (!text_center) 
+				text.attr("dx", function(d){ 
+					return (size(d.size)*base_radius/nominal_base_node_size||base_radius); 
+				});
+			var text_size = nominal_text_size;
+			if (nominal_text_size*zoom.scale()>max_text_size) 
+				text_size = max_text_size/zoom.scale();
+			text.style("font-size",text_size + "px");
+			g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+		});
+
+		svg.call(zoom);
+
+		resize();
+
+		d3.select(window)
+			.on("resize", resize);
+
+		force.on("tick", function(){
+			node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+			text.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+			link.attr("x1", function(d) { return d.source.x; })
+				.attr("y1", function(d) { return d.source.y; })
+				.attr("x2", function(d) { return d.target.x; })
+				.attr("y2", function(d) { return d.target.y; });
+			node.attr("cx", function(d) { return d.x; })
+				.attr("cy", function(d) { return d.y; });
+		});
+
+
+		function resize() {
+			console.log("resize")
+			var width = $("#chartID").width(), height = $("#chartID").height();
+			svg.attr("width", width).attr("height", height);
+			force.size([force.size()[0]+(width-w)/zoom.scale(),force.size()[1]+(height-h)/zoom.scale()]).resume();
+			w = width;
+			h = height;
+		}
+
+	});
+
+
+	function vis_by_node_score(score){
+		if (isNumber(score))
+		{
+			if (score>=0.666) 
+				return keyh;
+			else if (score>=0.333) 
+				return keym;
+			else if (score>=0) 
+				return keyl;
+		}
+		return true;
+	}
+
+	function vis_by_link_score(score)
+	{
+		if (isNumber(score))
+		{
+			if (score>=0.666) 
+				return key3;
+			else if (score>=0.333) 
+				return key2;
+			else if (score>=0) 
+				return key1;
+		}
+		return true;
+	}
+
+	function isNumber(n) {
+	  return !isNaN(parseFloat(n)) && isFinite(n);
+	}
+/*
+	$.fn.d3Click = function () {
+		this.each(function (i, e) {
+			console.log("click");
+			var evt = new MouseEvent("dblclick");
+			e.dispatchEvent(evt);
+		});
+	};
+	$(".node").d3Click();*/
 
 } // end of D3ok()
