@@ -1,7 +1,7 @@
 {
 "nodes": [
 {
-    "score":6.0,
+    "score":25.0,
     "activity":"HES",
     "level":1,
     "id":0,
@@ -29,7 +29,7 @@
     "index":0
 },
 {
-    "score":6.0,
+    "score":4.0,
     "activity":"HES",
     "level":1,
     "id":1,
@@ -509,7 +509,7 @@
 {
     "source":0,
     "target":1,
-    "weight":1.4081632653061225
+    "weight":1.0
 },
 {
     "source":0,
