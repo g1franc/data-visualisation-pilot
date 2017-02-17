@@ -118,7 +118,8 @@ def extractForOneOrg(index, linesArray):
 	currentOrg = currentOrg.replace('\"','')
 	currentOrg = currentOrg.replace(',','')
 	currentOrg = currentOrg.replace('&','')
-	WriteJSON("outputJS/" + currentOrg + ".json", orgList, linksList)
+	currentOrg = currentOrg.replace(':','')
+	WriteJSON("c:\A\\" + currentOrg + ".json", orgList, linksList)
 	return copyIndex;
 
 

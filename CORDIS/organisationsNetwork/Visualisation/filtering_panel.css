@@ -8,7 +8,9 @@
 }
 
 .searchBar {
-  width:95%;
+  width:231px;
+  height:23px;
+  font-family: arial;
 }
 
 .FakeDropdownList {
@@ -23,4 +25,5 @@
 
 .filter_cb_panel {
   margin-top:10px;
+  font-family: arial;
 }

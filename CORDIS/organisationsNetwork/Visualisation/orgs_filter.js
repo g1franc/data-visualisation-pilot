@@ -13,6 +13,9 @@ $(document).ready(function(){
           $("#filterOrgsList").hide();
     });
 
+    var currentOrg="ADANA_METROPOLITAN_MUNICIPALITY";
+    $("#org_label").text("ADANA METROPOLITAN MUNICIPALITY");
+
 });
 
 function filterOrgSelected(element) {
@@ -26,6 +29,7 @@ function filterOrgSelected(element) {
 	currentOrg = currentOrg.replace(/\"/g,'')
 	currentOrg = currentOrg.replace(/,/g,'')
 	currentOrg = currentOrg.replace(/&/g,'')
+	currentOrg = currentOrg.replace(/:/g,'')
   D3ok();
 }
 
