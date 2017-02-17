@@ -30,12 +30,16 @@ var zoomCall = undefined;
 var currentOrg = e.options[e.selectedIndex].value;*/
 //var currentOrg = $('#orgDropdown').val();
 
-var currentOrg="ADANA_METROPOLITAN_MUNICIPALITY";
 
 // -------------------------------------------------------------------
 
 // Do the stuff -- to be called after D3.js has loaded
 function D3ok() {
+	var myNode = document.getElementById("chartID");
+  while (myNode.firstChild) {
+      myNode.removeChild(myNode.firstChild);
+  }
+
 	var w = $("#chartID").width();
 	var h = $("#chartID").height();
 
@@ -81,7 +85,9 @@ function D3ok() {
 
 	svg.style("cursor","move");
 
-	d3.json("CORDIS.json", function(error, graph) 
+	var dataFile = "./Data/"+currentOrg+'.json';
+
+	d3.json(dataFile, function(error, graph)
 	{
 		var linkedByIndex = {};
 			graph.links.forEach(function(d){
@@ -108,10 +114,11 @@ function D3ok() {
 			.data(graph.nodes)
 			.enter().append("g")
 			.attr("class", "node")
+			.attr("id", function(d) { return "c" + d.index; } )
 			.call(force.drag)
 
 
-		node.on("dblclick.zoom", function(d){ 
+		node.on("dblclick.zoom", function(d){
 			d3.event.stopPropagation();
 			var dcx = ($("#chartID").width()/2-d.x*zoom.scale());
 			var dcy = ($("#chartID").height()/2-d.y*zoom.scale());
@@ -134,7 +141,7 @@ function D3ok() {
 				.size(function(d) { return d.size*150; })
 				.type(function(d) { return "circle"; })
 			)
-			.style(tocolor, function(d) { 
+			.style(tocolor, function(d) {
 				switch (d.activity) {
 					case "PUB": return "#1f77b4";
 					case "PRC": return "#ff7f0e";
@@ -151,6 +158,7 @@ function D3ok() {
 			.data(graph.nodes)
 			.enter().append("text")
 			.attr("dy", ".35em")
+			.attr("id", function(d) { return "l" + d.index; } )
 			.style("font-size", nominal_text_size + "px")
 			.style("opacity", 0);
 
@@ -158,7 +166,7 @@ function D3ok() {
 		if (text_center)
 			text.text(function(d) { return (d.label + " - " + d.country).toLowerCase(); })
 				.style("text-anchor", "middle");
-		else 
+		else
 			text.attr("dx", function(d) {return (size(d.size)||nominal_base_node_size);})
 				.text(function(d) { return '\u2002'+(d.label + " - " + d.country).toLowerCase(); });
 
@@ -166,11 +174,11 @@ function D3ok() {
 		node.on("mouseover", function(d) {
 				set_highlight(d);
 			})
-			.on("mousedown", function(d) { 
+			.on("mousedown", function(d) {
 				d3.event.stopPropagation();
 				focus_node = d;
 				set_focus(d)
-				if (highlight_node === null) 
+				if (highlight_node === null)
 					set_highlight(d)
 			})
 			.on("mouseout", function(d) {
@@ -187,7 +195,7 @@ function D3ok() {
 					link.style("opacity", 1);
 				}
 			}
-			if (highlight_node === null) 
+			if (highlight_node === null)
 				exit_highlight();
 		});
 
@@ -222,11 +230,12 @@ function D3ok() {
 
 
 		function set_highlight(d){
-			$("#infoTitle").text(d.label);
+			/*$("#infoTitle").text(d.label);
 			$("#infoText").text(d.country);
-			$("#infoBubble").show();
+			$("#infoBubble").show();*/
+			$("#l"+d.index).css("opacity", 1);
 			svg.style("cursor","pointer");
-			if (focus_node!==null) 
+			if (focus_node!==null)
 				d = focus_node;
 			highlight_node = d;
 			if (highlight_color!="white") {
@@ -243,21 +252,21 @@ function D3ok() {
 		zoom.on("zoom", function(){
 			console.log("zoom" + w + " " + h);
 			var stroke = nominal_stroke;
-			if (nominal_stroke*zoom.scale()>max_stroke) 
+			if (nominal_stroke*zoom.scale()>max_stroke)
 				stroke = max_stroke/zoom.scale();
 			circle.style("stroke-width",stroke);
 			var base_radius = nominal_base_node_size;
-			if (nominal_base_node_size*zoom.scale()>max_base_node_size) 
+			if (nominal_base_node_size*zoom.scale()>max_base_node_size)
 				base_radius = max_base_node_size/zoom.scale();
 			circle.attr("d", d3.svg.symbol()
 				.size(function(d) { return d.size*150; })
 				.type(function(d) { return "circle"; }))
-			if (!text_center) 
-				text.attr("dx", function(d){ 
-					return (size(d.size)*base_radius/nominal_base_node_size||base_radius); 
+			if (!text_center)
+				text.attr("dx", function(d){
+					return (size(d.size)*base_radius/nominal_base_node_size||base_radius);
 				});
 			var text_size = nominal_text_size;
-			if (nominal_text_size*zoom.scale()>max_text_size) 
+			if (nominal_text_size*zoom.scale()>max_text_size)
 				text_size = max_text_size/zoom.scale();
 			text.style("font-size",text_size + "px");
 			g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
@@ -297,11 +306,11 @@ function D3ok() {
 	function vis_by_node_score(score){
 		if (isNumber(score))
 		{
-			if (score>=0.666) 
+			if (score>=0.666)
 				return keyh;
-			else if (score>=0.333) 
+			else if (score>=0.333)
 				return keym;
-			else if (score>=0) 
+			else if (score>=0)
 				return keyl;
 		}
 		return true;
@@ -311,11 +320,11 @@ function D3ok() {
 	{
 		if (isNumber(score))
 		{
-			if (score>=0.666) 
+			if (score>=0.666)
 				return key3;
-			else if (score>=0.333) 
+			else if (score>=0.333)
 				return key2;
-			else if (score>=0) 
+			else if (score>=0)
 				return key1;
 		}
 		return true;

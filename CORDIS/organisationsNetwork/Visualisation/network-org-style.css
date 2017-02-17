@@ -221,4 +221,8 @@ text.main {
     font-weight: bold;
 }
 
+#org_label {
+  position: relative;
+  top: 20px;
+  left: 15px;
 }
