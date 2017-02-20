@@ -48,7 +48,7 @@
 <body onload="takeAction();">
 
 	<div id="nocontent" style="padding: auto;">
-		<h1 style="font-family:arial; margin:auto; width:1000px;">Sadly your browser is not compatible with this site</h1>
+		<h1 style="margin:auto; width:1000px;">Sadly your browser is not compatible with this site</h1>
 		<div>
 		<p style="width:1000px; margin:auto; padding-top:15px; text-align: justify;">
 			You can use <a href="http://www.google.com/chrome/">Google
@@ -78,10 +78,10 @@
 		</div>
 		</div>
 		<div style="padding-top:50px;">
-		<h1 style="font-family:Lucida Sans Unicode; margin:auto; width:1000px;text-align: center;padding-top:20px;/*line-height:1em*/height:70px">
+		<h1 style="margin:auto; width:1000px;text-align: center;padding-top:20px;/*line-height:1em*/height:70px">
 			<span style="line-height:1em !important"> Research collaborations between organisations based on EU-funded projects</span></h1>
-		<h1  style="font-family:Lucida Sans Unicode; margin:auto;text-align: center;padding-top:20px;">CORDIS data (H2020)</h1>
-		<p style="width:1000px; margin:auto; padding-top:20px; text-align: justify; font-family:arial;">
+		<h1  style="margin:auto;text-align: center;padding-top:20px;">CORDIS data (H2020)</h1>
+		<p style="width:1000px; margin:auto; padding-top:20px; text-align: justify;">
 			Through this page, you can explore <a href="http://cordis.europa.eu/home_en.html" target="_blank">CORDIS</a> data. CORDIS stands for Community Research and Development Information Service and is the European Commission's primary public repository and portal to disseminate information on all EU-funded research projects and their results in the broadest sense.
 		<br>
 			The visualisation allows to visualise, for each recipients of CORDIS funds, its partners. For one organisation, the size of the bubble represents the number of project participation, its colour the activity of the organisation (e.g. Research Organisations or Private for-profit) and the thickness of the link represents the strength of the collaboration.
@@ -92,6 +92,11 @@
 		</div>
 
 		<div style="width:100%; height:700px;">
+			<div class="help-tip">
+				<p>Hover on a node to see more information about the organisation. You can drag the chart or move nodes independently.
+					Use the left panel to choose an organisation or filter on the choicis suggested in the dropdown menu.
+					Use the mousewheel to zoom in or out the chart.</p>
+			</div>
 			<div style="width:24%; float:left; padding-top:16px;">
 				<div>
 					<input type="text" class="form-control searchBar"  onfocus="displayList()" id="searchbox" placeholder="Search &hellip;" fjs-search>
@@ -136,7 +141,7 @@
 				</fieldset>
 				<fieldset id="country_criteria" class="filter_cb_panel">
 					<legend>Countries</legend>
-					<div id="countries" style="height:490px; overflow-y: scroll;">
+					<div id="countries" style="height:493px; overflow-y: scroll;">
 						<div class="checkbox" fjs-criteria="field=country,ele=#countries input:checkbox">
 						<label>
 							<input type="checkbox" value="Algeria">
@@ -920,12 +925,24 @@
 					</div>
 				</fieldset>
 			</div>
-			<label id="org_label"></label>
+			<div id="org_label"></div>
 			<div id="chartID" style="border:2px solid grey; width:75%; float:right;  height:700px; overflow:hidden;"></div>
 			<!--<div id="zoomDiv" style="width:40px; position:absolute; bottom:135px; right:5px;">
 				<button id="zoomPlus" style="width:40px; height:30px;">+</button>
 				<button id="zoomMinus" style="width:40px; height:30px;">-</button>
 			</div>-->
+			<div class="legend-div" >
+          <div class="legend" style="background-color: #2ca02c;"></div>
+          <p class="legend-label">Education Establishments</p>
+          <div  class="legend" style="background-color: #9467bd;"></div>
+          <p class="legend-label">research organisations</p>
+          <div  class="legend" style="background-color: #ff7f0e;"></div>
+          <p class="legend-label">Private for-profit</p>
+          <div class="legend" style="background-color: #1f77b4;"></div>
+          <p class="legend-label">Public bodies</p>
+          <div class="legend" style="background-color: #ffbb78;"></div>
+          <p class="legend-label">Other</p>
+          </div>
 		</div>
 
 		<div id="sidepanel">
@@ -933,7 +950,7 @@
 		</div>
 
 		<div>
-		<p style="padding-top:15px; text-align: justify; font-family:arial; font-size:11px">
+		<p style="margin-top:53px; text-align: justify;">
             This visualisation has been developed by  <a href="http://www.pwc.be/" target="_blank">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office of the EU</a>
             using the <a href="https://d3js.org/" target="_blank">d3js library</a>
             and is based on datasets provided on the <a href="http://data.europa.eu/euodp/en/data" target="_blank">European Union Data Portal</a> by CORDIS
