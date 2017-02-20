@@ -15,7 +15,7 @@ class JNode:
 		self.index = index
 		self.links = links
 		self.label = label
-		self.size = float(line[9])
+		self.size = (((float(line[7]) - projMin)*(maxBubblesize - minBubbleSize)) / (projMax - projMin)) + minBubbleSize
 		self.id = index
 		self.level = 1
 		self.country = country

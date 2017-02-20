@@ -72,7 +72,7 @@ function D3ok() {
 	var default_node_color = "#ccc";
 	var default_link_color = "#888";
 	var nominal_base_node_size = 8;
-	var nominal_text_size = 10;
+	var nominal_text_size = 12;
 	var max_text_size = 24;
 	var nominal_stroke = 1.5;
 	var max_stroke = 1.5;
@@ -85,7 +85,7 @@ function D3ok() {
 
 	svg.style("cursor","move");
 
-	var dataFile = "./Data/"+currentOrg+'.json';
+	var dataFile = typeof currentOrg !== "undefined" ? "./Data/"+currentOrg+'.json' : "./Data/ADANA_METROPOLITAN_MUNICIPALITY.json";
 
 	d3.json(dataFile, function(error, graph)
 	{
@@ -160,14 +160,16 @@ function D3ok() {
 			.attr("dy", ".35em")
 			.attr("id", function(d) { return "l" + d.index; } )
 			.style("font-size", nominal_text_size + "px")
-			.style("opacity", 0);
+			.style("opacity", 0)
+			.style("font-family", "Lucida Sans Unicode")
+			.style("font-weight", "bold");
 
 
 		if (text_center)
 			text.text(function(d) { return (d.label + " - " + d.country).toLowerCase(); })
 				.style("text-anchor", "middle");
 		else
-			text.attr("dx", function(d) {return (size(d.size)||nominal_base_node_size);})
+			text.attr("dx", function(d) {return (size(d.size)||nominal_base_node_size)+6;})
 				.text(function(d) { return '\u2002'+(d.label + " - " + d.country).toLowerCase(); });
 
 

@@ -234,10 +234,11 @@ text.main {
 
 #org_label {
   position: relative;
-  top: 20px;
-  left: 15px;
-  font-size:13px;
+  top: 25px;
+  left: 20px;
+  font-size:15px;
   color: #666666;
+  width: 75%;
 }
 
 .legend {
@@ -304,6 +305,7 @@ text.main {
 	color: #FFF;
 	font-size: 13px;
 	line-height: 1.4;
+  z-index: 1000;
 }
 
 .help-tip p:before{ /* The pointer of the tooltip */
