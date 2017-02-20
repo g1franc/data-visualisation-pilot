@@ -61,8 +61,8 @@ function D3ok() {
 	var highlight_trans = 0.1;
 
 	var size = d3.scale.pow().exponent(1)
-		.domain([10,500])
-		.range([10,500]);
+		.domain([10,800])
+		.range([10,800]);
 
 	var force = d3.layout.force()
 		.linkDistance(300)
@@ -76,7 +76,7 @@ function D3ok() {
 	var max_text_size = 24;
 	var nominal_stroke = 1.5;
 	var max_stroke = 1.5;
-	var max_base_node_size = 36;
+	var max_base_node_size = 20;
 	var min_zoom = 0.1;
 	var max_zoom = 7;
 	var svg = d3.select("#chartID").append("svg");
@@ -85,7 +85,7 @@ function D3ok() {
 
 	svg.style("cursor","move");
 
-	var dataFile = typeof currentOrg !== "undefined" ? "./Data/"+currentOrg+'.json' : "./Data/ADANA_METROPOLITAN_MUNICIPALITY.json";
+	var dataFile = "./DataCountry/FP6.json";
 
 	d3.json(dataFile, function(error, graph)
 	{
@@ -107,7 +107,7 @@ function D3ok() {
 			.data(graph.links)
 			.enter().append("line")
 			.attr("class", "link")
-			.style("stroke-width",function(d) { return d.weight*.75;})
+			.style("stroke-width",function(d) { return d.weight*.15;})
 			.style("stroke", default_link_color)
 
 		var node = g.selectAll(".node")
@@ -138,7 +138,7 @@ function D3ok() {
 
 		var circle = node.append("path")
 			.attr("d", d3.svg.symbol()
-				.size(function(d) { return d.size*25; })
+				.size(function(d) { return d.size*10; })
 				.type(function(d) { return "circle"; })
 			)
 			.style(tocolor, function(d) {
@@ -261,7 +261,7 @@ function D3ok() {
 			if (nominal_base_node_size*zoom.scale()>max_base_node_size)
 				base_radius = max_base_node_size/zoom.scale();
 			circle.attr("d", d3.svg.symbol()
-				.size(function(d) { return d.size*25; })
+				.size(function(d) { return d.size*10; })
 				.type(function(d) { return "circle"; }))
 			if (!text_center)
 				text.attr("dx", function(d){
