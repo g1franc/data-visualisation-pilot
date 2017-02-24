@@ -85,6 +85,7 @@ function D3ok() {
 
 	svg.style("cursor","move");
 
+
 	var dataFile = "./DataCountry/FP6.json";
 
 	d3.json(dataFile, function(error, graph)
@@ -107,7 +108,7 @@ function D3ok() {
 			.data(graph.links)
 			.enter().append("line")
 			.attr("class", "link")
-			.style("stroke-width",function(d) { return d.weight*.15;})
+			.style("stroke-width",function(d) { return d.weight*.10;})
 			.style("stroke", default_link_color)
 
 		var node = g.selectAll(".node")
@@ -138,7 +139,7 @@ function D3ok() {
 
 		var circle = node.append("path")
 			.attr("d", d3.svg.symbol()
-				.size(function(d) { return d.size*10; })
+				.size(function(d) { return d.size*3; })
 				.type(function(d) { return "circle"; })
 			)
 			.style(tocolor, function(d) {
@@ -261,7 +262,7 @@ function D3ok() {
 			if (nominal_base_node_size*zoom.scale()>max_base_node_size)
 				base_radius = max_base_node_size/zoom.scale();
 			circle.attr("d", d3.svg.symbol()
-				.size(function(d) { return d.size*10; })
+				.size(function(d) { return d.size*3; })
 				.type(function(d) { return "circle"; }))
 			if (!text_center)
 				text.attr("dx", function(d){
