@@ -5,7 +5,8 @@
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 #set current directory
-setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/1 - Cordis/data-visualisation-pilot/Data Preparation 1 - MotionChart")
+workDir <- getwd()
+setwd(workDir)
 
 ### Load datasets
 # FP6: https://data.europa.eu/euodp/data/dataset/cordisfp6projects
@@ -283,11 +284,12 @@ output <- plyr::rename(output,c("Country" = "CountryShort",
                                 "totalBudgetManagedAsCoordinatorsPerCapitaCumulative" = "Budget of coordinated projects / capita - Cumulative"
                                 ))
 
-output <- output[output$Year != 2017, ]
-output <- output[output$Year != 2018, ]
+args <- commandArgs(trailingOnly = TRUE)
+output <- output[output$Year <= args[1], ]
+#output <- output[output$Year != 2018, ]
 output$GDP <- format(output$GDP, scientific = FALSE)
 
 options(scipen = 999)
-write.table(output, "VisualisedData/CountryInformation.csv", sep = "\t", quote = FALSE, row.names = FALSE)
+write.table(output, "VisualisedData/CountryInformation_testScript.csv", sep = "\t", quote = FALSE, row.names = FALSE)
 options(scipen = 0)
 
