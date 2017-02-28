@@ -35,7 +35,6 @@ Dataset_PopByEducAttain = read.csv("../Datasets/edat_lfse_03_1_Data.csv", header
 Dataset_RDExpend = read.csv("../Datasets/rd_e_gerdtot_1_Data.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
 
 
-
 Dataset_Countries = read.csv("../Datasets/Countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 #select only EU-28 countries 
 Dataset_Countries <- Dataset_Countries[Dataset_Countries$EU28 == TRUE,]
@@ -92,8 +91,8 @@ tmp <- plyr::rename(tmp,c("Group.1"="Country",
 
 #save the result in output dataset
 output <- merge(output, tmp, by.x=c("Country", "Year"), by.y=c("Country", "Year"), all.x=TRUE)
-remove(tmp)
 
+remove(tmp)
 remove(Dataset_Projects)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # V. compute the number of project participation (i.e. coordinator or participant role) per country/year ######################################
@@ -117,9 +116,6 @@ tmp2 <- func_TotalNbOfProject(Dataset_FP7Organizations, Dataset_FP7Projects)
 tmp3 <- func_TotalNbOfProject(Dataset_H2020Organizations, Dataset_H2020Projects)
 
 tmp<-rbind(rbind(tmp1, tmp2), tmp3)
-remove(tmp1)
-remove(tmp2)
-remove(tmp3)
 
 #group per country, year
 tmp <-aggregate(tmp$x, by=list(tmp$Group.1, tmp$Group.2), FUN=sum)
@@ -129,19 +125,21 @@ tmp <- plyr::rename(tmp,c("Group.1"="Country",
 
 #save the result in output dataset
 output <- merge(output, tmp, by.x=c("Country", "Year"), by.y=c("Country", "Year"), all.x=TRUE)
+
+remove(tmp1)
+remove(tmp2)
+remove(tmp3)
 remove(tmp)
 remove(func_TotalNbOfProject)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # VI. compute the number of project participation (as participant) per country/year ###########################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-
 output$numberOfProjectParticipants <- output$TotalOfProject - output$numberOfProjectCoordinators
 
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # VI. add the GDP per country/year ############################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-
 output <- merge(output, Dataset_Countries, by.x=c("Country"), by.y=c("euCode"), all.x=TRUE)
 output <- subset(output, select=-c(FP6participantCountries,FP7participantCountries,FP8participantCountries, isoCode,EU28,Schengen))
 Dataset_GDP <- Dataset_GDP[Dataset_GDP$NA_ITEM == "Gross domestic product at market prices",]

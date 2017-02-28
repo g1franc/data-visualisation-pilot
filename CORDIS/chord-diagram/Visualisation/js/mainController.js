@@ -71,9 +71,7 @@ function ($scope) {
     var groupsIDs = [];
 
     data.forEach(function (d) {
-      //d.frameworkContract  = +d.frameworkContract;
       d.nbLinkTmp = +d.nbLinkTmp;
-      //d.flow2 = +d.flow2;
 
       if(groupsIDs.indexOf(d.country1) == -1) {
         groupsIDs.push(d.country1);
@@ -88,11 +86,6 @@ function ($scope) {
       $scope.master[d.frameworkContract].push(d);
     })
     $scope.update();
-    /*setTimeout(function(){
-      groupsIDs.forEach(function(gid){
-        $scope.addFilter(gid);
-      });
-    }, 3000);*/
     groupsIDs.forEach(function(gid){
       $scope.addInitialFilter(gid);
     });

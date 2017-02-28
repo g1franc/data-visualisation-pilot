@@ -13,8 +13,6 @@ function ($window, matrixFactory) {
     dims[1] = size[1] - marg[0] - marg[2]; // HEIGHT
 
     var colors = d3.scale.ordinal()
-      //.range(['#9C6744','#C9BEB9','#CFA07E','#C4BAA1','#C2B6BF','#121212','#8FB5AA','#85889E','#9C7989','#91919C','#242B27','#212429','#99677B','#36352B','#33332F','#2B2B2E','#2E1F13','#2B242A','#918A59','#6E676C','#6E4752','#6B4A2F','#998476','#8A968D','#968D8A','#968D96','#CC855C', '#967860','#929488','#949278','#A0A3BD','#BD93A1','#65666B','#6B5745','#6B6664','#695C52','#56695E','#69545C','#565A69','#696043','#63635C','#636150','#333131','#332820','#302D30','#302D1F','#2D302F','#CFB6A3','#362F2A']);
-      //.range(['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#fee08b', '#ffffbf', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2'])
       .range(['#2C1320', '#432818','#52050a', '#9e0142', '#d53e4f', '#E3879E', '#f46d43', '#fdae61', '#fee08b', '#ffffbf', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2', '#03254e', '#4a5759', '#FECEE9', '#5F4B66'])
 
     var chord = d3.layout.chord()
@@ -34,11 +32,6 @@ function ($window, matrixFactory) {
           value = 0;
         } else {
           value = items.reduce(function (m, n) {
-            /*if (r === c) {
-              return m + (n.flow1 + n.flow2);
-            } else {
-              return m + (n.country1 === r.name ? n.flow1: n.flow2);
-            }*/
             return m+n.nbLinkTmp;
           }, 0);
         }
@@ -128,9 +121,6 @@ function ($window, matrixFactory) {
 
       gEnter.append("text")
         .attr("dy", ".35em")
-        /*.on("click", groupClick)
-        .on("mouseover", dimChords)
-        .on("mouseout", resetChords)*/
         .on("click", highlightChords)
         .text(function (d) {
           return d._id;
