@@ -1,4 +1,4 @@
-var wordCountMapping =
+x
 {
  "european":   6562,
 "international":   3479,
@@ -52,12 +52,8 @@ var wordCountMapping =
 "local":   1062,
 "trade":   1062,
 "company":   1053,
-"new":   1023,
-"œÅŒ":   1014,
 "union":   1011,
 "solutions":   1003,
-"œÄŒ":    995,
-"œÉŒ":    981,
 "cooperation":    970,
 "group":    963,
 "quality":    962,
@@ -69,19 +65,14 @@ var wordCountMapping =
 "innovation":    934,
 "technology":    928,
 "environmental":    892,
-"can":    879,
 "regional":    879,
 "across":    856,
 "leading":    850,
 "financial":    848,
 "based":    846,
-"œÉœ":    840,
 "within":    839,
-"—Ä–":    830,
-"use":    819,
 "training":    809,
 "human":    804,
-"one":    794,
 "standards":    789,
 "develop":    788,
 "main":    783,
@@ -97,7 +88,16 @@ var wordCountMapping =
 "clients":    731,
 "represents":    723,
 "policies":    710,
-"law":    706,
 "promoting":    705,
-"community":    702 
-};
+"community":    702,
+"expertise":    702,
+"organization":    701,
+"aims":    698,
+"areas":    698,
+"order":    694,
+"exchange":    693,
+"organizations":    684,
+"objectives":    683,
+"field":    680,
+"provides":    676 
+}
