@@ -288,6 +288,6 @@ output <- output[output$Year <= args[1], ]
 output$GDP <- format(output$GDP, scientific = FALSE)
 
 options(scipen = 999)
-write.table(output, "VisualisedData/CountryInformation_testScript.csv", sep = "\t", quote = FALSE, row.names = FALSE)
+write.table(output, "VisualisedData/CountryInformation.csv", sep = "\t", quote = FALSE, row.names = FALSE)
 options(scipen = 0)
 
