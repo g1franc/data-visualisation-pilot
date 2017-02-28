@@ -1,8 +1,11 @@
 #install.packages("tm")
-install.packages("RJSONIO")
+#install.packages("RJSONIO")
+#install.packages("plyr")
 require(XML)
 require(tm)
 require(RJSONIO)
+require(plyr)
+
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # I. LOAD DATA ################################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -62,69 +65,36 @@ remove(tmp)
 # III. BUILD DATA.FRAME FOR MAP ###############################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
+#list the possible list of value for interest
+listInterest <- paste(dataset$interest, collapse = ';')
+listInterest <- strsplit(listInterest, ";")[[1]]
+listInterest <- unique(listInterest)
 
-func_BuildDatasetForMapVisualisation  <- function(data, columnName, filterValue){
-  data <- data[grep(filterValue, data[, columnName]), ]
-  output <-aggregate(data$countries, 
-                     by=list(data$countries),
-                     FUN=length, simplify = FALSE)
-  output <- plyr::rename(output,c("Group.1"="Country",
-                                  "x" = as.character(filterValue)))
-  return (output)
+func_test <- function(data, filterValue){
+  data <- data[grep(filterValue, data[, "interest"]), ]
+  output <- count(data, c('countries', 'categories', 'subCategories'))
+  output <- cbind(output, filterValue)
+  
+  return(output)
 }
 
-#list the possible list of value for category/subcategory/interest
-listCategory <- unique(dataset$categories)
-listSubCategory <- unique(dataset$subCategories)
-listInterst <- paste(dataset$interest, collapse = ';')
-listInterst <- strsplit(listInterst, ";")[[1]]
-listInterst <- unique(listInterst)
-         
-
-#compute the number of entity per category/subcategories/interest per country 
+#Compute the number of entity per combination of country, category, subcategory and interest
 data <- list()
 i<-1
-for (j in 1:length(listCategory)){
-  data[[i]] = func_BuildDatasetForMapVisualisation(dataset, "categories", listCategory[j])
+for (j in 1:length(listInterest)){
+  data = rbind(data,func_test(dataset, listInterest[j]))
   i<- i+1
 }
-for (j in 1:length(listSubCategory)){
-  data[[i]] = func_BuildDatasetForMapVisualisation(dataset, "subCategories", listSubCategory[j])
-  i<- i+1
-}
-for (j in 1:length(listInterst)){
-  data[[i]] = func_BuildDatasetForMapVisualisation(dataset, "interest", listInterst[j])
-  i<- i+1
-}
-
-#compute the number of entity per country
-datasetMap <-aggregate(dataset$countries, 
-                       by=list(dataset$countries),
-                       FUN=length, 
-                       simplify = FALSE)
-datasetMap <- plyr::rename(datasetMap,c("Group.1"="Country",
-                                        "x" = "all"))
-
-for (i in 1:length(data)){
-  tmp <- data[[i]]
-  datasetMap <- merge(datasetMap, tmp, by.x=c("Country"), by.y=c("Country"), all.x=TRUE)
-}
-datasetMap$Country <-as.character( datasetMap$Country)
-datasetMap <- sapply(datasetMap, unlist)
-
 
 #save dataset
-write.table(datasetMap, "../Datasets/datasetMap.csv", sep = ";", quote = FALSE, row.names = FALSE)
+write.table(data, "../Datasets/datasetMap.csv", sep = ";", quote = FALSE, row.names = FALSE)
 
 #remove useless variables 
 remove(data)
 remove(i)
 remove(j)
-remove(listCategory)
-remove(listSubCategory)
-remove(listInterst)
-remove(tmp)
-
+remove(listInterest)
+remove(func_test)
 
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
