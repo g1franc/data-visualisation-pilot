@@ -1,11 +1,14 @@
 #install.packages("tm")
+install.packages("RJSONIO")
 require(XML)
 require(tm)
+require(RJSONIO)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # I. LOAD DATA ################################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
-
+getwd()
+setwd("C:/Users/vandeloc/Documents/Documents/Cordis/GitHub/TransparencyRegister/Data Preparation")
 setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/1 - Cordis/data-visualisation-pilot/TransparencyRegister/Map")
 
 xmlfile <-  xmlTreeParse("../Datasets/full_export_new.xml", useInternalNodes = TRUE)
@@ -195,16 +198,46 @@ func_CleanString <- function(data){
                                       stopwords("portuguese"), 
                                       stopwords("spanish"), 
                                       stopwords("norwegian"), 
-                                      stopwords("swedish"))) 
+                                      stopwords("swedish")))
+  docs <- tm_map(docs, stripWhitespace)
 }
-#aggregate all goals and activities 
+# aggregate all goals and activities 
 listGoal <- paste(dataset$goals, collapse = ' ')
 listActivity <- paste(dataset$activities, collapse = ' ')
-# remove punctuation, number, put everything to lower and remove stop words 
+# remove punctuation, number, put everything to lower, remove stop words and white space
 listGoal <- func_CleanString(listGoal)
 listActivity <- func_CleanString(listActivity)
 
 # save dataset 
 writeLines(as.character(listGoal), con="../Datasets/goals.txt")
-writeLines(as.character(listActivity), con="../Datasets/goals.txt")
-                              
+writeLines(as.character(listActivity), con="../Datasets/activities.txt")
+
+# read dataset
+listGoal <- read.csv("../Datasets/goals.txt", header=FALSE, sep="", stringsAsFactors=FALSE)
+listActivity <- read.csv("../Datasets/activities.txt", header=FALSE, sep="", stringsAsFactors=FALSE)
+
+# create document-term matrix (standard with frequency)
+dtm_goal <- DocumentTermMatrix(listGoal)
+dtm_activity <- DocumentTermMatrix(listActivity)
+# dtm_freq <- removeSparseTerms(dtm_freq, 0.995)
+
+# Generate list of 100 most frequent words
+freq_goal <- sort(colSums(as.matrix(dtm_goal)), decreasing=TRUE)   
+freq_list_goal <- head(freq_goal, 100)
+freq_list_goal
+
+freq_activity <- sort(colSums(as.matrix(dtm_activity)), decreasing=TRUE)   
+freq_list_activity <- head(freq_activity, 100)
+freq_list_activity
+
+# Export list of 100 most frequent words
+write.table(freq_list_goal, file="freq_goal.csv", row.names=TRUE, col.names=FALSE, sep = ";")
+write.table(freq_list_activity, file="freq_activity.csv", row.names=TRUE, col.names=FALSE, sep = ";")
+
+# Build JSON
+JSON_goal <- toJSON(freq_list_goal)
+JSON_activity <- toJSON(freq_list_activity)
+
+#save dataset
+write.table(JSON_goal, "../Datasets/wordCountMapping_goal.json", sep = ";", quote = FALSE, row.names = FALSE)
+write.table(JSON_activity, "../Datasets/wordCountMapping_activity.json", sep = ";", quote = FALSE, row.names = FALSE)
