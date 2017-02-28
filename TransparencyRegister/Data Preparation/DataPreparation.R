@@ -105,19 +105,16 @@ remove(func_test)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 func_BuildDatasetForSankeyBasedOnFilterInterest <- function(data, filterValue){
+  #data <- dataset
+  #filterValue <- "Sport"
   data <- data[grep(filterValue, data$interest), ]
   data$interest <- filterValue
   output <-aggregate(data$subCategories, 
-                     by=list(data$subCategories, data$interest),
+                     by=list(data$categories, data$subCategories, data$interest),
                      FUN=length, simplify = FALSE)
-  output$Group.2 <- filterValue
+  output$Group.3 <- filterValue
   return (output)
 }
-
-#compute the number of pair categories / subcategorie 
-datasetSankey1 <-aggregate(dataset$categories, 
-                       by=list(dataset$categories, dataset$subCategories),
-                       FUN=length, simplify = FALSE)
 
 #compute the list of possible interests 
 listInterst <- paste(dataset$interest, collapse = ';')
@@ -130,24 +127,53 @@ for (i in 1:length(listInterst)){
   data[[i]] = func_BuildDatasetForSankeyBasedOnFilterInterest(dataset, listInterst[i])
 }
 tmp <- do.call(rbind, data)
-datasetSankey2 <- data.frame(tmp)
+datasetSankey <- data.frame(tmp)
 
 # aggregate the two datasets 
-datasetSankey <- rbind(datasetSankey1, datasetSankey2)
-datasetSankey <- plyr::rename(datasetSankey,c("Group.1"="From",
-                                              "Group.2" = "To"))
+datasetSankey <- plyr::rename(datasetSankey,c("Group.1" = "category",
+                                              "Group.2" = "subcategory",
+                                              "Group.3" = "interest"))
 datasetSankey <- data.frame(lapply(datasetSankey, as.character), stringsAsFactors=FALSE)
 
+#convert to json 
+makeList<-function(x, parentNode){
+  # x <- datasetSankey
+  if(ncol(x)>2){
+    listSplit <- split(x[-1],x[1],drop=T)
+    lapply(names(listSplit),
+           function(y){
+             list(name=y,
+                  parent=parentNode,
+                  children=makeList(listSplit[[y]], y))
+             }
+           )
+  }else{
+    lapply(seq(nrow(x[1])),
+           function(y){
+             list(name=x[,1][y],
+                  parent=parentNode,
+                  Percentage=x[,2][y])
+             }
+           )
+  }
+}
+
+jsonOut<-toJSON(list(name="Root", parent="null", children=makeList(datasetSankey, "Root")))
 #save dataset
+write.table(jsonOut, "../Datasets/datasetSankey.js", sep = ";", quote = FALSE, row.names = FALSE)
+
+
+
+
 write.table(datasetSankey, "../Datasets/datasetSankey.csv", sep = ";", quote = FALSE, row.names = FALSE)
 
 #remove useless variables 
 remove(data)
 remove(listInterst)
-remove(datasetSankey1)
-remove(datasetSankey2)
+remove(datasetSankey)
 remove(tmp)
 remove(i)
+remove(jsonOut)
 
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
