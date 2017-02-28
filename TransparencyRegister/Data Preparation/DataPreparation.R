@@ -86,6 +86,9 @@ for (j in 1:length(listInterest)){
   i<- i+1
 }
 
+#reorder columns
+data <- data[c(1,2,3,5,4)]
+
 #save dataset
 write.table(data, "../Datasets/datasetMap.csv", sep = ";", quote = FALSE, row.names = FALSE)
 
