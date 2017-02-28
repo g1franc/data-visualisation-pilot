@@ -15,7 +15,7 @@ xmlfile <-  xmlTreeParse("../Datasets/full_export_new.xml", useInternalNodes = T
 # II. TRANSFORM DATA FROM XML TO DATA.FRAME ###################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
-func_parseInterestRepresentative <- function(xmlNode){
+func_parseXMLNodeInterestRepresentative <- function(xmlNode){
   # xmlNode <- rootNode[["resultList"]][i][[1]]
   country <- xmlValue(xmlNode[["contactDetails"]][["country"]])
   cat <- xmlValue(xmlNode[["category"]][["mainCategory"]])
@@ -42,13 +42,13 @@ func_parseInterestRepresentative <- function(xmlNode){
 rootNode = xmlRoot(xmlfile)
 data <- list()
 for (i in 1:xmlSize(rootNode[["resultList"]])){
-  data[[i]] =func_parseInterestRepresentative(rootNode[["resultList"]][i][[1]])
+  data[[i]] =func_parseXMLNodeInterestRepresentative(rootNode[["resultList"]][i][[1]])
 }
 
 tmp <- do.call(rbind, data)
 dataset <- data.frame(tmp)
 
-#clean 
+#remove useless variables 
 remove(i)
 remove(data)
 remove(rootNode)
@@ -60,10 +60,8 @@ remove(tmp)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
-func_BuildDatasetForMapBasedOnFilterCategories <- function(data, filterValue){
-  #data <- dataset
-  #filterValue <- listCategory[1]
-  data <- data[data$categories == filterValue, ]
+func_BuildDatasetForMapVisualisation  <- function(data, columnName, filterValue){
+  data <- data[grep(filterValue, data[, columnName]), ]
   output <-aggregate(data$countries, 
                      by=list(data$countries),
                      FUN=length, simplify = FALSE)
@@ -72,29 +70,7 @@ func_BuildDatasetForMapBasedOnFilterCategories <- function(data, filterValue){
   return (output)
 }
 
-func_BuildDatasetForMapBasedOnFilterSubCategories <- function(data, filterValue){
-  data <- data[data$subCategories == filterValue, ]
-  output <-aggregate(data$countries, 
-                     by=list(data$countries),
-                     FUN=length, simplify = FALSE)
-  output <- plyr::rename(output,c("Group.1"="Country",
-                                  "x" = as.character(filterValue)))
-  return (output)
-}
-
-func_BuildDatasetForMapBasedOnFilterInterest <- function(data, filterValue){
-  #data <- dataset
-  #filterValue <- "Communication"
-  data <- data[grep(filterValue, data$interest), ]
-  output <-aggregate(data$countries, 
-                     by=list(data$countries),
-                     FUN=length, simplify = FALSE)
-  output <- plyr::rename(output,c("Group.1"="Country",
-                                  "x" = as.character(filterValue)))
-  return (output)
-}
-
-
+#list the possible list of value for category/subcategory/interest
 listCategory <- unique(dataset$categories)
 listSubCategory <- unique(dataset$subCategories)
 listInterst <- paste(dataset$interest, collapse = ';')
@@ -102,41 +78,49 @@ listInterst <- strsplit(listInterst, ";")[[1]]
 listInterst <- unique(listInterst)
          
 
-datasetMap <-aggregate(dataset$countries, 
-                       by=list(dataset$countries),
-                       FUN=length, simplify = FALSE)
-datasetMap <- plyr::rename(datasetMap,c("Group.1"="Country",
-                                        "x" = "all"))
-
-
-
+#compute the number of entity per category/subcategories/interest per country 
 data <- list()
 i<-1
 for (j in 1:length(listCategory)){
-  data[[i]] = func_BuildDatasetForMapBasedOnFilterCategories(dataset, listCategory[j])
+  data[[i]] = func_BuildDatasetForMapVisualisation(dataset, "categories", listCategory[j])
   i<- i+1
 }
 for (j in 1:length(listSubCategory)){
-  data[[i]] = func_BuildDatasetForMapBasedOnFilterSubCategories(dataset, listSubCategory[j])
+  data[[i]] = func_BuildDatasetForMapVisualisation(dataset, "subCategories", listSubCategory[j])
   i<- i+1
 }
 for (j in 1:length(listInterst)){
-  data[[i]] = func_BuildDatasetForMapBasedOnFilterInterest(dataset, listInterst[j])
+  data[[i]] = func_BuildDatasetForMapVisualisation(dataset, "interest", listInterst[j])
   i<- i+1
 }
+
+#compute the number of entity per country
+datasetMap <-aggregate(dataset$countries, 
+                       by=list(dataset$countries),
+                       FUN=length, 
+                       simplify = FALSE)
+datasetMap <- plyr::rename(datasetMap,c("Group.1"="Country",
+                                        "x" = "all"))
+
 for (i in 1:length(data)){
-  datasetMap <- merge(datasetMap, data[i], by.x=c("Country"), by.y=c("Country"), all.x=TRUE)
-  
+  tmp <- data[[i]]
+  datasetMap <- merge(datasetMap, tmp, by.x=c("Country"), by.y=c("Country"), all.x=TRUE)
 }
-datasetMap <- data.frame(lapply(datasetMap, as.character), stringsAsFactors=FALSE)
+datasetMap$Country <-as.character( datasetMap$Country)
+datasetMap <- sapply(datasetMap, unlist)
+
+
+#save dataset
 write.table(datasetMap, "../Datasets/datasetMap.csv", sep = ";", quote = FALSE, row.names = FALSE)
 
+#remove useless variables 
 remove(data)
 remove(i)
 remove(j)
 remove(listCategory)
 remove(listSubCategory)
 remove(listInterst)
+remove(tmp)
 
 
 
@@ -145,8 +129,6 @@ remove(listInterst)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 func_BuildDatasetForSankeyBasedOnFilterInterest <- function(data, filterValue){
-  #data <- dataset
-  #filterValue <- "Communication"
   data <- data[grep(filterValue, data$interest), ]
   data$interest <- filterValue
   output <-aggregate(data$subCategories, 
@@ -156,13 +138,17 @@ func_BuildDatasetForSankeyBasedOnFilterInterest <- function(data, filterValue){
   return (output)
 }
 
+#compute the number of pair categories / subcategorie 
 datasetSankey1 <-aggregate(dataset$categories, 
                        by=list(dataset$categories, dataset$subCategories),
                        FUN=length, simplify = FALSE)
 
+#compute the list of possible interests 
 listInterst <- paste(dataset$interest, collapse = ';')
 listInterst <- strsplit(listInterst, ";")[[1]]
 listInterst <- unique(listInterst)
+
+#compute the number of pair subcategorie / Interest
 data <- list()
 for (i in 1:length(listInterst)){
   data[[i]] = func_BuildDatasetForSankeyBasedOnFilterInterest(dataset, listInterst[i])
@@ -170,14 +156,16 @@ for (i in 1:length(listInterst)){
 tmp <- do.call(rbind, data)
 datasetSankey2 <- data.frame(tmp)
 
-
+# aggregate the two datasets 
 datasetSankey <- rbind(datasetSankey1, datasetSankey2)
 datasetSankey <- plyr::rename(datasetSankey,c("Group.1"="From",
                                               "Group.2" = "To"))
-
 datasetSankey <- data.frame(lapply(datasetSankey, as.character), stringsAsFactors=FALSE)
+
+#save dataset
 write.table(datasetSankey, "../Datasets/datasetSankey.csv", sep = ";", quote = FALSE, row.names = FALSE)
 
+#remove useless variables 
 remove(data)
 remove(listInterst)
 remove(datasetSankey1)
@@ -209,11 +197,14 @@ func_CleanString <- function(data){
                                       stopwords("norwegian"), 
                                       stopwords("swedish"))) 
 }
+#aggregate all goals and activities 
 listGoal <- paste(dataset$goals, collapse = ' ')
 listActivity <- paste(dataset$activities, collapse = ' ')
+# remove punctuation, number, put everything to lower and remove stop words 
 listGoal <- func_CleanString(listGoal)
 listActivity <- func_CleanString(listActivity)
 
+# save dataset 
 writeLines(as.character(listGoal), con="../Datasets/goals.txt")
 writeLines(as.character(listActivity), con="../Datasets/goals.txt")
                               
