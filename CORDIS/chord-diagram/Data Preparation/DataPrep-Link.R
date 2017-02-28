@@ -12,9 +12,7 @@ setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visua
 # FP7: https://data.europa.eu/euodp/data/dataset/cordisfp7projects
 # H2020: https://data.europa.eu/euodp/data/dataset/cordisH2020projects
 Dataset_FP6Organizations = read.csv("../Datasets/cordis-fp6organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
-
 Dataset_FP7Organizations = read.csv("../Datasets/cordis-fp7organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
-
 Dataset_H2020Organizations = read.csv("../Datasets/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
 Dataset_Countries = read.csv("../Datasets/Countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
@@ -53,28 +51,23 @@ func_createFrame <- function(vector){
 
 # build a dataset containing all the interactions between the different countries  
 func_BuildLink <- function(frameworkContract, dataset) {
-  # frameworkContract <- "FP6"
-  # dataset <- Dataset_FP6Organizations
-  
+  #select only eu country
   dataset <- merge(dataset, Dataset_Countries, by.x=c("country"), by.y=c("euCode"), all.x=TRUE)
-
   dataset <- dataset[dataset$EU28 == TRUE, ]
   dataset <- dataset[!is.na(dataset$EU28),]
-  
+
+  #remove useless column 
   dataset <- subset(dataset, select=-c(projectAcronym, role, id, name.x, shortName, activityType, endOfParticipation, ecContribution, street, city, postCode,
                                         organizationUrl, contactType, contactTitle, contactFirstNames, contactLastNames, contactFunction, contactTelephoneNumber, contactFaxNumber,
                                         contactEmail, FP6participantCountries,FP7participantCountries,FP8participantCountries, isoCode,EU28,Schengen, country))
   dataset <- plyr::rename(dataset,c("name.y"="country"))
-                                  
-  
-  
+
   #for each project, list the country that participated 
   dataset <-aggregate(dataset$country, 
                       by=list(dataset$projectReference),
                       FUN=paste)
   dataset <- plyr::rename(dataset,c("Group.1"="Project",
                                     "x" = "ListCountries"))
-  
   dataset$ListCountries <- sapply(dataset$ListCountries, unique)
   
   
@@ -115,19 +108,12 @@ func_BuildLink <- function(frameworkContract, dataset) {
 # IV. Build Dataset link ######################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
-
-Sys.time()
 FP6_link <- func_BuildLink("FP6", Dataset_FP6Organizations)
 FP6_link$frameworkContract<- "FP6"
-
-Sys.time()
 FP7_link <- func_BuildLink("FP7", Dataset_FP7Organizations)
 FP7_link$frameworkContract<- "FP7"
-
-Sys.time()
 H2020_link <- func_BuildLink("H2020", Dataset_H2020Organizations)
 H2020_link$frameworkContract<- "H2020"
-Sys.time()
 
 Dataset_link <-rbind(rbind(FP6_link, FP7_link), H2020_link)
 
