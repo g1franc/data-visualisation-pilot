@@ -24,7 +24,7 @@
 	.link {
 	  fill: none;
 	  stroke: #ccc;
-	  stroke-width: 2px;
+	  /*stroke-width: 10px;*/
 	}
 
     </style>
@@ -42,24 +42,29 @@ var treeData = [
   {
     "name": "Top Level",
     "parent": "null",
+    "strokeWidth": 1,
     "children": [
       {
         "name": "Level 2: A",
         "parent": "Top Level",
+        "strokeWidth": 8,
         "children": [
           {
             "name": "Son of A",
-            "parent": "Level 2: A"
+            "parent": "Level 2: A",
+            "strokeWidth": 5
           },
           {
             "name": "Daughter of A",
-            "parent": "Level 2: A"
+            "parent": "Level 2: A",
+            "strokeWidth": 15
           }
         ]
       },
       {
         "name": "Level 2: B",
-        "parent": "Top Level"
+        "parent": "Top Level",
+        "strokeWidth": 1
       }
     ]
   }
@@ -159,7 +164,8 @@ function update(source) {
 	  .attr("d", function(d) {
 		var o = {x: source.x0, y: source.y0};
 		return diagonal({source: o, target: o});
-	  });
+	  })
+    .style("stroke-width",function(d) { return d.target.strokeWidth +"px";});
 
   // Transition links to their new position.
   link.transition()

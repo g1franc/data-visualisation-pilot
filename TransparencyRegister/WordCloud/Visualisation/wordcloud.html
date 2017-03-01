@@ -5,6 +5,7 @@
     <!-- load the d3.js library -->
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="d3.layout.cloud.js"></script>
+    <script src="wordCountMapping_goal.js"></script>
 
   </head>
 
@@ -12,22 +13,19 @@
 
 <script>
 
-var wordCountMapping = {"Hello":20, "world":30, "normally":100, "you":4, "want":25, "more":50, "words":45,
-"than":66, "this":70};
-
 var fill = d3.scale.category20();
 
 var layout = d3.layout.cloud()
-    .size([500, 500])
-    .words([
-      "Hello", "world", "normally", "you", "want", "more", "words",
-      "than", "this"].map(function(d) {
-      return {text: d, size: wordCountMapping[d], test: "haha"};
+    .size([1200, 600])
+    .timeInterval(20)
+    .words(wordsList.map(function(d) {
+      return {text: d, size: wordCountMapping[d]/40, test: "haha"};
     }))
-    .padding(5)
+    //.padding(5)
     .rotate(function() { return ~~(Math.random() * 2) * 90; })
     .font("Impact")
     .fontSize(function(d) { return d.size; })
+    .spiral("archimedean")
     .on("end", draw);
 
 layout.start();
