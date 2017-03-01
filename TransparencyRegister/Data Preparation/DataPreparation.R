@@ -15,6 +15,7 @@ setwd("C:/Users/vandeloc/Documents/Documents/Cordis/GitHub/TransparencyRegister/
 setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/1 - Cordis/data-visualisation-pilot/TransparencyRegister/Map")
 
 xmlfile <-  xmlTreeParse("../Datasets/full_export_new.xml", useInternalNodes = TRUE)
+countries = read.csv("../Datasets/Countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -65,8 +66,15 @@ remove(tmp)
 # III. BUILD DATA.FRAME FOR MAP ###############################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
+countries$name <- toupper(countries$name)
+countries <- subset (countries, select =c(name, EU28))
+datasetMap <- merge(dataset, countries, by.x=c("countries"), by.y=c("name"), all.x=TRUE)
+datasetMap <- datasetMap[datasetMap$EU28 == TRUE,]
+datasetMap <- datasetMap[!is.na(datasetMap$interest),]
+
+
 #list the possible list of value for interest
-listInterest <- paste(dataset$interest, collapse = ';')
+listInterest <- paste(datasetMap$interest, collapse = ';')
 listInterest <- strsplit(listInterest, ";")[[1]]
 listInterest <- unique(listInterest)
 
@@ -82,13 +90,15 @@ func_test <- function(data, filterValue){
 data <- list()
 i<-1
 for (j in 1:length(listInterest)){
-  data = rbind(data,func_test(dataset, listInterest[j]))
+  data = rbind(data,func_test(datasetMap, listInterest[j]))
   i<- i+1
 }
 
 #reorder columns
 data <- data[c(1,2,3,5,4)]
 
+data <- plyr::rename(data,c("filterValue" = "Interest",
+                            "freq" = "Count"))
 #save dataset
 write.table(data, "../Datasets/datasetMap.csv", sep = ";", quote = FALSE, row.names = FALSE)
 
@@ -115,7 +125,6 @@ func_BuildDatasetForSankeyBasedOnFilterInterest <- function(data, filterValue){
   output$Group.3 <- filterValue
   return (output)
 }
-
 #compute the list of possible interests 
 listInterst <- paste(dataset$interest, collapse = ';')
 listInterst <- strsplit(listInterst, ";")[[1]]
@@ -205,7 +214,6 @@ remove(tmp)
 remove(i)
 remove(jsonOut)
 remove(interest)
-
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # III. BUILD DATA.FRAME FOR WORDCLOUD #########################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
