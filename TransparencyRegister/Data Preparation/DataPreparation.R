@@ -97,6 +97,8 @@ for (j in 1:length(listInterest)){
 #reorder columns
 data <- data[c(1,2,3,5,4)]
 
+data <- plyr::rename(data,c("filterValue" = "Interest",
+                            "freq" = "Count"))
 #save dataset
 write.table(data, "../Datasets/datasetMap.csv", sep = ";", quote = FALSE, row.names = FALSE)
 
