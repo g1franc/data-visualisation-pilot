@@ -134,15 +134,42 @@ datasetSankey <- plyr::rename(datasetSankey,c("Group.1" = "category",
                                               "Group.2" = "subcategory",
                                               "Group.3" = "interest"))
 datasetSankey <- data.frame(lapply(datasetSankey, as.character), stringsAsFactors=FALSE)
+datasetSankey$x <- as.numeric(datasetSankey$x)
 
+# compute number of entity per category
+tmp <-aggregate(datasetSankey$x, 
+                   by=list(datasetSankey$category),
+                   FUN=sum, simplify = FALSE)
+datasetSankey <- merge(datasetSankey, tmp, by.x=c("category"), by.y=c("Group.1"), all.x=TRUE)
+datasetSankey <- plyr::rename(datasetSankey,c("x.x" = "interest.x",
+                                              "x.y" = "category.x"))
+                                              
+# compute number of entity per subcategory
+tmp <-aggregate(datasetSankey$interest.x, 
+                by=list(datasetSankey$category, datasetSankey$subcategory),
+                FUN=sum, simplify = FALSE)
+datasetSankey <- merge(datasetSankey, tmp, by.x=c("category","subcategory"), by.y=c("Group.1","Group.2"), all.x=TRUE)
+datasetSankey <- plyr::rename(datasetSankey,c("x" = "subCategory.x"))
+
+# add colours 
+colours <- c('#2C1320', '#432818','#52050a', '#9e0142', '#d53e4f', '#E3879E', '#f46d43', '#fdae61', '#fee08b', '#ffffbf', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2', '#03254e', '#4a5759', '#FECEE9', '#5F4B66',
+             '#2C1320', '#432818','#52050a', '#9e0142', '#d53e4f', '#E3879E', '#f46d43', '#fdae61', '#fee08b', '#ffffbf', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2', '#03254e', '#4a5759', '#FECEE9')
+interest <- unique(datasetSankey$interest)
+colours = data.frame(interest, colours)
+#datasetSankey <- merge(datasetSankey, colours, by.x=c("interest"), by.y=c("interest"), all.x=TRUE)
+
+
+#datasetSankey <- head(datasetSankey, n=2)
 #convert to json 
 makeList<-function(x, parentNode){
   # x <- datasetSankey
-  if(ncol(x)>2){
+  if(ncol(x)>5){
     listSplit <- split(x[-1],x[1],drop=T)
+    nodeWeight <- as.numeric(x[[1,5]])
     lapply(names(listSplit),
            function(y){
              list(name=y,
+                  weight = nodeWeight,
                   parent=parentNode,
                   children=makeList(listSplit[[y]], y))
              }
@@ -152,7 +179,8 @@ makeList<-function(x, parentNode){
            function(y){
              list(name=x[,1][y],
                   parent=parentNode,
-                  Percentage=x[,2][y])
+#                  colours=x[,5][y],
+                  weight=x[,2][y])
              }
            )
   }
@@ -165,16 +193,16 @@ write.table(jsonOut, "../Datasets/datasetSankey.js", sep = ";", quote = FALSE, r
 
 
 
-write.table(datasetSankey, "../Datasets/datasetSankey.csv", sep = ";", quote = FALSE, row.names = FALSE)
 
 #remove useless variables 
 remove(data)
+remove(colours)
 remove(listInterst)
 remove(datasetSankey)
 remove(tmp)
 remove(i)
 remove(jsonOut)
-
+remove(interest)
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # III. BUILD DATA.FRAME FOR WORDCLOUD #########################################################################################################
