@@ -10,558 +10,579 @@ x
 "children": [
  {
  "name": "Law firms",
+"weight":   1737,
 "parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Communication" 
+"children": [
+ {
+ "name": "Communication",
+"parent": "Law firms",
+"weight":     37 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Home Affairs" 
+ "name": "Home Affairs",
+"parent": "Law firms",
+"weight":     38 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Environment" 
+ "name": "Environment",
+"parent": "Law firms",
+"weight":     68 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Fisheries and Aquaculture" 
+ "name": "Fisheries and Aquaculture",
+"parent": "Law firms",
+"weight":     26 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Internal Market" 
+ "name": "Internal Market",
+"parent": "Law firms",
+"weight":     86 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Enterprise" 
+ "name": "Enterprise",
+"parent": "Law firms",
+"weight":     72 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Law firms",
+"weight":     76 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Employment and Social Affairs" 
+ "name": "Employment and Social Affairs",
+"parent": "Law firms",
+"weight":     42 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Energy" 
+ "name": "Energy",
+"parent": "Law firms",
+"weight":     68 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Culture" 
+ "name": "Culture",
+"parent": "Law firms",
+"weight":     37 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Consumer Affairs" 
+ "name": "Consumer Affairs",
+"parent": "Law firms",
+"weight":     63 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Economic and Financial Affairs" 
+ "name": "Economic and Financial Affairs",
+"parent": "Law firms",
+"weight":     71 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "General and Institutional Affairs" 
+ "name": "General and Institutional Affairs",
+"parent": "Law firms",
+"weight":     52 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Education" 
+ "name": "Education",
+"parent": "Law firms",
+"weight":     27 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Audiovisual and Media" 
+ "name": "Audiovisual and Media",
+"parent": "Law firms",
+"weight":     47 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Enlargement" 
+ "name": "Enlargement",
+"parent": "Law firms",
+"weight":     22 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Humanitarian Aid" 
+ "name": "Humanitarian Aid",
+"parent": "Law firms",
+"weight":     20 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Customs" 
+ "name": "Customs",
+"parent": "Law firms",
+"weight":     49 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Youth" 
+ "name": "Youth",
+"parent": "Law firms",
+"weight":     17 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Budget" 
+ "name": "Budget",
+"parent": "Law firms",
+"weight":     18 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "External Relations" 
+ "name": "External Relations",
+"parent": "Law firms",
+"weight":     40 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Climate Action" 
+ "name": "Climate Action",
+"parent": "Law firms",
+"weight":     41 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Development" 
+ "name": "Development",
+"parent": "Law firms",
+"weight":     49 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Trade" 
+ "name": "Trade",
+"parent": "Law firms",
+"weight":     73 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Transport" 
+ "name": "Transport",
+"parent": "Law firms",
+"weight":     48 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Public Health" 
+ "name": "Public Health",
+"parent": "Law firms",
+"weight":     41 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Food Safety" 
+ "name": "Food Safety",
+"parent": "Law firms",
+"weight":     37 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Law firms",
+"weight":     37 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Information Society" 
+ "name": "Information Society",
+"parent": "Law firms",
+"weight":     54 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Research and Technology" 
+ "name": "Research and Technology",
+"parent": "Law firms",
+"weight":     47 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Law firms",
+"weight":     32 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Taxation" 
+ "name": "Taxation",
+"parent": "Law firms",
+"weight":     64 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Sport" 
+ "name": "Sport",
+"parent": "Law firms",
+"weight":     28 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Trans-European Networks" 
+ "name": "Trans-European Networks",
+"parent": "Law firms",
+"weight":     44 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Agriculture and Rural Development" 
+ "name": "Agriculture and Rural Development",
+"parent": "Law firms",
+"weight":     38 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Competition" 
+ "name": "Competition",
+"parent": "Law firms",
+"weight":     89 
 },
 {
- "name": "Law firms",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Regional Policy" 
-},
-{
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Culture" 
-},
-{
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "Regional Policy",
+"parent": "Law firms",
+"weight":     39 
+} 
+] 
 },
 {
  "name": "Professional consultancies",
+"weight":   1737,
 "parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Research and Technology" 
+"children": [
+ {
+ "name": "Culture",
+"parent": "Professional consultancies",
+"weight":    231 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "General and Institutional Affairs" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Professional consultancies",
+"weight":    201 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Employment and Social Affairs" 
+ "name": "Research and Technology",
+"parent": "Professional consultancies",
+"weight":    462 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Audiovisual and Media" 
+ "name": "General and Institutional Affairs",
+"parent": "Professional consultancies",
+"weight":    271 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Fisheries and Aquaculture" 
+ "name": "Employment and Social Affairs",
+"parent": "Professional consultancies",
+"weight":    279 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Climate Action" 
+ "name": "Audiovisual and Media",
+"parent": "Professional consultancies",
+"weight":    262 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Internal Market" 
+ "name": "Fisheries and Aquaculture",
+"parent": "Professional consultancies",
+"weight":    173 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Enterprise" 
+ "name": "Climate Action",
+"parent": "Professional consultancies",
+"weight":    351 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Budget" 
+ "name": "Internal Market",
+"parent": "Professional consultancies",
+"weight":    369 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Enterprise",
+"parent": "Professional consultancies",
+"weight":    443 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Consumer Affairs" 
+ "name": "Budget",
+"parent": "Professional consultancies",
+"weight":    165 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Humanitarian Aid" 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Professional consultancies",
+"weight":    139 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Economic and Financial Affairs" 
+ "name": "Consumer Affairs",
+"parent": "Professional consultancies",
+"weight":    308 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Development" 
+ "name": "Humanitarian Aid",
+"parent": "Professional consultancies",
+"weight":    152 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Education" 
+ "name": "Economic and Financial Affairs",
+"parent": "Professional consultancies",
+"weight":    373 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Taxation" 
+ "name": "Development",
+"parent": "Professional consultancies",
+"weight":    383 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Communication" 
+ "name": "Education",
+"parent": "Professional consultancies",
+"weight":    254 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Trade" 
+ "name": "Taxation",
+"parent": "Professional consultancies",
+"weight":    252 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Energy" 
+ "name": "Communication",
+"parent": "Professional consultancies",
+"weight":    275 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Enlargement" 
+ "name": "Trade",
+"parent": "Professional consultancies",
+"weight":    337 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "External Relations" 
+ "name": "Energy",
+"parent": "Professional consultancies",
+"weight":    438 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Enlargement",
+"parent": "Professional consultancies",
+"weight":    166 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Environment" 
+ "name": "External Relations",
+"parent": "Professional consultancies",
+"weight":    264 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Public Health" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Professional consultancies",
+"weight":    222 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Food Safety" 
+ "name": "Environment",
+"parent": "Professional consultancies",
+"weight":    455 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Regional Policy" 
+ "name": "Public Health",
+"parent": "Professional consultancies",
+"weight":    314 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Home Affairs" 
+ "name": "Food Safety",
+"parent": "Professional consultancies",
+"weight":    272 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Agriculture and Rural Development" 
+ "name": "Regional Policy",
+"parent": "Professional consultancies",
+"weight":    294 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Trans-European Networks" 
+ "name": "Home Affairs",
+"parent": "Professional consultancies",
+"weight":    176 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Youth" 
+ "name": "Agriculture and Rural Development",
+"parent": "Professional consultancies",
+"weight":    293 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Sport" 
+ "name": "Trans-European Networks",
+"parent": "Professional consultancies",
+"weight":    292 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Competition" 
+ "name": "Youth",
+"parent": "Professional consultancies",
+"weight":    190 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Customs" 
+ "name": "Sport",
+"parent": "Professional consultancies",
+"weight":    162 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Transport" 
+ "name": "Competition",
+"parent": "Professional consultancies",
+"weight":    350 
 },
 {
- "name": "Professional consultancies",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Information Society" 
+ "name": "Customs",
+"parent": "Professional consultancies",
+"weight":    189 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "External Relations" 
+ "name": "Transport",
+"parent": "Professional consultancies",
+"weight":    357 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Employment and Social Affairs" 
-},
-{
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Energy" 
-},
-{
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Research and Technology" 
+ "name": "Information Society",
+"parent": "Professional consultancies",
+"weight":    391 
+} 
+] 
 },
 {
  "name": "Self-employed consultants",
+"weight":   1737,
 "parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Budget" 
+"children": [
+ {
+ "name": "External Relations",
+"parent": "Self-employed consultants",
+"weight":    115 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Competition" 
+ "name": "Employment and Social Affairs",
+"parent": "Self-employed consultants",
+"weight":    113 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Public Health" 
+ "name": "Energy",
+"parent": "Self-employed consultants",
+"weight":    171 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Home Affairs" 
+ "name": "Research and Technology",
+"parent": "Self-employed consultants",
+"weight":    206 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "Budget",
+"parent": "Self-employed consultants",
+"weight":     52 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Audiovisual and Media" 
+ "name": "Competition",
+"parent": "Self-employed consultants",
+"weight":    147 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "General and Institutional Affairs" 
+ "name": "Public Health",
+"parent": "Self-employed consultants",
+"weight":    106 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Environment" 
+ "name": "Home Affairs",
+"parent": "Self-employed consultants",
+"weight":     69 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Trade" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Self-employed consultants",
+"weight":     78 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Education" 
+ "name": "Audiovisual and Media",
+"parent": "Self-employed consultants",
+"weight":     87 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Information Society" 
+ "name": "General and Institutional Affairs",
+"parent": "Self-employed consultants",
+"weight":    116 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Youth" 
+ "name": "Environment",
+"parent": "Self-employed consultants",
+"weight":    206 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Climate Action" 
+ "name": "Trade",
+"parent": "Self-employed consultants",
+"weight":    146 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Enlargement" 
+ "name": "Education",
+"parent": "Self-employed consultants",
+"weight":    118 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Communication" 
+ "name": "Information Society",
+"parent": "Self-employed consultants",
+"weight":    146 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Customs" 
+ "name": "Youth",
+"parent": "Self-employed consultants",
+"weight":     83 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Regional Policy" 
+ "name": "Climate Action",
+"parent": "Self-employed consultants",
+"weight":    143 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Consumer Affairs" 
+ "name": "Enlargement",
+"parent": "Self-employed consultants",
+"weight":     72 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Transport" 
+ "name": "Communication",
+"parent": "Self-employed consultants",
+"weight":    106 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Culture" 
+ "name": "Customs",
+"parent": "Self-employed consultants",
+"weight":     60 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Agriculture and Rural Development" 
+ "name": "Regional Policy",
+"parent": "Self-employed consultants",
+"weight":    111 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Economic and Financial Affairs" 
+ "name": "Consumer Affairs",
+"parent": "Self-employed consultants",
+"weight":    145 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Food Safety" 
+ "name": "Transport",
+"parent": "Self-employed consultants",
+"weight":    119 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Trans-European Networks" 
+ "name": "Culture",
+"parent": "Self-employed consultants",
+"weight":    110 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Fisheries and Aquaculture" 
+ "name": "Agriculture and Rural Development",
+"parent": "Self-employed consultants",
+"weight":    122 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Internal Market" 
+ "name": "Economic and Financial Affairs",
+"parent": "Self-employed consultants",
+"weight":    155 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Humanitarian Aid" 
+ "name": "Food Safety",
+"parent": "Self-employed consultants",
+"weight":    113 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Trans-European Networks",
+"parent": "Self-employed consultants",
+"weight":    112 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Enterprise" 
+ "name": "Fisheries and Aquaculture",
+"parent": "Self-employed consultants",
+"weight":     66 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Internal Market",
+"parent": "Self-employed consultants",
+"weight":    166 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Development" 
+ "name": "Humanitarian Aid",
+"parent": "Self-employed consultants",
+"weight":     68 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Sport" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Self-employed consultants",
+"weight":    101 
 },
 {
- "name": "Self-employed consultants",
-"parent": "I - Professional consultancies/law firms/self-employed consultants",
-"weight": "Taxation" 
+ "name": "Enterprise",
+"parent": "Self-employed consultants",
+"weight":    181 
+},
+{
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Self-employed consultants",
+"weight":     64 
+},
+{
+ "name": "Development",
+"parent": "Self-employed consultants",
+"weight":    194 
+},
+{
+ "name": "Sport",
+"parent": "Self-employed consultants",
+"weight":     48 
+},
+{
+ "name": "Taxation",
+"parent": "Self-employed consultants",
+"weight":     80 
+} 
+] 
 } 
 ] 
 },
@@ -572,743 +593,771 @@ x
 "children": [
  {
  "name": "Companies & groups",
+"weight":  18891,
 "parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Audiovisual and Media" 
+"children": [
+ {
+ "name": "Audiovisual and Media",
+"parent": "Companies & groups",
+"weight":    375 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Sport" 
+ "name": "Sport",
+"parent": "Companies & groups",
+"weight":     94 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Budget" 
+ "name": "Budget",
+"parent": "Companies & groups",
+"weight":    198 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Companies & groups",
+"weight":    375 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Enterprise" 
+ "name": "Enterprise",
+"parent": "Companies & groups",
+"weight":    991 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Competition" 
+ "name": "Competition",
+"parent": "Companies & groups",
+"weight":   1033 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Environment" 
+ "name": "Environment",
+"parent": "Companies & groups",
+"weight":   1042 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Transport" 
+ "name": "Transport",
+"parent": "Companies & groups",
+"weight":    663 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Research and Technology" 
+ "name": "Research and Technology",
+"parent": "Companies & groups",
+"weight":   1061 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Companies & groups",
+"weight":    266 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Economic and Financial Affairs" 
+ "name": "Economic and Financial Affairs",
+"parent": "Companies & groups",
+"weight":    819 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Fisheries and Aquaculture" 
+ "name": "Fisheries and Aquaculture",
+"parent": "Companies & groups",
+"weight":    116 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Trans-European Networks" 
+ "name": "Trans-European Networks",
+"parent": "Companies & groups",
+"weight":    517 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Information Society" 
+ "name": "Information Society",
+"parent": "Companies & groups",
+"weight":    752 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Energy" 
+ "name": "Energy",
+"parent": "Companies & groups",
+"weight":    871 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Climate Action" 
+ "name": "Climate Action",
+"parent": "Companies & groups",
+"weight":    754 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Companies & groups",
+"weight":    232 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Customs" 
+ "name": "Customs",
+"parent": "Companies & groups",
+"weight":    417 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Public Health" 
+ "name": "Public Health",
+"parent": "Companies & groups",
+"weight":    440 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Development" 
+ "name": "Development",
+"parent": "Companies & groups",
+"weight":    577 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Consumer Affairs" 
+ "name": "Consumer Affairs",
+"parent": "Companies & groups",
+"weight":    786 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "External Relations" 
+ "name": "External Relations",
+"parent": "Companies & groups",
+"weight":    443 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Culture" 
+ "name": "Culture",
+"parent": "Companies & groups",
+"weight":    264 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Taxation" 
+ "name": "Taxation",
+"parent": "Companies & groups",
+"weight":    705 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "General and Institutional Affairs" 
+ "name": "General and Institutional Affairs",
+"parent": "Companies & groups",
+"weight":    473 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Education" 
+ "name": "Education",
+"parent": "Companies & groups",
+"weight":    296 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Humanitarian Aid" 
+ "name": "Humanitarian Aid",
+"parent": "Companies & groups",
+"weight":    115 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Youth" 
+ "name": "Youth",
+"parent": "Companies & groups",
+"weight":    143 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Internal Market" 
+ "name": "Internal Market",
+"parent": "Companies & groups",
+"weight":   1026 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Enlargement" 
+ "name": "Enlargement",
+"parent": "Companies & groups",
+"weight":    178 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Communication" 
+ "name": "Communication",
+"parent": "Companies & groups",
+"weight":    359 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Home Affairs" 
+ "name": "Home Affairs",
+"parent": "Companies & groups",
+"weight":    260 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Agriculture and Rural Development" 
+ "name": "Agriculture and Rural Development",
+"parent": "Companies & groups",
+"weight":    300 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Regional Policy" 
+ "name": "Regional Policy",
+"parent": "Companies & groups",
+"weight":    337 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Trade" 
+ "name": "Trade",
+"parent": "Companies & groups",
+"weight":    853 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Food Safety" 
+ "name": "Food Safety",
+"parent": "Companies & groups",
+"weight":    286 
 },
 {
- "name": "Companies & groups",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Employment and Social Affairs" 
-},
-{
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Competition" 
-},
-{
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Culture" 
+ "name": "Employment and Social Affairs",
+"parent": "Companies & groups",
+"weight":    474 
+} 
+] 
 },
 {
  "name": "Other organisations",
+"weight":  18891,
 "parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Sport" 
+"children": [
+ {
+ "name": "Competition",
+"parent": "Other organisations",
+"weight":    125 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Education" 
+ "name": "Culture",
+"parent": "Other organisations",
+"weight":     83 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Economic and Financial Affairs" 
+ "name": "Sport",
+"parent": "Other organisations",
+"weight":     35 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Fisheries and Aquaculture" 
+ "name": "Education",
+"parent": "Other organisations",
+"weight":    102 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Communication" 
+ "name": "Economic and Financial Affairs",
+"parent": "Other organisations",
+"weight":    104 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Enlargement" 
+ "name": "Fisheries and Aquaculture",
+"parent": "Other organisations",
+"weight":     51 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Employment and Social Affairs" 
+ "name": "Communication",
+"parent": "Other organisations",
+"weight":     70 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Youth" 
+ "name": "Enlargement",
+"parent": "Other organisations",
+"weight":     40 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Environment" 
+ "name": "Employment and Social Affairs",
+"parent": "Other organisations",
+"weight":     84 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Regional Policy" 
+ "name": "Youth",
+"parent": "Other organisations",
+"weight":     56 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Enterprise" 
+ "name": "Environment",
+"parent": "Other organisations",
+"weight":    152 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Research and Technology" 
+ "name": "Regional Policy",
+"parent": "Other organisations",
+"weight":     69 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Food Safety" 
+ "name": "Enterprise",
+"parent": "Other organisations",
+"weight":    131 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Trade" 
+ "name": "Research and Technology",
+"parent": "Other organisations",
+"weight":    138 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Home Affairs" 
+ "name": "Food Safety",
+"parent": "Other organisations",
+"weight":     77 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Audiovisual and Media" 
+ "name": "Trade",
+"parent": "Other organisations",
+"weight":     94 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Information Society" 
+ "name": "Home Affairs",
+"parent": "Other organisations",
+"weight":     39 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Energy" 
+ "name": "Audiovisual and Media",
+"parent": "Other organisations",
+"weight":     77 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Budget" 
+ "name": "Information Society",
+"parent": "Other organisations",
+"weight":    121 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Energy",
+"parent": "Other organisations",
+"weight":    101 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Consumer Affairs" 
+ "name": "Budget",
+"parent": "Other organisations",
+"weight":     33 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Public Health" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Other organisations",
+"weight":     78 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Development" 
+ "name": "Consumer Affairs",
+"parent": "Other organisations",
+"weight":    120 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "External Relations" 
+ "name": "Public Health",
+"parent": "Other organisations",
+"weight":     77 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Transport" 
+ "name": "Development",
+"parent": "Other organisations",
+"weight":    102 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "External Relations",
+"parent": "Other organisations",
+"weight":     64 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Taxation" 
+ "name": "Transport",
+"parent": "Other organisations",
+"weight":     78 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "General and Institutional Affairs" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Other organisations",
+"weight":     43 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Trans-European Networks" 
+ "name": "Taxation",
+"parent": "Other organisations",
+"weight":     71 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Humanitarian Aid" 
+ "name": "General and Institutional Affairs",
+"parent": "Other organisations",
+"weight":     76 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Climate Action" 
+ "name": "Trans-European Networks",
+"parent": "Other organisations",
+"weight":     81 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Internal Market" 
+ "name": "Humanitarian Aid",
+"parent": "Other organisations",
+"weight":     26 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Climate Action",
+"parent": "Other organisations",
+"weight":     80 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Customs" 
+ "name": "Internal Market",
+"parent": "Other organisations",
+"weight":    141 
 },
 {
- "name": "Other organisations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Agriculture and Rural Development" 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Other organisations",
+"weight":     37 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Culture" 
+ "name": "Customs",
+"parent": "Other organisations",
+"weight":     44 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Development" 
-},
-{
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Enlargement" 
-},
-{
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Customs" 
+ "name": "Agriculture and Rural Development",
+"parent": "Other organisations",
+"weight":     70 
+} 
+] 
 },
 {
  "name": "Trade and business associations",
+"weight":  18891,
 "parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Employment and Social Affairs" 
+"children": [
+ {
+ "name": "Culture",
+"parent": "Trade and business associations",
+"weight":    278 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Audiovisual and Media" 
+ "name": "Development",
+"parent": "Trade and business associations",
+"weight":    759 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Regional Policy" 
+ "name": "Enlargement",
+"parent": "Trade and business associations",
+"weight":    241 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Budget" 
+ "name": "Customs",
+"parent": "Trade and business associations",
+"weight":    614 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Employment and Social Affairs",
+"parent": "Trade and business associations",
+"weight":    730 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Enterprise" 
+ "name": "Audiovisual and Media",
+"parent": "Trade and business associations",
+"weight":    346 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Energy" 
+ "name": "Regional Policy",
+"parent": "Trade and business associations",
+"weight":    457 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Environment" 
+ "name": "Budget",
+"parent": "Trade and business associations",
+"weight":    285 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "External Relations" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Trade and business associations",
+"weight":    468 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Fisheries and Aquaculture" 
+ "name": "Enterprise",
+"parent": "Trade and business associations",
+"weight":   1298 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Public Health" 
+ "name": "Energy",
+"parent": "Trade and business associations",
+"weight":    968 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Economic and Financial Affairs" 
+ "name": "Environment",
+"parent": "Trade and business associations",
+"weight":   1373 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "General and Institutional Affairs" 
+ "name": "External Relations",
+"parent": "Trade and business associations",
+"weight":    406 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Internal Market" 
+ "name": "Fisheries and Aquaculture",
+"parent": "Trade and business associations",
+"weight":    234 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Trans-European Networks" 
+ "name": "Public Health",
+"parent": "Trade and business associations",
+"weight":    618 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Humanitarian Aid" 
+ "name": "Economic and Financial Affairs",
+"parent": "Trade and business associations",
+"weight":   1038 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Climate Action" 
+ "name": "General and Institutional Affairs",
+"parent": "Trade and business associations",
+"weight":    581 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Consumer Affairs" 
+ "name": "Internal Market",
+"parent": "Trade and business associations",
+"weight":   1390 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Trans-European Networks",
+"parent": "Trade and business associations",
+"weight":    547 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Research and Technology" 
+ "name": "Humanitarian Aid",
+"parent": "Trade and business associations",
+"weight":     80 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Competition" 
+ "name": "Climate Action",
+"parent": "Trade and business associations",
+"weight":    835 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Agriculture and Rural Development" 
+ "name": "Consumer Affairs",
+"parent": "Trade and business associations",
+"weight":   1078 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Education" 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Trade and business associations",
+"weight":    195 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "Research and Technology",
+"parent": "Trade and business associations",
+"weight":   1054 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Taxation" 
+ "name": "Competition",
+"parent": "Trade and business associations",
+"weight":   1281 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Youth" 
+ "name": "Agriculture and Rural Development",
+"parent": "Trade and business associations",
+"weight":    545 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Sport" 
+ "name": "Education",
+"parent": "Trade and business associations",
+"weight":    479 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Home Affairs" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Trade and business associations",
+"weight":    216 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Transport" 
+ "name": "Taxation",
+"parent": "Trade and business associations",
+"weight":    913 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Trade" 
+ "name": "Youth",
+"parent": "Trade and business associations",
+"weight":    198 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Information Society" 
+ "name": "Sport",
+"parent": "Trade and business associations",
+"weight":    100 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Communication" 
+ "name": "Home Affairs",
+"parent": "Trade and business associations",
+"weight":    310 
 },
 {
- "name": "Trade and business associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Food Safety" 
+ "name": "Transport",
+"parent": "Trade and business associations",
+"weight":    736 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Food Safety" 
+ "name": "Trade",
+"parent": "Trade and business associations",
+"weight":   1086 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Information Society",
+"parent": "Trade and business associations",
+"weight":    671 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Communication",
+"parent": "Trade and business associations",
+"weight":    340 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Humanitarian Aid" 
-},
-{
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Sport" 
-},
-{
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Internal Market" 
+ "name": "Food Safety",
+"parent": "Trade and business associations",
+"weight":    643 
+} 
+] 
 },
 {
  "name": "Trade unions and professional associations",
+"weight":  18891,
 "parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Enlargement" 
+"children": [
+ {
+ "name": "Food Safety",
+"parent": "Trade unions and professional associations",
+"weight":    172 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Transport" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Trade unions and professional associations",
+"weight":    208 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Culture" 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Trade unions and professional associations",
+"weight":     63 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Development" 
+ "name": "Humanitarian Aid",
+"parent": "Trade unions and professional associations",
+"weight":     63 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Fisheries and Aquaculture" 
+ "name": "Sport",
+"parent": "Trade unions and professional associations",
+"weight":     36 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Trade" 
+ "name": "Internal Market",
+"parent": "Trade unions and professional associations",
+"weight":    400 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Home Affairs" 
+ "name": "Enlargement",
+"parent": "Trade unions and professional associations",
+"weight":     76 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Youth" 
+ "name": "Transport",
+"parent": "Trade unions and professional associations",
+"weight":    175 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Audiovisual and Media" 
+ "name": "Culture",
+"parent": "Trade unions and professional associations",
+"weight":    154 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Budget" 
+ "name": "Development",
+"parent": "Trade unions and professional associations",
+"weight":    263 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Climate Action" 
+ "name": "Fisheries and Aquaculture",
+"parent": "Trade unions and professional associations",
+"weight":     73 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Enterprise" 
+ "name": "Trade",
+"parent": "Trade unions and professional associations",
+"weight":    278 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Customs" 
+ "name": "Home Affairs",
+"parent": "Trade unions and professional associations",
+"weight":    112 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Environment" 
+ "name": "Youth",
+"parent": "Trade unions and professional associations",
+"weight":    119 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Consumer Affairs" 
+ "name": "Audiovisual and Media",
+"parent": "Trade unions and professional associations",
+"weight":    132 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Research and Technology" 
+ "name": "Budget",
+"parent": "Trade unions and professional associations",
+"weight":    108 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Agriculture and Rural Development" 
+ "name": "Climate Action",
+"parent": "Trade unions and professional associations",
+"weight":    191 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Economic and Financial Affairs" 
+ "name": "Enterprise",
+"parent": "Trade unions and professional associations",
+"weight":    278 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "General and Institutional Affairs" 
+ "name": "Customs",
+"parent": "Trade unions and professional associations",
+"weight":    137 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Trans-European Networks" 
+ "name": "Environment",
+"parent": "Trade unions and professional associations",
+"weight":    324 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Communication" 
+ "name": "Consumer Affairs",
+"parent": "Trade unions and professional associations",
+"weight":    294 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Information Society" 
+ "name": "Research and Technology",
+"parent": "Trade unions and professional associations",
+"weight":    255 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Energy" 
+ "name": "Agriculture and Rural Development",
+"parent": "Trade unions and professional associations",
+"weight":    178 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Regional Policy" 
+ "name": "Economic and Financial Affairs",
+"parent": "Trade unions and professional associations",
+"weight":    318 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "External Relations" 
+ "name": "General and Institutional Affairs",
+"parent": "Trade unions and professional associations",
+"weight":    194 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Competition" 
+ "name": "Trans-European Networks",
+"parent": "Trade unions and professional associations",
+"weight":    148 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "Communication",
+"parent": "Trade unions and professional associations",
+"weight":    118 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Education" 
+ "name": "Information Society",
+"parent": "Trade unions and professional associations",
+"weight":    232 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Taxation" 
+ "name": "Energy",
+"parent": "Trade unions and professional associations",
+"weight":    205 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Public Health" 
+ "name": "Regional Policy",
+"parent": "Trade unions and professional associations",
+"weight":    158 
 },
 {
- "name": "Trade unions and professional associations",
-"parent": "II - In-house lobbyists and trade/business/professional associations",
-"weight": "Employment and Social Affairs" 
+ "name": "External Relations",
+"parent": "Trade unions and professional associations",
+"weight":    116 
+},
+{
+ "name": "Competition",
+"parent": "Trade unions and professional associations",
+"weight":    367 
+},
+{
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Trade unions and professional associations",
+"weight":     69 
+},
+{
+ "name": "Education",
+"parent": "Trade unions and professional associations",
+"weight":    266 
+},
+{
+ "name": "Taxation",
+"parent": "Trade unions and professional associations",
+"weight":    259 
+},
+{
+ "name": "Public Health",
+"parent": "Trade unions and professional associations",
+"weight":    207 
+},
+{
+ "name": "Employment and Social Affairs",
+"parent": "Trade unions and professional associations",
+"weight":    353 
+} 
+] 
 } 
 ] 
 },
@@ -1319,188 +1368,195 @@ x
 "children": [
  {
  "name": "Non-governmental organisations, platforms and networks and similar",
+"weight":  24889,
 "parent": "III - Non-governmental organisations",
-"weight": "Fisheries and Aquaculture" 
+"children": [
+ {
+ "name": "Fisheries and Aquaculture",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    408 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Trans-European Networks" 
+ "name": "Trans-European Networks",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    662 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Transport" 
+ "name": "Transport",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    522 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Youth" 
+ "name": "Youth",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    922 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Budget" 
+ "name": "Budget",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    381 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Development" 
+ "name": "Development",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":   1343 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Competition" 
+ "name": "Competition",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    462 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Public Health" 
+ "name": "Public Health",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    995 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Agriculture and Rural Development" 
+ "name": "Agriculture and Rural Development",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    783 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Regional Policy" 
+ "name": "Regional Policy",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    761 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Food Safety" 
+ "name": "Food Safety",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    610 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Economic and Financial Affairs" 
+ "name": "Economic and Financial Affairs",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    655 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    485 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Humanitarian Aid" 
+ "name": "Humanitarian Aid",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    617 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Audiovisual and Media" 
+ "name": "Audiovisual and Media",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    462 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Sport" 
+ "name": "Sport",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    270 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Climate Action" 
+ "name": "Climate Action",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    873 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    179 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":   1011 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Customs" 
+ "name": "Customs",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    208 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Enterprise" 
+ "name": "Enterprise",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    626 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Consumer Affairs" 
+ "name": "Consumer Affairs",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    673 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Environment" 
+ "name": "Environment",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":   1274 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Culture" 
+ "name": "Culture",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    767 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Research and Technology" 
+ "name": "Research and Technology",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":   1049 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Information Society" 
+ "name": "Information Society",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    800 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Education" 
+ "name": "Education",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":   1222 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "General and Institutional Affairs" 
+ "name": "General and Institutional Affairs",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    535 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Employment and Social Affairs" 
+ "name": "Employment and Social Affairs",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    929 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "External Relations" 
+ "name": "External Relations",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    666 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Internal Market" 
+ "name": "Internal Market",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    622 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Communication" 
+ "name": "Communication",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    594 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Enlargement" 
+ "name": "Enlargement",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    387 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Trade" 
+ "name": "Trade",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    581 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Home Affairs" 
+ "name": "Home Affairs",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    422 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Taxation" 
+ "name": "Taxation",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    377 
 },
 {
- "name": "Non-governmental organisations, platforms and networks and similar",
-"parent": "III - Non-governmental organisations",
-"weight": "Energy" 
+ "name": "Energy",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    756 
+} 
+] 
 } 
 ] 
 },
@@ -1511,373 +1567,387 @@ x
 "children": [
  {
  "name": "Academic institutions",
+"weight":   3970,
 "parent": "IV - Think tanks, research and academic institutions",
-"weight": "Humanitarian Aid" 
+"children": [
+ {
+ "name": "Humanitarian Aid",
+"parent": "Academic institutions",
+"weight":     86 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Sport" 
+ "name": "Sport",
+"parent": "Academic institutions",
+"weight":     74 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Customs" 
+ "name": "Customs",
+"parent": "Academic institutions",
+"weight":     55 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Development" 
+ "name": "Development",
+"parent": "Academic institutions",
+"weight":    146 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Communication" 
+ "name": "Communication",
+"parent": "Academic institutions",
+"weight":    104 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Transport" 
+ "name": "Transport",
+"parent": "Academic institutions",
+"weight":    107 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Academic institutions",
+"weight":     58 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Agriculture and Rural Development" 
+ "name": "Agriculture and Rural Development",
+"parent": "Academic institutions",
+"weight":    102 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Taxation" 
+ "name": "Taxation",
+"parent": "Academic institutions",
+"weight":     63 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "General and Institutional Affairs" 
+ "name": "General and Institutional Affairs",
+"parent": "Academic institutions",
+"weight":     92 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "External Relations" 
+ "name": "External Relations",
+"parent": "Academic institutions",
+"weight":     89 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Home Affairs" 
+ "name": "Home Affairs",
+"parent": "Academic institutions",
+"weight":     68 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Employment and Social Affairs" 
+ "name": "Employment and Social Affairs",
+"parent": "Academic institutions",
+"weight":    100 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Youth" 
+ "name": "Youth",
+"parent": "Academic institutions",
+"weight":    121 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Audiovisual and Media" 
+ "name": "Audiovisual and Media",
+"parent": "Academic institutions",
+"weight":    103 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Enlargement" 
+ "name": "Enlargement",
+"parent": "Academic institutions",
+"weight":     67 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Public Health" 
+ "name": "Public Health",
+"parent": "Academic institutions",
+"weight":    129 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Enterprise" 
+ "name": "Enterprise",
+"parent": "Academic institutions",
+"weight":    118 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Regional Policy" 
+ "name": "Regional Policy",
+"parent": "Academic institutions",
+"weight":    116 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Competition" 
+ "name": "Competition",
+"parent": "Academic institutions",
+"weight":     89 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Research and Technology" 
+ "name": "Research and Technology",
+"parent": "Academic institutions",
+"weight":    225 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Academic institutions",
+"weight":     83 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Food Safety" 
+ "name": "Food Safety",
+"parent": "Academic institutions",
+"weight":    115 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Trade" 
+ "name": "Trade",
+"parent": "Academic institutions",
+"weight":     78 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Fisheries and Aquaculture" 
+ "name": "Fisheries and Aquaculture",
+"parent": "Academic institutions",
+"weight":     86 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Trans-European Networks" 
+ "name": "Trans-European Networks",
+"parent": "Academic institutions",
+"weight":    108 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Information Society" 
+ "name": "Information Society",
+"parent": "Academic institutions",
+"weight":    150 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Energy" 
+ "name": "Energy",
+"parent": "Academic institutions",
+"weight":    140 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Budget" 
+ "name": "Budget",
+"parent": "Academic institutions",
+"weight":     75 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Climate Action" 
+ "name": "Climate Action",
+"parent": "Academic institutions",
+"weight":    137 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Education" 
+ "name": "Education",
+"parent": "Academic institutions",
+"weight":    222 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Environment" 
+ "name": "Environment",
+"parent": "Academic institutions",
+"weight":    163 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Consumer Affairs" 
+ "name": "Consumer Affairs",
+"parent": "Academic institutions",
+"weight":     73 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Culture" 
+ "name": "Culture",
+"parent": "Academic institutions",
+"weight":    130 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Economic and Financial Affairs" 
+ "name": "Economic and Financial Affairs",
+"parent": "Academic institutions",
+"weight":    109 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Academic institutions",
+"weight":    101 
 },
 {
- "name": "Academic institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Internal Market" 
-},
-{
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Humanitarian Aid" 
-},
-{
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Internal Market" 
+ "name": "Internal Market",
+"parent": "Academic institutions",
+"weight":     88 
+} 
+] 
 },
 {
  "name": "Think tanks and research institutions",
+"weight":   3970,
 "parent": "IV - Think tanks, research and academic institutions",
-"weight": "Communication" 
+"children": [
+ {
+ "name": "Humanitarian Aid",
+"parent": "Think tanks and research institutions",
+"weight":     93 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Regional Policy" 
+ "name": "Internal Market",
+"parent": "Think tanks and research institutions",
+"weight":    157 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Culture" 
+ "name": "Communication",
+"parent": "Think tanks and research institutions",
+"weight":    130 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Food Safety" 
+ "name": "Regional Policy",
+"parent": "Think tanks and research institutions",
+"weight":    193 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "External Relations" 
+ "name": "Culture",
+"parent": "Think tanks and research institutions",
+"weight":    155 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Home Affairs" 
+ "name": "Food Safety",
+"parent": "Think tanks and research institutions",
+"weight":    128 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Employment and Social Affairs" 
+ "name": "External Relations",
+"parent": "Think tanks and research institutions",
+"weight":    170 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Audiovisual and Media" 
+ "name": "Home Affairs",
+"parent": "Think tanks and research institutions",
+"weight":    119 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Sport" 
+ "name": "Employment and Social Affairs",
+"parent": "Think tanks and research institutions",
+"weight":    163 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Enlargement" 
+ "name": "Audiovisual and Media",
+"parent": "Think tanks and research institutions",
+"weight":     98 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Sport",
+"parent": "Think tanks and research institutions",
+"weight":     51 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Development" 
+ "name": "Enlargement",
+"parent": "Think tanks and research institutions",
+"weight":    101 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Competition" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Think tanks and research institutions",
+"weight":    177 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Transport" 
+ "name": "Development",
+"parent": "Think tanks and research institutions",
+"weight":    247 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Research and Technology" 
+ "name": "Competition",
+"parent": "Think tanks and research institutions",
+"weight":    144 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "Transport",
+"parent": "Think tanks and research institutions",
+"weight":    161 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Economic and Financial Affairs" 
+ "name": "Research and Technology",
+"parent": "Think tanks and research institutions",
+"weight":    375 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Trade" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Think tanks and research institutions",
+"weight":    167 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Fisheries and Aquaculture" 
+ "name": "Economic and Financial Affairs",
+"parent": "Think tanks and research institutions",
+"weight":    220 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Trans-European Networks" 
+ "name": "Trade",
+"parent": "Think tanks and research institutions",
+"weight":    135 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Information Society" 
+ "name": "Fisheries and Aquaculture",
+"parent": "Think tanks and research institutions",
+"weight":     98 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Energy" 
+ "name": "Trans-European Networks",
+"parent": "Think tanks and research institutions",
+"weight":    178 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Climate Action" 
+ "name": "Information Society",
+"parent": "Think tanks and research institutions",
+"weight":    224 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Energy",
+"parent": "Think tanks and research institutions",
+"weight":    258 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Enterprise" 
+ "name": "Climate Action",
+"parent": "Think tanks and research institutions",
+"weight":    234 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Public Health" 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Think tanks and research institutions",
+"weight":     57 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Environment" 
+ "name": "Enterprise",
+"parent": "Think tanks and research institutions",
+"weight":    198 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Consumer Affairs" 
+ "name": "Public Health",
+"parent": "Think tanks and research institutions",
+"weight":    179 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Agriculture and Rural Development" 
+ "name": "Environment",
+"parent": "Think tanks and research institutions",
+"weight":    285 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Taxation" 
+ "name": "Consumer Affairs",
+"parent": "Think tanks and research institutions",
+"weight":    115 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "General and Institutional Affairs" 
+ "name": "Agriculture and Rural Development",
+"parent": "Think tanks and research institutions",
+"weight":    151 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Education" 
+ "name": "Taxation",
+"parent": "Think tanks and research institutions",
+"weight":    101 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Budget" 
+ "name": "General and Institutional Affairs",
+"parent": "Think tanks and research institutions",
+"weight":    169 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Youth" 
+ "name": "Education",
+"parent": "Think tanks and research institutions",
+"weight":    248 
 },
 {
- "name": "Think tanks and research institutions",
-"parent": "IV - Think tanks, research and academic institutions",
-"weight": "Customs" 
+ "name": "Budget",
+"parent": "Think tanks and research institutions",
+"weight":    110 
+},
+{
+ "name": "Youth",
+"parent": "Think tanks and research institutions",
+"weight":    125 
+},
+{
+ "name": "Customs",
+"parent": "Think tanks and research institutions",
+"weight":     57 
+} 
+] 
 } 
 ] 
 },
@@ -1888,188 +1958,195 @@ x
 "children": [
  {
  "name": "Organisations representing churches and religious communities",
+"weight":    637,
 "parent": "V - Organisations representing churches and religious communities",
-"weight": "Consumer Affairs" 
+"children": [
+ {
+ "name": "Consumer Affairs",
+"parent": "Organisations representing churches and religious communities",
+"weight":      9 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Public Health" 
+ "name": "Public Health",
+"parent": "Organisations representing churches and religious communities",
+"weight":     19 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Environment" 
+ "name": "Environment",
+"parent": "Organisations representing churches and religious communities",
+"weight":     28 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "General and Institutional Affairs" 
+ "name": "General and Institutional Affairs",
+"parent": "Organisations representing churches and religious communities",
+"weight":     17 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Agriculture and Rural Development" 
+ "name": "Agriculture and Rural Development",
+"parent": "Organisations representing churches and religious communities",
+"weight":     16 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Humanitarian Aid" 
+ "name": "Humanitarian Aid",
+"parent": "Organisations representing churches and religious communities",
+"weight":     36 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Youth" 
+ "name": "Youth",
+"parent": "Organisations representing churches and religious communities",
+"weight":     30 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Internal Market" 
+ "name": "Internal Market",
+"parent": "Organisations representing churches and religious communities",
+"weight":      8 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Enlargement" 
+ "name": "Enlargement",
+"parent": "Organisations representing churches and religious communities",
+"weight":     16 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Communication" 
+ "name": "Communication",
+"parent": "Organisations representing churches and religious communities",
+"weight":     13 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Development" 
+ "name": "Development",
+"parent": "Organisations representing churches and religious communities",
+"weight":     28 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Regional Policy" 
+ "name": "Regional Policy",
+"parent": "Organisations representing churches and religious communities",
+"weight":     15 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "External Relations" 
+ "name": "External Relations",
+"parent": "Organisations representing churches and religious communities",
+"weight":     30 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Culture" 
+ "name": "Culture",
+"parent": "Organisations representing churches and religious communities",
+"weight":     39 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Taxation" 
+ "name": "Taxation",
+"parent": "Organisations representing churches and religious communities",
+"weight":     12 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Food Safety" 
+ "name": "Food Safety",
+"parent": "Organisations representing churches and religious communities",
+"weight":     10 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Education" 
+ "name": "Education",
+"parent": "Organisations representing churches and religious communities",
+"weight":     37 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Home Affairs" 
+ "name": "Home Affairs",
+"parent": "Organisations representing churches and religious communities",
+"weight":     23 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Employment and Social Affairs" 
+ "name": "Employment and Social Affairs",
+"parent": "Organisations representing churches and religious communities",
+"weight":     26 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Audiovisual and Media" 
+ "name": "Audiovisual and Media",
+"parent": "Organisations representing churches and religious communities",
+"weight":     12 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Sport" 
+ "name": "Sport",
+"parent": "Organisations representing churches and religious communities",
+"weight":      6 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Budget" 
+ "name": "Budget",
+"parent": "Organisations representing churches and religious communities",
+"weight":      6 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Organisations representing churches and religious communities",
+"weight":     40 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Enterprise" 
+ "name": "Enterprise",
+"parent": "Organisations representing churches and religious communities",
+"weight":      9 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Competition" 
+ "name": "Competition",
+"parent": "Organisations representing churches and religious communities",
+"weight":      7 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Transport" 
+ "name": "Transport",
+"parent": "Organisations representing churches and religious communities",
+"weight":      6 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Research and Technology" 
+ "name": "Research and Technology",
+"parent": "Organisations representing churches and religious communities",
+"weight":     12 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Organisations representing churches and religious communities",
+"weight":     28 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Economic and Financial Affairs" 
+ "name": "Economic and Financial Affairs",
+"parent": "Organisations representing churches and religious communities",
+"weight":     15 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Trade" 
+ "name": "Trade",
+"parent": "Organisations representing churches and religious communities",
+"weight":     12 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Fisheries and Aquaculture" 
+ "name": "Fisheries and Aquaculture",
+"parent": "Organisations representing churches and religious communities",
+"weight":      6 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Trans-European Networks" 
+ "name": "Trans-European Networks",
+"parent": "Organisations representing churches and religious communities",
+"weight":      9 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Information Society" 
+ "name": "Information Society",
+"parent": "Organisations representing churches and religious communities",
+"weight":     15 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Energy" 
+ "name": "Energy",
+"parent": "Organisations representing churches and religious communities",
+"weight":     11 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Climate Action" 
+ "name": "Climate Action",
+"parent": "Organisations representing churches and religious communities",
+"weight":     25 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Organisations representing churches and religious communities",
+"weight":      2 
 },
 {
- "name": "Organisations representing churches and religious communities",
-"parent": "V - Organisations representing churches and religious communities",
-"weight": "Customs" 
+ "name": "Customs",
+"parent": "Organisations representing churches and religious communities",
+"weight":      4 
+} 
+] 
 } 
 ] 
 },
@@ -2080,743 +2157,771 @@ x
 "children": [
  {
  "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":   2080,
 "parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Competition" 
+"children": [
+ {
+ "name": "Competition",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     68 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Public Health" 
+ "name": "Public Health",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     57 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Transport" 
+ "name": "Transport",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     79 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Climate Action" 
+ "name": "Climate Action",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     72 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     27 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Education" 
+ "name": "Education",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     78 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Audiovisual and Media" 
+ "name": "Audiovisual and Media",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     35 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Fisheries and Aquaculture" 
+ "name": "Fisheries and Aquaculture",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     40 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Trans-European Networks" 
+ "name": "Trans-European Networks",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     70 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Communication" 
+ "name": "Communication",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     43 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Enlargement" 
+ "name": "Enlargement",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     28 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     20 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Enterprise" 
+ "name": "Enterprise",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     76 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Consumer Affairs" 
+ "name": "Consumer Affairs",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     53 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Environment" 
+ "name": "Environment",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":    123 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Culture" 
+ "name": "Culture",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     48 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "External Relations" 
+ "name": "External Relations",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     42 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Economic and Financial Affairs" 
+ "name": "Economic and Financial Affairs",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     64 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Research and Technology" 
+ "name": "Research and Technology",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":    126 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Taxation" 
+ "name": "Taxation",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     40 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Employment and Social Affairs" 
+ "name": "Employment and Social Affairs",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     62 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Home Affairs" 
+ "name": "Home Affairs",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     27 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Humanitarian Aid" 
+ "name": "Humanitarian Aid",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     22 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Youth" 
+ "name": "Youth",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     40 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Internal Market" 
+ "name": "Internal Market",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     78 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Budget" 
+ "name": "Budget",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     37 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     47 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Customs" 
+ "name": "Customs",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     28 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Development" 
+ "name": "Development",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     90 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Trade" 
+ "name": "Trade",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     50 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Regional Policy" 
+ "name": "Regional Policy",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     76 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Agriculture and Rural Development" 
+ "name": "Agriculture and Rural Development",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     58 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "General and Institutional Affairs" 
+ "name": "General and Institutional Affairs",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     54 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Sport" 
+ "name": "Sport",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     21 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Food Safety" 
+ "name": "Food Safety",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     48 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Energy" 
+ "name": "Energy",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     77 
 },
 {
- "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Information Society" 
-},
-{
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Humanitarian Aid" 
-},
-{
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Information Society",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     76 
+} 
+] 
 },
 {
  "name": "Other sub-national public authorities",
+"weight":   2080,
 "parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Employment and Social Affairs" 
+"children": [
+ {
+ "name": "Humanitarian Aid",
+"parent": "Other sub-national public authorities",
+"weight":     14 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Public Health" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Other sub-national public authorities",
+"weight":     38 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Enterprise" 
+ "name": "Employment and Social Affairs",
+"parent": "Other sub-national public authorities",
+"weight":     54 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Internal Market" 
+ "name": "Public Health",
+"parent": "Other sub-national public authorities",
+"weight":     34 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Sport" 
+ "name": "Enterprise",
+"parent": "Other sub-national public authorities",
+"weight":     43 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Transport" 
+ "name": "Internal Market",
+"parent": "Other sub-national public authorities",
+"weight":     52 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Research and Technology" 
+ "name": "Sport",
+"parent": "Other sub-national public authorities",
+"weight":     20 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "General and Institutional Affairs" 
+ "name": "Transport",
+"parent": "Other sub-national public authorities",
+"weight":     53 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "External Relations" 
+ "name": "Research and Technology",
+"parent": "Other sub-national public authorities",
+"weight":     63 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Home Affairs" 
+ "name": "General and Institutional Affairs",
+"parent": "Other sub-national public authorities",
+"weight":     47 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Fisheries and Aquaculture" 
+ "name": "External Relations",
+"parent": "Other sub-national public authorities",
+"weight":     28 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Audiovisual and Media" 
+ "name": "Home Affairs",
+"parent": "Other sub-national public authorities",
+"weight":     24 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Energy" 
+ "name": "Fisheries and Aquaculture",
+"parent": "Other sub-national public authorities",
+"weight":     18 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Climate Action" 
+ "name": "Audiovisual and Media",
+"parent": "Other sub-national public authorities",
+"weight":     24 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Budget" 
+ "name": "Energy",
+"parent": "Other sub-national public authorities",
+"weight":     55 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Climate Action",
+"parent": "Other sub-national public authorities",
+"weight":     52 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Competition" 
+ "name": "Budget",
+"parent": "Other sub-national public authorities",
+"weight":     27 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Environment" 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Other sub-national public authorities",
+"weight":      9 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Consumer Affairs" 
+ "name": "Competition",
+"parent": "Other sub-national public authorities",
+"weight":     39 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "Environment",
+"parent": "Other sub-national public authorities",
+"weight":     71 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Economic and Financial Affairs" 
+ "name": "Consumer Affairs",
+"parent": "Other sub-national public authorities",
+"weight":     28 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Food Safety" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Other sub-national public authorities",
+"weight":     16 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Education" 
+ "name": "Economic and Financial Affairs",
+"parent": "Other sub-national public authorities",
+"weight":     42 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Trade" 
+ "name": "Food Safety",
+"parent": "Other sub-national public authorities",
+"weight":     29 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Information Society" 
+ "name": "Education",
+"parent": "Other sub-national public authorities",
+"weight":     49 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Trans-European Networks" 
+ "name": "Trade",
+"parent": "Other sub-national public authorities",
+"weight":     24 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Youth" 
+ "name": "Information Society",
+"parent": "Other sub-national public authorities",
+"weight":     46 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Enlargement" 
+ "name": "Trans-European Networks",
+"parent": "Other sub-national public authorities",
+"weight":     45 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Communication" 
+ "name": "Youth",
+"parent": "Other sub-national public authorities",
+"weight":     37 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Customs" 
+ "name": "Enlargement",
+"parent": "Other sub-national public authorities",
+"weight":     19 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Development" 
+ "name": "Communication",
+"parent": "Other sub-national public authorities",
+"weight":     20 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Regional Policy" 
+ "name": "Customs",
+"parent": "Other sub-national public authorities",
+"weight":     11 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Culture" 
+ "name": "Development",
+"parent": "Other sub-national public authorities",
+"weight":     52 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Agriculture and Rural Development" 
+ "name": "Regional Policy",
+"parent": "Other sub-national public authorities",
+"weight":     60 
 },
 {
- "name": "Other sub-national public authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Taxation" 
+ "name": "Culture",
+"parent": "Other sub-national public authorities",
+"weight":     41 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "External Relations" 
+ "name": "Agriculture and Rural Development",
+"parent": "Other sub-national public authorities",
+"weight":     39 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Food Safety" 
-},
-{
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Justice and Fundamental Rights" 
-},
-{
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Consumer Affairs" 
+ "name": "Taxation",
+"parent": "Other sub-national public authorities",
+"weight":     27 
+} 
+] 
 },
 {
  "name": "Regional structures",
+"weight":   2080,
 "parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Public Health" 
+"children": [
+ {
+ "name": "External Relations",
+"parent": "Regional structures",
+"weight":     33 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Internal Market" 
+ "name": "Food Safety",
+"parent": "Regional structures",
+"weight":     34 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Regional Policy" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Regional structures",
+"weight":     36 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Foreign and Security Policy and Defence" 
+ "name": "Consumer Affairs",
+"parent": "Regional structures",
+"weight":     28 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Research and Technology" 
+ "name": "Public Health",
+"parent": "Regional structures",
+"weight":     59 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Culture" 
+ "name": "Internal Market",
+"parent": "Regional structures",
+"weight":     39 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Enterprise" 
+ "name": "Regional Policy",
+"parent": "Regional structures",
+"weight":     90 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Employment and Social Affairs" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Regional structures",
+"weight":     23 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Audiovisual and Media" 
+ "name": "Research and Technology",
+"parent": "Regional structures",
+"weight":     70 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Information Society" 
+ "name": "Culture",
+"parent": "Regional structures",
+"weight":     65 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Climate Action" 
+ "name": "Enterprise",
+"parent": "Regional structures",
+"weight":     59 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Enlargement" 
+ "name": "Employment and Social Affairs",
+"parent": "Regional structures",
+"weight":     64 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Budget" 
+ "name": "Audiovisual and Media",
+"parent": "Regional structures",
+"weight":     28 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Competition" 
+ "name": "Information Society",
+"parent": "Regional structures",
+"weight":     65 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Customs" 
+ "name": "Climate Action",
+"parent": "Regional structures",
+"weight":     68 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Enlargement",
+"parent": "Regional structures",
+"weight":     26 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Agriculture and Rural Development" 
+ "name": "Budget",
+"parent": "Regional structures",
+"weight":     42 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Economic and Financial Affairs" 
+ "name": "Competition",
+"parent": "Regional structures",
+"weight":     42 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Education" 
+ "name": "Customs",
+"parent": "Regional structures",
+"weight":     11 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Taxation" 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Regional structures",
+"weight":     10 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Youth" 
+ "name": "Agriculture and Rural Development",
+"parent": "Regional structures",
+"weight":     56 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Trade" 
+ "name": "Economic and Financial Affairs",
+"parent": "Regional structures",
+"weight":     56 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Energy" 
+ "name": "Education",
+"parent": "Regional structures",
+"weight":     67 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Trans-European Networks" 
+ "name": "Taxation",
+"parent": "Regional structures",
+"weight":     23 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "General and Institutional Affairs" 
+ "name": "Youth",
+"parent": "Regional structures",
+"weight":     60 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Communication" 
+ "name": "Trade",
+"parent": "Regional structures",
+"weight":     38 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Environment" 
+ "name": "Energy",
+"parent": "Regional structures",
+"weight":     75 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Sport" 
+ "name": "Trans-European Networks",
+"parent": "Regional structures",
+"weight":     64 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Fisheries and Aquaculture" 
+ "name": "General and Institutional Affairs",
+"parent": "Regional structures",
+"weight":     44 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Development" 
+ "name": "Communication",
+"parent": "Regional structures",
+"weight":     31 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Transport" 
+ "name": "Environment",
+"parent": "Regional structures",
+"weight":     90 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Home Affairs" 
+ "name": "Sport",
+"parent": "Regional structures",
+"weight":     40 
 },
 {
- "name": "Regional structures",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Humanitarian Aid" 
+ "name": "Fisheries and Aquaculture",
+"parent": "Regional structures",
+"weight":     39 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "External Relations" 
+ "name": "Development",
+"parent": "Regional structures",
+"weight":     69 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Communication" 
+ "name": "Transport",
+"parent": "Regional structures",
+"weight":     67 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Consumer Affairs" 
+ "name": "Home Affairs",
+"parent": "Regional structures",
+"weight":     22 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Foreign and Security Policy and Defence" 
-},
-{
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Information Society" 
-},
-{
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Competition" 
+ "name": "Humanitarian Aid",
+"parent": "Regional structures",
+"weight":     15 
+} 
+] 
 },
 {
  "name": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":   2080,
 "parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Trade" 
+"children": [
+ {
+ "name": "External Relations",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     21 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Justice and Fundamental Rights" 
+ "name": "Communication",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     30 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Taxation" 
+ "name": "Consumer Affairs",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     20 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Public Health" 
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     12 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Culture" 
+ "name": "Information Society",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     35 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Development" 
+ "name": "Competition",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     19 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Environment" 
+ "name": "Trade",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     11 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Transport" 
+ "name": "Justice and Fundamental Rights",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     18 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Home Affairs" 
+ "name": "Taxation",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     11 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Education" 
+ "name": "Public Health",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     30 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Employment and Social Affairs" 
+ "name": "Culture",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     37 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Audiovisual and Media" 
+ "name": "Development",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     46 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Internal Market" 
+ "name": "Environment",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     61 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Climate Action" 
+ "name": "Transport",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     46 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Enlargement" 
+ "name": "Home Affairs",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     12 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Sport" 
+ "name": "Education",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     40 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Enterprise" 
+ "name": "Employment and Social Affairs",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     34 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Regional Policy" 
+ "name": "Audiovisual and Media",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     15 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Financial Stability, Financial Services and Capital Markets Union " 
+ "name": "Internal Market",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     25 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Research and Technology" 
+ "name": "Climate Action",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     49 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Trans-European Networks" 
+ "name": "Enlargement",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     14 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Agriculture and Rural Development" 
+ "name": "Sport",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     15 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Youth" 
+ "name": "Enterprise",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     28 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Food Safety" 
+ "name": "Regional Policy",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     51 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Budget" 
+ "name": "Financial Stability, Financial Services and Capital Markets Union ",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":      3 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Energy" 
+ "name": "Research and Technology",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     44 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Customs" 
+ "name": "Trans-European Networks",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     36 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Humanitarian Aid" 
+ "name": "Agriculture and Rural Development",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     28 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "General and Institutional Affairs" 
+ "name": "Youth",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     34 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Fisheries and Aquaculture" 
+ "name": "Food Safety",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     21 
 },
 {
- "name": "Transnational associations and networks of public regional or other sub-national authorities",
-"parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
-"weight": "Economic and Financial Affairs" 
+ "name": "Budget",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     19 
+},
+{
+ "name": "Energy",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     36 
+},
+{
+ "name": "Customs",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     10 
+},
+{
+ "name": "Humanitarian Aid",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     18 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     20 
+},
+{
+ "name": "Fisheries and Aquaculture",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     17 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     21 
+} 
+] 
 } 
 ] 
 } 
