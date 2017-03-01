@@ -156,8 +156,10 @@ colours <- c('#2C1320', '#432818','#52050a', '#9e0142', '#d53e4f', '#E3879E', '#
              '#2C1320', '#432818','#52050a', '#9e0142', '#d53e4f', '#E3879E', '#f46d43', '#fdae61', '#fee08b', '#ffffbf', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2', '#03254e', '#4a5759', '#FECEE9')
 interest <- unique(datasetSankey$interest)
 colours = data.frame(interest, colours)
-#datasetSankey <- merge(datasetSankey, colours, by.x=c("interest"), by.y=c("interest"), all.x=TRUE)
+datasetSankey <- merge(datasetSankey, colours, by.x=c("interest"), by.y=c("interest"), all.x=TRUE)
 
+datasetSankey <- datasetSankey[c("category", "subcategory", "interest", "interest.x", "category.x", "subCategory.x", "colours")]
+datasetSankey <- datasetSankey[order(datasetSankey$category,datasetSankey$subcategory,datasetSankey$interest),]
 
 #datasetSankey <- head(datasetSankey, n=2)
 #convert to json 
@@ -179,7 +181,7 @@ makeList<-function(x, parentNode){
            function(y){
              list(name=x[,1][y],
                   parent=parentNode,
-#                  colours=x[,5][y],
+                  colours=x[,5][y],
                   weight=x[,2][y])
              }
            )
