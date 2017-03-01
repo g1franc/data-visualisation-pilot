@@ -5,578 +5,582 @@ x
 "children": [
  {
  "name": "I - Professional consultancies/law firms/self-employed consultants",
+"weight":  16537,
 "parent": "Root",
 "children": [
  {
  "name": "Law firms",
+"weight":   1737,
 "parent": "I - Professional consultancies/law firms/self-employed consultants",
 "children": [
  {
- "name": "Audiovisual and Media",
-"parent": "Law firms",
-"Percentage": "47" 
-},
-{
- "name": "Climate Action",
-"parent": "Law firms",
-"Percentage": "41" 
-},
-{
  "name": "Communication",
 "parent": "Law firms",
-"Percentage": "37" 
-},
-{
- "name": "Competition",
-"parent": "Law firms",
-"Percentage": "89" 
-},
-{
- "name": "Consumer Affairs",
-"parent": "Law firms",
-"Percentage": "63" 
-},
-{
- "name": "Culture",
-"parent": "Law firms",
-"Percentage": "37" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Law firms",
-"Percentage": "71" 
-},
-{
- "name": "Education",
-"parent": "Law firms",
-"Percentage": "27" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Law firms",
-"Percentage": "42" 
-},
-{
- "name": "Energy",
-"parent": "Law firms",
-"Percentage": "68" 
-},
-{
- "name": "Enlargement",
-"parent": "Law firms",
-"Percentage": "22" 
-},
-{
- "name": "Enterprise",
-"parent": "Law firms",
-"Percentage": "72" 
-},
-{
- "name": "Environment",
-"parent": "Law firms",
-"Percentage": "68" 
-},
-{
- "name": "External Relations",
-"parent": "Law firms",
-"Percentage": "40" 
-},
-{
- "name": "Foreign and Security Policy and Defence",
-"parent": "Law firms",
-"Percentage": "37" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Law firms",
-"Percentage": "52" 
+"weight":     37 
 },
 {
  "name": "Home Affairs",
 "parent": "Law firms",
-"Percentage": "38" 
+"weight":     38 
 },
 {
- "name": "Information Society",
+ "name": "Environment",
 "parent": "Law firms",
-"Percentage": "54" 
-},
-{
- "name": "Internal Market",
-"parent": "Law firms",
-"Percentage": "86" 
-},
-{
- "name": "Justice and Fundamental Rights",
-"parent": "Law firms",
-"Percentage": "76" 
-},
-{
- "name": "Public Health",
-"parent": "Law firms",
-"Percentage": "41" 
-},
-{
- "name": "Regional Policy",
-"parent": "Law firms",
-"Percentage": "39" 
-},
-{
- "name": "Research and Technology",
-"parent": "Law firms",
-"Percentage": "47" 
-},
-{
- "name": "Taxation",
-"parent": "Law firms",
-"Percentage": "64" 
-},
-{
- "name": "Trade",
-"parent": "Law firms",
-"Percentage": "73" 
-},
-{
- "name": "Trans-European Networks",
-"parent": "Law firms",
-"Percentage": "44" 
-},
-{
- "name": "Youth",
-"parent": "Law firms",
-"Percentage": "17" 
-},
-{
- "name": "Budget",
-"parent": "Law firms",
-"Percentage": "18" 
-},
-{
- "name": "Customs",
-"parent": "Law firms",
-"Percentage": "49" 
-},
-{
- "name": "Development",
-"parent": "Law firms",
-"Percentage": "49" 
-},
-{
- "name": "Transport",
-"parent": "Law firms",
-"Percentage": "48" 
-},
-{
- "name": "Agriculture and Rural Development",
-"parent": "Law firms",
-"Percentage": "38" 
-},
-{
- "name": "Food Safety",
-"parent": "Law firms",
-"Percentage": "37" 
+"weight":     68 
 },
 {
  "name": "Fisheries and Aquaculture",
 "parent": "Law firms",
-"Percentage": "26" 
+"weight":     26 
+},
+{
+ "name": "Internal Market",
+"parent": "Law firms",
+"weight":     86 
+},
+{
+ "name": "Enterprise",
+"parent": "Law firms",
+"weight":     72 
+},
+{
+ "name": "Justice and Fundamental Rights",
+"parent": "Law firms",
+"weight":     76 
+},
+{
+ "name": "Employment and Social Affairs",
+"parent": "Law firms",
+"weight":     42 
+},
+{
+ "name": "Energy",
+"parent": "Law firms",
+"weight":     68 
+},
+{
+ "name": "Culture",
+"parent": "Law firms",
+"weight":     37 
+},
+{
+ "name": "Consumer Affairs",
+"parent": "Law firms",
+"weight":     63 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Law firms",
+"weight":     71 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Law firms",
+"weight":     52 
+},
+{
+ "name": "Education",
+"parent": "Law firms",
+"weight":     27 
+},
+{
+ "name": "Audiovisual and Media",
+"parent": "Law firms",
+"weight":     47 
+},
+{
+ "name": "Enlargement",
+"parent": "Law firms",
+"weight":     22 
 },
 {
  "name": "Humanitarian Aid",
 "parent": "Law firms",
-"Percentage": "20" 
+"weight":     20 
 },
 {
- "name": "Sport",
+ "name": "Customs",
 "parent": "Law firms",
-"Percentage": "28" 
+"weight":     49 
+},
+{
+ "name": "Youth",
+"parent": "Law firms",
+"weight":     17 
+},
+{
+ "name": "Budget",
+"parent": "Law firms",
+"weight":     18 
+},
+{
+ "name": "External Relations",
+"parent": "Law firms",
+"weight":     40 
+},
+{
+ "name": "Climate Action",
+"parent": "Law firms",
+"weight":     41 
+},
+{
+ "name": "Development",
+"parent": "Law firms",
+"weight":     49 
+},
+{
+ "name": "Trade",
+"parent": "Law firms",
+"weight":     73 
+},
+{
+ "name": "Transport",
+"parent": "Law firms",
+"weight":     48 
+},
+{
+ "name": "Public Health",
+"parent": "Law firms",
+"weight":     41 
+},
+{
+ "name": "Food Safety",
+"parent": "Law firms",
+"weight":     37 
+},
+{
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Law firms",
+"weight":     37 
+},
+{
+ "name": "Information Society",
+"parent": "Law firms",
+"weight":     54 
+},
+{
+ "name": "Research and Technology",
+"parent": "Law firms",
+"weight":     47 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Law firms",
-"Percentage": "32" 
+"weight":     32 
+},
+{
+ "name": "Taxation",
+"parent": "Law firms",
+"weight":     64 
+},
+{
+ "name": "Sport",
+"parent": "Law firms",
+"weight":     28 
+},
+{
+ "name": "Trans-European Networks",
+"parent": "Law firms",
+"weight":     44 
+},
+{
+ "name": "Agriculture and Rural Development",
+"parent": "Law firms",
+"weight":     38 
+},
+{
+ "name": "Competition",
+"parent": "Law firms",
+"weight":     89 
+},
+{
+ "name": "Regional Policy",
+"parent": "Law firms",
+"weight":     39 
 } 
 ] 
 },
 {
  "name": "Professional consultancies",
+"weight":   1737,
 "parent": "I - Professional consultancies/law firms/self-employed consultants",
 "children": [
  {
- "name": "Audiovisual and Media",
-"parent": "Professional consultancies",
-"Percentage": "262" 
-},
-{
- "name": "Climate Action",
-"parent": "Professional consultancies",
-"Percentage": "351" 
-},
-{
- "name": "Communication",
-"parent": "Professional consultancies",
-"Percentage": "275" 
-},
-{
- "name": "Competition",
-"parent": "Professional consultancies",
-"Percentage": "350" 
-},
-{
- "name": "Consumer Affairs",
-"parent": "Professional consultancies",
-"Percentage": "308" 
-},
-{
  "name": "Culture",
 "parent": "Professional consultancies",
-"Percentage": "231" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Professional consultancies",
-"Percentage": "373" 
-},
-{
- "name": "Education",
-"parent": "Professional consultancies",
-"Percentage": "254" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Professional consultancies",
-"Percentage": "279" 
-},
-{
- "name": "Energy",
-"parent": "Professional consultancies",
-"Percentage": "438" 
-},
-{
- "name": "Enlargement",
-"parent": "Professional consultancies",
-"Percentage": "166" 
-},
-{
- "name": "Enterprise",
-"parent": "Professional consultancies",
-"Percentage": "443" 
-},
-{
- "name": "Environment",
-"parent": "Professional consultancies",
-"Percentage": "455" 
-},
-{
- "name": "External Relations",
-"parent": "Professional consultancies",
-"Percentage": "264" 
+"weight":    231 
 },
 {
  "name": "Foreign and Security Policy and Defence",
 "parent": "Professional consultancies",
-"Percentage": "201" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Professional consultancies",
-"Percentage": "271" 
-},
-{
- "name": "Home Affairs",
-"parent": "Professional consultancies",
-"Percentage": "176" 
-},
-{
- "name": "Information Society",
-"parent": "Professional consultancies",
-"Percentage": "391" 
-},
-{
- "name": "Internal Market",
-"parent": "Professional consultancies",
-"Percentage": "369" 
-},
-{
- "name": "Justice and Fundamental Rights",
-"parent": "Professional consultancies",
-"Percentage": "222" 
-},
-{
- "name": "Public Health",
-"parent": "Professional consultancies",
-"Percentage": "314" 
-},
-{
- "name": "Regional Policy",
-"parent": "Professional consultancies",
-"Percentage": "294" 
+"weight":    201 
 },
 {
  "name": "Research and Technology",
 "parent": "Professional consultancies",
-"Percentage": "462" 
+"weight":    462 
 },
 {
- "name": "Taxation",
+ "name": "General and Institutional Affairs",
 "parent": "Professional consultancies",
-"Percentage": "252" 
+"weight":    271 
 },
 {
- "name": "Trade",
+ "name": "Employment and Social Affairs",
 "parent": "Professional consultancies",
-"Percentage": "337" 
+"weight":    279 
 },
 {
- "name": "Trans-European Networks",
+ "name": "Audiovisual and Media",
 "parent": "Professional consultancies",
-"Percentage": "292" 
-},
-{
- "name": "Youth",
-"parent": "Professional consultancies",
-"Percentage": "190" 
-},
-{
- "name": "Budget",
-"parent": "Professional consultancies",
-"Percentage": "165" 
-},
-{
- "name": "Customs",
-"parent": "Professional consultancies",
-"Percentage": "189" 
-},
-{
- "name": "Development",
-"parent": "Professional consultancies",
-"Percentage": "383" 
-},
-{
- "name": "Transport",
-"parent": "Professional consultancies",
-"Percentage": "357" 
-},
-{
- "name": "Agriculture and Rural Development",
-"parent": "Professional consultancies",
-"Percentage": "293" 
-},
-{
- "name": "Food Safety",
-"parent": "Professional consultancies",
-"Percentage": "272" 
+"weight":    262 
 },
 {
  "name": "Fisheries and Aquaculture",
 "parent": "Professional consultancies",
-"Percentage": "173" 
+"weight":    173 
 },
 {
- "name": "Humanitarian Aid",
+ "name": "Climate Action",
 "parent": "Professional consultancies",
-"Percentage": "152" 
+"weight":    351 
 },
 {
- "name": "Sport",
+ "name": "Internal Market",
 "parent": "Professional consultancies",
-"Percentage": "162" 
+"weight":    369 
+},
+{
+ "name": "Enterprise",
+"parent": "Professional consultancies",
+"weight":    443 
+},
+{
+ "name": "Budget",
+"parent": "Professional consultancies",
+"weight":    165 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Professional consultancies",
-"Percentage": "139" 
+"weight":    139 
+},
+{
+ "name": "Consumer Affairs",
+"parent": "Professional consultancies",
+"weight":    308 
+},
+{
+ "name": "Humanitarian Aid",
+"parent": "Professional consultancies",
+"weight":    152 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Professional consultancies",
+"weight":    373 
+},
+{
+ "name": "Development",
+"parent": "Professional consultancies",
+"weight":    383 
+},
+{
+ "name": "Education",
+"parent": "Professional consultancies",
+"weight":    254 
+},
+{
+ "name": "Taxation",
+"parent": "Professional consultancies",
+"weight":    252 
+},
+{
+ "name": "Communication",
+"parent": "Professional consultancies",
+"weight":    275 
+},
+{
+ "name": "Trade",
+"parent": "Professional consultancies",
+"weight":    337 
+},
+{
+ "name": "Energy",
+"parent": "Professional consultancies",
+"weight":    438 
+},
+{
+ "name": "Enlargement",
+"parent": "Professional consultancies",
+"weight":    166 
+},
+{
+ "name": "External Relations",
+"parent": "Professional consultancies",
+"weight":    264 
+},
+{
+ "name": "Justice and Fundamental Rights",
+"parent": "Professional consultancies",
+"weight":    222 
+},
+{
+ "name": "Environment",
+"parent": "Professional consultancies",
+"weight":    455 
+},
+{
+ "name": "Public Health",
+"parent": "Professional consultancies",
+"weight":    314 
+},
+{
+ "name": "Food Safety",
+"parent": "Professional consultancies",
+"weight":    272 
+},
+{
+ "name": "Regional Policy",
+"parent": "Professional consultancies",
+"weight":    294 
+},
+{
+ "name": "Home Affairs",
+"parent": "Professional consultancies",
+"weight":    176 
+},
+{
+ "name": "Agriculture and Rural Development",
+"parent": "Professional consultancies",
+"weight":    293 
+},
+{
+ "name": "Trans-European Networks",
+"parent": "Professional consultancies",
+"weight":    292 
+},
+{
+ "name": "Youth",
+"parent": "Professional consultancies",
+"weight":    190 
+},
+{
+ "name": "Sport",
+"parent": "Professional consultancies",
+"weight":    162 
+},
+{
+ "name": "Competition",
+"parent": "Professional consultancies",
+"weight":    350 
+},
+{
+ "name": "Customs",
+"parent": "Professional consultancies",
+"weight":    189 
+},
+{
+ "name": "Transport",
+"parent": "Professional consultancies",
+"weight":    357 
+},
+{
+ "name": "Information Society",
+"parent": "Professional consultancies",
+"weight":    391 
 } 
 ] 
 },
 {
  "name": "Self-employed consultants",
+"weight":   1737,
 "parent": "I - Professional consultancies/law firms/self-employed consultants",
 "children": [
  {
- "name": "Audiovisual and Media",
+ "name": "External Relations",
 "parent": "Self-employed consultants",
-"Percentage": "87" 
-},
-{
- "name": "Climate Action",
-"parent": "Self-employed consultants",
-"Percentage": "143" 
-},
-{
- "name": "Communication",
-"parent": "Self-employed consultants",
-"Percentage": "106" 
-},
-{
- "name": "Competition",
-"parent": "Self-employed consultants",
-"Percentage": "147" 
-},
-{
- "name": "Consumer Affairs",
-"parent": "Self-employed consultants",
-"Percentage": "145" 
-},
-{
- "name": "Culture",
-"parent": "Self-employed consultants",
-"Percentage": "110" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Self-employed consultants",
-"Percentage": "155" 
-},
-{
- "name": "Education",
-"parent": "Self-employed consultants",
-"Percentage": "118" 
+"weight":    115 
 },
 {
  "name": "Employment and Social Affairs",
 "parent": "Self-employed consultants",
-"Percentage": "113" 
+"weight":    113 
 },
 {
  "name": "Energy",
 "parent": "Self-employed consultants",
-"Percentage": "171" 
-},
-{
- "name": "Enlargement",
-"parent": "Self-employed consultants",
-"Percentage": "72" 
-},
-{
- "name": "Enterprise",
-"parent": "Self-employed consultants",
-"Percentage": "181" 
-},
-{
- "name": "Environment",
-"parent": "Self-employed consultants",
-"Percentage": "206" 
-},
-{
- "name": "External Relations",
-"parent": "Self-employed consultants",
-"Percentage": "115" 
-},
-{
- "name": "Foreign and Security Policy and Defence",
-"parent": "Self-employed consultants",
-"Percentage": "78" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Self-employed consultants",
-"Percentage": "116" 
-},
-{
- "name": "Home Affairs",
-"parent": "Self-employed consultants",
-"Percentage": "69" 
-},
-{
- "name": "Information Society",
-"parent": "Self-employed consultants",
-"Percentage": "146" 
-},
-{
- "name": "Internal Market",
-"parent": "Self-employed consultants",
-"Percentage": "166" 
-},
-{
- "name": "Justice and Fundamental Rights",
-"parent": "Self-employed consultants",
-"Percentage": "101" 
-},
-{
- "name": "Public Health",
-"parent": "Self-employed consultants",
-"Percentage": "106" 
-},
-{
- "name": "Regional Policy",
-"parent": "Self-employed consultants",
-"Percentage": "111" 
+"weight":    171 
 },
 {
  "name": "Research and Technology",
 "parent": "Self-employed consultants",
-"Percentage": "206" 
-},
-{
- "name": "Taxation",
-"parent": "Self-employed consultants",
-"Percentage": "80" 
-},
-{
- "name": "Trade",
-"parent": "Self-employed consultants",
-"Percentage": "146" 
-},
-{
- "name": "Trans-European Networks",
-"parent": "Self-employed consultants",
-"Percentage": "112" 
-},
-{
- "name": "Youth",
-"parent": "Self-employed consultants",
-"Percentage": "83" 
+"weight":    206 
 },
 {
  "name": "Budget",
 "parent": "Self-employed consultants",
-"Percentage": "52" 
+"weight":     52 
+},
+{
+ "name": "Competition",
+"parent": "Self-employed consultants",
+"weight":    147 
+},
+{
+ "name": "Public Health",
+"parent": "Self-employed consultants",
+"weight":    106 
+},
+{
+ "name": "Home Affairs",
+"parent": "Self-employed consultants",
+"weight":     69 
+},
+{
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Self-employed consultants",
+"weight":     78 
+},
+{
+ "name": "Audiovisual and Media",
+"parent": "Self-employed consultants",
+"weight":     87 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Self-employed consultants",
+"weight":    116 
+},
+{
+ "name": "Environment",
+"parent": "Self-employed consultants",
+"weight":    206 
+},
+{
+ "name": "Trade",
+"parent": "Self-employed consultants",
+"weight":    146 
+},
+{
+ "name": "Education",
+"parent": "Self-employed consultants",
+"weight":    118 
+},
+{
+ "name": "Information Society",
+"parent": "Self-employed consultants",
+"weight":    146 
+},
+{
+ "name": "Youth",
+"parent": "Self-employed consultants",
+"weight":     83 
+},
+{
+ "name": "Climate Action",
+"parent": "Self-employed consultants",
+"weight":    143 
+},
+{
+ "name": "Enlargement",
+"parent": "Self-employed consultants",
+"weight":     72 
+},
+{
+ "name": "Communication",
+"parent": "Self-employed consultants",
+"weight":    106 
 },
 {
  "name": "Customs",
 "parent": "Self-employed consultants",
-"Percentage": "60" 
+"weight":     60 
 },
 {
- "name": "Development",
+ "name": "Regional Policy",
 "parent": "Self-employed consultants",
-"Percentage": "194" 
+"weight":    111 
+},
+{
+ "name": "Consumer Affairs",
+"parent": "Self-employed consultants",
+"weight":    145 
 },
 {
  "name": "Transport",
 "parent": "Self-employed consultants",
-"Percentage": "119" 
+"weight":    119 
+},
+{
+ "name": "Culture",
+"parent": "Self-employed consultants",
+"weight":    110 
 },
 {
  "name": "Agriculture and Rural Development",
 "parent": "Self-employed consultants",
-"Percentage": "122" 
+"weight":    122 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Self-employed consultants",
+"weight":    155 
 },
 {
  "name": "Food Safety",
 "parent": "Self-employed consultants",
-"Percentage": "113" 
+"weight":    113 
+},
+{
+ "name": "Trans-European Networks",
+"parent": "Self-employed consultants",
+"weight":    112 
 },
 {
  "name": "Fisheries and Aquaculture",
 "parent": "Self-employed consultants",
-"Percentage": "66" 
+"weight":     66 
+},
+{
+ "name": "Internal Market",
+"parent": "Self-employed consultants",
+"weight":    166 
 },
 {
  "name": "Humanitarian Aid",
 "parent": "Self-employed consultants",
-"Percentage": "68" 
+"weight":     68 
 },
 {
- "name": "Sport",
+ "name": "Justice and Fundamental Rights",
 "parent": "Self-employed consultants",
-"Percentage": "48" 
+"weight":    101 
+},
+{
+ "name": "Enterprise",
+"parent": "Self-employed consultants",
+"weight":    181 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Self-employed consultants",
-"Percentage": "64" 
+"weight":     64 
+},
+{
+ "name": "Development",
+"parent": "Self-employed consultants",
+"weight":    194 
+},
+{
+ "name": "Sport",
+"parent": "Self-employed consultants",
+"weight":     48 
+},
+{
+ "name": "Taxation",
+"parent": "Self-employed consultants",
+"weight":     80 
 } 
 ] 
 } 
@@ -584,769 +588,774 @@ x
 },
 {
  "name": "II - In-house lobbyists and trade/business/professional associations",
+"weight":  16537,
 "parent": "Root",
 "children": [
  {
  "name": "Companies & groups",
+"weight":  18891,
 "parent": "II - In-house lobbyists and trade/business/professional associations",
 "children": [
  {
  "name": "Audiovisual and Media",
 "parent": "Companies & groups",
-"Percentage": "375" 
-},
-{
- "name": "Climate Action",
-"parent": "Companies & groups",
-"Percentage": "754" 
-},
-{
- "name": "Communication",
-"parent": "Companies & groups",
-"Percentage": "359" 
-},
-{
- "name": "Competition",
-"parent": "Companies & groups",
-"Percentage": "1033" 
-},
-{
- "name": "Consumer Affairs",
-"parent": "Companies & groups",
-"Percentage": "786" 
-},
-{
- "name": "Culture",
-"parent": "Companies & groups",
-"Percentage": "264" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Companies & groups",
-"Percentage": "819" 
-},
-{
- "name": "Education",
-"parent": "Companies & groups",
-"Percentage": "296" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Companies & groups",
-"Percentage": "474" 
-},
-{
- "name": "Energy",
-"parent": "Companies & groups",
-"Percentage": "871" 
-},
-{
- "name": "Enlargement",
-"parent": "Companies & groups",
-"Percentage": "178" 
-},
-{
- "name": "Enterprise",
-"parent": "Companies & groups",
-"Percentage": "991" 
-},
-{
- "name": "Environment",
-"parent": "Companies & groups",
-"Percentage": "1042" 
-},
-{
- "name": "External Relations",
-"parent": "Companies & groups",
-"Percentage": "443" 
-},
-{
- "name": "Foreign and Security Policy and Defence",
-"parent": "Companies & groups",
-"Percentage": "266" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Companies & groups",
-"Percentage": "473" 
-},
-{
- "name": "Home Affairs",
-"parent": "Companies & groups",
-"Percentage": "260" 
-},
-{
- "name": "Information Society",
-"parent": "Companies & groups",
-"Percentage": "752" 
-},
-{
- "name": "Internal Market",
-"parent": "Companies & groups",
-"Percentage": "1026" 
-},
-{
- "name": "Justice and Fundamental Rights",
-"parent": "Companies & groups",
-"Percentage": "375" 
-},
-{
- "name": "Public Health",
-"parent": "Companies & groups",
-"Percentage": "440" 
-},
-{
- "name": "Regional Policy",
-"parent": "Companies & groups",
-"Percentage": "337" 
-},
-{
- "name": "Research and Technology",
-"parent": "Companies & groups",
-"Percentage": "1061" 
-},
-{
- "name": "Taxation",
-"parent": "Companies & groups",
-"Percentage": "705" 
-},
-{
- "name": "Trade",
-"parent": "Companies & groups",
-"Percentage": "853" 
-},
-{
- "name": "Trans-European Networks",
-"parent": "Companies & groups",
-"Percentage": "517" 
-},
-{
- "name": "Youth",
-"parent": "Companies & groups",
-"Percentage": "143" 
-},
-{
- "name": "Budget",
-"parent": "Companies & groups",
-"Percentage": "198" 
-},
-{
- "name": "Customs",
-"parent": "Companies & groups",
-"Percentage": "417" 
-},
-{
- "name": "Development",
-"parent": "Companies & groups",
-"Percentage": "577" 
-},
-{
- "name": "Transport",
-"parent": "Companies & groups",
-"Percentage": "663" 
-},
-{
- "name": "Agriculture and Rural Development",
-"parent": "Companies & groups",
-"Percentage": "300" 
-},
-{
- "name": "Food Safety",
-"parent": "Companies & groups",
-"Percentage": "286" 
-},
-{
- "name": "Fisheries and Aquaculture",
-"parent": "Companies & groups",
-"Percentage": "116" 
-},
-{
- "name": "Humanitarian Aid",
-"parent": "Companies & groups",
-"Percentage": "115" 
+"weight":    375 
 },
 {
  "name": "Sport",
 "parent": "Companies & groups",
-"Percentage": "94" 
+"weight":     94 
+},
+{
+ "name": "Budget",
+"parent": "Companies & groups",
+"weight":    198 
+},
+{
+ "name": "Justice and Fundamental Rights",
+"parent": "Companies & groups",
+"weight":    375 
+},
+{
+ "name": "Enterprise",
+"parent": "Companies & groups",
+"weight":    991 
+},
+{
+ "name": "Competition",
+"parent": "Companies & groups",
+"weight":   1033 
+},
+{
+ "name": "Environment",
+"parent": "Companies & groups",
+"weight":   1042 
+},
+{
+ "name": "Transport",
+"parent": "Companies & groups",
+"weight":    663 
+},
+{
+ "name": "Research and Technology",
+"parent": "Companies & groups",
+"weight":   1061 
+},
+{
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Companies & groups",
+"weight":    266 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Companies & groups",
+"weight":    819 
+},
+{
+ "name": "Fisheries and Aquaculture",
+"parent": "Companies & groups",
+"weight":    116 
+},
+{
+ "name": "Trans-European Networks",
+"parent": "Companies & groups",
+"weight":    517 
+},
+{
+ "name": "Information Society",
+"parent": "Companies & groups",
+"weight":    752 
+},
+{
+ "name": "Energy",
+"parent": "Companies & groups",
+"weight":    871 
+},
+{
+ "name": "Climate Action",
+"parent": "Companies & groups",
+"weight":    754 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Companies & groups",
-"Percentage": "232" 
+"weight":    232 
+},
+{
+ "name": "Customs",
+"parent": "Companies & groups",
+"weight":    417 
+},
+{
+ "name": "Public Health",
+"parent": "Companies & groups",
+"weight":    440 
+},
+{
+ "name": "Development",
+"parent": "Companies & groups",
+"weight":    577 
+},
+{
+ "name": "Consumer Affairs",
+"parent": "Companies & groups",
+"weight":    786 
+},
+{
+ "name": "External Relations",
+"parent": "Companies & groups",
+"weight":    443 
+},
+{
+ "name": "Culture",
+"parent": "Companies & groups",
+"weight":    264 
+},
+{
+ "name": "Taxation",
+"parent": "Companies & groups",
+"weight":    705 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Companies & groups",
+"weight":    473 
+},
+{
+ "name": "Education",
+"parent": "Companies & groups",
+"weight":    296 
+},
+{
+ "name": "Humanitarian Aid",
+"parent": "Companies & groups",
+"weight":    115 
+},
+{
+ "name": "Youth",
+"parent": "Companies & groups",
+"weight":    143 
+},
+{
+ "name": "Internal Market",
+"parent": "Companies & groups",
+"weight":   1026 
+},
+{
+ "name": "Enlargement",
+"parent": "Companies & groups",
+"weight":    178 
+},
+{
+ "name": "Communication",
+"parent": "Companies & groups",
+"weight":    359 
+},
+{
+ "name": "Home Affairs",
+"parent": "Companies & groups",
+"weight":    260 
+},
+{
+ "name": "Agriculture and Rural Development",
+"parent": "Companies & groups",
+"weight":    300 
+},
+{
+ "name": "Regional Policy",
+"parent": "Companies & groups",
+"weight":    337 
+},
+{
+ "name": "Trade",
+"parent": "Companies & groups",
+"weight":    853 
+},
+{
+ "name": "Food Safety",
+"parent": "Companies & groups",
+"weight":    286 
+},
+{
+ "name": "Employment and Social Affairs",
+"parent": "Companies & groups",
+"weight":    474 
 } 
 ] 
 },
 {
  "name": "Other organisations",
+"weight":  18891,
 "parent": "II - In-house lobbyists and trade/business/professional associations",
 "children": [
  {
- "name": "Audiovisual and Media",
-"parent": "Other organisations",
-"Percentage": "77" 
-},
-{
- "name": "Climate Action",
-"parent": "Other organisations",
-"Percentage": "80" 
-},
-{
- "name": "Communication",
-"parent": "Other organisations",
-"Percentage": "70" 
-},
-{
  "name": "Competition",
 "parent": "Other organisations",
-"Percentage": "125" 
-},
-{
- "name": "Consumer Affairs",
-"parent": "Other organisations",
-"Percentage": "120" 
+"weight":    125 
 },
 {
  "name": "Culture",
 "parent": "Other organisations",
-"Percentage": "83" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Other organisations",
-"Percentage": "104" 
-},
-{
- "name": "Education",
-"parent": "Other organisations",
-"Percentage": "102" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Other organisations",
-"Percentage": "84" 
-},
-{
- "name": "Energy",
-"parent": "Other organisations",
-"Percentage": "101" 
-},
-{
- "name": "Enlargement",
-"parent": "Other organisations",
-"Percentage": "40" 
-},
-{
- "name": "Enterprise",
-"parent": "Other organisations",
-"Percentage": "131" 
-},
-{
- "name": "Environment",
-"parent": "Other organisations",
-"Percentage": "152" 
-},
-{
- "name": "External Relations",
-"parent": "Other organisations",
-"Percentage": "64" 
-},
-{
- "name": "Foreign and Security Policy and Defence",
-"parent": "Other organisations",
-"Percentage": "43" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Other organisations",
-"Percentage": "76" 
-},
-{
- "name": "Home Affairs",
-"parent": "Other organisations",
-"Percentage": "39" 
-},
-{
- "name": "Information Society",
-"parent": "Other organisations",
-"Percentage": "121" 
-},
-{
- "name": "Internal Market",
-"parent": "Other organisations",
-"Percentage": "141" 
-},
-{
- "name": "Justice and Fundamental Rights",
-"parent": "Other organisations",
-"Percentage": "78" 
-},
-{
- "name": "Public Health",
-"parent": "Other organisations",
-"Percentage": "77" 
-},
-{
- "name": "Regional Policy",
-"parent": "Other organisations",
-"Percentage": "69" 
-},
-{
- "name": "Research and Technology",
-"parent": "Other organisations",
-"Percentage": "138" 
-},
-{
- "name": "Taxation",
-"parent": "Other organisations",
-"Percentage": "71" 
-},
-{
- "name": "Trade",
-"parent": "Other organisations",
-"Percentage": "94" 
-},
-{
- "name": "Trans-European Networks",
-"parent": "Other organisations",
-"Percentage": "81" 
-},
-{
- "name": "Youth",
-"parent": "Other organisations",
-"Percentage": "56" 
-},
-{
- "name": "Budget",
-"parent": "Other organisations",
-"Percentage": "33" 
-},
-{
- "name": "Customs",
-"parent": "Other organisations",
-"Percentage": "44" 
-},
-{
- "name": "Development",
-"parent": "Other organisations",
-"Percentage": "102" 
-},
-{
- "name": "Transport",
-"parent": "Other organisations",
-"Percentage": "78" 
-},
-{
- "name": "Agriculture and Rural Development",
-"parent": "Other organisations",
-"Percentage": "70" 
-},
-{
- "name": "Food Safety",
-"parent": "Other organisations",
-"Percentage": "77" 
-},
-{
- "name": "Fisheries and Aquaculture",
-"parent": "Other organisations",
-"Percentage": "51" 
-},
-{
- "name": "Humanitarian Aid",
-"parent": "Other organisations",
-"Percentage": "26" 
+"weight":     83 
 },
 {
  "name": "Sport",
 "parent": "Other organisations",
-"Percentage": "35" 
+"weight":     35 
+},
+{
+ "name": "Education",
+"parent": "Other organisations",
+"weight":    102 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Other organisations",
+"weight":    104 
+},
+{
+ "name": "Fisheries and Aquaculture",
+"parent": "Other organisations",
+"weight":     51 
+},
+{
+ "name": "Communication",
+"parent": "Other organisations",
+"weight":     70 
+},
+{
+ "name": "Enlargement",
+"parent": "Other organisations",
+"weight":     40 
+},
+{
+ "name": "Employment and Social Affairs",
+"parent": "Other organisations",
+"weight":     84 
+},
+{
+ "name": "Youth",
+"parent": "Other organisations",
+"weight":     56 
+},
+{
+ "name": "Environment",
+"parent": "Other organisations",
+"weight":    152 
+},
+{
+ "name": "Regional Policy",
+"parent": "Other organisations",
+"weight":     69 
+},
+{
+ "name": "Enterprise",
+"parent": "Other organisations",
+"weight":    131 
+},
+{
+ "name": "Research and Technology",
+"parent": "Other organisations",
+"weight":    138 
+},
+{
+ "name": "Food Safety",
+"parent": "Other organisations",
+"weight":     77 
+},
+{
+ "name": "Trade",
+"parent": "Other organisations",
+"weight":     94 
+},
+{
+ "name": "Home Affairs",
+"parent": "Other organisations",
+"weight":     39 
+},
+{
+ "name": "Audiovisual and Media",
+"parent": "Other organisations",
+"weight":     77 
+},
+{
+ "name": "Information Society",
+"parent": "Other organisations",
+"weight":    121 
+},
+{
+ "name": "Energy",
+"parent": "Other organisations",
+"weight":    101 
+},
+{
+ "name": "Budget",
+"parent": "Other organisations",
+"weight":     33 
+},
+{
+ "name": "Justice and Fundamental Rights",
+"parent": "Other organisations",
+"weight":     78 
+},
+{
+ "name": "Consumer Affairs",
+"parent": "Other organisations",
+"weight":    120 
+},
+{
+ "name": "Public Health",
+"parent": "Other organisations",
+"weight":     77 
+},
+{
+ "name": "Development",
+"parent": "Other organisations",
+"weight":    102 
+},
+{
+ "name": "External Relations",
+"parent": "Other organisations",
+"weight":     64 
+},
+{
+ "name": "Transport",
+"parent": "Other organisations",
+"weight":     78 
+},
+{
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Other organisations",
+"weight":     43 
+},
+{
+ "name": "Taxation",
+"parent": "Other organisations",
+"weight":     71 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Other organisations",
+"weight":     76 
+},
+{
+ "name": "Trans-European Networks",
+"parent": "Other organisations",
+"weight":     81 
+},
+{
+ "name": "Humanitarian Aid",
+"parent": "Other organisations",
+"weight":     26 
+},
+{
+ "name": "Climate Action",
+"parent": "Other organisations",
+"weight":     80 
+},
+{
+ "name": "Internal Market",
+"parent": "Other organisations",
+"weight":    141 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Other organisations",
-"Percentage": "37" 
+"weight":     37 
+},
+{
+ "name": "Customs",
+"parent": "Other organisations",
+"weight":     44 
+},
+{
+ "name": "Agriculture and Rural Development",
+"parent": "Other organisations",
+"weight":     70 
 } 
 ] 
 },
 {
  "name": "Trade and business associations",
+"weight":  18891,
 "parent": "II - In-house lobbyists and trade/business/professional associations",
 "children": [
  {
- "name": "Audiovisual and Media",
-"parent": "Trade and business associations",
-"Percentage": "346" 
-},
-{
- "name": "Climate Action",
-"parent": "Trade and business associations",
-"Percentage": "835" 
-},
-{
- "name": "Communication",
-"parent": "Trade and business associations",
-"Percentage": "340" 
-},
-{
- "name": "Competition",
-"parent": "Trade and business associations",
-"Percentage": "1281" 
-},
-{
- "name": "Consumer Affairs",
-"parent": "Trade and business associations",
-"Percentage": "1078" 
-},
-{
  "name": "Culture",
 "parent": "Trade and business associations",
-"Percentage": "278" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Trade and business associations",
-"Percentage": "1038" 
-},
-{
- "name": "Education",
-"parent": "Trade and business associations",
-"Percentage": "479" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Trade and business associations",
-"Percentage": "730" 
-},
-{
- "name": "Energy",
-"parent": "Trade and business associations",
-"Percentage": "968" 
-},
-{
- "name": "Enlargement",
-"parent": "Trade and business associations",
-"Percentage": "241" 
-},
-{
- "name": "Enterprise",
-"parent": "Trade and business associations",
-"Percentage": "1298" 
-},
-{
- "name": "Environment",
-"parent": "Trade and business associations",
-"Percentage": "1373" 
-},
-{
- "name": "External Relations",
-"parent": "Trade and business associations",
-"Percentage": "406" 
-},
-{
- "name": "Foreign and Security Policy and Defence",
-"parent": "Trade and business associations",
-"Percentage": "216" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Trade and business associations",
-"Percentage": "581" 
-},
-{
- "name": "Home Affairs",
-"parent": "Trade and business associations",
-"Percentage": "310" 
-},
-{
- "name": "Information Society",
-"parent": "Trade and business associations",
-"Percentage": "671" 
-},
-{
- "name": "Internal Market",
-"parent": "Trade and business associations",
-"Percentage": "1390" 
-},
-{
- "name": "Justice and Fundamental Rights",
-"parent": "Trade and business associations",
-"Percentage": "468" 
-},
-{
- "name": "Public Health",
-"parent": "Trade and business associations",
-"Percentage": "618" 
-},
-{
- "name": "Regional Policy",
-"parent": "Trade and business associations",
-"Percentage": "457" 
-},
-{
- "name": "Research and Technology",
-"parent": "Trade and business associations",
-"Percentage": "1054" 
-},
-{
- "name": "Taxation",
-"parent": "Trade and business associations",
-"Percentage": "913" 
-},
-{
- "name": "Trade",
-"parent": "Trade and business associations",
-"Percentage": "1086" 
-},
-{
- "name": "Trans-European Networks",
-"parent": "Trade and business associations",
-"Percentage": "547" 
-},
-{
- "name": "Youth",
-"parent": "Trade and business associations",
-"Percentage": "198" 
-},
-{
- "name": "Budget",
-"parent": "Trade and business associations",
-"Percentage": "285" 
-},
-{
- "name": "Customs",
-"parent": "Trade and business associations",
-"Percentage": "614" 
+"weight":    278 
 },
 {
  "name": "Development",
 "parent": "Trade and business associations",
-"Percentage": "759" 
+"weight":    759 
 },
 {
- "name": "Transport",
+ "name": "Enlargement",
 "parent": "Trade and business associations",
-"Percentage": "736" 
+"weight":    241 
 },
 {
- "name": "Agriculture and Rural Development",
+ "name": "Customs",
 "parent": "Trade and business associations",
-"Percentage": "545" 
+"weight":    614 
 },
 {
- "name": "Food Safety",
+ "name": "Employment and Social Affairs",
 "parent": "Trade and business associations",
-"Percentage": "643" 
+"weight":    730 
+},
+{
+ "name": "Audiovisual and Media",
+"parent": "Trade and business associations",
+"weight":    346 
+},
+{
+ "name": "Regional Policy",
+"parent": "Trade and business associations",
+"weight":    457 
+},
+{
+ "name": "Budget",
+"parent": "Trade and business associations",
+"weight":    285 
+},
+{
+ "name": "Justice and Fundamental Rights",
+"parent": "Trade and business associations",
+"weight":    468 
+},
+{
+ "name": "Enterprise",
+"parent": "Trade and business associations",
+"weight":   1298 
+},
+{
+ "name": "Energy",
+"parent": "Trade and business associations",
+"weight":    968 
+},
+{
+ "name": "Environment",
+"parent": "Trade and business associations",
+"weight":   1373 
+},
+{
+ "name": "External Relations",
+"parent": "Trade and business associations",
+"weight":    406 
 },
 {
  "name": "Fisheries and Aquaculture",
 "parent": "Trade and business associations",
-"Percentage": "234" 
+"weight":    234 
+},
+{
+ "name": "Public Health",
+"parent": "Trade and business associations",
+"weight":    618 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Trade and business associations",
+"weight":   1038 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Trade and business associations",
+"weight":    581 
+},
+{
+ "name": "Internal Market",
+"parent": "Trade and business associations",
+"weight":   1390 
+},
+{
+ "name": "Trans-European Networks",
+"parent": "Trade and business associations",
+"weight":    547 
 },
 {
  "name": "Humanitarian Aid",
 "parent": "Trade and business associations",
-"Percentage": "80" 
+"weight":     80 
 },
 {
- "name": "Sport",
+ "name": "Climate Action",
 "parent": "Trade and business associations",
-"Percentage": "100" 
+"weight":    835 
+},
+{
+ "name": "Consumer Affairs",
+"parent": "Trade and business associations",
+"weight":   1078 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Trade and business associations",
-"Percentage": "195" 
+"weight":    195 
+},
+{
+ "name": "Research and Technology",
+"parent": "Trade and business associations",
+"weight":   1054 
+},
+{
+ "name": "Competition",
+"parent": "Trade and business associations",
+"weight":   1281 
+},
+{
+ "name": "Agriculture and Rural Development",
+"parent": "Trade and business associations",
+"weight":    545 
+},
+{
+ "name": "Education",
+"parent": "Trade and business associations",
+"weight":    479 
+},
+{
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Trade and business associations",
+"weight":    216 
+},
+{
+ "name": "Taxation",
+"parent": "Trade and business associations",
+"weight":    913 
+},
+{
+ "name": "Youth",
+"parent": "Trade and business associations",
+"weight":    198 
+},
+{
+ "name": "Sport",
+"parent": "Trade and business associations",
+"weight":    100 
+},
+{
+ "name": "Home Affairs",
+"parent": "Trade and business associations",
+"weight":    310 
+},
+{
+ "name": "Transport",
+"parent": "Trade and business associations",
+"weight":    736 
+},
+{
+ "name": "Trade",
+"parent": "Trade and business associations",
+"weight":   1086 
+},
+{
+ "name": "Information Society",
+"parent": "Trade and business associations",
+"weight":    671 
+},
+{
+ "name": "Communication",
+"parent": "Trade and business associations",
+"weight":    340 
+},
+{
+ "name": "Food Safety",
+"parent": "Trade and business associations",
+"weight":    643 
 } 
 ] 
 },
 {
  "name": "Trade unions and professional associations",
+"weight":  18891,
 "parent": "II - In-house lobbyists and trade/business/professional associations",
 "children": [
  {
- "name": "Audiovisual and Media",
+ "name": "Food Safety",
 "parent": "Trade unions and professional associations",
-"Percentage": "132" 
-},
-{
- "name": "Climate Action",
-"parent": "Trade unions and professional associations",
-"Percentage": "191" 
-},
-{
- "name": "Communication",
-"parent": "Trade unions and professional associations",
-"Percentage": "118" 
-},
-{
- "name": "Competition",
-"parent": "Trade unions and professional associations",
-"Percentage": "367" 
-},
-{
- "name": "Consumer Affairs",
-"parent": "Trade unions and professional associations",
-"Percentage": "294" 
-},
-{
- "name": "Culture",
-"parent": "Trade unions and professional associations",
-"Percentage": "154" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Trade unions and professional associations",
-"Percentage": "318" 
-},
-{
- "name": "Education",
-"parent": "Trade unions and professional associations",
-"Percentage": "266" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Trade unions and professional associations",
-"Percentage": "353" 
-},
-{
- "name": "Energy",
-"parent": "Trade unions and professional associations",
-"Percentage": "205" 
-},
-{
- "name": "Enlargement",
-"parent": "Trade unions and professional associations",
-"Percentage": "76" 
-},
-{
- "name": "Enterprise",
-"parent": "Trade unions and professional associations",
-"Percentage": "278" 
-},
-{
- "name": "Environment",
-"parent": "Trade unions and professional associations",
-"Percentage": "324" 
-},
-{
- "name": "External Relations",
-"parent": "Trade unions and professional associations",
-"Percentage": "116" 
-},
-{
- "name": "Foreign and Security Policy and Defence",
-"parent": "Trade unions and professional associations",
-"Percentage": "69" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Trade unions and professional associations",
-"Percentage": "194" 
-},
-{
- "name": "Home Affairs",
-"parent": "Trade unions and professional associations",
-"Percentage": "112" 
-},
-{
- "name": "Information Society",
-"parent": "Trade unions and professional associations",
-"Percentage": "232" 
-},
-{
- "name": "Internal Market",
-"parent": "Trade unions and professional associations",
-"Percentage": "400" 
+"weight":    172 
 },
 {
  "name": "Justice and Fundamental Rights",
 "parent": "Trade unions and professional associations",
-"Percentage": "208" 
-},
-{
- "name": "Public Health",
-"parent": "Trade unions and professional associations",
-"Percentage": "207" 
-},
-{
- "name": "Regional Policy",
-"parent": "Trade unions and professional associations",
-"Percentage": "158" 
-},
-{
- "name": "Research and Technology",
-"parent": "Trade unions and professional associations",
-"Percentage": "255" 
-},
-{
- "name": "Taxation",
-"parent": "Trade unions and professional associations",
-"Percentage": "259" 
-},
-{
- "name": "Trade",
-"parent": "Trade unions and professional associations",
-"Percentage": "278" 
-},
-{
- "name": "Trans-European Networks",
-"parent": "Trade unions and professional associations",
-"Percentage": "148" 
-},
-{
- "name": "Youth",
-"parent": "Trade unions and professional associations",
-"Percentage": "119" 
-},
-{
- "name": "Budget",
-"parent": "Trade unions and professional associations",
-"Percentage": "108" 
-},
-{
- "name": "Customs",
-"parent": "Trade unions and professional associations",
-"Percentage": "137" 
-},
-{
- "name": "Development",
-"parent": "Trade unions and professional associations",
-"Percentage": "263" 
-},
-{
- "name": "Transport",
-"parent": "Trade unions and professional associations",
-"Percentage": "175" 
-},
-{
- "name": "Agriculture and Rural Development",
-"parent": "Trade unions and professional associations",
-"Percentage": "178" 
-},
-{
- "name": "Food Safety",
-"parent": "Trade unions and professional associations",
-"Percentage": "172" 
-},
-{
- "name": "Fisheries and Aquaculture",
-"parent": "Trade unions and professional associations",
-"Percentage": "73" 
-},
-{
- "name": "Humanitarian Aid",
-"parent": "Trade unions and professional associations",
-"Percentage": "63" 
-},
-{
- "name": "Sport",
-"parent": "Trade unions and professional associations",
-"Percentage": "36" 
+"weight":    208 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Trade unions and professional associations",
-"Percentage": "63" 
+"weight":     63 
+},
+{
+ "name": "Humanitarian Aid",
+"parent": "Trade unions and professional associations",
+"weight":     63 
+},
+{
+ "name": "Sport",
+"parent": "Trade unions and professional associations",
+"weight":     36 
+},
+{
+ "name": "Internal Market",
+"parent": "Trade unions and professional associations",
+"weight":    400 
+},
+{
+ "name": "Enlargement",
+"parent": "Trade unions and professional associations",
+"weight":     76 
+},
+{
+ "name": "Transport",
+"parent": "Trade unions and professional associations",
+"weight":    175 
+},
+{
+ "name": "Culture",
+"parent": "Trade unions and professional associations",
+"weight":    154 
+},
+{
+ "name": "Development",
+"parent": "Trade unions and professional associations",
+"weight":    263 
+},
+{
+ "name": "Fisheries and Aquaculture",
+"parent": "Trade unions and professional associations",
+"weight":     73 
+},
+{
+ "name": "Trade",
+"parent": "Trade unions and professional associations",
+"weight":    278 
+},
+{
+ "name": "Home Affairs",
+"parent": "Trade unions and professional associations",
+"weight":    112 
+},
+{
+ "name": "Youth",
+"parent": "Trade unions and professional associations",
+"weight":    119 
+},
+{
+ "name": "Audiovisual and Media",
+"parent": "Trade unions and professional associations",
+"weight":    132 
+},
+{
+ "name": "Budget",
+"parent": "Trade unions and professional associations",
+"weight":    108 
+},
+{
+ "name": "Climate Action",
+"parent": "Trade unions and professional associations",
+"weight":    191 
+},
+{
+ "name": "Enterprise",
+"parent": "Trade unions and professional associations",
+"weight":    278 
+},
+{
+ "name": "Customs",
+"parent": "Trade unions and professional associations",
+"weight":    137 
+},
+{
+ "name": "Environment",
+"parent": "Trade unions and professional associations",
+"weight":    324 
+},
+{
+ "name": "Consumer Affairs",
+"parent": "Trade unions and professional associations",
+"weight":    294 
+},
+{
+ "name": "Research and Technology",
+"parent": "Trade unions and professional associations",
+"weight":    255 
+},
+{
+ "name": "Agriculture and Rural Development",
+"parent": "Trade unions and professional associations",
+"weight":    178 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Trade unions and professional associations",
+"weight":    318 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Trade unions and professional associations",
+"weight":    194 
+},
+{
+ "name": "Trans-European Networks",
+"parent": "Trade unions and professional associations",
+"weight":    148 
+},
+{
+ "name": "Communication",
+"parent": "Trade unions and professional associations",
+"weight":    118 
+},
+{
+ "name": "Information Society",
+"parent": "Trade unions and professional associations",
+"weight":    232 
+},
+{
+ "name": "Energy",
+"parent": "Trade unions and professional associations",
+"weight":    205 
+},
+{
+ "name": "Regional Policy",
+"parent": "Trade unions and professional associations",
+"weight":    158 
+},
+{
+ "name": "External Relations",
+"parent": "Trade unions and professional associations",
+"weight":    116 
+},
+{
+ "name": "Competition",
+"parent": "Trade unions and professional associations",
+"weight":    367 
+},
+{
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Trade unions and professional associations",
+"weight":     69 
+},
+{
+ "name": "Education",
+"parent": "Trade unions and professional associations",
+"weight":    266 
+},
+{
+ "name": "Taxation",
+"parent": "Trade unions and professional associations",
+"weight":    259 
+},
+{
+ "name": "Public Health",
+"parent": "Trade unions and professional associations",
+"weight":    207 
+},
+{
+ "name": "Employment and Social Affairs",
+"parent": "Trade unions and professional associations",
+"weight":    353 
 } 
 ] 
 } 
@@ -1354,196 +1363,198 @@ x
 },
 {
  "name": "III - Non-governmental organisations",
+"weight":  16537,
 "parent": "Root",
 "children": [
  {
  "name": "Non-governmental organisations, platforms and networks and similar",
+"weight":  24889,
 "parent": "III - Non-governmental organisations",
 "children": [
  {
- "name": "Audiovisual and Media",
+ "name": "Fisheries and Aquaculture",
 "parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "462" 
-},
-{
- "name": "Climate Action",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "873" 
-},
-{
- "name": "Communication",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "594" 
-},
-{
- "name": "Competition",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "462" 
-},
-{
- "name": "Consumer Affairs",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "673" 
-},
-{
- "name": "Culture",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "767" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "655" 
-},
-{
- "name": "Education",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "1222" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "929" 
-},
-{
- "name": "Energy",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "756" 
-},
-{
- "name": "Enlargement",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "387" 
-},
-{
- "name": "Enterprise",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "626" 
-},
-{
- "name": "Environment",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "1274" 
-},
-{
- "name": "External Relations",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "666" 
-},
-{
- "name": "Foreign and Security Policy and Defence",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "485" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "535" 
-},
-{
- "name": "Home Affairs",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "422" 
-},
-{
- "name": "Information Society",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "800" 
-},
-{
- "name": "Internal Market",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "622" 
-},
-{
- "name": "Justice and Fundamental Rights",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "1011" 
-},
-{
- "name": "Public Health",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "995" 
-},
-{
- "name": "Regional Policy",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "761" 
-},
-{
- "name": "Research and Technology",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "1049" 
-},
-{
- "name": "Taxation",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "377" 
-},
-{
- "name": "Trade",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "581" 
+"weight":    408 
 },
 {
  "name": "Trans-European Networks",
 "parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "662" 
-},
-{
- "name": "Youth",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "922" 
-},
-{
- "name": "Budget",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "381" 
-},
-{
- "name": "Customs",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "208" 
-},
-{
- "name": "Development",
-"parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "1343" 
+"weight":    662 
 },
 {
  "name": "Transport",
 "parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "522" 
+"weight":    522 
+},
+{
+ "name": "Youth",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    922 
+},
+{
+ "name": "Budget",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    381 
+},
+{
+ "name": "Development",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":   1343 
+},
+{
+ "name": "Competition",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    462 
+},
+{
+ "name": "Public Health",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    995 
 },
 {
  "name": "Agriculture and Rural Development",
 "parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "783" 
+"weight":    783 
+},
+{
+ "name": "Regional Policy",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    761 
 },
 {
  "name": "Food Safety",
 "parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "610" 
+"weight":    610 
 },
 {
- "name": "Fisheries and Aquaculture",
+ "name": "Economic and Financial Affairs",
 "parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "408" 
+"weight":    655 
+},
+{
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    485 
 },
 {
  "name": "Humanitarian Aid",
 "parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "617" 
+"weight":    617 
+},
+{
+ "name": "Audiovisual and Media",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    462 
 },
 {
  "name": "Sport",
 "parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "270" 
+"weight":    270 
+},
+{
+ "name": "Climate Action",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    873 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Non-governmental organisations, platforms and networks and similar",
-"Percentage": "179" 
+"weight":    179 
+},
+{
+ "name": "Justice and Fundamental Rights",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":   1011 
+},
+{
+ "name": "Customs",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    208 
+},
+{
+ "name": "Enterprise",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    626 
+},
+{
+ "name": "Consumer Affairs",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    673 
+},
+{
+ "name": "Environment",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":   1274 
+},
+{
+ "name": "Culture",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    767 
+},
+{
+ "name": "Research and Technology",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":   1049 
+},
+{
+ "name": "Information Society",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    800 
+},
+{
+ "name": "Education",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":   1222 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    535 
+},
+{
+ "name": "Employment and Social Affairs",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    929 
+},
+{
+ "name": "External Relations",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    666 
+},
+{
+ "name": "Internal Market",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    622 
+},
+{
+ "name": "Communication",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    594 
+},
+{
+ "name": "Enlargement",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    387 
+},
+{
+ "name": "Trade",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    581 
+},
+{
+ "name": "Home Affairs",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    422 
+},
+{
+ "name": "Taxation",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    377 
+},
+{
+ "name": "Energy",
+"parent": "Non-governmental organisations, platforms and networks and similar",
+"weight":    756 
 } 
 ] 
 } 
@@ -1551,387 +1562,390 @@ x
 },
 {
  "name": "IV - Think tanks, research and academic institutions",
+"weight":  16537,
 "parent": "Root",
 "children": [
  {
  "name": "Academic institutions",
+"weight":   3970,
 "parent": "IV - Think tanks, research and academic institutions",
 "children": [
  {
- "name": "Audiovisual and Media",
-"parent": "Academic institutions",
-"Percentage": "103" 
-},
-{
- "name": "Climate Action",
-"parent": "Academic institutions",
-"Percentage": "137" 
-},
-{
- "name": "Communication",
-"parent": "Academic institutions",
-"Percentage": "104" 
-},
-{
- "name": "Competition",
-"parent": "Academic institutions",
-"Percentage": "89" 
-},
-{
- "name": "Consumer Affairs",
-"parent": "Academic institutions",
-"Percentage": "73" 
-},
-{
- "name": "Culture",
-"parent": "Academic institutions",
-"Percentage": "130" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Academic institutions",
-"Percentage": "109" 
-},
-{
- "name": "Education",
-"parent": "Academic institutions",
-"Percentage": "222" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Academic institutions",
-"Percentage": "100" 
-},
-{
- "name": "Energy",
-"parent": "Academic institutions",
-"Percentage": "140" 
-},
-{
- "name": "Enlargement",
-"parent": "Academic institutions",
-"Percentage": "67" 
-},
-{
- "name": "Enterprise",
-"parent": "Academic institutions",
-"Percentage": "118" 
-},
-{
- "name": "Environment",
-"parent": "Academic institutions",
-"Percentage": "163" 
-},
-{
- "name": "External Relations",
-"parent": "Academic institutions",
-"Percentage": "89" 
-},
-{
- "name": "Foreign and Security Policy and Defence",
-"parent": "Academic institutions",
-"Percentage": "83" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Academic institutions",
-"Percentage": "92" 
-},
-{
- "name": "Home Affairs",
-"parent": "Academic institutions",
-"Percentage": "68" 
-},
-{
- "name": "Information Society",
-"parent": "Academic institutions",
-"Percentage": "150" 
-},
-{
- "name": "Internal Market",
-"parent": "Academic institutions",
-"Percentage": "88" 
-},
-{
- "name": "Justice and Fundamental Rights",
-"parent": "Academic institutions",
-"Percentage": "101" 
-},
-{
- "name": "Public Health",
-"parent": "Academic institutions",
-"Percentage": "129" 
-},
-{
- "name": "Regional Policy",
-"parent": "Academic institutions",
-"Percentage": "116" 
-},
-{
- "name": "Research and Technology",
-"parent": "Academic institutions",
-"Percentage": "225" 
-},
-{
- "name": "Taxation",
-"parent": "Academic institutions",
-"Percentage": "63" 
-},
-{
- "name": "Trade",
-"parent": "Academic institutions",
-"Percentage": "78" 
-},
-{
- "name": "Trans-European Networks",
-"parent": "Academic institutions",
-"Percentage": "108" 
-},
-{
- "name": "Youth",
-"parent": "Academic institutions",
-"Percentage": "121" 
-},
-{
- "name": "Budget",
-"parent": "Academic institutions",
-"Percentage": "75" 
-},
-{
- "name": "Customs",
-"parent": "Academic institutions",
-"Percentage": "55" 
-},
-{
- "name": "Development",
-"parent": "Academic institutions",
-"Percentage": "146" 
-},
-{
- "name": "Transport",
-"parent": "Academic institutions",
-"Percentage": "107" 
-},
-{
- "name": "Agriculture and Rural Development",
-"parent": "Academic institutions",
-"Percentage": "102" 
-},
-{
- "name": "Food Safety",
-"parent": "Academic institutions",
-"Percentage": "115" 
-},
-{
- "name": "Fisheries and Aquaculture",
-"parent": "Academic institutions",
-"Percentage": "86" 
-},
-{
  "name": "Humanitarian Aid",
 "parent": "Academic institutions",
-"Percentage": "86" 
+"weight":     86 
 },
 {
  "name": "Sport",
 "parent": "Academic institutions",
-"Percentage": "74" 
+"weight":     74 
+},
+{
+ "name": "Customs",
+"parent": "Academic institutions",
+"weight":     55 
+},
+{
+ "name": "Development",
+"parent": "Academic institutions",
+"weight":    146 
+},
+{
+ "name": "Communication",
+"parent": "Academic institutions",
+"weight":    104 
+},
+{
+ "name": "Transport",
+"parent": "Academic institutions",
+"weight":    107 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Academic institutions",
-"Percentage": "58" 
+"weight":     58 
+},
+{
+ "name": "Agriculture and Rural Development",
+"parent": "Academic institutions",
+"weight":    102 
+},
+{
+ "name": "Taxation",
+"parent": "Academic institutions",
+"weight":     63 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Academic institutions",
+"weight":     92 
+},
+{
+ "name": "External Relations",
+"parent": "Academic institutions",
+"weight":     89 
+},
+{
+ "name": "Home Affairs",
+"parent": "Academic institutions",
+"weight":     68 
+},
+{
+ "name": "Employment and Social Affairs",
+"parent": "Academic institutions",
+"weight":    100 
+},
+{
+ "name": "Youth",
+"parent": "Academic institutions",
+"weight":    121 
+},
+{
+ "name": "Audiovisual and Media",
+"parent": "Academic institutions",
+"weight":    103 
+},
+{
+ "name": "Enlargement",
+"parent": "Academic institutions",
+"weight":     67 
+},
+{
+ "name": "Public Health",
+"parent": "Academic institutions",
+"weight":    129 
+},
+{
+ "name": "Enterprise",
+"parent": "Academic institutions",
+"weight":    118 
+},
+{
+ "name": "Regional Policy",
+"parent": "Academic institutions",
+"weight":    116 
+},
+{
+ "name": "Competition",
+"parent": "Academic institutions",
+"weight":     89 
+},
+{
+ "name": "Research and Technology",
+"parent": "Academic institutions",
+"weight":    225 
+},
+{
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Academic institutions",
+"weight":     83 
+},
+{
+ "name": "Food Safety",
+"parent": "Academic institutions",
+"weight":    115 
+},
+{
+ "name": "Trade",
+"parent": "Academic institutions",
+"weight":     78 
+},
+{
+ "name": "Fisheries and Aquaculture",
+"parent": "Academic institutions",
+"weight":     86 
+},
+{
+ "name": "Trans-European Networks",
+"parent": "Academic institutions",
+"weight":    108 
+},
+{
+ "name": "Information Society",
+"parent": "Academic institutions",
+"weight":    150 
+},
+{
+ "name": "Energy",
+"parent": "Academic institutions",
+"weight":    140 
+},
+{
+ "name": "Budget",
+"parent": "Academic institutions",
+"weight":     75 
+},
+{
+ "name": "Climate Action",
+"parent": "Academic institutions",
+"weight":    137 
+},
+{
+ "name": "Education",
+"parent": "Academic institutions",
+"weight":    222 
+},
+{
+ "name": "Environment",
+"parent": "Academic institutions",
+"weight":    163 
+},
+{
+ "name": "Consumer Affairs",
+"parent": "Academic institutions",
+"weight":     73 
+},
+{
+ "name": "Culture",
+"parent": "Academic institutions",
+"weight":    130 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Academic institutions",
+"weight":    109 
+},
+{
+ "name": "Justice and Fundamental Rights",
+"parent": "Academic institutions",
+"weight":    101 
+},
+{
+ "name": "Internal Market",
+"parent": "Academic institutions",
+"weight":     88 
 } 
 ] 
 },
 {
  "name": "Think tanks and research institutions",
+"weight":   3970,
 "parent": "IV - Think tanks, research and academic institutions",
 "children": [
  {
- "name": "Audiovisual and Media",
+ "name": "Humanitarian Aid",
 "parent": "Think tanks and research institutions",
-"Percentage": "98" 
-},
-{
- "name": "Climate Action",
-"parent": "Think tanks and research institutions",
-"Percentage": "234" 
-},
-{
- "name": "Communication",
-"parent": "Think tanks and research institutions",
-"Percentage": "130" 
-},
-{
- "name": "Competition",
-"parent": "Think tanks and research institutions",
-"Percentage": "144" 
-},
-{
- "name": "Consumer Affairs",
-"parent": "Think tanks and research institutions",
-"Percentage": "115" 
-},
-{
- "name": "Culture",
-"parent": "Think tanks and research institutions",
-"Percentage": "155" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Think tanks and research institutions",
-"Percentage": "220" 
-},
-{
- "name": "Education",
-"parent": "Think tanks and research institutions",
-"Percentage": "248" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Think tanks and research institutions",
-"Percentage": "163" 
-},
-{
- "name": "Energy",
-"parent": "Think tanks and research institutions",
-"Percentage": "258" 
-},
-{
- "name": "Enlargement",
-"parent": "Think tanks and research institutions",
-"Percentage": "101" 
-},
-{
- "name": "Enterprise",
-"parent": "Think tanks and research institutions",
-"Percentage": "198" 
-},
-{
- "name": "Environment",
-"parent": "Think tanks and research institutions",
-"Percentage": "285" 
-},
-{
- "name": "External Relations",
-"parent": "Think tanks and research institutions",
-"Percentage": "170" 
-},
-{
- "name": "Foreign and Security Policy and Defence",
-"parent": "Think tanks and research institutions",
-"Percentage": "167" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Think tanks and research institutions",
-"Percentage": "169" 
-},
-{
- "name": "Home Affairs",
-"parent": "Think tanks and research institutions",
-"Percentage": "119" 
-},
-{
- "name": "Information Society",
-"parent": "Think tanks and research institutions",
-"Percentage": "224" 
+"weight":     93 
 },
 {
  "name": "Internal Market",
 "parent": "Think tanks and research institutions",
-"Percentage": "157" 
+"weight":    157 
 },
 {
- "name": "Justice and Fundamental Rights",
+ "name": "Communication",
 "parent": "Think tanks and research institutions",
-"Percentage": "177" 
-},
-{
- "name": "Public Health",
-"parent": "Think tanks and research institutions",
-"Percentage": "179" 
+"weight":    130 
 },
 {
  "name": "Regional Policy",
 "parent": "Think tanks and research institutions",
-"Percentage": "193" 
+"weight":    193 
 },
 {
- "name": "Research and Technology",
+ "name": "Culture",
 "parent": "Think tanks and research institutions",
-"Percentage": "375" 
-},
-{
- "name": "Taxation",
-"parent": "Think tanks and research institutions",
-"Percentage": "101" 
-},
-{
- "name": "Trade",
-"parent": "Think tanks and research institutions",
-"Percentage": "135" 
-},
-{
- "name": "Trans-European Networks",
-"parent": "Think tanks and research institutions",
-"Percentage": "178" 
-},
-{
- "name": "Youth",
-"parent": "Think tanks and research institutions",
-"Percentage": "125" 
-},
-{
- "name": "Budget",
-"parent": "Think tanks and research institutions",
-"Percentage": "110" 
-},
-{
- "name": "Customs",
-"parent": "Think tanks and research institutions",
-"Percentage": "57" 
-},
-{
- "name": "Development",
-"parent": "Think tanks and research institutions",
-"Percentage": "247" 
-},
-{
- "name": "Transport",
-"parent": "Think tanks and research institutions",
-"Percentage": "161" 
-},
-{
- "name": "Agriculture and Rural Development",
-"parent": "Think tanks and research institutions",
-"Percentage": "151" 
+"weight":    155 
 },
 {
  "name": "Food Safety",
 "parent": "Think tanks and research institutions",
-"Percentage": "128" 
+"weight":    128 
 },
 {
- "name": "Fisheries and Aquaculture",
+ "name": "External Relations",
 "parent": "Think tanks and research institutions",
-"Percentage": "98" 
+"weight":    170 
 },
 {
- "name": "Humanitarian Aid",
+ "name": "Home Affairs",
 "parent": "Think tanks and research institutions",
-"Percentage": "93" 
+"weight":    119 
+},
+{
+ "name": "Employment and Social Affairs",
+"parent": "Think tanks and research institutions",
+"weight":    163 
+},
+{
+ "name": "Audiovisual and Media",
+"parent": "Think tanks and research institutions",
+"weight":     98 
 },
 {
  "name": "Sport",
 "parent": "Think tanks and research institutions",
-"Percentage": "51" 
+"weight":     51 
+},
+{
+ "name": "Enlargement",
+"parent": "Think tanks and research institutions",
+"weight":    101 
+},
+{
+ "name": "Justice and Fundamental Rights",
+"parent": "Think tanks and research institutions",
+"weight":    177 
+},
+{
+ "name": "Development",
+"parent": "Think tanks and research institutions",
+"weight":    247 
+},
+{
+ "name": "Competition",
+"parent": "Think tanks and research institutions",
+"weight":    144 
+},
+{
+ "name": "Transport",
+"parent": "Think tanks and research institutions",
+"weight":    161 
+},
+{
+ "name": "Research and Technology",
+"parent": "Think tanks and research institutions",
+"weight":    375 
+},
+{
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Think tanks and research institutions",
+"weight":    167 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Think tanks and research institutions",
+"weight":    220 
+},
+{
+ "name": "Trade",
+"parent": "Think tanks and research institutions",
+"weight":    135 
+},
+{
+ "name": "Fisheries and Aquaculture",
+"parent": "Think tanks and research institutions",
+"weight":     98 
+},
+{
+ "name": "Trans-European Networks",
+"parent": "Think tanks and research institutions",
+"weight":    178 
+},
+{
+ "name": "Information Society",
+"parent": "Think tanks and research institutions",
+"weight":    224 
+},
+{
+ "name": "Energy",
+"parent": "Think tanks and research institutions",
+"weight":    258 
+},
+{
+ "name": "Climate Action",
+"parent": "Think tanks and research institutions",
+"weight":    234 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Think tanks and research institutions",
-"Percentage": "57" 
+"weight":     57 
+},
+{
+ "name": "Enterprise",
+"parent": "Think tanks and research institutions",
+"weight":    198 
+},
+{
+ "name": "Public Health",
+"parent": "Think tanks and research institutions",
+"weight":    179 
+},
+{
+ "name": "Environment",
+"parent": "Think tanks and research institutions",
+"weight":    285 
+},
+{
+ "name": "Consumer Affairs",
+"parent": "Think tanks and research institutions",
+"weight":    115 
+},
+{
+ "name": "Agriculture and Rural Development",
+"parent": "Think tanks and research institutions",
+"weight":    151 
+},
+{
+ "name": "Taxation",
+"parent": "Think tanks and research institutions",
+"weight":    101 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Think tanks and research institutions",
+"weight":    169 
+},
+{
+ "name": "Education",
+"parent": "Think tanks and research institutions",
+"weight":    248 
+},
+{
+ "name": "Budget",
+"parent": "Think tanks and research institutions",
+"weight":    110 
+},
+{
+ "name": "Youth",
+"parent": "Think tanks and research institutions",
+"weight":    125 
+},
+{
+ "name": "Customs",
+"parent": "Think tanks and research institutions",
+"weight":     57 
 } 
 ] 
 } 
@@ -1939,196 +1953,198 @@ x
 },
 {
  "name": "V - Organisations representing churches and religious communities",
+"weight":  16537,
 "parent": "Root",
 "children": [
  {
  "name": "Organisations representing churches and religious communities",
+"weight":    637,
 "parent": "V - Organisations representing churches and religious communities",
 "children": [
  {
- "name": "Audiovisual and Media",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "12" 
-},
-{
- "name": "Climate Action",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "25" 
-},
-{
- "name": "Communication",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "13" 
-},
-{
- "name": "Competition",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "7" 
-},
-{
  "name": "Consumer Affairs",
 "parent": "Organisations representing churches and religious communities",
-"Percentage": "9" 
-},
-{
- "name": "Culture",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "39" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "15" 
-},
-{
- "name": "Education",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "37" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "26" 
-},
-{
- "name": "Energy",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "11" 
-},
-{
- "name": "Enlargement",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "16" 
-},
-{
- "name": "Enterprise",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "9" 
-},
-{
- "name": "Environment",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "28" 
-},
-{
- "name": "External Relations",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "30" 
-},
-{
- "name": "Foreign and Security Policy and Defence",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "28" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "17" 
-},
-{
- "name": "Home Affairs",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "23" 
-},
-{
- "name": "Information Society",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "15" 
-},
-{
- "name": "Internal Market",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "8" 
-},
-{
- "name": "Justice and Fundamental Rights",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "40" 
+"weight":      9 
 },
 {
  "name": "Public Health",
 "parent": "Organisations representing churches and religious communities",
-"Percentage": "19" 
+"weight":     19 
 },
 {
- "name": "Regional Policy",
+ "name": "Environment",
 "parent": "Organisations representing churches and religious communities",
-"Percentage": "15" 
+"weight":     28 
 },
 {
- "name": "Research and Technology",
+ "name": "General and Institutional Affairs",
 "parent": "Organisations representing churches and religious communities",
-"Percentage": "12" 
-},
-{
- "name": "Taxation",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "12" 
-},
-{
- "name": "Trade",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "12" 
-},
-{
- "name": "Trans-European Networks",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "9" 
-},
-{
- "name": "Youth",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "30" 
-},
-{
- "name": "Budget",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "6" 
-},
-{
- "name": "Customs",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "4" 
-},
-{
- "name": "Development",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "28" 
-},
-{
- "name": "Transport",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "6" 
+"weight":     17 
 },
 {
  "name": "Agriculture and Rural Development",
 "parent": "Organisations representing churches and religious communities",
-"Percentage": "16" 
-},
-{
- "name": "Food Safety",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "10" 
-},
-{
- "name": "Fisheries and Aquaculture",
-"parent": "Organisations representing churches and religious communities",
-"Percentage": "6" 
+"weight":     16 
 },
 {
  "name": "Humanitarian Aid",
 "parent": "Organisations representing churches and religious communities",
-"Percentage": "36" 
+"weight":     36 
+},
+{
+ "name": "Youth",
+"parent": "Organisations representing churches and religious communities",
+"weight":     30 
+},
+{
+ "name": "Internal Market",
+"parent": "Organisations representing churches and religious communities",
+"weight":      8 
+},
+{
+ "name": "Enlargement",
+"parent": "Organisations representing churches and religious communities",
+"weight":     16 
+},
+{
+ "name": "Communication",
+"parent": "Organisations representing churches and religious communities",
+"weight":     13 
+},
+{
+ "name": "Development",
+"parent": "Organisations representing churches and religious communities",
+"weight":     28 
+},
+{
+ "name": "Regional Policy",
+"parent": "Organisations representing churches and religious communities",
+"weight":     15 
+},
+{
+ "name": "External Relations",
+"parent": "Organisations representing churches and religious communities",
+"weight":     30 
+},
+{
+ "name": "Culture",
+"parent": "Organisations representing churches and religious communities",
+"weight":     39 
+},
+{
+ "name": "Taxation",
+"parent": "Organisations representing churches and religious communities",
+"weight":     12 
+},
+{
+ "name": "Food Safety",
+"parent": "Organisations representing churches and religious communities",
+"weight":     10 
+},
+{
+ "name": "Education",
+"parent": "Organisations representing churches and religious communities",
+"weight":     37 
+},
+{
+ "name": "Home Affairs",
+"parent": "Organisations representing churches and religious communities",
+"weight":     23 
+},
+{
+ "name": "Employment and Social Affairs",
+"parent": "Organisations representing churches and religious communities",
+"weight":     26 
+},
+{
+ "name": "Audiovisual and Media",
+"parent": "Organisations representing churches and religious communities",
+"weight":     12 
 },
 {
  "name": "Sport",
 "parent": "Organisations representing churches and religious communities",
-"Percentage": "6" 
+"weight":      6 
+},
+{
+ "name": "Budget",
+"parent": "Organisations representing churches and religious communities",
+"weight":      6 
+},
+{
+ "name": "Justice and Fundamental Rights",
+"parent": "Organisations representing churches and religious communities",
+"weight":     40 
+},
+{
+ "name": "Enterprise",
+"parent": "Organisations representing churches and religious communities",
+"weight":      9 
+},
+{
+ "name": "Competition",
+"parent": "Organisations representing churches and religious communities",
+"weight":      7 
+},
+{
+ "name": "Transport",
+"parent": "Organisations representing churches and religious communities",
+"weight":      6 
+},
+{
+ "name": "Research and Technology",
+"parent": "Organisations representing churches and religious communities",
+"weight":     12 
+},
+{
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Organisations representing churches and religious communities",
+"weight":     28 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Organisations representing churches and religious communities",
+"weight":     15 
+},
+{
+ "name": "Trade",
+"parent": "Organisations representing churches and religious communities",
+"weight":     12 
+},
+{
+ "name": "Fisheries and Aquaculture",
+"parent": "Organisations representing churches and religious communities",
+"weight":      6 
+},
+{
+ "name": "Trans-European Networks",
+"parent": "Organisations representing churches and religious communities",
+"weight":      9 
+},
+{
+ "name": "Information Society",
+"parent": "Organisations representing churches and religious communities",
+"weight":     15 
+},
+{
+ "name": "Energy",
+"parent": "Organisations representing churches and religious communities",
+"weight":     11 
+},
+{
+ "name": "Climate Action",
+"parent": "Organisations representing churches and religious communities",
+"weight":     25 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Organisations representing churches and religious communities",
-"Percentage": "2" 
+"weight":      2 
+},
+{
+ "name": "Customs",
+"parent": "Organisations representing churches and religious communities",
+"weight":      4 
 } 
 ] 
 } 
@@ -2136,769 +2152,774 @@ x
 },
 {
  "name": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
+"weight":  16537,
 "parent": "Root",
 "children": [
  {
  "name": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":   2080,
 "parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
 "children": [
  {
- "name": "Audiovisual and Media",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "35" 
-},
-{
- "name": "Climate Action",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "72" 
-},
-{
- "name": "Communication",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "43" 
-},
-{
  "name": "Competition",
 "parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "68" 
-},
-{
- "name": "Consumer Affairs",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "53" 
-},
-{
- "name": "Culture",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "48" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "64" 
-},
-{
- "name": "Education",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "78" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "62" 
-},
-{
- "name": "Energy",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "77" 
-},
-{
- "name": "Enlargement",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "28" 
-},
-{
- "name": "Enterprise",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "76" 
-},
-{
- "name": "Environment",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "123" 
-},
-{
- "name": "External Relations",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "42" 
-},
-{
- "name": "Foreign and Security Policy and Defence",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "27" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "54" 
-},
-{
- "name": "Home Affairs",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "27" 
-},
-{
- "name": "Information Society",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "76" 
-},
-{
- "name": "Internal Market",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "78" 
-},
-{
- "name": "Justice and Fundamental Rights",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "47" 
+"weight":     68 
 },
 {
  "name": "Public Health",
 "parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "57" 
-},
-{
- "name": "Regional Policy",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "76" 
-},
-{
- "name": "Research and Technology",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "126" 
-},
-{
- "name": "Taxation",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "40" 
-},
-{
- "name": "Trade",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "50" 
-},
-{
- "name": "Trans-European Networks",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "70" 
-},
-{
- "name": "Youth",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "40" 
-},
-{
- "name": "Budget",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "37" 
-},
-{
- "name": "Customs",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "28" 
-},
-{
- "name": "Development",
-"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "90" 
+"weight":     57 
 },
 {
  "name": "Transport",
 "parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "79" 
+"weight":     79 
 },
 {
- "name": "Agriculture and Rural Development",
+ "name": "Climate Action",
 "parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "58" 
+"weight":     72 
 },
 {
- "name": "Food Safety",
+ "name": "Foreign and Security Policy and Defence",
 "parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "48" 
+"weight":     27 
+},
+{
+ "name": "Education",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     78 
+},
+{
+ "name": "Audiovisual and Media",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     35 
 },
 {
  "name": "Fisheries and Aquaculture",
 "parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "40" 
+"weight":     40 
 },
 {
- "name": "Humanitarian Aid",
+ "name": "Trans-European Networks",
 "parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "22" 
+"weight":     70 
 },
 {
- "name": "Sport",
+ "name": "Communication",
 "parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "21" 
+"weight":     43 
+},
+{
+ "name": "Enlargement",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     28 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
-"Percentage": "20" 
+"weight":     20 
+},
+{
+ "name": "Enterprise",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     76 
+},
+{
+ "name": "Consumer Affairs",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     53 
+},
+{
+ "name": "Environment",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":    123 
+},
+{
+ "name": "Culture",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     48 
+},
+{
+ "name": "External Relations",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     42 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     64 
+},
+{
+ "name": "Research and Technology",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":    126 
+},
+{
+ "name": "Taxation",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     40 
+},
+{
+ "name": "Employment and Social Affairs",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     62 
+},
+{
+ "name": "Home Affairs",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     27 
+},
+{
+ "name": "Humanitarian Aid",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     22 
+},
+{
+ "name": "Youth",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     40 
+},
+{
+ "name": "Internal Market",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     78 
+},
+{
+ "name": "Budget",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     37 
+},
+{
+ "name": "Justice and Fundamental Rights",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     47 
+},
+{
+ "name": "Customs",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     28 
+},
+{
+ "name": "Development",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     90 
+},
+{
+ "name": "Trade",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     50 
+},
+{
+ "name": "Regional Policy",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     76 
+},
+{
+ "name": "Agriculture and Rural Development",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     58 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     54 
+},
+{
+ "name": "Sport",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     21 
+},
+{
+ "name": "Food Safety",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     48 
+},
+{
+ "name": "Energy",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     77 
+},
+{
+ "name": "Information Society",
+"parent": "Other public or mixed entities, created by law whose purpose is to act in the public interest",
+"weight":     76 
 } 
 ] 
 },
 {
  "name": "Other sub-national public authorities",
+"weight":   2080,
 "parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
 "children": [
  {
- "name": "Audiovisual and Media",
+ "name": "Humanitarian Aid",
 "parent": "Other sub-national public authorities",
-"Percentage": "24" 
-},
-{
- "name": "Climate Action",
-"parent": "Other sub-national public authorities",
-"Percentage": "52" 
-},
-{
- "name": "Communication",
-"parent": "Other sub-national public authorities",
-"Percentage": "20" 
-},
-{
- "name": "Competition",
-"parent": "Other sub-national public authorities",
-"Percentage": "39" 
-},
-{
- "name": "Consumer Affairs",
-"parent": "Other sub-national public authorities",
-"Percentage": "28" 
-},
-{
- "name": "Culture",
-"parent": "Other sub-national public authorities",
-"Percentage": "41" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Other sub-national public authorities",
-"Percentage": "42" 
-},
-{
- "name": "Education",
-"parent": "Other sub-national public authorities",
-"Percentage": "49" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Other sub-national public authorities",
-"Percentage": "54" 
-},
-{
- "name": "Energy",
-"parent": "Other sub-national public authorities",
-"Percentage": "55" 
-},
-{
- "name": "Enlargement",
-"parent": "Other sub-national public authorities",
-"Percentage": "19" 
-},
-{
- "name": "Enterprise",
-"parent": "Other sub-national public authorities",
-"Percentage": "43" 
-},
-{
- "name": "Environment",
-"parent": "Other sub-national public authorities",
-"Percentage": "71" 
-},
-{
- "name": "External Relations",
-"parent": "Other sub-national public authorities",
-"Percentage": "28" 
-},
-{
- "name": "Foreign and Security Policy and Defence",
-"parent": "Other sub-national public authorities",
-"Percentage": "16" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Other sub-national public authorities",
-"Percentage": "47" 
-},
-{
- "name": "Home Affairs",
-"parent": "Other sub-national public authorities",
-"Percentage": "24" 
-},
-{
- "name": "Information Society",
-"parent": "Other sub-national public authorities",
-"Percentage": "46" 
-},
-{
- "name": "Internal Market",
-"parent": "Other sub-national public authorities",
-"Percentage": "52" 
+"weight":     14 
 },
 {
  "name": "Justice and Fundamental Rights",
 "parent": "Other sub-national public authorities",
-"Percentage": "38" 
+"weight":     38 
+},
+{
+ "name": "Employment and Social Affairs",
+"parent": "Other sub-national public authorities",
+"weight":     54 
 },
 {
  "name": "Public Health",
 "parent": "Other sub-national public authorities",
-"Percentage": "34" 
+"weight":     34 
 },
 {
- "name": "Regional Policy",
+ "name": "Enterprise",
 "parent": "Other sub-national public authorities",
-"Percentage": "60" 
+"weight":     43 
 },
 {
- "name": "Research and Technology",
+ "name": "Internal Market",
 "parent": "Other sub-national public authorities",
-"Percentage": "63" 
-},
-{
- "name": "Taxation",
-"parent": "Other sub-national public authorities",
-"Percentage": "27" 
-},
-{
- "name": "Trade",
-"parent": "Other sub-national public authorities",
-"Percentage": "24" 
-},
-{
- "name": "Trans-European Networks",
-"parent": "Other sub-national public authorities",
-"Percentage": "45" 
-},
-{
- "name": "Youth",
-"parent": "Other sub-national public authorities",
-"Percentage": "37" 
-},
-{
- "name": "Budget",
-"parent": "Other sub-national public authorities",
-"Percentage": "27" 
-},
-{
- "name": "Customs",
-"parent": "Other sub-national public authorities",
-"Percentage": "11" 
-},
-{
- "name": "Development",
-"parent": "Other sub-national public authorities",
-"Percentage": "52" 
-},
-{
- "name": "Transport",
-"parent": "Other sub-national public authorities",
-"Percentage": "53" 
-},
-{
- "name": "Agriculture and Rural Development",
-"parent": "Other sub-national public authorities",
-"Percentage": "39" 
-},
-{
- "name": "Food Safety",
-"parent": "Other sub-national public authorities",
-"Percentage": "29" 
-},
-{
- "name": "Fisheries and Aquaculture",
-"parent": "Other sub-national public authorities",
-"Percentage": "18" 
-},
-{
- "name": "Humanitarian Aid",
-"parent": "Other sub-national public authorities",
-"Percentage": "14" 
+"weight":     52 
 },
 {
  "name": "Sport",
 "parent": "Other sub-national public authorities",
-"Percentage": "20" 
+"weight":     20 
+},
+{
+ "name": "Transport",
+"parent": "Other sub-national public authorities",
+"weight":     53 
+},
+{
+ "name": "Research and Technology",
+"parent": "Other sub-national public authorities",
+"weight":     63 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Other sub-national public authorities",
+"weight":     47 
+},
+{
+ "name": "External Relations",
+"parent": "Other sub-national public authorities",
+"weight":     28 
+},
+{
+ "name": "Home Affairs",
+"parent": "Other sub-national public authorities",
+"weight":     24 
+},
+{
+ "name": "Fisheries and Aquaculture",
+"parent": "Other sub-national public authorities",
+"weight":     18 
+},
+{
+ "name": "Audiovisual and Media",
+"parent": "Other sub-national public authorities",
+"weight":     24 
+},
+{
+ "name": "Energy",
+"parent": "Other sub-national public authorities",
+"weight":     55 
+},
+{
+ "name": "Climate Action",
+"parent": "Other sub-national public authorities",
+"weight":     52 
+},
+{
+ "name": "Budget",
+"parent": "Other sub-national public authorities",
+"weight":     27 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Other sub-national public authorities",
-"Percentage": "9" 
+"weight":      9 
+},
+{
+ "name": "Competition",
+"parent": "Other sub-national public authorities",
+"weight":     39 
+},
+{
+ "name": "Environment",
+"parent": "Other sub-national public authorities",
+"weight":     71 
+},
+{
+ "name": "Consumer Affairs",
+"parent": "Other sub-national public authorities",
+"weight":     28 
+},
+{
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Other sub-national public authorities",
+"weight":     16 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Other sub-national public authorities",
+"weight":     42 
+},
+{
+ "name": "Food Safety",
+"parent": "Other sub-national public authorities",
+"weight":     29 
+},
+{
+ "name": "Education",
+"parent": "Other sub-national public authorities",
+"weight":     49 
+},
+{
+ "name": "Trade",
+"parent": "Other sub-national public authorities",
+"weight":     24 
+},
+{
+ "name": "Information Society",
+"parent": "Other sub-national public authorities",
+"weight":     46 
+},
+{
+ "name": "Trans-European Networks",
+"parent": "Other sub-national public authorities",
+"weight":     45 
+},
+{
+ "name": "Youth",
+"parent": "Other sub-national public authorities",
+"weight":     37 
+},
+{
+ "name": "Enlargement",
+"parent": "Other sub-national public authorities",
+"weight":     19 
+},
+{
+ "name": "Communication",
+"parent": "Other sub-national public authorities",
+"weight":     20 
+},
+{
+ "name": "Customs",
+"parent": "Other sub-national public authorities",
+"weight":     11 
+},
+{
+ "name": "Development",
+"parent": "Other sub-national public authorities",
+"weight":     52 
+},
+{
+ "name": "Regional Policy",
+"parent": "Other sub-national public authorities",
+"weight":     60 
+},
+{
+ "name": "Culture",
+"parent": "Other sub-national public authorities",
+"weight":     41 
+},
+{
+ "name": "Agriculture and Rural Development",
+"parent": "Other sub-national public authorities",
+"weight":     39 
+},
+{
+ "name": "Taxation",
+"parent": "Other sub-national public authorities",
+"weight":     27 
 } 
 ] 
 },
 {
  "name": "Regional structures",
+"weight":   2080,
 "parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
 "children": [
  {
- "name": "Audiovisual and Media",
-"parent": "Regional structures",
-"Percentage": "28" 
-},
-{
- "name": "Climate Action",
-"parent": "Regional structures",
-"Percentage": "68" 
-},
-{
- "name": "Communication",
-"parent": "Regional structures",
-"Percentage": "31" 
-},
-{
- "name": "Competition",
-"parent": "Regional structures",
-"Percentage": "42" 
-},
-{
- "name": "Consumer Affairs",
-"parent": "Regional structures",
-"Percentage": "28" 
-},
-{
- "name": "Culture",
-"parent": "Regional structures",
-"Percentage": "65" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Regional structures",
-"Percentage": "56" 
-},
-{
- "name": "Education",
-"parent": "Regional structures",
-"Percentage": "67" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Regional structures",
-"Percentage": "64" 
-},
-{
- "name": "Energy",
-"parent": "Regional structures",
-"Percentage": "75" 
-},
-{
- "name": "Enlargement",
-"parent": "Regional structures",
-"Percentage": "26" 
-},
-{
- "name": "Enterprise",
-"parent": "Regional structures",
-"Percentage": "59" 
-},
-{
- "name": "Environment",
-"parent": "Regional structures",
-"Percentage": "90" 
-},
-{
  "name": "External Relations",
 "parent": "Regional structures",
-"Percentage": "33" 
-},
-{
- "name": "Foreign and Security Policy and Defence",
-"parent": "Regional structures",
-"Percentage": "23" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Regional structures",
-"Percentage": "44" 
-},
-{
- "name": "Home Affairs",
-"parent": "Regional structures",
-"Percentage": "22" 
-},
-{
- "name": "Information Society",
-"parent": "Regional structures",
-"Percentage": "65" 
-},
-{
- "name": "Internal Market",
-"parent": "Regional structures",
-"Percentage": "39" 
-},
-{
- "name": "Justice and Fundamental Rights",
-"parent": "Regional structures",
-"Percentage": "36" 
-},
-{
- "name": "Public Health",
-"parent": "Regional structures",
-"Percentage": "59" 
-},
-{
- "name": "Regional Policy",
-"parent": "Regional structures",
-"Percentage": "90" 
-},
-{
- "name": "Research and Technology",
-"parent": "Regional structures",
-"Percentage": "70" 
-},
-{
- "name": "Taxation",
-"parent": "Regional structures",
-"Percentage": "23" 
-},
-{
- "name": "Trade",
-"parent": "Regional structures",
-"Percentage": "38" 
-},
-{
- "name": "Trans-European Networks",
-"parent": "Regional structures",
-"Percentage": "64" 
-},
-{
- "name": "Youth",
-"parent": "Regional structures",
-"Percentage": "60" 
-},
-{
- "name": "Budget",
-"parent": "Regional structures",
-"Percentage": "42" 
-},
-{
- "name": "Customs",
-"parent": "Regional structures",
-"Percentage": "11" 
-},
-{
- "name": "Development",
-"parent": "Regional structures",
-"Percentage": "69" 
-},
-{
- "name": "Transport",
-"parent": "Regional structures",
-"Percentage": "67" 
-},
-{
- "name": "Agriculture and Rural Development",
-"parent": "Regional structures",
-"Percentage": "56" 
+"weight":     33 
 },
 {
  "name": "Food Safety",
 "parent": "Regional structures",
-"Percentage": "34" 
+"weight":     34 
 },
 {
- "name": "Fisheries and Aquaculture",
+ "name": "Justice and Fundamental Rights",
 "parent": "Regional structures",
-"Percentage": "39" 
+"weight":     36 
 },
 {
- "name": "Humanitarian Aid",
+ "name": "Consumer Affairs",
 "parent": "Regional structures",
-"Percentage": "15" 
+"weight":     28 
 },
 {
- "name": "Sport",
+ "name": "Public Health",
 "parent": "Regional structures",
-"Percentage": "40" 
+"weight":     59 
+},
+{
+ "name": "Internal Market",
+"parent": "Regional structures",
+"weight":     39 
+},
+{
+ "name": "Regional Policy",
+"parent": "Regional structures",
+"weight":     90 
+},
+{
+ "name": "Foreign and Security Policy and Defence",
+"parent": "Regional structures",
+"weight":     23 
+},
+{
+ "name": "Research and Technology",
+"parent": "Regional structures",
+"weight":     70 
+},
+{
+ "name": "Culture",
+"parent": "Regional structures",
+"weight":     65 
+},
+{
+ "name": "Enterprise",
+"parent": "Regional structures",
+"weight":     59 
+},
+{
+ "name": "Employment and Social Affairs",
+"parent": "Regional structures",
+"weight":     64 
+},
+{
+ "name": "Audiovisual and Media",
+"parent": "Regional structures",
+"weight":     28 
+},
+{
+ "name": "Information Society",
+"parent": "Regional structures",
+"weight":     65 
+},
+{
+ "name": "Climate Action",
+"parent": "Regional structures",
+"weight":     68 
+},
+{
+ "name": "Enlargement",
+"parent": "Regional structures",
+"weight":     26 
+},
+{
+ "name": "Budget",
+"parent": "Regional structures",
+"weight":     42 
+},
+{
+ "name": "Competition",
+"parent": "Regional structures",
+"weight":     42 
+},
+{
+ "name": "Customs",
+"parent": "Regional structures",
+"weight":     11 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Regional structures",
-"Percentage": "10" 
+"weight":     10 
+},
+{
+ "name": "Agriculture and Rural Development",
+"parent": "Regional structures",
+"weight":     56 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Regional structures",
+"weight":     56 
+},
+{
+ "name": "Education",
+"parent": "Regional structures",
+"weight":     67 
+},
+{
+ "name": "Taxation",
+"parent": "Regional structures",
+"weight":     23 
+},
+{
+ "name": "Youth",
+"parent": "Regional structures",
+"weight":     60 
+},
+{
+ "name": "Trade",
+"parent": "Regional structures",
+"weight":     38 
+},
+{
+ "name": "Energy",
+"parent": "Regional structures",
+"weight":     75 
+},
+{
+ "name": "Trans-European Networks",
+"parent": "Regional structures",
+"weight":     64 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Regional structures",
+"weight":     44 
+},
+{
+ "name": "Communication",
+"parent": "Regional structures",
+"weight":     31 
+},
+{
+ "name": "Environment",
+"parent": "Regional structures",
+"weight":     90 
+},
+{
+ "name": "Sport",
+"parent": "Regional structures",
+"weight":     40 
+},
+{
+ "name": "Fisheries and Aquaculture",
+"parent": "Regional structures",
+"weight":     39 
+},
+{
+ "name": "Development",
+"parent": "Regional structures",
+"weight":     69 
+},
+{
+ "name": "Transport",
+"parent": "Regional structures",
+"weight":     67 
+},
+{
+ "name": "Home Affairs",
+"parent": "Regional structures",
+"weight":     22 
+},
+{
+ "name": "Humanitarian Aid",
+"parent": "Regional structures",
+"weight":     15 
 } 
 ] 
 },
 {
  "name": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":   2080,
 "parent": "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
 "children": [
  {
- "name": "Audiovisual and Media",
+ "name": "External Relations",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "15" 
-},
-{
- "name": "Climate Action",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "49" 
+"weight":     21 
 },
 {
  "name": "Communication",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "30" 
-},
-{
- "name": "Competition",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "19" 
+"weight":     30 
 },
 {
  "name": "Consumer Affairs",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "20" 
-},
-{
- "name": "Culture",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "37" 
-},
-{
- "name": "Economic and Financial Affairs",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "21" 
-},
-{
- "name": "Education",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "40" 
-},
-{
- "name": "Employment and Social Affairs",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "34" 
-},
-{
- "name": "Energy",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "36" 
-},
-{
- "name": "Enlargement",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "14" 
-},
-{
- "name": "Enterprise",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "28" 
-},
-{
- "name": "Environment",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "61" 
-},
-{
- "name": "External Relations",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "21" 
+"weight":     20 
 },
 {
  "name": "Foreign and Security Policy and Defence",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "12" 
-},
-{
- "name": "General and Institutional Affairs",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "20" 
-},
-{
- "name": "Home Affairs",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "12" 
+"weight":     12 
 },
 {
  "name": "Information Society",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "35" 
+"weight":     35 
 },
 {
- "name": "Internal Market",
+ "name": "Competition",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "25" 
-},
-{
- "name": "Justice and Fundamental Rights",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "18" 
-},
-{
- "name": "Public Health",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "30" 
-},
-{
- "name": "Regional Policy",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "51" 
-},
-{
- "name": "Research and Technology",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "44" 
-},
-{
- "name": "Taxation",
-"parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "11" 
+"weight":     19 
 },
 {
  "name": "Trade",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "11" 
+"weight":     11 
 },
 {
- "name": "Trans-European Networks",
+ "name": "Justice and Fundamental Rights",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "36" 
+"weight":     18 
 },
 {
- "name": "Youth",
+ "name": "Taxation",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "34" 
+"weight":     11 
 },
 {
- "name": "Budget",
+ "name": "Public Health",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "19" 
+"weight":     30 
 },
 {
- "name": "Customs",
+ "name": "Culture",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "10" 
+"weight":     37 
 },
 {
  "name": "Development",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "46" 
+"weight":     46 
+},
+{
+ "name": "Environment",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     61 
 },
 {
  "name": "Transport",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "46" 
+"weight":     46 
 },
 {
- "name": "Agriculture and Rural Development",
+ "name": "Home Affairs",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "28" 
+"weight":     12 
 },
 {
- "name": "Food Safety",
+ "name": "Education",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "21" 
+"weight":     40 
 },
 {
- "name": "Fisheries and Aquaculture",
+ "name": "Employment and Social Affairs",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "17" 
+"weight":     34 
 },
 {
- "name": "Humanitarian Aid",
+ "name": "Audiovisual and Media",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "18" 
+"weight":     15 
+},
+{
+ "name": "Internal Market",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     25 
+},
+{
+ "name": "Climate Action",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     49 
+},
+{
+ "name": "Enlargement",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     14 
 },
 {
  "name": "Sport",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "15" 
+"weight":     15 
+},
+{
+ "name": "Enterprise",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     28 
+},
+{
+ "name": "Regional Policy",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     51 
 },
 {
  "name": "Financial Stability, Financial Services and Capital Markets Union ",
 "parent": "Transnational associations and networks of public regional or other sub-national authorities",
-"Percentage": "3" 
+"weight":      3 
+},
+{
+ "name": "Research and Technology",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     44 
+},
+{
+ "name": "Trans-European Networks",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     36 
+},
+{
+ "name": "Agriculture and Rural Development",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     28 
+},
+{
+ "name": "Youth",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     34 
+},
+{
+ "name": "Food Safety",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     21 
+},
+{
+ "name": "Budget",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     19 
+},
+{
+ "name": "Energy",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     36 
+},
+{
+ "name": "Customs",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     10 
+},
+{
+ "name": "Humanitarian Aid",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     18 
+},
+{
+ "name": "General and Institutional Affairs",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     20 
+},
+{
+ "name": "Fisheries and Aquaculture",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     17 
+},
+{
+ "name": "Economic and Financial Affairs",
+"parent": "Transnational associations and networks of public regional or other sub-national authorities",
+"weight":     21 
 } 
 ] 
 } 
