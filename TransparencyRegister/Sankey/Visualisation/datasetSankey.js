@@ -1,11 +1,11 @@
-var treeData =
+var treeData =[
 {
- "name": "Root",
+ "name": "root",
 "parent": "null",
 "children": [
  {
  "name": "I - Professional consultancies/law firms/self-employed consultants",
-"parent": "Root",
+"parent": "root",
 "children": [
  {
  "name": "Law firms",
@@ -2905,4 +2905,4 @@ var treeData =
 ]
 }
 ]
-};
+}];

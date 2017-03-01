@@ -35,10 +35,11 @@
 
 <!-- load the d3.js library -->
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="datasetSankey.js"></script>
 
 <script>
 
-var treeData = [
+/*var treeData = [
   {
     "name": "Top Level",
     "parent": "null",
@@ -68,13 +69,13 @@ var treeData = [
       }
     ]
   }
-];
+];*/
 
 
 // ************** Generate the tree diagram	 *****************
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
-	width = 960 - margin.right - margin.left,
-	height = 500 - margin.top - margin.bottom;
+	width = 10000;
+	height = 20000;
 
 var i = 0,
 	duration = 750,
@@ -82,6 +83,9 @@ var i = 0,
 
 var tree = d3.layout.tree()
 	.size([height, width]);
+  /*.separation(function separation(a, b) {
+            return a.parent == b.parent ? 1 : 1.5;
+        });*/
 
 var diagonal = d3.svg.diagonal()
 	.projection(function(d) { return [d.y, d.x]; });
@@ -90,7 +94,17 @@ var svg = d3.select("body").append("svg")
 	.attr("width", width + margin.right + margin.left)
 	.attr("height", height + margin.top + margin.bottom)
   .append("g")
-	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+	.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+  .call(zoomListener);
+
+function zoom() {
+  svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+}
+
+// define the zoomListener which calls the zoom function on the "zoom" event constrained within the scaleExtents
+var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 3]).on("zoom", zoom);
+
+
 
 root = treeData[0];
 root.x0 = height / 2;
@@ -98,7 +112,7 @@ root.y0 = 0;
 
 update(root);
 
-d3.select(self.frameElement).style("height", "500px");
+//d3.select(self.frameElement).style("height", "500px");
 
 function update(source) {
 
@@ -107,7 +121,9 @@ function update(source) {
 	  links = tree.links(nodes);
 
   // Normalize for fixed-depth.
-  nodes.forEach(function(d) { d.y = d.depth * 180; });
+  nodes.forEach(function(d) {
+    d.y = d.depth * 300;
+  });
 
   // Update the nodes…
   var node = svg.selectAll("g.node")
@@ -116,6 +132,7 @@ function update(source) {
   // Enter any new nodes at the parent's previous position.
   var nodeEnter = node.enter().append("g")
 	  .attr("class", "node")
+    .attr("x", 100)
 	  .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
 	  .on("click", click);
 
@@ -137,6 +154,7 @@ function update(source) {
 
   nodeUpdate.select("circle")
 	  .attr("r", 10)
+    .attr("x", 100)
 	  .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeUpdate.select("text")
@@ -183,8 +201,8 @@ function update(source) {
 
   // Stash the old positions for transition.
   nodes.forEach(function(d) {
-	d.x0 = d.x;
-	d.y0 = d.y;
+	   d.x0 = d.x;
+	   d.y0 = d.y;
   });
 }
 
