@@ -11,7 +11,8 @@
 
       function drawRegionsMap() {
 		// query = select *
-		var gid = '432197715';
+		//var gid = '432197715';
+    var gid = "961745769";
 		var select = "select%20*";
 		var CEFDataURL = 'https://docs.google.com/spreadsheets/d/1uH_46klGqZeoDF4VyAqMa6XAzAUCwpksY8pOgvgvRlo/gviz/tq?gid='
 		CEFDataURL += gid+'&headers=1&tq='+select;
@@ -96,15 +97,15 @@
 			});
 
 			google.visualization.events.addListener(proxyTable, 'ready', function() {
-				/*var dt = deploy_proxyTable.getDataTable();
+				var dt = proxyTable.getDataTable();
 				var gb_data = google.visualization.data.group(dt, [0],[{ 'column': 4, 'aggregation': google.visualization.data.sum, 'type': 'number'}]);
         deploy_mapChart.setDataTable(gb_data);
-        deploy_mapChart.draw();*/
+        deploy_mapChart.draw();/*
         var dt = proxyTable.getDataTable();
 				var sum_data = google.visualization.data.group(dt, [0,4],[{ 'column': 5, 'aggregation': google.visualization.data.sum, 'type': 'number'}]);
         var count_data = google.visualization.data.group(sum_data, [0],[{ 'column': 2, 'aggregation': google.visualization.data.count, 'type': 'number'}]);
         deploy_mapChart.setDataTable(count_data);
-        deploy_mapChart.draw();
+        deploy_mapChart.draw();*/
       });
 
 	      /***** DASHBOARD *****/
