@@ -9,9 +9,13 @@ $(document).ready(function(){
 
   $(document).bind('click', function(e) {
       var $clicked = $(e.target);
-      if (! ( $clicked.hasClass("form-control searchBar") || $clicked.hasClass("FakeDropdownList") ) )
-          $("#filterOrgsList").hide();
+      if (! ( $clicked.hasClass("searchicon") || $clicked.hasClass("searchwindow")  || $clicked.hasClass("search-tooltip") || ($(e.target).parents('.searchwindow').length > 0) )
+          || ($(e.target).parents('.FakeDropdownList').length > 0))
+      {
+        $('#search').hide();
+      }
     });
+ 
 
     var currentOrg="ADANA_METROPOLITAN_MUNICIPALITY";
     $("#org_label").text("ADANA METROPOLITAN MUNICIPALITY");
@@ -34,9 +38,9 @@ function filterOrgSelected(element) {
 }
 
 function displayList() {
-  $('#filterOrgsList').show()
+  $('#search').show()
 }
 
 function hideList() {
-  $('#filterOrgsList').hide()
+    $('#search').hide()
 }

@@ -8,18 +8,24 @@
 }
 
 .searchBar {
-  width:231px;
+  width:49%;
   height:23px;
+  background-color: #EEE;
+}
+
+.searchwindow {
+  display:none;
+  background-color: #EEE;
+  position:absolute;
+  width:75%;
 }
 
 .FakeDropdownList {
-  height:250px;
+  height:500px;
   border:1px solid black;
   overflow-y: scroll;
-  display:none;
-  background-color: white;
-  position:absolute;
-  width:23.4%;
+  width:50%;
+  float:right;
 }
 
 .filter_cb_panel {
