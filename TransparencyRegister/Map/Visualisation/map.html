@@ -11,7 +11,8 @@
 
       function drawRegionsMap() {
 		// query = select *
-		var gid = '432197715';
+		//var gid = '432197715';
+    var gid = "961745769";
 		var select = "select%20*";
 		var CEFDataURL = 'https://docs.google.com/spreadsheets/d/1uH_46klGqZeoDF4VyAqMa6XAzAUCwpksY8pOgvgvRlo/gviz/tq?gid='
 		CEFDataURL += gid+'&headers=1&tq='+select;
@@ -88,15 +89,27 @@
 				chartType: 'GeoChart',
 				containerId: 'Chart_Div',
 				options: options,
-				view: {columns: [0, 4]},
 			});
 
-		// deploy_mapChart.setDataTable(data);
+      var proxyTable = new google.visualization.ChartWrapper({
+				chartType: 'Table',
+				containerId: 'table_div'
+			});
 
-		// deploy_mapChart.draw();
+			google.visualization.events.addListener(proxyTable, 'ready', function() {
+				var dt = proxyTable.getDataTable();
+				var gb_data = google.visualization.data.group(dt, [0],[{ 'column': 4, 'aggregation': google.visualization.data.sum, 'type': 'number'}]);
+        deploy_mapChart.setDataTable(gb_data);
+        deploy_mapChart.draw();/*
+        var dt = proxyTable.getDataTable();
+				var sum_data = google.visualization.data.group(dt, [0,4],[{ 'column': 5, 'aggregation': google.visualization.data.sum, 'type': 'number'}]);
+        var count_data = google.visualization.data.group(sum_data, [0],[{ 'column': 2, 'aggregation': google.visualization.data.count, 'type': 'number'}]);
+        deploy_mapChart.setDataTable(count_data);
+        deploy_mapChart.draw();*/
+      });
 
 	      /***** DASHBOARD *****/
-      dashboard.bind([FilterCategory, FilterSubcategory,FilterInterest], [deploy_mapChart]);
+      dashboard.bind([FilterCategory, FilterSubcategory,FilterInterest], [proxyTable]);
 
 	  dashboard.draw(data);
     }
@@ -283,6 +296,7 @@
                     <h5 class="chart-subtitle">Transparency Register: Europa</h5>
                     <p>This chart shows the frequency of each country, for each of the filters.</p>
                     <div id="Chart_Div" class="chart"></div>
+                    <div id="table_div" style="display:none;"></div>
                 </div>
             </div>
           </td>

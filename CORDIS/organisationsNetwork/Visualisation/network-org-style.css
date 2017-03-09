@@ -234,8 +234,8 @@ text.main {
 
 #org_label {
   position: relative;
-  top: 25px;
-  left: 20px;
+  top: 48px;
+  left: 2px;
   font-size:15px;
   color: #666666;
   width: 75%;
@@ -260,12 +260,12 @@ text.main {
   position: absolute;
   bottom: 65px;
   width:75%;
-  left:280px;
+  left:140px;
 }
 
 .help-tip {
     position: relative;
-    top: 46px;
+    top: 28px;
     left: 970px;
     text-align: center;
     background-color: #BCDBEA;
@@ -289,7 +289,6 @@ text.main {
 
 	-webkit-animation: fadeIn 0.3s ease-in-out;
 	animation: fadeIn 0.3s ease-in-out;
-
 }
 
 .help-tip p{	/* The tooltip */
@@ -305,7 +304,7 @@ text.main {
 	color: #FFF;
 	font-size: 13px;
 	line-height: 1.4;
-  z-index: 1000;
+    z-index: 1000;
 }
 
 .help-tip p:before{ /* The pointer of the tooltip */
@@ -326,4 +325,74 @@ text.main {
 	position: absolute;
 	top:-40px;
 	left:0;
+}
+
+
+.material-icons.md-light { 
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    line-height: 25px;
+    padding-left:2px;
+    }
+
+.searchicon { 
+    position: relative;
+    top: 100px;
+    left: 2px;
+    background-color: #BCDBEA;
+    width: 111px;
+    height: 30px;
+    font-size: 12px;
+    padding-left: 2px;
+    padding-bottom: 3px;
+    padding-top: 2px;
+    color: #FFF;
+}
+
+.searchicon:before{
+}
+
+.searchicon:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.searchicon p{    /* The tooltip */
+    display: none;
+    text-align: left;
+    background-color: #1E2021;
+    padding: 20px;
+    width: 240px;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: -166px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+    z-index: 1000;
+}
+
+.searchicon p:before{ /* The pointer of the tooltip */
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:#1E2021;
+    right:260px;
+    top:-12px;
+}
+
+.searchicon p:after{ /* Prevents the tooltip from being hidden */
+    width:100%;
+    height:40px;
+    content:'';
+    position: absolute;
+    top:-40px;
+    left:0;
 }

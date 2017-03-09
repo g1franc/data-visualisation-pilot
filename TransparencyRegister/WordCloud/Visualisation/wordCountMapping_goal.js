@@ -98,7 +98,7 @@ var wordCountMapping =
 
 var wordsList =
 [
-   "european",
+  "european",
   "international",
   "members",
   "research",
@@ -121,7 +121,6 @@ var wordsList =
   "institutions",
   "global",
   "work",
-  "europ�",
   "countries",
   "management",
   "world",

@@ -9,7 +9,7 @@
       google.charts.setOnLoadCallback(drawCharts);
       function drawCharts() {
 
-      var dataURL = 'https://docs.google.com/spreadsheets/d/1Ex4EEEDeT8lfRWSi5nCwYnZBNskl9bMO-nmDX3mMszk/gviz/tq?gid=0&headers=1&tq=select%20B%2CC%2CE%2CF%2CG%2CH%2CI%2CJ%2CK%2CL%2CM%2CN%2CO%2CP%2CQ%2CR%2CS%2CT%2CU%2CV%2CW%2CX%2CY%2CZ';
+      var dataURL = 'https://docs.google.com/spreadsheets/d/1Ex4EEEDeT8lfRWSi5nCwYnZBNskl9bMO-nmDX3mMszk/gviz/tq?gid=0&headers=1&tq=select%20B%2CC%2CE%2CF%2CG%2CH%2CI%2CJ%2CK%2CL%2CM%2CN%2CO%2CP%2CQ%2CR%2CS%2CT';
 
 	    var query = new google.visualization.Query(dataURL);
 	    query.send(handleQueryResponse);
@@ -149,7 +149,7 @@
             The visualisation allows, by default, to analyse the data through an interactive bubble chart.
             The bubble chart shows five variables: two numeric variables on the X and Y axes, bubble size and colour,
             and a time variable that may be manipulated with a slider. The software uses brushing and linking techniques to display
-            the numeric value of a highlighted country. The data can also be explored using a bar chart and a line char
+            the numeric value of a highlighted country. The data can also be explored using a bar chart and a line chart.
           <br><br>
             By default, the size and color of the bubble is determined by the total number of project and the number of project where the country is involved as a participant. The
             the position of the country in the chart is determined by the number of projects with the role coordinator versus the budget managed.
