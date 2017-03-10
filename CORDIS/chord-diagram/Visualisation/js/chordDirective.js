@@ -71,6 +71,7 @@ function ($window, matrixFactory) {
     }
 
     $scope.lightChords = function () {
+      console.log('test');
       container.selectAll("path.chord").style("opacity", function (p) {
             return ($scope.filters[p.target._id].hide && $scope.filters[p.source._id].hide) ? 0.9: 0.1;
           });

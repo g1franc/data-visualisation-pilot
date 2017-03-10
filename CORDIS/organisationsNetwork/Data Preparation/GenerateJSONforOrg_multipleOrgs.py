@@ -8,14 +8,14 @@ projMax = 496;
 minBubbleSize = 4;
 maxBubblesize = 20;
 
-linksMax = 50;
+linksMax = 59;
 
 class JNode:
-	def __init__(self, index, links, line, label, country, activity):
+	def __init__(self, index, links, line, label, country, activity, count):
 		self.index = index
 		self.links = links
 		self.label = label
-		self.size = (((float(line[7]) - projMin)*(maxBubblesize - minBubbleSize)) / (projMax - projMin)) + minBubbleSize
+		self.size = (((float(count) - projMin)*(maxBubblesize - minBubbleSize)) / (projMax - projMin)) + minBubbleSize
 		self.id = index
 		self.level = 1
 		self.country = country
@@ -91,14 +91,14 @@ def extractForOneOrg(index, linesArray):
 			value = orgDict[lineList[1]];
 		except KeyError:
 			orgDict[lineList[1]] = count;
-			orgList.append(JNode(count,[],lineList,lineList[1],lineList[3],lineList[5]));
+			orgList.append(JNode(count,[],lineList,lineList[1],lineList[3],lineList[5], lineList[7]));
 			count += 1
 		try:
 			value = orgDict[lineList[2]];
 		except KeyError:
 			if lineList[2] != '':
 				orgDict[lineList[2]] = count;
-				orgList.append(JNode(count,[],lineList,lineList[2],lineList[4],lineList[6]))
+				orgList.append(JNode(count,[],lineList,lineList[2],lineList[4],lineList[6], lineList[8]))
 				count += 1
 		#add links to JNode objects
 		if lineList[2] != '':
@@ -108,7 +108,7 @@ def extractForOneOrg(index, linesArray):
 			orgList[orgDict[lineList[2]]].links.append(org1Index);
 			#create JLink Object
 			#NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
-			linkWeight = (((float(lineList[9])-1)*(5-1))/(linksMax-1)+1)
+			linkWeight = (((float(lineList[9])-1)*(5-1))/(linksMax-1))+1
 			linksList.append(JLink(org1Index, org2Index, linkWeight))
 		copyIndex +=1
 	currentOrg = currentOrg.replace(' ','_')

@@ -82,24 +82,36 @@
 		<h1 style="margin:auto; width:1000px;text-align: center;padding-top:20px;/*line-height:1em*/height:70px">
 			<span style="line-height:1em !important"> Research collaborations between organisations based on EU-funded projects</span></h1>
 		<h1  style="margin:auto;text-align: center;padding-top:20px;">CORDIS data (H2020)</h1>
-		<p style="width:1000px; margin:auto; padding-top:20px; text-align: justify; margin-bottom: -60px;">
-			Through this page, you can explore <a href="http://cordis.europa.eu/home_en.html" target="_blank">CORDIS</a> data. CORDIS stands for Community Research and Development Information Service and is the European Commission's primary public repository and portal to disseminate information on all EU-funded research projects and their results in the broadest sense.
-		<br>
-			The visualisation allows to visualise, for each recipients of CORDIS funds, its partners. For one organisation, the size of the bubble represents the number of project participation, its colour the activity of the organisation (e.g. Research Organisations or Private for-profit) and the thickness of the link represents the strength of the collaboration.
-		<br>
-			The selection of the organisation can be done through the filter on the left of the organisation. Filters can be applied on activities types and countries.
-		<br><br>
-		</p>
-		</div>
 
-		<div style="width:100%; height:700px; margin-top:56px;">
-					<div style="position:absolute;top: 350px;z-index: 2;left: 2px;" onclick="displayList()" id="searchbar-container">
+		<p style="width:1000px; margin:auto; padding-top:20px; text-align: justify;">
+			Discover <a href="http://cordis.europa.eu/home_en.html" target="_blank">CORDIS</a> data:
+		</p>
+
+		<ul>
+			<li><p>CORDIS stands for Community Research and Development Information Service;</p></li>
+			<li><p>It is the European Commission's primary public repository and portal
+				to disseminate information on all EU-funded research projects and their results in the broadest sense.</p></li>
+		</ul>
+
+		<p style="width:1000px; margin:auto; padding-top:20px; text-align: justify;">
+			The visualisation on this page allows exploring the partners of each recipient of CORDIS funds.
+		</p>
+
+		<ul>
+			<li><p>the size of the bubble represents the number of project participation of the organisation;</p></li>
+			<li><p>its colour represents the activity of the organisation (e.g. Research Organisations or Private for-profit) and</p></li>
+			<li><p>the thickness of the link represents the strength of the collaboration
+				(i.e. the number of project run in common by these two organisations).</p></li>
+		</ul>
+
+		<div style="width:100%; height:700px;">
+					<div style="position:absolute;top: 493px;z-index: 2;left: 2px;" onclick="displayList()" id="searchbar-container">
 						<input style="float:left" type="text" class="form-control searchBar" id="searchbox" placeholder="Search &hellip;" fjs-search>
 						<div style="float:left" class="searchicon" onclick="displayList()">
 							<i class="material-icons md-light">search</i>
 						</div>
 					</div>
-					<div class="searchwindow" id="search" style="width:75%; float:left; top:347px; z-index:1;">
+					<div class="searchwindow" id="search" style="width:75%; float:left; top:493px; z-index:1;">
 					<div class="FakeDropdownList" id="filterOrgsList">
 						<div class="" id="orgs" fjs-items="template=#org-template"></div>
 					</div>
