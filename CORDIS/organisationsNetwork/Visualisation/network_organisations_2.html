@@ -92,20 +92,18 @@
 		</p>
 		</div>
 
-		<div style="width:100%; height:700px;">
-			<div class="searchicon" onclick="displayList()">
-				Search for another organisation.
-
-				<p class="search-tooltip">
-					Click here to display the search box.
-				</p>
-			</div>
-				<div class="searchwindow" id="search" style="width:75%; float:left; top:347px">
-					<input type="text" class="form-control searchBar" id="searchbox" placeholder="Search &hellip;" fjs-search>
+		<div style="width:100%; height:700px; margin-top:56px;">
+					<div style="position:absolute;top: 350px;z-index: 2;left: 2px;" onclick="displayList()" id="searchbar-container">
+						<input style="float:left" type="text" class="form-control searchBar" id="searchbox" placeholder="Search &hellip;" fjs-search>
+						<div style="float:left" class="searchicon" onclick="displayList()">
+							<i class="material-icons md-light">search</i>
+						</div>
+					</div>
+					<div class="searchwindow" id="search" style="width:75%; float:left; top:347px; z-index:1;">
 					<div class="FakeDropdownList" id="filterOrgsList">
 						<div class="" id="orgs" fjs-items="template=#org-template"></div>
 					</div>
-					<fieldset id="activity_criteria" class="filter_cb_panel">
+					<fieldset id="activity_criteria" class="filter_cb_panel" style="margin-top:45px;">
 						<legend>Activity types</legend>
 						<div id="activities">
 							<div class="checkbox" fjs-criteria="field=activity,ele=#activities input:checkbox">

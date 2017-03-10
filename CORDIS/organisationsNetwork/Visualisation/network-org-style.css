@@ -234,7 +234,7 @@ text.main {
 
 #org_label {
   position: relative;
-  top: 48px;
+  top: 80px;
   left: 2px;
   font-size:15px;
   color: #666666;
@@ -328,7 +328,7 @@ text.main {
 }
 
 
-.material-icons.md-light { 
+.material-icons.md-light {
     color: rgba(255, 255, 255, 1);
     font-size: 20px;
     width: 24px;
@@ -337,13 +337,14 @@ text.main {
     padding-left:2px;
     }
 
-.searchicon { 
+.searchicon {
     position: relative;
-    top: 100px;
-    left: 2px;
-    background-color: #BCDBEA;
-    width: 111px;
-    height: 30px;
+    /*top: 100px;
+    left: 2px;*/
+    /*background-color: #BCDBEA;*/
+    background-color: #444;
+    width: 27px;
+    height: 24px;
     font-size: 12px;
     padding-left: 2px;
     padding-bottom: 3px;
