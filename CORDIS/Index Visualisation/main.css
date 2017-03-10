@@ -1,34 +1,105 @@
-body {
-    background-color: #fff;
-    font-family:Lucida Sans Unicode;
-}
-
 p {
   font-size:13px;
   color: #666666;
+
+html {
+	padding: 0px 250px;
+	background-color: #bbbbbb;
+	line-height: 100%;
+}
+
+body {
+	margin: 0px;
+	position: inherit;
+  font-family:Lucida Sans Unicode;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 15px;
+	line-height: 1;
+	font-family:Lucida Sans Unicode;
+	margin:auto;
+	color: #094793;
+}
+
+a {
+	color: #505d8c;
+}
+
+.page {
+	border: 1px solid #696969;
+	background-color: white;
+}
+
+.menu-header {
+	background: #fff url(./images/menu_background.png) bottom center no-repeat;
+	background-size: 100% 100%;
+	display: list-item;
+	list-style: none;
+	position: relative;
+	height: 35px;
+	padding: 15px 0 0px 0;
+	margin-top: 15px;
+}
+
+ul.menu-header-links {
+	padding: 0 15px;
+	position: relative;
+	list-style: none;
+	margin: 0;
+>>>>>>> 02378819285f7fa44fdad562724c8949872feb53
 }
 
 .menu-button {
   float:left;
-  height:40px;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  width: 24.8%;
+  height:35px;
+  position: relative;
   text-align: center;
-  vertical-align: middle;
-  line-height: 40px;
   cursor: pointer;
-  background-color: #003399;
-  color: white;
+  background: repeat-x center center url(./images/menu_button_background.png);
+  color: white !important;
   font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
   font-weight: bold;
+  font-size: 0.929em;
+  padding: 0 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin: 0 1px;
 }
 
-.menu-button.selected {
-  background-color: white;
-  cursor: default;
-  color: #003399;
-  border-top: 2px solid #003399;
-  border-bottom: 2px solid #003399;
-  height:36px;
+a.menu-button {
+  padding: 0;
+  vertical-align: middle;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.selected {
+  background: white;
+  color: #505d8c !important;
+}
+
+.content{
+	margin: 15px;
+	position: relative;
+}
+
+.explanation {
+	background: #fff url(./images/featured_background.png) bottom center no-repeat;
+	padding: 10px 30px 40px 30px;
+	padding-top:15px;
+	text-align: justify;
+	font-family:Lucida Sans Unicode;
+	font-size:11px;
+	background-size: 100% 100%;
+}
+
+.footer {
+	padding-top:15px;
+	font-family:arial;
+	color: #696969;
+	font-size: 0.857em;
+	text-align: center;
+	background: #e9eff3;
 }
