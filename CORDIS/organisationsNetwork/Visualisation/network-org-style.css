@@ -1,12 +1,4 @@
-body {
-    background-color: #fff;
-    font-family:Lucida Sans Unicode;
-}
 
-p {
-  font-size:13px;
-  color: #666666;
-}
 
 fieldset {
   font-size:13px;
@@ -232,13 +224,15 @@ text.main {
     font-weight: bold;
 }
 
-#org_label {
+#org_label2 {
   position: relative;
-  top: 80px;
-  left: 2px;
+  top: 85px;
+  left: -267px;
   font-size:15px;
   color: #666666;
   width: 75%;
+  z-index:1;
+  text-align: left;
 }
 
 .legend {
@@ -257,23 +251,24 @@ text.main {
 
 .legend-div {
   overflow: hidden;
-  position: absolute;
-  bottom: 65px;
+  position: relative;
+  top: -40px;
   width:75%;
-  left:140px;
+  left:205px;
 }
 
 .help-tip {
     position: relative;
-    top: 28px;
-    left: 970px;
+    top: 31px;
+    left: 1038px;
     text-align: center;
     background-color: #BCDBEA;
     border-radius: 50%;
     width: 24px;
     height: 24px;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 3px;
+    z-index:2;
     cursor: help;
 }
 

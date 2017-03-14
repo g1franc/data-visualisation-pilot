@@ -41,16 +41,6 @@
     }
     </script>
     <style>
-      body {
-          background-color: #fff;
-          font-family:Lucida Sans Unicode;
-      }
-
-      p {
-        font-size:13px;
-        color: #666666;
-      }
-
       .help-tip {
           position: relative;
           top: 25px;
@@ -117,29 +107,21 @@
   </style>
   </head>
   <body>
-    <div style="padding: auto; width:1000px; margin:auto; position:relative;">
-
-      <div class="menu-header">
-        <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/'">
-          Home page
-        </div>
-        <div class="menu-button selected" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/motionChart/motionChart.html'">
-          Motion chart
-        </div>
-        <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/organisationsNetwork/network_organisations_2.html'">
-          Network chart
-        </div>
-        <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/chord-diagram/chart/chord.html'">
-          Chord diagram
-        </div>
-      </div>
+    <div class="page"> <!--style="padding: auto; width:1000px; margin:auto; position:relative;"-->
 
       <h1 style="font-family:Lucida Sans Unicode; margin:auto;text-align: center;">Relations between EU-funded projects and research in EU-28</h1>
 	  <h1 style="font-family:Lucida Sans Unicode; margin:auto;text-align: center;">CORDIS data (FP6, FP7, H2020)</h1>
 
-        <p style="padding-top:15px; text-align: justify;">
+    <div class="menu-header">
+      <ul class="menu-header-links">
+        <li class="menu-button"><a class="menu-button" href="http://52.50.205.146:8890/data-visualisation-pilot/">Home page</a></li>
+        <li class="menu-button selected"><a class="menu-button selected" href="http://52.50.205.146:8890/data-visualisation-pilot/motionChart/motionChart.html">Motion chart</a></li>
+        <li class="menu-button"><a class="menu-button" href="http://52.50.205.146:8890/data-visualisation-pilot/organisationsNetwork/network_organisations_2.html">Network chart</a></li>
+        <li class="menu-button"><a class="menu-button" href="http://52.50.205.146:8890/data-visualisation-pilot/chord-diagram/chart/chord.html">Chord diagram</a></li>
+      </ul>
+    </div>
+        <div class="explanation">
           Discover <a href="http://cordis.europa.eu/home_en.html" target="_blank">CORDIS</a> data:
-        </p>
 
         <ul>
           <li><p>CORDIS stands for Community Research and Development Information Service;</p></li>
@@ -147,7 +129,6 @@
             to disseminate information on all EU-funded research projects and their results in the broadest sense.</p></li>
         </ul>
 
-        <p style="padding-top:15px; text-align: justify;">
           This visualisation allows exploring the existing relations between
           different dimensions (e.g. population, GDP, R&D budget, education level)
           for each of the EU-28 countries and the participation of
@@ -160,13 +141,12 @@
           bubble chart.
           <br><br>
           The bubble chart shows five variables:
-        </p>
         <ul>
           <li><p>two numeric variables on the X and Y axes,</p></li>
           <li><p>bubble size and colour, and</p></li>
           <li><p>a time variable that may be manipulated with a slider.</p></li>
         </ul>
-        <p style="padding-top:15px; text-align: justify;">
+
           The software uses brushing and linking techniques to display the
           numeric value of a highlighted country. The data can also be explored
           using a bar chart and a line chart.
@@ -180,33 +160,14 @@
           The timeline below allows to display the evolution between the 3
           Framework Programmes (FP6, FP7, H2020). All the filters can be
           updated using the respective dropdowns.
-        </p>
-        <p style="padding-top:15px; text-align: justify; font-family:arial;">
-            Through this page, you can explore <a href="http://cordis.europa.eu/home_en.html" target="_blank">CORDIS</a> data. CORDIS stands for Community Research and Development
-            Information Service and is the European Commission's
-            primary public repository and portal to disseminate information on all EU-funded research projects and their results in the broadest sense.
-          <br><br>
-            This visualisation allows to explore the existing relations between different dimensions
-            (e.g. population, GDP, R&D budget, education level) for every one of the EU-28 countries and the participation of these countries in EU-funded project.
-            It is inspired by Trendalyzer, an information visualisation software for animation of statistics that was initially developed by
-            Hans Rosling's <a href="https://www.gapminder.org/" target="_blank">Gapminder Foundation</a> which is now owned by Google Inc.
-          <br><br>
-            The visualisation allows, by default, to analyse the data through an interactive bubble chart.
-            The bubble chart shows five variables: two numeric variables on the X and Y axes, bubble size and colour,
-            and a time variable that may be manipulated with a slider. The software uses brushing and linking techniques to display
-            the numeric value of a highlighted country. The data can also be explored using a bar chart and a line chart.
-          <br><br>
-            By default, the size and color of the bubble is determined by the total number of project and the number of project where the country is involved as a participant. The
-            the position of the country in the chart is determined by the number of projects with the role coordinator versus the budget managed.
-            The timeline below allows to display the evolution between the three framework contracts (FP6, FP7, H2020). All dimensions can be changed using their respective dropdowns.
-          <br><br>
-        </p>
-        <div class="help-tip">
-  				<p>Use the dropdown menu on the axis and the right panel to configure the chart. Click play to start the animation or move the slider to see the data at a certain point.
-          Use the three tabs to see different type of charts.</p>
-  			</div>
-      <div id="chart_div"></div>
-
+        </div>
+        <div class="content">
+          <div class="help-tip">
+  				      <p>Use the dropdown menu on the axis and the right panel to configure the chart. Click play to start the animation or move the slider to see the data at a certain point.
+                  Use the three tabs to see different type of charts.</p>
+  			  </div>
+          <div id="chart_div"></div>
+        </div>
       <div class="footer">
         This visualisation has been developed by  <a href="http://www.pwc.be/" target="_blank">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office of the EU</a>
         using <a href="https://developers.google.com/chart/interactive/docs/gallery/bubblechart" target="_blank">the Google-visualization library</a>
