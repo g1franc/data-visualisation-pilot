@@ -162,29 +162,29 @@ Dataset_PopByEducAttain <- subset(Dataset_PopByEducAttain, select=-c(SEX, AGE, U
 Dataset_PopByEducAttainED02 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED0-2", ]
 Dataset_PopByEducAttainED02 <- subset(Dataset_PopByEducAttainED02, select=-c(ISCED11))
 Dataset_PopByEducAttainED02 <- plyr::rename(Dataset_PopByEducAttainED02,c("Value" = "% pop. that study up to secondary education"))
-                                
-Dataset_PopByEducAttainED38 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED3-8", ]
-Dataset_PopByEducAttainED38 <- subset(Dataset_PopByEducAttainED38, select=-c(ISCED11))
-Dataset_PopByEducAttainED38 <- plyr::rename(Dataset_PopByEducAttainED38,c("Value" = "% pop. with a secondary or tertiary education"))
 
-Dataset_PopByEducAttainED34 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED3_4", ]
-Dataset_PopByEducAttainED34 <- subset(Dataset_PopByEducAttainED34, select=-c(ISCED11))
-Dataset_PopByEducAttainED34 <- plyr::rename(Dataset_PopByEducAttainED34,c("Value" = "% pop. with have a secondary education"))
+#Dataset_PopByEducAttainED38 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED3-8", ]
+#Dataset_PopByEducAttainED38 <- subset(Dataset_PopByEducAttainED38, select=-c(ISCED11))
+#Dataset_PopByEducAttainED38 <- plyr::rename(Dataset_PopByEducAttainED38,c("Value" = "% pop. with a secondary or tertiary education"))
 
-Dataset_PopByEducAttainED58 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED5-8", ]
-Dataset_PopByEducAttainED58 <- subset(Dataset_PopByEducAttainED58, select=-c(ISCED11))
-Dataset_PopByEducAttainED58 <- plyr::rename(Dataset_PopByEducAttainED58,c("Value" = "% pop. with a tertiary education"))
+#Dataset_PopByEducAttainED34 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED3_4", ]
+#Dataset_PopByEducAttainED34 <- subset(Dataset_PopByEducAttainED34, select=-c(ISCED11))
+#Dataset_PopByEducAttainED34 <- plyr::rename(Dataset_PopByEducAttainED34,c("Value" = "% pop. with have a secondary education"))
+
+#Dataset_PopByEducAttainED58 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED5-8", ]
+#Dataset_PopByEducAttainED58 <- subset(Dataset_PopByEducAttainED58, select=-c(ISCED11))
+#Dataset_PopByEducAttainED58 <- plyr::rename(Dataset_PopByEducAttainED58,c("Value" = "% pop. with a tertiary education"))
 
 
 output <- merge(output, Dataset_PopByEducAttainED02, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
-output <- merge(output, Dataset_PopByEducAttainED38, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
-output <- merge(output, Dataset_PopByEducAttainED34, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
-output <- merge(output, Dataset_PopByEducAttainED58, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
+#output <- merge(output, Dataset_PopByEducAttainED38, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
+#output <- merge(output, Dataset_PopByEducAttainED34, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
+#output <- merge(output, Dataset_PopByEducAttainED58, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
 
 remove(Dataset_PopByEducAttainED02)
-remove(Dataset_PopByEducAttainED38)
-remove(Dataset_PopByEducAttainED34)
-remove(Dataset_PopByEducAttainED58)
+#remove(Dataset_PopByEducAttainED38)
+#remove(Dataset_PopByEducAttainED34)
+#remove(Dataset_PopByEducAttainED58)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # X. Total intramural R&D expenditure #########################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -197,41 +197,41 @@ Dataset_RDExpend$Value <- as.numeric(Dataset_RDExpend$Value)
 Dataset_RDExpendAllSect <- Dataset_RDExpend[Dataset_RDExpend$SECTPERF == "All sectors", ]
 Dataset_RDExpendAllSect <- subset(Dataset_RDExpendAllSect, select=-c(SECTPERF))
 Dataset_RDExpendAllSect$Value <- Dataset_RDExpendAllSect$Value * 1000000
-Dataset_RDExpendAllSect <- plyr::rename(Dataset_RDExpendAllSect,c("Value" = "R&D Budget"))
+Dataset_RDExpendAllSect <- plyr::rename(Dataset_RDExpendAllSect,c("Value" = "National R&D Budget"))
 
 
-Dataset_RDExpendBusiness <- Dataset_RDExpend[Dataset_RDExpend$SECTPERF == "Business enterprise sector", ]
-Dataset_RDExpendBusiness <- subset(Dataset_RDExpendBusiness, select=-c(SECTPERF))
-Dataset_RDExpendBusiness$Value <- Dataset_RDExpendBusiness$Value * 1000000
-Dataset_RDExpendBusiness <- plyr::rename(Dataset_RDExpendBusiness,c("Value" = "R&D Budget of enterprise"))
+#Dataset_RDExpendBusiness <- Dataset_RDExpend[Dataset_RDExpend$SECTPERF == "Business enterprise sector", ]
+#Dataset_RDExpendBusiness <- subset(Dataset_RDExpendBusiness, select=-c(SECTPERF))
+#Dataset_RDExpendBusiness$Value <- Dataset_RDExpendBusiness$Value * 1000000
+#Dataset_RDExpendBusiness <- plyr::rename(Dataset_RDExpendBusiness,c("Value" = "R&D Budget of enterprise"))
 
-Dataset_RDExpendGov <- Dataset_RDExpend[Dataset_RDExpend$SECTPERF == "Government sector", ]
-Dataset_RDExpendGov <- subset(Dataset_RDExpendGov, select=-c(SECTPERF))
-Dataset_RDExpendGov$Value <- Dataset_RDExpendGov$Value * 1000000
-Dataset_RDExpendGov <- plyr::rename(Dataset_RDExpendGov,c("Value" = "R&D Budget of government"))
+#Dataset_RDExpendGov <- Dataset_RDExpend[Dataset_RDExpend$SECTPERF == "Government sector", ]
+#Dataset_RDExpendGov <- subset(Dataset_RDExpendGov, select=-c(SECTPERF))
+#Dataset_RDExpendGov$Value <- Dataset_RDExpendGov$Value * 1000000
+#Dataset_RDExpendGov <- plyr::rename(Dataset_RDExpendGov,c("Value" = "R&D Budget of government"))
 
-Dataset_RDExpendEduc <- Dataset_RDExpend[Dataset_RDExpend$SECTPERF == "Higher education sector", ]
-Dataset_RDExpendEduc <- subset(Dataset_RDExpendEduc, select=-c(SECTPERF))
-Dataset_RDExpendEduc$Value <- Dataset_RDExpendEduc$Value * 1000000
-Dataset_RDExpendEduc <- plyr::rename(Dataset_RDExpendEduc,c("Value" = "R&D Budget of high education"))
+#Dataset_RDExpendEduc <- Dataset_RDExpend[Dataset_RDExpend$SECTPERF == "Higher education sector", ]
+#Dataset_RDExpendEduc <- subset(Dataset_RDExpendEduc, select=-c(SECTPERF))
+#Dataset_RDExpendEduc$Value <- Dataset_RDExpendEduc$Value * 1000000
+#Dataset_RDExpendEduc <- plyr::rename(Dataset_RDExpendEduc,c("Value" = "R&D Budget of high education"))
 
-Dataset_RDExpendNonProf <- Dataset_RDExpend[Dataset_RDExpend$SECTPERF == "Private non-profit sector", ]
-Dataset_RDExpendNonProf <- subset(Dataset_RDExpendNonProf, select=-c(SECTPERF))
-Dataset_RDExpendNonProf$Value <- Dataset_RDExpendNonProf$Value * 1000000
-Dataset_RDExpendNonProf <- plyr::rename(Dataset_RDExpendNonProf,c("Value" = "R&D Budget of non-profit organisation"))
+#Dataset_RDExpendNonProf <- Dataset_RDExpend[Dataset_RDExpend$SECTPERF == "Private non-profit sector", ]
+#Dataset_RDExpendNonProf <- subset(Dataset_RDExpendNonProf, select=-c(SECTPERF))
+#Dataset_RDExpendNonProf$Value <- Dataset_RDExpendNonProf$Value * 1000000
+#Dataset_RDExpendNonProf <- plyr::rename(Dataset_RDExpendNonProf,c("Value" = "R&D Budget of non-profit organisation"))
 
 
 output <- merge(output, Dataset_RDExpendAllSect, by.x=c("name", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
-output <- merge(output, Dataset_RDExpendBusiness, by.x=c("name", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
-output <- merge(output, Dataset_RDExpendGov, by.x=c("name", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
-output <- merge(output, Dataset_RDExpendEduc, by.x=c("name", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
-output <- merge(output, Dataset_RDExpendNonProf, by.x=c("name", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
+#output <- merge(output, Dataset_RDExpendBusiness, by.x=c("name", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
+#output <- merge(output, Dataset_RDExpendGov, by.x=c("name", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
+#output <- merge(output, Dataset_RDExpendEduc, by.x=c("name", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
+#output <- merge(output, Dataset_RDExpendNonProf, by.x=c("name", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
 
 remove(Dataset_RDExpendAllSect)
-remove(Dataset_RDExpendBusiness)
-remove(Dataset_RDExpendGov)
-remove(Dataset_RDExpendEduc)
-remove(Dataset_RDExpendNonProf)
+#remove(Dataset_RDExpendBusiness)
+#remove(Dataset_RDExpendGov)
+#remove(Dataset_RDExpendEduc)
+#remove(Dataset_RDExpendNonProf)
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # XI. compute GDP per capita per country/year #################################################################################################
