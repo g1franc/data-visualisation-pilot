@@ -19,12 +19,19 @@
 				}
 				
 				var data = response.getDataTable();
+        data.setColumnProperties(2, {role:"annotation"});
+        data.setColumnProperties(4, {role:"annotation"});
+        data.setColumnProperties(6, {role:"annotation"});
+        data.setColumnProperties(8, {role:"annotation"});
+        data.setColumnProperties(10, {role:"annotation"});
+        data.setColumnProperties(12, {role:"annotation"});
+        data.setColumnProperties(14, {role:"annotation"});
 		
 
         var options = {
           title: 'Historical dataset',
           curveType: 'function',
-          legend: { position: 'right' }
+          legend: { position: 'right'}
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
