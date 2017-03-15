@@ -1,6 +1,6 @@
 p {
-  font-size:13px;
-  color: #666666;
+  font-size:11px;
+}
 
 html {
 	padding: 0px 250px;
@@ -12,6 +12,7 @@ body {
 	margin: 0px;
 	position: inherit;
   font-family:Lucida Sans Unicode;
+  font-size:11px;
 }
 
 h1 {
@@ -48,7 +49,6 @@ ul.menu-header-links {
 	position: relative;
 	list-style: none;
 	margin: 0;
->>>>>>> 02378819285f7fa44fdad562724c8949872feb53
 }
 
 .menu-button {
@@ -83,6 +83,7 @@ a.menu-button {
 .content{
 	margin: 15px;
 	position: relative;
+  text-align: center;
 }
 
 .explanation {

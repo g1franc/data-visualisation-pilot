@@ -10,46 +10,27 @@
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/angular/angular.min.js"></script>
-    <style>
-    body {
-        background-color: #fff!important;
-        font-family:Lucida Sans Unicode!important;
-    }
 
-    p {
-      font-size:13px!important;
-      color: #666666!important;
-    }
-
-    </style>
   </head>
   <body ng-app="app" ng-cloak ng-controller="mainCntrl">
 
-   <div style="padding: auto; width:1000px; margin:auto; position:relative;">
-
-      <div class="menu-header">
-          <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/'">
-            Home page
-          </div>
-          <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/motionChart/motionChart.html'">
-            Motion chart
-          </div>
-          <div class="menu-button" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/organisationsNetwork/network_organisations_2.html'">
-            Network chart
-          </div>
-          <div class="menu-button selected" onclick="location.href='http://52.50.205.146:8890/data-visualisation-pilot/chord-diagram/chart/chord.html'">
-            Chord diagram
-          </div>
-      </div>
+   <div class='page'>
 
         <h1 style="text-align: center;">Collaboration between EU-28 countries on EU-funded projects</h1>
         <h1 style="text-align: center;">CORDIS data (FP6, FP7, H2020)</h1>
 
+        <div class="menu-header" style="height:50px!important; font-size:10px!important">
+          <ul class="menu-header-links" style='font-size:10px!important'>
+            <li class="menu-button"><a class="menu-button" href="http://52.50.205.146:8890/data-visualisation-pilot/">Home page</a></li>
+            <li class="menu-button"><a class="menu-button" href="http://52.50.205.146:8890/data-visualisation-pilot/motionChart/motionChart.html">Motion chart</a></li>
+            <li class="menu-button"><a class="menu-button" href="http://52.50.205.146:8890/data-visualisation-pilot/organisationsNetwork/network_organisations_2.html">Network chart</a></li>
+            <li class="menu-button selected"><a class="menu-button selected" href="http://52.50.205.146:8890/data-visualisation-pilot/chord-diagram/chart/chord.html">Chord diagram</a></li>
+          </ul>
+        </div>
       <hr/>
 
-      <p style="margin:auto; padding-top:15px; text-align: justify;">
+      <div class="explanation">
         Discover <a href="http://cordis.europa.eu/home_en.html" target="_blank">CORDIS</a> data:
-      </p>
 
       <ul>
         <li><p>CORDIS stands for Community Research and Development Information Service;</p></li>
@@ -57,11 +38,9 @@
           to disseminate information on all EU-funded research projects and their results in the broadest sense.</p></li>
       </ul>
 
-      <p style="margin:auto; padding-top:15px; text-align: justify;">
         The visualisation on this page allows exploring the collaboration between
         EU-28 countries on projects funded under the FP6 (2002-2006),
         FP7 (2007-2013), and H2020 (2014-2020) Framework Programmes:
-      </p>
 
       <ul>
         <li><p>The countries are arranged radially around a circle;</p></li>
@@ -71,6 +50,7 @@
         <li><p>The size of the link depends on the number of projects between the two linked countries.</p></li>
       </ul>
 
+    </div>
 
         <div class="row" style="position:relative;">
 
@@ -116,9 +96,7 @@
 
         </div>
 
-        <footer class="row">
-          <div>
-          <p style="padding-top:15px; text-align: justify;">
+          <div class='footer'>
             This visualisation has been developed by  <a href="http://www.pwc.be/" target="_blank">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office of the EU</a>
             using <a href="https://d3js.org/" target="_blank">the d3js library</a>
             and is based on datasets provided on the <a href="http://data.europa.eu/euodp/en/data" target="_blank">European Union Data Portal</a> by CORDIS
@@ -128,9 +106,7 @@
             and is inspired from <a target="_blank" href="https://github.com/sghall/chord-transitions">chord-transitions</a>
             <br><br>
             The source code of this visualisation can be found on the following <a href="https://github.com/SEMICeu/data-visualisation-pilot" target="_blank">Github repository</a>.
-          </p>
           </div>
-        </footer>
 
     </div>
 

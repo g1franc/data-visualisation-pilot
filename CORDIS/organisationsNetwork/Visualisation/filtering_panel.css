@@ -8,7 +8,7 @@
 }
 
 .searchBar {
-  width:335px;
+  width:226px;
   height:23px;
   background-color: #EEE;
 }
@@ -18,10 +18,11 @@
   background-color: #EEE;
   position:absolute;
   width:75%;
+  text-align: left;
 }
 
 .FakeDropdownList {
-  height:500px;
+  height:507px;
   border:1px solid black;
   overflow-y: scroll;
   width:50%;

@@ -6,7 +6,7 @@ import operator
 projMin = 1;
 projMax = 496;
 minBubbleSize = 4;
-maxBubblesize = 20;
+maxBubblesize = 70;
 
 linksMax = 59;
 
@@ -108,7 +108,7 @@ def extractForOneOrg(index, linesArray):
 			orgList[orgDict[lineList[2]]].links.append(org1Index);
 			#create JLink Object
 			#NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
-			linkWeight = (((float(lineList[9])-1)*(5-1))/(linksMax-1))+1
+			linkWeight = (((float(lineList[9])-1)*(30-1))/(linksMax-1))+1
 			linksList.append(JLink(org1Index, org2Index, linkWeight))
 		copyIndex +=1
 	currentOrg = currentOrg.replace(' ','_')
