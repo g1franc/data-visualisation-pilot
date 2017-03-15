@@ -5,50 +5,99 @@
     <!-- load the d3.js library -->
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="d3.layout.cloud.js"></script>
-    <script src="wordCountMapping_goal.js"></script>
+    <script src="wordCountMapping_all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
   </head>
 
   <body>
 
+    <h1 style="margin:auto; width:1000px;text-align: center;padding-top:20px;/*line-height:1em*/height:70px">
+      <span style="line-height:1em !important"> Frequently used words</span></h1>
+        
+    <div style="width:1000px; margin:auto; margin-bottom: 15px; height:25px;">
+      <div style="float:left;">
+        <div style="text-align: justify; font-family:arial;">
+          Select an option:
+        </div>
+      </div>
+      <div style="float:left;">
+        <select id="dataDropdown" onchange="dataSelected(this)" style="margin-left:10px;">
+          <option value="goal_one">goal: one word</option>
+          <option value="activity_one">activity: one word</option>
+          <option value="both_one">goals and activities: one word</option>
+          <option value="goal_two">goal: two words</option>
+          <option value="activity_two">activity: two words</option>
+          <option value="both_two">goals and activities: two words</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="chartID"></div>
+
 <script>
 
-var fill = d3.scale.category20();
+   var currentData;
 
-var layout = d3.layout.cloud()
-    .size([1200, 600])
-    .timeInterval(20)
-    .words(wordsList.map(function(d) {
-      return {text: d, size: wordCountMapping[d]/40, test: "haha"};
-    }))
-    //.padding(5)
-    .rotate(function() { return ~~(Math.random() * 2) * 90; })
-    .font("Impact")
-    .fontSize(function(d) { return d.size; })
-    .spiral("archimedean")
-    .on("end", draw);
+   function D3ok() {
+      var myNode = document.getElementById("chartID");
+      while (myNode.firstChild) {
+         myNode.removeChild(myNode.firstChild);
+      }
 
-layout.start();
+      var wordsList = data["wordsList_"+currentData];
+      var wordCountMapping = data["wordCountMapping_"+currentData];
+      console.log(wordsList);
 
-function draw(words) {
-  d3.select("body").append("svg")
-      .attr("width", layout.size()[0])
-      .attr("height", layout.size()[1])
-    .append("g")
-      .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
-    .selectAll("text")
-      .data(words)
-    .enter().append("text")
-      .style("font-size", function(d) { return d.size + "px"; })
-      .style("font-family", "Impact")
-      .style("fill", function(d, i) { return fill(i); })
-      .attr("text-anchor", "middle")
-      .attr("transform", function(d) {
-        return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-      })
-      .text(function(d) { return d.text; });
+      var fill = d3.scale.category20();
+
+      var layout = d3.layout.cloud()
+          .size([1200, 600])
+          .timeInterval(20)
+          .words(wordsList.map(function(d) {
+            return {text: d, size: wordCountMapping[d]/40, test: "haha"};
+          }))
+          //.padding(5)
+          .rotate(function() { return ~~(Math.random() * 2) * 90; })
+          .font("Impact")
+          .fontSize(function(d) { return d.size; })
+          .spiral("archimedean")
+          .on("end", draw);
+
+      layout.start();
+
+      function draw(words) {
+        d3.select("#chartID").append("svg")
+            .attr("width", layout.size()[0])
+            .attr("height", layout.size()[1])
+          .append("g")
+            .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+          .selectAll("text")
+            .data(words)
+          .enter().append("text")
+            .style("font-size", function(d) { return d.size + "px"; })
+            .style("font-family", "Impact")
+            .style("fill", function(d, i) { return fill(i); })
+            .attr("text-anchor", "middle")
+            .attr("transform", function(d) {
+              return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+            })
+            .text(function(d) { return d.text; });
+      }
+   }    
+
+function dataSelected(option) {
+  console.log("here");
+  currentData = option.value;
+  D3ok();
 }
+
+$(document).ready(function() { 
+   currentData="goal_one";
+   D3ok();
+});
 </script>
+
 
   </body>
 </html>
