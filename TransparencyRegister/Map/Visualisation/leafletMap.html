@@ -8,7 +8,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
-
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 
@@ -20,7 +19,7 @@
 		}
 
 		.info {
-			padding: 6px 8px;
+			padding: 6px 12px;
 			font: 14px/16px Arial, Helvetica, sans-serif;
 			background: white;
 			background: rgba(255,255,255,0.8);
@@ -43,7 +42,7 @@
 			width: 18px;
 			height: 18px;
 			float: left;
-			margin-right: 8px;
+			margin-right: 21px;
 			opacity: 0.7;
 		}
 
@@ -87,18 +86,17 @@
 
 	// get color depending on population density value
 	function getColor(d) {
-		return 	d > 50  ? '#0c2c84' :
-				d > 20  ? '#225ea8' :
-				d > 10  ? '#1d91c0' :
-				d > 5   ? '#41b6c4' :
-				d > 2   ? '#7fcdbb' :
-				d > 1   ? '#c7e9b4' :
-							'#FFFFCC';
+		return 	d > 20  ? '#145FAB' :
+				d > 10  ? '#0092C2' :
+				d > 5   ? '#47B5C0' :
+				d > 2   ? '#80CCBA' :
+				d > 1   ? '#C5E9B0' :
+						  '#F5F59C';
 	}
 
 	function style(feature) {
 		return {
-			weight: 5,
+			weight: 1,
 			opacity: 1,
 			color: 'white',
 			fillOpacity: 1, 
