@@ -1,69 +1,107 @@
 <!DOCTYPE html>
-<svg width="960" height="960" font-family="sans-serif" font-size="10" text-anchor="middle"></svg>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script>
+<html lang="en">  
+    <head>
+        <link rel="stylesheet" href="../main.css"/>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
 
-var svg = d3.select("svg"),
-    width = +svg.attr("width"),
-    height = +svg.attr("height");
+    <body>
+        <div class="page">
+            <h1>bubble chart</h1>
+            <div class="menu-header">
+              <ul class="menu-header-links">
+                <li class="menu-button"><a class="menu-button" href="http://data-visualisation.semic.eu:8890/TransparencyRegister/wordcloud.html">Word cloud</a></li>
+                <li class="menu-button selected"><a class="menu-button selected" href="http://data-visualisation.semic.eu:8890/TransparencyRegister/bubble.html">Bubble chart</a></li>
+                <li class="menu-button"><a class="menu-button" href="http://data-visualisation.semic.eu:8890/TransparencyRegister/lineChart.html">Line chart</a></li>
+                <li class="menu-button"><a class="menu-button" href="http://data-visualisation.semic.eu:8890/TransparencyRegister/map.html">Map</a></li>
+                <li class="menu-button"><a class="menu-button" href="http://data-visualisation.semic.eu:8890/TransparencyRegister/sankey.html">Sankey diagram</a></li>
+                <li class="menu-button"><a class="menu-button" href="http://data-visualisation.semic.eu:8890/TransparencyRegister/tree.html">Tree</a></li>
+              </ul>
+            </div>
 
-var format = d3.format(",d");
+            <div class="explanation">
+              Add an explanation here.
+            </div>
 
-var color = d3.scaleOrdinal(d3.schemeCategory20c);
+            <div class="content">
+                <svg width="960" height="960" font-family="sans-serif" font-size="10" text-anchor="middle"></svg>
+            </div>
 
-var pack = d3.pack()
-    .size([width, height])
-    .padding(1.5);
+          <div class="footer">
+            This visualisation has been developed by  <a href="http://www.pwc.be/" target="_blank">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office of the EU</a>
+            using <a href="https://d3js.org/" target="_blank">the d3js library</a>
+            and is based on datasets provided on the <a href="http://ec.europa.eu/transparencyregister/public/homePage.do" target="_blank">Transparency Register</a>.
+            <br><br>
+            The source code of this visualisation can be found on the following <a href="https://github.com/SEMICeu/data-visualisation-pilot" target="_blank">Github repository</a>.
+          </div>
+        </div>
 
-d3.csv("BubbleChartData.txt", function(d) {
-  d.value = +d.value;
-  if (d.value) return d;
-}, function(error, classes) {
-  if (error) throw error;
+    <script>
 
-  var root = d3.hierarchy({children: classes})
-      .sum(function(d) { return d.value; })
-      .each(function(d) {
-        if (id = d.data.id) {
-          var id, i = id.lastIndexOf(".");
-          d.id = id;
-          d.package = id.slice(0, i);
-          d.class = id.slice(i + 1);
-        }
+      var svg = d3.select("svg"),
+          width = +svg.attr("width"),
+          height = +svg.attr("height");
+
+      var format = d3.format(",d");
+
+      var color = d3.scaleOrdinal(d3.schemeCategory20c);
+
+      var pack = d3.pack()
+          .size([width, height])
+          .padding(1.5);
+
+      d3.csv("BubbleChartData.txt", function(d) {
+        d.value = +d.value;
+        if (d.value) return d;
+      }, function(error, classes) {
+        if (error) throw error;
+
+        var root = d3.hierarchy({children: classes})
+            .sum(function(d) { return d.value; })
+            .each(function(d) {
+              if (id = d.data.id) {
+                var id, i = id.lastIndexOf(".");
+                d.id = id;
+                d.package = id.slice(0, i);
+                d.class = id.slice(i + 1);
+              }
+            });
+
+        var node = svg.selectAll(".node")
+          .data(pack(root).leaves())
+          .enter().append("g")
+            .attr("class", "node")
+            .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+        node.append("circle")
+            .attr("id", function(d) { return d.id; })
+            .attr("r", function(d) { return d.r; })
+            .style("fill", function(d) { return color(d.package); });
+
+        /*node.append("clipPath")
+            .attr("id", function(d) { return "clip-" + d.id; })
+          .append("use")
+            .attr("xlink:href", function(d) { return "#" + d.id; });*/
+
+        node.append("text")
+           .attr("dy", ".3em")
+           .style("text-anchor", "middle")
+           .text(function(d) { return d.id; });
+
+        /*node.append("text")
+            /*.attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; })
+          .selectAll("tspan")
+          .data(function(d) { return d.id; })
+          /*.enter().append("tspan")
+            .attr("x", 0)
+            .attr("y", function(d, i, nodes) { return 13 + (i - nodes.length / 2 - 0.5) * 10; })
+            .text(function(d) { return d; });*/
+
+        node.append("title")
+            .text(function(d) { return d.id + "\n" + format(d.value); });
       });
 
-  var node = svg.selectAll(".node")
-    .data(pack(root).leaves())
-    .enter().append("g")
-      .attr("class", "node")
-      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+      </script>
 
-  node.append("circle")
-      .attr("id", function(d) { return d.id; })
-      .attr("r", function(d) { return d.r; })
-      .style("fill", function(d) { return color(d.package); });
-
-  /*node.append("clipPath")
-      .attr("id", function(d) { return "clip-" + d.id; })
-    .append("use")
-      .attr("xlink:href", function(d) { return "#" + d.id; });*/
-
-  node.append("text")
-     .attr("dy", ".3em")
-     .style("text-anchor", "middle")
-     .text(function(d) { return d.id; });
-
-  /*node.append("text")
-      /*.attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; })
-    .selectAll("tspan")
-    .data(function(d) { return d.id; })
-    /*.enter().append("tspan")
-      .attr("x", 0)
-      .attr("y", function(d, i, nodes) { return 13 + (i - nodes.length / 2 - 0.5) * 10; })
-      .text(function(d) { return d; });*/
-
-  node.append("title")
-      .text(function(d) { return d.id + "\n" + format(d.value); });
-});
-
-</script>
+  </body>
+</html>
