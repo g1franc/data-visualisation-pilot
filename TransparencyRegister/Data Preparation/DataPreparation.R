@@ -5,6 +5,7 @@ require(XML)
 require(tm)
 require(RJSONIO)
 require(plyr)
+require(RWeka)
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # I. LOAD DATA ################################################################################################################################
@@ -219,10 +220,10 @@ remove(interest)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 func_CleanString <- function(data){
-  docs <- Corpus(VectorSource(data) )
+  docs <- VCorpus(VectorSource(data) )
   docs <- tm_map(docs, removePunctuation)   
   docs <- tm_map(docs, removeNumbers)  
-  docs <- tm_map(docs, tolower) 
+  docs <- tm_map(docs, tolower)
   docs <- tm_map(docs, removeWords, c(stopwords("english"), 
                                       stopwords("danish"),
                                       stopwords("dutch"), 
@@ -237,28 +238,66 @@ func_CleanString <- function(data){
                                       stopwords("norwegian"), 
                                       stopwords("swedish")))
   docs <- tm_map(docs, stripWhitespace)
+  docs <- tm_map(docs, PlainTextDocument)
 }
 
 # aggregate all goals and activities 
 listGoal <- paste(dataset$goals, collapse = ' ')
 listActivity <- paste(dataset$activities, collapse = ' ')
+listBoth <- paste(listGoal, listActivity, collapse = ' ')
 
 # remove punctuation, number, put everything to lower, remove stop words and white space
 listGoal <- func_CleanString(listGoal)
 listActivity <- func_CleanString(listActivity)
+listBoth <- func_CleanString(listBoth)
 
-# create document-term matrix (standard with frequency)
+# # create document-term matrix (standard with frequency)
 dtm_goal <- DocumentTermMatrix(listGoal, control=list(wordLengths=c(3,Inf)))
 dtm_activity <- DocumentTermMatrix(listActivity, control=list(wordLengths=c(3,Inf)))
+dtm_both <- DocumentTermMatrix(listBoth, control=list(wordLengths=c(3,Inf)))
+
+# create two-gram document-term matrix (standard with frequency)
+TwogramTokenizer <- function(x) NGramTokenizer(x,
+                                               Weka_control(min = 2, max = 2))
+dtm_goal_twogram <- DocumentTermMatrix(listGoal, control = list(tokenize = TwogramTokenizer))
+dtm_activity_twogram <- DocumentTermMatrix(listActivity, control = list(tokenize = TwogramTokenizer))
+dtm_both_twogram <- DocumentTermMatrix(listBoth, control = list(tokenize = TwogramTokenizer))
 
 # Generate list of 100 most frequent words
 freq_goal <- head(sort(colSums(as.matrix(dtm_goal)), decreasing=TRUE),100)
 freq_activity <- head(sort(colSums(as.matrix(dtm_activity)), decreasing=TRUE),100)
+freq_both <- head(sort(colSums(as.matrix(dtm_both)), decreasing=TRUE),100)
+freq_goal_twogram <- head(sort(colSums(as.matrix(dtm_goal_twogram)), decreasing=TRUE),100)
+freq_activity_twogram <- head(sort(colSums(as.matrix(dtm_activity_twogram)), decreasing=TRUE),100)
+freq_both_twogram <- head(sort(colSums(as.matrix(dtm_both_twogram)), decreasing=TRUE),100)
+
+#Multiply frequencies for low frequency files to enlarge visualisation
+freq_activity_multiplied <- freq_activity * 2
+freq_goal_twogram_multiplied <- freq_goal_twogram * 8
+freq_activity_twogram_multiplied <- freq_activity_twogram * 8
+freq_both_twogram_multiplied <- freq_both_twogram * 8
 
 # Build JSON
 JSON_goal <- toJSON(freq_goal)
-JSON_activity <- toJSON(freq_list_activity)
+# JSON_activity <- toJSON(freq_activity)
+JSON_both <- toJSON(freq_both)
+# JSON_goal_twogram <- toJSON(freq_goal_twogram)
+# JSON_activity_twogram <- toJSON(freq_activity_twogram)
+# JSON_both_twogram <- toJSON(freq_both_twogram)
+JSON_activity_multiplied <- toJSON(freq_activity_multiplied)
+JSON_goal_twogram_multiplied <- toJSON(freq_goal_twogram_multiplied)
+JSON_activity_twogram_multiplied <- toJSON(freq_activity_twogram_multiplied)
+JSON_both_twogram_multiplied <- toJSON(freq_both_twogram_multiplied)
+
 
 #save dataset
 write.table(JSON_goal, "../Datasets/wordCountMapping_goal_100.js", sep = ";", quote = FALSE, row.names = FALSE)
-write.table(JSON_activity, "../Datasets/wordCountMapping_activity_100.js", sep = ";", quote = FALSE, row.names = FALSE)
+# write.table(JSON_activity, "../Datasets/wordCountMapping_activity_100.js", sep = ";", quote = FALSE, row.names = FALSE)
+write.table(JSON_both, "../Datasets/wordCountMapping_both_100.js", sep = ";", quote = FALSE, row.names = FALSE)
+# write.table(JSON_goal_twogram, "../Datasets/wordCountMapping_goal_twogram_100.js", sep = ";", quote = FALSE, row.names = FALSE)
+# write.table(JSON_activity_twogram, "../Datasets/wordCountMapping_activity_twogram_100.js", sep = ";", quote = FALSE, row.names = FALSE)
+# write.table(JSON_both_twogram, "../Datasets/wordCountMapping_both_twogram_100.js", sep = ";", quote = FALSE, row.names = FALSE)
+write.table(JSON_activity_multiplied, "../Datasets/wordCountMapping_activity_multiplied_100.js", sep = ";", quote = FALSE, row.names = FALSE)
+write.table(JSON_goal_twogram_multiplied, "../Datasets/wordCountMapping_goal_twogram_multiplied_100.js", sep = ";", quote = FALSE, row.names = FALSE)
+write.table(JSON_activity_twogram_multiplied, "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js", sep = ";", quote = FALSE, row.names = FALSE)
+write.table(JSON_both_twogram_multiplied, "../Datasets/wordCountMapping_both_twogram_multiplied_100.js", sep = ";", quote = FALSE, row.names = FALSE)

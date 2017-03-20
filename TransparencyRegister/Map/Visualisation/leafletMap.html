@@ -6,21 +6,20 @@
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="../main.css"/>
 	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
-
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 
 	<style>
 
 		#map {
-			width: 800px;
-			height: 700px;
+			width: 620px;
+			height: 600px;
 		}
 
 		.info {
-			padding: 6px 8px;
+			padding: 6px 12px;
 			font: 14px/16px Arial, Helvetica, sans-serif;
 			background: white;
 			background: rgba(255,255,255,0.8);
@@ -43,138 +42,203 @@
 			width: 18px;
 			height: 18px;
 			float: left;
-			margin-right: 8px;
+			margin-right: 21px;
 			opacity: 0.7;
 		}
 
 </style>
 </head>
-<body>
+	<body>
+		<div class="page">
+            <h1></h1>
+            <div class="menu-header">
+              <ul class="menu-header-links">
+                <li class="menu-button"><a class="menu-button" href="http://data-visualisation.semic.eu:8890/TransparencyRegister/wordcloud.html">Word cloud</a></li>
+                <li class="menu-button"><a class="menu-button" href="http://data-visualisation.semic.eu:8890/TransparencyRegister/bubble.html">Bubble chart</a></li>
+                <li class="menu-button"><a class="menu-button" href="http://data-visualisation.semic.eu:8890/TransparencyRegister/lineChart.html">Line chart</a></li>
+                <li class="menu-button selected"><a class="menu-button selected" href="http://data-visualisation.semic.eu:8890/TransparencyRegister/leafletmap.html">Map</a></li>
+                <li class="menu-button"><a class="menu-button" href="http://data-visualisation.semic.eu:8890/TransparencyRegister/sankey.html">Sankey diagram</a></li>
+                <li class="menu-button"><a class="menu-button" href="http://data-visualisation.semic.eu:8890/TransparencyRegister/tree.html">Tree</a></li>
+              </ul>
+            </div>
 
-<div id='map'></div>
+            <div class="explanation">
+              Add an explanation here.
+            </div>
 
-<script type="text/javascript" src="eu-states.js"></script>
-<script src="https://unpkg.com/esri-leaflet@2.0.7"></script> 
+            <div class="content">
+				<div id='map'></div>
+				<div style="position:absolute; top:10px; left:630px; text-align:left">
+					<form onClick="JavaScript:setColors(group1.value)">
+					  	<input type="radio" name="group1" value="category_1" checked> I - Professional consultancies/law firms/self-employed consultants<br>
+						  	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_1_1"> Professional consultancies<br>
+						  	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_1_2"> Law firms<br>
+						  	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_1_3"> Self-employed consultants<br>
+					  	<input type="radio" name="group1" value="category_2"> II - In-house lobbyists and trade/business/professional associations<br>
+					  		&emsp;&emsp;<input type="radio" name="group1" value="subcategory_2_1"> Trade and business associations<br>
+					  		&emsp;&emsp;<input type="radio" name="group1" value="subcategory_2_2"> Companies and groups<br>
+					  		&emsp;&emsp;<input type="radio" name="group1" value="subcategory_2_3"> Trade unions and professional associations<br>
+					  		&emsp;&emsp;<input type="radio" name="group1" value="subcategory_2_4"> Other organisations<br>
+						<input type="radio" name="group1" value="category_3"> III - Non-governmental organisations<br>
+							&emsp;&emsp;<input type="radio" name="group1" value="subcategory_3_1"> Non-governmental organisations, platforms and networks and similar<br>
+					    <input type="radio" name="group1" value="category_4"> IV - Think tanks, research and academic institutions<br>
+					    	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_4_1"> Think tanks and research institutions<br>
+					    	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_4_2"> Academic institutions<br>
+					    <input type="radio" name="group1" value="category_5"> V - Organisations representing churches and religious communities<br>
+					    	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_5_1"> Organisations representing churches and religious communities<br>
+					    <input type="radio" name="group1" value="category_6"> VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.<br>
+					    	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_6_1"> Other public or mixed entities, created by law whose purpose is to act in the public interest<br>
+					    	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_6_2"> Other sub-national public authorities<br>
+					    	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_6_3"> Regional structures<br>
+					  		&emsp;&emsp;<input type="radio" name="group1" value="subcategory_6_4"> Transational associations and networks of public regional or other sub-national authorities
+					</form>
+				</div>
+			</div>
 
-<script type="text/javascript">
+          	<div class="footer">
+	            This visualisation has been developed by  <a href="http://www.pwc.be/" target="_blank">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office of the EU</a>
+	            using <a href="http://leafletjs.com/" target="_blank">the leafletjs library</a>
+	            and is based on datasets provided on the <a href="http://ec.europa.eu/transparencyregister/public/homePage.do" target="_blank">Transparency Register</a>.
+	            <br><br>
+	            The source code of this visualisation can be found on the following <a href="https://github.com/SEMICeu/data-visualisation-pilot" target="_blank">Github repository</a>.
+          	</div>
+        </div>
 
-	var map = L.map('map').setView([42, 0], 4);
+		<script type="text/javascript" src="eu-states.js"></script>
+		<script src="https://unpkg.com/esri-leaflet@2.0.7"></script> 
 
-	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-		maxZoom: 18,
-		id: 'mapbox.light'
-	}).addTo(map);
-	var layer = L.esri.basemapLayer('Gray').addTo(map); 
+		<script type="text/javascript">
 
+			var map = L.map('map').setView([52, 15], 4);
 
-	// control that shows state info on hover
-	var info = L.control();
-
-	info.onAdd = function (map) {
-		this._div = L.DomUtil.create('div', 'info');
-		this.update();
-		return this._div;
-	};
-
-	info.update = function (props) {
-/*		this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
-			'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
-			: 'Hover over a state');*/
-	};
-
-	info.addTo(map);
-
-
-	// get color depending on population density value
-	function getColor(d) {
-		return 	d > 50  ? '#0c2c84' :
-				d > 20  ? '#225ea8' :
-				d > 10  ? '#1d91c0' :
-				d > 5   ? '#41b6c4' :
-				d > 2   ? '#7fcdbb' :
-				d > 1   ? '#c7e9b4' :
-							'#FFFFCC';
-	}
-
-	function style(feature) {
-		return {
-			weight: 5,
-			opacity: 1,
-			color: 'white',
-			fillOpacity: 1, 
-			fillColor: getColor(feature.properties.density)
-		};
-	}
-
-	function highlightFeature(e) {
-		var layer = e.target;
-
-		layer.setStyle({
-			weight: 1,
-			fillOpacity: 0.7
-		});
-
-		if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-			layer.bringToFront();
-		}
-
-		info.update(layer.feature.properties);
-	}
-
-	var geojson;
-
-	function resetHighlight(e) {
-		geojson.resetStyle(e.target);
-		info.update();
-	}
-
-	function zoomToFeature(e) {
-		map.fitBounds(e.target.getBounds());
-	}
-
-	function onEachFeature(feature, layer) {
-		layer.on({
-			mouseover: highlightFeature,
-			mouseout: resetHighlight,
-			click: zoomToFeature
-		});
-	}
-
-	geojson = L.geoJson(statesData, {
-		style: style,
-		onEachFeature: onEachFeature
-	}).addTo(map);
-
-	map.attributionControl.addAttribution('');
+			L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+				maxZoom: 18,
+				id: 'mapbox.light'
+			}).addTo(map);
+			var layer = L.esri.basemapLayer('Gray').addTo(map); 
 
 
-	var legend = L.control({position: 'bottomright'});
+/*			// control that shows state info on hover
+			var info = L.control();
 
-	legend.onAdd = function (map) {
+			info.onAdd = function (map) {
+				this._div = L.DomUtil.create('div', 'info');
+				this.update();
+				return this._div;
+			};
 
-		var div = L.DomUtil.create('div', 'info legend'),
-			grades = [0, 1, 2, 5, 10, 20],
-			labels = [],
-			from, to;
+			info.update = function (props) {
+				this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
+					'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
+					: 'Hover over a state');
+			};
 
-		for (var i = 0; i < grades.length; i++) {
-			from = grades[i];
-			to = grades[i + 1];
-
-			labels.push(
-				'<i style="background:' + getColor(from + 1) + '"></i> ' +
-				from + (to ? '&ndash;' + to : '+'));
-		}
-
-		div.innerHTML = labels.join('<br>');
-		return div;
-	};
-
-	legend.addTo(map);
-
-</script>
+			info.addTo(map);*/
 
 
+			// get color depending on value
+			function getColor(d) {
+				return 	d > 20  ? '#145FAB' :
+						d > 10  ? '#0092C2' :
+						d > 5   ? '#47B5C0' :
+						d > 2   ? '#80CCBA' :
+						d > 1   ? '#C5E9B0' :
+								  '#F5F59C';
+			}
 
-</body>
+			function style(feature) {
+				return {
+					weight: 1,
+					opacity: 1,
+					color: 'white',
+					fillOpacity: 1, 
+		/*			fillColor: getColor(feature.properties.density)*/
+				};
+			}
+
+			function highlightFeature(e) {
+				var layer = e.target;
+
+				layer.setStyle({
+					fillOpacity: 0.7
+				});
+
+				if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+					layer.bringToFront();
+				}
+
+/*				info.update(layer.feature.properties);*/
+			}
+
+			function setColors(value) {
+				geojson.eachLayer(function(layer) {
+			        layer.setStyle({
+			            fillColor: getColor(layer.feature.properties[value])
+			        });
+			 	});
+			}
+
+			var geojson;
+
+			function resetHighlight(e) {
+				var layer = e.target;
+
+				layer.setStyle({
+					fillOpacity: 1
+				});
+
+				if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+					layer.bringToBack();
+				}
+
+/*				info.update();*/
+			}
+
+			function zoomToFeature(e) {
+				map.fitBounds(e.target.getBounds());
+			}
+
+			function onEachFeature(feature, layer) {
+				layer.on({
+					mouseover: highlightFeature,
+					mouseout: resetHighlight,
+					click: zoomToFeature
+				});
+			}
+
+			geojson = L.geoJson(statesData, {
+				style: style,
+				onEachFeature: onEachFeature
+			}).addTo(map);
+
+			map.attributionControl.addAttribution('');
+			setColors("category_1");
+
+
+			var legend = L.control({position: 'bottomright'});
+
+			legend.onAdd = function (map) {
+
+				var div = L.DomUtil.create('div', 'info legend'),
+					grades = [0, 1, 2, 5, 10, 20],
+					labels = [],
+					from, to;
+
+				for (var i = 0; i < grades.length; i++) {
+					from = grades[i];
+					to = grades[i + 1];
+
+					labels.push(
+						'<i style="background:' + getColor(from + 1) + '"></i> ' +
+						from + (to ? '&ndash;' + to : '+'));
+				}
+
+				div.innerHTML = labels.join('<br>');
+				return div;
+			};
+
+			legend.addTo(map);
+
+		</script>
+	</body>
 </html>
