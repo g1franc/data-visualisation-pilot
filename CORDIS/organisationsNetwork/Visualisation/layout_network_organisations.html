@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">  
+    <head>
+        <meta charset="utf-8">
+        <title>Organisations Network</title>
+        <link rel="stylesheet" href="network-org-style.css"/>
+        <link rel="stylesheet" href="filtering_panel.css"/>
+        <link rel="stylesheet" href="../main.css"/>
+    </head>
+
+    <body>
+
+        <div id="nocontent" style="padding: auto;">
+            <h1 style="margin:auto; width:1000px;">Sadly your browser is not compatible with this site</h1>
+            <div>
+            <p style="width:1000px; margin:auto; padding-top:15px; text-align: justify;">
+                You can use <a href="http://www.google.com/chrome/">Google
+                Chrome</a>, <a href="http://www.mozilla.org/firefox">Mozilla Firefox</a>
+                or <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Microsoft
+                Internet Explorer (v9 or above)</a> to access the visualisation
+            </p>
+            </div>
+        </div>
+
+        <div class="page">
+
+            <h1 style="margin:auto; width:1000px;text-align: center;padding-top:20px;/*line-height:1em*/height:70px">
+                <span style="line-height:1em !important"> Research collaborations between organisations based on EU-funded projects</span></h1>
+            <h1  style="margin:auto;text-align: center;padding-top:20px;">CORDIS data (H2020)</h1>
+
+            <div class="menu-header">
+              <ul class="menu-header-links">
+                <li class="menu-button"><a class="menu-button" href="http://52.50.205.146:8890/data-visualisation-pilot/">Home page</a></li>
+                <li class="menu-button"><a class="menu-button" href="http://52.50.205.146:8890/data-visualisation-pilot/motionChart/layout_motionChart.html">Motion chart</a></li>
+                <li class="menu-button selected"><a class="menu-button selected" href="http://52.50.205.146:8890/data-visualisation-pilot/organisationsNetwork/layout_network_organisations.html">Network chart</a></li>
+                <li class="menu-button"><a class="menu-button" href="http://52.50.205.146:8890/data-visualisation-pilot/chord-diagram/chart/chord.html">Chord diagram</a></li>
+              </ul>
+            </div>
+
+            <div class="explanation">
+                Discover <a href="http://cordis.europa.eu/home_en.html" target="_blank">CORDIS</a> data:
+
+            <ul>
+                <li><p>CORDIS stands for Community Research and Development Information Service;</p></li>
+                <li><p>It is the European Commission's primary public repository and portal
+                    to disseminate information on all EU-funded research projects and their results in the broadest sense.</p></li>
+            </ul>
+
+                The visualisation on this page allows exploring the partners of each recipient of CORDIS funds.
+
+            <ul>
+                <li><p>the size of the bubble represents the number of project participation of the organisation;</p></li>
+                <li><p>its colour represents the activity of the organisation (e.g. Research Organisations or Private for-profit) and</p></li>
+                <li><p>the thickness of the link represents the strength of the collaboration
+                    (i.e. the number of project run in common by these two organisations).</p></li>
+            </ul>
+            </div>
+            <div class="content">
+                <iframe style="width:985px; height:800px" src="http://52.50.205.146:8890/data-visualisation-pilot/organisationsNetwork/iframe_network_organisations.html"></iframe>
+                <div style="text-align:left">
+                    <b>Embed Code:</b>
+                    <input id="embededCodeField" type="text" value="<iframe style=&quot;width:985px; height:800px&quot; src=&quot;http://52.50.205.146:8890/data-visualisation-pilot/organisationsNetwork/iframe_network_organisations.html&quot;></iframe>" style="width:985px">
+                </div> 
+            </div>
+            <div class="footer">
+                This visualisation has been developed by  <a href="http://www.pwc.be/" target="_blank">PwC EU services</a> for the <a href="http://publications.europa.eu/en/home" target="_blank">Publications Office of the EU</a>
+                using the <a href="https://d3js.org/" target="_blank">d3js library</a>
+                and is based on datasets provided on the <a href="http://data.europa.eu/euodp/en/data" target="_blank">European Union Data Portal</a> by CORDIS
+                (<a href="https://data.europa.eu/euodp/data/dataset/cordisH2020projects" target="_blank">H2020 framework programme</a>).
+                <br><br>
+                The source code of this visualisation can be found on the following <a href="https://github.com/SEMICeu/data-visualisation-pilot" target="_blank">Github repository</a>.
+                </div>
+        </div>     
+    </body>
+</html>

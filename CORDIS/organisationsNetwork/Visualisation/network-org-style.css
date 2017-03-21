@@ -226,8 +226,8 @@ text.main {
 
 #org_label2 {
   position: relative;
-  top: 85px;
-  left: -267px;
+  top: 31px;
+  left: -261px;
   font-size:15px;
   color: #666666;
   width: 75%;
@@ -259,8 +259,8 @@ text.main {
 
 .help-tip {
     position: relative;
-    top: 31px;
-    left: 1038px;
+    top: -23px;
+    left: 950px;
     text-align: center;
     background-color: #BCDBEA;
     border-radius: 50%;
