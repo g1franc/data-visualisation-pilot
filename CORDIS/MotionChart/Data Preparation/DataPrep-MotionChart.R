@@ -159,27 +159,27 @@ output <- subset(output, select=-c(AGE, SEX,UNIT, Flag.and.Footnotes))
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 Dataset_PopByEducAttain <- subset(Dataset_PopByEducAttain, select=-c(SEX, AGE, UNIT))
 
-Dataset_PopByEducAttainED02 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED0-2", ]
-Dataset_PopByEducAttainED02 <- subset(Dataset_PopByEducAttainED02, select=-c(ISCED11))
-Dataset_PopByEducAttainED02 <- plyr::rename(Dataset_PopByEducAttainED02,c("Value" = "% pop. that study up to secondary education"))
+#Dataset_PopByEducAttainED02 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED0-2", ]
+#Dataset_PopByEducAttainED02 <- subset(Dataset_PopByEducAttainED02, select=-c(ISCED11))
+#Dataset_PopByEducAttainED02 <- plyr::rename(Dataset_PopByEducAttainED02,c("Value" = "% pop. that study up to secondary education"))
 
 #Dataset_PopByEducAttainED38 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED3-8", ]
 #Dataset_PopByEducAttainED38 <- subset(Dataset_PopByEducAttainED38, select=-c(ISCED11))
 #Dataset_PopByEducAttainED38 <- plyr::rename(Dataset_PopByEducAttainED38,c("Value" = "% pop. with a secondary or tertiary education"))
 
-#Dataset_PopByEducAttainED34 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED3_4", ]
-#Dataset_PopByEducAttainED34 <- subset(Dataset_PopByEducAttainED34, select=-c(ISCED11))
-#Dataset_PopByEducAttainED34 <- plyr::rename(Dataset_PopByEducAttainED34,c("Value" = "% pop. with have a secondary education"))
+Dataset_PopByEducAttainED34 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED3_4", ]
+Dataset_PopByEducAttainED34 <- subset(Dataset_PopByEducAttainED34, select=-c(ISCED11))
+Dataset_PopByEducAttainED34 <- plyr::rename(Dataset_PopByEducAttainED34,c("Value" = "% pop. with a secondary education"))
 
-#Dataset_PopByEducAttainED58 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED5-8", ]
-#Dataset_PopByEducAttainED58 <- subset(Dataset_PopByEducAttainED58, select=-c(ISCED11))
-#Dataset_PopByEducAttainED58 <- plyr::rename(Dataset_PopByEducAttainED58,c("Value" = "% pop. with a tertiary education"))
+Dataset_PopByEducAttainED58 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED5-8", ]
+Dataset_PopByEducAttainED58 <- subset(Dataset_PopByEducAttainED58, select=-c(ISCED11))
+Dataset_PopByEducAttainED58 <- plyr::rename(Dataset_PopByEducAttainED58,c("Value" = "% pop. with a tertiary education"))
 
 
-output <- merge(output, Dataset_PopByEducAttainED02, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
+#output <- merge(output, Dataset_PopByEducAttainED02, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
 #output <- merge(output, Dataset_PopByEducAttainED38, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
-#output <- merge(output, Dataset_PopByEducAttainED34, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
-#output <- merge(output, Dataset_PopByEducAttainED58, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
+output <- merge(output, Dataset_PopByEducAttainED34, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
+output <- merge(output, Dataset_PopByEducAttainED58, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
 
 remove(Dataset_PopByEducAttainED02)
 #remove(Dataset_PopByEducAttainED38)
