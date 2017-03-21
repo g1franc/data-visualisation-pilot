@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+      var dataURL = 'https://docs.google.com/spreadsheets/d/1uH_46klGqZeoDF4VyAqMa6XAzAUCwpksY8pOgvgvRlo/gviz/tq?gid=1385776962&headers=1&tq=select%20*'
+      var query = new google.visualization.Query(dataURL);
+      query.send(handleQueryResponse);
+      }
+      
+      function handleQueryResponse(response) {
+          if (response.isError()) {
+            alert ('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+            return;
+          }
+          
+          var data = response.getDataTable();
+          data.setColumnProperties(2, {role:"annotation"});
+          data.setColumnProperties(4, {role:"annotation"});
+          data.setColumnProperties(6, {role:"annotation"});
+          data.setColumnProperties(8, {role:"annotation"});
+          data.setColumnProperties(10, {role:"annotation"});
+          data.setColumnProperties(12, {role:"annotation"});
+          data.setColumnProperties(14, {role:"annotation"});
+      
+
+          var options = {
+            curveType: 'function',
+            legend: { position: 'right'}
+          };
+
+          var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+          chart.draw(data, options);
+        }
+      </script>
+    </head>
+
+    <body>
+      <div id="curve_chart" style="width: 900px; height: 600px"></div>
+  </body>
+</html>
