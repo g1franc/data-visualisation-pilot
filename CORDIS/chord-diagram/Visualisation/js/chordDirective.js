@@ -51,7 +51,7 @@ function ($window, matrixFactory) {
       .attr("class", "chart")
       .attr({width: size[0] + "px", height: size[1] + "px"})
       .attr("preserveAspectRatio", "xMinYMin")
-      .attr("viewBox", "0 0 " + size[0] + " " + size[1]);
+      .attr("viewBox", "-20 -20 " + size[0] + " " + size[1]);
 
     var container = svg.append("g")
       .attr("class", "container")
