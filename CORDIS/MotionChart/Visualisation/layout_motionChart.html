@@ -2,77 +2,10 @@
 <html lang="en">  
     <head>
         <link rel="stylesheet" href="../main.css"/>
-                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <title>Interactive bubble chart</title>
-
-        <style>
-              .help-tip {
-                  position: relative;
-                  top: 30px;
-                  left: 960px;
-                  text-align: center;
-                  background-color: #BCDBEA;
-                  border-radius: 50%;
-                  width: 24px;
-                  height: 24px;
-                  font-size: 14px;
-                  line-height: 26px;
-                  cursor: help;
-              }
-
-              .help-tip:before{
-                content:'?';
-                font-weight: bold;
-                color:#fff;
-              }
-
-              .help-tip:hover p{
-                display:block;
-                transform-origin: 100% 0%;
-
-                -webkit-animation: fadeIn 0.3s ease-in-out;
-                animation: fadeIn 0.3s ease-in-out;
-
-              }
-
-              .help-tip p{  /* The tooltip */
-                display: none;
-                text-align: left;
-                background-color: #1E2021;
-                padding: 20px;
-                width: 300px;
-                position: absolute;
-                border-radius: 3px;
-                box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-                right: -4px;
-                color: #FFF;
-                font-size: 13px;
-                line-height: 1.4;
-              }
-
-              .help-tip p:before{ /* The pointer of the tooltip */
-                position: absolute;
-                content: '';
-                width:0;
-                height: 0;
-                border:6px solid transparent;
-                border-bottom-color:#1E2021;
-                right:10px;
-                top:-12px;
-              }
-
-              .help-tip p:after{ /* Prevents the tooltip from being hidden */
-                width:100%;
-                height:40px;
-                content:'';
-                position: absolute;
-                top:-40px;
-                left:0;
-          }
-        </style>
     </head>
-
     <body>
         <div class="page">
 
@@ -130,14 +63,10 @@
               updated using the respective dropdowns.
             </div>
             <div class="content">
-                <div class="help-tip">
-                    <p>Use the dropdown menu on the axis and the right panel to configure the chart. Click play to start the animation or move the slider to see the data at a certain point.
-                      Use the three tabs to see different type of charts.</p>
-                </div>
-                <iframe style="width:985px; height:520px" src="http://52.50.205.146:8890/data-visualisation-pilot/motionChart/iframe_motionChart.html"></iframe>
+                <iframe style="width:985px; height:550px;" src="http://52.50.205.146:8890/data-visualisation-pilot/motionChart/iframe_motionChart.html"></iframe>
                 <div style="text-align:left">
                     <b>Embed Code:</b>
-                    <input id="embededCodeField" type="text" value="<iframe style=&quot;width:985px; height:520px&quot; src=&quot;http://52.50.205.146:8890/data-visualisation-pilot/motionChart/iframe_motionChart.html&quot;></iframe>" style="width:985px">
+                    <input id="embededCodeField" type="text" value="<iframe style=&quot;width:985px; height:550px;&quot; src=&quot;http://52.50.205.146:8890/data-visualisation-pilot/motionChart/iframe_motionChart.html&quot;></iframe>" style="width:985px">
                 </div>
             </div>
             <div class="footer">
