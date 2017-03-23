@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+        <script src="assets/js/jquery-1.11.3.min.js" type="text/javascript"></script>
         <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 
         <style>
@@ -49,7 +50,7 @@
     <body>
         <div id='map'></div>
         <div style="position:absolute; top:10px; left:615px; text-align:left">
-            <form onClick="JavaScript:setColors(group1.value)">
+            <form onClick="JavaScript:setColors()">
                   <input type="radio" name="group1" value="category_1" checked> I - Professional consultancies/law firms/self-employed consultants<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="subcategory_1_1"> Professional consultancies<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="subcategory_1_2"> Law firms<br>
@@ -139,7 +140,23 @@
             /* info.update(layer.feature.properties);*/
             }
 
+            function getValueFromRadioButton(name) {
+               //Get all elements with the name
+               var buttons = document.getElementsByName(name);
+               for(var i = 0; i < buttons.length; i++) {
+                  //Check if button is checked
+                  var button = buttons[i];
+                  if(button.checked) {
+                     //Return value
+                     return button.value;
+                  }
+               }
+               //No radio button is selected. 
+               return null;
+            }
+
             function setColors(value) {
+                value = getValueFromRadioButton("group1");
                 geojson.eachLayer(function(layer) {
                     layer.setStyle({
                         fillColor: getColor(layer.feature.properties[value])
@@ -181,7 +198,7 @@
             }).addTo(map);
 
             map.attributionControl.addAttribution('');
-            setColors("category_1");
+            setColors();
 
 
             var legend = L.control({position: 'bottomright'});
