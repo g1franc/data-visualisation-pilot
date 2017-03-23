@@ -66,14 +66,31 @@ function ($window, matrixFactory) {
       d3.event.preventDefault();
       d3.event.stopPropagation();
 
-      $scope.filters[d._id].hide ? $scope.filters[d._id].hide = false : $scope.filters[d._id].hide = true;
+      var isEveryBoxChecked = true;
+      container.selectAll("path.chord").each(function (p) {
+        if (!$scope.filters[p.target._id].hide || !$scope.filters[p.source._id].hide) {
+          isEveryBoxChecked = false;
+/*          break;*/
+        }
+      });
+     
+      if(isEveryBoxChecked) {
+        //do some magic
+        for (var key in $scope.filters) {
+          $scope.filters[key].hide = false;
+        }
+        $scope.filters[d._id].hide = true;
+      }
+      else {
+        $scope.filters[d._id].hide ? $scope.filters[d._id].hide = false : $scope.filters[d._id].hide = true;
+      }
       $scope.$apply();
     }
 
     $scope.lightChords = function () {
-      console.log('test');
+
       container.selectAll("path.chord").style("opacity", function (p) {
-            return ($scope.filters[p.target._id].hide && $scope.filters[p.source._id].hide) ? 0.9: 0.1;
+            return ($scope.filters[p.target._id].hide || $scope.filters[p.source._id].hide) ? 0.9: 0.1;
           });
     }
 
