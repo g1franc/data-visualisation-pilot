@@ -40,9 +40,7 @@ function ($scope) {
     $scope.$apply();
   };
 
-  $scope.update = function () {
-    var data = $scope.master[$scope.selected_frameworkContract];
-
+  $scope.updateFilters = function () {
     var allChecked = true;
     for (var key in $scope.filters) {
       if(!$scope.filters[key].hide) {
@@ -56,6 +54,12 @@ function ($scope) {
     else {
       $("#resetButton").text("Select all");
     }
+  };
+
+  $scope.update = function () {
+    var data = $scope.master[$scope.selected_frameworkContract];
+
+    $scope.updateFilters();
 
     if (data) {
       $scope.drawChords(data);

@@ -84,6 +84,8 @@ function ($window, matrixFactory) {
       else {
         $scope.filters[d._id].hide ? $scope.filters[d._id].hide = false : $scope.filters[d._id].hide = true;
       }
+
+      $scope.updateFilters();
       $scope.$apply();
     }
 

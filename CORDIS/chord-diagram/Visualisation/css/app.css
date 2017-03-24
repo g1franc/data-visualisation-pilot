@@ -35,7 +35,7 @@ input[type="radio"] {
 .countries {
   height: 580px;
   overflow-y: scroll;
-  width:198px;
+  width:200px;
 }
 
 aside {
@@ -46,7 +46,7 @@ aside {
     position: absolute;
     top: 565px;
     right: 10px;
-    width:198px;
+    width:200px;
 }
 
 .help-tip {
