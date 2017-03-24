@@ -37,7 +37,7 @@
     <script>
         // Set the dimensions of the canvas / graph
         var svg = d3.select("svg"),
-            margin = {top: 30, right: 50, bottom: 220, left: 50},
+            margin = {top: 30, right: 50, bottom: 220, left: 70},
             width = svg.attr("width") - margin.left - margin.right,
             height = svg.attr("height") - margin.top - margin.bottom,
             g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -92,10 +92,10 @@
               .call(d3.axisLeft(y))
             .append("text")
               .attr("transform", "rotate(-90)")
-              .attr("y", 6)
+              .attr("y", -67)
               .attr("dy", "0.71em")
               .attr("fill", "#000")
-              .style("font", "18px sans-serif")
+              .style("font", "16px sans-serif")
               .text("Number of entity registered");
 
           var cat = g.selectAll(".cat")
