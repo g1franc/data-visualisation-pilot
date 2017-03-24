@@ -1395,7 +1395,7 @@ span.postfix, label.postfix {
   border-color: #cccccc; }
 
 /* We use this to get basic styling on all basic form elements */
-input[type="text"],
+/*input[type="text"],*/
 input[type="password"],
 input[type="date"],
 input[type="datetime"],
