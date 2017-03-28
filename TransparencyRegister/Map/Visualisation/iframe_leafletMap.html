@@ -101,7 +101,7 @@
                 value = getValueFromRadioButton("group1");
                 console.log(props);
                 this._div.innerHTML = (props ?
-                    '<b>' + props.name + '</b><br />' + props[value]
+                    '<b>' + props.name + '</b><br />' + 'Number of entities: ' + props[value]
                     : 'Hover over a state');
             };
 
