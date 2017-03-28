@@ -1,0 +1,54 @@
+
+body {
+}
+
+a, a:visited {
+  color:#333;
+}
+
+#text-select {
+  float:right;
+  margin-right: 10px;
+}
+
+#vis {
+  overflow: hidden;
+  position: relative;
+}
+
+#bubble-background {
+  fill: none;
+  pointer-events: all;
+}
+
+.bubble-node {
+  fill: #DCE9BE;
+}
+
+.bubble-hover {
+  fill: #E8E9E7;
+}
+
+.bubble-selected {
+  fill: #CEE98F;
+  stroke: #A6BA92;
+  stroke-width: 1.5px;
+}
+
+a.bubble-label {
+  font-family: Lucida Sans Unicode;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1em;
+  position: absolute;
+}
+
+
+.bubble-label .bubble-label-value {
+  font: 10px Lucida Sans Unicode;
+  white-space: nowrap;
+}
+
