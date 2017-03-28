@@ -3,16 +3,20 @@ p {
 }
 
 html {
-	padding: 0px 250px;
+/*	padding: 0% 10%;*/
 	background-color: #bbbbbb;
 	line-height: 100%;
 }
 
 body {
-	margin: 0px;
+	margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
 	position: inherit;
-  font-family:Lucida Sans Unicode;
-  font-size:11px;
+  	font-family:Lucida Sans Unicode;
+  	font-size:11px;
+  	width:1000px;
 }
 
 h1 {
@@ -81,9 +85,13 @@ a.menu-button {
 }
 
 .content{
-	margin: 15px;
+	width:98.5%;
+	margin-top: 15px;
+	margin-bottom:15px;
+	margin-left:auto;
+	margin-right:auto;
 	position: relative;
-  text-align: center;
+  	text-align: center;
 }
 
 .explanation {
