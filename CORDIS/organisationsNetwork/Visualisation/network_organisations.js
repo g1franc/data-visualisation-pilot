@@ -88,8 +88,7 @@ function D3ok() {
 	var dataFile = typeof currentOrg !== "undefined" ? "./Data/"+currentOrg+'.json' : "./Data/ADANA_METROPOLITAN_MUNICIPALITY.json";
 
 	d3.json(dataFile, function(error, graph)
-	{
-		var linkedByIndex = {};
+	{	var linkedByIndex = {};
 			graph.links.forEach(function(d){
 				linkedByIndex[d.source + "," + d.target] = true;
 			});
@@ -174,7 +173,6 @@ function D3ok() {
 			text.attr("dx", function(d) {return (size(d.size)||nominal_base_node_size)+6;})
 				.text(function(d) { return '\u2002'+(d.label + " - " + d.country).toLowerCase(); });
 
-
 		node.on("mouseover", function(d) {
 				set_highlight(d);
 			})
@@ -254,7 +252,6 @@ function D3ok() {
 
 
 		zoom.on("zoom", function(){
-			console.log("zoom" + w + " " + h);
 			var stroke = nominal_stroke;
 			if (nominal_stroke*zoom.scale()>max_stroke)
 				stroke = max_stroke/zoom.scale();
@@ -289,15 +286,16 @@ function D3ok() {
 			    link.style("visibility", "visible");
 			    $("#loading").fadeOut();
 			} 
-				node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-				text.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-				link.attr("x1", function(d) { return d.source.x; })
-					.attr("y1", function(d) { return d.source.y; })
-					.attr("x2", function(d) { return d.target.x; })
-					.attr("y2", function(d) { return d.target.y; });
-				node.attr("cx", function(d) { return d.x; })
-					.attr("cy", function(d) { return d.y; });
+			node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+			text.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+			link.attr("x1", function(d) { return d.source.x; })
+				.attr("y1", function(d) { return d.source.y; })
+				.attr("x2", function(d) { return d.target.x; })
+				.attr("y2", function(d) { return d.target.y; });
+			node.attr("cx", function(d) { return d.x; })
+				.attr("cy", function(d) { return d.y; });
 		});
+
 
 /*		force.on('end', function() {
 		    // layout is done
