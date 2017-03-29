@@ -392,3 +392,12 @@ text.main {
     top:-40px;
     left:0;
 }
+
+#loading {
+    position: fixed;
+    top: 40%; width: 100%;
+    font-size: 600%;
+    text-align: center; 
+    z-index: 999999;
+    font-family:Lucida Sans Unicode;
+}

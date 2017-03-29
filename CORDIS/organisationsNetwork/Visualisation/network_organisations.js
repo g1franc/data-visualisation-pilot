@@ -36,9 +36,9 @@ var currentOrg = e.options[e.selectedIndex].value;*/
 // Do the stuff -- to be called after D3.js has loaded
 function D3ok() {
 	var myNode = document.getElementById("chartID");
-  while (myNode.firstChild) {
-      myNode.removeChild(myNode.firstChild);
-  }
+	while (myNode.firstChild) {
+	    myNode.removeChild(myNode.firstChild);
+	}
 
 	var w = $("#chartID").width();
 	var h = $("#chartID").height();
@@ -61,11 +61,11 @@ function D3ok() {
 	var highlight_trans = 0.1;
 
 	var size = d3.scale.pow().exponent(1)
-		.domain([10,500])
-		.range([10,500]);
+		.domain([10,50])
+		.range([10,50]);
 
 	var force = d3.layout.force()
-		.linkDistance(300)
+		.linkDistance(200)
 		.charge(-600)
 		.size([w,h]);
 
@@ -109,12 +109,14 @@ function D3ok() {
 			.attr("class", "link")
 			.style("stroke-width",function(d) { return d.weight*.75;})
 			.style("stroke", default_link_color)
+			.style("visibility", "hidden")
 
 		var node = g.selectAll(".node")
 			.data(graph.nodes)
 			.enter().append("g")
 			.attr("class", "node")
 			.attr("id", function(d) { return "c" + d.index; } )
+			.style("visibility", "hidden")
 			.call(force.drag)
 
 
@@ -282,16 +284,28 @@ function D3ok() {
 			.on("resize", resize);
 
 		force.on("tick", function(){
-			node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-			text.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-			link.attr("x1", function(d) { return d.source.x; })
-				.attr("y1", function(d) { return d.source.y; })
-				.attr("x2", function(d) { return d.target.x; })
-				.attr("y2", function(d) { return d.target.y; });
-			node.attr("cx", function(d) { return d.x; })
-				.attr("cy", function(d) { return d.y; });
+			if (force.alpha() < 0.05) {
+				node.style("visibility", "visible");
+			    link.style("visibility", "visible");
+			    $("#loading").fadeOut();
+			} 
+				node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+				text.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+				link.attr("x1", function(d) { return d.source.x; })
+					.attr("y1", function(d) { return d.source.y; })
+					.attr("x2", function(d) { return d.target.x; })
+					.attr("y2", function(d) { return d.target.y; });
+				node.attr("cx", function(d) { return d.x; })
+					.attr("cy", function(d) { return d.y; });
 		});
 
+/*		force.on('end', function() {
+		    // layout is done
+		    node.style("visibility", "visible");
+		    link.style("visibility", "visible");
+		    $("#loading").fadeOut();
+		    console.log("here");
+		  });*/
 
 		function resize() {
 			console.log("resize")
@@ -303,7 +317,6 @@ function D3ok() {
 		}
 
 	});
-
 
 	function vis_by_node_score(score){
 		if (isNumber(score))
