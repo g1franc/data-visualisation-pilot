@@ -13,7 +13,10 @@ require(RWeka)
 
 getwd()
 setwd("C:/Users/vandeloc/Documents/Documents/Cordis/GitHub/TransparencyRegister/Data Preparation")
-setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/1 - Cordis/data-visualisation-pilot/TransparencyRegister/Map")
+setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/data-visualisation-pilot/TransparencyRegister/Data Preparation")
+
+
+download.file("http://ec.europa.eu/transparencyregister/public/consultation/statistics.do?action=getLobbyistsXml&fileType=NEW", destfile = "../Datasets/full_export_new.xml")
 
 xmlfile <-  xmlTreeParse("../Datasets/full_export_new.xml", useInternalNodes = TRUE)
 countries = read.csv("../Datasets/Countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
@@ -67,156 +70,127 @@ remove(tmp)
 # III. BUILD DATA.FRAME FOR MAP ###############################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
-countries$name <- toupper(countries$name)
-countries <- subset (countries, select =c(name, EU28))
-datasetMap <- merge(dataset, countries, by.x=c("countries"), by.y=c("name"), all.x=TRUE)
-datasetMap <- datasetMap[datasetMap$EU28 == TRUE,]
-datasetMap <- datasetMap[!is.na(datasetMap$interest),]
-
-
-#list the possible list of value for interest
-listInterest <- paste(datasetMap$interest, collapse = ';')
-listInterest <- strsplit(listInterest, ";")[[1]]
-listInterest <- unique(listInterest)
-
-func_test <- function(data, filterValue){
-  data <- data[grep(filterValue, data[, "interest"]), ]
-  output <- count(data, c('countries', 'categories', 'subCategories'))
-  output <- cbind(output, filterValue)
-  
-  return(output)
+func_BuildDatasetForMapBasedOnFilterCategories <- function(data, filterValue){
+  data <- data[data$categories == filterValue, ]
+  output <-aggregate(data$countries, 
+                     by=list(data$countries),
+                     FUN=length, simplify = FALSE)
+  output <- plyr::rename(output,c("Group.1"="Country",
+                                  "x" = as.character(filterValue)))
+  return (output)
 }
 
-#Compute the number of entity per combination of country, category, subcategory and interest
+func_BuildDatasetForMapBasedOnFilterSubCategories <- function(data, filterValue){
+  data <- data[data$subCategories == filterValue, ]
+  output <-aggregate(data$countries, 
+                     by=list(data$countries),
+                     FUN=length, simplify = FALSE)
+  output <- plyr::rename(output,c("Group.1"="Country",
+                                  "x" = as.character(filterValue)))
+  return (output)
+}
+
+
+listCategory <- unique(dataset$categories)
+listSubCategory <- unique(dataset$subCategories)
+
+
+datasetMap <-aggregate(dataset$countries, 
+                       by=list(dataset$countries),
+                       FUN=length, simplify = FALSE)
+datasetMap <- plyr::rename(datasetMap,c("Group.1"="Country",
+                                        "x" = "all"))
+
 data <- list()
 i<-1
-for (j in 1:length(listInterest)){
-  data = rbind(data,func_test(datasetMap, listInterest[j]))
+
+for (j in 1:length(listCategory)){
+  data[[i]] = func_BuildDatasetForMapBasedOnFilterCategories(dataset, listCategory[j])
   i<- i+1
 }
 
-#reorder columns
-data <- data[c(1,2,3,5,4)]
+for (j in 1:length(listSubCategory)){
+  data[[i]] = func_BuildDatasetForMapBasedOnFilterSubCategories(dataset, listSubCategory[j])
+  i<- i+1
+}
 
-data <- plyr::rename(data,c("filterValue" = "Interest",
-                            "freq" = "Count"))
-#save dataset
-write.table(data, "../Datasets/datasetMap.csv", sep = ";", quote = FALSE, row.names = FALSE)
 
-#remove useless variables 
+for (i in 1:length(data)){
+  datasetMap <- merge(datasetMap, data[i], by.x=c("Country"), by.y=c("Country"), all.x=TRUE)
+}
+datasetMap <- subset(datasetMap, select=-c(all))
+datasetMap[is.na(datasetMap)] <- 0
+
+
+countries$name <- toupper(countries$name)
+countries <- subset (countries, select =c(name, EU28))
+datasetMap <- merge(datasetMap, countries, by.x=c("Country"), by.y=c("name"), all.x=TRUE)
+datasetMap <- datasetMap[datasetMap$EU28 == TRUE,]
+datasetMap <- datasetMap[!is.na(datasetMap$Country),]
+
+
+datasetMap <- data.frame(lapply(datasetMap, as.character), stringsAsFactors=FALSE)
+
+#write.table(datasetMap, "../Datasets/datasetMap.csv", sep = ";", quote = FALSE, row.names = FALSE)
+
+
+countryList <- as.data.frame(datasetMap[,1])
+countryList <- plyr::rename(countryList,c("datasetMap[, 1]"="Country"))
+datasetMap <- subset(datasetMap, select=-c(Country, EU28))
+
+results=vector() 
+for (i in 1:nrow(countryList)){
+  values <- as.list(datasetMap[i,])
+  country <- as.character(countryList[i,])
+  tmp <- list(country,values)
+  names(tmp) <- list("country", "properties")
+  
+  results <- append(results, list(tmp))
+}
+  
+Json<- toJSON(results)
+write.table(Json, "../Datasets/datasetMap.js", sep = ";", quote = FALSE, row.names = FALSE)
+
+
 remove(data)
 remove(i)
 remove(j)
-remove(listInterest)
-remove(func_test)
-
-
-# ---------------------------------------------------------------------------------------------------------------------------------------------
-# III. BUILD DATA.FRAME FOR SANKEY ############################################################################################################
-# ---------------------------------------------------------------------------------------------------------------------------------------------
-
-func_BuildDatasetForSankeyBasedOnFilterInterest <- function(data, filterValue){
-  #data <- dataset
-  #filterValue <- "Sport"
-  data <- data[grep(filterValue, data$interest), ]
-  data$interest <- filterValue
-  output <-aggregate(data$subCategories, 
-                     by=list(data$categories, data$subCategories, data$interest),
-                     FUN=length, simplify = FALSE)
-  output$Group.3 <- filterValue
-  return (output)
-}
-#compute the list of possible interests 
-listInterst <- paste(dataset$interest, collapse = ';')
-listInterst <- strsplit(listInterst, ";")[[1]]
-listInterst <- unique(listInterst)
-
-#compute the number of pair subcategorie / Interest
-data <- list()
-for (i in 1:length(listInterst)){
-  data[[i]] = func_BuildDatasetForSankeyBasedOnFilterInterest(dataset, listInterst[i])
-}
-tmp <- do.call(rbind, data)
-datasetSankey <- data.frame(tmp)
-
-# aggregate the two datasets 
-datasetSankey <- plyr::rename(datasetSankey,c("Group.1" = "category",
-                                              "Group.2" = "subcategory",
-                                              "Group.3" = "interest"))
-datasetSankey <- data.frame(lapply(datasetSankey, as.character), stringsAsFactors=FALSE)
-datasetSankey$x <- as.numeric(datasetSankey$x)
-
-# compute number of entity per category
-tmp <-aggregate(datasetSankey$x, 
-                   by=list(datasetSankey$category),
-                   FUN=sum, simplify = FALSE)
-datasetSankey <- merge(datasetSankey, tmp, by.x=c("category"), by.y=c("Group.1"), all.x=TRUE)
-datasetSankey <- plyr::rename(datasetSankey,c("x.x" = "interest.x",
-                                              "x.y" = "category.x"))
-                                              
-# compute number of entity per subcategory
-tmp <-aggregate(datasetSankey$interest.x, 
-                by=list(datasetSankey$category, datasetSankey$subcategory),
-                FUN=sum, simplify = FALSE)
-datasetSankey <- merge(datasetSankey, tmp, by.x=c("category","subcategory"), by.y=c("Group.1","Group.2"), all.x=TRUE)
-datasetSankey <- plyr::rename(datasetSankey,c("x" = "subCategory.x"))
-
-# add colours 
-colours <- c('#2C1320', '#432818','#52050a', '#9e0142', '#d53e4f', '#E3879E', '#f46d43', '#fdae61', '#fee08b', '#ffffbf', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2', '#03254e', '#4a5759', '#FECEE9', '#5F4B66',
-             '#2C1320', '#432818','#52050a', '#9e0142', '#d53e4f', '#E3879E', '#f46d43', '#fdae61', '#fee08b', '#ffffbf', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2', '#03254e', '#4a5759', '#FECEE9')
-interest <- unique(datasetSankey$interest)
-colours = data.frame(interest, colours)
-datasetSankey <- merge(datasetSankey, colours, by.x=c("interest"), by.y=c("interest"), all.x=TRUE)
-
-datasetSankey <- datasetSankey[c("category", "subcategory", "interest", "interest.x", "category.x", "subCategory.x", "colours")]
-datasetSankey <- datasetSankey[order(datasetSankey$category,datasetSankey$subcategory,datasetSankey$interest),]
-
-#datasetSankey <- head(datasetSankey, n=2)
-#convert to json 
-makeList<-function(x, parentNode){
-  # x <- datasetSankey
-  if(ncol(x)>5){
-    listSplit <- split(x[-1],x[1],drop=T)
-    nodeWeight <- as.numeric(x[[1,5]])
-    lapply(names(listSplit),
-           function(y){
-             list(name=y,
-                  weight = nodeWeight,
-                  parent=parentNode,
-                  children=makeList(listSplit[[y]], y))
-             }
-           )
-  }else{
-    lapply(seq(nrow(x[1])),
-           function(y){
-             list(name=x[,1][y],
-                  parent=parentNode,
-                  colours=x[,5][y],
-                  weight=x[,2][y])
-             }
-           )
-  }
-}
-
-jsonOut<-toJSON(list(name="Root", parent="null", children=makeList(datasetSankey, "Root")))
-#save dataset
-write.table(jsonOut, "../Datasets/datasetSankey.js", sep = ";", quote = FALSE, row.names = FALSE)
-
-
-
-
-
-#remove useless variables 
-remove(data)
-remove(colours)
-remove(listInterst)
-remove(datasetSankey)
+remove(listCategory)
+remove(listSubCategory)
+remove(values)
 remove(tmp)
-remove(i)
-remove(jsonOut)
-remove(interest)
+remove(Json)
+remove(results)
+remove(country)
+remove(countryList)
+
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-# III. BUILD DATA.FRAME FOR WORDCLOUD #########################################################################################################
+# VI. BUILD DATA.FRAME FOR BUBBLE #############################################################################################################
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+listInterest <- paste(dataset$interest, collapse = ';')
+listInterest <- strsplit(listInterest, ";")[[1]]
+listInterest <- as.data.frame(listInterest)
+listInterest <- 
+  aggregate(listInterest$listInterest, 
+            by=list(listInterest$listInterest), 
+            FUN=length)
+listInterest <- plyr::rename(listInterest,c("Group.1"="name", 
+                                            "x"="count"))
+listInterest$name <- as.character(listInterest$name)
+listInterest[listInterest$name=="Agriculture and Rural Development",]$name <- "Agriculture"
+listInterest[listInterest$name=="Financial Stability, Financial Services and Capital Markets Union ",]$name <- "Finance"
+listInterest[listInterest$name=="Fisheries and Aquaculture",]$name <- "Fisheries" 
+listInterest[listInterest$name=="Foreign and Security Policy and Defence",]$name <- "Security Policy"
+listInterest[listInterest$name=="General and Institutional Affairs",]$name <- "General Affairs"
+listInterest[listInterest$name=="Justice and Fundamental Rights",]$name <- "Justice"
+
+
+write.table(listInterest, "../Datasets/BubbleChartData.txt", sep = ",", quote = FALSE, row.names = FALSE)
+
+remove(listInterest)
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+# V. BUILD DATA.FRAME FOR WORDCLOUD ###########################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 func_CleanString <- function(data){
@@ -242,62 +216,31 @@ func_CleanString <- function(data){
 }
 
 # aggregate all goals and activities 
-listGoal <- paste(dataset$goals, collapse = ' ')
 listActivity <- paste(dataset$activities, collapse = ' ')
-listBoth <- paste(listGoal, listActivity, collapse = ' ')
 
 # remove punctuation, number, put everything to lower, remove stop words and white space
-listGoal <- func_CleanString(listGoal)
 listActivity <- func_CleanString(listActivity)
-listBoth <- func_CleanString(listBoth)
 
 # # create document-term matrix (standard with frequency)
-dtm_goal <- DocumentTermMatrix(listGoal, control=list(wordLengths=c(3,Inf)))
 dtm_activity <- DocumentTermMatrix(listActivity, control=list(wordLengths=c(3,Inf)))
-dtm_both <- DocumentTermMatrix(listBoth, control=list(wordLengths=c(3,Inf)))
 
 # create two-gram document-term matrix (standard with frequency)
-TwogramTokenizer <- function(x) NGramTokenizer(x,
-                                               Weka_control(min = 2, max = 2))
-dtm_goal_twogram <- DocumentTermMatrix(listGoal, control = list(tokenize = TwogramTokenizer))
 dtm_activity_twogram <- DocumentTermMatrix(listActivity, control = list(tokenize = TwogramTokenizer))
-dtm_both_twogram <- DocumentTermMatrix(listBoth, control = list(tokenize = TwogramTokenizer))
 
 # Generate list of 100 most frequent words
-freq_goal <- head(sort(colSums(as.matrix(dtm_goal)), decreasing=TRUE),100)
-freq_activity <- head(sort(colSums(as.matrix(dtm_activity)), decreasing=TRUE),100)
-freq_both <- head(sort(colSums(as.matrix(dtm_both)), decreasing=TRUE),100)
-freq_goal_twogram <- head(sort(colSums(as.matrix(dtm_goal_twogram)), decreasing=TRUE),100)
 freq_activity_twogram <- head(sort(colSums(as.matrix(dtm_activity_twogram)), decreasing=TRUE),100)
-freq_both_twogram <- head(sort(colSums(as.matrix(dtm_both_twogram)), decreasing=TRUE),100)
 
 #Multiply frequencies for low frequency files to enlarge visualisation
-freq_activity_multiplied <- freq_activity * 2
-freq_goal_twogram_multiplied <- freq_goal_twogram * 8
 freq_activity_twogram_multiplied <- freq_activity_twogram * 8
-freq_both_twogram_multiplied <- freq_both_twogram * 8
+
 
 # Build JSON
-JSON_goal <- toJSON(freq_goal)
-# JSON_activity <- toJSON(freq_activity)
-JSON_both <- toJSON(freq_both)
-# JSON_goal_twogram <- toJSON(freq_goal_twogram)
+
 # JSON_activity_twogram <- toJSON(freq_activity_twogram)
-# JSON_both_twogram <- toJSON(freq_both_twogram)
-JSON_activity_multiplied <- toJSON(freq_activity_multiplied)
-JSON_goal_twogram_multiplied <- toJSON(freq_goal_twogram_multiplied)
 JSON_activity_twogram_multiplied <- toJSON(freq_activity_twogram_multiplied)
-JSON_both_twogram_multiplied <- toJSON(freq_both_twogram_multiplied)
 
 
 #save dataset
-write.table(JSON_goal, "../Datasets/wordCountMapping_goal_100.js", sep = ";", quote = FALSE, row.names = FALSE)
-# write.table(JSON_activity, "../Datasets/wordCountMapping_activity_100.js", sep = ";", quote = FALSE, row.names = FALSE)
-write.table(JSON_both, "../Datasets/wordCountMapping_both_100.js", sep = ";", quote = FALSE, row.names = FALSE)
-# write.table(JSON_goal_twogram, "../Datasets/wordCountMapping_goal_twogram_100.js", sep = ";", quote = FALSE, row.names = FALSE)
 # write.table(JSON_activity_twogram, "../Datasets/wordCountMapping_activity_twogram_100.js", sep = ";", quote = FALSE, row.names = FALSE)
-# write.table(JSON_both_twogram, "../Datasets/wordCountMapping_both_twogram_100.js", sep = ";", quote = FALSE, row.names = FALSE)
-write.table(JSON_activity_multiplied, "../Datasets/wordCountMapping_activity_multiplied_100.js", sep = ";", quote = FALSE, row.names = FALSE)
-write.table(JSON_goal_twogram_multiplied, "../Datasets/wordCountMapping_goal_twogram_multiplied_100.js", sep = ";", quote = FALSE, row.names = FALSE)
 write.table(JSON_activity_twogram_multiplied, "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js", sep = ";", quote = FALSE, row.names = FALSE)
-write.table(JSON_both_twogram_multiplied, "../Datasets/wordCountMapping_both_twogram_multiplied_100.js", sep = ";", quote = FALSE, row.names = FALSE)
+
