@@ -274,3 +274,51 @@ output$GDP <- format(output$GDP, scientific = FALSE)
 options(scipen = 999)
 write.table(output, "../Datasets/Motionchart.csv", sep = ",", quote = FALSE, row.names = FALSE)
 options(scipen = 0)
+
+
+
+
+writeColNames <- function (data) {
+  cat('[', file="../Datasets/Motionchart.js", append = TRUE)
+  for (i in 1:(length(data)-1)) {
+    cat('"', file="../Datasets/Motionchart.js", append = TRUE)
+    cat(colnames(data)[i], file="../Datasets/Motionchart.js", append = TRUE)
+    cat('", ', file="../Datasets/Motionchart.js", append = TRUE)
+  }
+  cat('"', file="../Datasets/Motionchart.js", append = TRUE)
+  cat(colnames(data)[length(data)], file="../Datasets/Motionchart.js", append = TRUE)
+  cat('"], \n', file="../Datasets/Motionchart.js", append = TRUE)
+}
+
+writeData <- function (data) {
+  for (j in 1:(nrow(data)-1)) {
+  
+      cat("[", file="../Datasets/Motionchart.js", append = TRUE)
+      for (i in 1:(length(data)-1)) {
+        cat('"', file="../Datasets/Motionchart.js", append = TRUE)
+        cat(data[j,i], file="../Datasets/Motionchart.js", append = TRUE)
+        cat('", ', file="../Datasets/Motionchart.js", append = TRUE)
+      }
+      cat('"', file="../Datasets/Motionchart.js", append = TRUE)
+      cat(data[j,length(data)], file="../Datasets/Motionchart.js", append = TRUE)
+      cat('"], \n', file="../Datasets/Motionchart.js", append = TRUE)
+      
+  }
+  
+  cat("[", file="../Datasets/Motionchart.js", append = TRUE)
+  for (i in 1:(length(data)-1)) {
+    cat('"', file="../Datasets/Motionchart.js", append = TRUE)
+    cat(data[j,i], file="../Datasets/Motionchart.js", append = TRUE)
+    cat('", ', file="../Datasets/Motionchart.js", append = TRUE)
+  }
+  cat('"', file="../Datasets/Motionchart.js", append = TRUE)
+  cat(data[j,length(data)], file="../Datasets/Motionchart.js", append = TRUE)
+  cat('"] \n', file="../Datasets/Motionchart.js", append = TRUE)
+  
+  cat('];', file="../Datasets/Motionchart.js", append = TRUE)
+}
+
+cat('var data = [ \n', file = "../Datasets/Motionchart.js")
+writeColNames(output)
+writeData(output)
+
