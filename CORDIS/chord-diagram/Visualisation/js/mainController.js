@@ -71,7 +71,7 @@ function ($scope) {
   }
 
   // IMPORT THE CSV DATA
-  d3.csv('../data/NbLink.csv', function (err, data) {
+  d3.csv('../../Datasets/Chord.csv', function (err, data) {
     var groupsIDs = [];
 
     data.forEach(function (d) {

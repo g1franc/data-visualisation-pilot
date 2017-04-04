@@ -85,7 +85,7 @@ function D3ok() {
 
 	svg.style("cursor","move");
 
-	var dataFile = typeof currentOrg !== "undefined" ? "./Data/"+currentOrg+'.json' : "./Data/ADANA_METROPOLITAN_MUNICIPALITY.json";
+	var dataFile = typeof currentOrg !== "undefined" ? "../Datasets/OrganisationsNetwork/"+currentOrg+'.json' : "../Datasets/OrganisationsNetwork/ADANA_METROPOLITAN_MUNICIPALITY.json";
 
 	d3.json(dataFile, function(error, graph)
 	{	var linkedByIndex = {};
