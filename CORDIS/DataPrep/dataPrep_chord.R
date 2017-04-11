@@ -1,5 +1,6 @@
 install.packages("plyr",repos = "http://cran.us.r-project.org")
 library(plyr)
+
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # I. FUNCTIONS LINK ##########################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -101,8 +102,8 @@ H2020_link$frameworkContract<- "H2020"
 cat("merging the produced data for FP6, FP7, H2020 \n")
 Dataset_link <-rbind(rbind(FP6_link, FP7_link), H2020_link)
 
-cat("exporting the updated data to /Datasets/Chord.csv \n")
+cat("exporting the updated data to /Datasets/chord.csv \n")
 options(scipen = 10)
-write.table(Dataset_link, "../Datasets/Chord.csv", sep = ",", quote = FALSE, row.names = FALSE)
+write.table(Dataset_link, "../Datasets/chord.csv", sep = ",", quote = FALSE, row.names = FALSE)
 options(scipen = 0)
 

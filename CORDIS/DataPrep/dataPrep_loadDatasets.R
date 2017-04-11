@@ -6,14 +6,14 @@
 if (arg_1 == "true") {
   cat("loading countries data for chord diagram \n")
   # countries
-  Dataset_Countries = read.csv("../Datasets/InputData/Countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+  Dataset_Countries = read.csv("../Datasets/InputData/countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
   listCountries <- sort(Dataset_Countries$euCode)
 }
 
 if ( arg_2 == "true" ) {
   cat("loading countries data for motionchart \n")
   # countries
-  Dataset_Countries = read.csv("../Datasets/InputData/Countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+  Dataset_Countries = read.csv("../Datasets/InputData/countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
   #select only EU-28 countries 
   Dataset_Countries <- Dataset_Countries[Dataset_Countries$EU28 == TRUE,]
   

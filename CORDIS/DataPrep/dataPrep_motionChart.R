@@ -283,46 +283,94 @@ options(scipen = 0)
 # XIII. convert to correct js format and save file ############################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
+# write column names to file
 writeColNames <- function (data) {
+  #open first square bracket
   cat('[', file="../Datasets/motionChart.js", append = TRUE)
+  #go from first until second to last value (last value should not have a comma after it)
+  #write the valued between quotes and a comma in between values
   for (i in 1:(length(data)-1)) {
     cat('"', file="../Datasets/motionChart.js", append = TRUE)
     cat(colnames(data)[i], file="../Datasets/motionChart.js", append = TRUE)
     cat('", ', file="../Datasets/motionChart.js", append = TRUE)
   }
+  #write the last value (no comma afterwards) and close square bracket 
   cat('"', file="../Datasets/motionChart.js", append = TRUE)
   cat(colnames(data)[length(data)], file="../Datasets/motionChart.js", append = TRUE)
   cat('"], \n', file="../Datasets/motionChart.js", append = TRUE)
 }
 
+#write actual data (not column names which is done by writeColNames)
 writeData <- function (data) {
+  
+  #for every row (except the last one as there should not be a comma after this one)
   for (j in 1:(nrow(data)-1)) {
-  
+      #open square bracket
       cat("[", file="../Datasets/motionChart.js", append = TRUE)
-      for (i in 1:(length(data)-1)) {
-        cat('"', file="../Datasets/motionChart.js", append = TRUE)
-        cat(data[j,i], file="../Datasets/motionChart.js", append = TRUE)
-        cat('", ', file="../Datasets/motionChart.js", append = TRUE)
-      }
-      cat('"', file="../Datasets/motionChart.js", append = TRUE)
-      cat(data[j,length(data)], file="../Datasets/motionChart.js", append = TRUE)
-      cat('"], \n', file="../Datasets/motionChart.js", append = TRUE)
       
+      #for every value in the row (except the last one as there should not be a comma after this one)
+      #write the value between quotes and insert comma between values
+      for (i in 1:(length(data)-1)) {
+        #Year should not be between brackets (second value --> i == 2)
+        if (i == 2) {
+          cat(data[j,i], file="../Datasets/motionChart.js", append = TRUE)
+          cat(', ', file="../Datasets/motionChart.js", append = TRUE)
+        } else {
+          cat('"', file="../Datasets/motionChart.js", append = TRUE)
+          cat(data[j,i], file="../Datasets/motionChart.js", append = TRUE)
+          cat('", ', file="../Datasets/motionChart.js", append = TRUE)
+        }
+      }
+      #write the last value (no comma afterwards) and close square bracket 
+      #Year should not be between brackets (second value --> i == 2)
+      if (i == 2) {
+        cat(data[j,length(data)], file="../Datasets/motionChart.js", append = TRUE)
+        cat(', ', file="../Datasets/motionChart.js", append = TRUE)
+      } else {
+        cat('"', file="../Datasets/motionChart.js", append = TRUE)
+        cat(data[j,length(data)], file="../Datasets/motionChart.js", append = TRUE)
+        cat('"], \n', file="../Datasets/motionChart.js", append = TRUE)
+      }
   }
   
+  #write the last row  (no comma afterwards) and close square bracket
+  
+  #open square bracket
   cat("[", file="../Datasets/motionChart.js", append = TRUE)
-  for (i in 1:(length(data)-1)) {
-    cat('"', file="../Datasets/motionChart.js", append = TRUE)
-    cat(data[j,i], file="../Datasets/motionChart.js", append = TRUE)
-    cat('", ', file="../Datasets/motionChart.js", append = TRUE)
-  }
-  cat('"', file="../Datasets/motionChart.js", append = TRUE)
-  cat(data[j,length(data)], file="../Datasets/motionChart.js", append = TRUE)
-  cat('"] \n', file="../Datasets/motionChart.js", append = TRUE)
   
+  #for every value in the row (except the last one as there should not be a comma after this one)
+  #write the value between quotes and insert comma between values
+  for (i in 1:(length(data)-1)) {
+    #Year should not be between brackets (second value --> i == 2)
+    if (i == 2) {
+      cat(data[j,i], file="../Datasets/motionChart.js", append = TRUE)
+      cat(', ', file="../Datasets/motionChart.js", append = TRUE)
+    } else {
+      cat('"', file="../Datasets/motionChart.js", append = TRUE)
+      cat(data[j,i], file="../Datasets/motionChart.js", append = TRUE)
+      cat('", ', file="../Datasets/motionChart.js", append = TRUE)
+    }
+  }
+  #write the last value (no comma afterwards) and close square bracket 
+  #Year should not be between brackets (second value --> i == 2)
+  if (i == 2) {
+    cat(data[j,length(data)], file="../Datasets/motionChart.js", append = TRUE)
+    cat(', ', file="../Datasets/motionChart.js", append = TRUE)
+  } else {
+    cat('"', file="../Datasets/motionChart.js", append = TRUE)
+    cat(data[j,length(data)], file="../Datasets/motionChart.js", append = TRUE)
+    cat('"] \n', file="../Datasets/motionChart.js", append = TRUE)
+  }
+  
+  #write closing bracket of the file
   cat('];', file="../Datasets/motionChart.js", append = TRUE)
 }
 
+#change Year to new Date(Year,month)
+Year <- paste("new Date(",output$Year,",1)", sep="")
+output$Year <- Year
+
+#write info in file
 cat('var data = [ \n', file = "../Datasets/motionChart.js")
 writeColNames(output)
 writeData(output)
