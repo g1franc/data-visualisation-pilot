@@ -1,11 +1,18 @@
-#install.packages("tm")
-#install.packages("RJSONIO")
-#install.packages("plyr")
+#RWeka does not work in JAVA_HOME environment variable is set, empty it for this R session
+if (Sys.getenv("JAVA_HOME")!="")
+  Sys.setenv(JAVA_HOME="")
+library(RWeka)
+
+install.packages("XML")
+install.packages("tm")
+install.packages("RJSONIO")
+install.packages("plyr")
+install.packages("RWeka")
 require(XML)
 require(tm)
 require(RJSONIO)
 require(plyr)
-require(RWeka)
+library(RWeka)
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # I. LOAD DATA ################################################################################################################################
@@ -222,9 +229,11 @@ listActivity <- paste(dataset$activities, collapse = ' ')
 listActivity <- func_CleanString(listActivity)
 
 # # create document-term matrix (standard with frequency)
-dtm_activity <- DocumentTermMatrix(listActivity, control=list(wordLengths=c(3,Inf)))
+# dtm_activity <- DocumentTermMatrix(listActivity, control=list(wordLengths=c(3,Inf)))
 
 # create two-gram document-term matrix (standard with frequency)
+TwogramTokenizer <- function(x) NGramTokenizer(x,
+                                              Weka_control(min = 2, max = 2))
 dtm_activity_twogram <- DocumentTermMatrix(listActivity, control = list(tokenize = TwogramTokenizer))
 
 # Generate list of 100 most frequent words
@@ -240,7 +249,20 @@ freq_activity_twogram_multiplied <- freq_activity_twogram * 8
 JSON_activity_twogram_multiplied <- toJSON(freq_activity_twogram_multiplied)
 
 
-#save dataset
-# write.table(JSON_activity_twogram, "../Datasets/wordCountMapping_activity_twogram_100.js", sep = ";", quote = FALSE, row.names = FALSE)
-write.table(JSON_activity_twogram_multiplied, "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js", sep = ";", quote = FALSE, row.names = FALSE)
-
+#write info in file
+cat('var data = { \n', file = "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js")
+cat('wordCountMapping_activity_two: \n', file = "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js", append = TRUE)
+cat(JSON_activity_twogram_multiplied, file = "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js", append = TRUE)
+cat(',
+wordsList_activity_two:
+[', file = "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js", append = TRUE)
+for (i in 1:(length(names(freq_activity_twogram_multiplied))-1)) {
+  cat('"',  file = "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js", append = TRUE)
+  cat(names(freq_activity_twogram_multiplied)[i], file = "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js", append = TRUE)
+  cat('", \n', file = "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js", append = TRUE)
+}
+cat('"',  file = "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js", append = TRUE)
+cat(names(freq_activity_twogram_multiplied)[length(names(freq_activity_twogram_multiplied))], file = "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js", append = TRUE)
+cat('"
+    ]
+}', file = "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js", append = TRUE)
