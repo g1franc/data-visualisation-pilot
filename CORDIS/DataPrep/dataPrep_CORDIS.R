@@ -1,40 +1,85 @@
-workdir <- getwd()
-setwd(workdir)
 
-arg_1 = "false"
-arg_2 = "true"
-arg_3 = "false"
-arg_4 = "2016"
+install.packages("optparse",repos = "http://cran.us.r-project.org")
+install.packages("plyr",repos = "http://cran.us.r-project.org")
 
-#### Load arguments ####
-args <- commandArgs(trailingOnly = TRUE)
-arg_1 = args[1] #chord boolean
-arg_2 = args[2] #motionchart boolean
-arg_3 = args[3] #organisations Network boolean
-arg_4 = args[4] #update with data until year x
-cat(paste("arguments loaded succesfully:", 
-        "\n Chord: ", arg_1, 
-        "\n Motion chart: ", arg_2,
-        "\n Organisations Network: ", arg_3,
-        "\n Update with data until year: ", arg_4,
-        "\n"))
+library(optparse)
+library(plyr)
 
 
-#### Call scripts depending on variables ####
+option_list = list(
+  make_option(c("-A", "--All"), type="integer", default=NULL, 
+              help="update all visualisations, argument used to Update data until a specific year", metavar="YEAR"),
+  
+  make_option(c("-M", "--MotionChart"), type="character", default=NULL, 
+              help="update Motion Chart visualisation, argument used to Update data until a specific year", metavar="YEAR"),
+  
+	make_option(c("-O", "--OrgNetwork"), default=NULL, action="store_true",
+	            help="update Organisation Netword visualisation", metavar=NULL),
+  
+	make_option(c("-C", "--Chord"), default=NULL, action="store_true",
+	            help="update chart visualisation", metavar=NULL),
+
+  make_option(c("-U", "--Update"), type="logical", default=TRUE,
+              help="update data", metavar=NULL)
+
+);
+
+opt_parser = OptionParser(option_list=option_list);
+opt = parse_args(opt_parser);
+
+if (opt$h){
+  print_help(opt_parser)
+  stop("At least one argument must be supplied (input file).n", call.=FALSE)
+}
+
+
+arg_UpdateMotionChart <- FALSE
+arg_UpdateMotionChart_Year <- 2016
+arg_UpdateOrgNetwork <- FALSE
+arg_UpdateChord <- FALSE
+arg_UpdateData <- opt$U
+
+if (!is.null(opt$A)){
+  arg_UpdateMotionChart <- TRUE
+  arg_UpdateOrgNetwork <- TRUE
+  arg_UpdateChord <- TRUE
+  arg_UpdateMotionChart_Year <- opt$A
+}
+
+if (!is.null(opt$M)){
+  arg_UpdateMotionChart <- TRUE
+  arg_UpdateMotionChart_Year <- opt$M
+  print("The data for the motion chart will be updated ")
+}
+
+if (!is.null(opt$C)){
+  arg_UpdateChord <- TRUE
+  print("The data for the chord diagram will be updated ")
+}
+
+if (!is.null(opt$O)){
+  arg_UpdateOrgNetwork <- TRUE
+  print("The data for the organisations network will be updated ")
+}
+
 source("dataPrep_loadDatasets.R")
-cat("The required datasets are loaded \n")
 
-if ( arg_1 == "true" ) {
-  source("dataPrep_chord.R")
-  cat("The data for the chord diagram is now updated \n")
-}
-
-if ( arg_2 == "true" ) {
+if ( arg_UpdateMotionChart) {
+  print("The data for the motion chart are about to be updated ")
   source("dataPrep_motionChart.R")
-  cat("The data for the motionchart is now updated \n")
+  print("The data for the motion chart have been updated ")
 }
 
-if ( arg_3 == "true" ) {
-  source("dataPrep_organisationsNetwork.R")
-  cat("The data for the organisations network is now updated \n")
+if ( arg_UpdateChord) {
+  print("The data for the chord diagram are about to be updated ")
+  source("dataPrep_chord.R")
+  print("The data for the chord diagram have been updated ")
 }
+
+
+if ( arg_UpdateOrgNetwork) {
+  print("The data for the organisation network are about to be updated ")
+  source("dataPrep_organisationsNetwork.R")
+  print("The data for the organisation network have been updated ")
+}
+

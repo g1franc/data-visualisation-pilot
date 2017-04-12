@@ -1,6 +1,3 @@
-install.packages("plyr",repos = "http://cran.us.r-project.org")
-library(plyr)
-
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # I. data preparation ########################################################################################################################
@@ -113,10 +110,6 @@ cat("add the GDP per country/year \n")
 
 output <- merge(output, Dataset_Countries, by.x=c("Country"), by.y=c("euCode"), all.x=TRUE)
 output <- subset(output, select=-c(FP6participantCountries,FP7participantCountries,FP8participantCountries, isoCode,EU28,Schengen))
-Dataset_GDP <- Dataset_GDP[Dataset_GDP$na_item == "B1GQ",]
-Dataset_GDP <- Dataset_GDP[Dataset_GDP$unit == "CP_MUSD",]
-Dataset_GDP <- subset(Dataset_GDP, select=-c(unit, na_item))
-Dataset_GDP <- plyr::rename(Dataset_GDP,c("values"="GDP"))
 
 #save the result in output dataset
 output <- merge(output, Dataset_GDP, by.x=c("Country", "Year"), by.y=c("geo", "time"), all.x=TRUE)
@@ -127,11 +120,6 @@ remove(Dataset_GDP)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 cat("add the population per country/year \n")
 
-Dataset_population <- Dataset_population[Dataset_population$age == "TOTAL",]
-Dataset_population <- Dataset_population[Dataset_population$sex == "T",]
-Dataset_population <- subset(Dataset_population, select=-c(age, sex, unit))
-Dataset_population <- plyr::rename(Dataset_population,c("values"="Population"))
-
 #save the result in output dataset
 output <- merge(output, Dataset_population, by.x=c("Country", "Year"), by.y=c("geo", "time"), all.x=TRUE)
 remove(Dataset_population)
@@ -141,17 +129,7 @@ remove(Dataset_population)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 cat("add the population by educational attainment level \n")
 
-Dataset_PopByEducAttain <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$age =="Y15-64",]
-Dataset_PopByEducAttain <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$sex =="T",]
-Dataset_PopByEducAttain <- subset(Dataset_PopByEducAttain, select=-c(sex, age, unit))
 
-#Dataset_PopByEducAttainED02 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED0-2", ]
-#Dataset_PopByEducAttainED02 <- subset(Dataset_PopByEducAttainED02, select=-c(ISCED11))
-#Dataset_PopByEducAttainED02 <- plyr::rename(Dataset_PopByEducAttainED02,c("Value" = "% pop. that study up to secondary education"))
-
-#Dataset_PopByEducAttainED38 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$ISCED11 == "ED3-8", ]
-#Dataset_PopByEducAttainED38 <- subset(Dataset_PopByEducAttainED38, select=-c(ISCED11))
-#Dataset_PopByEducAttainED38 <- plyr::rename(Dataset_PopByEducAttainED38,c("Value" = "% pop. with a secondary or tertiary education"))
 
 Dataset_PopByEducAttainED34 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$isced11 == "ED3_4", ]
 Dataset_PopByEducAttainED34 <- subset(Dataset_PopByEducAttainED34, select=-c(isced11))
@@ -161,13 +139,9 @@ Dataset_PopByEducAttainED58 <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$i
 Dataset_PopByEducAttainED58 <- subset(Dataset_PopByEducAttainED58, select=-c(isced11))
 Dataset_PopByEducAttainED58 <- plyr::rename(Dataset_PopByEducAttainED58,c("values" = "% pop. with a tertiary education"))
 
-#output <- merge(output, Dataset_PopByEducAttainED02, by.x=c("Country", "Year"), by.y=c("geo", "time"), all.x=TRUE)
-#output <- merge(output, Dataset_PopByEducAttainED38, by.x=c("Country", "Year"), by.y=c("geo", "time"), all.x=TRUE)
 output <- merge(output, Dataset_PopByEducAttainED34, by.x=c("Country", "Year"), by.y=c("geo", "time"), all.x=TRUE)
 output <- merge(output, Dataset_PopByEducAttainED58, by.x=c("Country", "Year"), by.y=c("geo", "time"), all.x=TRUE)
 
-#remove(Dataset_PopByEducAttainED02)
-#remove(Dataset_PopByEducAttainED38)
 remove(Dataset_PopByEducAttainED34)
 remove(Dataset_PopByEducAttainED58)
 remove(Dataset_PopByEducAttain)
@@ -177,48 +151,14 @@ remove(Dataset_PopByEducAttain)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 cat("add the total intramural R&D expenditure \n")
 
-Dataset_RDExpend <- Dataset_RDExpend[Dataset_RDExpend$unit =="MIO_EUR",]
-Dataset_RDExpend <- subset(Dataset_RDExpend, select=-c(unit))
-Dataset_RDExpend$values <- sub(' ', '',Dataset_RDExpend$values)
-Dataset_RDExpend$values <- as.numeric(Dataset_RDExpend$values)
-
 Dataset_RDExpendAllSect <- Dataset_RDExpend[Dataset_RDExpend$sectperf == "TOTAL", ]
 Dataset_RDExpendAllSect <- subset(Dataset_RDExpendAllSect, select=-c(sectperf))
 Dataset_RDExpendAllSect$values <- Dataset_RDExpendAllSect$values * 1000000
 Dataset_RDExpendAllSect <- plyr::rename(Dataset_RDExpendAllSect,c("values" = "National R&D Budget"))
 
-#Dataset_RDExpendBusiness <- Dataset_RDExpend[Dataset_RDExpend$SECTPERF == "Business enterprise sector", ]
-#Dataset_RDExpendBusiness <- subset(Dataset_RDExpendBusiness, select=-c(SECTPERF))
-#Dataset_RDExpendBusiness$values <- Dataset_RDExpendBusiness$values * 1000000
-#Dataset_RDExpendBusiness <- plyr::rename(Dataset_RDExpendBusiness,c("values" = "R&D Budget of enterprise"))
-
-#Dataset_RDExpendGov <- Dataset_RDExpend[Dataset_RDExpend$SECTPERF == "Government sector", ]
-#Dataset_RDExpendGov <- subset(Dataset_RDExpendGov, select=-c(SECTPERF))
-#Dataset_RDExpendGov$values <- Dataset_RDExpendGov$values * 1000000
-#Dataset_RDExpendGov <- plyr::rename(Dataset_RDExpendGov,c("values" = "R&D Budget of government"))
-
-#Dataset_RDExpendEduc <- Dataset_RDExpend[Dataset_RDExpend$SECTPERF == "Higher education sector", ]
-#Dataset_RDExpendEduc <- subset(Dataset_RDExpendEduc, select=-c(SECTPERF))
-#Dataset_RDExpendEduc$values <- Dataset_RDExpendEduc$values * 1000000
-#Dataset_RDExpendEduc <- plyr::rename(Dataset_RDExpendEduc,c("values" = "R&D Budget of high education"))
-
-#Dataset_RDExpendNonProf <- Dataset_RDExpend[Dataset_RDExpend$SECTPERF == "Private non-profit sector", ]
-#Dataset_RDExpendNonProf <- subset(Dataset_RDExpendNonProf, select=-c(SECTPERF))
-#Dataset_RDExpendNonProf$values <- Dataset_RDExpendNonProf$values * 1000000
-#Dataset_RDExpendNonProf <- plyr::rename(Dataset_RDExpendNonProf,c("values" = "R&D Budget of non-profit organisation"))
-
 
 output <- merge(output, Dataset_RDExpendAllSect, by.x=c("Country", "Year"), by.y=c("geo", "time"), all.x=TRUE)
-#output <- merge(output, Dataset_RDExpendBusiness, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
-#output <- merge(output, Dataset_RDExpendGov, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
-#output <- merge(output, Dataset_RDExpendEduc, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
-#output <- merge(output, Dataset_RDExpendNonProf, by.x=c("Country", "Year"), by.y=c("GEO", "TIME"), all.x=TRUE)
-
 remove(Dataset_RDExpendAllSect)
-#remove(Dataset_RDExpendBusiness)
-#remove(Dataset_RDExpendGov)
-#remove(Dataset_RDExpendEduc)
-#remove(Dataset_RDExpendNonProf)
 remove(Dataset_RDExpend)
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -272,7 +212,7 @@ output <- plyr::rename(output,c("Country" = "CountryShort",
                                 "totalBudgetManagedAsCoordinatorsPerCapitaCumulative" = "Budget of coordinated projects / capita - Cumulative"
                                 ))
 
-output <- output[output$Year <= arg_4, ]
+output <- output[output$Year <= arg_UpdateMotionChart_Year, ]
 output$GDP <- format(output$GDP, scientific = FALSE)
 
 options(scipen = 999)

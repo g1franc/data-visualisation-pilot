@@ -2,15 +2,14 @@
 # I. LOAD DATA ##########################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # based on which scripts will be executed, different data is needed/loaded
-
-if (arg_1 == "true") {
+if (arg_UpdateChord) {
   cat("loading countries data for chord diagram \n")
   # countries
   Dataset_Countries = read.csv("../Datasets/InputData/countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
   listCountries <- sort(Dataset_Countries$euCode)
 }
 
-if ( arg_2 == "true" ) {
+if ( arg_UpdateMotionChart ) {
   cat("loading countries data for motionchart \n")
   # countries
   Dataset_Countries = read.csv("../Datasets/InputData/countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
@@ -22,10 +21,12 @@ if ( arg_2 == "true" ) {
   # FP7: https://data.europa.eu/euodp/data/dataset/cordisfp7projects
   # H2020: https://data.europa.eu/euodp/data/dataset/cordisH2020projects
   
-  cat("loading CORDIS data for motionchart \n")
-  download.file("http://cordis.europa.eu/data/cordis-fp6projects.csv", destfile = "../Datasets/InputData/cordis-fp6Projects.csv")
-  download.file("http://cordis.europa.eu/data/cordis-fp7projects.csv", destfile = "../Datasets/InputData/cordis-fp7Projects.csv")
-  download.file("http://cordis.europa.eu/data/cordis-h2020projects.csv", destfile = "../Datasets/InputData/cordis-h2020Projects.csv")
+  if (arg_UpdateData) {
+    cat("loading CORDIS data for motionchart \n")
+    download.file("http://cordis.europa.eu/data/cordis-fp6projects.csv", destfile = "../Datasets/InputData/cordis-fp6Projects.csv")
+    download.file("http://cordis.europa.eu/data/cordis-fp7projects.csv", destfile = "../Datasets/InputData/cordis-fp7Projects.csv")
+    download.file("http://cordis.europa.eu/data/cordis-h2020projects.csv", destfile = "../Datasets/InputData/cordis-h2020Projects.csv")
+  }
   
   Dataset_FP6Projects = read.csv("../Datasets/InputData/cordis-fp6Projects.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
   Dataset_FP7Projects = read.csv("../Datasets/InputData/cordis-fp7Projects.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
@@ -64,6 +65,7 @@ if ( arg_2 == "true" ) {
   
   cat("downloading the eurostat data \n")
   #download eurostat data
+  
   Dataset_population = get_eurostat("demo_pjan")
   Dataset_GDP = get_eurostat("naida_10_gdp")
   Dataset_PopByEducAttain = get_eurostat("edat_lfse_03")
@@ -79,26 +81,50 @@ if ( arg_2 == "true" ) {
   Dataset_GDP = transformEurostatDataset(Dataset_GDP)
   Dataset_PopByEducAttain = transformEurostatDataset(Dataset_PopByEducAttain)
   Dataset_RDExpend = transformEurostatDataset(Dataset_RDExpend)
+  
+  #Eurostat data prepration 
+  Dataset_GDP <- Dataset_GDP[Dataset_GDP$na_item == "B1GQ",]
+  Dataset_GDP <- Dataset_GDP[Dataset_GDP$unit == "CP_MEUR",]
+  Dataset_GDP <- subset(Dataset_GDP, select=-c(unit, na_item))
+  Dataset_GDP <- plyr::rename(Dataset_GDP,c("values"="GDP"))
+  
+  
+  Dataset_population <- Dataset_population[Dataset_population$age == "TOTAL",]
+  Dataset_population <- Dataset_population[Dataset_population$sex == "T",]
+  Dataset_population <- subset(Dataset_population, select=-c(age, sex, unit))
+  Dataset_population <- plyr::rename(Dataset_population,c("values"="Population"))
+  
+  Dataset_PopByEducAttain <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$age =="Y15-64",]
+  Dataset_PopByEducAttain <- Dataset_PopByEducAttain[Dataset_PopByEducAttain$sex =="T",]
+  Dataset_PopByEducAttain <- subset(Dataset_PopByEducAttain, select=-c(sex, age, unit))
+  
+  
+  Dataset_RDExpend <- Dataset_RDExpend[Dataset_RDExpend$unit =="MIO_EUR",]
+  Dataset_RDExpend <- subset(Dataset_RDExpend, select=-c(unit))
+  Dataset_RDExpend$values <- sub(' ', '',Dataset_RDExpend$values)
+  Dataset_RDExpend$values <- as.numeric(Dataset_RDExpend$values)
+  
+  
 }
 
-if ( arg_1 == "true" || arg_2 == "true" ) {
+if ( arg_UpdateChord || arg_UpdateMotionChart ) {
   cat("loading CORDIS data used for the chord and motionchart. This will download if either one of them is being updated \n")
   # FP6: https://data.europa.eu/euodp/data/dataset/cordisfp6projects
   # FP7: https://data.europa.eu/euodp/data/dataset/cordisfp7projects
-  
-  download.file("http://cordis.europa.eu/data/cordis-fp6organizations.csv", destfile = "../Datasets/InputData/cordis-fp6organizations.csv")
-  download.file("http://cordis.europa.eu/data/cordis-fp7organizations.csv", destfile = "../Datasets/InputData/cordis-fp7organizations.csv")
-  
+  if (arg_UpdateData) {
+    download.file("http://cordis.europa.eu/data/cordis-fp6organizations.csv", destfile = "../Datasets/InputData/cordis-fp6organizations.csv")
+    download.file("http://cordis.europa.eu/data/cordis-fp7organizations.csv", destfile = "../Datasets/InputData/cordis-fp7organizations.csv")
+  }
   Dataset_FP6Organizations = read.csv("../Datasets/InputData/cordis-fp6organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
   Dataset_FP7Organizations = read.csv("../Datasets/InputData/cordis-fp7organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 }
 
-if ( arg_1 == "true" || arg_2 == "true" || arg_3 == "true" ) {
+if ( arg_UpdateChord || arg_UpdateMotionChart || arg_UpdateOrgNetwork ) {
   cat("downloading CORDIS data used for the chord and organisations network. This will download if either one of them is being updated \n")
   # H2020: https://data.europa.eu/euodp/data/dataset/cordisH2020projects
-  
-  download.file("http://cordis.europa.eu/data/cordis-h2020organizations.csv", destfile = "../Datasets/InputData/cordis-h2020organizations.csv")
-  
+  if (arg_UpdateData) {
+    download.file("http://cordis.europa.eu/data/cordis-h2020organizations.csv", destfile = "../Datasets/InputData/cordis-h2020organizations.csv")
+  }
   Dataset_H2020Organizations = read.csv("../Datasets/InputData/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
   names(Dataset_H2020Organizations)[names(Dataset_H2020Organizations)=="projectID"] <- "projectReference"
 }
