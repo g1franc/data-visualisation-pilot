@@ -1,4 +1,4 @@
-{
+var TEDdata = {
   "results": [
     {
       "AA": "AA string value 1",

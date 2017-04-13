@@ -58,14 +58,24 @@
             <option value="nuts2_data">NUTS 2</option>
             <option value="nuts3_data">NUTS 3</option>
           </select>
+          <h3 id="list-header">Tenders' list</h3>
+          <div id="list" style="height:500px; overflow-y:scroll; width:150px;"><div>
         </div>
 
+        <script type="text/javascript" src="languages.js"></script>
+        <script type="text/javascript" src="TEDdata.js"></script>
         <script type="text/javascript" src="nuts_0.js"></script>
         <script type="text/javascript" src="nuts_1.js"></script>
         <script type="text/javascript" src="nuts_2.js"></script>
         <script type="text/javascript" src="nuts_3.js"></script>
         <script src="https://unpkg.com/esri-leaflet@2.0.7"></script>
         <script type="text/javascript">
+
+          var userLang = navigator.language || navigator.userLanguage;
+          if(!texts[userLang]){
+            userLang = 'en-US';
+          }
+          $('#list-header').text(texts[userLang].tList);
 
           drawMap(nuts0_data);
 
@@ -100,11 +110,18 @@
               };
 
               info.update = function (props) {
-                  value = getValueFromRadioButton("group1");
                   console.log(props);
+                  var nbrTenders;
+                  if(props) {
+                    if(TEDdata[props.NUTS_ID] == undefined){
+                      nbrTenders = 0;
+                    } else {
+                      nbrTenders = TEDdata[props.NUTS_ID].length;
+                    }
+                  }
                   this._div.innerHTML = (props ?
-                      '<b>' + props.NUTS_ID + '</b><br />' + 'Number of entities: ' + 'todo'
-                      : 'Hover over a state');
+                      '<b>' + props.NUTS_ID + '</b><br />' + texts[userLang].nTenders + nbrTenders
+                      : texts[userLang].hover);
               };
 
               info.addTo(map);
@@ -144,23 +161,8 @@
                info.update(layer.feature.properties);
               }
 
-              function getValueFromRadioButton(name) {
-                 //Get all elements with the name
-                 var buttons = document.getElementsByName(name);
-                 for(var i = 0; i < buttons.length; i++) {
-                    //Check if button is checked
-                    var button = buttons[i];
-                    if(button.checked) {
-                       //Return value
-                       return button.value;
-                    }
-                 }
-                 //No radio button is selected.
-                 return null;
-              }
-
               function setColors(value) {
-                  value = getValueFromRadioButton("group1");
+                  value = -1;//TODO color depending on the number of tenders
                   geojson.eachLayer(function(layer) {
                       layer.setStyle({
                           fillColor: getColor(layer.feature.properties[value])
@@ -192,7 +194,7 @@
                   layer.on({
                       mouseover: highlightFeature,
                       mouseout: resetHighlight,
-                      click: zoomToFeature
+                      click: updatePanel
                   });
               }
 
@@ -201,10 +203,27 @@
                   onEachFeature: onEachFeature
               }).addTo(map);
 
+
+              function updatePanel(e){
+                var myNode = document.getElementById("list");
+                while (myNode.firstChild) {
+                  myNode.removeChild(myNode.firstChild);
+                }
+                if(TEDdata[e.target.feature.properties.NUTS_ID] == undefined){
+                  $('#list').append('<h5>'+texts[userLang].noTenders+'</h5>');
+                }
+                else {
+                  TEDdata[e.target.feature.properties.NUTS_ID].forEach(function(t){
+                    var url = "http://ted.europa.eu/udl?uri=TED:NOTICE:" + t + ":TEXT:EN:HTML";
+                    $('#list').append('<div style="border: 1px solid grey;"><a target="_blank" href='+url+'>'+t+'</a></div>');
+                  });
+                }
+              }
+
               setColors();
 
 
-              var legend = L.control({position: 'bottomright'});
+              /*var legend = L.control({position: 'bottomright'});
 
               legend.onAdd = function (map) {
 
@@ -226,7 +245,7 @@
                   return div;
               };
 
-              legend.addTo(map);
+              legend.addTo(map);*/
           }
         </script>
     </body>
