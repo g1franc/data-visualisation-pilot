@@ -3,41 +3,29 @@
     <head>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="../../Datasets/motionChart.js"></script>
         <script type="text/javascript">
               google.charts.load('current', {'packages':['motionchart']});
               google.charts.setOnLoadCallback(drawCharts);
               function drawCharts() {
 
-              var dataURL = 'https://docs.google.com/spreadsheets/d/1Ex4EEEDeT8lfRWSi5nCwYnZBNskl9bMO-nmDX3mMszk/gviz/tq?gid=0&headers=1&tq=select%20B%2CC%2CE%2CF%2CG%2CH%2CI%2CJ%2CK%2CL%2CM%2CN%2CO%2CP%2CQ%2CR%2CS%2CT';
+                var dt = google.visualization.arrayToDataTable(data);
 
-              var query = new google.visualization.Query(dataURL);
-              query.send(handleQueryResponse);
+              /* var dateFormatter = new google.visualization.DateFormat({pattern: "dd/MM/YYYY" });
+                dateFormatter.format(data, 1);*/
+                var options = {
+                  state: '{"uniColorForNonSelected":false,"yZoomedDataMin":78036,"orderedByX":false,"dimensions":{"iconDimensions":["dim0"]},"yLambda":1,"showTrails":true,"nonSelectedAlpha":0.4,"xZoomedDataMin":1,"colorOption":"4","yAxisOption":"3","playDuration":40000,"time":"2003","duration":{"timeUnit":"Y","multiplier":1},"sizeOption":"5","yZoomedDataMax":3226669226.55,"xLambda":1,"xAxisOption":"2","orderedByY":false,"iconKeySettings":[],"xZoomedDataMax":1013,"xZoomedIn":false,"iconType":"BUBBLE","yZoomedIn":false}',
+                  width: 970,
+                  height: 500,
+                  hAxis: {
+                    minValue: 1000
+                  }
+                };
 
-            }
+                var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
 
-            function handleQueryResponse(response) {
-              if (response.isError()) {
-                alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
-                return;
+                chart.draw(dt, options);
               }
-
-              var data = response.getDataTable();
-
-            /* var dateFormatter = new google.visualization.DateFormat({pattern: "dd/MM/YYYY" });
-              dateFormatter.format(data, 1);*/
-              var options = {
-                state: '{"uniColorForNonSelected":false,"yZoomedDataMin":78036,"orderedByX":false,"dimensions":{"iconDimensions":["dim0"]},"yLambda":1,"showTrails":true,"nonSelectedAlpha":0.4,"xZoomedDataMin":1,"colorOption":"4","yAxisOption":"3","playDuration":40000,"time":"2003","duration":{"timeUnit":"Y","multiplier":1},"sizeOption":"5","yZoomedDataMax":3226669226.55,"xLambda":1,"xAxisOption":"2","orderedByY":false,"iconKeySettings":[],"xZoomedDataMax":1013,"xZoomedIn":false,"iconType":"BUBBLE","yZoomedIn":false}',
-                width: 970,
-                height: 500,
-                hAxis: {
-                  minValue: 1000
-                }
-              };
-
-              var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
-
-              chart.draw(data, options);
-            }
         </script>
         <style>
               .help-tip {
