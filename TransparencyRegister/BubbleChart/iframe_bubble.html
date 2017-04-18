@@ -6,6 +6,8 @@
     <body>
         <svg width="960" height="960" font-family="sans-serif" font-size="10" text-anchor="middle"></svg>
         <script>
+
+
           var svg = d3.select("svg"),
               width = +svg.attr("width"),
               height = +svg.attr("height");
@@ -39,7 +41,8 @@
               .data(pack(root).leaves())
               .enter().append("g")
                 .attr("class", "node")
-                .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+                .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+                .call(d3.drag());
 
             node.append("circle")
                 .attr("id", function(d) { return d.id; })
@@ -67,7 +70,61 @@
 
             node.append("title")
                 .text(function(d) { return d.id + "\n" + format(d.value); });
+
+            var force = d3.forceSimulation(node)
+                  .velocityDecay(0.2)
+                  .force("x", d3.forceX().strength(.0005))
+                  .force("y", d3.forceY().strength(.0005))
+                  //.gravity(0)
+                  //.charge(0)
+                  //.size([width, height])
+                  .on("tick", tick);
+
+                  function tick() {
+                      console.log('tick');
+                      node
+                          .attr('cx', (d) => d.x)
+                          .attr('cy', (d) => d.y);
+                  }
+
+                  function collide(alpha) {
+                    console.log(collide);
+                    var quadtree = d3.quadtree()
+                        .x((d) => d.x)
+                        .y((d) => d.y)
+                        .addAll(nodes);
+
+                    node.forEach(function(d) {
+                      var r = d.r + maxRadius + Math.max(padding, clusterPadding),
+                          nx1 = d.x - r,
+                          nx2 = d.x + r,
+                          ny1 = d.y - r,
+                          ny2 = d.y + r;
+                      quadtree.visit(function(quad, x1, y1, x2, y2) {
+
+                        if (quad.data && (quad.data !== d)) {
+                          var x = d.x - quad.data.x,
+                              y = d.y - quad.data.y,
+                              l = Math.sqrt(x * x + y * y),
+                              r = d.r + quad.data.r + (d.cluster === quad.data.cluster ? padding : clusterPadding);
+                          if (l < r) {
+                            l = (l - r) / l * alpha;
+                            d.x -= x *= l;
+                            d.y -= y *= l;
+                            quad.data.x += x;
+                            quad.data.y += y;
+                          }
+                        }
+                        return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+                      });
+                    });
+                  }
+
+
+
           });
+
+
         </script>
     </body>
 </html>
