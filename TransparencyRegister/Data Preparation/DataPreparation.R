@@ -12,7 +12,7 @@ require(XML)
 require(tm)
 require(RJSONIO)
 require(plyr)
-library(RWeka)
+require(tools)
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # I. LOAD DATA ################################################################################################################################
@@ -72,6 +72,7 @@ remove(data)
 remove(rootNode)
 remove(xmlfile)
 remove(tmp)
+remove(func_parseXMLNodeInterestRepresentative)
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # III. BUILD DATA.FRAME FOR MAP ###############################################################################################################
@@ -138,38 +139,66 @@ datasetMap <- datasetMap[!is.na(datasetMap$Country),]
 
 datasetMap <- data.frame(lapply(datasetMap, as.character), stringsAsFactors=FALSE)
 
-#write.table(datasetMap, "../Datasets/datasetMap.csv", sep = ";", quote = FALSE, row.names = FALSE)
-
-
 countryList <- as.data.frame(datasetMap[,1])
 countryList <- plyr::rename(countryList,c("datasetMap[, 1]"="Country"))
-datasetMap <- subset(datasetMap, select=-c(Country, EU28))
+datasetMap <- subset(datasetMap, select=-c(EU28))
+datasetMap$Country <- tolower(datasetMap$Country)
+datasetMap$Country <- toTitleCase(datasetMap$Country)
 
-results=vector() 
-for (i in 1:nrow(countryList)){
-  values <- as.list(datasetMap[i,])
-  country <- as.character(countryList[i,])
-  tmp <- list(country,values)
-  names(tmp) <- list("country", "properties")
+#write info in file
+writeData <- function(data) {
+  for (i in 1:(nrow(datasetMap)-1)) {
+    
+    cat('"', file = "../Datasets/datasetMap.js", append = TRUE)
+    cat(datasetMap$Country[i], file = "../Datasets/datasetMap.js", append = TRUE)
+    cat('": { \n', file = "../Datasets/datasetMap.js", append = TRUE)
+    
+    for (j in 2:(length(datasetMap)-1)) {
+      cat('"', file = "../Datasets/datasetMap.js", append = TRUE)
+      cat(colnames(data)[j], file = "../Datasets/datasetMap.js", append = TRUE)
+      cat('": ', file = "../Datasets/datasetMap.js", append = TRUE)
+      cat(data[i,j], file = "../Datasets/datasetMap.js", append = TRUE)
+      cat(", \n", file = "../Datasets/datasetMap.js", append = TRUE)
+    }
+    cat('"', file = "../Datasets/datasetMap.js", append = TRUE)
+    cat(colnames(data)[length(datasetMap)], file = "../Datasets/datasetMap.js", append = TRUE)
+    cat('": ', file = "../Datasets/datasetMap.js", append = TRUE)
+    cat(data[i, length(datasetMap)], file = "../Datasets/datasetMap.js", append = TRUE)
+    cat("}, \n", file = "../Datasets/datasetMap.js", append = TRUE)
+    
+  }
+  cat('"', file = "../Datasets/datasetMap.js", append = TRUE)
+  cat(datasetMap$Country[nrow(datasetMap)], file = "../Datasets/datasetMap.js", append = TRUE)
+  cat('": { \n', file = "../Datasets/datasetMap.js", append = TRUE)
   
-  results <- append(results, list(tmp))
+  for (j in 2:(length(datasetMap)-1)) {
+    cat('"', file = "../Datasets/datasetMap.js", append = TRUE)
+    cat(colnames(data)[j], file = "../Datasets/datasetMap.js", append = TRUE)
+    cat('": ', file = "../Datasets/datasetMap.js", append = TRUE)
+    cat(data[nrow(datasetMap), j], file = "../Datasets/datasetMap.js", append = TRUE)
+    cat(", \n", file = "../Datasets/datasetMap.js", append = TRUE)
+  }
+  cat('"', file = "../Datasets/datasetMap.js", append = TRUE)
+  cat(colnames(data)[length(datasetMap)], file = "../Datasets/datasetMap.js", append = TRUE)
+  cat('": ', file = "../Datasets/datasetMap.js", append = TRUE)
+  cat(data[nrow(datasetMap),length(datasetMap)], file = "../Datasets/datasetMap.js", append = TRUE)
+  cat("} \n };", file = "../Datasets/datasetMap.js", append = TRUE)
+  
 }
-  
-Json<- toJSON(results)
-write.table(Json, "../Datasets/datasetMap.js", sep = ";", quote = FALSE, row.names = FALSE)
 
+cat('var categoriesData = { \n', file = "../Datasets/datasetMap.js")
+writeData(datasetMap)
 
 remove(data)
 remove(i)
 remove(j)
 remove(listCategory)
 remove(listSubCategory)
-remove(values)
-remove(tmp)
-remove(Json)
-remove(results)
-remove(country)
 remove(countryList)
+remove(datasetMap)
+remove(func_BuildDatasetForMapBasedOnFilterCategories)
+remove(func_BuildDatasetForMapBasedOnFilterSubCategories)
+remove(writeData)
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # VI. BUILD DATA.FRAME FOR BUBBLE #############################################################################################################
