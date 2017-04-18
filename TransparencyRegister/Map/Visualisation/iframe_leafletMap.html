@@ -51,31 +51,32 @@
         <div id='map'></div>
         <div style="position:absolute; top:10px; left:615px; text-align:left">
             <form onClick="JavaScript:setColors()">
-                  <input type="radio" name="group1" value="category_1" checked> I - Professional consultancies/law firms/self-employed consultants<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_1_1"> Professional consultancies<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_1_2"> Law firms<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_1_3"> Self-employed consultants<br>
-                  <input type="radio" name="group1" value="category_2"> II - In-house lobbyists and trade/business/professional associations<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_2_1"> Trade and business associations<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_2_2"> Companies and groups<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_2_3"> Trade unions and professional associations<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_2_4"> Other organisations<br>
-                <input type="radio" name="group1" value="category_3"> III - Non-governmental organisations<br>
-                  &emsp;&emsp;<input type="radio" name="group1" value="subcategory_3_1"> Non-governmental organisations, platforms and networks and similar<br>
-                  <input type="radio" name="group1" value="category_4"> IV - Think tanks, research and academic institutions<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_4_1"> Think tanks and research institutions<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_4_2"> Academic institutions<br>
-                  <input type="radio" name="group1" value="category_5"> V - Organisations representing churches and religious communities<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_5_1"> Organisations representing churches and religious communities<br>
-                  <input type="radio" name="group1" value="category_6"> VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_6_1"> Other public or mixed entities, created by law whose purpose is to act in the public interest<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_6_2"> Other sub-national public authorities<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_6_3"> Regional structures<br>
-                    &emsp;&emsp;<input type="radio" name="group1" value="subcategory_6_4"> Transational associations and networks of public regional or other sub-national authorities
+                  <input type="radio" name="group1" value="I...Professional.consultancies.law.firms.self.employed.consultants" checked> I - Professional consultancies/law firms/self-employed consultants<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Professional.consultancies"> Professional consultancies<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Law.firms"> Law firms<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Self.employed.consultants"> Self-employed consultants<br>
+                  <input type="radio" name="group1" value="II...In.house.lobbyists.and.trade.business.professional.associations"> II - In-house lobbyists and trade/business/professional associations<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Trade.and.business.associations"> Trade and business associations<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Companies...groups"> Companies and groups<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Trade.unions.and.professional.associations"> Trade unions and professional associations<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Other.organisations"> Other organisations<br>
+                <input type="radio" name="group1" value="III...Non.governmental.organisations"> III - Non-governmental organisations<br>
+                  &emsp;&emsp;<input type="radio" name="group1" value="Non.governmental.organisations..platforms.and.networks.and.similar"> Non-governmental organisations, platforms and networks and similar<br>
+                  <input type="radio" name="group1" value="IV...Think.tanks..research.and.academic.institutions"> IV - Think tanks, research and academic institutions<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Think.tanks.and.research.institutions"> Think tanks and research institutions<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Academic.institutions"> Academic institutions<br>
+                  <input type="radio" name="group1" value="V...Organisations.representing.churches.and.religious.communities"> V - Organisations representing churches and religious communities<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Organisations.representing.churches.and.religious.communities"> Organisations representing churches and religious communities<br>
+                  <input type="radio" name="group1" value="VI...Organisations.representing.local..regional.and.municipal.authorities..other.public.or.mixed.entities..etc."> VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Other.public.or.mixed.entities..created.by.law.whose.purpose.is.to.act.in.the.public.interest"> Other public or mixed entities, created by law whose purpose is to act in the public interest<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Other.sub.national.public.authorities"> Other sub-national public authorities<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Regional.structures"> Regional structures<br>
+                    &emsp;&emsp;<input type="radio" name="group1" value="Transnational.associations.and.networks.of.public.regional.or.other.sub.national.authorities"> Transnational associations and networks of public regional or other sub-national authorities
             </form>
         </div>
 
         <script type="text/javascript" src="eu-states.js"></script>
+        <script type="text/javascript" src="datasetMap.js"></script>
         <script src="https://unpkg.com/esri-leaflet@2.0.7"></script> 
         <script type="text/javascript">
 
@@ -99,9 +100,8 @@
 
             info.update = function (props) {
                 value = getValueFromRadioButton("group1");
-                console.log(props);
                 this._div.innerHTML = (props ?
-                    '<b>' + props.name + '</b><br />' + 'Number of entities: ' + props[value]
+                    '<b>' + props + '</b><br />' + 'Number of entities: ' + categoriesData[props][value]
                     : 'Hover over a state');
             };
 
@@ -139,7 +139,7 @@
                     layer.bringToFront();
                 }
 
-             info.update(layer.feature.properties);
+             info.update(layer.feature.properties.name);
             }
 
             function getValueFromRadioButton(name) {
@@ -161,7 +161,7 @@
                 value = getValueFromRadioButton("group1");
                 geojson.eachLayer(function(layer) {
                     layer.setStyle({
-                        fillColor: getColor(layer.feature.properties[value])
+                        fillColor: getColor(categoriesData[layer.feature.properties.name][value])
                     });
                 });
             }
