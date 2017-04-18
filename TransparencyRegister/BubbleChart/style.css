@@ -22,22 +22,22 @@ a, a:visited {
 }
 
 .bubble-node {
-  fill: #DCE9BE;
+  fill: #094792;
 }
 
 .bubble-hover {
-  fill: #E8E9E7;
+  fill: #4682B4;
 }
 
 .bubble-selected {
-  fill: #CEE98F;
+  /*fill: #CEE98F;
   stroke: #A6BA92;
-  stroke-width: 1.5px;
+  stroke-width: 1.5px;*/
 }
 
 a.bubble-label {
   font-family: Lucida Sans Unicode;
-  color: inherit;
+  color: #ffcc00;
   cursor: pointer;
   display: block;
   text-align: center;
@@ -51,4 +51,3 @@ a.bubble-label {
   font: 10px Lucida Sans Unicode;
   white-space: nowrap;
 }
-
