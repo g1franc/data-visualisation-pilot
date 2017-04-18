@@ -31,6 +31,7 @@
     }
 
     </style>
+    <h2>Number of entities registered per year</h2>
     <svg width="960" height="650"></svg>
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="http://d3js.org/d3.v4.min.js"></script>
@@ -89,14 +90,7 @@
           g.append("g")
               .style("font", "14px sans-serif")
               .attr("class", "axis axis--y")
-              .call(d3.axisLeft(y))
-            .append("text")
-              .attr("transform", "rotate(-90)")
-              .attr("y", -67)
-              .attr("dy", "0.71em")
-              .attr("fill", "#000")
-              .style("font", "16px sans-serif")
-              .text("Number of entity registered");
+              .call(d3.axisLeft(y));
 
           var cat = g.selectAll(".cat")
             .data(category)
@@ -138,7 +132,7 @@
           circles.on("mouseover", mouseoverFunc)
                 .on("mousemove", mousemoveFunc)
                 .on("mouseout", mouseoutFunc);
-          
+
           function mouseoverFunc(d) {
             return tooltip
                 .style("display", null)
@@ -164,7 +158,9 @@
                 .attr("transform", function(d, i) { return "translate(" + 305 + "," + (480 + i*20) + ")"; });
 
             lineLegend.append("text").text(function (d) {return d;})
-                .attr("transform", "translate(15,9)"); //align texts with boxes
+                .attr("transform", "translate(15,9)")
+                .style("font-family", "Lucida Sans Unicode")
+                .style("font-size", "11px"); //align texts with boxes
 
             lineLegend.append("rect")
                 .attr("fill", function (d, i) {return z(d); })
