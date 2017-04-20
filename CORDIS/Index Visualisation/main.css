@@ -96,7 +96,7 @@ a.menu-button {
 
 .explanation {
 	background: #fff url(./images/featured_background.png) bottom center no-repeat;
-	padding: 10px 30px 40px 30px;
+	padding: 10px 30px 10px 30px;
 	padding-top:15px;
 	text-align: justify;
 	font-family:Lucida Sans Unicode;
@@ -111,4 +111,8 @@ a.menu-button {
 	font-size: 11px;
 	text-align: center;
 	background: #e9eff3;
+}
+
+.sharing-div {
+  text-align: right;
 }

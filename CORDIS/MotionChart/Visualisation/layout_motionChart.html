@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="en">
     <head>
         <meta http-equiv="Content-Language" content="en">
         <meta name="description" content="Motion chart allowing to explore the existing relations between different dimensions (e.g. population, GDP, R&D budget, education level) for each of the EU-28 countries and the participation of these countries in EU-funded projects.">
@@ -8,6 +8,14 @@
         <link rel="stylesheet" href="../main.css"/>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script src='http://code.jquery.com/jquery-1.11.0.min.js' type="text/javascript"></script>
+
+        <!-- social media share -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
+        <script src="https://use.fontawesome.com/bfab9f1eb9.js"></script>
+
         <title>Interactive bubble chart</title>
     </head>
     <body>
@@ -65,8 +73,9 @@
               The timeline below allows to display the evolution between the 3
               Framework Programmes (FP6, FP7, H2020). All the filters can be
               updated using the respective dropdowns.
+              <div id="share" class="sharing-div" style="padding-bottom:10px;"></div>
             </div>
-            
+
             <div class="content">
                 <iframe style="width:100%; height:550px;" scrolling="no" src="http://52.50.205.146:8890/data-visualisation-pilot/motionChart/iframe_motionChart.html"></iframe>
                 <div class="embedcode" style="text-align:left;">
@@ -92,5 +101,11 @@
                 The source code of this visualisation can be found on the following <a href="https://github.com/SEMICeu/data-visualisation-pilot" target="_blank">Github repository</a>.
             </div>
         </div>
+        <script>
+          $("#share").jsSocials({
+            showLabel: false,
+            shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest"]
+          });
+        </script>
     </body>
 </html>

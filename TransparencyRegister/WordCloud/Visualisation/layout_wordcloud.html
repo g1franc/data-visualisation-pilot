@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="en">
     <head>
         <meta http-equiv="Content-Language" content="en">
         <meta name="description" content="Wordcloud displaying the focus of EU activities.">
         <meta name="classification" content="04000">
         <meta name="keywords" content="Information, Visual, European Commission, European Union, EU">
         <link rel="stylesheet" href="../main.css"/>
-        <title>EU Transparency Register</title> 
+
+        <!-- social media share -->
+        <script src='http://code.jquery.com/jquery-1.11.0.min.js' type="text/javascript"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
+        <script src="https://use.fontawesome.com/bfab9f1eb9.js"></script>
+
+        <title>EU Transparency Register</title>
     </head>
 
     <body>
@@ -23,15 +31,25 @@
             </div>
 
             <div class="explanation">
-              Add an explanation here.
+              The EU institutions interact with a wide range of groups and organisations
+              representing specific interests. This is a legitimate and necessary
+              part of the decision-making process to make sure that EU policies
+              reflect citizens’ real needs. The
+              <a href="http://ec.europa.eu/transparencyregister/public/homePage.do" target="_blank">transparency register</a>
+              has been
+              created to allow you to explore which interests are being pursued by whom.
+              <br>
+              <br>
+              The visualisation on this page allows to visualise the goals of the organisations registered.
+              <div id="share" class="sharing-div"></div>
             </div>
-              
+
             <div class="content">
                 <iframe style="width:100%; height:620px" scrolling="no" src="http://52.50.205.146:8890/data-visualisation-pilot/TransparencyRegister/iframe_wordcloud.html"></iframe>
                 <div style="text-align:left">
                     <b>Embed Code:</b>
                     <input id="embededCodeField" type="text" value="<iframe style=&quot;width:985px; height:620px&quot; scrolling=&quot;no&quot; src=&quot;http://52.50.205.146:8890/data-visualisation-pilot/TransparencyRegister/iframe_wordcloud.html&quot;></iframe>" style="width:100%;">
-                </div> 
+                </div>
             </div>
 
             <div class="footer">
@@ -42,5 +60,11 @@
                 The source code of this visualisation can be found on the following <a href="https://github.com/SEMICeu/data-visualisation-pilot" target="_blank">Github repository</a>.
             </div>
         </div>
+        <script>
+          $("#share").jsSocials({
+            showLabel: false,
+            shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest"]
+          });
+        </script>
 	</body>
 </html>

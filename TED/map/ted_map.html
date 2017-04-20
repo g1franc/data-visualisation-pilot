@@ -44,6 +44,8 @@
             opacity: 0.7;
           }
 
+          select { text-indent: 30px; }
+
         </style>
     </head>
 
@@ -51,15 +53,18 @@
         <div id="map_container">
           <div id='map'></div>
         </div>
-        <div style="position:absolute; top:10px; left:615px; text-align:left">
-          <select onchange="selectNuts(this)">
-            <option value="nuts0_data">NUTS 0</option>
-            <option value="nuts1_data">NUTS 1</option>
-            <option value="nuts2_data">NUTS 2</option>
-            <option value="nuts3_data">NUTS 3</option>
-          </select>
-          <h3 id="list-header">Tenders' list</h3>
-          <div id="list" style="height:500px; overflow-y:scroll; width:150px;"><div>
+        <div style="position:absolute; top:10px; left:615px; text-align:left; font: 14px/16px Arial, Helvetica, sans-serif;">
+          <div style="width:183px; text-align:center;">
+            <span style="font-weight:bold;">Select a NUTS level:</span>
+            <select onchange="selectNuts(this)" style="width:183px;">
+              <option value="nuts0_data">NUTS 0</option>
+              <option value="nuts1_data">NUTS 1</option>
+              <option value="nuts2_data">NUTS 2</option>
+              <option value="nuts3_data">NUTS 3</option>
+            </select>
+            <h3 id="list-header"></h3>
+          </div>
+          <div id="list" style="height:508px; overflow-y:scroll; width:200px;"><div>
         </div>
 
         <script type="text/javascript" src="languages.js"></script>
@@ -210,12 +215,12 @@
                   myNode.removeChild(myNode.firstChild);
                 }
                 if(TEDdata[e.target.feature.properties.NUTS_ID] == undefined){
-                  $('#list').append('<h5>'+texts[userLang].noTenders+'</h5>');
+                  $('#list').append('<h5 style="text-align:center;">'+texts[userLang].noTenders+'</h5>');
                 }
                 else {
                   TEDdata[e.target.feature.properties.NUTS_ID].forEach(function(t){
                     var url = "http://ted.europa.eu/udl?uri=TED:NOTICE:" + t + ":TEXT:EN:HTML";
-                    $('#list').append('<div style="border: 1px solid grey;"><a target="_blank" href='+url+'>'+t+'</a></div>');
+                    $('#list').append('<div style="border-bottom: 0.5px solid grey; text-align:center;"><a target="_blank" href='+url+'>'+t+'</a></div>');
                   });
                 }
               }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>EU Transparency Register</title> 
+	<title>EU Transparency Register</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../main.css"/>
@@ -18,7 +18,9 @@
 
 		.info {
 			padding: 6px 12px;
-			font: 14px/16px Arial, Helvetica, sans-serif;
+			/*font: 14px/16px Arial, Helvetica, sans-serif;*/
+			font-family:Lucida Sans Unicode;
+  		font-size:11px;
 			background: white;
 			background: rgba(255,255,255,0.8);
 			box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -44,6 +46,11 @@
 			opacity: 0.7;
 		}
 
+		.info {
+			font-size: 11px;
+
+		}
+
 </style>
 </head>
 	<body>
@@ -64,25 +71,30 @@
 
             <div class="content">
 				<div id='map'></div>
-				<div style="position:absolute; top:10px; left:630px; text-align:left">
+				<div style="position:absolute; top:10px; left:630px; text-align:left font-family:Lucida Sans Unicode; font-size:11px;">
 					<form onClick="JavaScript:setColors(group1.value)">
 					  	<input type="radio" name="group1" value="category_1" checked> I - Professional consultancies/law firms/self-employed consultants<br>
 						  	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_1_1"> Professional consultancies<br>
 						  	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_1_2"> Law firms<br>
 						  	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_1_3"> Self-employed consultants<br>
+								<br>
 					  	<input type="radio" name="group1" value="category_2"> II - In-house lobbyists and trade/business/professional associations<br>
 					  		&emsp;&emsp;<input type="radio" name="group1" value="subcategory_2_1"> Trade and business associations<br>
 					  		&emsp;&emsp;<input type="radio" name="group1" value="subcategory_2_2"> Companies and groups<br>
 					  		&emsp;&emsp;<input type="radio" name="group1" value="subcategory_2_3"> Trade unions and professional associations<br>
 					  		&emsp;&emsp;<input type="radio" name="group1" value="subcategory_2_4"> Other organisations<br>
+								<br>
 						<input type="radio" name="group1" value="category_3"> III - Non-governmental organisations<br>
 							&emsp;&emsp;<input type="radio" name="group1" value="subcategory_3_1"> Non-governmental organisations, platforms and networks and similar<br>
-					    <input type="radio" name="group1" value="category_4"> IV - Think tanks, research and academic institutions<br>
+					   <br>
+						 <input type="radio" name="group1" value="category_4"> IV - Think tanks, research and academic institutions<br>
 					    	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_4_1"> Think tanks and research institutions<br>
 					    	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_4_2"> Academic institutions<br>
+								<br>
 					    <input type="radio" name="group1" value="category_5"> V - Organisations representing churches and religious communities<br>
 					    	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_5_1"> Organisations representing churches and religious communities<br>
-					    <input type="radio" name="group1" value="category_6"> VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.<br>
+					    <br>
+							<input type="radio" name="group1" value="category_6"> VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.<br>
 					    	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_6_1"> Other public or mixed entities, created by law whose purpose is to act in the public interest<br>
 					    	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_6_2"> Other sub-national public authorities<br>
 					    	&emsp;&emsp;<input type="radio" name="group1" value="subcategory_6_3"> Regional structures<br>
@@ -101,7 +113,7 @@
         </div>
 
 		<script type="text/javascript" src="eu-states.js"></script>
-		<script src="https://unpkg.com/esri-leaflet@2.0.7"></script> 
+		<script src="https://unpkg.com/esri-leaflet@2.0.7"></script>
 
 		<script type="text/javascript">
 
@@ -111,7 +123,7 @@
 				maxZoom: 18,
 				id: 'mapbox.light'
 			}).addTo(map);
-			var layer = L.esri.basemapLayer('Gray').addTo(map); 
+			var layer = L.esri.basemapLayer('Gray').addTo(map);
 
 
 /*			// control that shows state info on hover
@@ -147,7 +159,7 @@
 					weight: 1,
 					opacity: 1,
 					color: 'white',
-					fillOpacity: 1, 
+					fillOpacity: 1,
 		/*			fillColor: getColor(feature.properties.density)*/
 				};
 			}

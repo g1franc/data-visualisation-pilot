@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>EU Transparency Register</title> 
+        <title>EU Transparency Register</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src='http://code.jquery.com/jquery-1.11.0.min.js' type="text/javascript"></script>
         <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-        <script src="assets/js/jquery-1.11.3.min.js" type="text/javascript"></script>
         <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 
         <style>
 
           #map {
-            width: 600px;
+            width: 969px;
             height: 600px;
           }
 
           .info {
             padding: 6px 12px;
-            font: 14px/16px Arial, Helvetica, sans-serif;
+            /*font: 14px/16px Arial, Helvetica, sans-serif;*/
+      			font-family:Lucida Sans Unicode;
+        		font-size:11px;
             background: white;
             background: rgba(255,255,255,0.8);
             box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -44,29 +46,78 @@
             opacity: 0.7;
           }
 
+          .form-panel{
+            position: absolute;
+            top: 5px;
+            left: 369px;
+            text-align: left;
+            font-family: Lucida Sans Unicode;
+            font-size: 11px;
+            z-index: 100000;
+            width: 610px;
+            background-color: white;
+            height: 605px;
+          }
+
+          .expand-form-button {
+            position:absolute;
+            z-index:100001;
+            top: 0px;
+            width: 23px;
+            height: 48px;
+            cursor: pointer;
+            border-left: 1px solid #D4D4D4;
+            box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+            background: rgba(255,255,255,0.9) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAQAAAAXDMSnAAAAi0lEQVR4AX3JQcqBURQG4O/+9WNG30D3vOfSDTuQsgcZyBakZANSzMVMBme3zsBI5/VMn4ZKLP5ki1E4tYejWpilxVUtzOEUD68odYmXR5BJNp/4zllXD2phllYvamHmirsayUkfJ5ruHzueTldC08kcT5YOY9xYujqQM03XKXuaLmEtNF1e1Nz89gbL+0do6OEwRwAAAABJRU5ErkJggg==) 7px center/7px 10px no-repeat;
+          }
+
+          .expand-form-button.expanded {
+            right: 616px;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+          }
+
+          .expand-form-button.closed {
+            right:0px;
+          }
+
+          .leaflet-right .leaflet-control {
+              margin-right: 25px;
+          }
+
+          .leaflet-top .leaflet-control {
+              margin-top: 10px;
+          }
+
         </style>
     </head>
 
     <body>
         <div id='map'></div>
-        <div style="position:absolute; top:10px; left:615px; text-align:left">
+        <button id="expand-button" class="expand-form-button expanded" onclick="expandPanel()"></button>
+        <div class="form-panel">
             <form onClick="JavaScript:setColors()">
                   <input type="radio" name="group1" value="I...Professional.consultancies.law.firms.self.employed.consultants" checked> I - Professional consultancies/law firms/self-employed consultants<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Professional.consultancies"> Professional consultancies<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Law.firms"> Law firms<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Self.employed.consultants"> Self-employed consultants<br>
+                  <br>
                   <input type="radio" name="group1" value="II...In.house.lobbyists.and.trade.business.professional.associations"> II - In-house lobbyists and trade/business/professional associations<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Trade.and.business.associations"> Trade and business associations<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Companies...groups"> Companies and groups<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Trade.unions.and.professional.associations"> Trade unions and professional associations<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Other.organisations"> Other organisations<br>
+                <br>
                 <input type="radio" name="group1" value="III...Non.governmental.organisations"> III - Non-governmental organisations<br>
                   &emsp;&emsp;<input type="radio" name="group1" value="Non.governmental.organisations..platforms.and.networks.and.similar"> Non-governmental organisations, platforms and networks and similar<br>
+                  <br>
                   <input type="radio" name="group1" value="IV...Think.tanks..research.and.academic.institutions"> IV - Think tanks, research and academic institutions<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Think.tanks.and.research.institutions"> Think tanks and research institutions<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Academic.institutions"> Academic institutions<br>
+                  <br>
                   <input type="radio" name="group1" value="V...Organisations.representing.churches.and.religious.communities"> V - Organisations representing churches and religious communities<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Organisations.representing.churches.and.religious.communities"> Organisations representing churches and religious communities<br>
+                  <br>
                   <input type="radio" name="group1" value="VI...Organisations.representing.local..regional.and.municipal.authorities..other.public.or.mixed.entities..etc."> VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Other.public.or.mixed.entities..created.by.law.whose.purpose.is.to.act.in.the.public.interest"> Other public or mixed entities, created by law whose purpose is to act in the public interest<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Other.sub.national.public.authorities"> Other sub-national public authorities<br>
@@ -77,7 +128,7 @@
 
         <script type="text/javascript" src="eu-states.js"></script>
         <script type="text/javascript" src="datasetMap.js"></script>
-        <script src="https://unpkg.com/esri-leaflet@2.0.7"></script> 
+        <script src="https://unpkg.com/esri-leaflet@2.0.7"></script>
         <script type="text/javascript">
 
             var map = L.map('map').setView([52, 15], 4);
@@ -86,7 +137,7 @@
                 maxZoom: 18,
                 id: 'mapbox.light'
             }).addTo(map);
-            var layer = L.esri.basemapLayer('Gray').addTo(map); 
+            var layer = L.esri.basemapLayer('Gray').addTo(map);
 
 
              // control that shows state info on hover
@@ -123,7 +174,7 @@
                     weight: 1,
                     opacity: 1,
                     color: 'white',
-                    fillOpacity: 1, 
+                    fillOpacity: 1,
             /* fillColor: getColor(feature.properties.density)*/
                 };
             }
@@ -153,7 +204,7 @@
                      return button.value;
                   }
                }
-               //No radio button is selected. 
+               //No radio button is selected.
                return null;
             }
 
@@ -225,6 +276,18 @@
             };
 
             legend.addTo(map);
+
+            function expandPanel(){
+              if($(".form-panel").is(':visible')){
+                $(".form-panel").hide();
+                $("#expand-button").removeClass('expanded');
+                $("#expand-button").addClass('closed');
+              }
+              else {
+                $(".form-panel").show();
+                $("#expand-button").removeClass('closed');
+                $("#expand-button").addClass('expanded');           }
+            }
         </script>
     </body>
 </html>
