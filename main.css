@@ -1,0 +1,118 @@
+p {
+  font-size:11px;
+}
+
+html {
+/*	padding: 0% 10%;*/
+	background-color: #bbbbbb;
+	line-height: 100%;
+}
+
+body {
+	margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+	position: inherit;
+  	font-family:Lucida Sans Unicode;
+  	font-size:11px;
+  	width:1000px;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 15px;
+	line-height: 1;
+	font-family:Lucida Sans Unicode;
+	margin:auto;
+	color: #094793;
+}
+
+a {
+	color: #505d8c;
+}
+
+.page {
+	/*border: 1px solid #696969;*/
+	background-color: white;
+}
+
+.menu-header {
+	background: #fff url(./images/menu_background.png) bottom center no-repeat;
+	background-size: 100% 100%;
+	display: list-item;
+	list-style: none;
+	position: relative;
+	height: 35px;
+	padding: 15px 0 0px 0;
+	margin-top: 15px;
+}
+
+ul.menu-header-links {
+	padding: 0 15px;
+	position: relative;
+	list-style: none;
+	margin: 0;
+}
+
+.menu-button {
+  float:left;
+  height:35px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  background: repeat-x center center url(./images/menu_button_background.png);
+  color: white !important;
+  font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+  font-weight: bold;
+  font-size: 0.929em;
+  padding: 0 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin: 0 1px;
+}
+
+a.menu-button {
+  padding: 0;
+  vertical-align: middle;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.selected {
+  background: white;
+  color: #505d8c !important;
+}
+
+.content{
+	width:98.5%;
+	margin-top: 15px;
+	margin-bottom:15px;
+	margin-left:auto;
+	margin-right:auto;
+	position: relative;
+  	text-align: center;
+}
+
+.explanation {
+	background: #fff url(./images/featured_background.png) bottom center no-repeat;
+	padding: 10px 30px 10px 30px;
+	padding-top:15px;
+	text-align: justify;
+	font-family:Lucida Sans Unicode;
+	font-size:11px;
+	background-size: 100% 100%;
+}
+
+.footer {
+	padding-top:15px;
+	font-family:arial;
+	color: #696969;
+	font-size: 11px;
+	text-align: center;
+	background: #e9eff3;
+}
+
+.sharing-div {
+  text-align: right;
+}

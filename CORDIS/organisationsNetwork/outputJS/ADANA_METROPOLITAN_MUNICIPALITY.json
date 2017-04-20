@@ -1,0 +1,1274 @@
+{
+"nodes": [
+{
+    "score":6.0,
+    "activity":"HES",
+    "level":1,
+    "id":0,
+    "label":"TECHNISCHE UNIVERSITAET DRESDEN",
+    "links":[
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        12
+    ],
+    "country":"DE",
+    "index":0
+},
+{
+    "score":6.0,
+    "activity":"HES",
+    "level":1,
+    "id":1,
+    "label":"UNIVERSITY COLLEGE LONDON",
+    "links":[
+        0,
+        4,
+        5,
+        6,
+        2,
+        7,
+        11,
+        3,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        12
+    ],
+    "country":"UK",
+    "index":1
+},
+{
+    "score":1.0,
+    "activity":"HES",
+    "level":1,
+    "id":2,
+    "label":"UNIVERSITAET FUER BODENKULTUR WIEN",
+    "links":[
+        0,
+        5,
+        6,
+        1,
+        4,
+        7,
+        11,
+        3,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        12
+    ],
+    "country":"AT",
+    "index":2
+},
+{
+    "score":1.0,
+    "activity":"PUB",
+    "level":1,
+    "id":3,
+    "label":"TRANSPORT FOR LONDON*TFL",
+    "links":[
+        0,
+        5,
+        6,
+        7,
+        11,
+        1,
+        2,
+        4,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        12
+    ],
+    "country":"UK",
+    "index":3
+},
+{
+    "score":1.0,
+    "activity":"PRC",
+    "level":1,
+    "id":4,
+    "label":"VECTOS (SOUTH) LIMITED",
+    "links":[
+        0,
+        1,
+        5,
+        6,
+        2,
+        7,
+        11,
+        3,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        12
+    ],
+    "country":"UK",
+    "index":4
+},
+{
+    "score":2.0,
+    "activity":"HES",
+    "level":1,
+    "id":5,
+    "label":"FONDATION NATIONALE DES SCIENCES POLITIQUES",
+    "links":[
+        1,
+        0,
+        2,
+        6,
+        7,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        17,
+        14,
+        15,
+        16
+    ],
+    "country":"FR",
+    "index":5
+},
+{
+    "score":1.0,
+    "activity":"PUB",
+    "level":1,
+    "id":6,
+    "label":"KOBENHAVNS KOMMUNE",
+    "links":[
+        5,
+        1,
+        0,
+        2,
+        7,
+        3,
+        4,
+        11,
+        12,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10
+    ],
+    "country":"DK",
+    "index":6
+},
+{
+    "score":1.0,
+    "activity":"PUB",
+    "level":1,
+    "id":7,
+    "label":"MUNICIPIUL BUCURESTI",
+    "links":[
+        5,
+        6,
+        1,
+        0,
+        2,
+        3,
+        4,
+        11,
+        12,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10
+    ],
+    "country":"RO",
+    "index":7
+},
+{
+    "score":1.0,
+    "activity":"PUB",
+    "level":1,
+    "id":8,
+    "label":"GREATER AMMAN MUNICIPALITY",
+    "links":[
+        5,
+        13,
+        17,
+        14,
+        15,
+        16,
+        1,
+        0,
+        2,
+        6,
+        7,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12
+    ],
+    "country":"JO",
+    "index":8
+},
+{
+    "score":1.0,
+    "activity":"PRC",
+    "level":1,
+    "id":9,
+    "label":"INRIX UK LIMITED",
+    "links":[
+        5,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        1,
+        0,
+        2,
+        6,
+        7,
+        3,
+        4,
+        10,
+        11,
+        12
+    ],
+    "country":"UK",
+    "index":9
+},
+{
+    "score":1.0,
+    "activity":"REC",
+    "level":1,
+    "id":10,
+    "label":"INSTITUT D'AMENAGEMENT ET D'URBANISME DE LA REGION D'ILE DE FRANCE",
+    "links":[
+        5,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        1,
+        0,
+        2,
+        6,
+        7,
+        3,
+        4,
+        11,
+        12
+    ],
+    "country":"FR",
+    "index":10
+},
+{
+    "score":1.0,
+    "activity":"PUB",
+    "level":1,
+    "id":11,
+    "label":"SENATSVERWALTUNG FUR STADTENTWICKLUNG",
+    "links":[
+        5,
+        6,
+        7,
+        1,
+        0,
+        2,
+        3,
+        4,
+        12,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10
+    ],
+    "country":"DE",
+    "index":11
+},
+{
+    "score":1.0,
+    "activity":"PUB",
+    "level":1,
+    "id":12,
+    "label":"TALLINNA LINN",
+    "links":[
+        5,
+        6,
+        7,
+        11,
+        13,
+        17,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        1,
+        0,
+        2,
+        3,
+        4
+    ],
+    "country":"EE",
+    "index":12
+},
+{
+    "score":1.0,
+    "activity":"PUB",
+    "level":1,
+    "id":13,
+    "label":"CITY OF SKOPJE",
+    "links":[
+        1,
+        0,
+        5,
+        2,
+        6,
+        7,
+        3,
+        4,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        11,
+        12,
+        17
+    ],
+    "country":"MK",
+    "index":13
+},
+{
+    "score":1.0,
+    "activity":"PRC",
+    "level":1,
+    "id":14,
+    "label":"COWI A/S",
+    "links":[
+        13,
+        17,
+        1,
+        0,
+        5,
+        2,
+        6,
+        7,
+        3,
+        4,
+        15,
+        16,
+        8,
+        9,
+        10,
+        11,
+        12
+    ],
+    "country":"DK",
+    "index":14
+},
+{
+    "score":1.0,
+    "activity":"OTH",
+    "level":1,
+    "id":15,
+    "label":"EUROCITIES ASBL",
+    "links":[
+        13,
+        17,
+        14,
+        1,
+        0,
+        5,
+        2,
+        6,
+        7,
+        3,
+        4,
+        16,
+        8,
+        9,
+        10,
+        11,
+        12
+    ],
+    "country":"BE",
+    "index":15
+},
+{
+    "score":1.0,
+    "activity":"PRC",
+    "level":1,
+    "id":16,
+    "label":"EUROPEAN INTEGRATED PROJECT",
+    "links":[
+        13,
+        17,
+        14,
+        15,
+        1,
+        0,
+        5,
+        2,
+        6,
+        7,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11,
+        12
+    ],
+    "country":"RO",
+    "index":16
+},
+{
+    "score":1.0,
+    "activity":"PUB",
+    "level":1,
+    "id":17,
+    "label":"ADANA METROPOLITAN MUNICIPALITY",
+    "links":[
+        1,
+        0,
+        5,
+        2,
+        6,
+        7,
+        3,
+        13,
+        4,
+        14,
+        15,
+        16,
+        8,
+        9,
+        10,
+        11,
+        12
+    ],
+    "country":"TR",
+    "index":17
+}
+],
+"links":[
+{
+    "source":0,
+    "target":1,
+    "weight":1.4081632653061225
+},
+{
+    "source":0,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":0,
+    "target":3,
+    "weight":1.0
+},
+{
+    "source":0,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":1,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":5,
+    "target":1,
+    "weight":1.0816326530612246
+},
+{
+    "source":5,
+    "target":0,
+    "weight":1.0
+},
+{
+    "source":5,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":5,
+    "target":6,
+    "weight":1.0
+},
+{
+    "source":5,
+    "target":7,
+    "weight":1.0
+},
+{
+    "source":5,
+    "target":3,
+    "weight":1.0
+},
+{
+    "source":5,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":5,
+    "target":8,
+    "weight":1.0
+},
+{
+    "source":5,
+    "target":9,
+    "weight":1.0
+},
+{
+    "source":5,
+    "target":10,
+    "weight":1.0
+},
+{
+    "source":5,
+    "target":11,
+    "weight":1.0
+},
+{
+    "source":5,
+    "target":12,
+    "weight":1.0
+},
+{
+    "source":6,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":6,
+    "target":0,
+    "weight":1.0
+},
+{
+    "source":6,
+    "target":2,
+    "weight":1.0816326530612246
+},
+{
+    "source":6,
+    "target":7,
+    "weight":1.0
+},
+{
+    "source":6,
+    "target":3,
+    "weight":1.0
+},
+{
+    "source":6,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":6,
+    "target":11,
+    "weight":1.0
+},
+{
+    "source":6,
+    "target":12,
+    "weight":1.0
+},
+{
+    "source":2,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":2,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":7,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":7,
+    "target":0,
+    "weight":1.0
+},
+{
+    "source":7,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":7,
+    "target":3,
+    "weight":1.0
+},
+{
+    "source":7,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":7,
+    "target":11,
+    "weight":1.0
+},
+{
+    "source":7,
+    "target":12,
+    "weight":1.0
+},
+{
+    "source":11,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":11,
+    "target":0,
+    "weight":1.0
+},
+{
+    "source":11,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":11,
+    "target":3,
+    "weight":1.0
+},
+{
+    "source":11,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":11,
+    "target":12,
+    "weight":1.0
+},
+{
+    "source":3,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":3,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":3,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":0,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":5,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":6,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":7,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":3,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":4,
+    "weight":1.0816326530612246
+},
+{
+    "source":13,
+    "target":14,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":15,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":16,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":8,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":9,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":10,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":11,
+    "weight":1.0
+},
+{
+    "source":13,
+    "target":12,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":0,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":5,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":6,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":7,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":3,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":13,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":14,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":15,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":16,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":8,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":9,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":10,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":11,
+    "weight":1.0
+},
+{
+    "source":17,
+    "target":12,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":0,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":5,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":6,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":7,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":3,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":15,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":16,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":8,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":9,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":10,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":11,
+    "weight":1.0
+},
+{
+    "source":14,
+    "target":12,
+    "weight":1.0
+},
+{
+    "source":15,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":15,
+    "target":0,
+    "weight":1.0
+},
+{
+    "source":15,
+    "target":5,
+    "weight":1.0
+},
+{
+    "source":15,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":15,
+    "target":6,
+    "weight":1.0
+},
+{
+    "source":15,
+    "target":7,
+    "weight":1.0
+},
+{
+    "source":15,
+    "target":3,
+    "weight":1.0816326530612246
+},
+{
+    "source":15,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":15,
+    "target":16,
+    "weight":1.0
+},
+{
+    "source":15,
+    "target":8,
+    "weight":1.0
+},
+{
+    "source":15,
+    "target":9,
+    "weight":1.0
+},
+{
+    "source":15,
+    "target":10,
+    "weight":1.0
+},
+{
+    "source":15,
+    "target":11,
+    "weight":1.0
+},
+{
+    "source":15,
+    "target":12,
+    "weight":1.0
+},
+{
+    "source":16,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":16,
+    "target":0,
+    "weight":1.0
+},
+{
+    "source":16,
+    "target":5,
+    "weight":1.0
+},
+{
+    "source":16,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":16,
+    "target":6,
+    "weight":1.0
+},
+{
+    "source":16,
+    "target":7,
+    "weight":1.0
+},
+{
+    "source":16,
+    "target":3,
+    "weight":1.0
+},
+{
+    "source":16,
+    "target":4,
+    "weight":1.2448979591836735
+},
+{
+    "source":16,
+    "target":8,
+    "weight":1.0
+},
+{
+    "source":16,
+    "target":9,
+    "weight":1.0
+},
+{
+    "source":16,
+    "target":10,
+    "weight":1.0
+},
+{
+    "source":16,
+    "target":11,
+    "weight":1.0
+},
+{
+    "source":16,
+    "target":12,
+    "weight":1.0
+},
+{
+    "source":8,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":8,
+    "target":0,
+    "weight":1.0
+},
+{
+    "source":8,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":8,
+    "target":6,
+    "weight":1.0
+},
+{
+    "source":8,
+    "target":7,
+    "weight":1.0
+},
+{
+    "source":8,
+    "target":3,
+    "weight":1.0
+},
+{
+    "source":8,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":8,
+    "target":9,
+    "weight":1.0
+},
+{
+    "source":8,
+    "target":10,
+    "weight":1.0
+},
+{
+    "source":8,
+    "target":11,
+    "weight":1.0
+},
+{
+    "source":8,
+    "target":12,
+    "weight":1.0
+},
+{
+    "source":9,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":9,
+    "target":0,
+    "weight":1.0
+},
+{
+    "source":9,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":9,
+    "target":6,
+    "weight":1.0
+},
+{
+    "source":9,
+    "target":7,
+    "weight":1.0
+},
+{
+    "source":9,
+    "target":3,
+    "weight":1.0
+},
+{
+    "source":9,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":9,
+    "target":10,
+    "weight":1.0
+},
+{
+    "source":9,
+    "target":11,
+    "weight":1.0
+},
+{
+    "source":9,
+    "target":12,
+    "weight":1.0
+},
+{
+    "source":10,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":10,
+    "target":0,
+    "weight":1.0
+},
+{
+    "source":10,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":10,
+    "target":6,
+    "weight":1.0
+},
+{
+    "source":10,
+    "target":7,
+    "weight":1.0
+},
+{
+    "source":10,
+    "target":3,
+    "weight":1.0
+},
+{
+    "source":10,
+    "target":4,
+    "weight":1.0
+},
+{
+    "source":10,
+    "target":11,
+    "weight":1.0
+},
+{
+    "source":10,
+    "target":12,
+    "weight":1.0
+},
+{
+    "source":12,
+    "target":1,
+    "weight":1.0
+},
+{
+    "source":12,
+    "target":0,
+    "weight":1.0
+},
+{
+    "source":12,
+    "target":2,
+    "weight":1.0
+},
+{
+    "source":12,
+    "target":3,
+    "weight":1.0
+},
+{
+    "source":12,
+    "target":4,
+    "weight":1.0
+}]
+}

@@ -1,0 +1,315 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['controls', 'geochart', 'corechart', 'table']});
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+	  var chartWidth = 800;
+	  var chartHeight = 500;
+
+      function drawRegionsMap() {
+		// query = select *
+		//var gid = '432197715';
+    var gid = "961745769";
+		var select = "select%20*";
+		var CEFDataURL = 'https://docs.google.com/spreadsheets/d/1uH_46klGqZeoDF4VyAqMa6XAzAUCwpksY8pOgvgvRlo/gviz/tq?gid='
+		CEFDataURL += gid+'&headers=1&tq='+select;
+		var query = new google.visualization.Query(CEFDataURL);
+		query.send(handleQueryResponse_change);
+		}
+
+		function handleQueryResponse_change(response) {
+				if (response.isError()) {
+					alert ('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+					return;
+				}
+
+				var data = response.getDataTable();
+
+		var dashboard = new google.visualization.Dashboard(document.getElementById('dashboard_div'));
+
+		/********************
+        ***** SELECTORS *****
+        ********************/
+
+        var FilterCategory = new google.visualization.ControlWrapper({
+            controlType: 'CategoryFilter',
+            containerId: 'filter_category_div',
+            options: {
+              filterColumnLabel: 'Category',
+			  ui: {
+               allowTyping: true,
+               allowMultiple: true,
+               allowNone: true,
+               selectedValuesLayout:'belowStacked'
+             }
+            },
+        });
+
+		var FilterSubcategory = new google.visualization.ControlWrapper({
+            controlType: 'CategoryFilter',
+            containerId: 'filter_subcategory_div',
+            options: {
+              filterColumnLabel: 'Subcategory',
+			  ui: {
+               allowTyping: true,
+               allowMultiple: true,
+               allowNone: true,
+               selectedValuesLayout:'belowStacked'
+             }
+            },
+        });
+
+		var FilterInterest = new google.visualization.ControlWrapper({
+            controlType: 'CategoryFilter',
+            containerId: 'filter_interest_div',
+            options: {
+              filterColumnLabel: 'Interest',
+			  ui: {
+               allowTyping: true,
+               allowMultiple: true,
+               allowNone: true,
+               selectedValuesLayout:'belowStacked'
+             }
+            },
+        });
+
+		// Sets chart options
+		var options = {
+			region: ('150'), // Europe
+			colorAxis:{ colors: ['B1D5FD', '#0A4384']}, // colours of the countries in the data
+			//backgroundColor: '#ffffff', // colour of the background (the sea in this case)
+			//datalessRegionColor: '#e6e6e6', // colours of the countries not in the data
+      width:800,
+  	};
+
+        var deploy_mapChart = new google.visualization.ChartWrapper({
+				chartType: 'GeoChart',
+				containerId: 'Chart_Div',
+				options: options,
+			});
+
+      var proxyTable = new google.visualization.ChartWrapper({
+				chartType: 'Table',
+				containerId: 'table_div'
+			});
+
+			google.visualization.events.addListener(proxyTable, 'ready', function() {
+				var dt = proxyTable.getDataTable();
+				var gb_data = google.visualization.data.group(dt, [0],[{ 'column': 4, 'aggregation': google.visualization.data.sum, 'type': 'number'}]);
+        deploy_mapChart.setDataTable(gb_data);
+        deploy_mapChart.draw();/*
+        var dt = proxyTable.getDataTable();
+				var sum_data = google.visualization.data.group(dt, [0,4],[{ 'column': 5, 'aggregation': google.visualization.data.sum, 'type': 'number'}]);
+        var count_data = google.visualization.data.group(sum_data, [0],[{ 'column': 2, 'aggregation': google.visualization.data.count, 'type': 'number'}]);
+        deploy_mapChart.setDataTable(count_data);
+        deploy_mapChart.draw();*/
+      });
+
+	      /***** DASHBOARD *****/
+      dashboard.bind([FilterCategory, FilterSubcategory,FilterInterest], [proxyTable]);
+
+	  dashboard.draw(data);
+    }
+
+    function sortDates(date1, date2) {
+      if (date1 > date2) return 1;
+      if (date1 < date2) return -1;
+      return 0;
+    }
+    </script>
+
+    <style>
+    /* new version : google filters */
+
+    .google-visualization-controls-categoryfilter .goog-menu-button {
+      border:1px solid #DCDCDC;
+      border: 1px solid rgba(0,0,0,0.1);
+      min-width: 54px;
+      line-height: 27px;
+      color: #000;
+      font-size: 16px;
+      background: none;
+      background-color: #f5f5f5;
+      -webkit-border-radius:2px;
+      -moz-border-radius: 2px;
+    	border-radius: 2px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+    	-webkit-transition: all 0.218s;
+    	-moz-transition: all 0.218s;
+    	-o-transition: all 0.218s;
+    	transition: all 0.218s;
+    }
+
+    .google-visualization-controls-categoryfilter .goog-menu-button.goog-menu-button-hover {
+      border: 1px solid #b9b9b9;
+      border-top: 1px solid #a0a0a0;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .google-visualization-controls-categoryfilter .goog-menu-button-outer-box {
+      border: 0;
+      min-width: 210px;
+    }
+
+    .google-visualization-controls-categoryfilter .goog-menu-button-inner-box {
+      border: 0;
+      padding: 3px 8px;
+      min-width: 210px;
+    }
+
+    .google-visualization-controls-categoryfilter .goog-menu-button-dropdown {
+      height: 18px;
+      width: 23px;
+      position: absolute;
+      right: 8px;
+      background: #f5f5f5 no-repeat 7px 5px url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_down_black_18px.svg');
+    }
+
+    .goog-option-selected .goog-menuitem-checkbox {
+        width: 0px;
+    }
+
+    .goog-menu {
+      width:225px!important;
+    }
+
+
+    /* CategoryFilter: combobox / autocompleter */
+    .google-visualization-controls-categoryfilter .goog-combobox {
+      border:1px solid #DCDCDC;
+      border: 1px solid rgba(0,0,0,0.1);
+      background: none;
+      display: inline-block;
+      height: 31px;
+      line-height: 31px;
+      overflow: hidden;
+      -webkit-border-radius:2px;
+      -moz-border-radius: 2px;
+    	border-radius: 2px;
+      margin-left: 2px;
+    }
+
+    .google-visualization-controls-categoryfilter .goog-combobox:hover {
+      border: 1px solid #b9b9b9;
+      border-top: 1px solid #a0a0a0;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .google-visualization-controls-categoryfilter .goog-combobox.goog-combobox-active {
+      border: 1px solid #4d90fe;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+      outline: none;
+    }
+
+    .google-visualization-controls-categoryfilter .goog-combobox .goog-combobox-button {
+      line-height: 30px;
+      height: 32px;
+      text-indent: -9999px;
+      width: 31px;
+      background: #f5f5f5 no-repeat 7px 7px url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_down_black_18px.svg');
+      position: relative;
+      bottom: 2px;
+    }
+
+    .google-visualization-controls-categoryfilter .goog-combobox INPUT {
+      color: #222;
+      line-height: 27px;
+      height: 27px;
+      padding-left: 4px;
+      padding-bottom: 5px;
+      font-size: 13px;
+      border: 0;
+      background-color: transparent;
+      width:400px;
+      overflow:hidden !important;
+      text-overflow: ellipsis;
+    }
+
+    .google-visualization-controls-categoryfilter .goog-combobox INPUT:focus {
+      outline: none;
+    }
+
+
+    /* selected values when multiple */
+    .google-visualization-controls-categoryfilter ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font: normal 13px Arial, sans-serif;
+    }
+
+    .goog-menuitem-content {
+      overflow: hidden !important;
+      text-overflow: ellipsis!important;
+      width: 400px!important;
+    }
+
+    .google-visualization-controls-label {
+            background-color: #ffffff;
+            width: 85px;
+            padding-bottom: 5px;
+        }
+
+        .google-visualization-controls-categoryfilter LI{
+            background-color:#FFFFFF!important;
+        }
+
+        .google-visualization-controls-categoryfilter {
+            margin-bottom:20px;
+            align: right;
+        }
+
+        .goog-combobox input.label-input-label {
+            align: right;
+        }
+
+    /*** END GOOGLE FILTERS ***/
+
+    .filter-panel {
+      padding-top: 143px;
+      padding-left: 25px;
+    }
+    </style>
+
+  </head>
+   <body>
+    <!--Div that will hold the dashboard-->
+    <div id="dashboard_div" style="margin-top: 50px">
+    <div class="tabs-content">
+          <table>
+            <tr style='vertical-align: top;'>
+          <td class="dashboard-panel">
+            <h1 align="left" id="main-title" style="margin-bottom:10px; padding-bottom:48px;" title=""></h1>
+            <div>
+                <div class="tab-content active">
+                    <h5 class="chart-subtitle">Transparency Register: Europa</h5>
+                    <p>This chart shows the frequency of each country, for each of the filters.</p>
+                    <div id="Chart_Div" class="chart"></div>
+                    <div id="table_div" style="display:none;"></div>
+                </div>
+            </div>
+          </td>
+          <td class="filter-panel">
+            <h3 id="filterby" class="title" style="height:8px; padding-bottom:15px;">Filter by</h3>
+            <div class="filter_panel">
+              <div id="filter_category_div" class="filter"></div>
+              <div id="filter_subcategory_div" class="filter"></div>
+              <div id="filter_interest_div" class="filter"></div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  </html>
