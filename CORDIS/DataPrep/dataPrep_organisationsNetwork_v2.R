@@ -1,4 +1,4 @@
-library(data.table)
+require(data.table)
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # I. LOAD DATASETS #################################################################################################################
@@ -11,7 +11,7 @@ setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visua
 ### Load datasets
 # H2020: https://data.europa.eu/euodp/data/dataset/cordisH2020projects
 
-Dataset_H2020Organizations = read.csv("../Datasets/InputData/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_H2020Organizations = read.csv("../Datasets/inputData/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
 Dataset_H2020Organizations <- subset(Dataset_H2020Organizations, select=c(projectID, name, activityType, country))
 
@@ -96,7 +96,7 @@ func_BuildLink <- function(dataset) {
     fileName = gsub('&','', fileName)
     fileName = gsub(':','', fileName)
     
-    name <- paste("c:/F/", fileName, "_edge.csv", sep = "")
+    name <- paste("c:/input/", fileName, "_edge.csv", sep = "")
     options(scipen = 10)
     write.table(dataOrg, name, sep = ";", quote = FALSE, row.names = FALSE)
     options(scipen = 0)
@@ -123,7 +123,7 @@ func_BuildLink <- function(dataset) {
     listNode <- subset(listNode, select=c(Id, ActivityType, NbProject))
     
 
-    name <- paste("c:/F/", fileName, "_node.csv", sep = "")
+    name <- paste("c:/input/", fileName, "_node.csv", sep = "")
     write.table(listNode, name, sep = ";", quote = FALSE, row.names = FALSE)
     remove(listNode)
     
@@ -142,4 +142,5 @@ func_BuildLink <- function(dataset) {
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 Sys.time()
 func_BuildLink(Dataset_H2020Organizations)
+beep()
 Sys.time()
