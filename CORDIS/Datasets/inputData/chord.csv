@@ -1,0 +1,1135 @@
+country1,country2,nbLinkTmp,frameworkContract
+Austria,Belgium,495,FP6
+Austria,France,718,FP6
+Belgium,France,1214,FP6
+Finland,France,597,FP6
+Cyprus,France,109,FP6
+Czech Republic,France,537,FP6
+Denmark,France,642,FP6
+Bulgaria,France,183,FP6
+Croatia,France,60,FP6
+Estonia,France,162,FP6
+Austria,Germany,990,FP6
+Belgium,Germany,1360,FP6
+France,Germany,2388,FP6
+Finland,Germany,762,FP6
+Cyprus,Germany,126,FP6
+Czech Republic,Germany,668,FP6
+Denmark,Germany,788,FP6
+Bulgaria,Germany,243,FP6
+Croatia,Germany,74,FP6
+Estonia,Germany,210,FP6
+Austria,Italy,711,FP6
+Belgium,Italy,1107,FP6
+France,Italy,1850,FP6
+Germany,Italy,2168,FP6
+Greece,Italy,866,FP6
+Ireland,Italy,364,FP6
+Finland,Italy,568,FP6
+Hungary,Italy,529,FP6
+Cyprus,Italy,126,FP6
+Czech Republic,Italy,509,FP6
+Denmark,Italy,585,FP6
+Bulgaria,Italy,206,FP6
+Croatia,Italy,66,FP6
+Estonia,Italy,167,FP6
+Austria,United Kingdom,782,FP6
+Belgium,United Kingdom,1258,FP6
+France,United Kingdom,2161,FP6
+Germany,United Kingdom,2579,FP6
+Italy,United Kingdom,1962,FP6
+Greece,United Kingdom,923,FP6
+Ireland,United Kingdom,492,FP6
+Spain,United Kingdom,1697,FP6
+Finland,United Kingdom,678,FP6
+Poland,United Kingdom,892,FP6
+Hungary,United Kingdom,564,FP6
+Portugal,United Kingdom,558,FP6
+Sweden,United Kingdom,1144,FP6
+Netherlands,United Kingdom,1594,FP6
+Cyprus,United Kingdom,119,FP6
+Czech Republic,United Kingdom,602,FP6
+Romania,United Kingdom,268,FP6
+Denmark,United Kingdom,774,FP6
+Lithuania,United Kingdom,164,FP6
+Slovenia,United Kingdom,309,FP6
+Bulgaria,United Kingdom,219,FP6
+Croatia,United Kingdom,69,FP6
+Slovakia,United Kingdom,221,FP6
+Latvia,United Kingdom,117,FP6
+Estonia,United Kingdom,200,FP6
+Malta,United Kingdom,65,FP6
+Luxembourg,United Kingdom,61,FP6
+Austria,Greece,377,FP6
+Belgium,Greece,546,FP6
+France,Greece,888,FP6
+Germany,Greece,1006,FP6
+Finland,Greece,309,FP6
+Cyprus,Greece,130,FP6
+Czech Republic,Greece,251,FP6
+Denmark,Greece,321,FP6
+Bulgaria,Greece,170,FP6
+Croatia,Greece,51,FP6
+Estonia,Greece,94,FP6
+Austria,Ireland,190,FP6
+Belgium,Ireland,282,FP6
+France,Ireland,387,FP6
+Germany,Ireland,454,FP6
+Greece,Ireland,215,FP6
+Finland,Ireland,174,FP6
+Hungary,Ireland,134,FP6
+Cyprus,Ireland,37,FP6
+Czech Republic,Ireland,118,FP6
+Denmark,Ireland,176,FP6
+Bulgaria,Ireland,68,FP6
+Croatia,Ireland,19,FP6
+Estonia,Ireland,62,FP6
+Austria,Spain,602,FP6
+Belgium,Spain,938,FP6
+France,Spain,1584,FP6
+Germany,Spain,1814,FP6
+Italy,Spain,1511,FP6
+Greece,Spain,749,FP6
+Ireland,Spain,341,FP6
+Finland,Spain,498,FP6
+Poland,Spain,711,FP6
+Hungary,Spain,460,FP6
+Portugal,Spain,495,FP6
+Netherlands,Spain,1105,FP6
+Cyprus,Spain,109,FP6
+Czech Republic,Spain,467,FP6
+Romania,Spain,239,FP6
+Denmark,Spain,541,FP6
+Lithuania,Spain,120,FP6
+Slovenia,Spain,266,FP6
+Bulgaria,Spain,180,FP6
+Croatia,Spain,54,FP6
+Slovakia,Spain,175,FP6
+Latvia,Spain,89,FP6
+Estonia,Spain,153,FP6
+Malta,Spain,65,FP6
+Luxembourg,Spain,37,FP6
+Austria,Finland,298,FP6
+Belgium,Finland,411,FP6
+Cyprus,Finland,48,FP6
+Czech Republic,Finland,216,FP6
+Denmark,Finland,299,FP6
+Bulgaria,Finland,90,FP6
+Croatia,Finland,30,FP6
+Estonia,Finland,109,FP6
+Austria,Poland,380,FP6
+Belgium,Poland,519,FP6
+France,Poland,787,FP6
+Germany,Poland,1007,FP6
+Italy,Poland,779,FP6
+Greece,Poland,405,FP6
+Ireland,Poland,207,FP6
+Finland,Poland,302,FP6
+Hungary,Poland,324,FP6
+Netherlands,Poland,623,FP6
+Cyprus,Poland,88,FP6
+Czech Republic,Poland,304,FP6
+Denmark,Poland,332,FP6
+Lithuania,Poland,128,FP6
+Bulgaria,Poland,157,FP6
+Croatia,Poland,55,FP6
+Latvia,Poland,113,FP6
+Estonia,Poland,139,FP6
+Malta,Poland,52,FP6
+Luxembourg,Poland,31,FP6
+Austria,Hungary,297,FP6
+Belgium,Hungary,356,FP6
+France,Hungary,524,FP6
+Germany,Hungary,639,FP6
+Greece,Hungary,261,FP6
+Finland,Hungary,212,FP6
+Cyprus,Hungary,65,FP6
+Czech Republic,Hungary,236,FP6
+Denmark,Hungary,208,FP6
+Bulgaria,Hungary,134,FP6
+Croatia,Hungary,42,FP6
+Estonia,Hungary,97,FP6
+Austria,Portugal,206,FP6
+Belgium,Portugal,335,FP6
+France,Portugal,533,FP6
+Germany,Portugal,577,FP6
+Italy,Portugal,509,FP6
+Greece,Portugal,302,FP6
+Ireland,Portugal,144,FP6
+Finland,Portugal,185,FP6
+Poland,Portugal,269,FP6
+Hungary,Portugal,177,FP6
+Netherlands,Portugal,385,FP6
+Cyprus,Portugal,67,FP6
+Czech Republic,Portugal,168,FP6
+Denmark,Portugal,205,FP6
+Lithuania,Portugal,51,FP6
+Bulgaria,Portugal,83,FP6
+Croatia,Portugal,34,FP6
+Latvia,Portugal,50,FP6
+Estonia,Portugal,65,FP6
+Malta,Portugal,37,FP6
+Luxembourg,Portugal,22,FP6
+Austria,Sweden,430,FP6
+Belgium,Sweden,652,FP6
+France,Sweden,1030,FP6
+Germany,Sweden,1244,FP6
+Italy,Sweden,915,FP6
+Greece,Sweden,433,FP6
+Ireland,Sweden,245,FP6
+Spain,Sweden,822,FP6
+Finland,Sweden,440,FP6
+Poland,Sweden,476,FP6
+Hungary,Sweden,298,FP6
+Portugal,Sweden,302,FP6
+Netherlands,Sweden,810,FP6
+Cyprus,Sweden,51,FP6
+Czech Republic,Sweden,308,FP6
+Romania,Sweden,143,FP6
+Denmark,Sweden,463,FP6
+Lithuania,Sweden,90,FP6
+Slovenia,Sweden,166,FP6
+Bulgaria,Sweden,105,FP6
+Croatia,Sweden,37,FP6
+Slovakia,Sweden,122,FP6
+Latvia,Sweden,76,FP6
+Estonia,Sweden,136,FP6
+Malta,Sweden,31,FP6
+Luxembourg,Sweden,26,FP6
+Austria,Netherlands,600,FP6
+Belgium,Netherlands,935,FP6
+France,Netherlands,1399,FP6
+Germany,Netherlands,1702,FP6
+Italy,Netherlands,1246,FP6
+Greece,Netherlands,615,FP6
+Ireland,Netherlands,310,FP6
+Finland,Netherlands,510,FP6
+Hungary,Netherlands,416,FP6
+Cyprus,Netherlands,81,FP6
+Czech Republic,Netherlands,416,FP6
+Denmark,Netherlands,581,FP6
+Lithuania,Netherlands,102,FP6
+Bulgaria,Netherlands,167,FP6
+Croatia,Netherlands,54,FP6
+Latvia,Netherlands,89,FP6
+Estonia,Netherlands,136,FP6
+Malta,Netherlands,42,FP6
+Luxembourg,Netherlands,42,FP6
+Austria,Cyprus,63,FP6
+Belgium,Cyprus,77,FP6
+Bulgaria,Cyprus,51,FP6
+Croatia,Cyprus,22,FP6
+Austria,Czech Republic,262,FP6
+Belgium,Czech Republic,354,FP6
+Cyprus,Czech Republic,57,FP6
+Bulgaria,Czech Republic,99,FP6
+Croatia,Czech Republic,29,FP6
+Austria,Romania,151,FP6
+Belgium,Romania,170,FP6
+France,Romania,259,FP6
+Germany,Romania,311,FP6
+Italy,Romania,259,FP6
+Greece,Romania,199,FP6
+Ireland,Romania,72,FP6
+Finland,Romania,100,FP6
+Poland,Romania,203,FP6
+Hungary,Romania,152,FP6
+Portugal,Romania,108,FP6
+Netherlands,Romania,197,FP6
+Cyprus,Romania,56,FP6
+Czech Republic,Romania,114,FP6
+Denmark,Romania,89,FP6
+Lithuania,Romania,75,FP6
+Bulgaria,Romania,132,FP6
+Croatia,Romania,35,FP6
+Latvia,Romania,59,FP6
+Estonia,Romania,69,FP6
+Malta,Romania,38,FP6
+Luxembourg,Romania,14,FP6
+Austria,Denmark,284,FP6
+Belgium,Denmark,443,FP6
+Cyprus,Denmark,47,FP6
+Czech Republic,Denmark,228,FP6
+Bulgaria,Denmark,95,FP6
+Croatia,Denmark,36,FP6
+Austria,Lithuania,77,FP6
+Belgium,Lithuania,92,FP6
+France,Lithuania,132,FP6
+Germany,Lithuania,176,FP6
+Italy,Lithuania,149,FP6
+Greece,Lithuania,97,FP6
+Ireland,Lithuania,48,FP6
+Finland,Lithuania,68,FP6
+Hungary,Lithuania,91,FP6
+Cyprus,Lithuania,39,FP6
+Czech Republic,Lithuania,91,FP6
+Denmark,Lithuania,69,FP6
+Bulgaria,Lithuania,64,FP6
+Croatia,Lithuania,14,FP6
+Latvia,Lithuania,71,FP6
+Estonia,Lithuania,75,FP6
+Austria,Slovenia,188,FP6
+Belgium,Slovenia,212,FP6
+France,Slovenia,284,FP6
+Germany,Slovenia,365,FP6
+Italy,Slovenia,299,FP6
+Greece,Slovenia,154,FP6
+Ireland,Slovenia,82,FP6
+Finland,Slovenia,114,FP6
+Poland,Slovenia,189,FP6
+Hungary,Slovenia,145,FP6
+Portugal,Slovenia,98,FP6
+Netherlands,Slovenia,230,FP6
+Cyprus,Slovenia,51,FP6
+Czech Republic,Slovenia,139,FP6
+Romania,Slovenia,97,FP6
+Denmark,Slovenia,129,FP6
+Lithuania,Slovenia,82,FP6
+Bulgaria,Slovenia,84,FP6
+Croatia,Slovenia,46,FP6
+Slovakia,Slovenia,88,FP6
+Latvia,Slovenia,58,FP6
+Estonia,Slovenia,72,FP6
+Malta,Slovenia,31,FP6
+Luxembourg,Slovenia,20,FP6
+Austria,Croatia,46,FP6
+Belgium,Croatia,49,FP6
+Bulgaria,Croatia,37,FP6
+Austria,Bulgaria,132,FP6
+Belgium,Bulgaria,135,FP6
+Austria,Slovakia,143,FP6
+Belgium,Slovakia,138,FP6
+France,Slovakia,201,FP6
+Germany,Slovakia,254,FP6
+Italy,Slovakia,212,FP6
+Greece,Slovakia,105,FP6
+Ireland,Slovakia,58,FP6
+Finland,Slovakia,95,FP6
+Poland,Slovakia,167,FP6
+Hungary,Slovakia,148,FP6
+Portugal,Slovakia,80,FP6
+Netherlands,Slovakia,165,FP6
+Cyprus,Slovakia,45,FP6
+Czech Republic,Slovakia,130,FP6
+Romania,Slovakia,97,FP6
+Denmark,Slovakia,91,FP6
+Lithuania,Slovakia,68,FP6
+Bulgaria,Slovakia,81,FP6
+Croatia,Slovakia,27,FP6
+Latvia,Slovakia,60,FP6
+Estonia,Slovakia,67,FP6
+Malta,Slovakia,31,FP6
+Luxembourg,Slovakia,13,FP6
+Austria,Latvia,62,FP6
+Belgium,Latvia,75,FP6
+France,Latvia,102,FP6
+Germany,Latvia,137,FP6
+Italy,Latvia,106,FP6
+Greece,Latvia,63,FP6
+Ireland,Latvia,35,FP6
+Finland,Latvia,65,FP6
+Hungary,Latvia,72,FP6
+Cyprus,Latvia,37,FP6
+Czech Republic,Latvia,59,FP6
+Denmark,Latvia,55,FP6
+Bulgaria,Latvia,50,FP6
+Croatia,Latvia,21,FP6
+Estonia,Latvia,64,FP6
+Austria,Estonia,100,FP6
+Belgium,Estonia,115,FP6
+Cyprus,Estonia,43,FP6
+Czech Republic,Estonia,81,FP6
+Denmark,Estonia,102,FP6
+Bulgaria,Estonia,61,FP6
+Croatia,Estonia,22,FP6
+Austria,Malta,35,FP6
+Belgium,Malta,36,FP6
+France,Malta,56,FP6
+Germany,Malta,62,FP6
+Italy,Malta,71,FP6
+Greece,Malta,52,FP6
+Ireland,Malta,21,FP6
+Finland,Malta,22,FP6
+Hungary,Malta,47,FP6
+Cyprus,Malta,34,FP6
+Czech Republic,Malta,33,FP6
+Denmark,Malta,23,FP6
+Lithuania,Malta,31,FP6
+Bulgaria,Malta,33,FP6
+Croatia,Malta,9,FP6
+Latvia,Malta,28,FP6
+Estonia,Malta,34,FP6
+Luxembourg,Malta,3,FP6
+Austria,Luxembourg,34,FP6
+Belgium,Luxembourg,60,FP6
+France,Luxembourg,61,FP6
+Germany,Luxembourg,68,FP6
+Italy,Luxembourg,52,FP6
+Greece,Luxembourg,39,FP6
+Ireland,Luxembourg,21,FP6
+Finland,Luxembourg,26,FP6
+Hungary,Luxembourg,17,FP6
+Cyprus,Luxembourg,13,FP6
+Czech Republic,Luxembourg,19,FP6
+Denmark,Luxembourg,17,FP6
+Lithuania,Luxembourg,7,FP6
+Bulgaria,Luxembourg,11,FP6
+Croatia,Luxembourg,6,FP6
+Latvia,Luxembourg,12,FP6
+Estonia,Luxembourg,10,FP6
+Germany,Portugal,982,FP7
+Austria,Portugal,308,FP7
+France,Portugal,811,FP7
+Greece,Portugal,442,FP7
+Italy,Portugal,834,FP7
+Finland,Portugal,273,FP7
+Netherlands,Portugal,607,FP7
+Ireland,Portugal,254,FP7
+Czech Republic,Portugal,168,FP7
+Denmark,Portugal,289,FP7
+Belgium,Portugal,532,FP7
+Estonia,Portugal,93,FP7
+Poland,Portugal,291,FP7
+Hungary,Portugal,212,FP7
+Bulgaria,Portugal,121,FP7
+Latvia,Portugal,64,FP7
+Cyprus,Portugal,88,FP7
+Malta,Portugal,52,FP7
+Lithuania,Portugal,68,FP7
+Luxembourg,Portugal,52,FP7
+Croatia,Portugal,68,FP7
+Germany,Spain,3369,FP7
+Portugal,Spain,919,FP7
+Austria,Spain,1018,FP7
+France,Spain,2730,FP7
+Greece,Spain,1184,FP7
+Italy,Spain,2832,FP7
+Finland,Spain,870,FP7
+Netherlands,Spain,1961,FP7
+Ireland,Spain,655,FP7
+Czech Republic,Spain,590,FP7
+Denmark,Spain,861,FP7
+Slovenia,Spain,367,FP7
+Belgium,Spain,1730,FP7
+Estonia,Spain,234,FP7
+Poland,Spain,845,FP7
+Slovakia,Spain,206,FP7
+Hungary,Spain,586,FP7
+Bulgaria,Spain,282,FP7
+Latvia,Spain,138,FP7
+Cyprus,Spain,200,FP7
+Romania,Spain,497,FP7
+Malta,Spain,97,FP7
+Lithuania,Spain,179,FP7
+Luxembourg,Spain,98,FP7
+Croatia,Spain,155,FP7
+Austria,France,1122,FP7
+Finland,France,894,FP7
+Czech Republic,France,626,FP7
+Denmark,France,901,FP7
+Belgium,France,1995,FP7
+Estonia,France,225,FP7
+Bulgaria,France,267,FP7
+Cyprus,France,177,FP7
+Croatia,France,147,FP7
+Austria,Germany,1664,FP7
+France,Germany,3950,FP7
+Finland,Germany,1199,FP7
+Czech Republic,Germany,788,FP7
+Denmark,Germany,1231,FP7
+Belgium,Germany,2456,FP7
+Estonia,Germany,293,FP7
+Bulgaria,Germany,333,FP7
+Cyprus,Germany,211,FP7
+Croatia,Germany,187,FP7
+Germany,Greece,1475,FP7
+Austria,Greece,438,FP7
+France,Greece,1212,FP7
+Finland,Greece,390,FP7
+Czech Republic,Greece,266,FP7
+Denmark,Greece,347,FP7
+Belgium,Greece,743,FP7
+Estonia,Greece,134,FP7
+Bulgaria,Greece,197,FP7
+Cyprus,Greece,205,FP7
+Croatia,Greece,115,FP7
+Germany,Italy,3745,FP7
+Austria,Italy,1097,FP7
+France,Italy,2996,FP7
+Greece,Italy,1250,FP7
+Finland,Italy,836,FP7
+Ireland,Italy,628,FP7
+Czech Republic,Italy,613,FP7
+Denmark,Italy,847,FP7
+Belgium,Italy,1839,FP7
+Estonia,Italy,233,FP7
+Hungary,Italy,611,FP7
+Bulgaria,Italy,292,FP7
+Cyprus,Italy,196,FP7
+Croatia,Italy,156,FP7
+Germany,Sweden,1947,FP7
+Portugal,Sweden,398,FP7
+Austria,Sweden,595,FP7
+France,Sweden,1511,FP7
+Greece,Sweden,543,FP7
+Italy,Sweden,1381,FP7
+Spain,Sweden,1308,FP7
+Finland,Sweden,616,FP7
+Netherlands,Sweden,1244,FP7
+Ireland,Sweden,352,FP7
+Czech Republic,Sweden,337,FP7
+Denmark,Sweden,591,FP7
+Slovenia,Sweden,228,FP7
+Belgium,Sweden,1007,FP7
+Estonia,Sweden,178,FP7
+Poland,Sweden,478,FP7
+Slovakia,Sweden,123,FP7
+Hungary,Sweden,334,FP7
+Bulgaria,Sweden,136,FP7
+Latvia,Sweden,93,FP7
+Cyprus,Sweden,91,FP7
+Romania,Sweden,263,FP7
+Malta,Sweden,53,FP7
+Lithuania,Sweden,109,FP7
+Luxembourg,Sweden,64,FP7
+Croatia,Sweden,94,FP7
+Germany,United Kingdom,4586,FP7
+Portugal,United Kingdom,937,FP7
+Austria,United Kingdom,1291,FP7
+France,United Kingdom,3555,FP7
+Greece,United Kingdom,1395,FP7
+Italy,United Kingdom,3426,FP7
+Spain,United Kingdom,3254,FP7
+Sweden,United Kingdom,1812,FP7
+Finland,United Kingdom,1069,FP7
+Netherlands,United Kingdom,2858,FP7
+Ireland,United Kingdom,860,FP7
+Czech Republic,United Kingdom,690,FP7
+Denmark,United Kingdom,1189,FP7
+Slovenia,United Kingdom,450,FP7
+Belgium,United Kingdom,2217,FP7
+Estonia,United Kingdom,267,FP7
+Poland,United Kingdom,1042,FP7
+Slovakia,United Kingdom,240,FP7
+Hungary,United Kingdom,697,FP7
+Bulgaria,United Kingdom,335,FP7
+Latvia,United Kingdom,142,FP7
+Cyprus,United Kingdom,235,FP7
+Romania,United Kingdom,502,FP7
+Malta,United Kingdom,89,FP7
+Lithuania,United Kingdom,213,FP7
+Luxembourg,United Kingdom,129,FP7
+Croatia,United Kingdom,180,FP7
+Germany,Netherlands,2992,FP7
+Austria,Netherlands,896,FP7
+France,Netherlands,2263,FP7
+Greece,Netherlands,827,FP7
+Italy,Netherlands,2108,FP7
+Finland,Netherlands,754,FP7
+Ireland,Netherlands,526,FP7
+Czech Republic,Netherlands,492,FP7
+Denmark,Netherlands,850,FP7
+Belgium,Netherlands,1680,FP7
+Estonia,Netherlands,192,FP7
+Hungary,Netherlands,500,FP7
+Bulgaria,Netherlands,225,FP7
+Latvia,Netherlands,111,FP7
+Cyprus,Netherlands,140,FP7
+Malta,Netherlands,61,FP7
+Lithuania,Netherlands,136,FP7
+Luxembourg,Netherlands,83,FP7
+Croatia,Netherlands,124,FP7
+Germany,Ireland,801,FP7
+Austria,Ireland,269,FP7
+France,Ireland,637,FP7
+Greece,Ireland,304,FP7
+Finland,Ireland,244,FP7
+Czech Republic,Ireland,140,FP7
+Denmark,Ireland,259,FP7
+Belgium,Ireland,395,FP7
+Estonia,Ireland,76,FP7
+Hungary,Ireland,152,FP7
+Bulgaria,Ireland,88,FP7
+Cyprus,Ireland,79,FP7
+Croatia,Ireland,45,FP7
+Austria,Denmark,405,FP7
+Czech Republic,Denmark,208,FP7
+Belgium,Denmark,643,FP7
+Bulgaria,Denmark,100,FP7
+Cyprus,Denmark,68,FP7
+Croatia,Denmark,64,FP7
+Austria,Finland,433,FP7
+Czech Republic,Finland,215,FP7
+Denmark,Finland,387,FP7
+Belgium,Finland,597,FP7
+Estonia,Finland,138,FP7
+Bulgaria,Finland,104,FP7
+Cyprus,Finland,72,FP7
+Croatia,Finland,58,FP7
+Germany,Slovenia,501,FP7
+Portugal,Slovenia,138,FP7
+Austria,Slovenia,212,FP7
+France,Slovenia,369,FP7
+Greece,Slovenia,191,FP7
+Italy,Slovenia,417,FP7
+Finland,Slovenia,163,FP7
+Netherlands,Slovenia,316,FP7
+Ireland,Slovenia,126,FP7
+Czech Republic,Slovenia,120,FP7
+Denmark,Slovenia,147,FP7
+Belgium,Slovenia,287,FP7
+Estonia,Slovenia,71,FP7
+Poland,Slovenia,172,FP7
+Slovakia,Slovenia,71,FP7
+Hungary,Slovenia,130,FP7
+Bulgaria,Slovenia,90,FP7
+Latvia,Slovenia,50,FP7
+Cyprus,Slovenia,59,FP7
+Romania,Slovenia,116,FP7
+Malta,Slovenia,27,FP7
+Lithuania,Slovenia,57,FP7
+Luxembourg,Slovenia,27,FP7
+Croatia,Slovenia,74,FP7
+Austria,Belgium,760,FP7
+Austria,Czech Republic,322,FP7
+Belgium,Czech Republic,425,FP7
+Bulgaria,Czech Republic,113,FP7
+Cyprus,Czech Republic,67,FP7
+Croatia,Czech Republic,50,FP7
+Germany,Poland,1138,FP7
+Austria,Poland,410,FP7
+France,Poland,888,FP7
+Greece,Poland,426,FP7
+Italy,Poland,928,FP7
+Finland,Poland,353,FP7
+Netherlands,Poland,714,FP7
+Ireland,Poland,224,FP7
+Czech Republic,Poland,277,FP7
+Denmark,Poland,308,FP7
+Belgium,Poland,596,FP7
+Estonia,Poland,122,FP7
+Hungary,Poland,268,FP7
+Bulgaria,Poland,153,FP7
+Latvia,Poland,86,FP7
+Cyprus,Poland,91,FP7
+Malta,Poland,56,FP7
+Lithuania,Poland,107,FP7
+Luxembourg,Poland,51,FP7
+Croatia,Poland,85,FP7
+Germany,Slovakia,267,FP7
+Portugal,Slovakia,80,FP7
+Austria,Slovakia,127,FP7
+France,Slovakia,208,FP7
+Greece,Slovakia,117,FP7
+Italy,Slovakia,218,FP7
+Finland,Slovakia,92,FP7
+Netherlands,Slovakia,167,FP7
+Ireland,Slovakia,68,FP7
+Czech Republic,Slovakia,105,FP7
+Denmark,Slovakia,85,FP7
+Belgium,Slovakia,149,FP7
+Estonia,Slovakia,47,FP7
+Poland,Slovakia,112,FP7
+Hungary,Slovakia,111,FP7
+Bulgaria,Slovakia,64,FP7
+Latvia,Slovakia,38,FP7
+Cyprus,Slovakia,35,FP7
+Romania,Slovakia,94,FP7
+Malta,Slovakia,30,FP7
+Lithuania,Slovakia,45,FP7
+Luxembourg,Slovakia,22,FP7
+Croatia,Slovakia,35,FP7
+Germany,Hungary,774,FP7
+Austria,Hungary,310,FP7
+France,Hungary,585,FP7
+Greece,Hungary,275,FP7
+Finland,Hungary,237,FP7
+Czech Republic,Hungary,193,FP7
+Denmark,Hungary,214,FP7
+Belgium,Hungary,447,FP7
+Estonia,Hungary,94,FP7
+Bulgaria,Hungary,120,FP7
+Cyprus,Hungary,56,FP7
+Croatia,Hungary,69,FP7
+Austria,Bulgaria,158,FP7
+Belgium,Bulgaria,199,FP7
+Germany,Latvia,158,FP7
+Austria,Latvia,72,FP7
+France,Latvia,128,FP7
+Greece,Latvia,78,FP7
+Italy,Latvia,132,FP7
+Finland,Latvia,65,FP7
+Ireland,Latvia,49,FP7
+Czech Republic,Latvia,55,FP7
+Denmark,Latvia,63,FP7
+Belgium,Latvia,99,FP7
+Estonia,Latvia,63,FP7
+Hungary,Latvia,68,FP7
+Bulgaria,Latvia,47,FP7
+Cyprus,Latvia,41,FP7
+Croatia,Latvia,36,FP7
+Austria,Cyprus,84,FP7
+Belgium,Cyprus,124,FP7
+Bulgaria,Cyprus,55,FP7
+Croatia,Cyprus,35,FP7
+Germany,Romania,553,FP7
+Portugal,Romania,205,FP7
+Austria,Romania,222,FP7
+France,Romania,471,FP7
+Greece,Romania,268,FP7
+Italy,Romania,512,FP7
+Finland,Romania,187,FP7
+Netherlands,Romania,343,FP7
+Ireland,Romania,121,FP7
+Czech Republic,Romania,150,FP7
+Denmark,Romania,154,FP7
+Belgium,Romania,322,FP7
+Estonia,Romania,88,FP7
+Poland,Romania,222,FP7
+Hungary,Romania,185,FP7
+Bulgaria,Romania,153,FP7
+Latvia,Romania,73,FP7
+Cyprus,Romania,74,FP7
+Malta,Romania,50,FP7
+Lithuania,Romania,84,FP7
+Luxembourg,Romania,33,FP7
+Croatia,Romania,77,FP7
+Austria,Estonia,138,FP7
+Czech Republic,Estonia,76,FP7
+Denmark,Estonia,110,FP7
+Belgium,Estonia,152,FP7
+Bulgaria,Estonia,65,FP7
+Cyprus,Estonia,47,FP7
+Croatia,Estonia,44,FP7
+Germany,Malta,96,FP7
+Austria,Malta,47,FP7
+France,Malta,87,FP7
+Greece,Malta,75,FP7
+Italy,Malta,102,FP7
+Finland,Malta,30,FP7
+Ireland,Malta,44,FP7
+Czech Republic,Malta,40,FP7
+Denmark,Malta,32,FP7
+Belgium,Malta,60,FP7
+Estonia,Malta,39,FP7
+Hungary,Malta,39,FP7
+Bulgaria,Malta,51,FP7
+Latvia,Malta,38,FP7
+Cyprus,Malta,47,FP7
+Lithuania,Malta,24,FP7
+Luxembourg,Malta,17,FP7
+Croatia,Malta,26,FP7
+Germany,Lithuania,215,FP7
+Austria,Lithuania,91,FP7
+France,Lithuania,172,FP7
+Greece,Lithuania,107,FP7
+Italy,Lithuania,187,FP7
+Finland,Lithuania,91,FP7
+Ireland,Lithuania,55,FP7
+Czech Republic,Lithuania,74,FP7
+Denmark,Lithuania,85,FP7
+Belgium,Lithuania,121,FP7
+Estonia,Lithuania,63,FP7
+Hungary,Lithuania,81,FP7
+Bulgaria,Lithuania,68,FP7
+Latvia,Lithuania,53,FP7
+Cyprus,Lithuania,42,FP7
+Croatia,Lithuania,27,FP7
+Germany,Luxembourg,140,FP7
+Austria,Luxembourg,62,FP7
+France,Luxembourg,112,FP7
+Greece,Luxembourg,61,FP7
+Italy,Luxembourg,110,FP7
+Finland,Luxembourg,51,FP7
+Ireland,Luxembourg,33,FP7
+Czech Republic,Luxembourg,32,FP7
+Denmark,Luxembourg,34,FP7
+Belgium,Luxembourg,100,FP7
+Estonia,Luxembourg,31,FP7
+Hungary,Luxembourg,33,FP7
+Bulgaria,Luxembourg,27,FP7
+Latvia,Luxembourg,26,FP7
+Cyprus,Luxembourg,23,FP7
+Lithuania,Luxembourg,23,FP7
+Croatia,Luxembourg,19,FP7
+Austria,Croatia,88,FP7
+Belgium,Croatia,100,FP7
+Bulgaria,Croatia,60,FP7
+Austria,Belgium,334,H2020
+Austria,Bulgaria,65,H2020
+Belgium,Bulgaria,88,H2020
+Austria,Croatia,77,H2020
+Belgium,Croatia,91,H2020
+Bulgaria,Croatia,36,H2020
+Austria,Cyprus,48,H2020
+Belgium,Cyprus,61,H2020
+Bulgaria,Cyprus,28,H2020
+Croatia,Cyprus,27,H2020
+Austria,Czech Republic,152,H2020
+Belgium,Czech Republic,189,H2020
+Bulgaria,Czech Republic,50,H2020
+Croatia,Czech Republic,48,H2020
+Cyprus,Czech Republic,26,H2020
+Austria,Denmark,184,H2020
+Belgium,Denmark,258,H2020
+Bulgaria,Denmark,38,H2020
+Croatia,Denmark,63,H2020
+Cyprus,Denmark,35,H2020
+Czech Republic,Denmark,100,H2020
+Austria,Estonia,51,H2020
+Belgium,Estonia,77,H2020
+Bulgaria,Estonia,30,H2020
+Croatia,Estonia,29,H2020
+Cyprus,Estonia,27,H2020
+Czech Republic,Estonia,35,H2020
+Denmark,Estonia,48,H2020
+Austria,Finland,150,H2020
+Belgium,Finland,240,H2020
+Bulgaria,Finland,46,H2020
+Croatia,Finland,36,H2020
+Cyprus,Finland,31,H2020
+Czech Republic,Finland,80,H2020
+Denmark,Finland,147,H2020
+Estonia,Finland,55,H2020
+Austria,France,437,H2020
+Belgium,France,727,H2020
+Bulgaria,France,85,H2020
+Croatia,France,96,H2020
+Cyprus,France,85,H2020
+Czech Republic,France,229,H2020
+Denmark,France,334,H2020
+Estonia,France,74,H2020
+Finland,France,311,H2020
+Austria,Germany,641,H2020
+Belgium,Germany,886,H2020
+Bulgaria,Germany,119,H2020
+Croatia,Germany,116,H2020
+Cyprus,Germany,100,H2020
+Czech Republic,Germany,287,H2020
+Denmark,Germany,456,H2020
+Estonia,Germany,102,H2020
+Finland,Germany,389,H2020
+France,Germany,1333,H2020
+Austria,Greece,201,H2020
+Belgium,Greece,303,H2020
+Bulgaria,Greece,69,H2020
+Croatia,Greece,62,H2020
+Cyprus,Greece,103,H2020
+Czech Republic,Greece,107,H2020
+Denmark,Greece,144,H2020
+Estonia,Greece,57,H2020
+Finland,Greece,150,H2020
+France,Greece,449,H2020
+Germany,Greece,587,H2020
+Austria,Hungary,115,H2020
+Belgium,Hungary,150,H2020
+Bulgaria,Hungary,44,H2020
+Croatia,Hungary,44,H2020
+Cyprus,Hungary,28,H2020
+Czech Republic,Hungary,80,H2020
+Denmark,Hungary,84,H2020
+Estonia,Hungary,30,H2020
+Finland,Hungary,59,H2020
+France,Hungary,169,H2020
+Germany,Hungary,209,H2020
+Greece,Hungary,100,H2020
+Austria,Ireland,122,H2020
+Belgium,Ireland,212,H2020
+Bulgaria,Ireland,32,H2020
+Croatia,Ireland,56,H2020
+Cyprus,Ireland,40,H2020
+Czech Republic,Ireland,75,H2020
+Denmark,Ireland,135,H2020
+Estonia,Ireland,34,H2020
+Finland,Ireland,103,H2020
+France,Ireland,254,H2020
+Germany,Ireland,333,H2020
+Greece,Ireland,143,H2020
+Hungary,Ireland,70,H2020
+Austria,Italy,443,H2020
+Belgium,Italy,729,H2020
+Bulgaria,Italy,104,H2020
+Croatia,Italy,110,H2020
+Cyprus,Italy,110,H2020
+Czech Republic,Italy,245,H2020
+Denmark,Italy,336,H2020
+Estonia,Italy,91,H2020
+Finland,Italy,318,H2020
+France,Italy,1070,H2020
+Germany,Italy,1329,H2020
+Greece,Italy,555,H2020
+Hungary,Italy,191,H2020
+Ireland,Italy,276,H2020
+Austria,Latvia,52,H2020
+Belgium,Latvia,66,H2020
+Bulgaria,Latvia,28,H2020
+Croatia,Latvia,27,H2020
+Cyprus,Latvia,25,H2020
+Czech Republic,Latvia,38,H2020
+Denmark,Latvia,43,H2020
+Estonia,Latvia,34,H2020
+Finland,Latvia,40,H2020
+France,Latvia,63,H2020
+Germany,Latvia,83,H2020
+Greece,Latvia,47,H2020
+Hungary,Latvia,31,H2020
+Ireland,Latvia,35,H2020
+Italy,Latvia,74,H2020
+Austria,Lithuania,67,H2020
+Belgium,Lithuania,74,H2020
+Bulgaria,Lithuania,24,H2020
+Croatia,Lithuania,36,H2020
+Cyprus,Lithuania,20,H2020
+Czech Republic,Lithuania,52,H2020
+Denmark,Lithuania,46,H2020
+Estonia,Lithuania,26,H2020
+Finland,Lithuania,38,H2020
+France,Lithuania,79,H2020
+Germany,Lithuania,101,H2020
+Greece,Lithuania,45,H2020
+Hungary,Lithuania,44,H2020
+Ireland,Lithuania,45,H2020
+Italy,Lithuania,79,H2020
+Latvia,Lithuania,30,H2020
+Austria,Netherlands,362,H2020
+Belgium,Netherlands,634,H2020
+Bulgaria,Netherlands,70,H2020
+Croatia,Netherlands,86,H2020
+Cyprus,Netherlands,65,H2020
+Czech Republic,Netherlands,192,H2020
+Denmark,Netherlands,326,H2020
+Estonia,Netherlands,82,H2020
+Finland,Netherlands,274,H2020
+France,Netherlands,771,H2020
+Germany,Netherlands,1075,H2020
+Greece,Netherlands,322,H2020
+Hungary,Netherlands,151,H2020
+Ireland,Netherlands,225,H2020
+Italy,Netherlands,785,H2020
+Latvia,Netherlands,69,H2020
+Lithuania,Netherlands,77,H2020
+Malta,Netherlands,34,H2020
+Luxembourg,Netherlands,51,H2020
+Austria,Poland,174,H2020
+Belgium,Poland,236,H2020
+Bulgaria,Poland,68,H2020
+Croatia,Poland,68,H2020
+Cyprus,Poland,51,H2020
+Czech Republic,Poland,118,H2020
+Denmark,Poland,139,H2020
+Estonia,Poland,50,H2020
+Finland,Poland,111,H2020
+France,Poland,320,H2020
+Germany,Poland,384,H2020
+Greece,Poland,169,H2020
+Hungary,Poland,98,H2020
+Ireland,Poland,110,H2020
+Italy,Poland,337,H2020
+Latvia,Poland,57,H2020
+Lithuania,Poland,60,H2020
+Netherlands,Poland,252,H2020
+Malta,Poland,17,H2020
+Luxembourg,Poland,29,H2020
+Austria,Portugal,174,H2020
+Belgium,Portugal,267,H2020
+Bulgaria,Portugal,58,H2020
+Croatia,Portugal,64,H2020
+Cyprus,Portugal,62,H2020
+Czech Republic,Portugal,100,H2020
+Denmark,Portugal,148,H2020
+Estonia,Portugal,57,H2020
+Finland,Portugal,143,H2020
+France,Portugal,370,H2020
+Germany,Portugal,419,H2020
+Greece,Portugal,221,H2020
+Hungary,Portugal,84,H2020
+Ireland,Portugal,129,H2020
+Italy,Portugal,371,H2020
+Latvia,Portugal,52,H2020
+Lithuania,Portugal,45,H2020
+Netherlands,Portugal,263,H2020
+Poland,Portugal,155,H2020
+Malta,Portugal,22,H2020
+Luxembourg,Portugal,37,H2020
+Austria,Romania,100,H2020
+Belgium,Romania,142,H2020
+Bulgaria,Romania,51,H2020
+Croatia,Romania,36,H2020
+Cyprus,Romania,44,H2020
+Czech Republic,Romania,62,H2020
+Denmark,Romania,66,H2020
+Estonia,Romania,41,H2020
+Finland,Romania,68,H2020
+France,Romania,160,H2020
+Germany,Romania,203,H2020
+Greece,Romania,111,H2020
+Hungary,Romania,62,H2020
+Ireland,Romania,76,H2020
+Italy,Romania,192,H2020
+Latvia,Romania,50,H2020
+Lithuania,Romania,38,H2020
+Netherlands,Romania,143,H2020
+Poland,Romania,99,H2020
+Portugal,Romania,109,H2020
+Malta,Romania,22,H2020
+Luxembourg,Romania,22,H2020
+Austria,Slovakia,90,H2020
+Belgium,Slovakia,100,H2020
+Bulgaria,Slovakia,31,H2020
+Croatia,Slovakia,44,H2020
+Cyprus,Slovakia,25,H2020
+Czech Republic,Slovakia,79,H2020
+Denmark,Slovakia,53,H2020
+Estonia,Slovakia,28,H2020
+Finland,Slovakia,44,H2020
+France,Slovakia,110,H2020
+Germany,Slovakia,114,H2020
+Greece,Slovakia,61,H2020
+Hungary,Slovakia,51,H2020
+Ireland,Slovakia,54,H2020
+Italy,Slovakia,123,H2020
+Latvia,Slovakia,33,H2020
+Lithuania,Slovakia,47,H2020
+Netherlands,Slovakia,91,H2020
+Poland,Slovakia,75,H2020
+Portugal,Slovakia,62,H2020
+Romania,Slovakia,45,H2020
+Malta,Slovakia,11,H2020
+Luxembourg,Slovakia,18,H2020
+Austria,Slovenia,110,H2020
+Belgium,Slovenia,124,H2020
+Bulgaria,Slovenia,34,H2020
+Croatia,Slovenia,36,H2020
+Cyprus,Slovenia,38,H2020
+Czech Republic,Slovenia,48,H2020
+Denmark,Slovenia,75,H2020
+Estonia,Slovenia,32,H2020
+Finland,Slovenia,69,H2020
+France,Slovenia,158,H2020
+Germany,Slovenia,184,H2020
+Greece,Slovenia,83,H2020
+Hungary,Slovenia,48,H2020
+Ireland,Slovenia,58,H2020
+Italy,Slovenia,172,H2020
+Latvia,Slovenia,40,H2020
+Lithuania,Slovenia,27,H2020
+Netherlands,Slovenia,127,H2020
+Poland,Slovenia,76,H2020
+Portugal,Slovenia,82,H2020
+Romania,Slovenia,61,H2020
+Slovakia,Slovenia,37,H2020
+Malta,Slovenia,17,H2020
+Luxembourg,Slovenia,18,H2020
+Austria,Spain,461,H2020
+Belgium,Spain,725,H2020
+Bulgaria,Spain,106,H2020
+Croatia,Spain,111,H2020
+Cyprus,Spain,105,H2020
+Czech Republic,Spain,239,H2020
+Denmark,Spain,348,H2020
+Estonia,Spain,84,H2020
+Finland,Spain,333,H2020
+France,Spain,1063,H2020
+Germany,Spain,1313,H2020
+Greece,Spain,516,H2020
+Hungary,Spain,194,H2020
+Ireland,Spain,294,H2020
+Italy,Spain,1142,H2020
+Latvia,Spain,69,H2020
+Lithuania,Spain,78,H2020
+Netherlands,Spain,753,H2020
+Poland,Spain,311,H2020
+Portugal,Spain,402,H2020
+Romania,Spain,192,H2020
+Slovakia,Spain,113,H2020
+Slovenia,Spain,168,H2020
+Malta,Spain,37,H2020
+Luxembourg,Spain,76,H2020
+Austria,Sweden,242,H2020
+Belgium,Sweden,340,H2020
+Bulgaria,Sweden,48,H2020
+Croatia,Sweden,56,H2020
+Cyprus,Sweden,45,H2020
+Czech Republic,Sweden,132,H2020
+Denmark,Sweden,220,H2020
+Estonia,Sweden,52,H2020
+Finland,Sweden,194,H2020
+France,Sweden,480,H2020
+Germany,Sweden,639,H2020
+Greece,Sweden,203,H2020
+Hungary,Sweden,100,H2020
+Ireland,Sweden,146,H2020
+Italy,Sweden,458,H2020
+Latvia,Sweden,51,H2020
+Lithuania,Sweden,55,H2020
+Netherlands,Sweden,408,H2020
+Poland,Sweden,157,H2020
+Portugal,Sweden,162,H2020
+Romania,Sweden,90,H2020
+Slovakia,Sweden,63,H2020
+Slovenia,Sweden,84,H2020
+Spain,Sweden,491,H2020
+Malta,Sweden,17,H2020
+Luxembourg,Sweden,31,H2020
+Austria,United Kingdom,491,H2020
+Belgium,United Kingdom,810,H2020
+Bulgaria,United Kingdom,108,H2020
+Croatia,United Kingdom,97,H2020
+Cyprus,United Kingdom,108,H2020
+Czech Republic,United Kingdom,251,H2020
+Denmark,United Kingdom,431,H2020
+Estonia,United Kingdom,97,H2020
+Finland,United Kingdom,370,H2020
+France,United Kingdom,1222,H2020
+Germany,United Kingdom,1592,H2020
+Greece,United Kingdom,569,H2020
+Hungary,United Kingdom,204,H2020
+Ireland,United Kingdom,336,H2020
+Italy,United Kingdom,1254,H2020
+Latvia,United Kingdom,74,H2020
+Lithuania,United Kingdom,89,H2020
+Netherlands,United Kingdom,990,H2020
+Poland,United Kingdom,346,H2020
+Portugal,United Kingdom,418,H2020
+Romania,United Kingdom,172,H2020
+Slovakia,United Kingdom,110,H2020
+Slovenia,United Kingdom,173,H2020
+Spain,United Kingdom,1215,H2020
+Sweden,United Kingdom,590,H2020
+Malta,United Kingdom,41,H2020
+Luxembourg,United Kingdom,89,H2020
+Austria,Malta,22,H2020
+Belgium,Malta,27,H2020
+Bulgaria,Malta,18,H2020
+Croatia,Malta,13,H2020
+Cyprus,Malta,18,H2020
+Czech Republic,Malta,14,H2020
+Denmark,Malta,23,H2020
+Estonia,Malta,15,H2020
+Finland,Malta,17,H2020
+France,Malta,37,H2020
+Germany,Malta,33,H2020
+Greece,Malta,27,H2020
+Hungary,Malta,13,H2020
+Ireland,Malta,19,H2020
+Italy,Malta,40,H2020
+Latvia,Malta,17,H2020
+Lithuania,Malta,12,H2020
+Luxembourg,Malta,10,H2020
+Austria,Luxembourg,42,H2020
+Belgium,Luxembourg,60,H2020
+Bulgaria,Luxembourg,13,H2020
+Croatia,Luxembourg,20,H2020
+Cyprus,Luxembourg,19,H2020
+Czech Republic,Luxembourg,24,H2020
+Denmark,Luxembourg,25,H2020
+Estonia,Luxembourg,18,H2020
+Finland,Luxembourg,25,H2020
+France,Luxembourg,79,H2020
+Germany,Luxembourg,99,H2020
+Greece,Luxembourg,50,H2020
+Hungary,Luxembourg,24,H2020
+Ireland,Luxembourg,20,H2020
+Italy,Luxembourg,68,H2020
+Latvia,Luxembourg,15,H2020
+Lithuania,Luxembourg,19,H2020
