@@ -93,7 +93,7 @@ func_BuildLink <- function(dataset) {
     fileName = gsub('&','', fileName)
     fileName = gsub(':','', fileName)
     
-    name <- paste("c:/input/", fileName, "_edge.csv", sep = "")
+    name <- paste("../Datasets/outputOrgNetwork/", fileName, "_edge.csv", sep = "")
     options(scipen = 10)
     write.table(dataOrg, name, sep = ";", quote = FALSE, row.names = FALSE)
     options(scipen = 0)
@@ -120,7 +120,7 @@ func_BuildLink <- function(dataset) {
     listNode <- subset(listNode, select=c(Id, ActivityType, NbProject))
     
 
-    name <- paste("c:/input/", fileName, "_node.csv", sep = "")
+    name <- paste("../Datasets/outputOrgNetwork/", fileName, "_node.csv", sep = "")
     write.table(listNode, name, sep = ";", quote = FALSE, row.names = FALSE)
     remove(listNode)
     
