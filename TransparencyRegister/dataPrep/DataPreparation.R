@@ -1,13 +1,8 @@
 #RWeka does not work in JAVA_HOME environment variable is set, empty it for this R session
 if (Sys.getenv("JAVA_HOME")!="")
   Sys.setenv(JAVA_HOME="")
-library(RWeka)
+require(RWeka)
 
-install.packages("XML")
-install.packages("tm")
-install.packages("RJSONIO")
-install.packages("plyr")
-install.packages("RWeka")
 require(XML)
 require(tm)
 require(RJSONIO)
@@ -17,12 +12,6 @@ require(tools)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # I. LOAD DATA ################################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-
-getwd()
-setwd("C:/Users/vandeloc/Documents/Documents/Cordis/GitHub/TransparencyRegister/Data Preparation")
-setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/data-visualisation-pilot/TransparencyRegister/Data Preparation")
-
-
 download.file("http://ec.europa.eu/transparencyregister/public/consultation/statistics.do?action=getLobbyistsXml&fileType=NEW", destfile = "../Datasets/full_export_new.xml")
 
 xmlfile <-  xmlTreeParse("../Datasets/full_export_new.xml", useInternalNodes = TRUE)
@@ -295,3 +284,70 @@ cat(names(freq_activity_twogram_multiplied)[length(names(freq_activity_twogram_m
 cat('"
     ]
 }', file = "../Datasets/wordCountMapping_activity_twogram_multiplied_100.js", append = TRUE)
+
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+# VI. BUILD DATA.FRAME FOR LINECHART ##########################################################################################################
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+# function to calculate the number of organisations of a certain category (filterValue)
+func_aggregateByCategory <- function(data, filterValue){
+  # filter the data to only contain the selected category (filterValue)
+  data <- data[data$short == filterValue, ]
+  # sum every occurence
+  output <-aggregate(data, 
+                     by=list(data),
+                     FUN=length, simplify = FALSE)
+  # select the sum and return it
+  output$name <- output$x$`1`
+  return (output$name)
+}
+
+# read current data
+dataLinechart <- read.csv("../Datasets/Data_linechart.csv", header=TRUE, sep=",", stringsAsFactors=FALSE, comment.char="")
+
+# rename categories in dataframe and convert to chr
+short <- c("Trade/business/professional associations", "NGO", "Consultancies, law firms and self-employed", 
+           "Think tanks, research and academic institutions", "Organisations representing sub national authorities and other",
+           "Organisations representing churches and religious communities")
+long <- c("II - In-house lobbyists and trade/business/professional associations", "III - Non-governmental organisations", 
+          "I - Professional consultancies/law firms/self-employed consultants", "IV - Think tanks, research and academic institutions",
+          "VI - Organisations representing local, regional and municipal authorities, other public or mixed entities, etc.",
+          "V - Organisations representing churches and religious communities")
+matching <- data.frame(short, long, stringsAsFactors = FALSE)
+newData <- merge(dataset, matching, by.x=c("categories"), by.y=c("long"), all.x=TRUE)
+
+# take categories data and list all categories
+newData <- subset(newData, select=c(short))
+listCategory <- unique(newData$short)
+
+# initialize dataframe and fill in current date
+data <- data.frame("Total"=0, "date"=format(Sys.Date(), format="%Y%m%d"))
+
+# calculate the number of organisations for every category
+for (j in 1:length(listCategory)){
+  data[,listCategory[j]] = func_aggregateByCategory(newData, listCategory[j])
+}
+
+# calculate the total
+data$Total = (data$`Consultancies, law firms and self-employed` 
+            + data$`Trade/business/professional associations` 
+            + data$NGO
+            + data$`Think tanks, research and academic institutions` 
+            + data$`Organisations representing churches and religious communities`
+            + data$`Organisations representing sub national authorities and other`)
+
+# rename columns of file that was read in
+dataLinechart <- plyr::rename(dataLinechart, c("Trade.business.professional.associations" = "Trade/business/professional associations",
+                                               "Consultancies..law.firms.and.self.employed" = "Consultancies, law firms and self-employed",
+                                               "Think.tanks..research.and.academic.institutions" = "Think tanks, research and academic institutions",
+                                               "Organisations.representing.churches.and.religious.communities" = "Organisations representing churches and religious communities",
+                                               "Organisations.representing.sub.national.authorities.and.other" = "Organisations representing sub national authorities and other"))
+# append the new data to the end of the file
+dataLinechart <- rbind(dataLinechart, data)
+
+# write the new file
+write.table(dataLinechart, "../Datasets/Data_linechart.csv", sep = ",", quote = TRUE, row.names = FALSE)
+
+# remove variables
+rm(matching, long, short, listCategory, j, newData, data, dataLinechart, func_aggregate)
+
