@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.invoke.MethodHandles.Lookup"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="org.gephi.graph.api.UndirectedGraph"/>
+<fullyQualifiedTypeName name="org.gephi.layout.plugin.force.yifanHu.YifanHuLayout"/>
+<fullyQualifiedTypeName name="org.gephi.layout.plugin.force.StepDisplacement"/>
+<fullyQualifiedTypeName name="org.gephi.layout.plugin.forceAtlas.ForceAtlasLayout"/>
+<fullyQualifiedTypeName name="org.gephi.datalab.api.AttributeColumnsController"/>
+<fullyQualifiedTypeName name="org.gephi.graph.api.Graph"/>
+<fullyQualifiedTypeName name="java.nio.charset.Charset"/>
+<fullyQualifiedTypeName name="org.gephi.appearance.api.Ranking"/>
+<fullyQualifiedTypeName name="org.gephi.preview.api.PreviewController"/>
+<fullyQualifiedTypeName name="org.gephi.appearance.api.AppearanceController"/>
+<fullyQualifiedTypeName name="org.gephi.appearance.api.AppearanceModel"/>
+<fullyQualifiedTypeName name="org.gephi.graph.api.Column"/>
+<fullyQualifiedTypeName name="org.gephi.appearance.api.Function"/>
+<fullyQualifiedTypeName name="org.gephi.appearance.plugin.RankingNodeSizeTransformer"/>
+<fullyQualifiedTypeName name="org.gephi.appearance.plugin.PartitionElementColorTransformer"/>
+<fullyQualifiedTypeName name="org.gephi.appearance.plugin.palette.PaletteManager"/>
+<fullyQualifiedTypeName name="org.gephi.project.api.Workspace"/>
+<fullyQualifiedTypeName name="org.gephi.appearance.api.Partition"/>
+<fullyQualifiedTypeName name="org.gephi.appearance.AttributePartitionImpl"/>
+<fullyQualifiedTypeName name="org.gephi.appearance.plugin.palette.Palette"/>
+<fullyQualifiedTypeName name="org.gephi.preview.plugin.builders.NodeLabelBuilder"/>
+<fullyQualifiedTypeName name="org.gephi.preview.plugin.items.NodeLabelItem"/>
+<fullyQualifiedTypeName name="org.gephi.preview.api.Item"/>
+<fullyQualifiedTypeName name="org.gephi.preview.plugin.items.AbstractItem"/>
+<fullyQualifiedTypeName name="org.gephi.visualization.api.VisualizationController"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.gephi.graph.api.NodeIterable"/>
+<fullyQualifiedTypeName name="org.gephi.graph.api.TextProperties"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="com.itextpdf.text.pdf.codec.Base64.OutputStream"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="org.apache.batik.css.engine.SystemColorSupport"/>
+</qualifiedTypeNameHistroy>
