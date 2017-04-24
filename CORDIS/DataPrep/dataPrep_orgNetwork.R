@@ -3,17 +3,16 @@ require(data.table)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # I. LOAD DATASETS #################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-
-#set current directory
-setwd("C:/Users/bruled/Documents/Pwc Project/2 - Project/DataVisualisation/Visualisation/data-visualisation-pilot/CORDIS/DataPrep")
-
-#
 ### Load datasets
 # H2020: https://data.europa.eu/euodp/data/dataset/cordisH2020projects
 
 Dataset_H2020Organizations = read.csv("../Datasets/inputData/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
+Dataset_Countries = read.csv("../Datasets/inputData/countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
 
 Dataset_H2020Organizations <- subset(Dataset_H2020Organizations, select=c(projectID, name, activityType, country))
+
+Dataset_Countries <- subset(Dataset_Countries, select=c("euCode", "name"))
+Dataset_Countries <- plyr::rename(Dataset_Countries, c("name" = "countryName"))
 
 #selectCountry <- list("DE")
 #Dataset_H2020Organizations  <- Dataset_H2020Organizations[Dataset_H2020Organizations$country %in% selectCountry,]
@@ -78,8 +77,6 @@ func_BuildLink <- function(dataset) {
   #dataset <- head(dataset, n=5000)
   
   #list all organisation 
-  #listOrg <- c("- 18 DEGREES", "INSTITUT D'AERONOMIE SPATIALE DE BELGIQUE")
-  #i<-1
   listOrg <- unique(dataset$name)
 
   # For each of the organisations list with who it is working 
@@ -135,6 +132,59 @@ func_BuildLink <- function(dataset) {
   return ()
 }
 
+func_prepareDataset <- function (dataset) {
+  dataset$name <- gsub("\"", "", dataset$name)
+  dataset <- dataset[!duplicated(dataset[,c('name')]),]
+  
+  dataset <- merge(dataset, Dataset_Countries, by.x=c("country"), by.y=c("euCode"), all.x=TRUE)
+  dataset <- subset(dataset, select=-c(projectID, country))
+  dataset <- plyr::rename(dataset, c("countryName" = "country"))
+  abbreviation <- c("PRC", "HES", "REC", "PUB", "OTH")
+  activity <- c("Private for-profit entities", "Education Establishments", "Research Organisations", "Public bodies", "Other")
+  matching <- data.frame(abbreviation, activity, stringsAsFactors=FALSE)
+  
+  dataset <- merge(dataset, matching, by.x=c("activityType"), by.y=c("abbreviation"), all.x=TRUE)
+  
+  dataset <- subset(dataset, select=-c(activityType))
+  
+  return (dataset)
+}
+
+
+func_BuildOrganisationsJS <- function (dataset) {
+  dataset <- func_prepareDataset(dataset)
+  
+  cat('var organisations = [ \n', file = "../Datasets/organisations.js")
+  for (i in 1:nrow(dataset)) {
+    cat('{ \n', file = "../Datasets/organisations.js", append = TRUE)
+    
+     for (j in 1:length(dataset)) {
+         if ( j == length(dataset) && i != nrow(dataset) ) {
+           cat('"', file = "../Datasets/organisations.js", append = TRUE)
+           cat(colnames(dataset)[j], file = "../Datasets/organisations.js", append = TRUE)
+           cat('": "', file = "../Datasets/organisations.js", append = TRUE)
+           cat(dataset[i,j], file = "../Datasets/organisations.js", append = TRUE)
+           cat('" \n }, \n', file = "../Datasets/organisations.js", append = TRUE)
+         } else if ( j == length(dataset) && i == nrow(dataset) ) {
+             cat('"', file = "../Datasets/organisations.js", append = TRUE)
+             cat(colnames(dataset)[j], file = "../Datasets/organisations.js", append = TRUE)
+             cat('": "', file = "../Datasets/organisations.js", append = TRUE)
+             cat(dataset[i,j], file = "../Datasets/organisations.js", append = TRUE)
+             cat('" \n } \n ];', file = "../Datasets/organisations.js", append = TRUE)
+         } else {
+           cat('"', file = "../Datasets/organisations.js", append = TRUE)
+           cat(colnames(dataset)[j], file = "../Datasets/organisations.js", append = TRUE)
+           cat('": "', file = "../Datasets/organisations.js", append = TRUE)
+           cat(dataset[i,j], file = "../Datasets/organisations.js", append = TRUE)
+           cat('", \n', file = "../Datasets/organisations.js", append = TRUE)
+         }
+     }
+  }
+}
+
+Sys.time()
+func_BuildOrganisationsJS(Dataset_H2020Organizations)
+Sys.time()
 
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -142,5 +192,5 @@ func_BuildLink <- function(dataset) {
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 Sys.time()
 func_BuildLink(Dataset_H2020Organizations)
-beep()
+func_BuildOrganisationsJS(Dataset_H2020Organizations)
 Sys.time()
