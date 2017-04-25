@@ -27,10 +27,10 @@
   "total": 0
 }
 
-Use the rest API to download, for each opportunitie
+Use the rest API to download, for each opportunity
 - NUTS (if no NUTS ignore the data)                 = NUTS
 - publication date                                  = PD
-- deletion date                 = deadline?         = DT
+- deadline date                                     = DT
 - ND value (format:YYYYXXXXXXX) = document number   = ND
 - Type of contract                                  = NC
 - Type of procedure                                 = PR
@@ -38,3 +38,6 @@ Use the rest API to download, for each opportunitie
 
 The GET request would look like:
 http://ted.europa.eu/api/latest/notices/search?apiKey=<API_KEY>&q=AC%3D[1]&scope=1&pageNum=1&sortField=ND&reverseOrder=false&fields=AA,CY,CT,NC,ND,OJ,PD,PR,TD,NUTS,CPV
+
+key Daniel:
+http://ted.europa.eu/api/latest/notices/search?apiKey=357emeOxSmj7S6GIhJyOVakgaYsppibtyq-N0QnqnHjAoz6h_rlN4u0SPWwscjRHL5isj_h-swdyyaFWIbcMhg&q=AC%3D[1]&scope=1&pageNum=1&sortField=ND&reverseOrder=false&fields=NC,ND,PD,PR,NUTS,DT,TY,TI
