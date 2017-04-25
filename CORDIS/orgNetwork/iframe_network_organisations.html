@@ -14,9 +14,9 @@
 		<script src="js/orgs_filter.js" type="text/javascript"></script>
 		<script src="../Datasets/organisations.js"></script>
 		
-		<script src="sigma.min.js"></script>
-		<script src="gexf-parser.js"></script>
-		<script src="sigma.parsers.gexf.js"></script>
+		<script src="js/sigma.min.js"></script>
+		<script src="js/gexf-parser.js"></script>
+		<script src="js/sigma.parsers.gexf.js"></script>
 
 	</head>
 	<body onload="takeAction();">
@@ -891,7 +891,7 @@
         	parseGexf();
 			function parseGexf() {
 				var datafile = typeof currentOrg !== "undefined" ? "../Datasets/orgNetwork/"+currentOrg+'.gexf' : "../Datasets/orgNetwork/ADANA_METROPOLITAN_MUNICIPALITY.gexf";
-				console.log("here, datafile = " + datafile);
+				console.log("datafile = " + datafile);
 				sigma.parsers.gexf(
 				  datafile,
 				  { container: 'chartID' }
