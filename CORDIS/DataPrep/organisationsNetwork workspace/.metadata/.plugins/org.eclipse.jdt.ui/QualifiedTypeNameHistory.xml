@@ -31,7 +31,6 @@
 <fullyQualifiedTypeName name="org.gephi.preview.plugin.items.AbstractItem"/>
 <fullyQualifiedTypeName name="org.gephi.visualization.api.VisualizationController"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.gephi.graph.api.NodeIterable"/>
 <fullyQualifiedTypeName name="org.gephi.graph.api.TextProperties"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
@@ -39,4 +38,5 @@
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="org.apache.batik.css.engine.SystemColorSupport"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

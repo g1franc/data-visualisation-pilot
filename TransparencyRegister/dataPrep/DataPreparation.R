@@ -1,13 +1,18 @@
 #RWeka does not work in JAVA_HOME environment variable is set, empty it for this R session
 if (Sys.getenv("JAVA_HOME")!="")
   Sys.setenv(JAVA_HOME="")
-require(RWeka)
-
-require(XML)
-require(tm)
-require(RJSONIO)
-require(plyr)
-require(tools)
+install.packages("RWeka",repos = "http://cran.us.r-project.org")
+install.packages("XML",repos = "http://cran.us.r-project.org")
+install.packages("tm",repos = "http://cran.us.r-project.org")
+install.packages("RJSONIO",repos = "http://cran.us.r-project.org")
+install.packages("plyr",repos = "http://cran.us.r-project.org")
+install.packages("tools",repos = "http://cran.us.r-project.org")
+library(RWeka)
+library(XML)
+library(tm)
+library(RJSONIO)
+library(plyr)
+library(tools)
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # I. LOAD DATA ################################################################################################################################
