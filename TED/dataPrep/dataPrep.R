@@ -30,7 +30,7 @@ for (i in 1:length(APIoutput$results$ND)) {
   # convert the document number to the right format
   docNumber <- APIoutput$result$ND[i]
   year <- substr(docNumber, 1, 4)
-  shortDocNumber <- substr(docNumber, 4, nchar(docNumber))
+  shortDocNumber <- substr(docNumber, 5, nchar(docNumber))
   outputNumber <- paste(shortDocNumber, year, sep = "-")
   
   for (j in 1:length(APIoutput$result$NUTS[[i]])) {
