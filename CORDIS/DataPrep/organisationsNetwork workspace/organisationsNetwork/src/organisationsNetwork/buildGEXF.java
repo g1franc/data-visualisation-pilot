@@ -42,7 +42,7 @@ public class buildGEXF {
     public void script(String inputFolder, String outputFolder) throws IOException, IllegalArgumentException {
     	// print start time
     	org.joda.time.DateTime startTime = new org.joda.time.DateTime();
-    	System.out.println(startTime);
+    	System.out.println("Started at" + startTime);
     	if (inputFolder == null || outputFolder == null) {
     		throw new IllegalArgumentException();
     	}
@@ -51,7 +51,7 @@ public class buildGEXF {
 	    	File folder = new File(inputFolder);
 	    	File[] listOfFiles = folder.listFiles();
 	    	
-	    	for (int i = 0; i < listOfFiles.length; i++) {
+	    	for (int i = 1; i < listOfFiles.length; i++) {
 	    		if (listOfFiles[i].isFile() && listOfFiles[i].getName().contains("node")) {
 	    			String fileName = listOfFiles[i].getName();
 	    			File nodeFile = listOfFiles[i];
@@ -85,7 +85,7 @@ public class buildGEXF {
 	    	}
 	    	//print end time
 	    	org.joda.time.DateTime endTime = new org.joda.time.DateTime();
-	    	System.out.println("ended at: " + endTime);
+	    	System.out.println("Ended at: " + endTime);
 	    	System.out.println("files with errors: ");
 	    	for (int j=0; j < errors.size(); j++) { 
 	    		System.out.println(errors.get(j).toString());
@@ -141,7 +141,7 @@ public class buildGEXF {
             return;
         }
         
-        //See if graph is well imported
+//        //See if graph is well imported
 //        System.out.println("Nodes: " + graph.getNodeCount());
 //        System.out.println("Edges: " + graph.getEdgeCount());
 	}
@@ -150,7 +150,7 @@ public class buildGEXF {
     //setup the appearanceController
 	private void setupAppearanceController() {
         this.appearanceController = Lookup.getDefault().lookup(AppearanceController.class);
-        this.appearanceModel = appearanceController.getModel();		
+        this.appearanceModel = appearanceController.getModel();	
 	}
 	
 	//set the sizing of the nodes depending on the number of projects
@@ -158,10 +158,14 @@ public class buildGEXF {
 //        System.out.println("Setting appearance... sizing");
         Column columnNbProject = graphModel.getNodeTable().getColumn("NbProject");
         Function sizeRanking = appearanceModel.getNodeFunction(graph, columnNbProject, RankingNodeSizeTransformer.class);
-        RankingNodeSizeTransformer sizeTransformer = (RankingNodeSizeTransformer) sizeRanking.getTransformer();
-        sizeTransformer.setMinSize(10);
-        sizeTransformer.setMaxSize(40);
-        appearanceController.transform(sizeRanking);
+       if (sizeRanking != null)
+        {
+	        RankingNodeSizeTransformer sizeTransformer = (RankingNodeSizeTransformer) sizeRanking.getTransformer();
+	        sizeTransformer.setMinSize(10);
+	        sizeTransformer.setMaxSize(40);
+	        appearanceController.transform(sizeRanking);
+        }
+
 	}
 	
 	//set the colour of the nodes depending on the activity type (5 types)
