@@ -115,7 +115,6 @@
               };
 
               info.update = function (props) {
-                  console.log(props);
                   var nbrTenders;
                   if(props) {
                     if(TEDdata[props.NUTS_ID] == undefined){
@@ -134,12 +133,12 @@
 
               // get color depending on value
               function getColor(d) {
-                  return  d > 20  ? '#145FAB' :
-                          d > 10  ? '#0092C2' :
-                          d > 5   ? '#47B5C0' :
-                          d > 2   ? '#80CCBA' :
-                          d > 1   ? '#C5E9B0' :
-                                    '#0092C2';
+                  return  d >  scale[3]  ? '#145FAB' :
+                          d >  scale[2]  ? '#0092C2' :
+                          d >  scale[1]  ? '#47B5C0' :
+                          d >  scale[0]  ? '#80CCBA' :
+                          d >= 0         ? '#C5E9B0' :
+                                           '#F5F59C';
               }
 
               function style(feature) {
@@ -166,12 +165,18 @@
                info.update(layer.feature.properties);
               }
 
-              function setColors(value) {
-                  value = -1;//TODO color depending on the number of tenders
+              function setColors() {
                   geojson.eachLayer(function(layer) {
-                      layer.setStyle({
-                          fillColor: getColor(layer.feature.properties[value])
-                      });
+                      if(TEDdata[layer.feature.properties.NUTS_ID] != undefined) {
+                        layer.setStyle({
+                            fillColor: getColor(TEDdata[layer.feature.properties.NUTS_ID].length)
+                        });
+                      }
+                      else{
+                        layer.setStyle({
+                            fillColor: getColor(0)
+                        });
+                      }
                   });
               }
 
@@ -225,15 +230,30 @@
                 }
               }
 
-              setColors();
+              var legend = L.control({position: 'bottomright'});
 
+              //define color scale
+              var scale = [];
+              var max = 0;
+              geojson.eachLayer(function(layer) {
+                if(TEDdata[layer.feature.properties.NUTS_ID] != undefined) {
+                  max = TEDdata[layer.feature.properties.NUTS_ID].length > max ? TEDdata[layer.feature.properties.NUTS_ID].length : max;
+                }
+              });
 
-              /*var legend = L.control({position: 'bottomright'});
+              if(max < 4) {
+                max = 4;
+              }
+
+              for(var i=1; i<5; i++){
+                scale.push(Math.round(max/4)*i);
+              }
+
 
               legend.onAdd = function (map) {
 
                   var div = L.DomUtil.create('div', 'info legend'),
-                      grades = [0, 1, 2, 5, 10, 20],
+                      grades = [0, scale[0], scale[1], scale[2], scale[3]],
                       labels = [],
                       from, to;
 
@@ -250,7 +270,10 @@
                   return div;
               };
 
-              legend.addTo(map);*/
+              legend.addTo(map);
+
+              setColors();
+
           }
         </script>
     </body>
