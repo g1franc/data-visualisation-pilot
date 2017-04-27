@@ -6,7 +6,7 @@ args <- commandArgs(trailingOnly=TRUE)
 apiKey <- args[1]
 downloadURL <- paste("http://ted.europa.eu/api/latest/notices/search?apiKey=", 
                     apiKey, 
-                    "&q=AC%3D[1]&scope=1&pageNum=1&sortField=ND&reverseOrder=false&fields=ND,NUTS",
+                    "&q=AC%3D[1]&scope=1&pageNum=1&sortField=ND&reverseOrder=false&fields=ND,NUTS,DT,NC,ND,PD,PR,TD,",
                     sep="")
 
 download.file(downloadURL, destfile = "../datasets/APIoutput.js")
