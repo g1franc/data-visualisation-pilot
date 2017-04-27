@@ -182,14 +182,12 @@ func_BuildOrganisationsJS <- function (dataset) {
   }
 }
 
-Sys.time()
-func_BuildOrganisationsJS(Dataset_H2020Organizations)
-Sys.time()
-
-
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # V. Build Dataset #################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
+
+dir.create("../Datasets/outputOrgNetwork/")
+
 Sys.time()
 func_BuildLink(Dataset_H2020Organizations)
 func_BuildOrganisationsJS(Dataset_H2020Organizations)

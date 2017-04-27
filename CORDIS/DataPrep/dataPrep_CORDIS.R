@@ -79,7 +79,7 @@ if ( arg_UpdateChord) {
 
 if ( arg_UpdateOrgNetwork) {
   print("The data for the organisation network are about to be updated ")
-  source("dataPrep_organisationsNetwork.R")
+  source("dataPrep_orgNetwork.R")
   print("The data for the organisation network have been updated ")
 }
 
