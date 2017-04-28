@@ -2,7 +2,7 @@
 # I. LOAD DATA ##########################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # based on which scripts will be executed, different data is needed/loaded
-if (arg_UpdateChord) {
+if (arg_UpdateChord || arg_UpdateOrgNetwork) {
   cat("loading countries data for chord diagram \n")
   # countries
   Dataset_Countries = read.csv("../Datasets/inputData/countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
