@@ -4,7 +4,6 @@ library(jsonlite)
 ### download file###
 args <- commandArgs(trailingOnly=TRUE)
 apiKey <- args[1]
-# apiKey <- "357emeOxSmj7S6GIhJyOVakgaYsppibtyq-N0QnqnHjAoz6h_rlN4u0SPWwscjRHL5isj_h-swdyyaFWIbcMhg"
 downloadURL <- paste("http://ted.europa.eu/api/latest/notices/search?apiKey=", 
                     apiKey, 
                     "&q=AC%3D[1]&scope=1&pageNum=1&sortField=ND&reverseOrder=false&fields=ND,NUTS,DT,NC,ND,PD,PR,TD,",
@@ -12,11 +11,23 @@ downloadURL <- paste("http://ted.europa.eu/api/latest/notices/search?apiKey=",
 
 download.file(downloadURL, destfile = "../datasets/APIoutput.js")
 
-rm(apiKey, downloadURL)
 
 ### read file ###
 APIoutput <- fromJSON("../datasets/APIoutput.js")
 
+
+### select currently open tenders ###
+currentDate = Sys.Date()
+removedRows <- 0
+
+for (i in 1:nrow(APIoutput$results)) {
+  if ( (is.na(APIoutput$results[i,]$PD) || currentDate >= as.Date(APIoutput$results[i,]$PD)) 
+       && (is.na(APIoutput$results[i,]$DT) || currentDate <= as.Date(APIoutput$results[i,]$DT)) ) {
+    ## do nothing, keep inside
+  } else {
+    APIoutput$results <- APIoutput$results[-c(i),]
+  }
+}
 
 ### create output ###
 
