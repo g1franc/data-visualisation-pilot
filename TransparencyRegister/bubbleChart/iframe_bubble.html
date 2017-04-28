@@ -19,7 +19,7 @@
                 var chart, clear, click, collide, collisionPadding, connectEvents, data, force, gravity, hashchange, height, idValue, jitter, label, margin, maxRadius, minCollisionRadius, mouseout, mouseover, node, rScale, rValue, textValue, tick, transformData, update, updateActive, updateLabels, updateNodes, width;
                 //standard variables accessible to the rest of the functions inside Bubbles
                 width = 970;
-                height = 710;
+                height = 550;
                 data = [];
                 node = null;
                 label = null;
@@ -30,7 +30,7 @@
                     left: 2
                     };
                 //largest size for bubbles
-                maxRadius = 60;
+                maxRadius = 53;
 
                 //scale used to size bubbles
                 rScale = d3.scale.sqrt().range([0, maxRadius]);
@@ -81,7 +81,7 @@
                         .attr("transform", function(d) {
                             return "translate(" + d.x + "," + d.y + ")";
                         });
-                    
+
                     //specify the 'px' for moving based on pixels label
                     return label.style("left", function(d) {
                         return ((margin.left + d.x) - d.dx / 2) + "px";
