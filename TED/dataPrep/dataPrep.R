@@ -4,6 +4,7 @@ library(jsonlite)
 ### download file###
 args <- commandArgs(trailingOnly=TRUE)
 apiKey <- args[1]
+# apiKey <- "357emeOxSmj7S6GIhJyOVakgaYsppibtyq-N0QnqnHjAoz6h_rlN4u0SPWwscjRHL5isj_h-swdyyaFWIbcMhg"
 downloadURL <- paste("http://ted.europa.eu/api/latest/notices/search?apiKey=", 
                     apiKey, 
                     "&q=AC%3D[1]&scope=1&pageNum=1&sortField=ND&reverseOrder=false&fields=ND,NUTS,DT,NC,ND,PD,PR,TD,",
@@ -11,6 +12,7 @@ downloadURL <- paste("http://ted.europa.eu/api/latest/notices/search?apiKey=",
 
 download.file(downloadURL, destfile = "../datasets/APIoutput.js")
 
+rm(apiKey, downloadURL)
 
 ### read file ###
 APIoutput <- fromJSON("../datasets/APIoutput.js")
@@ -36,15 +38,21 @@ for (i in 1:length(APIoutput$results$ND)) {
     
     NUTSregionName <- APIoutput$result$NUTS[[i]][j]
     
-    if (any(names(tmp) == NUTSregionName)) {
-    # if there is already a list of document numbers for this NUTS region, append to it
-        tmp[[NUTSregionName]] <- append(tmp[[NUTSregionName]], outputNumber)
-    } else {
-    # if there are no document numbers for this NUTS region yet, create a new list for it and set the correct name to it
+    for (k in 2:nchar(NUTSregionName)) {
+    # for this NUTS region and all its upper levels  
+      
+      NUTSregionAllLevelsName <- substr(NUTSregionName, 1, k)
+      
+      if (any(names(tmp) == NUTSregionAllLevelsName)) {
+        # if there is already a list of document numbers for this NUTS region, append to it
+        tmp[[NUTSregionAllLevelsName]] <- unique(append(tmp[[NUTSregionAllLevelsName]], outputNumber))
+      } else {
+        # if there are no document numbers for this NUTS region yet, create a new list for it and set the correct name to it
         myList <- list(outputNumber)
         tmp <- append(tmp, myList)
-        names <- append(names, NUTSregionName)
+        names <- append(names, NUTSregionAllLevelsName)
         names(tmp) <- names
+      }
     }
   }
 }
