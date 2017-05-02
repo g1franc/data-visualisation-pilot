@@ -13,7 +13,7 @@ public class Main {
 		else{
 			System.out.println("Starting...");
 			buildGEXF a = new buildGEXF();
-			a.script(args[1], args[2]);
+			a.script(args[0], args[1]);
 		}
 	}
 }
