@@ -1,9 +1,10 @@
 
 install.packages("optparse",repos = "http://cran.us.r-project.org")
 install.packages("plyr",repos = "http://cran.us.r-project.org")
-
+install.packages("data.table",repos = "http://cran.us.r-project.org")
 library(optparse)
 library(plyr)
+library(data.table)
 
 
 option_list = list(
