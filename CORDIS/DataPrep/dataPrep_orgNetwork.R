@@ -83,7 +83,14 @@ func_BuildLink <- function(dataset) {
     
     name <- paste("../Datasets/outputOrgNetwork/", fileName, "_edge.csv", sep = "")
     options(scipen = 10)
-    write.table(dataOrg, name, sep = ";", quote = FALSE, row.names = FALSE)
+    tryCatch(
+      {
+        write.table(dataOrg, name, sep = ";", quote = FALSE, row.names = FALSE)
+      },
+      error=function(cond){
+        message(paste("Error: Could not write edege file: ", name))
+      }
+    )
     options(scipen = 0)
     
 
@@ -109,7 +116,14 @@ func_BuildLink <- function(dataset) {
     
 
     name <- paste("../Datasets/outputOrgNetwork/", fileName, "_node.csv", sep = "")
-    write.table(listNode, name, sep = ";", quote = FALSE, row.names = FALSE)
+    tryCatch(
+      {
+        write.table(listNode, name, sep = ";", quote = FALSE, row.names = FALSE)
+      },
+      error=function(cond){
+        message(paste("Error: Could not write node file: ", name))
+      }
+    )
     remove(listNode)
     
     if (i%%1000 == 0){
