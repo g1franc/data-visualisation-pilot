@@ -16,6 +16,19 @@ download.file(downloadURL, destfile = "../datasets/APIoutput.js")
 APIoutput <- fromJSON("../datasets/APIoutput.js")
 
 
+### select currently open tenders ###
+currentDate = Sys.Date()
+removedRows <- 0
+
+for (i in 1:nrow(APIoutput$results)) {
+  if ( (is.na(APIoutput$results[i,]$PD) || currentDate >= as.Date(APIoutput$results[i,]$PD)) 
+       && (is.na(APIoutput$results[i,]$DT) || currentDate <= as.Date(APIoutput$results[i,]$DT)) ) {
+    ## do nothing, keep inside
+  } else {
+    APIoutput$results <- APIoutput$results[-c(i),]
+  }
+}
+
 ### create output ###
 
 # create emty vectors
@@ -36,15 +49,21 @@ for (i in 1:length(APIoutput$results$ND)) {
     
     NUTSregionName <- APIoutput$result$NUTS[[i]][j]
     
-    if (any(names(tmp) == NUTSregionName)) {
-    # if there is already a list of document numbers for this NUTS region, append to it
-        tmp[[NUTSregionName]] <- append(tmp[[NUTSregionName]], outputNumber)
-    } else {
-    # if there are no document numbers for this NUTS region yet, create a new list for it and set the correct name to it
+    for (k in 2:nchar(NUTSregionName)) {
+    # for this NUTS region and all its upper levels  
+      
+      NUTSregionAllLevelsName <- substr(NUTSregionName, 1, k)
+      
+      if (any(names(tmp) == NUTSregionAllLevelsName)) {
+        # if there is already a list of document numbers for this NUTS region, append to it
+        tmp[[NUTSregionAllLevelsName]] <- unique(append(tmp[[NUTSregionAllLevelsName]], outputNumber))
+      } else {
+        # if there are no document numbers for this NUTS region yet, create a new list for it and set the correct name to it
         myList <- list(outputNumber)
         tmp <- append(tmp, myList)
-        names <- append(names, NUTSregionName)
+        names <- append(names, NUTSregionAllLevelsName)
         names(tmp) <- names
+      }
     }
   }
 }

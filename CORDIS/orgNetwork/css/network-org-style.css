@@ -227,7 +227,7 @@ text.main {
 #org_label2 {
   position: relative;
   top: 31px;
-  left: -261px;
+  left: -220px;
   font-size:15px;
   color: #666666;
   width: 75%;
@@ -397,7 +397,7 @@ text.main {
     position: fixed;
     top: 40%; width: 100%;
     font-size: 600%;
-    text-align: center; 
+    text-align: center;
     z-index: 999999;
     font-family:Lucida Sans Unicode;
 }

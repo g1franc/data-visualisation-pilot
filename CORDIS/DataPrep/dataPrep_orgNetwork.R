@@ -3,39 +3,27 @@ require(data.table)
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # I. LOAD DATASETS #################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-### Load datasets
-# H2020: https://data.europa.eu/euodp/data/dataset/cordisH2020projects
+subset_H2020Organizations <- subset(Dataset_H2020Organizations, select=c(projectReference, name, activityType, country))
 
-Dataset_H2020Organizations = read.csv("../Datasets/inputData/cordis-h2020organizations.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
-Dataset_Countries = read.csv("../Datasets/inputData/countries.csv", header=TRUE, sep=";", stringsAsFactors=FALSE, comment.char="")
-
-Dataset_H2020Organizations <- subset(Dataset_H2020Organizations, select=c(projectID, name, activityType, country))
-
-Dataset_Countries <- subset(Dataset_Countries, select=c("euCode", "name"))
-Dataset_Countries <- plyr::rename(Dataset_Countries, c("name" = "countryName"))
-
-#selectCountry <- list("DE")
-#Dataset_H2020Organizations  <- Dataset_H2020Organizations[Dataset_H2020Organizations$country %in% selectCountry,]
+Countries <- subset(Dataset_Countries, select=c("euCode", "name"))
+Countries <- plyr::rename(Countries, c("name" = "countryName"))
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 # II. FUNCTIONS LINK #################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 func_BuildLinkForOneOrg <- function(dataset, orgName){
-  #dataset <- Dataset_H2020Organizations
-  #orgName <- "- 18 DEGREES"
-  
   #list all the projects link to the current organisation 
-  listProject <- dataset[dataset$name == orgName, ]$projectID
+  listProject <- dataset[dataset$name == orgName, ]$projectReference
   listProject <- unique(listProject)
   
   #list all the org that have participated to these projects 
-  listOrg  <- dataset[dataset$projectID %in% listProject,]$name
+  listOrg  <- dataset[dataset$projectReference %in% listProject,]$name
   listOrg <- unique(listOrg)
   
   datasetTmp <- dataset[dataset$name %in% listOrg,]
-  datasetTmp <- dataset[dataset$projectID %in% listProject,]
-  datasetTmp <- subset(datasetTmp, select=c(projectID, name))
+  datasetTmp <- dataset[dataset$projectReference %in% listProject,]
+  datasetTmp <- subset(datasetTmp, select=c(projectReference, name))
   datasetTmp <- datasetTmp[datasetTmp$name != orgName, ]
   
   if (nrow(datasetTmp) == 0)
@@ -46,7 +34,7 @@ func_BuildLinkForOneOrg <- function(dataset, orgName){
   {
     #compute the number of project per organisation
     datasetTmp <-aggregate(datasetTmp$name, 
-                           by=list(datasetTmp$projectID),
+                           by=list(datasetTmp$projectReference),
                            FUN=paste, simplify = FALSE)
     datasetTmp <- plyr::rename(datasetTmp,c("Group.1"="Project",
                                             "x" = "Organisations"))
@@ -136,8 +124,8 @@ func_prepareDataset <- function (dataset) {
   dataset$name <- gsub("\"", "", dataset$name)
   dataset <- dataset[!duplicated(dataset[,c('name')]),]
   
-  dataset <- merge(dataset, Dataset_Countries, by.x=c("country"), by.y=c("euCode"), all.x=TRUE)
-  dataset <- subset(dataset, select=-c(projectID, country))
+  dataset <- merge(dataset, Countries, by.x=c("country"), by.y=c("euCode"), all.x=TRUE)
+  dataset <- subset(dataset, select=-c(projectReference, country))
   dataset <- plyr::rename(dataset, c("countryName" = "country"))
   abbreviation <- c("PRC", "HES", "REC", "PUB", "OTH")
   activity <- c("Private for-profit entities", "Education Establishments", "Research Organisations", "Public bodies", "Other")
@@ -186,9 +174,9 @@ func_BuildOrganisationsJS <- function (dataset) {
 # V. Build Dataset #################################################################################################################
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
-dir.create("../Datasets/outputOrgNetwork/")
+dir.create("../Datasets/outputOrgNetwork/", showWarnings = FALSE)
 
 Sys.time()
-func_BuildLink(Dataset_H2020Organizations)
-func_BuildOrganisationsJS(Dataset_H2020Organizations)
+func_BuildLink(subset_H2020Organizations)
+func_BuildOrganisationsJS(subset_H2020Organizations)
 Sys.time()

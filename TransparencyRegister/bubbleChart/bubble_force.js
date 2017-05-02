@@ -13,9 +13,9 @@ data.topic = function(name) {
 (function() {
 
 var width = 970,
-    height = 500;
+    height = 550;
 
-var padding = 4, // collision padding
+var padding = 3, // collision padding
     maxRadius = 80, // collision search radius
     maxMentions = 100, // limit displayed mentions
     activeTopic; // currently-displayed topic
