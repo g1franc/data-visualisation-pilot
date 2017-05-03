@@ -1,7 +1,0 @@
-package organisationsNetwork;
-
-public class argumentsException extends Exception {
-	System.out.println("This program expects two paramaters: \n"
-			+ "1. input folder \n"
-			+ "2. output folder.");
-}
