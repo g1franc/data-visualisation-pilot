@@ -43,7 +43,7 @@
             height: 18px;
             float: left;
             margin-right: 21px;
-            opacity: 0.7;
+            opacity: 1;
           }
 
           .form-panel{
@@ -96,7 +96,7 @@
         <div id='map'></div>
         <button id="expand-button" class="expand-form-button expanded" onclick="expandPanel()"></button>
         <div class="form-panel">
-            <form onClick="JavaScript:setColors()">
+            <form onClick="JavaScript:updateMap()">
                   <input type="radio" name="group1" value="I...Professional.consultancies.law.firms.self.employed.consultants" checked> I - Professional consultancies/law firms/self-employed consultants<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Professional.consultancies"> Professional consultancies<br>
                     &emsp;&emsp;<input type="radio" name="group1" value="Law.firms"> Law firms<br>
@@ -161,12 +161,12 @@
 
             // get color depending on value
             function getColor(d) {
-                return  d > 20  ? '#145FAB' :
-                        d > 10  ? '#0092C2' :
-                        d > 5   ? '#47B5C0' :
-                        d > 2   ? '#80CCBA' :
-                        d > 1   ? '#C5E9B0' :
-                                  '#F5F59C';
+                return  d >= scale[3]  ? '#145FAB' :
+                        d >= scale[2]  ? '#0092C2' :
+                        d >= scale[1]  ? '#47B5C0' :
+                        d >= scale[0]  ? '#80CCBA' :
+                        d >= 1         ? '#C5E9B0' :
+                                         '#F5F59C' ;
             }
 
             function style(feature) {
@@ -206,6 +206,12 @@
                }
                //No radio button is selected.
                return null;
+            }
+
+            function updateMap(value) {
+              calculateScales(value);
+              setColors(value);
+              legend.update();
             }
 
             function setColors(value) {
@@ -250,32 +256,58 @@
                 onEachFeature: onEachFeature
             }).addTo(map);
 
-            setColors();
+            //define color scale
+            var scale = [];
+            function calculateScales () {
+              scale.length = 0;
+              max = 0;
+              var value = getValueFromRadioButton("group1");
 
+              geojson.eachLayer(function(layer) {
+                if(categoriesData[layer.feature.properties.name][value] != undefined) {
+                  max = categoriesData[layer.feature.properties.name][value] > max ? categoriesData[layer.feature.properties.name][value] : max;
+                }
+              });
+
+              if(max < 5) {
+                max = 5;
+              }
+
+              for(var i=1; i<=5; i++){
+                scale.push(Math.round(max/5)*i);
+              }
+            };
 
             var legend = L.control({position: 'bottomright'});
 
             legend.onAdd = function (map) {
 
-                var div = L.DomUtil.create('div', 'info legend'),
-                    grades = [0, 1, 2, 5, 10, 20],
+                this._div = L.DomUtil.create('div', 'info legend');
+                calculateScales();
+                this.update();
+                return this._div;
+            };
+
+            legend.update = function () {
+                var  grades = [0, 1, scale[0], scale[1], scale[2], scale[3]],
                     labels = [],
                     from, to;
 
                 for (var i = 0; i < grades.length; i++) {
-                    from = grades[i];
-                    to = grades[i + 1];
+                      from = grades[i];
+                      to = grades[i+1] -1;
 
-                    labels.push(
-                        '<i style="background:' + getColor(from + 1) + '"></i> ' +
-                        from + (to ? '&ndash;' + to : '+'));
-                }
+                      labels.push(
+                          '<i style="background:' + getColor(from) + '"></i> ' +
+                          from + (from==to ? '' : (to ? '&ndash;' + to : '&ndash;' +  scale[4])));
+                  }
 
-                div.innerHTML = labels.join('<br>');
-                return div;
+                this._div.innerHTML = labels.join('<br>');
             };
 
             legend.addTo(map);
+
+            setColors();
 
             function expandPanel(){
               if($(".form-panel").is(':visible')){
@@ -286,7 +318,8 @@
               else {
                 $(".form-panel").show();
                 $("#expand-button").removeClass('closed');
-                $("#expand-button").addClass('expanded');           }
+                $("#expand-button").addClass('expanded');           
+              }
             }
         </script>
     </body>
