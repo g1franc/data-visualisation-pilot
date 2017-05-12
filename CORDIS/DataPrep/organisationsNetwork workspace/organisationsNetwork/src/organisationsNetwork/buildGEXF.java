@@ -4,11 +4,8 @@ import java.awt.Color;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
-
 import org.openide.util.Lookup;
-
 import org.gephi.appearance.api.PartitionFunction;
 import org.gephi.appearance.api.AppearanceController;
 import org.gephi.appearance.api.AppearanceModel;
@@ -32,69 +29,30 @@ import org.gephi.layout.plugin.forceAtlas2.ForceAtlas2Builder;
 public class buildGEXF {
 	
 	//declare class variables
-	private ArrayList<String> errors = new ArrayList<String>();
+	
 	private GraphModel graphModel;
 	private Graph graph;
 	private AppearanceController appearanceController;
 	private AppearanceModel appearanceModel;
 
 	//main method
-    public void script(String inputFolder, String outputFolder) throws IOException, IllegalArgumentException {
+    public void script(String inputFileNodeName, String inputFileEdgeName, String outputFileName) throws IOException, IllegalArgumentException {
     	// print start time
-    	org.joda.time.DateTime startTime = new org.joda.time.DateTime();
-    	System.out.println("Started at" + startTime);
-    	if (inputFolder == null || outputFolder == null) {
+    	if (inputFileNodeName == null || inputFileEdgeName == null || outputFileName == null) {
     		throw new IllegalArgumentException();
     	}
-    	
-    	try {
-	    	File folder = new File(inputFolder);
-	    	File[] listOfFiles = folder.listFiles();
-	    	
-	    	for (int i = 1; i < listOfFiles.length; i++) {
-	    		if (listOfFiles[i].isFile() && listOfFiles[i].getName().contains("node")) {
-	    			String fileName = listOfFiles[i].getName();
-	    			File nodeFile = listOfFiles[i];
-	    			File edgeFile = new File(inputFolder + '\\' + fileName.replaceAll("node", "edge"));
-	    			
-    	    		try {
-    	    			initialiseProject();
-    	    	    	setupGraph();
-    	    	    	importFiles(nodeFile, edgeFile);
-    	    	    	setupAppearanceController();
-    	    	    	setAppearanceSizingNodes();
-    	    	    	setAppearanceColorNodes();
-    	    	    	setAppearanceColorEdges();
-    	    	    	setLabelsNodes();
-    	    	    	setAndExecuteLayout();
-    	    	    	ExportGraph(outputFolder, fileName.replaceAll("_node.csv", ".gexf"));
-    	    	    	if ((i+1)/2 % 100 == 0) {
-    	    	    		System.out.println(((i+1)/2) + " out of " + listOfFiles.length/2 + 
-    	    	    				" organisations are processed at " + new org.joda.time.DateTime());
-    	    	    	}
-    	    		} catch (Exception ex) {
-    	    			System.out.println(fileName);
-    	    			errors.add(fileName);
-    	    			ex.printStackTrace();
-    	    			return;
-    	    		}
-
-	    		} else {
-	    			// each organisations has two files in the directory (node and edge) but needs to run only once
-	    		}
-	    	}
-	    	//print end time
-	    	org.joda.time.DateTime endTime = new org.joda.time.DateTime();
-	    	System.out.println("Ended at: " + endTime);
-	    	System.out.println("files with errors: ");
-	    	for (int j=0; j < errors.size(); j++) { 
-	    		System.out.println(errors.get(j).toString());
-	    	}
-    	
-    	} catch (Exception ex) {
-            ex.printStackTrace();
-    		return;
-    	}
+    	File nodeFile = new File(inputFileNodeName);
+    	File edgeFile = new File(inputFileEdgeName);
+   		initialiseProject();
+   	    setupGraph();
+   	    importFiles(nodeFile, edgeFile);
+   	    setupAppearanceController();
+   	    setAppearanceSizingNodes();
+   	    setAppearanceColorNodes();
+   	    setAppearanceColorEdges();
+   	    setLabelsNodes();
+   	    setAndExecuteLayout();
+   	    ExportGraph(outputFileName);
     }
     
     //initialise the project
@@ -116,8 +74,7 @@ public class buildGEXF {
             
             String[] columnNamesEdges = new String[]{"Source", "Target", "Weight", "Type", "Org"};
             Class[] columnTypesEdges = new Class[]{String.class, String.class, double.class, String.class, String.class};
-//            File fileEdges = new File(getClass().getClassLoader().getResource(edgeFile).toURI());
-            
+           
             ac.importCSVToEdgesTable(graph,
                     edgeFile,
                     ';',
@@ -140,10 +97,6 @@ public class buildGEXF {
             ex.printStackTrace();
             return;
         }
-        
-//        //See if graph is well imported
-//        System.out.println("Nodes: " + graph.getNodeCount());
-//        System.out.println("Edges: " + graph.getEdgeCount());
 	}
     
 
@@ -155,7 +108,6 @@ public class buildGEXF {
 	
 	//set the sizing of the nodes depending on the number of projects
 	private void setAppearanceSizingNodes() {
-//        System.out.println("Setting appearance... sizing");
         Column columnNbProject = graphModel.getNodeTable().getColumn("NbProject");
         Function sizeRanking = appearanceModel.getNodeFunction(graph, columnNbProject, RankingNodeSizeTransformer.class);
        if (sizeRanking != null)
@@ -170,7 +122,6 @@ public class buildGEXF {
 	
 	//set the colour of the nodes depending on the activity type (5 types)
 	private void setAppearanceColorNodes() {
-//        System.out.println("Setting appearance... colour Nodes");      
         Column columnActivityType = graphModel.getNodeTable().getColumn("ActivityType");
         Function funcColorNodes = appearanceModel.getNodeFunction(graph, columnActivityType, PartitionElementColorTransformer.class);
         Partition partition = ((PartitionFunction) funcColorNodes).getPartition();
@@ -209,7 +160,6 @@ public class buildGEXF {
 	
 	//set the colour of the edges (grey)
 	private void setAppearanceColorEdges() {
-//        System.out.println("Setting appearance... colour Edges");      
         for (Function edgeFunc : appearanceModel.getEdgeFunctions(graph)) 
         {
         	if (edgeFunc instanceof PartitionFunction)
@@ -228,7 +178,6 @@ public class buildGEXF {
 	
 	//set the labels of the nodes (equal to the id)
 	private void setLabelsNodes() {
-//        System.out.println("Setting labels...");
         for (Node node : graph.getNodes()) {
             node.setLabel(node.getId().toString());
         }
@@ -236,10 +185,7 @@ public class buildGEXF {
 	
 	//set layout and execute
 	private void setAndExecuteLayout() {
-//        System.out.println("Setting layout...");
         AutoLayout layout = setLayout();
-        
-//        System.out.println("Executing layout algorithm...."); 
         layout.execute();
 	}
 	
@@ -284,23 +230,12 @@ public class buildGEXF {
 	}
 	
 	//export the graph
-	private void ExportGraph(String outputFolder, String fileName) {
-//		System.out.println(outputFolder + " " + fileName);
-        //Export full graph
+	private void ExportGraph(String outputFileName) {
         ExportController ec = Lookup.getDefault().lookup(ExportController.class);
-//        System.out.println("Exporting result...");
         try {
-        	//check if output directory exists on drive, create if not
-        	File directory = new File(outputFolder);
-        	if(!directory.exists()){
-        		 directory.mkdir();
-        		 System.out.println("output folder: " + outputFolder + " created.");
-        	 }
-        	//create file with correct path and name
-        	File file = new File(outputFolder+ '\\' + fileName);
+        	File file = new File(outputFileName);
         	//export the file
             ec.exportFile(file);
-//            System.out.println("Export finished.");
         } catch (IOException ex) {
             ex.printStackTrace();
             return;

@@ -354,5 +354,5 @@ dataLinechart <- rbind(dataLinechart, data)
 write.table(dataLinechart, "../Datasets/Data_linechart.csv", sep = ",", quote = TRUE, row.names = FALSE)
 
 # remove variables
-rm(matching, long, short, listCategory, j, newData, data, dataLinechart, func_aggregate)
+rm(matching, long, short, listCategory, j, newData, data, dataLinechart)
 
