@@ -47,35 +47,131 @@
 
           select { text-indent: 30px; }
 
+          #filter_panel {
+            position: absolute;
+            background-color: #DDD;
+            z-index:10000;
+            display: none;
+            font-size: 15px;
+            height: 580px;
+            paddin-top:15px;
+          }
+
+          #openFilterPanel {
+            position: relative;
+            top:115px;
+            z-index:9999;
+            background-image:url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_filter_list_black_24px.svg);
+            width:30px;
+            height: 30px;
+          }
+
+          #closeFilterPanel {
+            width:30px;
+            height: 30px;
+            background-image:url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_clear_black_24px.svg);
+          }
+
+          .filters_title {
+            margin: 8px 8px 8px 3px;
+          }
+
         </style>
     </head>
 
     <body>
-        <div id="map_container">
-          <div id='map'></div>
+        <div id="map_frame">
+          <button id="openFilterPanel" onclick="openFilterPanel()"></button>
+          <div id="filter_panel">
+            <!--<h2 style="padding-left:10px; float:left; width:90%">Filters</h2>-->
+            <button id="closeFilterPanel" style="float:right;" onclick="closeFilterPanel()"></button>
+            <div id="mainActiviy_filterColumn" style="float:left; padding-left:10px; width:440px;">
+              <form>
+                <h4 class="filters_title">Main activities for notices publishes by a contracting authority</h4>
+                <input type="checkbox" name="mainActivity" value="A" checked onClick="JavaScript:updateMap(this)">Housing and community amenities<br>
+                <input type="checkbox" name="mainActivity" value="B" checked onClick="JavaScript:updateMap(this)">Social protection<br>
+                <input type="checkbox" name="mainActivity" value="C" checked onClick="JavaScript:updateMap(this)">Recreation, culture and religion<br>
+                <input type="checkbox" name="mainActivity" value="D" checked onClick="JavaScript:updateMap(this)">Defence<br>
+                <input type="checkbox" name="mainActivity" value="E" checked onClick="JavaScript:updateMap(this)">Environment<br>
+                <input type="checkbox" name="mainActivity" value="F" checked onClick="JavaScript:updateMap(this)">Economic and financial affairs<br>
+                <input type="checkbox" name="mainActivity" value="H" checked onClick="JavaScript:updateMap(this)">Health<br>
+                <input type="checkbox" name="mainActivity" value="I" checked onClick="JavaScript:updateMap(this)">Airport-related activities<br>
+                <input type="checkbox" name="mainActivity" value="K" checked onClick="JavaScript:updateMap(this)">Port-realted activities / Maritime or inland waterways<br>
+                <input type="checkbox" name="mainActivity" value="L" checked onClick="JavaScript:updateMap(this)">Education<br>
+                <input type="checkbox" name="mainActivity" value="S" checked onClick="JavaScript:updateMap(this)">General public services<br>
+                <input type="checkbox" name="mainActivity" value="U" checked onClick="JavaScript:updateMap(this)">Public order and safety<br>
+                <h4 class="filters_title">Main activities for notices publishes by a contracting entity</h4>
+                <input type="checkbox" name="mainActivity" value="G" checked onClick="JavaScript:updateMap(this)">Production, transport and distribution of gas and heat<br>
+                <input type="checkbox" name="mainActivity" value="J" checked onClick="JavaScript:updateMap(this)">Extraction of gas and oil<br>
+                <input type="checkbox" name="mainActivity" value="M" checked onClick="JavaScript:updateMap(this)">Exploration and extraction of coal and other solid fuels<br>
+                <input type="checkbox" name="mainActivity" value="N" checked onClick="JavaScript:updateMap(this)">Electricity<br>
+                <input type="checkbox" name="mainActivity" value="P" checked onClick="JavaScript:updateMap(this)">Postal services<br>
+                <input type="checkbox" name="mainActivity" value="R" checked onClick="JavaScript:updateMap(this)">Railway services<br>
+                <input type="checkbox" name="mainActivity" value="S" checked onClick="JavaScript:updateMap(this)">General public services<br>
+                <input type="checkbox" name="mainActivity" value="T" checked onClick="JavaScript:updateMap(this)">Urban railway/light rail, metro, tramway, trolleybus or bus services<br>
+                <input type="checkbox" name="mainActivity" value="W" checked onClick="JavaScript:updateMap(this)">Water<br>
+                <h4 class="filters_title">Other activity</h4>
+                <input type="checkbox" name="mainActivity" value="O" checked onClick="JavaScript:updateMap(this)">Other activity<br>
+              </form>
+            </div>
+            <div id="legalBasis_filterColumn" style="float:left; padding-right:10px; width:440px;">
+              <h4 class="filters_title">NUTS Level</h4>
+              <div>
+                <select onchange="selectNuts(this)" style="width:183px;">
+                  <option value="nuts0_data">NUTS 0</option>
+                  <option value="nuts1_data">NUTS 1</option>
+                  <option value="nuts2_data">NUTS 2</option>
+                  <option value="nuts3_data">NUTS 3</option>
+                </select>
+              </div>
+              <form action="/action_page.php" method="get">
+                <h4 class="filters_title">Legal basis</h4>
+                <input type="checkbox" name="legalBasis" value="Classical Directive (2004/18/EC)" checked onClick="JavaScript:updateMap(this)">Classical Directive (2004/18/EC)<br>
+                <input type="checkbox" name="legalBasis" value="Utilities Directive (2004/17/EC)" checked onClick="JavaScript:updateMap(this)">Utilities Directive (2004/17/EC)<br>
+                <input type="checkbox" name="legalBasis" value="Defence Directive (2009/81/EC)" checked onClick="JavaScript:updateMap(this)">Defence Directive (2009/81/EC)<br>
+                <input type="checkbox" name="legalBasis" value='Regulation "Public passenger transport" (1370/2007)' checked onClick="JavaScript:updateMap(this)">Regulation "Public passenger transport" (1370/2007)<br>
+                <input type="checkbox" name="legalBasis" value="Concession contract Directive (2014/23/EU)" checked onClick="JavaScript:updateMap(this)">Concession contract Directive (2014/23/EU)<br>
+                <input type="checkbox" name="legalBasis" value="Public procurement Directive (2014/24/EU)" checked onClick="JavaScript:updateMap(this)">Public procurement Directive (2014/24/EU)<br>
+                <input type="checkbox" name="legalBasis" value="Utilities (water, energy, transport and postal services) Directive (2014/25/EU)" checked onClick="JavaScript:updateMap(this)">Utilities (water, energy, transport and postal services) Directive (2014/25/EU)<br>
+              </form>
+            </div>
+          </div>
+          <div id="map_container">
+            <div id='map'></div>
+          </div>
         </div>
         <div style="position:absolute; top:10px; left:776px; text-align:left; font: 14px/16px Arial, Helvetica, sans-serif;">
           <div style="width:183px; text-align:center;">
-            <span style="font-weight:bold;">Select a NUTS level:</span>
-            <select onchange="selectNuts(this)" style="width:183px;">
-              <option value="nuts0_data">NUTS 0</option>
-              <option value="nuts1_data">NUTS 1</option>
-              <option value="nuts2_data">NUTS 2</option>
-              <option value="nuts3_data">NUTS 3</option>
-            </select>
-            <h3 id="list-header"></h3>
+            <h3 id="list-header" style="padding-top:11px;"></h3>
           </div>
           <div id="list" style="height:508px; overflow-y:scroll; width:200px;"><div>
         </div>
 
         <script type="text/javascript" src="../datasets/languages.js"></script>
-        <script type="text/javascript" src="../datasets/TEDdata.js"></script>
+        <script type="text/javascript" src="../datasets/TEDtest.js"></script>
         <script type="text/javascript" src="../datasets/nuts_0.js"></script>
         <script type="text/javascript" src="../datasets/nuts_1.js"></script>
         <script type="text/javascript" src="../datasets/nuts_2.js"></script>
         <script type="text/javascript" src="../datasets/nuts_3.js"></script>
         <script src="https://unpkg.com/esri-leaflet@2.0.7"></script>
         <script type="text/javascript">
+
+          var filtersList = [ "A", "B", "C", "D", "E", "F", "H", "I", "K", "L", "S", "U",
+                              "G", "J", "M", "N", "P", "R", "S", "T", "W", "O",
+                              "Classical Directive (2004/18/EC)", "Utilities Directive (2004/17/EC)",
+                              "Defence Directive (2009/81/EC)",
+                              'Regulation "Public passenger transport" (1370/2007)',
+                              "Concession contract Directive (2014/23/EU)",
+                              "Public procurement Directive (2014/24/EU)",
+                              "Utilities (water, energy, transport and postal services) Directive (2014/25/EU)"];
+
+          function closeFilterPanel(){
+            $("#filter_panel").hide();
+          }
+
+          function openFilterPanel(){
+            $("#filter_panel").show();
+          }
 
           var userLang = navigator.language || navigator.userLanguage;
           if(!texts[userLang]){
@@ -166,11 +262,21 @@
                info.update(layer.feature.properties);
               }
 
-              function setColors() {
+              function setColors(elem) {
+                  if(elem != undefined) {
+                    if($("#"+elem.id).is(":checked")) {
+                      filtersList.push($("#"+elem.id).attr("value"));
+                    }
+                    else {
+                      filtersList.splice(filtersList.indexOf($("#"+elem.id).attr("value")),1);
+                    }
+                  }
+
                   geojson.eachLayer(function(layer) {
                       if(TEDdata[layer.feature.properties.NUTS_ID] != undefined) {
+                        var val = getNumberOfTenders(layer.feature.properties.NUTS_ID);
                         layer.setStyle({
-                            fillColor: getColor(TEDdata[layer.feature.properties.NUTS_ID].length)
+                            fillColor: getColor(val)
                         });
                       }
                       else{
@@ -274,6 +380,17 @@
               legend.addTo(map);
 
               setColors();
+
+              function getNumberOfTenders(nid){
+                var count=0;
+                console.log(TEDdata[nid]);
+                for (var t in TEDdata[nid]){
+                  if(filtersList.indexOf(t['mainActivity']) >= 0 || filtersList.indexOf(t['legalBasis']) >= 0) {
+                    count+=1;
+                  }
+                });
+                return count;
+              }
 
           }
         </script>

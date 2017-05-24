@@ -17,9 +17,9 @@
     position: absolute;
     text-align: left;
     background-color: #1E2021;
-    padding-left:20px;
-    padding-right:20px;
-    width: 200px;
+    padding-left:5px;
+    padding-right:5px;
+    width: 100px;
     border-radius: 3px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     right: -4px;
@@ -41,6 +41,16 @@
             width = svg.attr("width") - margin.left - margin.right,
             height = svg.attr("height") - margin.top - margin.bottom,
             g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var colours = {
+          "Total":"#e41a1c",
+          "Trade/business/professional associations":"#377eb8",
+          "NGO":"#4daf4a",
+          "Consultancies, law firms and self-employed":"#984ea3",
+          "Think tanks, research and academic institutions":"#ff7f00",
+          "Organisations representing sub national authorities and other":"#f781bf",
+          "Organisations representing churches and religious communities":"#a65628"
+        };
 
         // Parse the date / time
         var parseTime = d3.timeParse("%Y%m%d");
@@ -100,7 +110,7 @@
           cat.append("path")
               .attr("class", "line")
               .attr("d", function(d) { return line(d.values); })
-              .style("stroke", function(d) { return z(d.id); });
+              .style("stroke", function(d) {/*return z(d.id);*/ return colours[d.id]; });
 
           // Add the text
           cat.append("text")
@@ -109,7 +119,7 @@
               .attr("x", 5)
               .attr("dy", "0.35em")
               .style("font", "14px sans-serif")
-              .text(function(d) { return d.value.count; });
+              .text(function(d) { return d.value.count.toLocaleString(); });
 
           // Add circles
           var circles = cat.append("g").selectAll("circle")
@@ -141,8 +151,8 @@
 
             function mousemoveFunc(d) {
                 return tooltip
-                    .style("top", (d3.event.pageY - 10) + "px" )
-                    .style("left", (d3.event.pageX - 220) + "px");
+                    .style("top", (d3.event.pageY + 15) + "px" )
+                    .style("left", (d3.event.pageX - 70) + "px");
             }
 
             function mouseoutFunc(d) {
@@ -169,7 +179,7 @@
                 .style("font-size", "11px"); //align texts with boxes
 
             lineLegend.append("rect")
-                .attr("fill", function (d, i) {return z(d); })
+                .attr("fill", function (d, i) {/*return z(d);*/ return colours[d]; })
                 .attr("width", 10).attr("height", 10);
 
 
