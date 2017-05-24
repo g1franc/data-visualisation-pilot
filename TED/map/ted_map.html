@@ -18,7 +18,7 @@
 
           .info {
             padding: 6px 12px;
-            font: 14px/16px Arial, Helvetica, sans-serif;
+            /*font: 14px/16px Arial, Helvetica, sans-serif;*/
             background: white;
             background: rgba(255,255,255,0.8);
             box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -34,7 +34,7 @@
             text-align: left;
             line-height: 18px;
             color: #555;
-            width: 120px;
+            /*width: 120px;*/
           }
 
           .legend i {
@@ -42,7 +42,7 @@
             height: 18px;
             float: left;
             margin-right: 21px;
-            opacity: 0.7;
+            opacity: 1;
           }
 
           select { text-indent: 30px; }
@@ -230,12 +230,12 @@
 
               // get color depending on value
               function getColor(d) {
-                  return  d >  scale[3]  ? '#145FAB' :
-                          d >  scale[2]  ? '#0092C2' :
-                          d >  scale[1]  ? '#47B5C0' :
-                          d >  scale[0]  ? '#80CCBA' :
-                          d >= 0         ? '#C5E9B0' :
-                                           '#F5F59C';
+                  return  d >= scale[3]  ? '#145FAB' :
+                          d >= scale[2]  ? '#0092C2' :
+                          d >= scale[1]  ? '#47B5C0' :
+                          d >= scale[0]  ? '#80CCBA' :
+                          d >= 1         ? '#C5E9B0' :
+                                           '#F5F59C' ;
               }
 
               function style(feature) {
@@ -348,29 +348,29 @@
                 }
               });
 
-              if(max < 4) {
-                max = 4;
+              if(max < 5) {
+                max = 5;
               }
 
-              for(var i=1; i<5; i++){
-                scale.push(Math.round(max/4)*i);
+              for(var i=1; i<=5; i++){
+                scale.push(Math.round(max/5)*i);
               }
 
 
               legend.onAdd = function (map) {
 
                   var div = L.DomUtil.create('div', 'info legend'),
-                      grades = [0, scale[0], scale[1], scale[2], scale[3]],
+                      grades = [0, 1, scale[0], scale[1], scale[2], scale[3]],
                       labels = [],
                       from, to;
 
                   for (var i = 0; i < grades.length; i++) {
                       from = grades[i];
-                      to = grades[i + 1];
+                      to = grades[i+1] -1;
 
                       labels.push(
-                          '<i style="background:' + getColor(from + 1) + '"></i> ' +
-                          from + (to ? '&ndash;' + to : '+'));
+                          '<i style="background:' + getColor(from) + '"></i> ' +
+                          from + (from==to ? '' : (to ? '&ndash;' + to : '&ndash;' +  scale[4])));
                   }
 
                   div.innerHTML = labels.join('<br>');

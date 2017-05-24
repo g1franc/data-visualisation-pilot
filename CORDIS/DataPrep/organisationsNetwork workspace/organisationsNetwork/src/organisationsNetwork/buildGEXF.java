@@ -51,6 +51,7 @@ public class buildGEXF {
    	    setAppearanceColorNodes();
    	    setAppearanceColorEdges();
    	    setLabelsNodes();
+   	    graph.removeNode(graph.getNode("TEST"));
    	    setAndExecuteLayout();
    	    ExportGraph(outputFileName);
     }
@@ -113,8 +114,8 @@ public class buildGEXF {
        if (sizeRanking != null)
         {
 	        RankingNodeSizeTransformer sizeTransformer = (RankingNodeSizeTransformer) sizeRanking.getTransformer();
-	        sizeTransformer.setMinSize(10);
-	        sizeTransformer.setMaxSize(40);
+	        sizeTransformer.setMinSize(100);
+	        sizeTransformer.setMaxSize(500);
 	        appearanceController.transform(sizeRanking);
         }
 
