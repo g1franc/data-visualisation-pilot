@@ -10740,7 +10740,7 @@
         minY = bounds.minY,
         maxX = bounds.maxX,
         maxY = bounds.maxY,
-        sizeMax = 500,
+        sizeMax = 400,
         weightMax = bounds.weightMax,
         w = settings('width') || 1,
         h = settings('height') || 1,
