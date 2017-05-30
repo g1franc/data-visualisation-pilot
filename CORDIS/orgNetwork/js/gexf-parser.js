@@ -143,7 +143,7 @@
    * @return {object}            The guarded node object.
    */
   function Node(properties) {
-
+    properties.label = properties.label + " (number of projects: " + properties.attributes.nbproject +")";
     // Possible Properties
     var node = {
       id: properties.id,
