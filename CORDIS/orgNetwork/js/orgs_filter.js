@@ -1,11 +1,22 @@
 $(document).ready(function(){
 
+  /*organisations.sort(function(a,b){
+    if(a<b){
+      return -1;
+    }
+    else{
+      return 1;
+    }
+  })*/
+
+  console.log(organisations);
+
   var FJS = FilterJS.auto(organisations);
   FJS.filter();
 
   window.FJS = FJS;
 
-  FJS.addCriteria({field: 'country', ele: '#country_criteria input:checkbox'});
+  FJS.addCriteria({field: 'country', ele: '#country_criteria input:checkbox', auto_sorting:true});
 
   $(document).bind('click', function(e) {
     console.log("function");
