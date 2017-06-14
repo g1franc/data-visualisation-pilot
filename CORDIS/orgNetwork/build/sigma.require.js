@@ -10761,7 +10761,7 @@ if (typeof exports !== 'undefined') {
         minY = bounds.minY,
         maxX = bounds.maxX,
         maxY = bounds.maxY,
-        sizeMax = bounds.sizeMax,
+        sizeMax = 400,
         weightMax = bounds.weightMax,
         w = settings('width') || 1,
         h = settings('height') || 1,

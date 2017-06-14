@@ -1,13 +1,25 @@
 $(document).ready(function(){
 
+  /*organisations.sort(function(a,b){
+    if(a<b){
+      return -1;
+    }
+    else{
+      return 1;
+    }
+  })*/
+
+  console.log(organisations);
+
   var FJS = FilterJS.auto(organisations);
   FJS.filter();
 
   window.FJS = FJS;
 
-  FJS.addCriteria({field: 'country', ele: '#country_criteria input:checkbox'});
+  FJS.addCriteria({field: 'country', ele: '#country_criteria input:checkbox', auto_sorting:true});
 
   $(document).bind('click', function(e) {
+    console.log("function");
       var $clicked = $(e.target);
       if (! ( $clicked.hasClass("searchicon") || $clicked.hasClass("searchwindow")
           || $clicked.hasClass("search-tooltip")
@@ -16,12 +28,14 @@ $(document).ready(function(){
           || ($(e.target).parents('.FakeDropdownList').length > 0))
       {
         $('#search').hide();
+        $('#dummy_div').hide();
       }
+
     });
 
 
-    var currentOrg="ADANA_METROPOLITAN_MUNICIPALITY";
-    $("#org_label").text("ADANA METROPOLITAN MUNICIPALITY");
+    /*var currentOrg="ADANA_METROPOLITAN_MUNICIPALITY";
+    $("#org_label").text("ADANA METROPOLITAN MUNICIPALITY");*/
 
 });
 
@@ -42,9 +56,11 @@ function filterOrgSelected(element) {
 }
 
 function displayList() {
-  $('#search').show()
+  $('#search').show();
+  $('#dummy_div').show();
 }
 
 function hideList() {
-    $('#search').hide()
+    $('#search').hide();
+    $('#dummy_div').hide();
 }

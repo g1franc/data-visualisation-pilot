@@ -113,7 +113,7 @@ func_BuildLink <- function(dataset) {
     listNode$ActivityType <- as.character(listNode$activityType)
     listNode$NbProject <- as.character(listNode$Weight)
     listNode <- subset(listNode, select=c(Id, ActivityType, NbProject))
-    
+    listNode <- rbind(listNode, c("TEST", "TEST", 1))    
 
     name <- paste("../Datasets/outputOrgNetwork/", fileName, "_node.csv", sep = "")
     tryCatch(

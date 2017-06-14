@@ -1,0 +1,453 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"description": "This API provide multiple read-only operations on the TED website data.",
+		"version": "v1.00",
+		"title": "TED website API",
+		"termsOfService": "http://ted.europa.eu/TED/misc/legalNotice.do",
+		"contact": {
+			"name": "TED",
+			"url": "http://ted.europa.eu",
+			"email": "ted@publications.europa.eu"
+		},
+		"license": {
+			"name": "Legal notice",
+			"url": "http://ted.europa.eu/TED/misc/legalNotice.do"
+		}
+	},
+	"host": "ted.europa.eu",
+	"basePath": "/",
+	"tags": [{
+		"name": "search-controller",
+		"description": "Search Controller"
+	}],
+	"paths": {
+		"/api/latest/notices/search": {
+			"get": {
+				"tags": ["search-controller"],
+				"summary": "Search for notices using expert search query",
+				"description": "For more information in the query format or field names, please consult http://ted.europa.eu/TED/misc/helpPage.do?helpPageId=expertSearch. If your URL length is too long, use the POST method.",
+				"operationId": "searchGetUsingGET",
+				"consumes": ["application/json"],
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "apiKey",
+					"in": "query",
+					"description": "API key",
+					"required": true,
+					"type": "string"
+				},
+				{
+					"name": "q",
+					"in": "query",
+					"description": "Search query",
+					"required": true,
+					"type": "string"
+				},
+				{
+					"name": "scope",
+					"in": "query",
+					"description": "Search scope. 1 for 'Last edition'; 2 for 'Active'; 3 for 'All'",
+					"required": false,
+					"type": "integer",
+					"default": 1,
+					"format": "int32",
+					"enum": [1,
+					2,
+					3]
+				},
+				{
+					"name": "pageNum",
+					"in": "query",
+					"description": "Current page number. The page number is 1-based",
+					"required": false,
+					"type": "integer",
+					"default": 1,
+					"minimum": 1.0,
+					"format": "int32"
+				},
+				{
+					"name": "pageSize",
+					"in": "query",
+					"description": "Number of results per page",
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				},
+				{
+					"name": "sortField",
+					"in": "query",
+					"description": "Field for sorting the search results",
+					"required": false,
+					"type": "string",
+					"default": "ND",
+					"enum": ["ND",
+					"PD",
+					"CY",
+					"DT"]
+				},
+				{
+					"name": "reverseOrder",
+					"in": "query",
+					"description": "Display the results in reverse order",
+					"required": false,
+					"type": "boolean",
+					"default": false,
+					"enum": ["true",
+					"false"]
+				},
+				{
+					"name": "fields",
+					"in": "query",
+					"description": "Comma separated field names to return",
+					"required": false,
+					"type": "string",
+					"default": "All fields except content",
+					"enum": ["content",
+					"AA",
+					"CY",
+					"DS",
+					"DT",
+					"NC",
+					"ND",
+					"OJ",
+					"PD",
+					"PR",
+					"TD"]
+				}],
+				"responses": {
+					"404": {
+						"description": "Not Found"
+					},
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/SearchResponse"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"post": {
+				"tags": ["search-controller"],
+				"summary": "Search for notices using expert search query",
+				"description": "Search for notices",
+				"operationId": "searchPostUsingPOST",
+				"consumes": ["application/json"],
+				"produces": ["application/json"],
+				"parameters": [{
+					"in": "body",
+					"name": "searchRestRequest",
+					"description": "searchRestRequest",
+					"required": false,
+					"schema": {
+						"$ref": "#/definitions/SearchRestRequest"
+					}
+				}],
+				"responses": {
+					"404": {
+						"description": "Not Found"
+					},
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/SearchResponse"
+						}
+					},
+					"201": {
+						"description": "Created"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/v1.0/notices/search": {
+			"get": {
+				"tags": ["search-controller"],
+				"summary": "Search for notices using expert search query",
+				"description": "For more information in the query format or field names, please consult http://ted.europa.eu/TED/misc/helpPage.do?helpPageId=expertSearch. If your URL length is too long, use the POST method.",
+				"operationId": "searchGetUsingGET_1",
+				"consumes": ["application/json"],
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "apiKey",
+					"in": "query",
+					"description": "API key",
+					"required": true,
+					"type": "string"
+				},
+				{
+					"name": "q",
+					"in": "query",
+					"description": "Search query",
+					"required": true,
+					"type": "string"
+				},
+				{
+					"name": "scope",
+					"in": "query",
+					"description": "Search scope. 1 for 'Last edition'; 2 for 'Active'; 3 for 'All'",
+					"required": false,
+					"type": "integer",
+					"default": 1,
+					"format": "int32",
+					"enum": [1,
+					2,
+					3]
+				},
+				{
+					"name": "pageNum",
+					"in": "query",
+					"description": "Current page number. The page number is 1-based",
+					"required": false,
+					"type": "integer",
+					"default": 1,
+					"minimum": 1.0,
+					"format": "int32"
+				},
+				{
+					"name": "pageSize",
+					"in": "query",
+					"description": "Number of results per page",
+					"required": false,
+					"type": "integer",
+					"format": "int32"
+				},
+				{
+					"name": "sortField",
+					"in": "query",
+					"description": "Field for sorting the search results",
+					"required": false,
+					"type": "string",
+					"default": "ND",
+					"enum": ["ND",
+					"PD",
+					"CY",
+					"DT"]
+				},
+				{
+					"name": "reverseOrder",
+					"in": "query",
+					"description": "Display the results in reverse order",
+					"required": false,
+					"type": "boolean",
+					"default": false,
+					"enum": ["true",
+					"false"]
+				},
+				{
+					"name": "fields",
+					"in": "query",
+					"description": "Comma separated field names to return",
+					"required": false,
+					"type": "string",
+					"default": "All fields except content",
+					"enum": ["content",
+					"AA",
+					"CY",
+					"DS",
+					"DT",
+					"NC",
+					"ND",
+					"OJ",
+					"PD",
+					"PR",
+					"TD"]
+				}],
+				"responses": {
+					"404": {
+						"description": "Not Found"
+					},
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/SearchResponse"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"post": {
+				"tags": ["search-controller"],
+				"summary": "Search for notices using expert search query",
+				"description": "Search for notices",
+				"operationId": "searchPostUsingPOST_1",
+				"consumes": ["application/json"],
+				"produces": ["application/json"],
+				"parameters": [{
+					"in": "body",
+					"name": "searchRestRequest",
+					"description": "searchRestRequest",
+					"required": false,
+					"schema": {
+						"$ref": "#/definitions/SearchRestRequest"
+					}
+				}],
+				"responses": {
+					"404": {
+						"description": "Not Found"
+					},
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/SearchResponse"
+						}
+					},
+					"201": {
+						"description": "Created"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		}
+	},
+	"definitions": {
+		"MappingJacksonValue": {
+			"type": "object",
+			"properties": {
+				"filters": {
+					"$ref": "#/definitions/FilterProvider"
+				},
+				"jsonpFunction": {
+					"type": "string"
+				},
+				"value": {
+					"type": "object"
+				}
+			}
+		},
+		"RestNoticeResult": {
+			"type": "object",
+			"properties": {
+				"AA": {
+					"type": "string"
+				},
+				"CPV": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"CY": {
+					"type": "string"
+				},
+				"DS": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"DT": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"NC": {
+					"type": "string"
+				},
+				"ND": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"NUTS": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"OJ": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"PD": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"PR": {
+					"type": "string"
+				},
+				"TD": {
+					"type": "string"
+				},
+				"content": {
+					"type": "array",
+					"items": {
+						"type": "string",
+						"format": "byte"
+					}
+				}
+			}
+		},
+		"SearchRestRequest": {
+			"type": "object",
+			"properties": {
+				"apiKey": {
+					"type": "string"
+				},
+				"fields": {
+					"type": "string"
+				},
+				"pageNum": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"pageSize": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"q": {
+					"type": "string"
+				},
+				"reverseOrder": {
+					"type": "boolean"
+				},
+				"searchScope": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"searchSortField": {
+					"type": "string"
+				}
+			}
+		},
+		"SearchResponse": {
+			"type": "object",
+			"properties": {
+				"results": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/RestNoticeResult"
+					}
+				},
+				"took": {
+					"type": "integer",
+					"format": "int64"
+				},
+				"total": {
+					"type": "integer",
+					"format": "int32"
+				}
+			}
+		},
+		"FilterProvider": {
+			"type": "object"
+		}
+	}
+}
